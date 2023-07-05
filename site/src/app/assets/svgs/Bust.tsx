@@ -11,7 +11,7 @@ type ColorClass = {
 interface SVGProps {
   width: number | string;
   height: number | string;
-  colorClasses: ColorClass;
+  colorClasses?: ColorClass;
 }
 
 const Bust = ({ width, height, colorClasses }: SVGProps) => (

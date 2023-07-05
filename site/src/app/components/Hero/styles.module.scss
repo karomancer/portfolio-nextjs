@@ -2,6 +2,16 @@
 @import "../../sass/_functions";
 @import "../../sass/_vendor";
 
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes drawLine {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
 #banner {
   @include vendor("display", "flex");
   @include vendor("flex-direction", "column");
@@ -65,20 +75,21 @@
   opacity: 1;
 
   h1 {
-    transition: opacity 1s ease;
-    transition-delay: 3.5s;
+    opacity: 0;
+    animation: appear 2s ease forwards;
+    animation-delay: 3.5s;
     width: 100%;
     color: var(--dark);
     font-size: 8rem;
     margin: 1rem 0;
-    opacity: 1;
     padding: 0.2em 1em;
     position: relative;
     z-index: 1;
 
     &:after {
-      transition: width 0.85s ease;
-      transition-delay: 3.5s;
+      width: 0%;
+      animation: drawLine 2s ease forwards;
+      animation-delay: 3.5s;
       content: "";
       display: block;
       position: absolute;
@@ -89,20 +100,18 @@
 
       border: 3px solid var(--gray);
       border-radius: var(--borderRadius);
-
-      width: 100%;
     }
   }
 
   @include breakpoint("<=small") {
     h1 {
-      font-size: 6rem;
-      line-height: 0.85;
-      padding: 1rem;
+      font-size: 5.5rem;
+      line-height: 1;
+      padding: 2rem;
 
       &::after {
-        margin-top: -1rem;
-        width: 80%;
+        margin-top: 1rem;
+        max-width: 40%;
       }
     }
 
@@ -114,22 +123,15 @@
 }
 
 .byline {
-  transition: opacity 0.5s ease;
-  transition-delay: 4s;
+  animation: appear 1.5s ease forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
   text-align: 0;
   font-weight: 400;
   font-size: 3rem;
   color: var(--gray);
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .bust-container {
   width: 100%;
@@ -167,15 +169,22 @@
 
 .grayAnimation {
   animation: appear 1s ease-in-out forwards;
-  animation-delay: 3.5s;
+  animation-delay: 3s;
 }
 
 .tealAnimation {
   animation: appear 1s ease-in-out forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3.5s;
   fill: var(--teal) !important;
 }
 
 .whiteAnimation {
-  fill: white;
+  animation: appear 1s ease-in-out forwards;
+  animation-delay: 4.5s;
+  fill: white !important;
 }
+
+.circuits {
+  position: absolute;
+  top: 0;
+} 

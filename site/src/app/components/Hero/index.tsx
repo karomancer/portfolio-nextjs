@@ -15,7 +15,7 @@ import styles from './styles.module.scss'
 const Hero = ({}) => {
   return (
     <>
-      <Circuits />
+      <Circuits className={styles["circuits"]} />
       <section id={styles["banner"]}>
         <div className="inner">
           <div className={styles["bust-container"]}>
@@ -29,7 +29,7 @@ const Hero = ({}) => {
           </div>
           <div className={styles["title-and-byline"]}>
             <h1>karina chow</h1>
-            <Byline />
+            <Byline className={styles["byline"]} />
           </div>
           {/* <Scroll type="id" element="one">
             <a href="#one" className="more">

@@ -1,10 +1,12 @@
-"use client"
-
-import dynamic from "next/dynamic";
-import type p5Type from "p5";
-const Sketch = dynamic(import("react-p5"), { ssr: false });
-
+import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import Circuit from "./Circuit";
+
+import type p5Type from "p5";
+
+/**
+ * Class below
+ */
 
 const GRAY_RGB = [255, 255, 255];
 
@@ -14,38 +16,52 @@ const MODULO = 200;
 interface CircuitsProps {
   width?: number;
   height?: number;
+  className?: string;
 }
 
-const Circuits = ({ width, height }: CircuitsProps): JSX.Element => {
-  const circuits: Circuit[] = [];
+const Circuits = ({ width, height, className }: CircuitsProps) => {
+  const circuitsEl = useRef();
 
-  const setup = (p: p5Type, canvasParentRef: Element): void => {
-    p.createCanvas(width || p.windowWidth, height || p.windowHeight).parent(canvasParentRef);
-    p.background(GRAY_RGB);
+  const sketch = (p: p5Type) => {
+    const circuits: Circuit[] = [];
 
-    setTimeout(() => {
-      p.noLoop();
-    }, 60000);
+    p.setup = () => {
+      p.createCanvas(width || p.windowWidth, height || p.windowHeight);
+      p.background(GRAY_RGB);
+
+      setTimeout(() => {
+        p.noLoop();
+      }, 60000);
+    };
+
+    p.draw = () => {
+      const num = Math.round(p.random(MODULO));
+
+      if (
+        num % MODULO === 0 &&
+        circuits.length < Math.ceil((p.width * p.height) / CIRCUITS_DIVISIBLE)
+      ) {
+        const circuit = new Circuit(p);
+        circuits.push(circuit);
+      }
+
+      for (let i = 0; i < circuits.length; i++) {
+        circuits[i].draw();
+      }
+    };
   };
 
-  const draw = (p: p5Type): void => {
-    const num = Math.round(p.random(MODULO));
+  useEffect(() => {
+    const p5 = require("p5");
+    new p5(sketch, circuitsEl.current);
+  }, []);
 
-    if (
-      num % MODULO === 0 &&
-      circuits.length < Math.ceil((p.width * p.height) / CIRCUITS_DIVISIBLE)
-    ) {
-      const circuit = new Circuit(p);
-      circuits.push(circuit);
-    }
+  return <div className={className} id="circuits" ref={circuitsEl}></div>;
+};
 
-    for (let i = 0; i < circuits.length; i++) {
-      circuits[i].draw();
-    }
-  };
-
-  return <Sketch setup={setup} draw={draw} />
-
+Circuits.propTypes = {
+  width: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
 };
 
 export default Circuits;

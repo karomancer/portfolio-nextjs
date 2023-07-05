@@ -26,16 +26,24 @@
   --headerFontWeight: 700;
   --bodyFontWeight: 400;
 
-  --strongFontFamily: futura-pt-bold, sans-serif;
+  --strongFontFamily: futura-pt-bold, Futura, sans-serif;
 
-  --condensedFontFamily: futura-pt-condensed, sans-serif;
+  --condensedFontFamily: futura-pt-condensed, Futura, sans-serif;
   --condensedFontBoldWeight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+  color: var(--dark);
+}
+
+body {
+  margin: 0;
 }
 
 html {
   background-color: white; 
-  font-family: var(--fontFamily);
-  color: var(--dark);
 }
 
 h1,

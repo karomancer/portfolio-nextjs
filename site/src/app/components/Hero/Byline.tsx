@@ -39,7 +39,12 @@ const BYLINE_OPTIONS = shuffle([
 BYLINE_OPTIONS.unshift("engineering & design consultant");
 BYLINE_OPTIONS.push("are you still there?");
 
-const Byline = () => {
+interface BylineProps {
+  className?: string; 
+}
+
+
+const Byline = ({className}: BylineProps) => {
   const bylineEl = useRef();
   const getRandomIndex = (len: Number) => Math.floor(Math.random() * len);
   const getRandomLetter = () => ALPHABET[getRandomIndex(ALPHABET.length)];
@@ -132,7 +137,7 @@ const Byline = () => {
   });
 
   return (
-    <h3 className="byline" ref={bylineEl}>
+    <h3 className={className} ref={bylineEl}>
       {byline}
     </h3>
   );

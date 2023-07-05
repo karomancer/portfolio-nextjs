@@ -1,5 +1,3 @@
-"use client"
-
 const TEAL_RGB = [80, 191, 160];
 const COMPARISON_THRESHOLD = 40;
 
