@@ -1,0 +1,21 @@
+.top-nav {
+    position: sticky;
+    top: 0;
+    
+    z-index: 5;
+
+    
+    ul {
+        position: absolute;
+        right: 1rem;
+        width: fit-content;
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+
+        a {
+            color: var(--dark);
+            font-size: 1.25rem;
+        }
+    }
+}
