@@ -1,0 +1,181 @@
+@import "../../sass/_breakpoints";
+@import "../../sass/_functions";
+@import "../../sass/_vendor";
+
+#banner {
+  @include vendor("display", "flex");
+  @include vendor("flex-direction", "column");
+  @include vendor("justify-content", "center");
+  cursor: default;
+  height: 100vh;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  p {
+    letter-spacing: 1.2;
+    text-transform: uppercase;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &:after {
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  @include breakpoint("<=small") {
+    height: 100vh;
+    min-height: 0;
+
+    h2 {
+      font-size: 1.25em;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+}
+
+.title-and-byline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: fit-content;
+  margin: 0 auto;
+  opacity: 1;
+
+  h1 {
+    transition: opacity 1s ease;
+    transition-delay: 3.5s;
+    width: 100%;
+    color: var(--dark);
+    font-size: 8rem;
+    margin: 1rem 0;
+    opacity: 1;
+    padding: 0.2em 1em;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      transition: width 0.85s ease;
+      transition-delay: 3.5s;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0 auto;
+
+      border: 3px solid var(--gray);
+      border-radius: var(--borderRadius);
+
+      width: 100%;
+    }
+  }
+
+  @include breakpoint("<=small") {
+    h1 {
+      font-size: 6rem;
+      line-height: 0.85;
+      padding: 1rem;
+
+      &::after {
+        margin-top: -1rem;
+        width: 80%;
+      }
+    }
+
+    .byline {
+      font-size: 2rem;
+      height: 4rem;
+    }
+  }
+}
+
+.byline {
+  transition: opacity 0.5s ease;
+  transition-delay: 4s;
+  text-align: 0;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--gray);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bust-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    position: absolute;
+    bottom: -7rem;
+    // three tone
+    path {
+      opacity: 0;
+      fill: var(--light);
+    }
+  }
+
+  @include breakpoint("<=small") {
+    svg {
+      bottom: 0;
+      height: 100vh;
+    }
+  }
+}
+
+.lightAnimation {
+  animation: appear 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+.darkAnimation {
+  animation: appear 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+.grayAnimation {
+  animation: appear 1s ease-in-out forwards;
+  animation-delay: 3.5s;
+}
+
+.tealAnimation {
+  animation: appear 1s ease-in-out forwards;
+  animation-delay: 4.5s;
+  fill: var(--teal) !important;
+}
+
+.whiteAnimation {
+  fill: white;
+}
