@@ -22,7 +22,7 @@
   /**
    * Fonts
    **/
-  --fontFamily: futura-pt, Futura, sans-serif;
+  --fontFamily: var(--futura-book), Helvetica, Futura, sans-serif;
   --headerFontWeight: 700;
   --bodyFontWeight: 400;
 
@@ -36,6 +36,7 @@
   box-sizing: border-box;
   font-family: var(--fontFamily);
   color: var(--dark);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -116,6 +117,11 @@ h6 {
 
 a {
   color: var(--teal);
+  text-decoration: dashed;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 strong,
@@ -130,6 +136,47 @@ i {
 }
 
 p {
+  margin: 0 0 _size(element-margin) 0;
+}
+
+/* List */
+
+ol {
+  list-style: decimal;
+  margin: 0 0 _size(element-margin) 0;
+  padding-left: 1.25em;
+
+  li {
+    padding-left: 0.25em;
+  }
+}
+
+ul {
+  list-style: disc;
+  margin: 0 0 _size(element-margin) 0;
+  padding-left: 1em;
+
+  li {
+    padding-left: 0.5em;
+  }
+
+  &.alt {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      border-top: solid 1px _palette(border);
+      padding: 0.5em 0;
+
+      &:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+dl {
   margin: 0 0 _size(element-margin) 0;
 }
 

@@ -1,0 +1,118 @@
+@import "../../sass/_breakpoints";
+@import "../../sass/_functions";
+@import "../../sass/_vendor";
+
+.about-me {
+  padding-top: 1rem;
+  margin: 0 auto;  
+}
+
+.about-me-content {
+  text-align: center;
+
+  @include breakpoint('<=medium') {
+    width: 100%;
+  }
+
+  blockquote {
+    font-size: 2rem;
+    font-family: var(--strongFontFamily);
+    color: var(--dark);
+    margin: 1rem auto;
+    max-width: var(--siteWidth);
+    padding: 1rem 2rem;
+
+    border-top: 0.5rem solid var(--light);
+    border-bottom: 0.5rem solid var(--light);
+    border-left: solid 0.5rem white;
+    border-right: solid 0.5rem white;
+
+    b {
+      color: white;
+      background-color: var(--teal);
+      padding: 0 0.25rem;
+    }
+
+    @include breakpoint('<=small') {
+      line-height: 1.4;
+      padding: 0 2rem;
+    }
+  }
+
+  div {
+    @include breakpoint('<=small') {
+      padding: 0 2rem;
+    }
+  }    
+}
+
+.about-me-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: calc(var(--siteWidth) + 125px);
+  margin: 3rem auto;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+
+  @include breakpoint('<=medium') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint('<=small') {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+  }
+
+  b {
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-left: -1rem;
+  }
+
+  strong {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  & > li {
+    position: relative;
+    padding: 2rem 1rem 2rem 2rem;
+    margin: 0 auto;
+    z-index: 1;
+    box-shadow: 0.75rem 0.75rem 0 0.25rem var(--teal);
+    border: 1px solid var(--light);
+    width: 100%;
+    height: fit-content;
+
+    ul {
+      margin: 0;
+    }        
+  }
+}
+
+.list-of-tech {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  row-gap: 1rem;
+
+  li {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+  }
+
+  img {
+    object-fit: contain;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+}

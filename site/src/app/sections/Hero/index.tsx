@@ -1,18 +1,14 @@
 "use client"
 
-import React from 'react';
-
-import Byline from './Byline';
-
-// import Scroll from '../Scroll';
+import React, { useEffect } from 'react';
 
 import Circuits from '../../sketches/Circuits';
-
 import Bust from "../../assets/svgs/Bust";
 
+import Byline from './Byline';
 import styles from './styles.module.scss'
 
-const Hero = ({}) => {
+const Hero = ({scrollToId = "one"}) => {
   return (
     <>
       <Circuits className={styles["circuits"]} />
@@ -31,16 +27,11 @@ const Hero = ({}) => {
             <h1>karina chow</h1>
             <Byline className={styles["byline"]} />
           </div>
-          <ScrollButton />
+          <a href={`#${scrollToId}`} className={styles["more"]}>Learn more</a>
         </div>
       </section>
     </>
   );
 };
-
-const ScrollButton = () => {
-  return <a href="" className={styles["more"]}>Learn more</a>
-}
-
 
 export default Hero;
