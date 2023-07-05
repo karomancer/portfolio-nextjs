@@ -47,6 +47,10 @@ html {
   background-color: white; 
 }
 
+/**
+ * Typography
+ **/
+
 h1,
 h2,
 h3,
@@ -139,7 +143,15 @@ p {
   margin: 0 0 _size(element-margin) 0;
 }
 
-/* List */
+/**
+  * Containers
+  **/
+
+section {
+  width: 100vw;
+}
+
+/* Lists */
 
 ol {
   list-style: decimal;
@@ -201,3 +213,4 @@ svg {
     fill: var(--dark);
   }
 }
+
