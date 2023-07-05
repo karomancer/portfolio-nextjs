@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import compareAsc from "date-fns/compareAsc";
 
 import Shot, {ShotType} from './Shot';
 import styles from "./styles.module.scss"
@@ -19,7 +20,7 @@ async function getData() {
 }
 
 const Section = async ({ showHeader }: Props) => {
-  const dribbbleShots = await getData();
+  const dribbbleShots = (await getData()).sort((a: ShotType, b: ShotType) => compareAsc(new Date(b.published_at), new Date(a.published_at)));
 
   return (
     <section className={styles["dribbble-section"]} id="dribbble">

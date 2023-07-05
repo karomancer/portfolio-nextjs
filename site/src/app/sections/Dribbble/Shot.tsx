@@ -11,9 +11,9 @@ type Images = {
 export type ShotType = {
   title: string;
   description: string;
-  updatedAt: string;
+  published_at: string;
   images: Images;
-  url: string;
+  html_url: string;
 };
 
 interface Props {
@@ -23,7 +23,7 @@ interface Props {
 const Shot = ({ shot }: Props) => {
   return (
     <li className={styles["dribbble-shot"]}>
-      <a href={shot.url} target="_blank">
+      <a href={shot.html_url} target="_blank">
         <div className={styles["shot-frame"]}>
           <div className={styles["dribbble-light"]}></div>
           <img src={shot.images.normal} />

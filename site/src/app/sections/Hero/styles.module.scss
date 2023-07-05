@@ -143,9 +143,9 @@ $green-hair-fade: 3.5s;
 .more {
   animation: slideUp 0.75s ease-out forwards, appear 0.5s ease-in forwards;
   animation-delay: calc($green-hair-fade + 2.25s);
+
+  transition: color 0.2s ease-in;
   opacity: 0;
-  // transition: transform 0.75s ease, opacity 0.75s ease, color 0.2s ease;
-  // transition-delay: 5s;
   position: absolute;
   left: 0;
   right: 0;
@@ -159,6 +159,7 @@ $green-hair-fade: 3.5s;
   text-align: center;
   text-transform: uppercase;
   z-index: 1;
+  
 
   &:after {
     animation: slideUp 0.75s ease-out forwards, appear 0.2s ease-in forwards;
@@ -170,15 +171,12 @@ $green-hair-fade: 3.5s;
     bottom: 0.5rem;
     left: 0;
     right: 0;
-    content: '⇣';
+    content: '⇣';    
   }
 
   &:hover {
-    color: var(--gray);
-
-    &:after {
-      bottom: 0rem;
-    }
+    text-decoration: none;
+    color: var(--dark);
   }
 }
 
