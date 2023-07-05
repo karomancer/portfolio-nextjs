@@ -12,6 +12,14 @@
   to { width: 100%; }
 }
 
+@keyframes slideUp {
+  0% {bottom: -2rem;}
+  80% {bottom: 2.5rem;}
+  100% {bottom: 2rem;}
+}
+
+$green-hair-fade: 3.5s;
+
 #banner {
   @include vendor("display", "flex");
   @include vendor("flex-direction", "column");
@@ -132,6 +140,48 @@
   color: var(--gray);
 }
 
+.more {
+  animation: slideUp 0.75s ease-out forwards, appear 0.5s ease-in forwards;
+  animation-delay: calc($green-hair-fade + 2.25s);
+  opacity: 0;
+  // transition: transform 0.75s ease, opacity 0.75s ease, color 0.2s ease;
+  // transition-delay: 5s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  bottom: -2rem;
+  border: none;
+  color: var(--gray);
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &:after {
+    animation: slideUp 0.75s ease-out forwards, appear 0.2s ease-in forwards;
+    animation-delay: calc($green-hair-fade + 2.5s);
+    transform: translateY(100%);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    content: '⇣';
+  }
+
+  &:hover {
+    color: var(--gray);
+
+    &:after {
+      bottom: 0rem;
+    }
+  }
+}
+
 
 .bust-container {
   width: 100%;
@@ -159,12 +209,12 @@
 
 .lightAnimation {
   animation: appear 1s ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 .darkAnimation {
   animation: appear 1s ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 
 .grayAnimation {
@@ -174,7 +224,7 @@
 
 .tealAnimation {
   animation: appear 1s ease-in-out forwards;
-  animation-delay: 3.5s;
+  animation-delay: $green-hair-fade;
   fill: var(--teal) !important;
 }
 

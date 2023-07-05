@@ -31,15 +31,16 @@ const Hero = ({}) => {
             <h1>karina chow</h1>
             <Byline className={styles["byline"]} />
           </div>
-          {/* <Scroll type="id" element="one">
-            <a href="#one" className="more">
-              Learn More
-            </a>
-          </Scroll> */}
+          <ScrollButton />
         </div>
       </section>
     </>
   );
 };
+
+const ScrollButton = () => {
+  return <a href="" className={styles["more"]}>Learn more</a>
+}
+
 
 export default Hero;
