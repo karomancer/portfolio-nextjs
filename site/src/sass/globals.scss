@@ -1,6 +1,6 @@
-@import './breakpoints';
+@import "./breakpoints";
 
-:root {  
+:root {
   --siteWidth: 1040px;
   --bottomMargin: 0.75rem;
   --borderRadius: 0.5rem;
@@ -44,7 +44,7 @@ body {
 }
 
 html {
-  background-color: white; 
+  background-color: white;
 }
 
 /**
@@ -70,7 +70,7 @@ h1 {
   font-size: 3rem;
   font-weight: var(--headerFontWeight);
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
@@ -83,7 +83,7 @@ h2 {
   line-height: 1.75em;
   color: var(--gray);
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 1.1em;
     line-height: 1.65em;
   }
@@ -95,7 +95,7 @@ h3 {
   font-size: 1.15em;
   line-height: 1.75em;
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     font-size: 1em;
     line-height: 1.65em;
   }
@@ -214,3 +214,44 @@ svg {
   }
 }
 
+/**
+  * Specific overrides
+  **/
+
+.wrapper {
+  padding: 3rem 0;
+
+  & > div {
+    width: var(--siteWidth);
+    margin: 0 auto;
+
+    @include breakpoint("<=large") {
+      width: 90%;
+    }
+
+    @include breakpoint("<=medium") {
+      width: 100%;
+      padding: 0 2.5rem;
+    }
+
+    @include breakpoint("<=small") {
+      padding: 0 1rem;
+      width: 100vw;
+    }
+  }
+
+  &.alt {
+    padding: 0;
+  }
+}
+
+.page {
+  @extend .wrapper;
+  padding-top: 0;
+}
+
+.linkAnnotation {
+  a {
+    margin: 0;
+  }
+}

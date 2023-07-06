@@ -1,0 +1,24 @@
+.circuits-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 15rem;
+  overflow: hidden;
+
+  h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  canvas {
+    width: 100vw;
+  }
+}

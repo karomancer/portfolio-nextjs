@@ -1,0 +1,74 @@
+@import "../sass/breakpoints";
+
+.linkedin-anchor {
+  color: rgb(10, 102, 194);
+
+  b {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: rgb(10, 102, 194);
+  }
+
+  &:hover {
+    b {
+      text-decoration: underline;
+    }
+  }
+}
+
+.upload-link {
+  display: flex;
+  color: var(--dark);
+
+  &:after {
+    display: inline-block;
+    margin-left: 0.3rem;
+    transform: translateY(5%) rotate(180deg);
+    vertical-align: bottom;
+    content: "⇪";
+  }
+}
+
+.resume {
+  position: relative;
+  background-color: var(--light);
+  padding-top: 4rem;
+}
+
+.resume-pdf {
+  width: 100%;
+  height: 1200px;
+  border-radius: calc(var(--borderRadius) * 2);
+  @include breakpoint("<=small") {
+    display: none;
+  }
+}
+
+.resume-links {
+  position: fixed;
+  left: calc(1em + (100vw - var(--siteWidth)) / 4);
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  a {
+    margin: 2rem 0 1rem;
+    display: inline-block;
+
+    font-family: var(--strongFontFamily);
+    text-transform: uppercase;
+  }
+}
+
+.pdf-viewer {
+  display: none;
+
+  @include breakpoint("<=small") {
+    display: block;
+    border-radius: calc(var(--borderRadius) * 2);
+  }
+}

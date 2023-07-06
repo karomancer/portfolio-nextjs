@@ -1,5 +1,3 @@
-import styles from "./page.module.scss";
-
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import axios from "axios";
 
@@ -28,7 +26,7 @@ const Home = ({
   dribbbleShots,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <main className={styles.main}>
+    <main>
       <Hero scrollToId="one" />
       <AboutMe id="one" />
       <Dribbble shots={dribbbleShots} />
