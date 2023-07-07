@@ -4,11 +4,11 @@ import axios from "axios";
 import About from "../sections/About";
 import Hero from "../sections/Hero";
 import Dribbble from "../sections/Dribbble";
-import { ShotType } from "@/sections/Dribbble/Shot";
+import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import Medium, { MediumPost, getMediumPosts } from "@/sections/Medium";
 
 interface Props {
-  dribbbleShots: ShotType[];
+  dribbbleShots: DribbbleShot[];
   mediumPosts: MediumPost[];
 }
 

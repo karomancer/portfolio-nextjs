@@ -68,7 +68,7 @@ const Medium = ({ mediumPosts }: Props) => (
           href="https://karomancer.medium.com/list/screw-the-rules-4e26c788b467"
           target="_blank"
         >
-          few random topics
+          random topics
         </a>
         , too.
         <br />
@@ -88,7 +88,6 @@ const Medium = ({ mediumPosts }: Props) => (
           <li
             key={`${article.title}`}
             className={styles["medium-article"]}
-            
           >
             <a href={article.link} target="_blank" style={{
               backgroundImage: `url(${article.coverImage})`,

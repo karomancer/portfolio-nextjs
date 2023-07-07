@@ -8,7 +8,7 @@ type Images = {
   "teaser": string;
 }
 
-export type ShotType = {
+export type DribbbleShot = {
   title: string;
   description: string;
   published_at: string;
@@ -17,7 +17,7 @@ export type ShotType = {
 };
 
 interface Props {
-  shot: ShotType;
+  shot: DribbbleShot;
 }
 
 const Shot = ({ shot }: Props) => {
