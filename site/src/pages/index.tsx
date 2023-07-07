@@ -7,7 +7,7 @@ import Dribbble from "../sections/Dribbble";
 import { ShotType } from "@/sections/Dribbble/Shot";
 
 interface Props {
-  dribbbleShots: ShotType[]
+  dribbbleShots: ShotType[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
@@ -26,7 +26,7 @@ const Home = ({
   dribbbleShots,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <main>
+    <main>      
       <Hero scrollToId="one" />
       <AboutMe id="one" />
       <Dribbble shots={dribbbleShots} />
