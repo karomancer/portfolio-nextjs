@@ -1,4 +1,5 @@
 @import "./breakpoints";
+@import "./fonts.scss";
 
 :root {
   --siteWidth: 1040px;
@@ -22,19 +23,20 @@
   /**
    * Fonts
    **/
-  --fontFamily: var(--futura-book), Helvetica, Futura, sans-serif;
-  --headerFontWeight: 700;
-  --bodyFontWeight: 400;
+  --fontFamily: FuturaBook, Helvetica, sans-serif;
+  --headerFontWeight: 400;
+  --bodyFontWeight: 200;
 
-  --strongFontFamily: futura-pt-bold, Futura, sans-serif;
+  --strongFontFamily: FuturaBook, Futura, sans-serif;
 
-  --condensedFontFamily: futura-pt-condensed, Futura, sans-serif;
-  --condensedFontBoldWeight: 700;
+  --condensedFontFamily: FuturaCondensed, Futura, sans-serif;
+  --condensedFontBoldWeight: 400;
 }
 
 * {
   box-sizing: border-box;
   font-family: var(--fontFamily);
+  font-weight: var(--bodyFontWeight);
   color: var(--dark);
   scroll-behavior: smooth;
 }
@@ -57,6 +59,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   line-height: 1em;
   margin: 0 0 0.25em 0;
 
@@ -68,7 +71,6 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  font-weight: var(--headerFontWeight);
 
   @include breakpoint("<=small") {
     font-size: 2.5rem;
@@ -77,8 +79,6 @@ h1 {
 }
 
 h2 {
-  font-family: var(--strongFontFamily);
-  font-weight: var(--headerFontWeight);
   font-size: 1.35em;
   line-height: 1.75em;
   color: var(--gray);
@@ -90,8 +90,6 @@ h2 {
 }
 
 h3 {
-  font-family: var(--strongFontFamily);
-  font-weight: var(--headerFontWeight);
   font-size: 1.15em;
   line-height: 1.75em;
 
@@ -102,14 +100,11 @@ h3 {
 }
 
 h4 {
-  font-weight: var(--headerFontWeight);
   font-size: 1em;
   line-height: 1.5em;
 }
 
 h5 {
-  font-family: var(--condensedFontFamily);
-  font-weight: var(--condensedFontBoldWeight);
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -128,10 +123,13 @@ a {
   }
 }
 
-strong,
+strong {
+  font-weight: 300;
+}
+
 b {
   color: _palette(fg-bold);
-  font-weight: _font(weight-bold);
+  font-weight: 400;
 }
 
 em,

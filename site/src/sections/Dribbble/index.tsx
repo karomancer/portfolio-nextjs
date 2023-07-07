@@ -19,7 +19,7 @@ const Section = ({ shots }: Props) => {
     <section className={styles["dribbble-section"]} id="dribbble">
       <div className={styles["section-two-pane"]}>
         <div className={styles["section-description"]}>
-          <span className={styles["MoMa"]}>MoMD</span>
+          <h2 className={styles["MoMa"]}>MoMD</h2>
           <h3>
             <b>M</b>useum <b>o</b>f <b>M</b>odern <b>D</b>ribbbles
           </h3>
