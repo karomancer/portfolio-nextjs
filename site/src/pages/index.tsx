@@ -1,35 +1,41 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import axios from "axios";
 
-import AboutMe from "../sections/AboutMe";
+import About from "../sections/About";
 import Hero from "../sections/Hero";
 import Dribbble from "../sections/Dribbble";
 import { ShotType } from "@/sections/Dribbble/Shot";
+import Medium, { MediumPost, getMediumPosts } from "@/sections/Medium";
 
 interface Props {
   dribbbleShots: ShotType[];
+  mediumPosts: MediumPost[];
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const res = await axios(
+  const dribbbleData = await axios(
     `https://api.dribbble.com/v2/user/shots?access_token=${process.env.DRIBBBLE_ACCESS_TOKEN}`
   );
-
-  if (res.status != 200) {
-    throw new Error(`Failed to fetch Dribbble data: ${res.status}`);
+  
+  if (dribbbleData.status != 200) {
+    throw new Error(`Failed to fetch Dribbble data: ${dribbbleData.status}`);
   }
+  
+  const mediumData: MediumPost[] = await getMediumPosts() as MediumPost[];
 
-  return { props: { dribbbleShots: res.data } };
+  return { props: { dribbbleShots: dribbbleData.data, mediumPosts: mediumData } };
 };
 
 const Home = ({
   dribbbleShots,
+  mediumPosts,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <main>      
       <Hero scrollToId="one" />
-      <AboutMe id="one" />
+      <About id="one" />
       <Dribbble shots={dribbbleShots} />
+      <Medium mediumPosts={mediumPosts} />
     </main>
   );
 };

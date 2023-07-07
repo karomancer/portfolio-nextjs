@@ -1,0 +1,334 @@
+@import "../../sass/breakpoints";
+
+$medium-color: rgba(41, 41, 41, 1);
+
+.section-description {
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+
+  h2,
+  p {
+    margin: 0 auto;
+    width: 100%;
+    max-width: calc(var(--siteWidth) - 200px);
+  }
+
+  a {
+    color: rgb(41, 41, 41);
+    text-decoration: underline;
+  }
+
+  h2 {
+    color: $medium-color;
+    line-height: 1;
+    margin-bottom: 1.25rem;
+    font-family: FuturaCondensedLight, Futura, sans-serif;
+
+    b {
+        font-family: FuturaCondensed, Futura, sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+  }
+}
+
+.view-cta {
+    font-size: 1rem;
+}
+
+.medium-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin: 2rem 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 720px;
+
+  background: repeating-linear-gradient(
+    90deg,
+    #cc893a,
+    #cc893a 0.5rem,
+    #f19830 2rem,
+    #f9a848 16rem,
+    #f19830 2rem,
+    #cc893a 0.5rem,
+    #b5762b 0.1rem
+  );
+
+  &:before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      white,
+      rgba(255, 255, 255, 0.1) 0%,
+      white 30%,
+      white 40%,
+      white 41%,
+      white 45%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    opacity: 0.5;
+  }
+}
+
+.medium-articles {
+  list-style: none;
+}
+
+.date-issue {
+  font-family: FuturaCondensedLight, Futura, sans-serif;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 0.25rem;
+  left: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+  mix-blend-mode:exclusion;
+
+  b {
+    color: var(--teal);
+    font-family: FuturaCondensed, Futura, sans-serif;
+  }
+}
+
+.magazine-title {
+  mix-blend-mode: difference;
+  font-family: FuturaCondensed, Futura, sans-serif;
+
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.8rem;
+  font-size: 5rem;
+  z-index: 1;
+  color: var(--light);
+  text-shadow: var(--dark) 0rem 0 1.25rem;
+
+  b {
+    color: var(--teal);
+    font-family: FuturaCondensed, Futura, sans-serif;
+  }
+}
+
+.medium-article {
+  position: absolute;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 16.5rem;
+  height: 22rem;
+  margin: 0.25rem;
+  border: 2px outset #eaeaea;
+  border-right: 2px double var(--gray);
+  box-shadow: 0.2rem 0.2rem 1.2rem #192627;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in;
+
+  @include breakpoint("<=xlarge") {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  @include breakpoint("<=xsmall") {
+    width: 9rem;
+    height: 14rem;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -0.75rem;
+    height: inherit;
+    width: 1.2rem;
+    z-index: 0;
+    border-right: 3px double var(--light);
+    opacity: 0.7;
+    background-color: var(--dark);
+  }
+
+  & > a {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  h4 {
+    position: absolute;
+    bottom: 2rem;
+    width: 60%;
+    font-weight: 300;
+    color: var(--light);
+    background-color: rgb(0, 0, 0, 0.6);
+    line-height: 1;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &:nth-child(odd) h4 {
+    left: 0.5rem;
+    padding-left: 0.75rem;
+  }
+
+  &:nth-child(even) h4 {
+    top: 30%;
+    height: fit-content;
+    right: 0;
+    text-align: right;
+  }
+
+  &:nth-child(1) {
+    right: 20%;
+    transform: rotate(-15deg);
+    bottom: -10%;
+    @include breakpoint("<=large") {
+      right: -10%;
+      bottom: 20%;
+    }
+
+    @include breakpoint("<=small") {
+      right: -25%;
+      bottom: 40%;
+    }
+  }
+
+  &:nth-child(2) {
+    transform: translateY(-50%) rotate(40deg);
+    bottom: -20%;
+    left: 0;
+
+    @include breakpoint("<=large") {
+      left: -5%;
+      bottom: -25%;
+    }
+
+    @include breakpoint("<=small") {
+      left: -35%;
+      bottom: -10;
+      transform: translateY(-50%) rotate(0deg);
+    }
+  }
+
+  &:nth-child(3) {
+    transform: translateY(-50%) rotate(240deg);
+    top: 10%;
+    right: 0;
+
+    @include breakpoint("<=large") {
+      right: -30%;
+    }
+  }
+
+  &:nth-child(4) {
+    bottom: 75%;
+    transform: rotate(182deg);
+    left: 60%;
+
+    @include breakpoint("<=small") {
+      left: 30%;
+      top: -15%;
+    }
+  }
+
+  &:nth-child(5) {
+    bottom: -10%;
+    transform: rotate(-10deg);
+    left: 20%;
+
+    @include breakpoint("<=large") {
+      bottom: -20%;
+    }
+
+    @include breakpoint("<=xsmall") {
+      left: 10%;
+      bottom: -10%;
+    }
+  }
+
+  &:nth-child(6) {
+    bottom: -20%;
+    transform: rotate(10deg);
+    left: 45%;
+
+    @include breakpoint("<=large") {
+      bottom: -25%;
+    }
+
+    @include breakpoint("<=xsmall") {
+      left: 60%;
+      bottom: -12%;
+    }
+  }
+
+  &:nth-child(7) {
+    right: 0;
+    bottom: -5%;
+    transform: rotate(20deg);
+
+    @include breakpoint("<=small") {
+      right: -30%;
+      bottom: 10%;
+    }
+  }
+
+  &:nth-child(8) {
+    left: 0;
+    top: 0;
+    transform: rotate(-30deg);
+
+    @include breakpoint("<=large") {
+      left: -5%;
+    }
+
+    @include breakpoint("<=xsmall") {
+      left: -38%;
+      top: 25%;
+    }
+  }
+
+  &:nth-child(9) {
+    left: 40%;
+    top: -20%;
+    transform: rotate(30deg);
+
+    @include breakpoint("<=small") {
+      left: -20%;
+      top: -10%;
+    }
+  }
+
+  &:nth-child(10) {
+    left: 20%;
+    top: -10%;
+    transform: rotate(-5deg);
+
+    @include breakpoint("<=xlarge") {
+      left: 20%;
+    }
+
+    @include breakpoint("<=large") {
+      opacity: 0;
+    }
+  }
+}
