@@ -2,6 +2,18 @@
 
 $medium-color: rgba(41, 41, 41, 1);
 
+.wood-grain-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 200vh;
+
+  svg {
+    width: 200vw;
+  }
+}
+
 .section-description {
   align-self: center;
   margin: 0 auto;
@@ -11,7 +23,7 @@ $medium-color: rgba(41, 41, 41, 1);
   h2,
   p {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     max-width: calc(var(--siteWidth) - 200px);
   }
 
@@ -24,39 +36,22 @@ $medium-color: rgba(41, 41, 41, 1);
     color: $medium-color;
     line-height: 1;
     margin-bottom: 1.25rem;
-    font-family: FuturaCondensedLight, Futura, sans-serif;
-
-    b {
-        font-family: FuturaCondensed, Futura, sans-serif;
-        font-size: 3rem;
-        font-weight: 400;
-    }
+    font-family: FuturaLight, Futura, sans-serif;
   }
 }
 
 .view-cta {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .medium-section {
   position: relative;
   overflow: hidden;
   display: flex;
-  margin: 2rem 0;
   width: 100vw;
   height: 100vh;
   max-height: 720px;
-
-  background: repeating-linear-gradient(
-    90deg,
-    #cc893a,
-    #cc893a 0.5rem,
-    #f19830 2rem,
-    #f9a848 16rem,
-    #f19830 2rem,
-    #cc893a 0.5rem,
-    #b5762b 0.1rem
-  );
+  overflow: hidden;
 
   &:before {
     content: "";
@@ -66,14 +61,11 @@ $medium-color: rgba(41, 41, 41, 1);
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(
-      white,
-      rgba(255, 255, 255, 0.1) 0%,
-      white 30%,
-      white 40%,
-      white 41%,
-      white 45%,
-      rgba(255, 255, 255, 0.1) 100%
+    background: radial-gradient(
+      var(--light),
+      var(--light) 20%,
+      transparent 70%,
+      brown 100%
     );
     opacity: 0.5;
   }
@@ -85,14 +77,14 @@ $medium-color: rgba(41, 41, 41, 1);
 
 .date-issue {
   font-family: FuturaCondensedLight, Futura, sans-serif;
-  color: white;
+  color: var(--teal);
   display: block;
   position: absolute;
-  top: 0.25rem;
+  top: 1.75rem;
   left: 1rem;
   font-weight: 200;
   font-size: 0.8rem;
-  mix-blend-mode:exclusion;
+  mix-blend-mode: difference;
 
   b {
     color: var(--teal);
@@ -101,21 +93,25 @@ $medium-color: rgba(41, 41, 41, 1);
 }
 
 .magazine-title {
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
   font-family: FuturaCondensed, Futura, sans-serif;
-
+  
   display: block;
   position: absolute;
-  top: 0.5rem;
+  top: 2rem;
   left: 0.8rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
   z-index: 1;
-  color: var(--light);
+  color: white;
   text-shadow: var(--dark) 0rem 0 1.25rem;
 
   b {
     color: var(--teal);
     font-family: FuturaCondensed, Futura, sans-serif;
+  }
+
+  @include breakpoint("<=small") {
+    font-size: 3.5rem;
   }
 }
 
@@ -124,25 +120,44 @@ $medium-color: rgba(41, 41, 41, 1);
   overflow: hidden;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 16.5rem;
-  height: 22rem;
+  
   margin: 0.25rem;
   border: 2px outset #eaeaea;
   border-right: 2px double var(--gray);
-  box-shadow: 0.2rem 0.2rem 1.2rem #192627;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
+  box-shadow: 0.2rem 0.2rem 1rem #192627;
+  padding: 0;  
   transition: all 0.5s ease-in;
+  filter: brightness(0.9);
 
-  @include breakpoint("<=xlarge") {
-    width: 15rem;
-    height: 20rem;
+  width: 15rem;
+  height: 20rem;
+
+  @include breakpoint("<=medium") {
+    width: 12rem;
+    height: 17rem;
   }
 
   @include breakpoint("<=xsmall") {
-    width: 9rem;
+    width: 10.5rem;
     height: 14rem;
+  }
+
+  &:hover {
+    box-shadow: 0.2rem 0.2rem 2rem var(--gray);
+    filter: brightness(1);
+    width: 15.15rem;
+    height: 20.15rem;
+    z-index: 2;
+
+    @include breakpoint("<=medium") {
+      width: 12.1rem;
+      height: 17.1rem;
+    }
+  
+    @include breakpoint("<=xsmall") {
+      width: 10.6rem;
+      height: 14.1rem;
+    }
   }
 
   &:after {
@@ -159,13 +174,19 @@ $medium-color: rgba(41, 41, 41, 1);
   }
 
   & > a {
-    width: fit-content;
-    height: fit-content;
+    position: absolute;
+    top: -0.85rem;
+    display: block;
+    z-index: 0;
+    width: inherit;
+    height: 120%;
+    background-size: cover;
+    background-position: center;
   }
 
   h4 {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     width: 60%;
     font-weight: 300;
     color: var(--light);
@@ -173,6 +194,10 @@ $medium-color: rgba(41, 41, 41, 1);
     line-height: 1;
     padding: 0.5rem;
     margin-bottom: 0;
+
+    @include breakpoint("<=small") {
+      font-size: 0.8rem;
+    }
   }
 
   p {
@@ -192,7 +217,7 @@ $medium-color: rgba(41, 41, 41, 1);
   }
 
   &:nth-child(even) h4 {
-    top: 30%;
+    top: 7.5rem;
     height: fit-content;
     right: 0;
     text-align: right;
@@ -202,13 +227,13 @@ $medium-color: rgba(41, 41, 41, 1);
     right: 20%;
     transform: rotate(-15deg);
     bottom: -10%;
-    @include breakpoint("<=large") {
-      right: -10%;
+    @include breakpoint("<=small") {
+      right: -20%;
       bottom: 20%;
     }
 
-    @include breakpoint("<=small") {
-      right: -25%;
+    @include breakpoint("<=xsmall") {
+      right: -35%;
       bottom: 40%;
     }
   }
@@ -218,7 +243,7 @@ $medium-color: rgba(41, 41, 41, 1);
     bottom: -20%;
     left: 0;
 
-    @include breakpoint("<=large") {
+    @include breakpoint("<=medium") {
       left: -5%;
       bottom: -25%;
     }
@@ -235,9 +260,13 @@ $medium-color: rgba(41, 41, 41, 1);
     top: 10%;
     right: 0;
 
-    @include breakpoint("<=large") {
-      right: -30%;
+    @include breakpoint("<=medium") {
+      right: -10%;
     }
+
+    @include breakpoint("<=xsmall") {
+        right: -30%;
+      }
   }
 
   &:nth-child(4) {
@@ -249,6 +278,10 @@ $medium-color: rgba(41, 41, 41, 1);
       left: 30%;
       top: -15%;
     }
+
+    @include breakpoint("<=xsmall") {
+        left: 20%;
+      }
   }
 
   &:nth-child(5) {
@@ -256,14 +289,14 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(-10deg);
     left: 20%;
 
-    @include breakpoint("<=large") {
-      bottom: -20%;
-    }
-
-    @include breakpoint("<=xsmall") {
+    @include breakpoint("<=medium") {
       left: 10%;
       bottom: -10%;
     }
+
+    @include breakpoint("<=xsmall") {
+        bottom: -15%;
+      }
   }
 
   &:nth-child(6) {
@@ -271,8 +304,9 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(10deg);
     left: 45%;
 
-    @include breakpoint("<=large") {
-      bottom: -25%;
+    @include breakpoint("<=medium") {
+      left: 37%;
+      bottom: -12%;
     }
 
     @include breakpoint("<=xsmall") {
@@ -287,7 +321,12 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(20deg);
 
     @include breakpoint("<=small") {
-      right: -30%;
+        right: -10%;
+        bottom: 0%;
+      }
+
+    @include breakpoint("<=xsmall") {
+      right: -35%;
       bottom: 10%;
     }
   }
@@ -297,12 +336,14 @@ $medium-color: rgba(41, 41, 41, 1);
     top: 0;
     transform: rotate(-30deg);
 
-    @include breakpoint("<=large") {
-      left: -5%;
+    @include breakpoint("<=medium") {
+        top: -10%;
+      left: -15%;
     }
 
     @include breakpoint("<=xsmall") {
-      left: -38%;
+        transform: rotate(10deg);
+      left: -40%;
       top: 25%;
     }
   }
@@ -313,6 +354,11 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(30deg);
 
     @include breakpoint("<=small") {
+        left: -20%;
+        top: 10%;
+      }
+
+    @include breakpoint("<=xsmall") {
       left: -20%;
       top: -10%;
     }
@@ -323,11 +369,11 @@ $medium-color: rgba(41, 41, 41, 1);
     top: -10%;
     transform: rotate(-5deg);
 
-    @include breakpoint("<=xlarge") {
+    @include breakpoint("<=medium") {
       left: 20%;
     }
 
-    @include breakpoint("<=large") {
+    @include breakpoint("<=small") {
       opacity: 0;
     }
   }

@@ -14,7 +14,5 @@ export default async function getMediumPosts() {
     };
   });
 
-    console.log(mediumPosts)
-
-  return mediumPosts;
+  return mediumPosts.reverse();
 }

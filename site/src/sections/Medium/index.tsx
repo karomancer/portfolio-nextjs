@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import format from "date-fns/format";
 
+import WoodGrain from "./WoodGrain"
 import getMediumPosts from "./getMediumPosts";
 import styles from "./styles.module.scss";
 
@@ -21,8 +22,11 @@ interface Props {
 
 const Medium = ({ mediumPosts }: Props) => (
   <section className={styles["medium-section"]}>
+    <WoodGrain className={styles["wood-grain-background"]} />
     <div className={styles["section-description"]}>
-      <h2><b>KACHOW!</b> Digest</h2>
+      <h2>
+        <b>KACHOW!</b> Digest
+      </h2>
       <p>
         Sometimes I write things, and no, I don't use AI (yet?). I write about{" "}
         <a
@@ -69,31 +73,31 @@ const Medium = ({ mediumPosts }: Props) => (
         , too.
         <br />
         <br />
-        <span className={styles["view-cta"]}>You can view all my articles and follow me on{" "}
-        <a href="https://medium.com/@karomancer" target="_blank">
-          Medium
-        </a>
-        .</span>
+        <span className={styles["view-cta"]}>
+          You can view all my articles and follow me on{" "}
+          <a href="https://medium.com/@karomancer" target="_blank">
+            Medium
+          </a>
+          .
+        </span>
       </p>
     </div>
     <div>
       <ul className={styles["medium-articles"]}>
-        {mediumPosts?.reverse().map((article, i) => (
+        {mediumPosts?.map((article, i) => (
           <li
             key={`${article.title}`}
             className={styles["medium-article"]}
-            style={{
-              backgroundImage: `url(${article.coverImage})`,
-            }}
+            
           >
-            <a href={article.link} target="_blank">
+            <a href={article.link} target="_blank" style={{
+              backgroundImage: `url(${article.coverImage})`,
+            }}>
               <span className={styles["date-issue"]}>
                 {format(new Date(article.pubDate), "MMM do yyy")} |{" "}
                 <b>Issue #{mediumPosts.length - i}</b>
               </span>
-              <span className={styles["magazine-title"]}>
-                KACHOW!
-              </span>
+              <span className={styles["magazine-title"]}>KACHOW!</span>
               <h4>{article.title}</h4>
               {/* <p>{article.virtuals.subtitle}</p> */}
             </a>
