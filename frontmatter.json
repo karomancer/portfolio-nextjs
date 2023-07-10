@@ -1,7 +1,7 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "next",
-  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.publicFolder": "[[workspace]]/site/public",
   "frontMatter.preview.host": "http://localhost:3000",
   "frontMatter.content.pageFolders": [
     {
@@ -62,6 +62,19 @@
           "type": "draft"
         },
         {
+          "title": "URL",
+          "name": "url",
+          "type": "string",
+          "editable": true
+        },
+        {
+          "title": "Technologies",
+          "name": "technologies",
+          "type": "taxonomy",
+          "taxonomyId": "technologies",
+          "editable": true
+        },
+        {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
@@ -78,5 +91,27 @@
         }
       ]
     }
+  ],
+  "frontMatter.taxonomy.technologies": [
+    {
+      "id": "technologies",
+      "options": [
+        "Arduino",
+        "C#",
+        "Unity"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "fabrication",
+    "itp",
+    "leds",
+    "pcomp",
+    "sewing",
+    "wearables"
+  ],
+  "frontMatter.taxonomy.categories": [
+    "cosplay",
+    "pcomp"
   ]
 }

@@ -1,0 +1,112 @@
+@import "../../sass/breakpoints";
+
+.markdown {
+    h3 {
+      margin-top: 1rem;
+    }    
+
+    p {
+        video:first-child, img:first-child {
+            margin-top: 1rem;
+        }
+
+        video, img {
+            width: fit-content;
+            max-width: 100%;
+
+            @include breakpoint("<=medium") {
+                width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        img:not(:first-child),
+        video:not(:first-child) {
+            vertical-align: top;
+            max-height: 363px;
+            max-width: calc((var(--siteWidth)/2) - 0.2rem);
+            object-fit: contain;            
+
+            @include breakpoint("<=medium") {
+                margin-bottom: 0.2rem;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        video:not(:first-child) {
+            object-fit: cover;
+            height: 363px;
+        }
+
+        video:last-child, img:last-child {
+            margin-bottom: 2rem;
+        }
+    }
+
+    // video + video, video ~ video, video + img, img + video, img + img, img ~ img {
+    //     display: inline-block;
+    //     width: 50%;
+    // }
+}
+
+.checkbox-li {
+    list-style: none;;
+    margin: 0;
+    padding: 0;
+
+    s {
+        color: var(--gray);
+    }
+}
+
+.embed {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--light);
+    height: fit-content;
+    transition: all 0.2s ease-in;
+    background-color: rgba(0, 0, 0, 0.01);
+    margin-bottom: 2rem;
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0.2rem 0.25rem 0.5rem var(--light);
+    }
+
+    & > img {
+        height: inherit;
+        margin: 0 !important;
+        width: 40% !important;
+        border-right: 1px solid var(--light);
+        border-bottom: none;
+
+        @include breakpoint("<=small") {
+            width: 100% !important;
+            border-right: none;
+            border-bottom: 1px solid var(--light);
+        }
+    }
+
+    & > span {
+        padding: 1rem;
+
+        strong {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        @include breakpoint("<=small") {
+            display: block;
+        }
+    }
+
+    @include breakpoint("<=small") {
+        display: block;
+        overflow:auto;
+    }
+}

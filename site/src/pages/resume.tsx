@@ -30,7 +30,7 @@ const Resume = () => (
       <div className={styles["resume-links"]}>
         <a
           href={RESUME_URL}
-          className={styles["upload-link"]}
+          className={styles["download-link"]}
           download="KarinaChow_resume"
         >
           Download
@@ -40,5 +40,7 @@ const Resume = () => (
     </main>
   </>
 );
+
+Resume.displayName = "Resume"
 
 export default Resume;

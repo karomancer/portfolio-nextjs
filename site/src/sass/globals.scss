@@ -202,6 +202,36 @@ footer {
   height: var(--bottomMargin);
 }
 
+code {
+  border-radius: 3px;
+  font-size: 0.9em;
+  letter-spacing: 0;
+  padding: 0.25em;
+  
+  &, * {
+    font-family: monospace !important;
+  }
+}
+
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: monospace !important;
+  font-size: 0.9em;
+  margin: 0 0 1rem 0;
+
+  code {
+    display: block;
+    background: var(--light) !important;
+    line-height: 1.75em;
+    padding: 1em 1.5em;
+    overflow-x: auto;
+
+    &, * {
+      font-family: monospace !important;
+    }
+  }
+}
+
 svg {
   .teal {
     fill: var(--teal);

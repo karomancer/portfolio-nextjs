@@ -16,7 +16,7 @@
   }
 }
 
-.upload-link {
+.download-link {
   display: flex;
   color: var(--dark);
 
@@ -46,14 +46,14 @@
 
 .resume-links {
   position: fixed;
-  left: calc(1em + (100vw - var(--siteWidth)) / 4);
+  left: calc((100vw - var(--siteWidth)) / 4);
 
   display: flex;
   align-items: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: fit-content;
 
   a {
     margin: 2rem 0 1rem;
@@ -61,6 +61,16 @@
 
     font-family: var(--strongFontFamily);
     text-transform: uppercase;
+
+    @include breakpoint("<=xlarge") {
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  @include breakpoint("<=xlarge") {
+    position: static;
+    width: 100%;
   }
 }
 
