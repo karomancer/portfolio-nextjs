@@ -1,19 +1,22 @@
 .top-nav {
-    position: sticky;
+    position: fixed;
     top: 0;
-    
-    z-index: 5;
+    left: 0;
+    z-index: 50;
+    transition: all 0.5s ease;
+    height: 4rem;
+    width: 100%;
 
-    
     ul {
         position: absolute;
-        right: 1rem;
+        right: 2rem;
         width: fit-content;
         display: flex;
-        gap: 1.5rem;
+        gap: 2rem;
         list-style: none;
 
         a {
+            transition: color 0.2s ease-in;
             font-weight: 300;
             color: var(--gray);
             font-size: 1.5rem;
@@ -24,4 +27,20 @@
             }
         }
     }
+}
+
+.top-nav.light {
+    ul a {
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--light);
+        }
+    }
+}
+
+.top-nav.with-background {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0.5rem var(--light);
 }

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "[[workspace]]/site/public",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "portfolio",
+      "path": "[[workspace]]/site/src/content"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "portfolioPiece",
+      "previewPath": null,
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "editable": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "editable": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "/portfolio/{{slug}}"
+        },
+        {
+          "title": "Collaborators",
+          "name": "collaborators",
+          "type": "list"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Thumbnail",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Cover image",
+          "name": "cover",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "URL",
+          "name": "url",
+          "type": "string",
+          "editable": true
+        },
+        {
+          "title": "Technologies",
+          "name": "technologies",
+          "type": "taxonomy",
+          "taxonomyId": "technologies",
+          "editable": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.technologies": [
+    {
+      "id": "technologies",
+      "options": [
+        "Arduino",
+        "C#",
+        "Unity"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "fabrication",
+    "itp",
+    "leds",
+    "pcomp",
+    "sewing",
+    "wearables"
+  ],
+  "frontMatter.taxonomy.categories": [
+    "cosplay",
+    "pcomp"
+  ]
+}
