@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import PDFViewer from '@/components/PDFViewer';
 
@@ -17,10 +16,6 @@ const Asset = (asset: ImageType) => {
   switch (contentType) {
     case 'application/pdf':
       return <PDFViewer pdfUrl={`https:${asset.src}`} />;
-    case 'image/jpeg':
-    case 'image/png':
-    case 'image/gif':
-      return <Image alt={asset.alt} src={asset.src} />;
     case 'video/mp4':
       return (
         <video controls>
@@ -29,7 +24,7 @@ const Asset = (asset: ImageType) => {
         </video>
       );
     default:
-      return null;
+      return <img alt={asset.alt} src={asset.src} />;
   }
 };
 
