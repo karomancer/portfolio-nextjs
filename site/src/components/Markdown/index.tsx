@@ -1,15 +1,15 @@
-import 'highlight.js/styles/github.css';
-import hljs from "highlight.js"
-
+import "highlight.js/styles/github.css";
+import hljs from "highlight.js";
+import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
-import { MetascrapedInfo } from "@/utils/unfurlLink"
+import { MetascrapedInfo } from "@/utils/unfurlLink";
 
+import Asset from "./Asset";
 import Embed from "./Embed";
+import { ListItem } from "./types";
 
 import styles from "./styles.module.scss";
-import { Image, ListItem } from "./types";
-import { useEffect } from 'react';
 
 // Embed link data can be fetched in static props
 // and mapped over here
@@ -27,8 +27,6 @@ interface Props {
  * REGEX OUR FAVORITE
  */
 
-const VIDEO_PATTERN = /(.*)[.mp4|.mov]$/;
-
 const CHECKED_CHECKBOX_PATTERN = /\[x\]/;
 const UNCHECKED_CHECKBOX_PATTERN = /\[ \]/;
 
@@ -39,7 +37,7 @@ const UNCHECKED_CHECKBOX_PATTERN = /\[ \]/;
 export default function Markdown({ className, children, embeds }: Props) {
   useEffect(() => {
     hljs.highlightAll();
-  }, [])
+  }, []);
   return (
     <article>
       <ReactMarkdown
@@ -60,21 +58,6 @@ export default function Markdown({ className, children, embeds }: Props) {
     </article>
   );
 }
-
-const Asset = (props: Image) => {
-  const isVideo = props?.src?.match(VIDEO_PATTERN);
-  if (isVideo) {
-    return (
-      <video controls>
-        <source src={props.src} type={`video/mp4`} />
-        <source src={props.src} type={`video/${props.src?.slice(-3)}`} />
-        {props.alt}
-      </video>
-    );
-  }
-
-  return <img {...props} />;
-};
 
 const Li = ({ children, ...props }: ListItem) => {
   const hasCheckedCheckbox = children[0].match(CHECKED_CHECKBOX_PATTERN);

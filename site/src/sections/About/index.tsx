@@ -6,6 +6,7 @@ import {
   subMonths,
   getDaysInMonth,
 } from "date-fns";
+import Image from "next/image";
 
 import styles from "./styles.module.scss";
 
@@ -144,8 +145,10 @@ const List = ({ title, items, logos = [] }: ListProps) => (
           <ul className={styles["list-of-tech"]}>
             {logos.map((logo) => (
               <li key={`logo-${logo}`}>
-                <img
-                  src={`../images/logos/${logo}.png`}
+                <Image
+                  width={60}
+                  height={60}
+                  src={`/images/logos/${logo}.png`}
                   alt={`Logo for ${logo}`}
                 />
               </li>

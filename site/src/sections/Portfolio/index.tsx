@@ -1,7 +1,8 @@
-import { ReadMDX } from "@/utils/readMdx";
 import { format } from "date-fns";
 
+import { ReadMDX } from "@/utils/readMdx";
 import pageStyles from "@/pages/portfolio/styles.module.scss";
+
 import styles from "./styles.module.scss";
 
 interface PortfolioProps {

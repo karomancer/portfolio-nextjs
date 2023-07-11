@@ -3,7 +3,7 @@ import styles from "./resume.module.scss";
 import React from "react";
 import Head from "next/head";
 
-import PDFViewer from "@/components/richtext/PDFViewer";
+import PDFViewer from "@/components/PDFViewer";
 
 import CircuitsHeader from "@/components/CircuitsHeader";
 
