@@ -26,7 +26,7 @@ const Shot = ({ shot }: Props) => {
       <a href={shot.html_url} target="_blank">
         <div className={styles["shot-frame"]}>
           <div className={styles["dribbble-light"]}></div>
-          <img src={shot.images.normal} />
+          <img alt="" role="presentation" src={shot.images.normal} />
         </div>
         <h4 className={styles["title"]}>{shot.title}</h4>
       </a>

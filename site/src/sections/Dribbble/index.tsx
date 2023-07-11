@@ -2,16 +2,16 @@ import React from "react";
 
 import compareAsc from "date-fns/compareAsc";
 
-import Shot, { ShotType } from "./Shot";
+import Shot, { DribbbleShot } from "./Shot";
 import styles from "./styles.module.scss";
 
 interface Props {
-  shots: ShotType[];
+  shots: DribbbleShot[];
 }
 
 const Section = ({ shots }: Props) => {
   const sortedShots =
-    shots.sort((a: ShotType, b: ShotType) =>
+    shots.sort((a: DribbbleShot, b: DribbbleShot) =>
       compareAsc(new Date(b.published_at), new Date(a.published_at))
     ).slice(0, 6);
 
@@ -39,7 +39,7 @@ const Section = ({ shots }: Props) => {
         </div>
         <div className={styles["portfolio-sections"]}>
           <ul className={styles["shots-desktop"]}>
-            {sortedShots.map((shot: ShotType) => (
+            {sortedShots.map((shot: DribbbleShot) => (
               <Shot key={`shot-${shot.title}`} shot={shot} />
             ))}
           </ul>
