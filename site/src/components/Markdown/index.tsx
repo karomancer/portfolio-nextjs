@@ -60,27 +60,29 @@ export default function Markdown({ className, children, embeds }: Props) {
 }
 
 const Li = ({ children, ...props }: ListItem) => {
-  const hasCheckedCheckbox = children[0].match(CHECKED_CHECKBOX_PATTERN);
-  const hasUncheckedCheckbox = children[0].match(UNCHECKED_CHECKBOX_PATTERN);
+  if (typeof children[0] == "string") {
+    const hasCheckedCheckbox = children[0].match(CHECKED_CHECKBOX_PATTERN);
+    const hasUncheckedCheckbox = children[0].match(UNCHECKED_CHECKBOX_PATTERN);
 
-  if (hasCheckedCheckbox) {
-    const newChildren = children.map((c, i) => (i == 0 ? c.slice(3) : c));
-    return (
-      <li {...props} className={styles["checkbox-li"]}>
-        <s>
-          <input type="checkbox" checked disabled />
+    if (hasCheckedCheckbox) {
+      const newChildren = children.map((c, i) => (i == 0 ? c.slice(3) : c));
+      return (
+        <li {...props} className={styles["checkbox-li"]}>
+          <s>
+            <input type="checkbox" checked disabled />
+            {newChildren}
+          </s>
+        </li>
+      );
+    } else if (hasUncheckedCheckbox) {
+      const newChildren = children.map((c, i) => (i == 0 ? c.slice(3) : c));
+      return (
+        <li {...props} className={styles["checkbox-li"]}>
+          <input type="checkbox" disabled />
           {newChildren}
-        </s>
-      </li>
-    );
-  } else if (hasUncheckedCheckbox) {
-    const newChildren = children.map((c, i) => (i == 0 ? c.slice(3) : c));
-    return (
-      <li {...props} className={styles["checkbox-li"]}>
-        <input type="checkbox" disabled />
-        {newChildren}
-      </li>
-    );
+        </li>
+      );
+    }
   }
 
   return <li {...props}>{children}</li>;

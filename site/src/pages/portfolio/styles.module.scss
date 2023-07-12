@@ -3,10 +3,12 @@
 .portfolio-piece {
   ul,
   ol,
+  li,
   span,
   code,
   p {
     font-size: 1.2rem;
+    line-height: 1.75;
   }
 
   img {
@@ -105,6 +107,11 @@
   @include breakpoint("<=small") {
     flex-direction: column;
   }
+
+  i {
+    display: block;
+    margin-top: 1rem;
+  }
 }
 
 .cover-image {
@@ -113,6 +120,7 @@
   position: relative;
   background-size: cover;
   background-attachment: fixed;
+  background-position: 40%;
   margin-bottom: 2rem;
 
   &:before {

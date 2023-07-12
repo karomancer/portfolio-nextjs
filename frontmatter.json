@@ -40,6 +40,12 @@
           "type": "list"
         },
         {
+          "title": "Class",
+          "name": "classes",
+          "editable": true,
+          "type": "string"
+        },
+        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",

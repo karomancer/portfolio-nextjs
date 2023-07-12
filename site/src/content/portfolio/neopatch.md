@@ -9,18 +9,17 @@ preview: /images/portfolio/neopatch/PXL_20221214_120239918.jpg
 cover: /images/portfolio/neopatch/PXL_20221211_073125565.MP.jpg
 draft: false
 tags:
-  - itp
-  - LEDs
+  - fabrication
   - pcomp
   - sewing
-  - fabrication
   - wearables
 categories:
-  - school project
+  - ITP
 type: portfolioPiece
 technologies:
   - Arduino
 url: https://github.com/karomancer/jacket
+class: Intro to Physical Computing
 ---
 
 ![Video of the project at the winter showcase](/images/portfolio/neopatch/jacket_showcase.mp4)
@@ -68,11 +67,17 @@ Here are the components purchased:
 ![Screenshot of an Adafruit receipt for light rings](/images/portfolio/neopatch/Untitled%203.png)
 
 ![Screenshot of a receipt](/images/portfolio/neopatch/Untitled%204.png)
+
 ![Screenshot of a receipt](/images/portfolio/neopatch/Untitled%205.png)
+
 ![Screenshot of a receipt](/images/portfolio/neopatch/Untitled%206.png)
+
 ![Screenshot of a receipt](/images/portfolio/neopatch/Untitled%207.png)
+
 ![Screenshot of a receipt](/images/portfolio/neopatch/Untitled%208.png)
+
 ![Screenshot of an Amazon order for RFID tags](/images/portfolio/neopatch/Untitled%209.png)
+
 ![Screenshot of an Amazon order for embroidered patches](/images/portfolio/neopatch/Untitled%2010.png)
 
 Total cost ended up being around $200.
@@ -108,8 +113,6 @@ Neopixels are pretty easy to wire up; all they require is a power, ground, and d
 So we went through to wire up the matrix and strands. We noticed a few things:
 
 - Instead of being addressable like a 2D array (with rows and columns), the matrix is a singular array that snakes around. So I wrote a little helper function to help us address it like a 2D array:
-
-![Matrix snaking around pattern](/images/portfolio/neopatch/snakematrix.png)
 
 ```c
 // Ngl, pretty proud of this one
@@ -170,10 +173,10 @@ In order to make the lights removable for washing and debugging purposes, we als
 
 We started with these wires with sockets and snaps are called that we found on the junk shelf, then seam-ripped the lining of the jacket. Lastly, I made little grommets to feed the wires through that ensure we don’t lose the snaps the lights go into.
 
+![Photograph of a grommet hole in the breast pocket of the jacket with a neat bundle of wires sticking through it](/images/portfolio/neopatch/PXL_20221213_074913798.jpg)
 ![Photograph of a messy desk covered in wires](/images/portfolio/neopatch/PXL_20221210_234418703.jpg)
 ![Photograph of a jacket being seam-ripped](/images/portfolio/neopatch/PXL_20221210_220320793.jpg)
 ![Photograph of wires being stripped in front of a jacket](/images/portfolio/neopatch/PXL_20221210_234414432.jpg)
-![Photograph of a grommet hole in the breast pocket of the jacket with a neat bundle of wires sticking through it](/images/portfolio/neopatch/PXL_20221213_074913798.jpg)
 
 Soldered a ribbon cable onto the RFID reader itself, placed in a front breast pocket, then wires fed through the back of the jacket. Let's look at this cabling job one last time before it's all sewn into the lining.
 

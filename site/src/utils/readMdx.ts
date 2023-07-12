@@ -7,6 +7,7 @@ export interface ReadMDX {
     slug: string;
     date: Date | string;
     categories: string[];
+    class?: string;
     tags: string[];
     description: string;
     preview: string;

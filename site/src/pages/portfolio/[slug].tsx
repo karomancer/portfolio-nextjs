@@ -109,6 +109,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
         <div className={styles["portfolio-metadata"]}>
           <div>
             {frontmatter.description}
+            {frontmatter.class && <><i>Class: {frontmatter.class}</i></>}
             <TagsList tags={frontmatter.tags} />
           </div>
           <ul>

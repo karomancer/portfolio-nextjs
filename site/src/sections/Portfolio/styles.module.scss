@@ -1,5 +1,6 @@
 .portfolio-section {
   ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,7 +14,8 @@
 .portfolio-piece {
   position: relative;
   overflow: hidden;
-  max-width: 25%;
+  max-width: 400px;
+  height: fit-content;
   padding: 0;
 
   a {
@@ -26,10 +28,10 @@
 
       img + div {
         transform: translateY(-100%);
-        }
-    
-    div + div {
-          transform: translateY(0);
+      }
+
+      div + div {
+        transform: translateY(0);
       }
     }
   }
@@ -46,6 +48,7 @@
   position: absolute;
   bottom: 0;
   padding: 1.25rem;
+  width: 100%;
 
   h6 {
     strong {
@@ -59,6 +62,24 @@
     font-size: 2rem;
     color: white;
   }
+
+  &:before {
+    position: absolute;
+    mix-blend-mode: color-burn;
+    transition: all 0.2s ease;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: inherit;
+    height: 200px;
+    background: linear-gradient(
+      transparent,
+      transparent 0%,
+      transparent 40%,
+      var(--dark) 100%
+    );
+  }
 }
 
 .description {
@@ -68,7 +89,7 @@
   transform: translateY(calc(100% - 0.75rem));
   padding: 1.25rem;
 
-  background: var(--teal);
+  background: var(--teal);      
 
   h4,
   p {
