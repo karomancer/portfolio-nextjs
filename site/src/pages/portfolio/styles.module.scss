@@ -33,7 +33,7 @@
       display: block;
       position: absolute;
       width: calc(var(--siteWidth) + 2rem);
-      margin-left: 1rem; 
+      margin-left: 1rem;
       border-top: 0.25rem solid var(--teal);
 
       @include breakpoint("<=medium") {
@@ -60,53 +60,50 @@
 
 .portfolio-metadata {
   margin-bottom: 3rem;
-  width: 100vw;
-  height: calc(inherit + 2rem);
+  height: fit-content;
+  max-width: var(--siteWidth);
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
 
-  & > div {
-    max-width: var(--siteWidth);
-    margin: 0 auto;
+  div {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: 70%;
+    ul {
+      margin-top: 1.5rem;
+    }
+
+    @include breakpoint("<=medium") {
+      width: 60%;
+    }
+
+    @include breakpoint("<=medium") {
+      width: 100%;
+    }
+  }
+
+  div + ul {
+    width: 30%;
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    p {
-      line-height: 1.5;
-      width: 70%;
-      ul {
-        margin-top: 1.5rem;
-      }
-
-      @include breakpoint("<=medium") {
-        width: 60%;
-      }
-
-      @include breakpoint("<=medium") {
-        width: 100%;
-      }
+    @include breakpoint("<=medium") {
+      width: 40%;
     }
 
-    & > ul {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      font-size: 1rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      @include breakpoint("<=medium") {
-        width: 40%;
-      }
-
-      @include breakpoint("<=medium") {
-        width: 100%;
-      }
+    @include breakpoint("<=medium") {
+      width: 100%;
     }
+  }
 
-    @include breakpoint("<=small") {
-      flex-direction: column;
-    }
+  @include breakpoint("<=small") {
+    flex-direction: column;
   }
 }
 

@@ -12,11 +12,11 @@ import {
 
 import styles from "./styles.module.scss";
 import Head from "next/head";
+import { TagsList } from "@/sections/Portfolio";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("src/content/portfolio");
   const paths = files.map((fileName) => {
-    console.log(fileName.slice(0, -3))
     return {
       params: {
         slug: fileName.slice(0, -3),
@@ -41,10 +41,7 @@ export async function getStaticProps({
   // You can't pass any data other than URL param data through params: {}
   // See: https://github.com/vercel/next.js/discussions/11272
 
-  const readFile = fs.readFileSync(
-    `src/content/portfolio/${slug}.md`,
-    "utf-8"
-  );
+  const readFile = fs.readFileSync(`src/content/portfolio/${slug}.md`, "utf-8");
 
   const { frontmatter, content } = readMdx(readFile);
 
@@ -78,20 +75,22 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
 
   return (
     <>
-    <Head>
-      <title>Karina Chow | {frontmatter.title} </title>
-      <meta name="description" content={frontmatter.description} />
-      <meta
-        name="keywords"
-        content={`karina chow, karina, chow, portfolio site, portfolio, personal site, personal website, resume, download, linkedin, links, contact, ${frontmatter.categories.join(", ")}, ${frontmatter.tags.join(", ")}, ${frontmatter.title}`}
-      />
-      <meta
-        property="og:title"
-        content={`Karina Chow | ${frontmatter.title}`}
-        key="title"
-      />
-      <meta property="og:url" content={frontmatter.cover} />
-    </Head>
+      <Head>
+        <title>Karina Chow | {frontmatter.title} </title>
+        <meta name="description" content={frontmatter.description} />
+        <meta
+          name="keywords"
+          content={`karina chow, karina, chow, portfolio site, portfolio, personal site, personal website, resume, download, linkedin, links, contact, ${frontmatter.categories.join(
+            ", "
+          )}, ${frontmatter.tags.join(", ")}, ${frontmatter.title}`}
+        />
+        <meta
+          property="og:title"
+          content={`Karina Chow | ${frontmatter.title}`}
+          key="title"
+        />
+        <meta property="og:url" content={frontmatter.cover} />
+      </Head>
       <main className={styles["portfolio-piece"]}>
         <div
           className={styles["cover-image"]}
@@ -109,46 +108,34 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
 
         <div className={styles["portfolio-metadata"]}>
           <div>
-            <p>
-              {frontmatter.description}
-              <ul className={styles["tags-list"]}>
-                {frontmatter.tags.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
-            </p>
-            <ul>
-              <li>
-                {frontmatter.collaborators && (
-                  <>
-                    <strong>Collaborators</strong>
-                    <br />
-                    {frontmatter.collaborators.join(", ")}
-                  </>
-                )}
-              </li>
-              <li>
-                {frontmatter.technologies && (
-                  <>
-                    <strong>Technologies</strong>
-                    <br />
-                    {frontmatter.technologies.join(", ")}
-                  </>
-                )}
-              </li>
-              <li>
-                {frontmatter.url && (
-                  <>
-                    <strong>Project Link</strong>
-                    <br />
-                    <a href={frontmatter.url} target="_blank">
-                      {frontmatter.url}
-                    </a>
-                  </>
-                )}
-              </li>
-            </ul>
+            {frontmatter.description}
+            <TagsList tags={frontmatter.tags} />
           </div>
+          <ul>
+            {frontmatter.collaborators && (
+              <li>
+                <strong>Collaborators</strong>
+                <br />
+                {frontmatter.collaborators.join(", ")}
+              </li>
+            )}
+            {frontmatter.technologies && (
+              <li>
+                <strong>Technologies</strong>
+                <br />
+                {frontmatter.technologies.join(", ")}
+              </li>
+            )}
+            {frontmatter.url && (
+              <li>
+                <strong>Project Link</strong>
+                <br />
+                <a href={frontmatter.url} target="_blank">
+                  {frontmatter.url}
+                </a>
+              </li>
+            )}
+          </ul>
         </div>
         <Markdown embeds={embeds} className={styles["portfolio-piece-content"]}>
           {content}
@@ -156,8 +143,8 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
       </main>
     </>
   );
-}
-PortfolioPiece.displayName = "PortfolioPiece"
-PortfolioPiece.lightMode = true
+};
+PortfolioPiece.displayName = "PortfolioPiece";
+PortfolioPiece.lightMode = true;
 
-export default PortfolioPiece
+export default PortfolioPiece;

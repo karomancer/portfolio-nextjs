@@ -9,6 +9,14 @@ interface PortfolioProps {
   pieces: ReadMDX[];
 }
 
+export const TagsList = ({ tags }: { tags: string[] }) => (
+  <ul className={pageStyles["tags-list"]}>
+    {tags.map((t) => (
+      <li key={t}>{t}</li>
+    ))}
+  </ul>
+);
+
 const PortfolioSection = ({ pieces }: PortfolioProps) => (
   <div className={styles["portfolio-section"]}>
     <ul>
@@ -36,11 +44,7 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => (
               </div>
               <div className={styles["description"]}>
                 <p>{description}</p>
-                <ul className={pageStyles["tags-list"]}>
-                  {tags.map((tag) => (
-                    <li key={`${slug}-${tag}`}>{tag}</li>
-                  ))}
-                </ul>
+                <TagsList tags={tags} />                
               </div>
             </a>
           </li>
