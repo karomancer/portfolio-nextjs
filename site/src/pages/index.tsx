@@ -1,9 +1,11 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import axios from "axios";
 
-import About from "../sections/About";
-import Hero from "../sections/Hero";
-import Dribbble from "../sections/Dribbble";
+import Head from "@/components/Head"
+
+import About from "@/sections/About";
+import Hero from "@/sections/Hero";
+import Dribbble from "@/sections/Dribbble";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import Medium, { MediumPost, getMediumPosts } from "@/sections/Medium";
 
@@ -31,7 +33,13 @@ const Home = ({
   mediumPosts,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <main>      
+    <main>
+      <Head
+        title="Home"
+        description="Screw the rules, I have green hair."
+        ogUrl="/"
+        ogImage="/images/og_image.png"
+      />      
       <Hero scrollToId="one" />
       <About id="one" />
       <Dribbble shots={dribbbleShots} />

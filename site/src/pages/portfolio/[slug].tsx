@@ -74,6 +74,8 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
     return null;
   }
 
+  console.log(frontmatter)
+
   return (
     <>
       <Head
