@@ -9,10 +9,11 @@ import {
   filterByExpandableLinks,
   extractLinkFromMDX,
 } from "@/utils/unfurlLink";
+import Head from "@/components/Head";
+
+import { TagsList } from "@/sections/Portfolio";
 
 import styles from "./styles.module.scss";
-import Head from "next/head";
-import { TagsList } from "@/sections/Portfolio";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("src/content/portfolio");
@@ -75,22 +76,13 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
 
   return (
     <>
-      <Head>
-        <title>Karina Chow | {frontmatter.title} </title>
-        <meta name="description" content={frontmatter.description} />
-        <meta
-          name="keywords"
-          content={`karina chow, karina, chow, portfolio site, portfolio, personal site, personal website, resume, download, linkedin, links, contact, ${frontmatter.categories.join(
-            ", "
-          )}, ${frontmatter.tags.join(", ")}, ${frontmatter.title}`}
-        />
-        <meta
-          property="og:title"
-          content={`Karina Chow | ${frontmatter.title}`}
-          key="title"
-        />
-        <meta property="og:url" content={frontmatter.cover} />
-      </Head>
+      <Head
+        title={frontmatter.title}
+        description={frontmatter.description}
+        ogImage={frontmatter.cover}
+        ogUrl={frontmatter.url}
+        keywords={frontmatter.tags.concat(frontmatter.categories)}
+      />
       <main className={styles["portfolio-piece"]}>
         <div
           className={styles["cover-image"]}
@@ -109,7 +101,11 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
         <div className={styles["portfolio-metadata"]}>
           <div>
             {frontmatter.description}
-            {frontmatter.class && <><i>Class: {frontmatter.class}</i></>}
+            {frontmatter.class && (
+              <>
+                <i>Class: {frontmatter.class}</i>
+              </>
+            )}
             <TagsList tags={frontmatter.tags} />
           </div>
           <ul>
