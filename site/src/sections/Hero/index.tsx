@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Circuits from '../../sketches/Circuits';
 import Bust from "../../assets/svgs/Bust";

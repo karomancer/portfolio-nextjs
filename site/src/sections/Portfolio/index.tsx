@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { compareDesc, format } from "date-fns";
 
 import { ReadMDX } from "@/utils/readMdx";
@@ -17,45 +18,60 @@ export const TagsList = ({ tags }: { tags: string[] }) => (
   </ul>
 );
 
-const PortfolioSection = ({ pieces }: PortfolioProps) => (
-  <div className={styles["portfolio-section"]}>
-    <ul>
-      {pieces
-        .sort((a, b) =>
-          compareDesc(new Date(a.frontmatter.date), new Date(b.frontmatter.date))
-        )
-        .map(
-          ({
-            frontmatter: {
-              title,
-              slug,
-              description,
-              categories,
-              date,
-              preview,
-              tags,
-            },
-          }) => (
-            <li key={slug} className={styles["portfolio-piece"]}>
-              <a key={title} href={slug}>
-                <img src={preview} alt="" role="presentation" />
-                <div className={styles["header"]}>
-                  <h6>
-                    <strong>{categories.join(" & ").toUpperCase()}</strong> |{" "}
-                    {format(new Date(date), "MMMM yyyy")}
-                  </h6>
-                  <h4>{title}</h4>
-                </div>
-                <div className={styles["description"]}>
-                  <p>{description}</p>
-                  <TagsList tags={tags} />
-                </div>
-              </a>
-            </li>
+const PortfolioSection = ({ pieces }: PortfolioProps) => {
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    const Masonry = require("masonry-layout");
+    new Masonry(gridRef.current, {
+      itemSelector: `.${styles["portfolio-piece"]}`,
+      columnWidth: 400,
+    });
+  }, []);
+
+  return (
+    <div className={styles["portfolio-section"]}>
+      <ul ref={gridRef}>
+        {pieces
+          .sort((a, b) =>
+            compareDesc(
+              new Date(a.frontmatter.date),
+              new Date(b.frontmatter.date)
+            )
           )
-        )}
-    </ul>
-  </div>
-);
+          .map(
+            ({
+              frontmatter: {
+                title,
+                slug,
+                description,
+                categories,
+                date,
+                preview,
+                tags,
+              },
+            }) => (
+              <li key={slug} className={styles["portfolio-piece"]}>
+                <a key={title} href={slug}>
+                  <img src={preview} alt="" role="presentation" />
+                  <div className={styles["header"]}>
+                    <h6>
+                      <strong>{categories.join(" & ").toUpperCase()}</strong> |{" "}
+                      {format(new Date(date), "MMMM yyyy")}
+                    </h6>
+                    <h4>{title}</h4>
+                  </div>
+                  <div className={styles["description"]}>
+                    <p>{description}</p>
+                    <TagsList tags={tags} />
+                  </div>
+                </a>
+              </li>
+            )
+          )}
+      </ul>
+    </div>
+  );
+};
 
 export default PortfolioSection;

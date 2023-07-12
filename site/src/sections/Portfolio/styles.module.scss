@@ -1,22 +1,22 @@
 .portfolio-section {
-  ul {
+  & > ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
-
-    li {
-      margin: 0;
-    }
   }
 }
 
 .portfolio-piece {
   position: relative;
   overflow: hidden;
+  width: fit-content;
   max-width: 400px;
-  height: fit-content;
   padding: 0;
+  flex: 1 auto;
+  height: fit-content;
+  margin: 0;
 
   a {
     transition: box-shadow 0.2s ease;
