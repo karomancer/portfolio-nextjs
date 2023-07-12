@@ -22,36 +22,36 @@ interface CircuitsProps {
 const Circuits = ({ width, height, className }: CircuitsProps) => {
   const circuitsEl = useRef();
 
-  const sketch = (p: p5Type) => {
-    const circuits: Circuit[] = [];
-
-    p.setup = () => {
-      p.createCanvas(width || p.windowWidth, height || p.windowHeight);
-      p.background(GRAY_RGB);
-
-      setTimeout(() => {
-        p.noLoop();
-      }, 60000);
-    };
-
-    p.draw = () => {
-      const num = Math.round(p.random(MODULO));
-
-      if (
-        num % MODULO === 0 &&
-        circuits.length < Math.ceil((p.width * p.height) / CIRCUITS_DIVISIBLE)
-      ) {
-        const circuit = new Circuit(p);
-        circuits.push(circuit);
-      }
-
-      for (let i = 0; i < circuits.length; i++) {
-        circuits[i].draw();
-      }
-    };
-  };
-
   useEffect(() => {
+    const sketch = (p: p5Type) => {
+      const circuits: Circuit[] = [];
+
+      p.setup = () => {
+        p.createCanvas(width || p.windowWidth, height || p.windowHeight);
+        p.background(GRAY_RGB);
+
+        setTimeout(() => {
+          p.noLoop();
+        }, 60000);
+      };
+
+      p.draw = () => {
+        const num = Math.round(p.random(MODULO));
+
+        if (
+          num % MODULO === 0 &&
+          circuits.length < Math.ceil((p.width * p.height) / CIRCUITS_DIVISIBLE)
+        ) {
+          const circuit = new Circuit(p);
+          circuits.push(circuit);
+        }
+
+        for (let i = 0; i < circuits.length; i++) {
+          circuits[i].draw();
+        }
+      };
+    };
+
     const p5 = require("p5");
     new p5(sketch, circuitsEl.current);
   }, []);

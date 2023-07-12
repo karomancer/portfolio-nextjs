@@ -1,9 +1,9 @@
 export type Image = {
-  src: string;
+  src?: string;
   alt?: string;
 };
 
 export type ListItem = {
-  children: string[];
-  props: any;
+  children?: any[];
+  props?: any;
 };

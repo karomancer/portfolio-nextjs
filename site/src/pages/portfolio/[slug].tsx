@@ -16,9 +16,10 @@ import Head from "next/head";
 export async function getStaticPaths() {
   const files = fs.readdirSync("src/content/portfolio");
   const paths = files.map((fileName) => {
+    console.log(fileName.slice(0, -3))
     return {
       params: {
-        slug: fileName.slice(-4),
+        slug: fileName.slice(0, -3),
       },
     };
   });
@@ -39,8 +40,9 @@ export async function getStaticProps({
   // Well this is dumb af but I can't find a better way in next v12
   // You can't pass any data other than URL param data through params: {}
   // See: https://github.com/vercel/next.js/discussions/11272
+
   const readFile = fs.readFileSync(
-    `src/content/portfolio/${slug}.mdx`,
+    `src/content/portfolio/${slug}.md`,
     "utf-8"
   );
 

@@ -36,7 +36,7 @@ export default function RootLayout({ Component, pageProps }: AppProps) {
           content="http://www.karinachowtime.com/images/og_image.png"
         />
       </Head>
-      <TopNav isSubPage={!!Component.displayName} lightMode={Component.lightMode} />
+      <TopNav isSubPage={!!Component.displayName} lightMode={["PortfolioPiece"].includes(Component.displayName)} />
       <Component {...pageProps} />
     </>
   );

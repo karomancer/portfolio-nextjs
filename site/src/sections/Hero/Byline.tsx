@@ -46,7 +46,7 @@ interface BylineProps {
 
 const Byline = ({className}: BylineProps) => {
   const bylineEl = useRef();
-  const getRandomIndex = (len: Number) => Math.floor(Math.random() * len);
+  const getRandomIndex = (len: number) => Math.floor(Math.random() * len);
   const getRandomLetter = () => ALPHABET[getRandomIndex(ALPHABET.length)];
 
   const setByline = (newByline: string) => {
