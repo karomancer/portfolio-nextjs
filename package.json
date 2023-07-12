@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@next/mdx": "^13.4.9",
-    "gray-matter": "^4.0.3",
-    "react-markdown": "^8.0.7",
-    "yaml": "^2.3.1"
-  }
-}

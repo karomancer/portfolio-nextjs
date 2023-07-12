@@ -19,6 +19,7 @@
     "date-fns": "^2.30.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
+    "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
     "metascraper": "^5.34.8",
     "metascraper-description": "^5.34.7",
@@ -29,9 +30,11 @@
     "p5": "^1.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.7",
     "react-pdf": "^7.1.2",
     "rss-parser": "^3.13.0",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "yaml": "^2.3.1"
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
