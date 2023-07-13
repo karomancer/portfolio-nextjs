@@ -8,7 +8,7 @@ collaborators:
 date: 2022-10-20T03:27:32.000Z
 preview: /portfolio/desert-dream/og_image.jpg
 cover: /portfolio/desert-dream/2V3A4416.jpg
-draft: true
+draft: false
 url: ""
 technologies:
   - Adobe Aero

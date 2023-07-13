@@ -12,6 +12,7 @@ export interface ReadMDX {
     description: string;
     preview: string;
     cover: string;
+    draft: boolean;
     collaborators?: string[];
     technologies?: string[];
     og_preview: string;
