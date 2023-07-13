@@ -109,7 +109,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
             <TagsList tags={frontmatter.tags} />
           </div>
           <ul>
-            {frontmatter.collaborators && (
+            {frontmatter.collaborators.length > 0 && (
               <li>
                 <strong>Collaborators</strong>
                 <br />
