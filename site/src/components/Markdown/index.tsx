@@ -8,7 +8,7 @@ import { MetascrapedInfo } from "@/utils/unfurlLink";
 
 import Asset from "./Asset";
 import Embed from "./Embed";
-import { ListItem } from "./types";
+import { ListItem, Td as TdType } from "./types";
 
 import styles from "./styles.module.scss";
 
@@ -63,14 +63,14 @@ export default function Markdown({ className, children, embeds }: Props) {
   );
 }
 
-const Td = ({ values, props }) => {
+const Td = ({ values, props }: TdType) => {
   const replacedText = values.map((c) => {
     if (c.type == "text") {
       const delimited = c.value.split("!!!");
       if (delimited.length > 1) {
         return delimited.map((v, i) =>
           i < delimited.length - 1 ? (
-            <span className={styles["spaced-span"]}>{v}</span>
+            <span key={c.value} className={styles["spaced-span"]}>{v}</span>
           ) : (
             v
           )
@@ -80,11 +80,11 @@ const Td = ({ values, props }) => {
     }
 
     if (c.tagName == "img") {
-      return <Asset {...c.properties} />;
+      return <Asset key={c.properties.toString()} {...c.properties} />;
     }
 
     if (c.tagName == "a" && c.children[0].type == "text") {
-      return <a {...c.properties}>{c.children[0].value}</a>;
+      return <a key={c.properties.toString()} {...c.properties}>{c.children[0].value}</a>;
     }
 
     return c.value;
