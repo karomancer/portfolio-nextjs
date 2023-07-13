@@ -44,9 +44,20 @@ Though Artemis was technically not a muse, she continues to inspire us mortals t
 ![inside2.png](/portfolio/muse/inside2.png)
 ![Postcard like photo](/portfolio/muse/inside4.png)
 
----
+## Future of A.I. in the Design Process
 
-### Process
+This class was run shortly after tools like Midjourney and DALL-E 2 became available to the public. Part of the intention was for the entire class of ~20 to work as a team in learning how to best use generative AI tooling to our advantage and examine what role it might play in creative processes in the future.
+
+Each person in our class went through an extensive iterative process for a couple months in refining their ideas. We found AI to be especially helpful in helping us brainstorm ideas, but not specific enough to complete an idea. Most of the tooling we used served as a great point at which to jump off into our own sketches, 3D modeling, or to composite with other images in Photoshop.
+
+You can see the result of a couple months of ideation by our entire class at our class website:
+
+[Website for the class](https://spaceforspace.cargo.site/)
+
+I myself did a lot of compositing for mine as many of the AI generated creations were either physically impossible or not what I was looking for. You can see some of the process of ideation below in my presentation deck (see the link for more context via the speaker notes).
+
+
+## Process
 
 See the full presentation with speaker notes [here](https://docs.google.com/presentation/d/1lO2AwpowMiUnwX06Rhcm1jBUWzDP5PjrXXmEWIdUdRI/edit?usp=sharing), else see the PDF below!
 

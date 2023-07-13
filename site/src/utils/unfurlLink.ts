@@ -8,7 +8,7 @@ export type MetascrapedInfo = {
   link: string;
 };
 
-const UNFURLING_WEBSITES = ["github", "medium", "youtube"];
+const UNFURLING_WEBSITES = ["github", "medium", "youtube", "cargo"];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
 const metascraper = require("metascraper")([
