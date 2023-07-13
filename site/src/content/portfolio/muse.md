@@ -7,7 +7,7 @@ class: Designing Spaces & Environments using A.I.
 date: 2023-05-02T20:31:30.000Z
 preview: /portfolio/muse/outside.png
 cover: /portfolio/muse/inside4.png
-draft: true
+draft: false
 url: https://spaceforspace.cargo.site/
 technologies:
   - DALL·E 2
