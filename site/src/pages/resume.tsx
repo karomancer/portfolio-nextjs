@@ -36,7 +36,7 @@ const Resume = () => (
           Download
         </a>
       </div>
-      <PDFViewer pdfUrl={RESUME_URL} />
+      <PDFViewer pdfUrl={RESUME_URL} withBoxShadow />
     </main>
   </>
 );

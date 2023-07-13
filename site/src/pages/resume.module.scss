@@ -39,6 +39,8 @@
   width: 100%;
   height: 1200px;
   border-radius: calc(var(--borderRadius) * 2);
+  box-shadow: 1.5rem 1.5rem 0 0.2rem var(--teal);
+  
   @include breakpoint("<=small") {
     display: none;
   }

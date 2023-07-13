@@ -23,7 +23,7 @@ const Asset = (asset: ImageType) => {
   }
 
   if (isPDF) {
-    return <PDFViewer pdfUrl={`https:${asset.src}`} />;
+    return <PDFViewer pdfUrl={asset.src} />;
   }
 
   if (isImg) {

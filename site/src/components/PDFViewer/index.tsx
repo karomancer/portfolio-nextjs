@@ -14,11 +14,12 @@ if (isWindowDefined) {
 
 interface Props {
   pdfUrl: string;
+  withBoxShadow?: boolean;
 }
 
-const PDFViewer = ({ pdfUrl }: Props) => {
+const PDFViewer = ({ pdfUrl, withBoxShadow }: Props) => {
   const [numPages, setNumPages] = useState<number>(1);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(0);
   const [width, setWidth] = useState(0);
 
   type OnDocumentLoadSuccess = { numPages: number };
@@ -34,7 +35,7 @@ const PDFViewer = ({ pdfUrl }: Props) => {
 
   return (
     isWindowDefined && (
-      <div className={`pdf-viewer ${styles["embedded-pdf"]}`}>
+      <div className={`pdf-viewer ${styles["embedded-pdf"]} ${withBoxShadow ? styles["with-box-shadow"] : ""}`}>
         <Document
           file={pdfUrl}
           onLoadError={console.error}
@@ -42,7 +43,7 @@ const PDFViewer = ({ pdfUrl }: Props) => {
           externalLinkTarget="_blank"
         >
           <Page
-            pageIndex={0}
+            pageIndex={pageNumber}
             width={width}
             height={1400}
             renderAnnotationLayer={true}
@@ -58,22 +59,18 @@ const PDFViewer = ({ pdfUrl }: Props) => {
                   className={styles["previous-page"]}
                   onClick={() => setPageNumber(pageNumber - 1)}
                   aria-label="Previous page"
-                >
-                  ‹
-                </button>
+                />
               )}
               {pageNumber < numPages && (
                 <button
                   className={styles["next-page"]}
                   onClick={() => setPageNumber(pageNumber + 1)}
                   aria-label="Next page"
-                >
-                  ›
-                </button>
+                />
               )}
             </div>
             <span className={styles["slide-numbers"]}>
-              Slide {pageNumber} of {numPages}
+              Slide {pageNumber + 1} of {numPages}
             </span>
           </>
         )}

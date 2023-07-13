@@ -1,13 +1,21 @@
-@import '../../sass/vendor';
-@import '../../sass/functions';
-@import '../../sass/breakpoints';
+@import "../../sass/vendor";
+@import "../../sass/functions";
+@import "../../sass/breakpoints";
 
 /**
  * react-pdf
  **/
-.embedded-pdf {
-  box-shadow: 1.5rem 1.5rem 0 0.2rem var(--teal);
+.embedded-pdf {  
   border: 1px solid var(--light);
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0 !important;
+  overflow: hidden;
+  height: 600px;
+}
+
+.with-box-shadow {
+  box-shadow: 1.5rem 1.5rem 0 0.2rem var(--teal);
 }
 
 /**
@@ -24,7 +32,7 @@
       }
 
       margin-top: 2.5rem;
-    }    
+    }
   }
 
   h3 {
@@ -43,7 +51,7 @@
   }
 
   ul {
-    list-style-type: '»';
+    list-style-type: "»";
   }
 
   img {
@@ -53,7 +61,7 @@
     object-fit: cover;
     margin: 0 0.25rem;
 
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       object-fit: contain;
       width: 100%;
       max-height: fit-content;
@@ -111,86 +119,103 @@
       bottom: 2rem;
       left: 0;
       right: 0;
-    }    
+    }
   }
 }
 
 .pdf-viewer {
   position: relative;
-  padding: 0 !important;
-  overflow: hidden;
+  
+}
 
-  .slide-numbers {
+.slide-numbers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: var(--dark);
+  padding: 0.25rem 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.page-controls {
+  button {
+    cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    top: 50%;
+
+    padding: 0 1rem;
+    width: 2rem;
+    height: 6rem;
     color: white;
-    background-color: var(--dark);
-    padding: 0.25rem 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-  }
 
-  .page-controls {
-    button {
-      position: absolute;
-      border: 0;
-      outline: 0;
-      box-shadow: none;
-      top: 50%;
-      
+    background-color: var(--teal);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
+    font-size: 2rem;
 
-      padding: 0 1rem;
-      width: 2rem;
+    &:hover {
+      opacity: 0.8;
+    }
 
-      background-color: var(--dark);
-      transition: all 0.2s ease-in-out;
-      opacity: 0.5;
-      font-size: 2rem;
-
-      &.previous-page {
-        left: -1.25rem;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-
-        padding-left: 0.5rem;
-
-        &:hover {
-          left: 0;
-        }
-      }
-
-      &.next-page {
-        right: -1.25rem;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-
-        padding-right: 0.5rem;
-
-        &:hover {
-          right: 0;
-        }
-      }
-
-      &:hover {
-        opacity: 0.8;
-      }
-
-      &:active {
-        opacity: 1;
-      }
+    &:active {
+      opacity: 1;
     }
   }
+}
 
-  .pdf-document {
-    width: 100%;
+.previous-page {
+  left: -1.25rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 
-    canvas {
-      width: 100% !important;
-      height: auto !important;
-    }
-  }  
+  padding-left: 0.5rem;
+
+  &:after {
+    content:"‹";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -55%);
+  }
+
+  &:hover {
+    left: 0;
+  }
+}
+
+.next-page {
+  right: -1.25rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  padding-right: 0.5rem;
+
+  &:after {
+    content:"›";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+
+  &:hover {
+    right: 0;
+  }
+}
+
+.pdf-document {
+  width: 100%;
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
