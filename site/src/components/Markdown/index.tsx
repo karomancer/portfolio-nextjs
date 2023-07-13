@@ -37,6 +37,7 @@ const UNCHECKED_CHECKBOX_PATTERN = /\[ \]/;
 export default function Markdown({ className, children, embeds }: Props) {
   useEffect(() => {
     hljs.highlightAll();
+    resizePictures();
   }, []);
   return (
     <article>
@@ -86,4 +87,51 @@ const Li = ({ children, ...props }: ListItem) => {
   }
 
   return <li {...props}>{children}</li>;
+};
+
+const resizePictures = () => {
+  const paragraphs = document.querySelectorAll("p");
+  for (const i in paragraphs) {
+    const children = paragraphs[i].children;
+    const childrenToRemove = [];
+
+    for (const j in children) {
+      if (!["VIDEO", "IMG"].includes(children[j].tagName)) {
+        break;
+      }
+
+      if (j !== "0") {
+        childrenToRemove.push(children[j]);
+      }
+    }
+
+    if (childrenToRemove.length > 0) {
+      const parentNode = document.createElement("p");
+      const gutter = childrenToRemove.length * 0.2;
+      parentNode.className = styles["p-with-images"];
+
+      const height =
+        childrenToRemove.length < 2
+          ? 380
+          : 380 - (childrenToRemove.length - 1) * 40;
+      for (const k in childrenToRemove) {
+        const child = childrenToRemove[k];
+        const naturalWidth = child.naturalWidth;
+        const naturalHeight = child.naturalHeight;
+        // child.style.height = height;
+
+        if (naturalHeight / naturalWidth > 1.5) {
+          child.style.width = `${
+            height * (naturalWidth / naturalHeight) + gutter
+          }px`; // is portrait
+        } else {
+          child.style.width = `${100 / childrenToRemove.length - gutter}%`; // is landscape
+        }
+        parentNode.appendChild(paragraphs[i].removeChild(child));
+      }
+      if (parentNode.children.length > 0) {
+        paragraphs[i].appendChild(parentNode);
+      }
+    }
+  }
 };

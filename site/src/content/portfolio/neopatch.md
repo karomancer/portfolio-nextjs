@@ -82,12 +82,6 @@ Here are the components purchased:
 
 Total cost ended up being around $200.
 
-### System Diagram
-
-This was our sloppy system diagram. We clearly were very unsure about a few things:
-
-![System diagram illustration showing how RFID tags, a reader, and a jacket fit together](/images/portfolio/neopatch/Untitled%2011.png)
-
 ### RFID/NFC Reader Troubles
 
 The first reader we bought ended up being only intended to unlock doors. It couldn’t write nor could it read anything other than UIDs in the header of an RFID tag.

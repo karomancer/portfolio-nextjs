@@ -38,7 +38,6 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
     setCurrentSlug(window.location.pathname);
   });
 
-  console.log(currentSlug)
   return (
     <nav className={`${styles["top-nav"]} ${isLight || ""} ${hasBackground || ""}`}>
       <ul>

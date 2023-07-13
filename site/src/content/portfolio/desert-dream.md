@@ -146,7 +146,6 @@ Our final day composition and the silhouettes of its layers, image traced in Ado
 ![Silhouettes of layers](/images/portfolio/desert-dream/Untitled%204.png)
 ![Untitled](/images/portfolio/desert-dream/Untitled%205.png)
 ![Untitled](/images/portfolio/desert-dream/Untitled%206.png)
-![Untitled](/images/portfolio/desert-dream/Untitled%207.png)
 
 ### **Night time desert**
 
@@ -156,7 +155,6 @@ Our final night composition and the silhouettes of its layers, image traced in A
 ![Silhouettes of layers](/images/portfolio/desert-dream/Front_night_desert.svg)
 ![middle.svg](/images/portfolio/desert-dream/middle.svg)
 ![middle bg .svg](/images/portfolio/desert-dream/middle_bg_.svg)
-![bg.svg](/images/portfolio/desert-dream/bg.svg)
 
 ## Importing into Adobe Aero
 

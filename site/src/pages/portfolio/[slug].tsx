@@ -74,15 +74,13 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
     return null;
   }
 
-  console.log(frontmatter)
-
   return (
     <>
       <Head
         title={frontmatter.title}
         description={frontmatter.description}
         ogImage={frontmatter.cover}
-        ogUrl={frontmatter.url}
+        ogUrl={frontmatter.slug}
         keywords={frontmatter.tags.concat(frontmatter.categories)}
       />
       <main className={styles["portfolio-piece"]}>

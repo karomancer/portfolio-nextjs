@@ -15,7 +15,7 @@ const Asset = (asset: ImageType) => {
 
   if (isVideo) {
     return (
-      <video controls>
+      <video controls className="p-asset">
         <source src={asset.src} type="video/mp4" />
         {asset.alt}
       </video>
@@ -27,7 +27,7 @@ const Asset = (asset: ImageType) => {
   }
 
   if (isImg) {
-    return <img alt={asset.alt} src={asset.src} />;
+    return <img className="p-asset" alt={asset.alt} src={asset.src} />;
   }
 
   return null;

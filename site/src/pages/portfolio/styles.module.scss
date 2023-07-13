@@ -95,6 +95,10 @@
     margin: 0;
     padding: 0;
 
+    li {
+      line-height: 1.25;
+    }
+
     @include breakpoint("<=medium") {
       width: 40%;
     }
