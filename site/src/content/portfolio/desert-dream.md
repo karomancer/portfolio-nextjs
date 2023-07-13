@@ -6,7 +6,7 @@ collaborators:
   - Jess Shen
   - Alfonssette Medina
 date: 2022-10-20T03:27:32.000Z
-preview: /images/portfolio/desert-dream/2V3A4439.jpg
+preview: /images/portfolio/desert-dream/og_image.jpg
 cover: /images/portfolio/desert-dream/2V3A4416.jpg
 draft: true
 url: ""
@@ -26,6 +26,8 @@ categories:
   - ITP
 type: portfolioPiece
 class: Hypercinema
+ogpreview: /images/portfolio/desert-dream/og_image.jpg
+og_preview: /images/portfolio/desert-dream/og_image.jpg
 ---
 
 

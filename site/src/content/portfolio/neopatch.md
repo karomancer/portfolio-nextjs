@@ -20,6 +20,7 @@ technologies:
   - Arduino
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
+og_preview: /images/portfolio/neopatch/og_image.jpg
 ---
 
 ![Video of the project at the winter showcase](/images/portfolio/neopatch/jacket_showcase.mp4)
@@ -211,6 +212,8 @@ Features include:
 I’m generally very happy with how this turned out! Didn’t get to V2 or V3 ideas, but it’s good to have aspirations.
 
 ![Video of Daniel showing off the jacket](/images/portfolio/neopatch/PXL_20221218_002149449.mp4)
+
+![Playtesting](/images/portfolio/neopatch/VID20221219172051.mp4)
 
 Other future wishes besides V2 and V3 outlined at the start of this post:
 

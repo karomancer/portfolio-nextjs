@@ -14,6 +14,7 @@ export interface ReadMDX {
     cover: string;
     collaborators?: string[];
     technologies?: string[];
+    og_preview: string;
     url?: string;
   };
   content: string;

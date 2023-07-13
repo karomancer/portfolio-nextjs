@@ -79,7 +79,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
       <Head
         title={frontmatter.title}
         description={frontmatter.description}
-        ogImage={frontmatter.cover}
+        ogImage={frontmatter.og_preview}
         ogUrl={frontmatter.slug}
         keywords={frontmatter.tags.concat(frontmatter.categories)}
       />
