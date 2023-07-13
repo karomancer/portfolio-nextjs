@@ -1,5 +1,6 @@
 import "highlight.js/styles/github.css";
 import hljs from "highlight.js";
+import remarkGfm from "remark-gfm";
 import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -42,6 +43,7 @@ export default function Markdown({ className, children, embeds }: Props) {
   return (
     <article>
       <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
         components={{
           a: ({ node, ...props }) =>
             props.href && embeds && embeds[props.href] ? (
@@ -51,6 +53,7 @@ export default function Markdown({ className, children, embeds }: Props) {
             ),
           img: ({ node, ...props }) => <Asset {...props} />,
           li: ({ node, ...props }) => <Li {...props} />,
+          td: ({ node, ...props }) => <Td {...props} values={node.children} />,
         }}
         className={`${className} ${styles["markdown"]}`}
       >
@@ -59,6 +62,36 @@ export default function Markdown({ className, children, embeds }: Props) {
     </article>
   );
 }
+
+const Td = ({ values, props }) => {
+  const replacedText = values.map((c) => {
+    if (c.type == "text") {
+      const delimited = c.value.split("!!!");
+      if (delimited.length > 1) {
+        return delimited.map((v, i) =>
+          i < delimited.length - 1 ? (
+            <span className={styles["spaced-span"]}>{v}</span>
+          ) : (
+            v
+          )
+        );
+      }
+      return c.value;
+    }
+
+    if (c.tagName == "img") {
+      return <Asset {...c.properties} />;
+    }
+
+    if (c.tagName == "a" && c.children[0].type == "text") {
+      return <a {...c.properties}>{c.children[0].value}</a>;
+    }
+
+    return c.value;
+  });
+
+  return <td {...props}>{replacedText}</td>;
+};
 
 const Li = ({ children, ...props }: ListItem) => {
   if (typeof children[0] == "string") {

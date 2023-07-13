@@ -8,7 +8,7 @@ export type MetascrapedInfo = {
   link: string;
 };
 
-const UNFURLING_WEBSITES = ["github"];
+const UNFURLING_WEBSITES = ["github", "medium", "youtube"];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
 const metascraper = require("metascraper")([
@@ -26,10 +26,12 @@ export const extractLinkFromMDX = (str: string) => {
 export const isLinkExpandable = (link: string) =>
   UNFURLING_WEBSITES.find((site) => link.match(site));
 
-export const filterByExpandableLinks = (str: string) =>
-  !!isLinkExpandable(extractLinkFromMDX(str) || "NaN");
+export const filterByExpandableLinks = (str: string) => {
+  return !!isLinkExpandable(extractLinkFromMDX(str) || "NaN");
+}
+  
 
-export const unfurlLink = async (link: string) => {
+export const unfurlLink = async (link: string) => {  
   if (link) {
     if (isLinkExpandable(link)) {
       const resp = await axios.get(link);

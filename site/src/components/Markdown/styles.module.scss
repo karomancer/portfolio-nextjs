@@ -5,6 +5,11 @@
     margin-top: 1rem;
   }
 
+  h4 {
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
   p {
     video:first-child,
     img:first-child {
@@ -13,6 +18,49 @@
       object-fit: cover;
     }
   }
+
+  table {
+    font-size: 1.2rem;
+
+    tr {
+      display: flex;
+      height: fit-content; 
+
+      td {
+        vertical-align: top;
+      }
+
+      td:first-child {
+        min-width: 40%;
+        
+        img {
+          width: 100%;
+        }
+
+        @include breakpoint("<=medium") {
+          width: 100%;
+        }
+      }
+
+      td:not(:first-child) {
+        padding: 0 2rem;
+
+        @include breakpoint("<=small") {
+          margin-top: 1rem;
+          padding: 0;
+        }
+      }
+
+      @include breakpoint("<=small") {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.spaced-span {
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 .checkbox-li {

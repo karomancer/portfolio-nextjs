@@ -41,7 +41,7 @@
         },
         {
           "title": "Class",
-          "name": "classes",
+          "name": "class",
           "editable": true,
           "type": "string"
         },

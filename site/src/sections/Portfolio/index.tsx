@@ -27,10 +27,18 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
     );
 
   useEffect(() => {
+    let columnWidth = window.innerWidth / 3;
+    if (window.innerWidth > 1280) {
+      columnWidth = window.innerWidth / 4;
+    } else if (window.innerWidth < 481) {
+      columnWidth = window.innerWidth;
+    } else if (window.innerWidth < 980) {
+      columnWidth = window.innerWidth / 2;
+    }
     const Masonry = require("masonry-layout");
     new Masonry(gridRef.current, {
       itemSelector: `.${styles["portfolio-piece"]}`,
-      columnWidth: 400,
+      columnWidth,
     });
   }, []);
 

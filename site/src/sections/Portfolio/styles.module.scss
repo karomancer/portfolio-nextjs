@@ -1,3 +1,5 @@
+@import "../../sass/breakpoints";
+
 .portfolio-section {
   & > ul {
     display: flex;
@@ -12,7 +14,7 @@
   position: relative;
   overflow: hidden;
   width: fit-content;
-  max-width: 400px;
+  max-width: calc(100vw / 4);
   padding: 0;
   flex: 1 auto;
   height: fit-content;
@@ -40,6 +42,18 @@
     width: 100%;
     height: fit-content;
     object-fit: cover;
+  }
+
+  @include breakpoint("<=large") {
+    max-width: calc(100vw / 3);
+  }
+
+  @include breakpoint("<=medium") {
+    max-width: calc(100vw / 2);
+  }
+
+  @include breakpoint("<=small") {
+    max-width: 100%;
   }
 }
 
@@ -89,7 +103,7 @@
   transform: translateY(calc(100% - 0.75rem));
   padding: 1.25rem;
 
-  background: var(--teal);      
+  background: var(--teal);
 
   h4,
   p {
