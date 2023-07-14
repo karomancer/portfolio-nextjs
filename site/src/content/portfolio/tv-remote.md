@@ -8,7 +8,7 @@ date: 2023-07-13T04:58:06.109Z
 preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
 cover: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
 og_preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
-draft: true
+draft: false
 url: https://github.com/karomancer/ir_receiver
 technologies:
   - Arduino
