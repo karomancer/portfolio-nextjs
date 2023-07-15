@@ -254,7 +254,7 @@ I got inspiration form [this handy article](https://www.elithecomputerguy.com/20
 
 ![Untitled](/portfolio/tv-remote/Untitled%2022.png)
 
-Using the `[IRremote.h](https://www.arduino.cc/reference/en/libraries/irremote/)` package for Arduino, I was able to easily set up a simple program that was able to detect values sent from the emitter.
+Using the [IRremote.h](https://www.arduino.cc/reference/en/libraries/irremote/) package for Arduino, I was able to easily set up a simple program that was able to detect values sent from the emitter.
 
 This package transforms the decoded messages into hexadecimal, which we can store as `unsigned long int`  and simply compare like any regular integer.
 
