@@ -27,9 +27,7 @@ type: portfolioPiece
 
 ![PXL_20220924_094602872 (1).mp4](/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)
 
-In the class **[Learning the World, One Thing at a Time](https://www.coursicle.com/nyu/courses/ITPGGT/2345/)**, taught by [Lydia Jessup](https://www.lydiajessup.me/). The title is inspired by a blog post by [Joe Dumit](https://anthropology.ucdavis.edu/people/dumit), a professor of anthropology at UC Davis, called [WRITING THE IMPLOSION: Teaching the World, One Thing at a Time](http://doingsts.com/cms/wp-content/uploads/2018/10/dumit-implosion.pdf). 
-
-The purpose of this class was to learn the [Implosion](https://www.trashacademy.org/implosion) research method to deeply analyze and research an object we encounter in every day life across the following dimensions: *Labor*, *Professional*, *Material*, *Technological*, *Context*, *Political*, *Economic*, *Textual*, *Historical*, *Particle*, *Educational*, *Mythological*, and *Symbolic*.
+In the class **[Learning the World, One Thing at a Time](https://www.coursicle.com/nyu/courses/ITPGGT/2345/)**, taught by [Lydia Jessup](https://www.lydiajessup.me/), we learned about the [Implosion](https://www.trashacademy.org/implosion) research method to deeply analyze and research an object we encounter in every day life across the following dimensions: *Labor*, *Professional*, *Material*, *Technological*, *Context*, *Political*, *Economic*, *Textual*, *Historical*, *Particle*, *Educational*, *Mythological*, and *Symbolic*.
 
 If you're interested in learning more about the method itself, I wrote an article about it here:
 
@@ -46,7 +44,7 @@ We had one week to choose an object and study it across 2+ dimensions and use 2+
 
 I chose a Zenith TV remote I found on a junk shelf for my chosen object. I studied Human-Computer Interaction and am always excited to learn more about interaction devices, so it seemed like a perfect fit! I also wanted to choose something that we all take for granted and use most days.
 
-I chose to study the **history** of the TV remote, as well as the **technology** behind it. If I had time, I would also look at **context** and **mythological.** All of these dimensions are interwoven.
+I chose to study the **history** of the TV remote, as well as the **technology** behind it. If I had time, I would also look at **context** and **mythology.** All of these dimensions are interwoven.
 
 As per the Implosion Method, I started by making a Knowledge Map of what I already knew:
 
@@ -206,9 +204,9 @@ Because its wavelengths are beyond the perceptible realm, it usually does not in
 
 You’ve probably noticed your IR remotes actually have a little LED attached to them. This is called an **infrared emitter:**
 
-[Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
+Totally not required, but I had fun taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.
 
-Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.
+![Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
 
 You can’t see it, but every time you click a button on your TV remote, it sends a pattern of blinks with that light. If you are interested, you can actually try holding your camera up to it and clicking a couple buttons to see it flash. Not all cameras are able to detect it, however!
 

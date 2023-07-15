@@ -9,8 +9,8 @@ export type MetascrapedInfo = {
   isIframe?: boolean;
 };
 
-const IFRAME_WEBSITES = ["glitch", "patreon"];
-const UNFURLING_WEBSITES = ["github", "medium", "youtube", "cargo"];
+const IFRAME_WEBSITES = ["glitch"];
+const UNFURLING_WEBSITES = ["github", "medium", "youtube", "cargo", "studio.patreon"];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
 const metascraper = require("metascraper")([

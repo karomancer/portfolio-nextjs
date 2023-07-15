@@ -60,7 +60,7 @@ export default function Markdown({ className, children, embeds }: Props) {
       }
       return <Embed {...embeds[props.href]} />;
     }
-    return <a {...props} />;
+    return <a target="_blank" {...props} />;
   };
 
   return (
