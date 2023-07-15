@@ -1,6 +1,7 @@
 import "highlight.js/styles/github.css";
 import hljs from "highlight.js";
 import remarkGfm from "remark-gfm";
+import IFrame from "react-iframe";
 import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -40,17 +41,34 @@ export default function Markdown({ className, children, embeds }: Props) {
     hljs.highlightAll();
     resizePictures();
   }, []);
+
+  const Anchor = (
+    props: React.AnchorHTMLAttributes<HTMLAnchorElement>
+  ) => {
+    if (embeds && embeds[props.href]) {
+      console.log(embeds[props.href])
+      if (embeds[props.href].isIframe) {
+        return (
+          <IFrame
+            url={props.href}
+            width="100%"
+            height="600px"
+            display="block"
+            position="relative"
+          />
+        );
+      }
+      return <Embed {...embeds[props.href]} />;
+    }
+    return <a {...props} />;
+  };
+
   return (
     <article>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          a: ({ node, ...props }) =>
-            props.href && embeds && embeds[props.href] ? (
-              <Embed {...embeds[props.href]} />
-            ) : (
-              <a {...props} />
-            ),
+          a: ({ node, ...props }) => <Anchor {...props} />,
           img: ({ node, ...props }) => <Asset {...props} />,
           li: ({ node, ...props }) => <Li {...props} />,
           td: ({ node, ...props }) => <Td {...props} values={node.children} />,
@@ -70,7 +88,9 @@ const Td = ({ values, props }: TdType) => {
       if (delimited.length > 1) {
         return delimited.map((v, i) =>
           i < delimited.length - 1 ? (
-            <span key={c.value} className={styles["spaced-span"]}>{v}</span>
+            <span key={c.value} className={styles["spaced-span"]}>
+              {v}
+            </span>
           ) : (
             v
           )
@@ -84,7 +104,11 @@ const Td = ({ values, props }: TdType) => {
     }
 
     if (c.tagName == "a" && c.children[0].type == "text") {
-      return <a key={c.properties.toString()} {...c.properties}>{c.children[0].value}</a>;
+      return (
+        <a key={c.properties.toString()} {...c.properties}>
+          {c.children[0].value}
+        </a>
+      );
     }
 
     return c.value;

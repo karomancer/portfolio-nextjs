@@ -97,7 +97,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
             <h1>{frontmatter.title}</h1>
           </div>
         </div>
-        <article className={styles["portfolio-body"]}>
+        <div className={styles["portfolio-body"]}>
           <div className={styles["portfolio-metadata"]}>
             <div>
               {frontmatter.description}
@@ -140,7 +140,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
           >
             {content}
           </Markdown>
-        </article>
+        </div>
       </main>
     </>
   );

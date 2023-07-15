@@ -1,7 +1,7 @@
 ---
 title: TV Remote
 description: A reverse engineered remote used to control a meta makeshift TV in presenting the history and mythology of the TV remote.
-slug: /portfolio/meta-tv-remote
+slug: /portfolio/tv-remote
 collaborators: []
 class: Learning the World, One Thing at a Time
 date: 2023-07-13T04:58:06.109Z

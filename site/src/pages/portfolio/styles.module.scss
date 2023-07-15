@@ -107,6 +107,14 @@
       line-height: 1.25;
     }
 
+    a {
+      width: inherit;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+
     @include breakpoint("<=medium") {
       width: 40%;
     }
