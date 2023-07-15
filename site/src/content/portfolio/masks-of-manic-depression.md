@@ -8,7 +8,7 @@ date: 2022-12-08T23:09:15.000Z
 preview: /portfolio/masks-of-manic-depression/mania.png
 cover: /portfolio/masks-of-manic-depression/depression.png
 og_preview: /portfolio/masks-of-manic-depression/depression.png
-draft: true
+draft: false
 url: ""
 technologies:
   - Autodesk Fusion 360
