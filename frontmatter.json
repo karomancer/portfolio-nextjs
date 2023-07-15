@@ -124,5 +124,13 @@
   "frontMatter.taxonomy.categories": [
     "cosplay",
     "pcomp"
+  ],
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "technologies",
+      "options": [
+        "Google Tiltbrush"
+      ]
+    }
   ]
 }

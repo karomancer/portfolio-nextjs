@@ -97,46 +97,50 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
             <h1>{frontmatter.title}</h1>
           </div>
         </div>
-
-        <div className={styles["portfolio-metadata"]}>
-          <div>
-            {frontmatter.description}
-            {frontmatter.class && (
-              <>
-                <i>Class: {frontmatter.class}</i>
-              </>
-            )}
-            <TagsList tags={frontmatter.tags} />
+        <article className={styles["portfolio-body"]}>
+          <div className={styles["portfolio-metadata"]}>
+            <div>
+              {frontmatter.description}
+              {frontmatter.class && (
+                <>
+                  <i>Class: {frontmatter.class}</i>
+                </>
+              )}
+              <TagsList tags={frontmatter.tags} />
+            </div>
+            <ul>
+              {frontmatter.collaborators.length > 0 && (
+                <li>
+                  <strong>Collaborators</strong>
+                  <br />
+                  {frontmatter.collaborators.join(", ")}
+                </li>
+              )}
+              {frontmatter.technologies && (
+                <li>
+                  <strong>Technologies</strong>
+                  <br />
+                  {frontmatter.technologies.join(", ")}
+                </li>
+              )}
+              {frontmatter.url && (
+                <li>
+                  <strong>Project Link</strong>
+                  <br />
+                  <a href={frontmatter.url} target="_blank">
+                    {frontmatter.url}
+                  </a>
+                </li>
+              )}
+            </ul>
           </div>
-          <ul>
-            {frontmatter.collaborators.length > 0 && (
-              <li>
-                <strong>Collaborators</strong>
-                <br />
-                {frontmatter.collaborators.join(", ")}
-              </li>
-            )}
-            {frontmatter.technologies && (
-              <li>
-                <strong>Technologies</strong>
-                <br />
-                {frontmatter.technologies.join(", ")}
-              </li>
-            )}
-            {frontmatter.url && (
-              <li>
-                <strong>Project Link</strong>
-                <br />
-                <a href={frontmatter.url} target="_blank">
-                  {frontmatter.url}
-                </a>
-              </li>
-            )}
-          </ul>
-        </div>
-        <Markdown embeds={embeds} className={styles["portfolio-piece-content"]}>
-          {content}
-        </Markdown>
+          <Markdown
+            embeds={embeds}
+            className={styles["portfolio-piece-content"]}
+          >
+            {content}
+          </Markdown>
+        </article>
       </main>
     </>
   );

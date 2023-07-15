@@ -26,9 +26,9 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
       compareDesc(new Date(a.frontmatter.date), new Date(b.frontmatter.date))
     );
 
-  useEffect(() => {
+  const rearrangePieces = () => {
     let columnWidth = window.innerWidth / 3;
-    if (window.innerWidth > 1280) {
+    if (window.innerWidth > 1200) {
       columnWidth = window.innerWidth / 4;
     } else if (window.innerWidth < 481) {
       columnWidth = window.innerWidth;
@@ -40,6 +40,11 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
       itemSelector: `.${styles["portfolio-piece"]}`,
       columnWidth,
     });
+  }
+
+  useEffect(() => {
+    setTimeout(rearrangePieces, 200);
+    addEventListener("resize", rearrangePieces);
   }, []);
 
   return (
