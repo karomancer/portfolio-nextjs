@@ -261,7 +261,7 @@ This package transforms the decoded messages into hexadecimal, which we can stor
 I didn’t know what protocol my remote used, so the easiest thing I could imagine was to simply print what the receiver got in hexadecimal for each button, and create constants to compare against in the future.
 
 ```arduino
-#include <IRremote.h>
+# include <IRremote.h>
 
 const int IR_RECEIVER = 8;
 
