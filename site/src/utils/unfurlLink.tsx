@@ -9,7 +9,7 @@ export type MetascrapedInfo = {
   isIframe?: boolean;
 };
 
-const IFRAME_WEBSITES = ["glitch"];
+const IFRAME_WEBSITES = ["glitch", "patreon"];
 const UNFURLING_WEBSITES = ["github", "medium", "youtube", "cargo"];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
@@ -38,7 +38,7 @@ export const filterByExpandableLinks = (str: string) => {
 
 export const unfurlLink = async (link: string) => {
   if (link) {
-    const isIframe = isIFrame(link)
+    const isIframe = isIFrame(link) || false
     if (isLinkExpandable(link) || isIframe) {
       const resp = await axios.get(link);
       const scraped = await metascraper({

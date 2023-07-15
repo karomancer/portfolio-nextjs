@@ -5,7 +5,7 @@ slug: /portfolio/sewing-triptych
 collaborators: []
 class: ""
 date: 2020-04-20T00:38:31.892Z
-preview: /portfolio/sewing-triptych/og_image.jpeg
+preview: /portfolio/sewing-triptych/sewing-no-boxshadow.gif
 cover: /portfolio/sewing-triptych/cover.jpeg
 og_preview: /portfolio/sewing-triptych/og_image.jpeg
 draft: true
@@ -17,8 +17,9 @@ technologies:
 tags:
   - animation
   - creative coding
-  - illustration
   - CSS
+  - illustration
+  - web dev
 categories:
   - Gray Area
 type: portfolioPiece
