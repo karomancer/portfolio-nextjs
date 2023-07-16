@@ -6,10 +6,10 @@ collaborators:
   - Jason Byttow
 class: ""
 date: 2017-07-15T02:44:05.000Z
-preview: /portfolio/patreon-404-fox/og_image.png
+preview: /portfolio/patreon-404-fox/404.gif
 cover: /portfolio/patreon-404-fox/cover.gif
 og_preview: /portfolio/patreon-404-fox/og_image.png
-draft: true
+draft: false
 url: https://www.patreon.com/404Page
 technologies:
   - CSS
