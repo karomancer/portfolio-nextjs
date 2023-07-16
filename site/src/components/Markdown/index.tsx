@@ -46,7 +46,6 @@ export default function Markdown({ className, children, embeds }: Props) {
     props: React.AnchorHTMLAttributes<HTMLAnchorElement>
   ) => {
     if (embeds && embeds[props.href]) {
-      console.log(embeds[props.href])
       if (embeds[props.href].isIframe) {
         return (
           <IFrame

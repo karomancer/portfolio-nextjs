@@ -70,9 +70,22 @@ export async function getStaticProps({
 type Props = ReadMDX & { embeds: HrefToEmbeds };
 
 const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
+  const pattern = /(?<=[^\!].*\]\()(.*)(?=\)$)/
   if (!frontmatter || !content) {
     return null;
-  }
+  }  
+
+  const collaborators = frontmatter.collaborators.map((c, i) => {
+    const matched = c.match(pattern);
+    const newline = i < frontmatter.collaborators.length ? "\n" : "";
+    return matched ? (
+      <><a href={matched[0]} target="_blank">
+        {c.split(/[\[\]]/)[1]}{newline}
+      </a></>
+    ) : (
+      c + newline
+    );
+  });
 
   return (
     <>
@@ -113,7 +126,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
                 <li>
                   <strong>Collaborators</strong>
                   <br />
-                  {frontmatter.collaborators.join(", ")}
+                  {collaborators}
                 </li>
               )}
               {frontmatter.technologies && (

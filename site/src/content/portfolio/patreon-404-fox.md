@@ -3,7 +3,7 @@ title: Patreon 404 Fox
 description: A 404-page with an animated illustrated astronaut fox made for Patreon's rebrand in 2017.
 slug: /portfolio/patreon-404-fox
 collaborators:
-  - Jason Byttow
+  - "[Jason Byttow](https://twitter.com/jbyttow)"
 class: ""
 date: 2017-07-15T02:44:05.000Z
 preview: /portfolio/patreon-404-fox/404.gif
