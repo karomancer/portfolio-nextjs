@@ -23,6 +23,7 @@ tags:
   - web dev
   - illustration
 categories:
+  - Client Work
   - Patreon
 type: portfolioPiece
 ---

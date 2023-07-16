@@ -90,7 +90,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
         >
           <div className={styles["portfolio-header"]}>
             <h4>
-              <strong>{frontmatter.categories.join(" & ")}</strong> |{" "}
+              <strong>{frontmatter.categories.join(" • ")}</strong> |{" "}
               {format(new Date(frontmatter.date), "MMMM eo, yyyy")}
             </h4>
 

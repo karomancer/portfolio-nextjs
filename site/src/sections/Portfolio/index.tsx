@@ -67,7 +67,7 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
                 <img src={preview} alt="" role="presentation" />
                 <div className={styles["header"]}>
                   <h6>
-                    <strong>{categories.join(" & ").toUpperCase()}</strong> |{" "}
+                    <strong>{categories.join(" • ").toUpperCase()}</strong> |{" "}
                     {format(new Date(date), "MMMM yyyy")}
                   </h6>
                   <h4>{title}</h4>
