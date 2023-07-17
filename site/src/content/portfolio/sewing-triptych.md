@@ -8,7 +8,7 @@ date: 2020-04-20T00:38:31.892Z
 preview: /portfolio/sewing-triptych/sewing-no-boxshadow.gif
 cover: /portfolio/sewing-triptych/cover.jpeg
 og_preview: /portfolio/sewing-triptych/og_image.jpeg
-draft: true
+draft: false
 url: https://codepen.io/karomancer/pen/yLNdeXE
 technologies:
   - CSS
