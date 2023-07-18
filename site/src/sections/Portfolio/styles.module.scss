@@ -65,6 +65,7 @@
   width: 100%;
 
   h6 {
+    position: relative;
     strong {
       color: white;
     }
@@ -73,26 +74,26 @@
   }
 
   h4 {
+    position: relative;
     font-size: 2rem;
     line-height: 1;
     color: white;
+    z-index: 100;
   }
 
   &:before {
     position: absolute;
-    mix-blend-mode: color-burn;
     transition: all 0.2s ease;
     left: 0;
     bottom: 0;
     content: "";
     display: block;
-    width: inherit;
+    width: 100%;
     height: 200px;
     background: linear-gradient(
       transparent,
       transparent 0%,
-      transparent 30%,
-      var(--dark) 90%,
+      transparent 20%,
       var(--dark) 100%
     );
   }
