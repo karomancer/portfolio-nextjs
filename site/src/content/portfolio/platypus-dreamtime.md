@@ -1,6 +1,6 @@
 ---
 title: Platypus Dreamtime
-description: ""
+description: Conducting user research for autonomous boats that measure and monitor water quality in fracking heavy regions.
 slug: /portfolio/platypus-dreamtime
 collaborators:
   - "[Alex Rothera](https://alexrothera.com/info)"
@@ -12,7 +12,7 @@ date: 2013-05-09T03:07:47.000Z
 preview: /portfolio/playtpus-dreamtime/preview.jpeg
 cover: /portfolio/playtpus-dreamtime/cover.jpeg
 og_preview: /portfolio/playtpus-dreamtime/preview.jpeg
-draft: true
+draft: false
 url: ""
 technologies:
   - Adobe Illustrator
@@ -23,12 +23,12 @@ tags:
   - data viz
 categories:
   - CMU
-  - Human-Computer Interaction
+  - Platypus LLC
 type: portfolioPiece
 ---
 
 ## Context
-At CMU, both Bachelors and Master HCI students work on capstone projects to close out their education. They are the exact same with the exception that the bachelor version is a semester shorter.
+At CMU, both Bachelors and Master [Human-Computer Interaction](https://hcii.cmu.edu/) students work on capstone projects to close out their education. They are the exact same with the exception that the bachelor version is a semester shorter.
 
 The Capstone project is structured to cover the end-to-end design process of a product development lifecycle. HCI students work in teams of 4-6 students with companies ranging from nimble startups to globally recognized brands.
 
@@ -78,11 +78,12 @@ Who we interviewed to both understand the agricultural space better but also to 
 
 ![Interview stats 38 interviews 14 potential Platypus users](/portfolio/playtpus-dreamtime/interview_stats.png)
 
-Interviewed population
 
 ## Final deliverables
 Final presentation of work done for Platypus LLC. Presentation was intended for the rest of our class, and includes a lot of context as to who the client is and what they are trying to accomplish. A much more generalized version of the final report we gifted the client intended for a much broader audience. The information is more focused on UX techniques used, including contextual inquiry and persona creation, and less on business recommendations.
 
-Loading PDF…
+![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)
 
 The final report of our UX findings to be given to the client, Platypus LLC. Covers the exploration for how we designed our medium-fidelity prototype we created and how different identified personas would use that prototype. Also explains the breakdowns we found in their existing product and user feedback on our iterations on their product.
+
+![Final report](/portfolio/playtpus-dreamtime/final_report.pdf)

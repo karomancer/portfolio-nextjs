@@ -18,6 +18,49 @@
   box-shadow: 1.5rem 1.5rem 0 0.2rem var(--teal);
 }
 
+.pdf-links {
+  position: fixed;
+  left: calc((100vw - var(--siteWidth)) / 4);
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+
+  a {
+    margin: 2rem 0 1rem;
+    display: inline-block;
+
+    font-family: var(--strongFontFamily);
+    text-transform: uppercase;
+
+    @include breakpoint("<=xlarge") {
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  @include breakpoint("<=xlarge") {
+    position: static;
+    width: 100%;
+  }
+}
+
+.download-link {
+  display: flex;
+  color: var(--dark);
+
+  &:after {
+    display: inline-block;
+    margin-left: 0.3rem;
+    transform: translateY(5%) rotate(180deg);
+    vertical-align: bottom;
+    content: "⇪";
+  }
+}
+
 /**
  * Rich text for page rendering
  **/

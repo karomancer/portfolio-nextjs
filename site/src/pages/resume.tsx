@@ -26,16 +26,7 @@ const Resume = () => (
       <meta property="og:url" content="http://www.karinachowtime.com/resume" />
     </Head>
     <CircuitsHeader>Let's get professional.</CircuitsHeader>
-    <main className={`page ${styles["resume"]}`}>
-      <div className={styles["resume-links"]}>
-        <a
-          href={RESUME_URL}
-          className={styles["download-link"]}
-          download="KarinaChow_resume"
-        >
-          Download
-        </a>
-      </div>
+    <main className={`page ${styles["resume"]}`}>      
       <PDFViewer pdfUrl={RESUME_URL} withBoxShadow />
     </main>
   </>

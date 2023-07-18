@@ -35,46 +35,60 @@ const PDFViewer = ({ pdfUrl, withBoxShadow }: Props) => {
 
   return (
     isWindowDefined && (
-      <div className={`pdf-viewer ${styles["embedded-pdf"]} ${withBoxShadow ? styles["with-box-shadow"] : ""}`}>
-        <Document
-          file={pdfUrl}
-          onLoadError={console.error}
-          onLoadSuccess={onDocumentLoadSuccess}
-          externalLinkTarget="_blank"
+      <>
+        <div className={styles["pdf-links"]}>
+          <a
+            href={pdfUrl}
+            className={styles["download-link"]}
+          >
+            Download
+          </a>
+        </div>
+        <div
+          className={`pdf-viewer ${styles["embedded-pdf"]} ${
+            withBoxShadow ? styles["with-box-shadow"] : ""
+          }`}
         >
-          <Page
-            pageIndex={pageNumber}
-            width={width}
-            height={1400}
-            renderAnnotationLayer={true}
-            onRenderAnnotationLayerSuccess={console.log}
-            renderTextLayer={false}
-          />
-        </Document>
-        {numPages > 1 && (
-          <>
-            <div className={styles["page-controls"]}>
-              {pageNumber > 1 && (
-                <button
-                  className={styles["previous-page"]}
-                  onClick={() => setPageNumber(pageNumber - 1)}
-                  aria-label="Previous page"
-                />
-              )}
-              {pageNumber < numPages && (
-                <button
-                  className={styles["next-page"]}
-                  onClick={() => setPageNumber(pageNumber + 1)}
-                  aria-label="Next page"
-                />
-              )}
-            </div>
-            <span className={styles["slide-numbers"]}>
-              Slide {pageNumber + 1} of {numPages}
-            </span>
-          </>
-        )}
-      </div>
+          <Document
+            file={pdfUrl}
+            onLoadError={console.error}
+            onLoadSuccess={onDocumentLoadSuccess}
+            externalLinkTarget="_blank"
+          >
+            <Page
+              pageIndex={pageNumber}
+              width={width}
+              height={1400}
+              renderAnnotationLayer={true}
+              onRenderAnnotationLayerSuccess={console.log}
+              renderTextLayer={false}
+            />
+          </Document>
+          {numPages > 1 && (
+            <>
+              <div className={styles["page-controls"]}>
+                {pageNumber > 1 && (
+                  <button
+                    className={styles["previous-page"]}
+                    onClick={() => setPageNumber(pageNumber - 1)}
+                    aria-label="Previous page"
+                  />
+                )}
+                {pageNumber < numPages && (
+                  <button
+                    className={styles["next-page"]}
+                    onClick={() => setPageNumber(pageNumber + 1)}
+                    aria-label="Next page"
+                  />
+                )}
+              </div>
+              <span className={styles["slide-numbers"]}>
+                Slide {pageNumber + 1} of {numPages}
+              </span>
+            </>
+          )}
+        </div>
+      </>
     )
   );
 };
