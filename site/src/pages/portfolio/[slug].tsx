@@ -129,7 +129,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
                   {collaborators}
                 </li>
               )}
-              {frontmatter.technologies && (
+              {frontmatter?.technologies?.length > 0 && (
                 <li>
                   <strong>Technologies</strong>
                   <br />

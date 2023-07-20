@@ -1,63 +1,7 @@
 @import "../../sass/breakpoints";
 
 .portfolio-piece {
-  ul,
-  ol,
-  li,
-  span,
-  td,
-  code,
-  p {
-    font-size: 1.2rem;
-    line-height: 1.75;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-    color: var(--teal);
-    font-weight: 400;
-    background-color: white;
-    width: fit-content;
-    margin-top: 4rem;
-    margin-left: -0.5rem;
-    padding: 0 0.5rem;
-    text-transform: uppercase;
-    position: relative;
-
-    &:after {
-      bottom: 2rem;
-      z-index: -1;
-      left: -2rem;
-      content: "";
-      display: block;
-      position: absolute;
-      width: calc(var(--siteWidth) + 2rem);
-      margin-left: 1rem;
-      border-top: 0.25rem solid var(--teal);
-
-      @include breakpoint("<=medium") {
-        left: 0;
-        width: calc(100vw - 4rem);
-      }
-    }
-  }
-
-  h3 {
-    font-weight: 300;
-    color: var(--dark);
-    font-size: 1.75rem;
-  }
-
-  hr {
-    border: 0;
-    border-bottom: 0.5rem solid var(--light);
-    width: 25%;
-    margin: 3rem auto;
-  }
+  
 }
 
 .portfolio-metadata,
