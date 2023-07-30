@@ -51,7 +51,7 @@ I decided to first focus on the appropriate player experience of using the udder
 
 My original ponderance was on whether you **are the cow** or whether you **are the milkmaid**.
 
-Originally, I wanted the udder to be attached to a harness and the player *is* cow. (see left side of sketch). However, after some more thinking, sketching, and surveying friends, I concluded a few things:
+Originally, I wanted the udder to be attached to a harness and the player *is* the cow. (see left side of sketch). However, after some more thinking, sketching, and surveying friends, I concluded a few things:
 
 - Cables could be an issue, and doing it wirelessly might introduce lag into a rhythm game
 - Wearing it could also add wear-and-tear to the circuits inside
@@ -224,7 +224,7 @@ Player testing showed me that people *really* wanted to know their scores, so po
 
 ## Controller design
 
-The controller will be a silicone or latex cast cow udder attached to a mount. Ideally it would be a miniature cow statue, but I’m pressed for time so probably just a wooden frame/box.
+I was planning for the controller to be a silicone or latex cast cow udder attached to a mount.
 
 To figure out the correct proportions for the udder, I made a mylar balloon model. No precise measurements, just cut and crafted to what felt comfortable with my hands.
 
@@ -239,7 +239,7 @@ Of course, making a beauitful udder means nothing for a video game if there aren
 The casting looked very grotesque:
 ![Photograph of a very grotesque looking black box with pink goo in it](/portfolio/uddermayhem/teatbox.jpeg)
 
-I had 3 ideas for how to detect a teat squeeze:
+I had a few ideas for how to detect a teat squeeze:
 
 ### Teat Test #1: Conductive Fabric Switch
 
