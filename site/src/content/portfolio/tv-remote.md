@@ -4,7 +4,7 @@ description: A reverse engineered remote used to control a meta makeshift TV in 
 slug: /portfolio/tv-remote
 collaborators: []
 class: Learning the World, One Thing at a Time
-date: 2023-07-13T04:58:06.109Z
+date: 2022-10-19T04:58:06.000Z
 preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
 cover: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
 og_preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg

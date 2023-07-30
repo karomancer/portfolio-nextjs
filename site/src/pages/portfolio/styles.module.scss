@@ -140,6 +140,7 @@
 .tags-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0;
   padding: 0;
