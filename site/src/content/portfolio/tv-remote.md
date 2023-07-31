@@ -173,7 +173,7 @@ I poked around on YouTube after learning the history of the remote, and created 
 Here's the playlist if you have any interest in seeing it!
 
 
-[Link to youtube playlist](https://www.youtube.com/playlist?list=PLTELw9BZacuGbILIa2EB_dQ_zukHCnlJn)
+[Link to youtube playlist](https://www.youtube.com/embed/videoseries?list=PLTELw9BZacuGbILIa2EB_dQ_zukHCnlJn)
 
 
 Ideally, a person could surf between channels with the remote, and go between these videos (with some added effects)!

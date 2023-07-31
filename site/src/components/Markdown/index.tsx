@@ -163,7 +163,7 @@ const resizePictures = () => {
 
     if (childrenToRemove.length > 0) {
       const parentNode = document.createElement("p");
-      const gutter = childrenToRemove.length * 0.2;
+      const gutter = childrenToRemove.length * 0.25;
       parentNode.className = styles["p-with-images"];
 
       const height =

@@ -77,7 +77,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
 
   const collaborators = frontmatter.collaborators.map((c, i) => {
     const matched = c.match(pattern);
-    const newline = i < frontmatter.collaborators.length ? "\n" : "";
+    const newline = i < frontmatter.collaborators.length - 1 ? ",\n" : "";
     return matched ? (
       <><a href={matched[0]} target="_blank">
         {c.split(/[\[\]]/)[1]}{newline}
