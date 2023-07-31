@@ -42,9 +42,7 @@ export default function Markdown({ className, children, embeds }: Props) {
     resizePictures();
   }, []);
 
-  const Anchor = (
-    props: React.AnchorHTMLAttributes<HTMLAnchorElement>
-  ) => {
+  const Anchor = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     if (embeds && embeds[props.href]) {
       if (embeds[props.href].isIframe) {
         return (
@@ -163,7 +161,7 @@ const resizePictures = () => {
 
     if (childrenToRemove.length > 0) {
       const parentNode = document.createElement("p");
-      const gutter = childrenToRemove.length * 0.25;
+      const gutter = childrenToRemove.length * 0.2;
       parentNode.className = styles["p-with-images"];
 
       const height =
@@ -174,15 +172,8 @@ const resizePictures = () => {
         const child = childrenToRemove[k];
         const naturalWidth = child.naturalWidth;
         const naturalHeight = child.naturalHeight;
-        // child.style.height = height;
-
-        if (naturalHeight / naturalWidth > 1.5) {
-          child.style.width = `${
-            height * (naturalWidth / naturalHeight) + gutter
-          }px`; // is portrait
-        } else {
-          child.style.width = `${100 / childrenToRemove.length - gutter}%`; // is landscape
-        }
+        
+        child.style.width = `${100 / childrenToRemove.length - gutter}%`;
         parentNode.appendChild(paragraphs[i].removeChild(child));
       }
       if (parentNode.children.length > 0) {

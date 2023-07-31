@@ -190,7 +190,7 @@
 p > .p-with-images {
   display: flex;
   flex-flow: row wrap;
-  gap: 0.5rem;
+  justify-content: space-between;
   margin: 0;
 
   video,
@@ -203,9 +203,20 @@ p > .p-with-images {
     @include breakpoint("<=medium") {
       width: 100%;
       max-width: 100%;
+      height: 200px;
       margin-bottom: 0.2rem;
       max-width: 100%;
       object-fit: cover;
     }
+
+    @include breakpoint("<=small") {
+      width: 100% !important;
+      max-height: 400px;
+    }
+  }
+
+  @include breakpoint("<=small") {
+    flex-flow:nowrap;
+    flex-direction: column;
   }
 }
