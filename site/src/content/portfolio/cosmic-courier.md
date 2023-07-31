@@ -12,7 +12,7 @@ preview: /portfolio/cosmic-courier/thumbnail.jpeg
 cover: /portfolio/cosmic-courier/cover.jpeg
 og_preview: /portfolio/cosmic-courier/thumbnail.jpeg
 draft: false
-url: ""
+url: https://github.com/karomancer/spacepirates
 technologies:
   - Adobe Illustrator
   - Arduino
@@ -216,3 +216,9 @@ This cabinet, alongside others in the class, were showcased at the indie arcade 
 ![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville2.mp4)
 ![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot1.jpeg)
 ![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot2.jpeg)
+
+---
+
+You can see all the code, both Teensy (me + Daniel) and Unity (Armando) at
+
+[Github](https://github.com/karomancer/spacepirates)
