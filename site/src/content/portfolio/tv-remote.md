@@ -11,10 +11,10 @@ og_preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
 draft: false
 url: https://github.com/karomancer/ir_receiver
 technologies:
-  - Arduino
   - Electron
-  - TypeScript
   - Node.js
+  - TypeScript
+  - Arduino Nano 33 IoT
 tags:
   - frontend
   - pcomp

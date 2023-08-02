@@ -17,7 +17,7 @@ categories:
   - ITP
 type: portfolioPiece
 technologies:
-  - Arduino
+  - Arduino Nano 33 IoT
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
 og_preview: /portfolio/neopatch/og_image.jpg
