@@ -7,16 +7,32 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      width: calc(100vw / 4);
+      padding: 0;
+
+      @include breakpoint("<=large") {
+        width: calc(100vw / 3);
+      }
+    
+      @include breakpoint("<=medium") {
+        width: calc(100vw / 2);
+      }
+    
+      @include breakpoint("<=small") {
+        width: 100%;
+      }
+    }
   }
 }
 
 .portfolio-piece {
   position: relative;
   overflow: hidden;
-  width: fit-content;
-  max-width: calc(100vw / 4);
   padding: 0;
-  flex: 1 auto;
   height: fit-content;
   margin: 0;
 
@@ -42,19 +58,7 @@
     width: 100%;
     height: fit-content;
     object-fit: cover;
-  }
-
-  @include breakpoint("<=large") {
-    max-width: calc(100vw / 3);
-  }
-
-  @include breakpoint("<=medium") {
-    max-width: calc(100vw / 2);
-  }
-
-  @include breakpoint("<=small") {
-    max-width: 100%;
-  }
+  }  
 }
 
 .header {
