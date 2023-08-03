@@ -14,10 +14,11 @@ if (isWindowDefined) {
 
 interface Props {
   pdfUrl: string;
+  isEmbedded?: boolean
   withBoxShadow?: boolean;
 }
 
-const PDFViewer = ({ pdfUrl, withBoxShadow }: Props) => {
+const PDFViewer = ({ pdfUrl, withBoxShadow, isEmbedded }: Props) => {
   const [numPages, setNumPages] = useState<number>(1);
   const [pageNumber, setPageNumber] = useState(0);
   const [width, setWidth] = useState(0);
@@ -45,7 +46,7 @@ const PDFViewer = ({ pdfUrl, withBoxShadow }: Props) => {
           </a>
         </div>
         <div
-          className={`pdf-viewer ${styles["embedded-pdf"]} ${
+          className={`pdf-viewer ${isEmbedded && styles["embedded-pdf"]} ${
             withBoxShadow ? styles["with-box-shadow"] : ""
           }`}
         >

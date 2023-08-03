@@ -22,12 +22,12 @@ const Asset = (asset: ImageType) => {
     );
   }
 
-  if (isImg) {
-    return <img className="p-asset" alt={asset.alt} src={asset.src} />;
+  if (isPDF) {
+    return <PDFViewer pdfUrl={asset.src} isEmbedded />;
   }
 
-  if (isPDF) {
-    return <PDFViewer pdfUrl={asset.src} />;
+  if (isImg) {
+    return <img className="p-asset" alt={asset.alt} src={asset.src} />;
   }
 
 
