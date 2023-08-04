@@ -1,5 +1,5 @@
 ---
-title: Zelda x Star Wars Snowbard
+title: Zelda x Star Wars Snowboard
 description: An illustration combining The Legend of Zelda and Star Wars fandom for a snowboard.
 slug: /portfolio/zelda-snowboard
 collaborators: []
