@@ -65,8 +65,10 @@
   transition: all 0.2s ease-in;
   position: absolute;
   bottom: 0;
+  height: 8rem;
   padding: 1.25rem;
   width: 100%;
+  vertical-align: baseline;
 
   h6 {
     position: relative;
@@ -109,6 +111,7 @@
   bottom: 0;
   transform: translateY(calc(100% - 0.75rem));
   padding: 1.25rem;
+  width: 100%;
 
   background: var(--teal);
 
