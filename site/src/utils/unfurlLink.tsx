@@ -10,7 +10,7 @@ export type MetascrapedInfo = {
 };
 
 const IFRAME_WEBSITES = ["glitch", "spotify", "youtube"];
-const UNFURLING_WEBSITES = ["github", "medium", "cargo", "studio.patreon", "chriseminizer"];
+const UNFURLING_WEBSITES = ["github", "medium", "cargo", "studio.patreon", "chriseminizer", "etsy"];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
 const metascraper = require("metascraper")([
