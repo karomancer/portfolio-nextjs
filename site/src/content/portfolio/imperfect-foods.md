@@ -3,8 +3,8 @@ title: Imperfect Foods Components
 description: A landing page for Imperfect Foods with interactive, animated components to illustrate impact and savings potentials.
 slug: /portfolio/imperfect-foods
 collaborators:
-  - Rob Kayson
-  - Cory (Jason) Alvernaz
+  - "[Cory (Jason) Alvernaz](https://www.coryalvernaz.com/)"
+  - "[Rob Kayson](https://www.linkedin.com/in/rkayson/)"
 class: ""
 date: 2021-06-07T08:45:42.519Z
 preview: /portfolio/imperfect-foods/preview.gif
