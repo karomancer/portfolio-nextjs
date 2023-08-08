@@ -16,7 +16,7 @@ technologies:
 tags:
   - illustration
 categories:
-  - Freelance
+  - Freelance Design
 type: portfolioPiece
 ---
 
