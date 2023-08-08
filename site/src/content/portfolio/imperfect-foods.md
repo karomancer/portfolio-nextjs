@@ -1,5 +1,5 @@
 ---
-title: Imperfect Foods Marketing Components
+title: Imperfect Foods Components
 description: A landing page for Imperfect Foods with interactive, animated components to illustrate impact and savings potentials.
 slug: /portfolio/imperfect-foods
 collaborators:
@@ -7,22 +7,21 @@ collaborators:
   - Cory (Jason) Alvernaz
 class: ""
 date: 2021-06-07T08:45:42.519Z
-preview: /portfolio/imperfect-foods/preview.jpeg
+preview: /portfolio/imperfect-foods/preview.gif
 cover: /portfolio/imperfect-foods/cover.jpg
-og_preview: /portfolio/imperfect-foods/preview.jpeg
+og_preview: /portfolio/imperfect-foods/og_preview.jpeg
 draft: false
 url: https://www.imperfectfoods.com/
 technologies:
-  - React#
-  - TypeScript
   - CSS
+  - TypeScript
+  - React
 tags:
   - animation
   - webdev
   - mentoring
 categories:
   - Client Work
-  - Mutations Ltd
   - Imperfect Foods
 type: portfolioPiece
 ---
@@ -65,6 +64,7 @@ Rob Kayson and I worked on this together, and he knocked it out of the park. The
 | -- | -- |
 | ![](/portfolio/imperfect-foods/badgecarousel.mp4) | ![](/portfolio/imperfect-foods/badgecarouselmobile.mp4) | 
 
+
 ### Impact Slider
 A highly animated slider showing how much water, food, co2, and time that could be saved for using their services.
 
@@ -78,8 +78,10 @@ This I did completely on my own. The scrolling numbers were done with pure JavaS
 </div>
 ```
 
-![](/portfolio/imperfect-foods/impactslider.mp4)
+| | |
+| -- | -- |
+| ![](/portfolio/imperfect-foods/impactslider.mp4) | ![](/portfolio/imperfect-foods/impactslidermobile.mp4) | 
 
-![](/portfolio/imperfect-foods/impactslidermobile.mp4)
+--- 
 
-You can see [Mutation's documentation of the same project](https://mutations.ltd/work/imperfect-foods-partnering-to-implement-interactive-new-site/) or even the website live on [Imperfect Food's main marketing page](https://www.imperfectfoods.com/).
+If you'd like to know more, you can check out [Mutation's documentation of the same project](https://mutations.ltd/work/imperfect-foods-partnering-to-implement-interactive-new-site/) or even the website live on [Imperfect Food's main marketing page](https://www.imperfectfoods.com/).
