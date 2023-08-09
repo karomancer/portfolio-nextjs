@@ -18,8 +18,8 @@ technologies:
   - React
 tags:
   - animation
-  - webdev
   - mentoring
+  - web dev
 categories:
   - Client Work
   - Imperfect Foods

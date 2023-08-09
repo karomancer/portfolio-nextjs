@@ -17,9 +17,7 @@ technologies:
 tags:
   - animation
   - creative coding
-  - CSS
   - illustration
-  - web dev
 categories:
   - Gray Area
 type: portfolioPiece

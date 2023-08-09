@@ -18,10 +18,8 @@ technologies:
   - Adobe Illustrator
 tags:
   - animation
-  - creative coding
-  - CSS
-  - web dev
   - illustration
+  - web dev
 categories:
   - Full-time
   - Patreon

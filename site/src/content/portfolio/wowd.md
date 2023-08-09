@@ -9,7 +9,7 @@ date: 2022-06-15T20:52:25.893Z
 preview: /portfolio/wowd/preview.gif
 cover: /portfolio/wowd/cover.png
 og_preview: /portfolio/wowd/og_image.jpeg
-draft: true
+draft: false
 url: https://www.wowd.co/
 technologies:
   - Dart
@@ -17,8 +17,7 @@ technologies:
   - Figma
 tags:
   - animation
-  - Dart
-  - Flutter
+  - mobile dev
 categories:
   - Client Work
   - Wowd
