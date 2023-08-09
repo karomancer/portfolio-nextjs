@@ -6,7 +6,7 @@ import { Image as ImageType } from "./types";
 
 const IMG_PATTERN = /(.*)[.jpeg|.jpg|.png|.gif]$/;
 const VIDEO_PATTERN = /(.*)[.mp4|.mov]$/;
-const PDF_PATTERN = /(.*)[.pdf]$/;
+const PDF_PATTERN = /(.*).pdf$/;
 
 const Asset = (asset: ImageType) => {
   const isVideo = asset?.src.match(VIDEO_PATTERN);
