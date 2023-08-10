@@ -46,7 +46,8 @@
       box-shadow: 0.2rem 0.2rem 1rem var(--light);
 
       img + div {
-        transform: translateY(-100%);
+        transform: translateY(-20%);
+        bottom: 6rem;
       }
 
       div + div {
@@ -66,7 +67,7 @@
   transition: all 0.2s ease-in;
   position: absolute;
   bottom: 0;
-  height: 8rem;
+  height: fit-content;
   padding: 1.25rem;
   width: 100%;
   vertical-align: baseline;
