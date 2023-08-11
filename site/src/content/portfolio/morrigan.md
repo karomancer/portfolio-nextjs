@@ -1,5 +1,5 @@
 ---
-title: Morrigan
+title: Morrigan [Darkstalkers]
 description: A forray into airbrushing and foam carving through a cosplay of the popular and sexy Darkstalkers character.
 slug: /portfolio/morrigan
 collaborators: []
@@ -14,8 +14,7 @@ technologies:
   - Iwata Sprint Compressor (Airbrush)
   - Shark Euro Pro X (Sewing Machine)
 tags:
-  - cosplay
-  - sculpture
+  - fabrication
   - sewing
 categories:
   - Personal Project

@@ -1,5 +1,5 @@
 ---
-title: Kasumi "Violet" Yoshizawa
+title: Kasumi [Persona 5]
 description: Complex pattern making and an introduction to CAD by making Kasumi "Violet" Yoshizawa from Persona 5 Royal
 slug: /portfolio/kasumi
 collaborators: []
@@ -10,10 +10,12 @@ cover: /portfolio/kasumi/screenshot.jpeg
 og_preview: /portfolio/kasumi/presentation1.jpeg
 draft: false
 url: ""
-technologies: []
+technologies:
+  - Shark Euro Pro X (Sewing Machine)
+  - Creality CR-10 (3D Printer)
 tags:
   - CAD
-  - sculpture
+  - fabrication
   - sewing
 categories:
   - Personal Project
