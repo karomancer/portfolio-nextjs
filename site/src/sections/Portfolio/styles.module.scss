@@ -101,7 +101,8 @@
     background: linear-gradient(
       transparent,
       transparent 0%,
-      transparent 20%,
+      transparent 10%,
+      rgba(0,0,0,0.6) 50%,
       var(--dark) 100%
     );
   }
