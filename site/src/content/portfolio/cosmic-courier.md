@@ -1,6 +1,6 @@
 ---
 title: Cosmic Courier
-description: A rogue-like 3-person co-op arcade game in which players steer with a pirate-wheel shaped controller and shoot enemies with two cannon-shaped controllers.
+description: A 3-person co-op arcade game in which players play as a space pirate crew smuggling chickens across the galaxy using alternative controllers.
 slug: /portfolio/cosmic-courier
 collaborators:
   - Daniel Wai
