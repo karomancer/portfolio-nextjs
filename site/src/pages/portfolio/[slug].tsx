@@ -133,7 +133,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
                 <li>
                   <strong>Technologies</strong>
                   <br />
-                  {frontmatter.technologies.join(", ")}
+                  {frontmatter.technologies.sort().join(", ")}
                 </li>
               )}
               {frontmatter.url && (

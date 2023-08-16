@@ -13,6 +13,10 @@
   overflow: hidden;
   height: fit-content;
   min-height: 400px;
+
+  canvas {
+    min-height: 400px;
+  }
 }
 
 .with-box-shadow {

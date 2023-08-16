@@ -8,6 +8,8 @@
     padding: 0;
     list-style: none;
 
+    clip-path: polygon();
+
     & > ul {
       display: flex;
       flex-direction: column;
