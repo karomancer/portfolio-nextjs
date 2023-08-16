@@ -9,9 +9,9 @@ collaborators:
   - "[Soyeon Hwang](https://hcii.cmu.edu/people/soyeon-hwang)"
 class: Human-Computer Interaction Capstone
 date: 2013-05-09T03:07:47.000Z
-preview: /portfolio/playtpus-dreamtime/preview.jpeg
-cover: /portfolio/playtpus-dreamtime/cover.jpeg
-og_preview: /portfolio/playtpus-dreamtime/preview.jpeg
+preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
+cover: /portfolio/playtpus-dreamtime/cover2.jpeg
+og_preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
 draft: false
 url: ""
 technologies:
@@ -27,6 +27,8 @@ categories:
 type: portfolioPiece
 ---
 
+![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)
+
 ## Context
 At CMU, both Bachelors and Master [Human-Computer Interaction](https://hcii.cmu.edu/) students work on capstone projects to close out their education. They are the exact same with the exception that the bachelor version is a semester shorter.
 
@@ -36,7 +38,7 @@ Working with faculty mentors and their industry partners, teams produce user res
 
 Typically, students with complementary skillsets are chosen to work together. Think: a computer scientist, a designer, a psychologist, and an artist. Our group had three software people, an artist, and a psychologist. I decided to leave the software work to the other two computer people and work with the psychologist on UX interviewing, persona creation, and mapping out processes.
 
-## The Client and the Ask
+## About Platypus LLC
 Our client for this capstone was [Platypus LLC](http://senseplatypus.com/), a local Pittsburgh startup. At the time, they produced small hover boats equipped with Android phones that autonomously travel across bodies of water. While traversing a body of water, the boats test samples of water for pH level and common contaminants, and create a map of the water for the owner of the boat to review.
 
 Fracking is a large concern in the part of the United States that Platypus is located (near the Appalachians), so the product was created with reporting results in mind. The "heat map" graphic is useful to identify from where a contaminant might be emitting from to help identify fracking leaks.
@@ -58,7 +60,7 @@ Platypus was still early in development, so they didn't have too many resources 
 - We all went to the Strip District Farmer's Market and found several farmers/ranchers
 - We grabbed some professors and students to run through paper and low-fidelity mockups with us after having interviewed the rest
 
-## What Did I Do?
+### My role
 I found most of our interviewees and ran the vast majority of our contextual design interviews. I provided design feedback to my teammate Alex Rothera on his product mocks, and took his mocks into the world to gather feedback for the next iteration. I also produced a lot of the visualizations in our final presentation and report, such as the informational flow chart and the people interviewed visualization. Lastly, I did a lot of project management. I maintained the Gantt chart and scheduling, which was a natural step because a lot had to be scheduled around when user feedback would come back.
 
 ### Process pictures
@@ -79,11 +81,10 @@ Who we interviewed to both understand the agricultural space better but also to 
 ![Interview stats 38 interviews 14 potential Platypus users](/portfolio/playtpus-dreamtime/interview_stats.png)
 
 
-## Final deliverables
-Final presentation of work done for Platypus LLC. Presentation was intended for the rest of our class, and includes a lot of context as to who the client is and what they are trying to accomplish. A much more generalized version of the final report we gifted the client intended for a much broader audience. The information is more focused on UX techniques used, including contextual inquiry and persona creation, and less on business recommendations.
+## Final recommendations and presentation
 
-![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)
+As part of our capstone, we made a presentation of work done for Platypus LLC to be presented to the rest of our class as part of our capstone, and includes a lot of context as to who the client is and what they are trying to accomplish. A much more generalized version of the final report we gifted the client intended for a much broader audience. The information is more focused on UX techniques used, including contextual inquiry and persona creation, and less on business recommendations. The first document on this web page is this presentation.
 
-The final report of our UX findings to be given to the client, Platypus LLC. Covers the exploration for how we designed our medium-fidelity prototype we created and how different identified personas would use that prototype. Also explains the breakdowns we found in their existing product and user feedback on our iterations on their product.
+In addition to the presentation, we created a final recommendations report of our UX findings and gave it to our client, Platypus LLC. It covered the exploration for how we designed our medium-fidelity prototype we created and how different identified personas would use that prototype. Also explains the breakdowns we found in their existing product and user feedback on our iterations on their product.
 
 ![Final report](/portfolio/playtpus-dreamtime/final_report.pdf)
