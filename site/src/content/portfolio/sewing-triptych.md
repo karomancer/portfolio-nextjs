@@ -15,9 +15,9 @@ technologies:
   - HTML
   - Adobe Illustrator
 tags:
-  - animation
-  - creative coding
   - illustration
+  - JavaScript
+  - animation
 categories:
   - Gray Area
 type: portfolioPiece

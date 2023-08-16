@@ -17,7 +17,9 @@ technologies:
   - Figma
 tags:
   - animation
+  - Flutter
   - mobile dev
+  - Dart
 categories:
   - Client Work
   - Wowd

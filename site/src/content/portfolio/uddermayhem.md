@@ -22,7 +22,8 @@ tags:
   - fabrication
   - illustration
   - pcomp
-  - game dev
+  - Unity
+  - 3D printing
 categories:
   - itp
   - WIP

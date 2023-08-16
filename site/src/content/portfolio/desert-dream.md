@@ -17,11 +17,11 @@ technologies:
   - Adobe Photoshop
   - Helix Mini Laser Cutter
 tags:
-  - AI
   - animation
   - AR
   - fabrication
   - XR
+  - ai
 categories:
   - ITP
 type: portfolioPiece

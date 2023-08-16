@@ -17,6 +17,7 @@ tags:
   - CAD
   - fabrication
   - sewing
+  - 3D printing
 categories:
   - Personal Project
   - cosplay

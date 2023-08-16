@@ -19,7 +19,9 @@ technologies:
 tags:
   - animation
   - illustration
+  - TypeScript
   - web dev
+  - React
 categories:
   - Full-time
   - Patreon
