@@ -68,7 +68,7 @@ const PDFViewer = ({ pdfUrl, withBoxShadow, isEmbedded }: Props) => {
           {numPages > 1 && (
             <>
               <div className={styles["page-controls"]}>
-                {pageNumber > 1 && (
+                {pageNumber > 0 && (
                   <button
                     className={styles["previous-page"]}
                     onClick={() => setPageNumber(pageNumber - 1)}
