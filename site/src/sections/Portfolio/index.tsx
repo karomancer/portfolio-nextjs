@@ -13,7 +13,7 @@ interface PortfolioProps {
 type Tags = string[];
 // type Technologies = string[];
 
-export const TagsList = ({ slug, tags }: { slug: string, tags: Tags }) => (
+export const TagsList = ({ slug = "tag", tags }: { slug?: string, tags: Tags }) => (
   <ul className={pageStyles["tags-list"]}>
     {tags
       .sort()
