@@ -14,9 +14,9 @@ technologies:
   - CSS
   - HTML
   - Adobe Illustrator
+  - JavaScript
 tags:
   - illustration
-  - JavaScript
   - animation
 categories:
   - Gray Area

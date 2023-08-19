@@ -15,8 +15,6 @@ technologies:
   - Unreal Engine v5
   - Google Tilt Brush
 tags:
-  - Unreal Engine
-  - VR
   - CAD
 categories:
   - ITP

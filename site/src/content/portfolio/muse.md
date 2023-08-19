@@ -15,7 +15,6 @@ technologies:
   - Adobe Photoshop
 tags:
   - ai
-  - architecture
 categories:
   - ITP
 type: portfolioPiece

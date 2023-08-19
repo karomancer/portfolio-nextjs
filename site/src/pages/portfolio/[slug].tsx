@@ -4,14 +4,13 @@ import { format } from "date-fns";
 import readMdx, { ReadMDX } from "@/utils/readMdx";
 
 import Markdown, { HrefToEmbeds } from "@/components/Markdown";
+import { TagsList } from "@/components/Tags";
 import {
   unfurlLink,
   filterByExpandableLinks,
   extractLinkFromMDX,
 } from "@/utils/unfurlLink";
 import Head from "@/components/Head";
-
-import { TagsList } from "@/sections/Portfolio";
 
 import styles from "./styles.module.scss";
 
@@ -70,18 +69,21 @@ export async function getStaticProps({
 type Props = ReadMDX & { embeds: HrefToEmbeds };
 
 const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
-  const pattern = /(?<=[^\!].*\]\()(.*)(?=\)$)/
+  const pattern = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
   if (!frontmatter || !content) {
     return null;
-  }  
+  }
 
   const collaborators = frontmatter.collaborators.map((c, i) => {
     const matched = c.match(pattern);
     const newline = i < frontmatter.collaborators.length - 1 ? ",\n" : "";
     return matched ? (
-      <><a href={matched[0]} target="_blank">
-        {c.split(/[\[\]]/)[1]}{newline}
-      </a></>
+      <>
+        <a href={matched[0]} target="_blank">
+          {c.split(/[\[\]]/)[1]}
+          {newline}
+        </a>
+      </>
     ) : (
       c + newline
     );

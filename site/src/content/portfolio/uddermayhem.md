@@ -22,7 +22,6 @@ tags:
   - fabrication
   - illustration
   - pcomp
-  - Unity
   - 3D printing
 categories:
   - itp

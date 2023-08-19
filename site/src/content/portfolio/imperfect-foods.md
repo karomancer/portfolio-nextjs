@@ -20,8 +20,6 @@ tags:
   - animation
   - frontend
   - mentoring
-  - React
-  - TypeScript
 categories:
   - Client Work
   - Imperfect Foods

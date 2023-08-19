@@ -16,11 +16,8 @@ technologies:
   - TypeScript
   - Arduino Nano 33 IoT
 tags:
-  - Electron
-  - Node.js
   - pcomp
   - research
-  - TypeScript
 categories:
   - ITP
 type: portfolioPiece

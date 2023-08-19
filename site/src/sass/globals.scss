@@ -1,5 +1,6 @@
 @import "./breakpoints";
 @import "./fonts.scss";
+@import "./commonStyles.scss";
 
 :root {
   --siteWidth: 1040px;
@@ -114,13 +115,10 @@ h6 {
   line-height: 1.5em;
 }
 
-a {
-  color: var(--teal);
-  text-decoration: dashed;
 
-  &:hover {
-    text-decoration: underline;
-  }
+
+a {
+  @extend .link-style;
 }
 
 strong {

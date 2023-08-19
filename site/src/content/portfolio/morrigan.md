@@ -16,6 +16,7 @@ technologies:
 tags:
   - fabrication
   - sewing
+  - cosplay
 categories:
   - Personal Project
   - cosplay

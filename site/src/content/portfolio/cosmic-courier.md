@@ -15,7 +15,7 @@ draft: false
 url: https://github.com/karomancer/spacepirates
 technologies:
   - Adobe Illustrator
-  - Arduino
+  - Arduino Nano 33 IoT
   - Autodesk Fusion 360
   - Teensy 4.1
   - Ultimaker 3

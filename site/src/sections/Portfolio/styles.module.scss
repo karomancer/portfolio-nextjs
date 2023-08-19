@@ -1,4 +1,5 @@
 @import "../../sass/breakpoints";
+@import "../../sass/_commonStyles.scss";
 
 .portfolio-section {
   & > ul {
@@ -19,11 +20,11 @@
       @include breakpoint("<=large") {
         width: calc(100vw / 3);
       }
-    
+
       @include breakpoint("<=medium") {
         width: calc(100vw / 2);
       }
-    
+
       @include breakpoint("<=small") {
         width: 100%;
       }
@@ -62,7 +63,7 @@
     width: 100%;
     height: fit-content;
     object-fit: cover;
-  }  
+  }
 }
 
 .header {
@@ -104,7 +105,7 @@
       transparent,
       transparent 0%,
       transparent 10%,
-      rgba(0,0,0,0.6) 50%,
+      rgba(0, 0, 0, 0.6) 50%,
       var(--dark) 100%
     );
   }
@@ -129,4 +130,112 @@
   p {
     padding-bottom: 1rem;
   }
+}
+
+.tags-section {
+  display: flex;
+  height: 0;
+  width: 100%;
+  transition: all 0.2s ease-in;
+
+  & > div {
+    background-color: rgba(0, 0, 0, 0.015);
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    height: 120px;
+
+    &:last-child {
+      background-color: rgba(0, 0, 0, 0.045);
+
+      @include breakpoint("<=xlarge") {
+        height: 140px;
+      }      
+
+      @include breakpoint("<=large") {
+        height: 200px;
+      }      
+      
+      @include breakpoint("<=medium") {
+        height: 150px;
+        background-color: white;
+      }      
+      
+      @include breakpoint("<=small") {
+        height: 200px;
+        background-color: white;
+      }
+
+      @include breakpoint("<=xsmall") {
+        height: 300px;
+        background-color: white;
+      }
+    }
+
+    @include breakpoint("<=small") {
+      height: 200px;
+    }      
+
+    @include breakpoint("<=medium") {      
+      width: 100%;      
+    }
+  }  
+
+  & > fieldset:not(:last-child) {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @include breakpoint("<=medium") {
+    display: block;
+  }
+}
+
+.tags-section-show {
+  height: 115px;
+
+  @include breakpoint("<=xlarge") {
+    height: 140px;
+  }      
+
+  @include breakpoint("<=large") {
+    height: 160px;
+  }      
+  
+  @include breakpoint("<=medium") {
+    height: 250px;
+    background-color: white;
+  }
+
+  @include breakpoint("<=small") {
+    height: 270px;
+  }
+
+  @include breakpoint("<=xsmall") {
+    height: 360px;
+  }
+}
+
+.tags-filter-button {
+  @extend .link-style;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--dark);
+  outline: 0;
+  background: 0;
+  border: 0;
+  float: right;
+  cursor: pointer;
+  margin: 0 0 0.5rem 0.5rem;
+
+  @include breakpoint("<=medium") {
+    float: none;
+  }
+}
+
+.empty-portfolio-state {
+  margin: 2rem auto;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
 }

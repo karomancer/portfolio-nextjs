@@ -18,6 +18,7 @@ tags:
   - fabrication
   - sewing
   - 3D printing
+  - cosplay
 categories:
   - Personal Project
   - cosplay

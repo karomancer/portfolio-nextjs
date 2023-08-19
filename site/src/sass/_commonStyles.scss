@@ -1,0 +1,8 @@
+.link-style {
+  color: var(--teal);
+  text-decoration: dashed;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
