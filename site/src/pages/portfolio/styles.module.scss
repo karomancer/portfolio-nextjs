@@ -1,7 +1,6 @@
 @import "../../sass/breakpoints";
 
 .portfolio-piece {
-  
 }
 
 .portfolio-metadata,
@@ -138,6 +137,8 @@
 }
 
 .tags-list {
+  --font-size: 0.75rem;
+
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -150,21 +151,41 @@
   outline: 0;
   border: 0;
 
-  li, label {
+  li,
+  label {
     background-color: #a3e3d1;
     padding: 0.25rem 0.5rem;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: var(--font-size);
     min-width: 2.5rem;
-    text-align: center;    
+    text-align: center;
 
     outline: 0;
     box-shadow: 0;
     border: 0;
 
-    input {
-      // opacity: 0;
+    & > input {
+      display: none;
     }
+
+    &:has(input:checked)::after {
+      content: " ×";
+      display: inline;
+    }
+
+    &:has(input:not(:checked)) {
+      background-color: white;
+      border: 1px solid var(--teal);
+
+      &::after {
+        content: " +";
+        display: inline;
+      }
+    }
+  }
+
+  label.checked {
+    background-color: red;
   }
 }
 

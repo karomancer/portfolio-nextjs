@@ -20,14 +20,15 @@ export async function getStaticProps() {
   });
 
   const collectAllTags = () => {
-    const allTags = [];
-    const _allTags = new Set();
+    const _allTags = {};
     pieces.forEach((piece, i) => {
-      piece.frontmatter.tags.map((tag) => _allTags.add(tag));
-    });
+      piece.frontmatter.tags.map((tag) => 
+        !_allTags[tag] ?  _allTags[tag] = 1 : _allTags[tag]++
+    )});
 
-    _allTags.forEach((tag) => allTags.push(tag));
-    return allTags;
+    Object.keys(_allTags).forEach(tag => _allTags[tag] == 1 && delete(_allTags[tag]))
+
+    return Object.keys(_allTags).sort();
   };
 
   return {

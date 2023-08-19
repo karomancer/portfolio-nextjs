@@ -22,29 +22,22 @@ export const TagsList = ({
   tags: Tags;
 }) => (
   <ul className={pageStyles["tags-list"]}>
-    {tags
-      .sort()
-      .reverse()
-      .map((t) => (
-        <li key={`${slug}-${t}`}>{t}</li>
-      ))}
+    {tags.map((t) => (
+      <li key={`${slug}-${t}`}>{t}</li>
+    ))}
   </ul>
 );
 
 const PortfolioSection = ({ allTags, pieces }: PortfolioProps) => {
   const gridRef = useRef(null);
   const [allTechnologies, setAllTechnologies] = useState([]);
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTags, setSelectedTags] = useState([...allTags]);
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
   const [columns, setColumns] = useState([]);
   const filteredPieces = pieces
     .filter(({ frontmatter }) => {
       if (frontmatter.draft) {
         return false;
-      }
-
-      if (selectedTags.length == 0) {
-        return true;
       }
 
       for (let i = 0; i < frontmatter.tags.length; i++) {
@@ -87,35 +80,36 @@ const PortfolioSection = ({ allTags, pieces }: PortfolioProps) => {
   }, [selectedTags, selectedTechnologies]);
 
   const TagFilter = () => {
-    console.log("tagFilter", selectedTags);
-
-    const onChange = (tag, index) => () =>
+    const onChange = (tag: string, index: number) => () =>
       setSelectedTags(
         index > -1
-          ? selectedTags.splice(index, index + 1) && selectedTags
+          ? [...(selectedTags.splice(index, 1) && selectedTags)]
           : [...selectedTags, tag]
       );
 
     return (
       <fieldset className={pageStyles["tags-list"]}>
-        {allTags.map((tag) => (
-          <label key={`filter-${tag}`}>
-            <input
-              name={`radio-${tag}`}
-              type="checkbox"
-              checked={selectedTags.includes(tag)}
-              onChange={onChange(tag, selectedTags.indexOf(tag))}
-            />{" "}
-            {tag}
-          </label>
-        ))}
+        {allTags.map((tag) => {
+          const checked = selectedTags.includes(tag);
+          return (
+            <label key={`filter-${tag}`}>
+              <input
+                name={`radio-${tag}`}
+                type="checkbox"
+                checked={checked}
+                onChange={onChange(tag, selectedTags.indexOf(tag))}
+              />{" "}
+              {tag}
+            </label>
+          );
+        })}
       </fieldset>
     );
   };
 
   return (
     <div className={styles["portfolio-section"]}>
-      {/* <TagFilter /> */}
+      <TagFilter />
       <ul className={styles["portfolio-grid"]} ref={gridRef}>
         {columns.map((column, i) => (
           <ul key={`column-${i}`}>
