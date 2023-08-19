@@ -3,7 +3,7 @@
 import fs from "fs";
 
 import readMdx, { ReadMDX } from "@/utils/readMdx";
-import PortfolioSection from "@/sections/Portfolio";
+import PortfolioSection, { PortfolioProps } from "@/sections/Portfolio";
 import CircuitsHeader from "@/components/CircuitsHeader";
 import Head from "@/components/Head";
 
@@ -19,18 +19,26 @@ export async function getStaticProps() {
     return readMdx(readFile);
   });
 
+  const collectAllTags = () => {
+    const allTags = [];
+    const _allTags = new Set();
+    pieces.forEach((piece, i) => {
+      piece.frontmatter.tags.map((tag) => _allTags.add(tag));
+    });
+
+    _allTags.forEach((tag) => allTags.push(tag));
+    return allTags;
+  };
+
   return {
     props: {
       pieces,
+      allTags: collectAllTags(),
     },
   };
 }
 
-interface PortfolioProps {
-  pieces: ReadMDX[];
-}
-
-export default function Portfolio({ pieces }: PortfolioProps) {
+export default function Portfolio({ allTags, pieces }: PortfolioProps) {
   return (
     <>
       <Head
@@ -40,7 +48,7 @@ export default function Portfolio({ pieces }: PortfolioProps) {
         ogImage="/images/og_image.png"
       />
       <CircuitsHeader>Check out this weird stuff I've made.</CircuitsHeader>
-      <PortfolioSection pieces={pieces} />
+      <PortfolioSection allTags={allTags} pieces={pieces} />
     </>
   );
 }

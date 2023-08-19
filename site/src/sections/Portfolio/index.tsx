@@ -6,14 +6,21 @@ import pageStyles from "@/pages/portfolio/styles.module.scss";
 
 import styles from "./styles.module.scss";
 
-interface PortfolioProps {
+export interface PortfolioProps {
+  allTags: string[];
   pieces: ReadMDX[];
 }
 
 type Tags = string[];
 // type Technologies = string[];
 
-export const TagsList = ({ slug = "tag", tags }: { slug?: string, tags: Tags }) => (
+export const TagsList = ({
+  slug = "tag",
+  tags,
+}: {
+  slug?: string;
+  tags: Tags;
+}) => (
   <ul className={pageStyles["tags-list"]}>
     {tags
       .sort()
@@ -24,23 +31,22 @@ export const TagsList = ({ slug = "tag", tags }: { slug?: string, tags: Tags }) 
   </ul>
 );
 
-const PortfolioSection = ({ pieces }: PortfolioProps) => {
+const PortfolioSection = ({ allTags, pieces }: PortfolioProps) => {
   const gridRef = useRef(null);
-  const [allTags, setAllTags] = useState([]);
   const [allTechnologies, setAllTechnologies] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
   const [columns, setColumns] = useState([]);
   const filteredPieces = pieces
-    .filter(({frontmatter}) => {
+    .filter(({ frontmatter }) => {
       if (frontmatter.draft) {
         return false;
       }
-      
+
       if (selectedTags.length == 0) {
         return true;
       }
-      
+
       for (let i = 0; i < frontmatter.tags.length; i++) {
         if (selectedTags.includes(frontmatter.tags[i])) {
           return true;
@@ -68,36 +74,26 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
     });
 
     setColumns(newColumns);
-  };  
+  };
 
   useEffect(() => {
-    const collectAllTags = () => {
-      const _allTags = new Set();
-      pieces.forEach((piece, i) => {
-        piece.frontmatter.tags.map((tag) => _allTags.add(tag));
-      });
-  
-      _allTags.forEach((tag) => allTags.push(tag));
-  
-      setAllTags(allTags);
-    };
-    
     sortPieces();
-    collectAllTags();
     addEventListener("resize", sortPieces);
   }, []);
 
   useEffect(() => {
-    console.log("useEffect")
+    console.log("useEffect");
     sortPieces();
-  }, [selectedTags, selectedTechnologies])
+  }, [selectedTags, selectedTechnologies]);
 
   const TagFilter = () => {
-    console.log("tagFilter", selectedTags)
+    console.log("tagFilter", selectedTags);
 
-    const onChange = (tag, index) => () => 
+    const onChange = (tag, index) => () =>
       setSelectedTags(
-        index > -1 ? selectedTags.splice(index, index + 1) && selectedTags : [...selectedTags, tag]
+        index > -1
+          ? selectedTags.splice(index, index + 1) && selectedTags
+          : [...selectedTags, tag]
       );
 
     return (
@@ -105,6 +101,7 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
         {allTags.map((tag) => (
           <label key={`filter-${tag}`}>
             <input
+              name={`radio-${tag}`}
               type="checkbox"
               checked={selectedTags.includes(tag)}
               onChange={onChange(tag, selectedTags.indexOf(tag))}
@@ -118,7 +115,7 @@ const PortfolioSection = ({ pieces }: PortfolioProps) => {
 
   return (
     <div className={styles["portfolio-section"]}>
-      <TagFilter />
+      {/* <TagFilter /> */}
       <ul className={styles["portfolio-grid"]} ref={gridRef}>
         {columns.map((column, i) => (
           <ul key={`column-${i}`}>
