@@ -6,9 +6,12 @@ import Head from "@/components/Head"
 
 import About from "@/sections/About";
 import Hero from "@/sections/Hero";
-import Dribbble from "@/sections/Dribbble";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
+
+const DynamicDribbble = dynamic(() => import('@/sections/Dribbble'), {
+  loading: () => <p>Loading...</p>,
+})
 
 const DynamicMedium = dynamic(() => import('@/sections/Medium'), {
   loading: () => <p>Loading...</p>,
@@ -47,7 +50,7 @@ const Home = ({
       />      
       <Hero scrollToId="one" />
       <About id="one" />
-      <Dribbble shots={dribbbleShots} />
+      <DynamicDribbble shots={dribbbleShots} />
       <DynamicMedium mediumPosts={mediumPosts} />
     </main>
   );
