@@ -119,14 +119,28 @@ const PortfolioSection = ({
                 }}
               >
                 <a key={title} href={slug}>
-                  <Image
-                    src={preview}
-                    alt={`Thumbnail for ${title}`}
-                    role="presentation"
-                    width={thumbnail_width * 300}
-                    height={thumbnail_height * 200}
-                    objectFit="cover"
-                  />
+                  {preview.match(/mp4/) ? (
+                    <video
+                      width={thumbnail_width * 300}
+                      height={thumbnail_height * 200}
+                      autoPlay
+                      muted
+                      loop
+                    >
+                      <source src={preview} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <Image
+                      src={preview}
+                      alt={`Thumbnail for ${title}`}
+                      role="presentation"
+                      width={thumbnail_width * 300}
+                      height={thumbnail_height * 200}
+                      objectFit="cover"
+                    />
+                  )}
+
                   <cite className={styles["header"]}>
                     <h6>
                       <strong>{categories.join(" • ").toUpperCase()}</strong> |{" "}

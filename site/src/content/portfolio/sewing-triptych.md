@@ -5,7 +5,7 @@ slug: /portfolio/sewing-triptych
 collaborators: []
 class: ""
 date: 2020-04-20T00:38:31.892Z
-preview: /portfolio/sewing-triptych/sewing-no-boxshadow.gif
+preview: /portfolio/sewing-triptych/preview.mp4
 cover: /portfolio/sewing-triptych/cover.jpeg
 og_preview: /portfolio/sewing-triptych/og_image.jpeg
 draft: false
