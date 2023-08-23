@@ -1,4 +1,5 @@
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
+import dynamic from 'next/dynamic'
 import axios from "axios";
 
 import Head from "@/components/Head"
@@ -7,7 +8,11 @@ import About from "@/sections/About";
 import Hero from "@/sections/Hero";
 import Dribbble from "@/sections/Dribbble";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
-import Medium, { MediumPost, getMediumPosts } from "@/sections/Medium";
+import { MediumPost, getMediumPosts } from "@/sections/Medium";
+
+const DynamicMedium = dynamic(() => import('@/sections/Medium'), {
+  loading: () => <p>Loading...</p>,
+})
 
 interface Props {
   dribbbleShots: DribbbleShot[];
@@ -43,7 +48,7 @@ const Home = ({
       <Hero scrollToId="one" />
       <About id="one" />
       <Dribbble shots={dribbbleShots} />
-      <Medium mediumPosts={mediumPosts} />
+      <DynamicMedium mediumPosts={mediumPosts} />
     </main>
   );
 };
