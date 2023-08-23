@@ -143,6 +143,7 @@
 .tags-section {
   display: flex;
   height: 0;
+  opacity: 0;
   width: 100%;
   transition: all 0.2s ease-in;
 
@@ -181,7 +182,11 @@
     }
 
     @include breakpoint("<=small") {
-      height: 200px;
+      height: 110px;
+    }
+
+    @include breakpoint("<=xsmall") {
+      height: 150px;
     }
 
     @include breakpoint("<=medium") {
@@ -200,6 +205,7 @@
 }
 
 .tags-section-show {
+  opacity: 1;
   height: 115px;
 
   @include breakpoint("<=xlarge") {
