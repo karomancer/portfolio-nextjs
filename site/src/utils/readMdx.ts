@@ -11,6 +11,8 @@ export interface ReadMDX {
     tags: string[];
     description: string;
     preview: string;
+    thumbnail_width: number;
+    thumbnail_height: number;
     cover: string;
     draft: boolean;
     collaborators?: string[];

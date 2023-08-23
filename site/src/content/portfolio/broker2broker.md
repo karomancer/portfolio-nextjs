@@ -16,12 +16,15 @@ technologies:
   - Figma
   - Adobe Premiere Pro
 tags:
+  - animation
   - ux design
   - video editing
 categories:
   - Client Work
   - Broker2Broker
 type: portfolioPiece
+thumbnail_width: 2
+thumbnail_height: 2
 ---
 
 ![](/portfolio/broker2broker/app_big.mp4)

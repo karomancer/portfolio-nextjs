@@ -58,6 +58,18 @@
           "type": "image"
         },
         {
+          "title": "Thumbnail Width (cells)",
+          "name": "thumbnail_width",
+          "type": "number",
+          "editable": true,
+        },
+        {
+          "title": "Thumbnail Height",
+          "name": "thumbnail_height",
+          "type": "number",
+          "editable": true,
+        },
+        {
           "title": "Cover image",
           "name": "cover",
           "type": "image"

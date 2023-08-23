@@ -20,6 +20,7 @@ categories:
   - Personal Project
   - cosplay
 type: portfolioPiece
+thumbnail_height: 2
 ---
 
 ![Photograph of a girl in a green feather outfit and blue hair holding a giant ring with blades](/portfolio/tira/final1.jpeg)

@@ -23,6 +23,7 @@ categories:
   - Personal Project
   - cosplay
 type: portfolioPiece
+thumbnail_height: 3
 ---
 
 ![Photograph of a girl in a red wig looking at a screen that says "Persona 5"](/portfolio/kasumi/presentation1.jpeg)

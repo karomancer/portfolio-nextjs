@@ -25,6 +25,8 @@ categories:
   - CMU
   - Platypus LLC
 type: portfolioPiece
+thumbnail_width: 2
+thumbnail_height: 2
 ---
 
 ![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)

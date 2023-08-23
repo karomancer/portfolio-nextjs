@@ -21,6 +21,7 @@ categories:
   - Personal Project
   - cosplay
 type: portfolioPiece
+thumbnail_height: 3
 ---
 
 | |

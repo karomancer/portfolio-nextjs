@@ -22,6 +22,7 @@ categories:
   - Client Work
   - Wowd
 type: portfolioPiece
+thumbnail_height: 2
 ---
 
 ![Video of an app animation](/portfolio/wowd/carousel.mp4)

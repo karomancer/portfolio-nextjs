@@ -22,6 +22,8 @@ tags:
 categories:
   - ITP
 type: portfolioPiece
+thumbnail_width: 2
+thumbnail_height: 2
 ---
 
 ![Video of main interaction at showcase](/portfolio/youtopia/showcase1.mp4)

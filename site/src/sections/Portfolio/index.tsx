@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { compareDesc, format } from "date-fns";
+import Image from "next/image";
 
 import { ReadMDX } from "@/utils/readMdx";
 
@@ -27,7 +28,6 @@ const PortfolioSection = ({
     ...allTechnologies,
   ]);
   const [shouldShowFilters, showFilters] = useState(false);
-  const [columns, setColumns] = useState([]);
   const filteredPieces = pieces
     .filter(({ frontmatter }) => {
       if (frontmatter.draft) {
@@ -56,33 +56,6 @@ const PortfolioSection = ({
     .sort((a, b) =>
       compareDesc(new Date(a.frontmatter.date), new Date(b.frontmatter.date))
     );
-
-  const sortPieces = () => {
-    let newColumns = filteredPieces.length >= 2 ? [[], []] : [[]];
-    if (window.innerWidth > 1200 && filteredPieces.length > 3) {
-      newColumns = [[], [], [], []];
-    } else if (window.innerWidth > 737 && filteredPieces.length > 2) {
-      newColumns = [[], [], []];
-    } else if (window.innerWidth < 481) {
-      newColumns = [[]];
-    }
-
-    filteredPieces.forEach((piece, i) => {
-      newColumns[i % newColumns.length].push(piece);
-    });
-
-    setColumns(newColumns);
-  };
-
-  useEffect(() => {
-    sortPieces();
-    addEventListener("resize", sortPieces);
-  }, []);
-
-  useEffect(() => {
-    console.log("useEffect");
-    sortPieces();
-  }, [selectedTags, selectedTechnologies]);
 
   return (
     <div className={styles["portfolio-section"]}>
@@ -120,42 +93,55 @@ const PortfolioSection = ({
         </h2>
       ) : (
         <ul className={styles["portfolio-grid"]} ref={gridRef}>
-          {columns.map((column, i) => (
-            <ul key={`column-${i}`}>
-              {column.map(
-                ({
-                  frontmatter: {
-                    title,
-                    slug,
-                    description,
-                    categories,
-                    date,
-                    preview,
-                    tags,
-                  },
-                }) => (
-                  <li key={slug} className={styles["portfolio-piece"]}>
-                    <a key={title} href={slug}>
-                      <img src={preview} alt="" role="presentation" />
-                      <div className={styles["header"]}>
-                        <h6>
-                          <strong>
-                            {categories.join(" • ").toUpperCase()}
-                          </strong>{" "}
-                          | {format(new Date(date), "MMMM yyyy")}
-                        </h6>
-                        <h4>{title}</h4>
-                      </div>
-                      <div className={styles["description"]}>
-                        <p>{description}</p>
-                        <TagsList slug={slug} tags={tags} />
-                      </div>
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          ))}
+          {filteredPieces.map(
+            (
+              {
+                frontmatter: {
+                  title,
+                  slug,
+                  description,
+                  categories,
+                  date,
+                  preview,
+                  thumbnail_width = 1,
+                  thumbnail_height = 1,
+                  tags,
+                },
+              },
+              i
+            ) => (
+              <li
+                key={slug}
+                className={styles["portfolio-piece"]}
+                style={{
+                  gridColumn: `span ${thumbnail_width}`,
+                  gridRow: `span ${thumbnail_height}`,
+                }}
+              >
+                <a key={title} href={slug}>
+                  <Image
+                    src={preview}
+                    alt={`Thumbnail for ${title}`}
+                    role="presentation"
+                    width={thumbnail_width * 300}
+                    height={thumbnail_height * 200}
+                    objectFit="cover"
+                  />
+                  <cite className={styles["header"]}>
+                    <h6>
+                      <strong>{categories.join(" • ").toUpperCase()}</strong> |{" "}
+                      {format(new Date(date), "MMMM yyyy")}
+                    </h6>
+                    <h4>{title}</h4>
+                  </cite>
+                  <div className={styles["description"]}>
+                    <p>{description}</p>
+                    <TagsList slug={slug} tags={tags} />
+                  </div>
+                </a>
+              </li>
+            )
+          )}
         </ul>
       )}
     </div>

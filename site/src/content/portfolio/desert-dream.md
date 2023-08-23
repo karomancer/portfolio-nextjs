@@ -28,6 +28,8 @@ type: portfolioPiece
 class: Hypercinema
 ogpreview: /portfolio/desert-dream/og_image.jpg
 og_preview: /portfolio/desert-dream/og_image.jpg
+thumbnail_width: 2
+thumbnail_height: 2
 ---
 
 

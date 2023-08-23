@@ -24,6 +24,8 @@ categories:
   - Client Work
   - Imperfect Foods
 type: portfolioPiece
+thumbnail_width: 1
+thumbnail_height: 2
 ---
 
 ![](/portfolio/imperfect-foods/site.mp4)

@@ -1,6 +1,6 @@
 ---
 title: Neopatch
-description: Cyberpunk jacket with programmable embroidered snap-on RFID patches that control lighting effects & animations
+description: A cyberpunk-styled jacket with programmable embroidered snap-on RFID patches that control LED lighting effects & animations.
 slug: portfolio/neopatch
 collaborators:
   - Daniel Wai
@@ -21,6 +21,8 @@ technologies:
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
 og_preview: /portfolio/neopatch/og_image.jpg
+thumbnail_height: 3
+thumbnail_width: 2
 ---
 
 ![Video of the project at the winter showcase](/portfolio/neopatch/jacket_showcase.mp4)

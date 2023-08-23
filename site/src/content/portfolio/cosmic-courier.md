@@ -1,6 +1,6 @@
 ---
 title: Cosmic Courier
-description: A 3-person co-op arcade game in which players play as a space pirate crew smuggling chickens across the galaxy using alternative controllers.
+description: A 3-person co-op game in which players play as a space pirate crew navigating across the galaxy using alt controllers.
 slug: /portfolio/cosmic-courier
 collaborators:
   - Daniel Wai
@@ -30,6 +30,8 @@ categories:
   - ITP
 type: portfolioPiece
 keywords: []
+thumbnail_width: 1
+thumbnail_height: 1
 ---
 
 ![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville3.mp4)

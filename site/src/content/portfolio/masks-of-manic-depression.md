@@ -19,6 +19,8 @@ tags:
 categories:
   - ITP
 type: portfolioPiece
+thumbnail_width: 1
+thumbnail_height: 1
 ---
 
 ![Video of the experience in the Unreal](/portfolio/masks-of-manic-depression/play_tour.mp4)

@@ -1,6 +1,6 @@
 ---
 title: Udder Mayhem
-description: A arcade rhythm game in which the player squeezes a four silicone udder teats to a beat in order to make latte art.
+description: An alternative controller rhythm game in which the player plays a barista preparing café lattes by squeezing four silicone udder teats to a beat.
 slug: /portfolio/uddermayhem
 collaborators: []
 class: The New Arcade
@@ -27,6 +27,8 @@ categories:
   - itp
   - WIP
 type: portfolioPiece
+thumbnail_width: 3
+thumbnail_height: 3
 ---
 
 ***Note**: Still a work in progress*
@@ -41,7 +43,7 @@ Our midterm for the class *The New Arcade* was to make an unconventional control
 
 Years earlier, I had taught myself how to make molds and cast out of silicone and wanted to make a silicone beer tap udder for Burning Man. I ended up making a lot of other [little](https://www.instagram.com/p/CFa_Q4hHbdD/) [sculptures](https://www.instagram.com/p/CFWEF0bnN2q) for Burning Man but didn't get around to this. So this alternative controller assignment was the perfect opportunity to bring back the udder!
 
-**The Pitch**: A rhythm game where you play a barista who prepares café lattes with a magical countertop miniature cow instead of an espresso machine.
+**The Pitch**: A rhythm game in which you play a barista who prepares café lattes with a magical countertop miniature cow instead of an espresso machine.
 
 ## User Interaction
 
