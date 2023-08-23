@@ -1,5 +1,4 @@
 @import "../../sass/breakpoints";
-@import "../../sass/_commonStyles.scss";
 
 .portfolio-grid {
   display: grid;
@@ -231,7 +230,6 @@
 }
 
 .tags-filter-button {
-  @extend .link-style;
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--dark);
