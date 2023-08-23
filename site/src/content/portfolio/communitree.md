@@ -24,6 +24,7 @@ categories:
   - Pittsburgh Botanic Garden
 type: portfolioPiece
 thumbnail_width: 2
+thumbnail_height: 1
 ---
 
 ![Video of a tree with projection mapped or LED "leaves" showing varying information such as weather across the world](/portfolio/communitree/video.mp4)
