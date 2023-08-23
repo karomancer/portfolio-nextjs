@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { compareDesc, format } from "date-fns";
 import Image from "next/image";
 
