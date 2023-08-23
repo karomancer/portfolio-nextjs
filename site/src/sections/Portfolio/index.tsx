@@ -121,8 +121,8 @@ const PortfolioSection = ({
                 <a key={title} href={slug}>
                   {preview.match(/mp4/) ? (
                     <video
-                      width={thumbnail_width * 300}
-                      height={thumbnail_height * 200}
+                      width={thumbnail_width * 200}
+                      height={thumbnail_height * 100}
                       autoPlay
                       muted
                       loop
@@ -135,8 +135,8 @@ const PortfolioSection = ({
                       src={preview}
                       alt={`Thumbnail for ${title}`}
                       role="presentation"
-                      width={thumbnail_width * 300}
-                      height={thumbnail_height * 200}
+                      width={thumbnail_width * 200}
+                      height={thumbnail_height * 100}
                       objectFit="cover"
                     />
                   )}
