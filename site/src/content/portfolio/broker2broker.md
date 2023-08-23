@@ -6,7 +6,7 @@ collaborators:
   - "[Liana Ris](https://www.linkedin.com/in/liana-ris/)"
 class: ""
 date: 2021-02-11T22:47:06.523Z
-preview: /portfolio/broker2broker/preview.gif
+preview: /portfolio/broker2broker/preview.mp4
 cover: /portfolio/broker2broker/cover.jpeg
 og_preview: /portfolio/broker2broker/og.jpg
 draft: false

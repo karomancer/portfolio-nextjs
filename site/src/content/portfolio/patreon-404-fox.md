@@ -6,7 +6,7 @@ collaborators:
   - "[Jason Byttow](https://twitter.com/jbyttow)"
 class: ""
 date: 2017-07-15T02:44:05.000Z
-preview: /portfolio/patreon-404-fox/404.gif
+preview: /portfolio/patreon-404-fox/preview.mp4
 cover: /portfolio/patreon-404-fox/cover.gif
 og_preview: /portfolio/patreon-404-fox/og_image.png
 draft: false
