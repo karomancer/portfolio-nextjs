@@ -1,5 +1,5 @@
 ---
-title: Platypus Dreamtime
+title: Platypus Water Quality Dashboard
 description: Conducting user research for autonomous boats that measure and monitor water quality in fracking heavy regions.
 slug: /portfolio/platypus-dreamtime
 collaborators:

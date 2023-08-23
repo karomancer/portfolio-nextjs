@@ -1,5 +1,5 @@
 ---
-title: Broker2Broker
+title: Broker2Broker App UX Design
 description: A low fidelity user experience flow to be used to pitch to VCs for a commercial real estate broker platform.
 slug: /portfolio/broker2broker
 collaborators:
