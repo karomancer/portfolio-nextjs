@@ -13,7 +13,97 @@ import styles from "./styles.module.scss";
 const MONTHS_INTERN = 10;
 const FULLTIME_START_DATE = subMonths(new Date(2013, 8, 5, 9), MONTHS_INTERN);
 
-const AboutMe = ({id = "one"}) => {
+const AboutMe = ({ id = "one" }) => {
+  return (
+    <section className={styles["about-me"]} id={id}>
+      
+
+      <div className={styles["about-me-content"]}>
+        <div>
+          <div className={styles["profile-picture"]}>
+            <Image
+              src="/images/self.png"
+              alt="A profile picture depicting a girl with asymmetrical green hair"
+              width={339}
+              height={406}
+              objectFit="contain"
+            />
+          </div>
+        </div>
+        <div>
+          <h2>About me</h2>
+          Hello World, I'm <b>Karina Chow</b>.
+          <br />
+          Currently, I am pursuing a{" "}
+          <strong>Masters in Professional Studies</strong> in{" "}
+          <a href="https://itp.nyu.edu/itp/" target="_blank">
+            Interactive Telecommunications
+          </a>{" "}
+          at <strong>New York University</strong> to study the intersection of
+          art and technology through examining and learning about emerging
+          technologies like mixed reality, e-textiles, algo/AI art, projection
+          mapping, and so on. My undergraduate degree was a{" "}
+          <strong>Bachelor of Science</strong> in{" "}
+          <a
+            href="https://www.csd.cs.cmu.edu/academics/bachelors/overview"
+            target="_blank"
+          >
+            Computer Science
+          </a>{" "}
+          and{" "}
+          <a href="https://hcii.cmu.edu/" target="_blank">
+            Human-Computer Interaction
+          </a>{" "}
+          from <strong>Carnegie Mellon University</strong>.
+          <br />
+          Prior to starting graduate school, I spent a decade as a software
+          engineer in the San Francisco tech scene. I've worked in social
+          networking at <strong>Yammer</strong>, non-medical home care at{" "}
+          <strong>Honor</strong>, and the creator economy space at{" "}
+          <strong>Patreon</strong>. I've spoken both at tech conferences about
+          frontend infrastructure and design systems as well as at conferences
+          about disabilities, accessibility, and mental health.
+          <br />
+          My work has ranged from <strong>software engineering</strong> to{" "}
+          <strong>UX research</strong> to <strong>design</strong>, specifically
+          graphic design and illustration, pitch deck preparation, and animation
+          work. I've also worked as a consultant, contractor, and freelancer in
+          these areas of expertise under my own business, KACHOW! LLC.
+          <br />
+          For the last few years, I've worked primarily with{" "}
+          <strong>pre-seed round startups</strong>, utilizing all my skills to
+          help them get off the ground. Today, I have a couple subcontractors to
+          help me better serve my clients.
+          <br />
+          If you find me elsewhere online, you'll often see the tagline "Screw
+          the rules, I have green hair", which is both a{" "}
+          <a
+            href="https://knowyourmeme.com/photos/178808-screw-the-rules-i-have-money"
+            target="_blank"
+          >
+            meme
+          </a>{" "}
+          and a nod to{" "}
+          <a
+            href="https://abridgedseries.fandom.com/wiki/LittleKuriboh"
+            target="_blank"
+          >
+            a certain content creator
+          </a>
+          . This has become my motto and life's philosophy:
+          <br />
+          <blockquote>
+            As time marches forward, rules are often meant to be broken to make
+            way for new rules and realities.
+          </blockquote>
+          <br />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const Countdown = () => {
   const today = new Date();
 
   const numYears = differenceInYears(today, FULLTIME_START_DATE);
@@ -21,143 +111,17 @@ const AboutMe = ({id = "one"}) => {
   const numDays =
     ((differenceInDays(today, FULLTIME_START_DATE) % 365) - numMonths * 30) %
     getDaysInMonth(today);
-
   return (
-    <section className={styles["about-me"]} id={id}>
-      <div className={styles["about-me-content"]}>
-        <blockquote>
-          “Screw the rules, I have <b>green hair</b>”
-        </blockquote>
-        <div>
-          Hello World! My name is Karina Chow and I'm a swiss army knife.
-          <br />
-          What does that mean? Well I'm glad you asked.
-          <br />
-          This is what I've been doing in my last{" "}
-          {`${numYears} years, ${
-            numMonths > 0 &&
-            `${numDays > 30 ? numMonths + 1 : numMonths} month${
-              numMonths !== 1 ? "s" : ""
-            },`
-          } and ${numDays} day${numDays !== 1 ? "s" : ""}`}{" "}
-          of working in tech:
-          <ul className={styles["about-me-lists"]}>
-            <List
-              title="Developer"
-              items={[
-                "building webapps",
-                "creating data visualizations",
-                "making delightful CSS animations",
-                "leading frontend infrastructure teams",
-                "translating technical concepts to non-technical folk",
-                "mentoring budding junior engineers",
-                "designing FE interview processes",
-                "advocating for web acessibility",
-              ]}
-              logos={[
-                "js",
-                "ts",
-                "p5js",
-                "react",
-                "graphql",
-                "html5",
-                "css3",
-                "gatsby",
-                "python",
-                "flask",
-              ]}
-            />
-            <List
-              title="Designer"
-              items={[
-                "creating wireframe UI designs",
-                "making interactive prototype demos and videos for pitch meetings",
-                "consulting with startups on their user experiences",
-                "playing ambassador between design and engineering",
-                "selecting colors, typography, and style for client branding",
-                "developing product design systems from scratch",
-                "illustrating for physical merchandise",
-              ]}
-              logos={[
-                "figma",
-                "sketch",
-                "photoshop",
-                "illustrator",
-                "premiere",
-              ]}
-            />
-            <List
-              title="Entrepreneur"
-              items={[
-                "operating my own LLC and working with clients",
-                <>
-                  running a{" "}
-                  <a
-                    href="https://www.redbubble.com/people/karinachowtime"
-                    target="_blank"
-                  >
-                    RedBubble shop
-                  </a>
-                </>,
-                "participating in venture competitions and startup hackathons",
-                <>
-                  writing tech and mental health{" "}
-                  <a href="https://medium.com/@karomancer" target="_blank">
-                    Medium articles
-                  </a>
-                  , some of which have reached the{" "}
-                  <a
-                    href="https://news.ycombinator.com/item?id=28173721"
-                    target="_blank"
-                  >
-                    front page of Hacker News
-                  </a>
-                </>,
-              ]}
-            />
-          </ul>
-          {/* If you got here from social media, you probably have seen the phrase */}
-          {/* above. */}
-        </div>
-      </div>
-    </section>
+    <div>
+      <h4>Days working in tech</h4>
+      {`${numYears} years, ${
+        numMonths > 0 &&
+        `${numDays > 30 ? numMonths + 1 : numMonths} month${
+          numMonths !== 1 ? "s" : ""
+        },`
+      } and ${numDays} day${numDays !== 1 ? "s" : ""}`}{" "}
+    </div>
   );
 };
-
-interface ListProps {
-  title: string;
-  items: (string | JSX.Element)[];
-  logos?: string[];
-}
-
-const List = ({ title, items, logos = [] }: ListProps) => (
-  <li>
-    <div>
-      <b>{title}</b>
-      <ul className={styles["list-of-things"]}>
-        {items.map((item, i) => (
-          <li key={`${title}-${i}`}>{item}</li>
-        ))}
-      </ul>
-      {logos && (
-        <>
-          <strong>Skills/Tools</strong>
-          <ul className={styles["list-of-tech"]}>
-            {logos.map((logo) => (
-              <li key={`logo-${logo}`}>
-                <Image
-                  width={60}
-                  height={60}
-                  src={`/images/logos/${logo}.png`}
-                  alt={`Logo for ${logo}`}
-                />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-    </div>
-  </li>
-);
 
 export default AboutMe;

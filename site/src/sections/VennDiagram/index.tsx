@@ -75,7 +75,7 @@ const Circle = ({ children, title, width, index }) => {
   );
 };
 
-const VennDiagram = ({ id }) => {
+const VennDiagram = ({ id = "" }) => {
   const [siteWidth, setSiteWidth] = useState(0);
   const isLarge = siteWidth > 1000;
   const sliceLength = isLarge ? CIRCLES[0].items.length : 5;
@@ -100,7 +100,12 @@ const VennDiagram = ({ id }) => {
         {CIRCLES.map((circle, i) => {
           const isFirst = i == 0;
           return (
-            <Circle key={`circle-${circle.title}`} title={circle.title} index={i} width={siteWidth}>
+            <Circle
+              key={`circle-${circle.title}`}
+              title={circle.title}
+              index={i}
+              width={siteWidth}
+            >
               <div>
                 <ul>
                   {circle.items.slice(0, sliceLength).map((item, j) => (

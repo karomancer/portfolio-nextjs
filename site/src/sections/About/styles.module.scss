@@ -3,47 +3,72 @@
 @import "../../sass/_vendor";
 
 .about-me {
-  padding-top: 1rem;
-  margin: 0 auto;  
+  min-height: 100vh;
+  margin: 0 auto;
+
+  background: linear-gradient(white, white 0%, #f8f8f8 100%);
+
+  h2 {
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 0;
+    font-size: 2rem;
+
+    @include breakpoint("<=medium") {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .about-me-content {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-top: 0.5rem solid var(--teal);
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     width: 100%;
   }
 
   blockquote {
+    background-color: transparent;
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
     font-size: 2rem;
     font-family: var(--strongFontFamily);
-    color: var(--dark);
-    margin: 1rem auto;
-    max-width: var(--siteWidth);
-    padding: 1rem 2rem;
+  }
 
-    border-top: 0.5rem solid var(--light);
-    border-bottom: 0.5rem solid var(--light);
-    border-left: solid 0.5rem white;
-    border-right: solid 0.5rem white;
+  & > div {
+    position: relative;
+  }
 
-    b {
-      color: white;
-      background-color: var(--teal);
-      padding: 0 0.25rem;
+  @include breakpoint("<=medium") {
+    display: block;
+  }
+
+  div:last-child {
+    max-width: calc(7 * var(--siteWidth) / 8);
+    padding: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    br {
+      content: "";
+      display: block;
+      height: 1rem;
     }
 
-    @include breakpoint('<=small') {
-      line-height: 1.4;
-      padding: 0 2rem;
+    @include breakpoint("<=medium") {
+      padding: 1rem 4rem;
     }
   }
 
   div {
-    @include breakpoint('<=small') {
+    @include breakpoint("<=small") {
       padding: 0 2rem;
     }
-  }    
+  }
 }
 
 .about-me-lists {
@@ -56,12 +81,12 @@
   list-style: none;
   padding: 0;
 
-  @include breakpoint('<=medium') {
+  @include breakpoint("<=medium") {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  @include breakpoint('<=small') {
+  @include breakpoint("<=small") {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
@@ -90,7 +115,7 @@
 
     ul {
       margin: 0;
-    }        
+    }
   }
 }
 
@@ -114,5 +139,30 @@
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
+  }
+}
+
+.profile-picture {
+  position: absolute;
+  right: 0rem;
+  padding: 0;
+  overflow: hidden;
+
+  @include breakpoint("<=medium") {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  & > span {
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 50%;
+  }
+
+  img {
+    // background-color: #FAFAFA;
+    background-color: lighten(#50bfa0, 42%);
   }
 }

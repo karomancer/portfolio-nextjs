@@ -1,1 +1,24 @@
 @import "../sass/breakpoints";
+
+.screw-the-rules {
+    background-color: lighten(#50bfa0, 10%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--strongFontFamily);
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    border-top: 0.5rem solid var(--teal);
+
+    b {
+      color: white;
+      background-color: darken(#50bfa0, 20%);
+      padding: 0 0.25rem;
+    }
+
+    @include breakpoint("<=small") {
+      line-height: 1.4;
+      padding: 0 2rem;
+    }
+  }
