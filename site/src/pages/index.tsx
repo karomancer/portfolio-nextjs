@@ -12,6 +12,10 @@ import { MediumPost, getMediumPosts } from "@/sections/Medium";
 
 import styles from "./page.module.scss"
 
+const DynamicHero = dynamic(() => import("@/sections/Hero"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const DynamicDribbble = dynamic(() => import("@/sections/Dribbble"), {
   loading: () => <p>Loading...</p>,
 });
@@ -53,7 +57,7 @@ const Home = ({
         ogUrl="/"
         ogImage="/images/og_image.png"
       />
-      <Hero scrollToId="one" />
+      <DynamicHero scrollToId="one" />
       <About id="one" />
       <VennDiagram />
       <DynamicMedium mediumPosts={mediumPosts} />
