@@ -105,7 +105,7 @@ const PortfolioSection = ({
                   preview,
                   thumbnail_width = 1,
                   thumbnail_height = 1,
-                  tags,
+                  technologies,
                 },
               },
               i
@@ -150,7 +150,7 @@ const PortfolioSection = ({
                   </cite>
                   <div className={styles["description"]}>
                     <p>{description}</p>
-                    <TagsList slug={slug} tags={tags} />
+                    <TagsList slug={slug} tags={technologies} />
                   </div>
                 </a>
               </li>
