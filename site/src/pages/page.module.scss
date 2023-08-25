@@ -8,6 +8,7 @@
     font-family: var(--strongFontFamily);
     margin: 0 auto;
     padding: 1rem 2rem;
+    height: 5rem;
 
     border-top: 0.5rem solid var(--teal);
 
@@ -20,5 +21,6 @@
     @include breakpoint("<=small") {
       line-height: 1.4;
       padding: 0 2rem;
+      height: 8rem;
     }
   }
