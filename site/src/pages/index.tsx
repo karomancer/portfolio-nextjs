@@ -4,7 +4,8 @@ import axios from "axios";
 
 import Head from "@/components/Head"
 
-import About from "@/sections/About";
+// import About from "@/sections/About";
+import VennDiagram from "@/sections/VennDiagram";
 import Hero from "@/sections/Hero";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
@@ -49,7 +50,8 @@ const Home = ({
         ogImage="/images/og_image.png"
       />      
       <Hero scrollToId="one" />
-      <About id="one" />
+      {/* <About id="one" /> */}
+      <VennDiagram id="one" />
       <DynamicDribbble shots={dribbbleShots} />
       <DynamicMedium mediumPosts={mediumPosts} />
     </main>

@@ -1,0 +1,250 @@
+@import "../../sass/_breakpoints";
+@import "../../sass/_functions";
+@import "../../sass/_vendor";
+
+.venn-section {
+  height: calc(100vh + 20vw);
+  padding: 4rem 0;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  @include breakpoint("<=medium") {
+    height: calc(100vh + 50vw);
+    overflow: hidden;
+  }
+}
+
+.venn-diagram {
+  position: relative;
+  top: -1rem;
+  list-style: none;
+  height: 50vw;
+  width: 100vw;
+
+  @include breakpoint("<=medium") {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3);
+  }
+
+  @include breakpoint("<=small") {
+    height: 80vw;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+
+  & > div {
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @include breakpoint(">=large") {
+      left: 50%;
+    }    
+
+    @include breakpoint("<=medium") {
+      top: 105%;
+      transform: translateY(-120%);
+    }    
+
+    ul:first-child {
+      list-style: none;
+      font-size: 1.25rem;
+      padding: 0;
+
+      li {
+        margin: 2rem 0;
+      }
+
+      @include breakpoint("<=xlarge") {
+        font-size: 1.2rem;
+      }
+
+      @include breakpoint("<=large") {
+        font-size: 1rem;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+
+      @include breakpoint("<=medium") {
+        font-size: 0.5rem;
+
+        li {
+          margin: 1rem 0;
+        }
+      }
+
+      @include breakpoint("<=small") {
+        font-size: 0.3rem;
+        position: relative;
+        top: -5vw;
+        width: 5vw;
+
+        li {
+          text-align: center;
+          width: 3rem;
+          margin: 0.5rem;
+        }
+      }
+    }
+
+    ul:nth-child(2) {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 3rem auto 0;
+      padding: 0;
+      gap: 0.2rem;
+      z-index: 20;
+      max-width: 20rem;
+
+
+      @include breakpoint("<=xlarge") {
+        margin: 1.5rem auto 0;
+
+        img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+
+      @include breakpoint("<=large") {
+        margin: 1rem auto 0;
+
+        img {
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+
+      @include breakpoint("<=medium") {
+        display: none;
+      }
+    }
+  }
+
+  svg {
+    opacity: 0.25;
+
+    path {
+      width: 100%;
+      height: 100%;
+      fill: transparent;
+    }
+
+    text {
+      font-size: 5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5;
+
+      @include breakpoint("<=medium") {
+        font-size: 2rem;
+      }
+
+      @include breakpoint("<=small") {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 20%;
+    left: 33.33%;
+    color: white;
+  }
+
+  &:nth-child(1) {
+    fill: magenta;
+    right: 5vw;    
+
+    ul {
+      text-align: right;
+      justify-content: right;
+    }
+
+    @include breakpoint("<=medium") {
+      & > div {
+        left: 0;
+        right: calc(25vw + 1rem);
+      }
+
+      right: 2.5vw;
+
+      ul:first-child {
+        left: 1rem;
+      }
+
+      ul {
+        text-align: left;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    fill: teal;
+    left: 5vw;
+
+    ul {
+      text-align: left;
+    }
+
+    @include breakpoint("<=large") {
+    }
+    
+    @include breakpoint("<=medium") {
+      & > div {
+        left: calc(25vw + 1rem);
+      }
+      left: 2.5vw;      
+
+      ul {
+        text-align: right;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    fill: yellow;
+    top: -50%;
+    left: 25%;
+  }
+}
+
+.intersection {
+  position: absolute;
+  font-weight: 500;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include breakpoint("<=medium") {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  @include breakpoint("<=small") {
+    font-size: 0.6rem;
+    top: 32.5%;
+  }
+}
