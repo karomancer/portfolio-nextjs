@@ -10,7 +10,7 @@ const TagsList = ({
   tags: Tags;
 }) => (
   <ul className={styles["tags-list"]} style={{overflow: "hidden"}}>
-    {tags.map((t) => (
+    {tags.sort().map((t) => (
       <li key={`${slug}-${t}`}>{t}</li>
     ))}
   </ul>
