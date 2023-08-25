@@ -5,6 +5,19 @@ import Image from "next/image";
 
 const CIRCLES = [
   {
+    title: "Designer",
+    items: [
+      "creating wireframe UI designs",
+      "making interactive prototype demos",
+      "consulting with startups on their UX",
+      "auditing products for UX improvements",
+      "conducting UX research with potential users",
+      "developing product design systems from scratch",
+      "illustrating for physical merchandise",
+    ],
+    logos: ["figma", "sketch", "photoshop", "illustrator", "premiere"],
+  },
+  {
     title: "Developer",
     items: [
       "building webapps from scratch",
@@ -27,19 +40,6 @@ const CIRCLES = [
       "python",
       "flask",
     ],
-  },
-  {
-    title: "Designer",
-    items: [
-      "creating wireframe UI designs",
-      "making interactive prototype demos",
-      "consulting with startups on their UX",
-      "auditing products for UX improvements",
-      "conducting UX research with potential users",
-      "developing product design systems from scratch",
-      "illustrating for physical merchandise",
-    ],
-    logos: ["figma", "sketch", "photoshop", "illustrator", "premiere"],
   },
 ];
 
@@ -94,8 +94,8 @@ const VennDiagram = ({ id = "" }) => {
 
   return (
     <section className={styles["venn-section"]} id={id}>
-      <h2>Skills & Roles</h2>
-      <p>Looking for something? Chances are, I can help.</p>
+      <h2>Interdisciplinary by nature</h2>
+      <p>Perfectly straddling the intersection of both the left and right brains.</p>
       <div className={styles["venn-diagram"]}>
         {CIRCLES.map((circle, i) => {
           const isFirst = i == 0;
