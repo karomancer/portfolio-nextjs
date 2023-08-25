@@ -94,8 +94,8 @@ const VennDiagram = ({ id = "" }) => {
 
   return (
     <section className={styles["venn-section"]} id={id}>
-      <h2>Interdisciplinary by nature</h2>
-      <p>Perfectly straddling the intersection of both the left and right brains.</p>
+      <h2>Interdisciplinary thinker</h2>
+      <p>Starting something? Chances are, I can help.</p>
       <div className={styles["venn-diagram"]}>
         {CIRCLES.map((circle, i) => {
           const isFirst = i == 0;

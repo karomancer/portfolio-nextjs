@@ -11,6 +11,12 @@
     text-transform: uppercase;
     color: var(--dark);
     margin-bottom: 0;
+
+    @include breakpoint("<=medium") {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
   }
 
   p {
