@@ -48,7 +48,7 @@ const Home = ({
   return (
     <main>
       <Head
-        title="Karina Chow | Home"
+        title="Home"
         description="Screw the rules, I have green hair."
         ogUrl="/"
         ogImage="/images/og_image.png"
