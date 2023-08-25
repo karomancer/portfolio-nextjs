@@ -17,12 +17,13 @@ technologies:
   - Unity
   - Autodesk Fusion 360
 tags:
+  - 3D printing
   - animation
   - CAD
   - fabrication
   - illustration
   - pcomp
-  - 3D printing
+  - game programming
 categories:
   - itp
   - WIP

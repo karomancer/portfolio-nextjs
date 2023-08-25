@@ -1,5 +1,5 @@
 ---
-title: Kasumi [Persona 5]
+title: Kasumi "Violet" [Persona 5 Royal]
 description: Complex pattern making and an introduction to CAD by making Kasumi "Violet" Yoshizawa from Persona 5 Royal
 slug: /portfolio/kasumi
 collaborators: []

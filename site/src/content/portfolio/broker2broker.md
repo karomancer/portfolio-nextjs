@@ -24,7 +24,7 @@ categories:
   - Broker2Broker
 type: portfolioPiece
 thumbnail_width: 2
-thumbnail_height: 2
+thumbnail_height: 1
 ---
 
 ![](/portfolio/broker2broker/app_big.mp4)
