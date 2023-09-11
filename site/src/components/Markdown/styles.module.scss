@@ -108,10 +108,18 @@
     margin-bottom: 2rem;
 
     tr {
-      display: flex;
       height: fit-content; 
 
+      th {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        color: var(--gray);
+      }
+
       td {
+        height: 100%;
         vertical-align: top;
 
         img, video {

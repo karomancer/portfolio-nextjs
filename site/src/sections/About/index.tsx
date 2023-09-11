@@ -93,7 +93,7 @@ const AboutMe = ({ id = "one" }) => {
           . This has become my motto and life's philosophy:
           <br />
           <blockquote>
-            As time marches forward, rules are often meant to be broken to make
+            As time marches on, rules are often meant to be broken to make
             way for new rules and realities.
           </blockquote>
           <br />

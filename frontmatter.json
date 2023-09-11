@@ -61,13 +61,13 @@
           "title": "Thumbnail Width (cells)",
           "name": "thumbnail_width",
           "type": "number",
-          "editable": true,
+          "editable": true
         },
         {
           "title": "Thumbnail Height",
           "name": "thumbnail_height",
           "type": "number",
-          "editable": true,
+          "editable": true
         },
         {
           "title": "Cover image",
@@ -124,19 +124,6 @@
         "Unity"
       ]
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "fabrication",
-    "itp",
-    "leds",
-    "pcomp",
-    "sewing",
-    "wearables"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "HCI",
-    "cosplay",
-    "pcomp"
   ],
   "frontMatter.taxonomy.customTaxonomy": [
     {

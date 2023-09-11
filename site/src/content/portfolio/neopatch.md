@@ -18,6 +18,7 @@ categories:
 type: portfolioPiece
 technologies:
   - Arduino Nano 33 IoT
+  - Shark Euro Pro X (Sewing Machine)
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
 og_preview: /portfolio/neopatch/og_image.jpg

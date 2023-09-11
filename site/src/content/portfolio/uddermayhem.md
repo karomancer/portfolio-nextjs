@@ -1,6 +1,6 @@
 ---
 title: Udder Mayhem
-description: An alternative controller rhythm game in which the player plays a barista preparing café lattes by squeezing four silicone udder teats to a beat.
+description: An alternative controller rhythm game in which the player plays a barista preparing café lattes by squeezing four silicone udder teats to a beat. Game programming done in Unity, controller made with a Teensy 4.1.
 slug: /portfolio/uddermayhem
 collaborators: []
 class: The New Arcade

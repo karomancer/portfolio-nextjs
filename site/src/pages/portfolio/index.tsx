@@ -63,7 +63,7 @@ export default function Portfolio({ allTags, allTechnologies, pieces }: Portfoli
         ogUrl="/portfolio"
         ogImage="/images/og_image.png"
       />
-      <CircuitsHeader>Check out this weird stuff I've made.</CircuitsHeader>
+      <CircuitsHeader>Check out the weird stuff I've made.</CircuitsHeader>
       <PortfolioSection allTags={allTags} allTechnologies={allTechnologies} pieces={pieces} />
     </>
   );
