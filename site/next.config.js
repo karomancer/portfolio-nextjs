@@ -32,6 +32,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/linktree',
+        destination: 'https://linktr.ee/chowtime',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 // Merge MDX config with Next.js config
