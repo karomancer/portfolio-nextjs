@@ -6,7 +6,7 @@ collaborators: []
 class: The New Arcade
 date: 2023-06-22T17:27:28.000Z
 preview: /portfolio/uddermayhem/FzF7fARWAAEZaYy.jpeg
-cover: /portfolio/uddermayhem/coffeecups1.jpeg
+cover: /portfolio/uddermayhem/title.jpg
 og_preview: /portfolio/uddermayhem/FzF7fARWAAEZaYy.jpeg
 draft: false
 url: https://github.com/karomancer/uddermayhem
