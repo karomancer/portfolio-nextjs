@@ -6,11 +6,11 @@ import Head from "@/components/Head";
 
 import About from "@/sections/About";
 import VennDiagram from "@/sections/VennDiagram";
-import Hero from "@/sections/Hero";
+import Map from "@/sections/Map"
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
 
-import styles from "./page.module.scss"
+import styles from "./page.module.scss";
 
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
   loading: () => <p>Loading...</p>,
@@ -62,6 +62,7 @@ const Home = ({
       <VennDiagram />
       <DynamicMedium mediumPosts={mediumPosts} />
       <DynamicDribbble shots={dribbbleShots} />
+      <Map />
       <blockquote className={styles["screw-the-rules"]}>
         “Screw the rules, I have <b>green hair</b>”
       </blockquote>

@@ -1,0 +1,19 @@
+.map-section {
+  position: relative;
+
+  h2 {
+    color: var(--dark);
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: white;
+    padding: 0 3rem 0 1rem;
+  }
+}
+
+.map-iframe {
+  margin-bottom: -0.25rem;
+}
