@@ -2,7 +2,8 @@ import "../sass/globals.scss";
 
 import { AppProps } from "next/app";
 
-import TopNav from "../components/TopNav";
+import TopNav from "@/components/TopNav";
+import BuyMeACoffeeWidget from "@/components/BuyMeACoffeeWidget";
 
 export const metadata = {
   title: "Karina Chow | Portfolio",
@@ -11,12 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ Component, pageProps }: AppProps) {
   return (
-    <>      
+    <>
       <TopNav
         isSubPage={!!Component.displayName}
         lightMode={["PortfolioPiece"].includes(Component.displayName)}
       />
       <Component {...pageProps} />
+      <BuyMeACoffeeWidget />
     </>
   );
 }
