@@ -2,17 +2,19 @@ import Parser from "rss-parser";
 
 // Returns MediumPost[]
 export default async function getMediumPosts() {
-  const feed = await new Parser().parseURL(
-    "https://medium.com/feed/@karomancer"
-  );
-  const regex = new RegExp(/(?<=src=")(.*?)(?=")/);
-  const mediumPosts = feed.items.map((item) => {
-    const match = regex.exec(item["content:encoded"]);
-    return {
-      ...item,
-      coverImage: match && match[0],
-    };
-  });
+  const feed = await new Parser({
+    customFields: {
+      item: [["media:content", "coverImage"]],
+    },
+  }).parseURL("https://flipboard.com/@karomancer/kachow-13mq42ccy.rss");
 
-  return mediumPosts.reverse();
+  const mediumPosts = feed.items.map((item) => ({
+    title: item.title,
+    link: item.link,
+    pubDate: item.pubDate,
+    categories: item.categories,
+    coverImage: { ...item.coverImage["$"] }.url,
+  }));
+
+  return mediumPosts;
 }

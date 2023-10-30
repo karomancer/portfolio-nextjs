@@ -93,7 +93,7 @@ $medium-color: rgba(41, 41, 41, 1);
 }
 
 .magazine-title {
-  mix-blend-mode: exclusion;
+  // mix-blend-mode: exclusion;
   font-family: FuturaCondensed, Futura, sans-serif;
   
   display: block;
@@ -181,7 +181,7 @@ $medium-color: rgba(41, 41, 41, 1);
     width: inherit;
     height: 120%;
     background-size: cover;
-    background-position: center;
+    background-position: center -1rem;
   }
 
   h4 {
