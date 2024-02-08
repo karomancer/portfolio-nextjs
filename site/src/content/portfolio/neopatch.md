@@ -5,8 +5,8 @@ slug: portfolio/neopatch
 collaborators:
   - Daniel Wai
 date: 2022-12-15T03:25:48.000Z
-preview: /portfolio/neopatch/PXL_20221214_120239918.jpg
-cover: /portfolio/neopatch/PXL_20221211_073125565.MP.jpg
+preview: /portfolio/neopatch/1-2.jpg
+cover: /portfolio/neopatch/1-9.jpg
 draft: false
 tags:
   - fabrication
@@ -21,12 +21,17 @@ technologies:
   - Shark Euro Pro X (Sewing Machine)
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
-og_preview: /portfolio/neopatch/og_image.jpg
+og_preview: /portfolio/neopatch/1-2.jpg
 thumbnail_height: 3
 thumbnail_width: 2
 ---
 
-![Video of the project at the winter showcase](/portfolio/neopatch/jacket_showcase.mp4)
+![Edited interview about the project](/portfolio/neopatch/edited_interview.mov)
+
+![Photograph of a man looking at the LED strip along his jacket arm](/portfolio/neopatch/1-11.jpg)
+![Photograph of the front of a jacket with LEDs running down the front](/portfolio/neopatch/1-2.jpg)
+![Photograph of the back of a jacket with LEDs circling the hood](/portfolio/neopatch/1-7.jpg)
+![Photograph of a man modeling a light up jacket](/portfolio/neopatch/1-15.jpg)
 
 Neopatch is an interactive light-up jacket that responds to customizable snap-on RFID/NFC patches.
 
@@ -214,9 +219,9 @@ Features include:
 
 I’m generally very happy with how this turned out! Didn’t get to V2 or V3 ideas, but it’s good to have aspirations.
 
-![Video of Daniel showing off the jacket](/portfolio/neopatch/PXL_20221218_002149449.mp4)
+![Video of the project at the winter showcase](/portfolio/neopatch/jacket_showcase.mp4)
 
-![Playtesting](/portfolio/neopatch/VID20221219172051.mp4)
+![Video of Daniel showing off the jacket](/portfolio/neopatch/PXL_20221218_002149449.mp4)
 
 Other future wishes besides V2 and V3 outlined at the start of this post:
 
