@@ -1,3 +1,5 @@
+import styles from "@/sass/page.module.scss";
+
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 import dynamic from "next/dynamic";
 import axios from "axios";
@@ -6,11 +8,9 @@ import Head from "@/components/Head";
 
 import About from "@/sections/About";
 import VennDiagram from "@/sections/VennDiagram";
-import Map from "@/sections/Map"
+import Map from "@/sections/Map";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
-
-import styles from "./page.module.scss";
 
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
   loading: () => <p>Loading...</p>,
