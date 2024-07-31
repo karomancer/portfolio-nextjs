@@ -1,12 +1,13 @@
 ---
 title: Neopatch
 description: A cyberpunk-styled jacket with programmable embroidered snap-on RFID patches that control LED lighting effects & animations.
-slug: portfolio/neopatch
+slug: /portfolio/neopatch
 collaborators:
   - Daniel Wai
 date: 2022-12-15T03:25:48.000Z
 preview: /portfolio/neopatch/1-2.jpg
 cover: /portfolio/neopatch/1-9.jpg
+og_preview: /portfolio/neopatch/1-2.jpg
 draft: false
 tags:
   - fabrication
@@ -21,7 +22,6 @@ technologies:
   - Shark Euro Pro X (Sewing Machine)
 url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
-og_preview: /portfolio/neopatch/1-2.jpg
 thumbnail_height: 3
 thumbnail_width: 2
 ---
