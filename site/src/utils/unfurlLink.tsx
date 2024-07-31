@@ -10,7 +10,14 @@ export type MetascrapedInfo = {
 };
 
 const IFRAME_WEBSITES = ["glitch", "spotify", "youtube"];
-const UNFURLING_WEBSITES = ["github", "medium", "cargo", "studio.patreon", "chriseminizer", "etsy"];
+const UNFURLING_WEBSITES = [
+  "github",
+  "medium",
+  "cargo",
+  "studio.patreon",
+  "chriseminizer",
+  // "etsy",
+];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
 const metascraper = require("metascraper")([
@@ -32,13 +39,13 @@ export const isIFrame = (link: string) =>
   IFRAME_WEBSITES.find((site) => link.match(site));
 
 export const filterByExpandableLinks = (str: string) => {
-  const link = extractLinkFromMDX(str) || "NaN"
+  const link = extractLinkFromMDX(str) || "NaN";
   return !!(isLinkExpandable(link) || isIFrame);
 };
 
 export const unfurlLink = async (link: string) => {
   if (link) {
-    const isIframe = isIFrame(link) || false
+    const isIframe = isIFrame(link) || false;
     if (isLinkExpandable(link) || isIframe) {
       const resp = await axios.get(link);
       const scraped = await metascraper({
@@ -48,7 +55,7 @@ export const unfurlLink = async (link: string) => {
       return {
         ...scraped,
         link,
-        isIframe
+        isIframe,
       } as MetascrapedInfo;
     }
   }
