@@ -2,10 +2,11 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(20vw, 1fr));
-  grid-template-rows: repeat( auto-fit, minmax(20vw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(20vw, 1fr));
   grid-auto-flow: dense;
-  margin: 0;
+  margin: 0 1rem;
+  gap: 0.5rem;
   padding: 0;
 
   & > ul {
@@ -19,7 +20,7 @@
   }
 
   @include breakpoint("<=medium") {
-    grid-template-columns: repeat(auto-fit, 50vw);;
+    grid-template-columns: repeat(auto-fit, 50vw);
   }
 
   @include breakpoint("<=small") {
@@ -67,7 +68,8 @@
     }
   }
 
-  img, video {
+  img,
+  video {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;

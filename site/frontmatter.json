@@ -1,0 +1,141 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "name": "portfolioPiece",
+          "previewPath": null,
+          "pageBundle": false,
+          "fields": [
+            {
+              "title": "Title",
+              "name": "title",
+              "type": "string",
+              "editable": true
+            },
+            {
+              "title": "Description",
+              "name": "description",
+              "type": "string",
+              "editable": true
+            },
+            {
+              "title": "Slug",
+              "name": "slug",
+              "type": "slug",
+              "editable": true,
+              "default": "/portfolio/{{slug}}"
+            },
+            {
+              "title": "Collaborators",
+              "name": "collaborators",
+              "type": "list"
+            },
+            {
+              "title": "Class",
+              "name": "class",
+              "editable": true,
+              "type": "string"
+            },
+            {
+              "title": "Publishing date",
+              "name": "date",
+              "type": "datetime",
+              "default": "{{now}}",
+              "isPublishDate": true
+            },
+            {
+              "title": "Thumbnail",
+              "name": "preview",
+              "type": "image"
+            },
+            {
+              "title": "Thumbnail Width (cells)",
+              "name": "thumbnail_width",
+              "type": "number",
+              "editable": true
+            },
+            {
+              "title": "Thumbnail Height",
+              "name": "thumbnail_height",
+              "type": "number",
+              "editable": true
+            },
+            {
+              "title": "Cover image",
+              "name": "cover",
+              "type": "image"
+            },
+            {
+              "title": "OpenGraph Image",
+              "name": "og_preview",
+              "type": "image"
+            },
+            {
+              "title": "Is in draft",
+              "name": "draft",
+              "type": "draft"
+            },
+            {
+              "title": "URL",
+              "name": "url",
+              "type": "string",
+              "editable": true
+            },
+            {
+              "title": "Technologies",
+              "name": "technologies",
+              "type": "taxonomy",
+              "taxonomyId": "technologies",
+              "editable": true
+            },
+            {
+              "title": "Tags",
+              "name": "tags",
+              "type": "tags"
+            },
+            {
+              "title": "Categories",
+              "name": "categories",
+              "type": "categories"
+            },
+            {
+              "title": "type",
+              "name": "type",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "Technologies",
+          "name": "technologies",
+          "type": "taxonomy",
+          "taxonomyId": "technologies"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "technologies",
+      "options": [
+        "Adobe Aero",
+        "Adobe After Effects",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Helix Mini Laser Cutter",
+        "Arduino",
+        "C#",
+        "Unity",
+        "Google Tiltbrush"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "portfolio",
+      "path": "[[workspace]]/src/content/portfolio"
+    }
+  ]
+}

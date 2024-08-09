@@ -28,8 +28,8 @@ categories:
   - itp
   - WIP
 type: portfolioPiece
-thumbnail_width: 3
-thumbnail_height: 3
+thumbnail_width: 2
+thumbnail_height: 2
 ---
 
 ***Note**: Still a work in progress*
