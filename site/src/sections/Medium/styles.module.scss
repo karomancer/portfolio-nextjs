@@ -8,10 +8,8 @@ $medium-color: rgba(41, 41, 41, 1);
   top: 0;
   z-index: -1;
   height: 200vh;
-
-  svg {
-    width: 200vw;
-  }
+  width: 100vw;
+  transform: scaleX(2);
 }
 
 .section-description {
@@ -95,7 +93,7 @@ $medium-color: rgba(41, 41, 41, 1);
 .magazine-title {
   // mix-blend-mode: exclusion;
   font-family: FuturaCondensed, Futura, sans-serif;
-  
+
   display: block;
   position: absolute;
   top: 2rem;
@@ -120,12 +118,12 @@ $medium-color: rgba(41, 41, 41, 1);
   overflow: hidden;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  
+
   margin: 0.25rem;
   border: 2px outset #eaeaea;
   border-right: 2px double var(--gray);
   box-shadow: 0.2rem 0.2rem 1rem #192627;
-  padding: 0;  
+  padding: 0;
   transition: all 0.5s ease-in;
   filter: brightness(0.9);
 
@@ -153,7 +151,7 @@ $medium-color: rgba(41, 41, 41, 1);
       width: 12.1rem;
       height: 17.1rem;
     }
-  
+
     @include breakpoint("<=xsmall") {
       width: 10.6rem;
       height: 14.1rem;
@@ -265,8 +263,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-        right: -30%;
-      }
+      right: -30%;
+    }
   }
 
   &:nth-child(4) {
@@ -280,8 +278,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-        left: 20%;
-      }
+      left: 20%;
+    }
   }
 
   &:nth-child(5) {
@@ -295,8 +293,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-        bottom: -15%;
-      }
+      bottom: -15%;
+    }
   }
 
   &:nth-child(6) {
@@ -321,9 +319,9 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(20deg);
 
     @include breakpoint("<=small") {
-        right: -10%;
-        bottom: 0%;
-      }
+      right: -10%;
+      bottom: 0%;
+    }
 
     @include breakpoint("<=xsmall") {
       right: -35%;
@@ -337,12 +335,12 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(-30deg);
 
     @include breakpoint("<=medium") {
-        top: -10%;
+      top: -10%;
       left: -15%;
     }
 
     @include breakpoint("<=xsmall") {
-        transform: rotate(10deg);
+      transform: rotate(10deg);
       left: -40%;
       top: 25%;
     }
@@ -354,9 +352,9 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(30deg);
 
     @include breakpoint("<=small") {
-        left: -20%;
-        top: 10%;
-      }
+      left: -20%;
+      top: 10%;
+    }
 
     @include breakpoint("<=xsmall") {
       left: -20%;

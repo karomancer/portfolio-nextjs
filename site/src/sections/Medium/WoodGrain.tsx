@@ -9,11 +9,7 @@ const WoodGrain = ({ className }: Props) => (
     viewBox="0 0 2000 2000"
   >
     <g>
-      <rect
-        fill="#f7bc7a"
-        width="2000"
-        height="2000"
-      />
+      <rect fill="#f7bc7a" width="2000" height="2000" />
       <g>
         <path
           fill="#dd984d"

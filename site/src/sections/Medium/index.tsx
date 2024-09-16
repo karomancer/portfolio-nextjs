@@ -1,7 +1,7 @@
 import React from "react";
 import format from "date-fns/format";
 
-import WoodGrain from "./WoodGrain"
+import WoodGrain from "./WoodGrain";
 import getMediumPosts from "./getMediumPosts";
 import styles from "./styles.module.scss";
 
@@ -85,13 +85,15 @@ const Medium = ({ mediumPosts }: Props) => (
     <div>
       <ul className={styles["medium-articles"]}>
         {mediumPosts?.map((article, i) => (
-          <li
-            key={`${article.title}`}
-            className={styles["medium-article"]}
-          >
-            <a href={article.link} target="_blank" style={{
-              backgroundImage: `url(${article.coverImage})`,
-            }}>
+          <li key={`${article.title}`} className={styles["medium-article"]}>
+            <a
+              href={article.link}
+              target="_blank"
+              style={{
+                backgroundImage: `url(${article.coverImage})`,
+                backgroundColor: "var(--teal)",
+              }}
+            >
               <span className={styles["date-issue"]}>
                 {format(new Date(article.pubDate), "MMM do yyy")} |{" "}
                 <b>Issue #{mediumPosts.length - i}</b>
