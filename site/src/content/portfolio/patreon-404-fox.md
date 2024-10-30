@@ -24,8 +24,8 @@ categories:
   - Full-time
   - Patreon
 type: portfolioPiece
-thumbnail_width: 2
-thumbnail_height: 2
+thumbnail_width: 1
+thumbnail_height: 1
 ---
 
 ![Video of the fox on the Patreon website](/portfolio/patreon-404-fox/video.mp4)

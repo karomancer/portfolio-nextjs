@@ -9,7 +9,7 @@ export type MetascrapedInfo = {
   isIframe?: boolean;
 };
 
-const IFRAME_WEBSITES = ["glitch", "spotify", "youtube"];
+const IFRAME_WEBSITES = ["glitch", "spotify", "youtube", "vimeo"];
 const UNFURLING_WEBSITES = [
   "github",
   "medium",
@@ -47,16 +47,23 @@ export const unfurlLink = async (link: string) => {
   if (link) {
     const isIframe = isIFrame(link) || false;
     if (isLinkExpandable(link) || isIframe) {
-      const resp = await axios.get(link);
-      const scraped = await metascraper({
-        url: link,
-        html: resp.data,
-      });
-      return {
-        ...scraped,
-        link,
-        isIframe,
-      } as MetascrapedInfo;
+      try {
+        const resp = await axios.get(link);
+        const scraped = await metascraper({
+          url: link,
+          html: resp.data,
+        });
+        return {
+          ...scraped,
+          link,
+          isIframe,
+        } as MetascrapedInfo;
+      } catch (_) {
+        return {
+          link,
+          isIframe,
+        };
+      }
     }
   }
   return null;

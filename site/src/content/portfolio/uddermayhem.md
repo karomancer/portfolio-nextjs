@@ -34,11 +34,13 @@ thumbnail_height: 2
 
 ***Note**: Still a work in progress*
 
-![Tutorial](/portfolio/uddermayhem/tutorial.mp4)
 
 ![A woman playing Udder Mayhem](/portfolio/uddermayhem/demo_mercedes.mp4)
 
 ![A woman playing Udder Mayhem](/portfolio/uddermayhem/demo_ivy.mp4)
+
+### Tutorial animation
+![Tutorial](/portfolio/uddermayhem/tutorial.mp4)
 
 Our midterm for the class *The New Arcade* was to make an unconventional controller, a la [ctrl.alt.GDC](https://gdconf.com/alt-ctrl-gdc) style, and an accompanying game.
 

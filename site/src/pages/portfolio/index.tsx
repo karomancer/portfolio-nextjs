@@ -7,7 +7,8 @@ import PortfolioSection, { PortfolioProps } from "@/sections/Portfolio";
 import CircuitsHeader from "@/components/CircuitsHeader";
 import Head from "@/components/Head";
 
-const sortAllLowercase = (a: string, b: string) => a.toLowerCase() > b.toLowerCase() ? 1 : -1
+const sortAllLowercase = (a: string, b: string) =>
+  a.toLowerCase() > b.toLowerCase() ? 1 : -1;
 
 export async function getStaticProps() {
   const files = fs.readdirSync("src/content/portfolio");
@@ -24,11 +25,14 @@ export async function getStaticProps() {
   const collectAllTags = () => {
     const _allTags = {};
     pieces.forEach((piece, i) => {
-      piece.frontmatter.tags.map((tag) => 
-        !_allTags[tag] ?  _allTags[tag] = 1 : _allTags[tag]++
-    )});
+      piece.frontmatter.tags.map((tag) =>
+        !_allTags[tag] ? (_allTags[tag] = 1) : _allTags[tag]++
+      );
+    });
 
-    Object.keys(_allTags).forEach(tag => _allTags[tag] == 1 && delete(_allTags[tag]))
+    Object.keys(_allTags).forEach(
+      (tag) => _allTags[tag] == 1 && delete _allTags[tag]
+    );
 
     return Object.keys(_allTags).sort(sortAllLowercase);
   };
@@ -36,11 +40,18 @@ export async function getStaticProps() {
   const collectAllTechnologies = () => {
     const _allTechnologies = {};
     pieces.forEach((piece, i) => {
-      piece.frontmatter.technologies.map((technologies) => 
-        !_allTechnologies[technologies] ?  _allTechnologies[technologies] = 1 : _allTechnologies[technologies]++
-    )});
+      piece.frontmatter.technologies.map((technologies) =>
+        !_allTechnologies[technologies]
+          ? (_allTechnologies[technologies] = 1)
+          : _allTechnologies[technologies]++
+      );
+    });
 
-    Object.keys(_allTechnologies).forEach(technologies => _allTechnologies[technologies] == 1 && delete(_allTechnologies[technologies]))
+    Object.keys(_allTechnologies).forEach(
+      (technologies) =>
+        _allTechnologies[technologies] == 1 &&
+        delete _allTechnologies[technologies]
+    );
 
     return Object.keys(_allTechnologies).sort(sortAllLowercase);
   };
@@ -49,12 +60,16 @@ export async function getStaticProps() {
     props: {
       pieces,
       allTags: collectAllTags(),
-      allTechnologies: collectAllTechnologies()
+      allTechnologies: collectAllTechnologies(),
     },
   };
 }
 
-export default function Portfolio({ allTags, allTechnologies, pieces }: PortfolioProps) {
+export default function Portfolio({
+  allTags,
+  allTechnologies,
+  pieces,
+}: PortfolioProps) {
   return (
     <>
       <Head
@@ -64,7 +79,11 @@ export default function Portfolio({ allTags, allTechnologies, pieces }: Portfoli
         ogImage="/images/og_image.png"
       />
       <CircuitsHeader>Check out the weird stuff I've made.</CircuitsHeader>
-      <PortfolioSection allTags={allTags} allTechnologies={allTechnologies} pieces={pieces} />
+      <PortfolioSection
+        allTags={allTags}
+        allTechnologies={allTechnologies}
+        pieces={pieces}
+      />
     </>
   );
 }
