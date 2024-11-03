@@ -118,6 +118,11 @@
           "title": "type",
           "name": "type",
           "type": "string"
+        },
+        {
+          "title": "ogpreview",
+          "name": "ogpreview",
+          "type": "string"
         }
       ]
     }
@@ -125,7 +130,11 @@
   "frontMatter.taxonomy.customTaxonomy": [
     {
       "id": "piece_type",
-      "options": ["portfolio", "work", "journal"]
+      "options": [
+        "portfolio",
+        "work",
+        "journal"
+      ]
     },
     {
       "id": "technologies",
