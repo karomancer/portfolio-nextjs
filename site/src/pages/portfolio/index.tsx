@@ -22,7 +22,11 @@ export async function getStaticProps() {
 
       return readMdx(readFile);
     })
-    .filter((mdx) => mdx.frontmatter.piece_type?.includes("portfolio"));
+    .filter(
+      (mdx) =>
+        mdx.frontmatter.piece_type?.includes("portfolio") ||
+        mdx.frontmatter.piece_type?.includes("work")
+    );
 
   const collectAllTags = () => {
     const _allTags = {};
