@@ -22,6 +22,8 @@ categories:
   - cosplay
 type: portfolioPiece
 thumbnail_height: 3
+piece_type:
+  - journal
 ---
 
 | |

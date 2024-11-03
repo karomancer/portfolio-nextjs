@@ -16,6 +16,13 @@
       "pageBundle": false,
       "fields": [
         {
+          "title": "Piece type",
+          "name": "piece_type",
+          "type": "taxonomy",
+          "taxonomyId": "piece_type",
+          "editable": true
+        },
+        {
           "title": "Title",
           "name": "title",
           "type": "string",
@@ -115,17 +122,11 @@
       ]
     }
   ],
-  "frontMatter.taxonomy.technologies": [
-    {
-      "id": "technologies",
-      "options": [
-        "Arduino",
-        "C#",
-        "Unity"
-      ]
-    }
-  ],
   "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "piece_type",
+      "options": ["portfolio", "work", "journal"]
+    },
     {
       "id": "technologies",
       "options": [

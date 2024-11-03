@@ -25,6 +25,8 @@ categories:
 type: portfolioPiece
 thumbnail_width: 2
 thumbnail_height: 1
+piece_type:
+  - work
 ---
 
 ![](/portfolio/broker2broker/app_big.mp4)

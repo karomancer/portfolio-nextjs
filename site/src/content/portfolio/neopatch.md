@@ -24,6 +24,8 @@ url: https://github.com/karomancer/jacket
 class: Intro to Physical Computing
 thumbnail_height: 3
 thumbnail_width: 2
+piece_type:
+  - portfolio
 ---
 
 ![Edited interview about the project](/portfolio/neopatch/edited_interview.mov)

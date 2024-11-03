@@ -22,6 +22,8 @@ categories:
   - Gray Area
 type: portfolioPiece
 thumbnail_width: 2
+piece_type:
+  - portfolio
 ---
 
 [Glitch example](https://sewing-triptych.glitch.me/)

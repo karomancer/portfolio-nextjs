@@ -20,6 +20,8 @@ categories:
 type: portfolioPiece
 keywords: []
 og_preview: /portfolio/muse/og_image.png
+piece_type:
+  - journal
 ---
 
 ![Blending into the moon itself, the Muse building will go a few floors deeper than first appears. Excavate to create lunarcrete material for the enclosure.](/portfolio/muse/outside.png)

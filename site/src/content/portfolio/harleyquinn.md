@@ -22,6 +22,8 @@ categories:
 type: portfolioPiece
 thumbnail_width: 1
 thumbnail_height: 2
+piece_type:
+  - journal
 ---
 
 ![Photograph of a woman in a red and black harlequin outfit on a throne](/portfolio/harleyquinn/IMG_4398.jpg)

@@ -23,6 +23,8 @@ categories:
   - Client Work
   - Onramp
 type: portfolioPiece
+piece_type:
+  - work
 ---
 
 ![Video of a mobile UX flow for fueling a freight truck](/portfolio/onramp/fuelpay.mp4)

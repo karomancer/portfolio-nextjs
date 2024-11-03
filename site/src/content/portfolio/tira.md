@@ -21,6 +21,8 @@ categories:
   - cosplay
 type: portfolioPiece
 thumbnail_height: 2
+piece_type:
+  - journal
 ---
 
 ![Photograph of a girl in a green feather outfit and blue hair holding a giant ring with blades](/portfolio/tira/final1.jpeg)

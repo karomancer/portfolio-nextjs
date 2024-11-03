@@ -21,6 +21,8 @@ categories:
   - cosplay
 type: portfolioPiece
 thumbnail_height: 2
+piece_type:
+  - journal
 ---
 
 ![A photograph of 4 young adults posing for the camera in colorful costumes](/portfolio/marie/final.jpeg)

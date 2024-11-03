@@ -13,14 +13,16 @@ const sortAllLowercase = (a: string, b: string) =>
 export async function getStaticProps() {
   const files = fs.readdirSync("src/content/portfolio");
 
-  const pieces = files.map((fileName) => {
-    const readFile = fs.readFileSync(
-      `src/content/portfolio/${fileName}`,
-      "utf-8"
-    );
+  const pieces = files
+    .map((fileName) => {
+      const readFile = fs.readFileSync(
+        `src/content/portfolio/${fileName}`,
+        "utf-8"
+      );
 
-    return readMdx(readFile);
-  });
+      return readMdx(readFile);
+    })
+    .filter((mdx) => mdx.frontmatter.piece_type?.includes("portfolio"));
 
   const collectAllTags = () => {
     const _allTags = {};

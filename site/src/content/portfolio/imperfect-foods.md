@@ -26,6 +26,8 @@ categories:
 type: portfolioPiece
 thumbnail_width: 1
 thumbnail_height: 2
+piece_type:
+  - work
 ---
 
 ![](/portfolio/imperfect-foods/site.mp4)

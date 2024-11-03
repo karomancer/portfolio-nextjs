@@ -21,6 +21,8 @@ tags:
 categories:
   - ITP
 type: portfolioPiece
+piece_type:
+  - journal
 ---
 
 ![PXL_20220924_094602872 (1).mp4](/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)

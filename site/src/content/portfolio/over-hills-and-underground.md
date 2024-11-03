@@ -19,6 +19,8 @@ tags:
 categories:
   - Freelance Design
 type: portfolioPiece
+piece_type:
+  - journal
 ---
 
 ![Photograph of the album cover with imagery of caves and hills](/portfolio/over-hills-and-underground/IMG_20201104_170138.jpg)

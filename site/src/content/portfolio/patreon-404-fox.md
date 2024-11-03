@@ -26,6 +26,9 @@ categories:
 type: portfolioPiece
 thumbnail_width: 1
 thumbnail_height: 1
+piece_type:
+  - portfolio
+  - work
 ---
 
 ![Video of the fox on the Patreon website](/portfolio/patreon-404-fox/video.mp4)

@@ -18,6 +18,8 @@ tags:
 categories:
   - Freelance Design
 type: portfolioPiece
+piece_type:
+  - journal
 ---
 
 My close friend from high school and I starting to learn how to ski and snowboard together. After he decided he was going to snowboard every winter season, he commissioned me to make a custom snowboard design.

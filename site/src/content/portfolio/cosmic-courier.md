@@ -32,6 +32,8 @@ type: portfolioPiece
 keywords: []
 thumbnail_width: 1
 thumbnail_height: 1
+piece_type:
+  - portfolio
 ---
 
 ![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville3.mp4)

@@ -27,6 +27,8 @@ categories:
 type: portfolioPiece
 thumbnail_width: 2
 thumbnail_height: 2
+piece_type:
+  - portfolio
 ---
 
 ![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)

@@ -13,22 +13,24 @@ og_preview: /portfolio/dr-snuggles/BBB_9357.JPG
 draft: false
 url: https://github.com/karomancer/DrSnuggles
 technologies:
-    - Arduino Nano 33 IoT
-    - Autodesk Fusion 360
-    - Python
-    - Shark Euro Pro X (Sewing Machine)
-    - Raspberry Pi 4
+  - Arduino Nano 33 IoT
+  - Autodesk Fusion 360
+  - Python
+  - Shark Euro Pro X (Sewing Machine)
+  - Raspberry Pi 4
 tags:
-    - 3D printing
-    - CAD
-    - fabrication
-    - sewing
-    - video editing
-    - ai
+  - 3D printing
+  - CAD
+  - fabrication
+  - sewing
+  - video editing
+  - ai
 categories:
-    - ITP
-    - WIP
+  - ITP
+  - WIP
 type: portfolioPiece
+piece_type:
+  - portfolio
 ---
 
 ***Note**: Still a work in progress*
