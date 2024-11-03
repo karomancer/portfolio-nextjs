@@ -25,7 +25,6 @@ tags:
   - pcomp
   - game programming
 categories:
-  - itp
   - WIP
 type: portfolioPiece
 thumbnail_width: 2
