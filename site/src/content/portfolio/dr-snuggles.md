@@ -392,10 +392,15 @@ Complete with Dan Shiffman as the MC.
 
 The video is at the top of this file, but here are the slides and photographs from it.
 
-<!-- ![Final report](/portfolio/playtpus-dreamtime/final_report.pdf) -->
-![](/portfolio/dr-snuggles/prezzo1.jpeg)
-![](/portfolio/dr-snuggles/prezzo2.jpeg)
-![](/portfolio/dr-snuggles/prezzo4.jpeg)
+#### Final slides
+
+![Final satirical presentation showing research](/portfolio/dr-snuggles/thesis_presentation.pdf)
+
+#### Pictures from the final presentation
+
+![A photograph of a woman with green hair presenting a slide with a Venn diagram between "Big Pharma" and "Big Tech" showing the intersection as "Big Solutions"](/portfolio/dr-snuggles/prezzo1.jpeg)
+!["A photograph of a woman with green hair presenting a slide with a picture of a book with the title "Alone Together"](/portfolio/dr-snuggles/prezzo2.jpeg)
+!["A photograph of a woman with green hair presenting a slide with a giant photograph of a fluffy teal stuffed animal with its mouth open with ominous lighting.](/portfolio/dr-snuggles/prezzo4.jpeg)
 
 ### One last note
 

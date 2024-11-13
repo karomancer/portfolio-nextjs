@@ -45,7 +45,7 @@ export const filterByExpandableLinks = (str: string) => {
 
 export const unfurlLink = async (link: string) => {
   if (link) {
-    const isIframe = isIFrame(link) || false;
+    const isIframe = !!isIFrame(link);
     if (isLinkExpandable(link) || isIframe) {
       try {
         const resp = await axios.get(link);

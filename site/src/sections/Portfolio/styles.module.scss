@@ -24,7 +24,8 @@
   }
 
   @include breakpoint("<=small") {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -35,6 +36,7 @@
   margin: 0;
   width: 100%;
   height: auto;
+  z-index: 1;
 
   a {
     position: relative;
@@ -73,6 +75,9 @@
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
+    @include breakpoint("<=small") {
+      min-height: 200px;
+    }
   }
 }
 

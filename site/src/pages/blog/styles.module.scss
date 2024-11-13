@@ -1,0 +1,142 @@
+@import "../../sass/breakpoints";
+
+.blog-post-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: calc(var(--siteWidth) + 100px);
+  margin: 0 auto;
+  padding: 1rem;
+
+  @include breakpoint("<=medium") {
+    display: block;
+  }
+}
+
+.post-header {
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: var(--teal);
+    margin-bottom: 0;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  h4 {
+    strong {
+      color: var(--dark);
+    }
+    font-weight: 200;
+    color: var(--gray);
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+}
+
+.post-content {
+  h2 {
+    font-size: 1.5rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    &:after {
+      content: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(transparent, white);
+  }
+}
+
+.post {
+  position: relative;
+}
+
+.blog-post-content {
+  grid-column-start: 2;
+}
+
+.date-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 2rem;
+  padding: 1rem;
+  align-self: start;
+  ul {
+    list-style: none;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  li {
+    padding: 0.2rem 0;
+  }
+
+  h4 {
+    margin-top: 1rem;
+  }
+
+  @include breakpoint("<=medium") {
+    display: none;
+  }
+}
+
+.read-more {
+  position: relative;
+  margin: -2rem 0 6rem;
+
+  a {
+    width: fit-content;
+    display: block;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+    text-transform: uppercase;
+    border: 2px solid var(--teal);
+    text-decoration: none;
+    border-radius: 1.2rem;
+
+    &:hover {
+      background-color: var(--light);
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.99;
+    bottom: 1rem;
+    height: 2px;
+    background-color: var(--teal);
+    width: 100%;
+    z-index: -1;
+  }
+}
