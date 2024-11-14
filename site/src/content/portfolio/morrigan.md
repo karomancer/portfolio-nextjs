@@ -1,5 +1,5 @@
 ---
-title: Morrigan [Darkstalkers]
+title: Morrigan Cosplay [Darkstalkers]
 description: A forray into airbrushing and foam carving through a cosplay of the popular and sexy Darkstalkers character.
 slug: /portfolio/morrigan
 collaborators: []

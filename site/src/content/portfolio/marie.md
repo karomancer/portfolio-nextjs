@@ -1,5 +1,5 @@
 ---
-title: Marie [Splatoon]
+title: Marie Cosplay [Splatoon]
 description: A handmade dress complete with steel boning and a ribbon made of stuffed tentacles to make the perfect squid kid.
 slug: /portfolio/marie
 collaborators: []

@@ -1,5 +1,5 @@
 ---
-title: TV Remote
+title: Reverse-Engineered TV Remote
 description: A reverse engineered remote used to control a meta makeshift TV in presenting the history of the TV remote.
 slug: /portfolio/tv-remote
 collaborators: []

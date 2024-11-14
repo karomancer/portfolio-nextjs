@@ -1,5 +1,3 @@
-// TODO: Mkae this less shityt
-
 import fs from "fs";
 import Link from "next/link";
 import { compareDesc, format } from "date-fns";

@@ -1,5 +1,5 @@
 ---
-title: Muse
+title: Muse Gen-AI Design Exploration
 description: An exploration of what the first historical park and museum of the moon might look like using generative AI art tooling.
 slug: /portfolio/muse
 collaborators: []

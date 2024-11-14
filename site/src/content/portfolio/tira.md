@@ -1,5 +1,5 @@
 ---
-title: Tira [Soul Calibur III]
+title: Tira Cosplay [Soul Calibur III]
 description: Constructing a replica of a deadly hula hoop sized ring of blades and a feathery costume on a budget.
 slug: /portfolio/tira
 collaborators: []

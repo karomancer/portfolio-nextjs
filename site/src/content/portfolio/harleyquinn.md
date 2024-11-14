@@ -1,5 +1,5 @@
 ---
-title: Harley Quinn [BTAS]
+title: Harley Quinn Cosplay [BTAS]
 description: An ambitious sewing project with custom patterns made in just 3 days for NYC ComicCon.
 slug: /portfolio/harleyquinn
 collaborators: []

@@ -5,7 +5,6 @@
   grid-template-columns: 30% 70%;
   max-width: calc(var(--siteWidth) + 100px);
   margin: 0 auto;
-  padding: 1rem;
 
   @include breakpoint("<=medium") {
     display: block;
@@ -77,6 +76,7 @@
 
 .blog-post-content {
   grid-column-start: 2;
+  padding: 2rem;
 }
 
 .date-nav {

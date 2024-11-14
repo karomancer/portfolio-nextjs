@@ -1,5 +1,5 @@
 ---
-title: Over Hills and Underground
+title: Over Hills and Underground CD Design
 description: Illustrated album art of ghostly apparitions created for an eco-wallet layout.
 slug: /portfolio/over-hills-and-underground
 collaborators: []
