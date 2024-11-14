@@ -25,7 +25,7 @@ const Resume = () => (
       <meta property="og:url" content="http://www.karinachowtime.com/resume" />
     </Head>
     <CircuitsHeader>Let's get professional.</CircuitsHeader>
-    <main>
+    <main className={styles["resume"]}>
       <PDFViewer pdfUrl={RESUME_URL} withBoxShadow />
     </main>
   </>

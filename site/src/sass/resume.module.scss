@@ -19,7 +19,13 @@
 .resume {
   position: relative;
   background-color: var(--light);
-  padding-top: 4rem;
+  width: 100vw;
+  padding: 4rem 0;
+
+  div {
+    max-width: var(--siteWidth);
+    margin: 0 auto;
+  }
 }
 
 .resume-pdf {
@@ -27,7 +33,7 @@
   height: 1200px;
   border-radius: calc(var(--borderRadius) * 2);
   box-shadow: 1.5rem 1.5rem 0 0.2rem var(--teal);
-  
+
   @include breakpoint("<=small") {
     display: none;
   }
