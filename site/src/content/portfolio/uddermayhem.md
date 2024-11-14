@@ -236,9 +236,9 @@ To figure out the correct proportions for the udder, I made a mylar balloon mode
 
 Once I got the right proportions, I dissected my own balloon and measured it to create a CAD model in **Autodesk Fusion 360**, then inverted it and created a 4-piece udder mold box with pre-drilled holes at the top so the udder could be drilled down into a cow belly later.
 
-![Photograph of a person holding an udder made of mylar balloon](/portfolio/uddermayhem/mylar1.png)
+![Photograph of a person holding an udder made of mylar balloon](/portfolio/uddermayhem/mylar1.jpeg)
 ![Screenshot of a gray 3d modeled udder](/portfolio/uddermayhem/cad1.png)
-![Screenshot of a gray 3d modeled udder moldbox](/portfolio/uddermayhem/cad2.png)
+![Screenshot of a gray 3d modeled udder moldbox](/portfolio/uddermayhem/cad2.jpeg)
 
 Of course, making a beauitful udder means nothing for a video game if there aren't any accompanying electronics to detect a squeeze. So I made a single-teat mold box and made silicone brush casts to make test teats for different electronics experiments.
 
