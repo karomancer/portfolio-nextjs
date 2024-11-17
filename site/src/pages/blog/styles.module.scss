@@ -21,6 +21,7 @@
   h2 {
     font-size: 2rem;
     color: var(--teal);
+    line-height: 1.25;
     margin-bottom: 0;
     &:hover {
       cursor: pointer;
@@ -42,7 +43,7 @@
   }
 
   p {
-    margin-top: 0;
+    margin-top: 0.5rem;
     font-size: 1.2rem;
   }
 }
