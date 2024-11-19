@@ -1,6 +1,5 @@
 ---
 piece_type:
-    - work
     - journal
 title: Aurora Dream Rabbitry Logo
 description: An illustration of a lionhead rabbit to be used as a logo for the Aurora Dream Rabbitry.
