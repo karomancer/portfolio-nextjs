@@ -89,7 +89,7 @@ export default function Blog({
   return (
     <>
       <Head
-        title="Karina Chow | Maker Blog"
+        title="Maker Blog"
         description="Want to see some of the weird stuff I've made?"
         ogUrl="/blog"
         ogImage="/images/og_image.png"

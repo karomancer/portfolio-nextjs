@@ -42,7 +42,7 @@ const Head = ({
       <meta property="og:description" content={description} key="description" />
       <meta property="og:image" content={ogImage} />
       <meta property="og:url" content={ogUrl} />
-      <meta name="og:updated_time" content={(new Date()).toISOString()} />
+      <meta name="og:updated_time" content={new Date().toISOString()} />
       {/* Twitter properties */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={editedTitle} />

@@ -2,7 +2,7 @@
 
 import fs from "fs";
 
-import readMdx, { ReadMDX } from "@/utils/readMdx";
+import readMdx from "@/utils/readMdx";
 import PortfolioSection, { PortfolioProps } from "@/sections/Portfolio";
 import CircuitsHeader from "@/components/CircuitsHeader";
 import Head from "@/components/Head";
@@ -79,7 +79,7 @@ export default function Portfolio({
   return (
     <>
       <Head
-        title="Karina Chow | Portfolio"
+        title="Portfolio"
         description="Want to see some of the weird stuff I've made?"
         ogUrl="/portfolio"
         ogImage="/images/og_image.png"
