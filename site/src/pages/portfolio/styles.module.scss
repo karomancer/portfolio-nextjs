@@ -33,7 +33,8 @@
     }
   }
 
-  div + ul {
+  div + ul,
+  div + ol {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -135,9 +136,18 @@
 
 .portfolio-body {
   padding: 0 1rem;
+
+  ul,
+  ol {
+    margin-left: 2.5rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .portfolio-piece-content {
   max-width: var(--siteWidth);
   margin: 2rem auto;
+  padding-bottom: 4rem;
 }

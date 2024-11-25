@@ -9,7 +9,7 @@ export type MetascrapedInfo = {
   isIframe?: boolean;
 };
 
-const IFRAME_WEBSITES = ["glitch", "spotify", "youtube", "vimeo"];
+const IFRAME_WEBSITES = ["glitch", "spotify", "youtube", "vimeo", "pinterest"];
 const UNFURLING_WEBSITES = [
   "github",
   "medium",
