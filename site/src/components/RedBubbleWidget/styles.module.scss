@@ -1,3 +1,5 @@
+@import "../../sass/breakpoints";
+
 .redbubble-widget {
   background: linear-gradient(var(--light), white);
   padding: 4rem 0;
@@ -6,7 +8,23 @@
     max-width: var(--siteWidth);
     margin: 0 auto;
     text-align: center;
-    line-height: 200%;
+
+    h2,
+    h3,
+    p {
+      @include breakpoint("<=medium") {
+        padding: 0 2rem;
+      }
+    }
+
+    p {
+      line-height: 200%;
+    }
+
+    h2,
+    h3 {
+      line-height: 100%;
+    }
 
     h2 {
       color: var(--dark);
@@ -25,6 +43,18 @@
       color: var(--dark);
       font-size: 2rem;
       font-weight: 300;
+    }
+
+    iframe {
+      width: 990px;
+      height: 500px;
+
+      @include breakpoint("<=medium") {
+        overflow: hidden;
+        width: 230px;
+        height: 600px;
+        max-height: 600px;
+      }
     }
   }
 }

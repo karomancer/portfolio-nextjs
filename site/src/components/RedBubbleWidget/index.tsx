@@ -28,9 +28,8 @@ const RedbubbleWidget = ({
         />
         <div className="block mx-auto w-1/2">
           <Iframe
-            width="1040"
-            height="550"
             overflow="hidden"
+            scrolling="no"
             url={`https://www.redbubble.com/people/karinachowtime/external-portfolio?count=${count}`}
           />
         </div>
