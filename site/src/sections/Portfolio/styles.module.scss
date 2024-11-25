@@ -9,7 +9,8 @@
   gap: 0.5rem;
   padding: 0;
 
-  & > ul {
+  & > ul,
+  & > ol {
     display: flex;
     flex-direction: column;
     padding: 0;
