@@ -26,7 +26,7 @@ categories:
 type: portfolioPiece
 ---
 
-![](/portfolio/floordozer/push3.MP4)
+![](/portfolio/floordozer/push3.mp4)
 
 | |
 | -- |
