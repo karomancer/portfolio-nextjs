@@ -7,20 +7,6 @@ $lightShadow: 0px 3px 6px 0px var(--gray);
 $noLightShadow: 0px 0px 6px 0px var(--gray);
 $shotHeight: 14rem;
 
-.section-two-pane {
-  max-width: calc(var(--siteWidth) + 10rem);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  margin: 0 auto;
-
-  @include breakpoint("<=small") {
-    display: block;
-  }
-}
-
 .dribbble-section {
   position: relative;
   height: calc($shotHeight * 3.2);
@@ -38,33 +24,6 @@ $shotHeight: 14rem;
   //   border-top: 2px solid var(--light);
   //   background-color: #f2f2f2;
   // }
-}
-
-.section-description {
-  width: 30%;
-
-  h1 {
-    text-transform: capitalize;
-    margin-bottom: 0;
-  }
-
-  h3 {
-    margin-top: 0;
-    b {
-      color: var(--gray);
-    }
-  }
-
-  a {
-    color: var(--dribbble);
-  }
-
-  @include breakpoint("<=small") {
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
 }
 
 .MoMa {

@@ -13,6 +13,7 @@ import {
 import Head from "@/components/Head";
 
 import styles from "./styles.module.scss";
+import RedbubbleWidget from "@/components/RedBubbleWidget";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("src/content/portfolio");
@@ -156,6 +157,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
             {content}
           </Markdown>
         </div>
+        <RedbubbleWidget title={<h3>Buy my designs on RedBubble!</h3>} />
       </main>
     </>
   );

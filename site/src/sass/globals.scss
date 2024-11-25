@@ -20,6 +20,7 @@
   * Vendor brand colors
   **/
   --dribbble: #ea4c89;
+  --redbubble: #d92d02;
 
   /**
    * Fonts
@@ -34,7 +35,8 @@
   --condensedFontBoldWeight: 400;
 }
 
-*, cite {
+*,
+cite {
   box-sizing: border-box;
   font-family: var(--fontFamily);
   font-weight: var(--bodyFontWeight);
@@ -115,8 +117,6 @@ h6 {
   line-height: 1.5em;
 }
 
-
-
 a {
   @extend .link-style;
 }
@@ -152,6 +152,47 @@ section {
 
   p {
     font-size: 1.25rem;
+  }
+}
+
+.section-two-pane {
+  max-width: calc(var(--siteWidth) + 10rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+
+  @include breakpoint("<=small") {
+    display: block;
+  }
+}
+
+.section-description {
+  width: 30%;
+
+  h1 {
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    b {
+      color: var(--gray);
+    }
+  }
+
+  a {
+    color: var(--dribbble);
+  }
+
+  @include breakpoint("<=small") {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -205,8 +246,9 @@ code {
   font-size: 0.9em;
   letter-spacing: 0;
   padding: 0.25em;
-  
-  &, * {
+
+  &,
+  * {
     font-family: monospace !important;
   }
 }
@@ -224,7 +266,8 @@ pre {
     padding: 1em 1.5em;
     overflow-x: auto;
 
-    &, * {
+    &,
+    * {
       font-family: monospace !important;
     }
   }
@@ -255,7 +298,6 @@ svg {
 /**
   * Specific overrides
   **/
-
 .wrapper {
   padding: 3rem 0;
 

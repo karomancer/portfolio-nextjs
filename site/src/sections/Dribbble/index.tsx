@@ -10,15 +10,16 @@ interface Props {
 }
 
 const Section = ({ shots }: Props) => {
-  const sortedShots =
-    shots.sort((a: DribbbleShot, b: DribbbleShot) =>
+  const sortedShots = shots
+    .sort((a: DribbbleShot, b: DribbbleShot) =>
       compareAsc(new Date(b.published_at), new Date(a.published_at))
-    ).slice(0, 6);
+    )
+    .slice(0, 6);
 
   return (
     <section className={styles["dribbble-section"]} id="dribbble">
-      <div className={styles["section-two-pane"]}>
-        <div className={styles["section-description"]}>
+      <div className="section-two-pane">
+        <div className="section-description">
           <h2 className={styles["MoMa"]}>MoMD</h2>
           <h3>
             <b>M</b>useum <b>o</b>f <b>M</b>odern <b>D</b>ribbbles

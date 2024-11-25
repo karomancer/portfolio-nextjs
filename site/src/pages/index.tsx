@@ -11,6 +11,7 @@ import VennDiagram from "@/sections/VennDiagram";
 import Map from "@/sections/Map";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
+import RedbubbleWidget from "@/components/RedBubbleWidget";
 
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
   loading: () => <p>Loading...</p>,
@@ -62,6 +63,16 @@ const Home = ({
       <VennDiagram />
       <DynamicMedium mediumPosts={mediumPosts} />
       <DynamicDribbble shots={dribbbleShots} />
+      <RedbubbleWidget
+        title={
+          <h2>
+            <strong>
+              <b>R</b>ed<b>B</b>ubble
+            </strong>{" "}
+            Shop
+          </h2>
+        }
+      />
       <Map />
       <blockquote className={styles["screw-the-rules"]}>
         “Screw the rules, I have <b>green hair</b>”

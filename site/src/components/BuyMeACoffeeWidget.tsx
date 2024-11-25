@@ -10,7 +10,7 @@ const BuyMeACoffeeWidget = () => (
     data-cfasync="false"
     data-id="karomancer"
     data-description="Support me on Buy me a coffee!"
-    data-message="Hey! If you enjoy what I'm doing and want to support me in my creative journey while I'm in graduate school, consider buying me a tea 💚"
+    data-message="Hey! If you enjoy what I'm doing and want to support me in my creative journey, consider buying me a tea 💚"
     data-color="#40DCA5"
     data-position="Right"
     data-x_margin="18"
