@@ -7,7 +7,7 @@ class: ""
 date: 2020-12-28T07:43:22.121Z
 preview: /optimized/portfolio/onramp/preview.mp4
 thumbnail_width: 1
-thumbnail_height: 2
+thumbnail_height: 1
 cover: /optimized/portfolio/onramp/cover.webp
 og_preview: /optimized/portfolio/onramp/og.webp
 draft: false
