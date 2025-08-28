@@ -337,6 +337,78 @@ svg {
 }
 
 .f3 {
+  .card {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: -0.5rem;
+      top: -0.5rem;
+      font-size: 2rem;
+      background-color: #231f20;
+      width: 2rem;
+      height: 2rem;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%;
+      border: 2px solid;
+      padding: 0.5rem;
+      font-weight: bold;
+      z-index: 1;
+    }
+  }
+
+  .card-female {
+    &::before {
+      content: "♀";
+      color: var(--female-color);
+      border-color: var(--female-color);
+    }
+  }
+
+  .card-male {
+    &::before {
+      content: "♂";
+      color: var(--male-color);
+      border-color: var(--male-color);
+    }
+  }
+
+  [data-id^="0"] {
+    .card-inner,
+    svg {
+      background-color: #de5b52 !important;
+    }
+  }
+
+  [data-id^="1"] {
+    .card-inner,
+    svg {
+      background-color: #e1317a !important;
+    }
+  }
+
+  [data-id^="2"] {
+    .card-inner,
+    svg {
+      background-color: #52595e !important;
+    }
+  }
+
+  [data-id^="3"] {
+    .card-inner,
+    svg {
+      background-color: #50a6e0 !important;
+    }
+  }
+
+  [data-id^="4"] {
+    .card-inner,
+    svg {
+      background-color: #4be087 !important;
+    }
+  }
+
   &.f3-cont {
     max-height: 90vh !important;
   }
@@ -369,8 +441,18 @@ svg {
     height: 100%;
   }
 
+  .card-label {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    white-space: normal !important;
+    padding: 0.2rem !important;
+    font-size: 2rem;
+    & > div {
+      color: white;
+    }
+  }
+
   .card-label > div:first-child {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
