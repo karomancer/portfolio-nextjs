@@ -1,18 +1,9 @@
 [
   {
-    "id": "0",
+    "id": "00",
     "rels": {
-      "spouses": ["7a4202b8-7d4b-4668-869d-d74b52378be8"],
-      "children": [
-        "68e12565-0e36-4be8-aba2-5a3c21197060",
-        "c685e8e7-2c94-402c-b94c-30c12d63e194",
-        "62f5384e-5bcc-426a-8a21-0359abeab45a",
-        "a45c85ac-8a9f-49f3-8418-5733a4582725",
-        "1243f042-2b9e-4caf-adc7-d13751d032a2",
-        "22128676-f5d6-44f0-8c3a-1c3b5bec1626",
-        "8ec82576-3f2f-4802-ad7e-0ea51fe532d9",
-        "e6f576c8-92c6-451d-99c7-e1316dfb5252"
-      ]
+      "spouses": ["01"],
+      "children": ["10", "11", "12", "13", "14", "15", "16", "17"]
     },
     "data": {
       "first name": "Peter",
@@ -23,7 +14,7 @@
     }
   },
   {
-    "id": "7a4202b8-7d4b-4668-869d-d74b52378be8",
+    "id": "01",
     "data": {
       "gender": "F",
       "first name": "Margaret",
@@ -32,21 +23,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["0"],
-      "children": [
-        "68e12565-0e36-4be8-aba2-5a3c21197060",
-        "c685e8e7-2c94-402c-b94c-30c12d63e194",
-        "62f5384e-5bcc-426a-8a21-0359abeab45a",
-        "a45c85ac-8a9f-49f3-8418-5733a4582725",
-        "1243f042-2b9e-4caf-adc7-d13751d032a2",
-        "22128676-f5d6-44f0-8c3a-1c3b5bec1626",
-        "8ec82576-3f2f-4802-ad7e-0ea51fe532d9",
-        "e6f576c8-92c6-451d-99c7-e1316dfb5252"
-      ]
+      "spouses": ["00"],
+      "children": ["10", "11", "12", "13", "14", "15", "16", "17"]
     }
   },
   {
-    "id": "68e12565-0e36-4be8-aba2-5a3c21197060",
+    "id": "10",
     "data": {
       "gender": "M",
       "first name": "James",
@@ -55,14 +37,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "0",
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
-      "spouses": ["c3c22c18-c1b3-4102-8a1b-28d6d0510daa"],
-      "children": ["96eeca36-8b88-4ecb-8aa9-24eaff14e1d1"]
+      "father": "00",
+      "mother": "01",
+      "spouses": ["18"],
+      "children": ["200"]
     }
   },
   {
-    "id": "c685e8e7-2c94-402c-b94c-30c12d63e194",
+    "id": "11",
     "data": {
       "gender": "M",
       "first name": "Richard",
@@ -71,14 +53,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "0",
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
+      "father": "00",
+      "mother": "01",
       "spouses": [],
-      "children": ["c28654f2-d9e2-4b2b-9ed4-1681f6a2f8a7"]
+      "children": ["201"]
     }
   },
   {
-    "id": "62f5384e-5bcc-426a-8a21-0359abeab45a",
+    "id": "12",
     "data": {
       "gender": "M",
       "first name": "William",
@@ -87,18 +69,14 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
-      "father": "0",
+      "mother": "01",
+      "father": "00",
       "spouses": [],
-      "children": [
-        "d4aaa08d-7cee-47ee-8076-f974bbcb0375",
-        "6f9592db-e3d8-4927-adc8-088a194af0b3",
-        "3f484729-da9a-4e0f-9d30-5b2db4cfbe17"
-      ]
+      "children": ["202", "203", "204"]
     }
   },
   {
-    "id": "a45c85ac-8a9f-49f3-8418-5733a4582725",
+    "id": "13",
     "data": {
       "gender": "M",
       "first name": "Robert",
@@ -107,17 +85,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "0",
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
+      "father": "00",
+      "mother": "01",
       "spouses": [],
-      "children": [
-        "38d3539b-dd30-4507-9b0b-65cc6bb7e1c6",
-        "479a3896-3f5a-49cb-9368-86f421597bfa"
-      ]
+      "children": ["205", "206"]
     }
   },
   {
-    "id": "1243f042-2b9e-4caf-adc7-d13751d032a2",
+    "id": "14",
     "data": {
       "gender": "F",
       "first name": "Maisie",
@@ -126,19 +101,14 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
-      "father": "0",
+      "mother": "01",
+      "father": "00",
       "spouses": [],
-      "children": [
-        "56430e02-7b41-4ebf-a553-92720259f03c",
-        "09237266-ba91-41da-ad7a-92053fb5eecf",
-        "6c57b249-f28a-46dc-9a10-c63c9e64f643",
-        "6b745b59-fe2d-41ad-900c-14bf4d8d4057"
-      ]
+      "children": ["207", "208", "209", "210"]
     }
   },
   {
-    "id": "22128676-f5d6-44f0-8c3a-1c3b5bec1626",
+    "id": "15",
     "data": {
       "gender": "F",
       "first name": "Maureen",
@@ -147,17 +117,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "0",
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
+      "father": "00",
+      "mother": "01",
       "spouses": [],
-      "children": [
-        "d5a0978a-d7d5-4295-b6c8-0ff72527d4d2",
-        "3596bb59-89e3-42e6-8c57-cf7315b44443"
-      ]
+      "children": ["211", "213"]
     }
   },
   {
-    "id": "8ec82576-3f2f-4802-ad7e-0ea51fe532d9",
+    "id": "16",
     "data": {
       "gender": "F",
       "first name": "Mae",
@@ -166,18 +133,14 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
-      "father": "0",
+      "mother": "01",
+      "father": "00",
       "spouses": [],
-      "children": [
-        "4da2bf10-50b8-4789-af0b-52255f3d3e7d",
-        "c93dff52-84d4-440c-a8ba-016422bb8ef8",
-        "cb44858e-34d4-43d1-9f72-356af4be3bf0"
-      ]
+      "children": ["214", "215", "216"]
     }
   },
   {
-    "id": "e6f576c8-92c6-451d-99c7-e1316dfb5252",
+    "id": "17",
     "data": {
       "gender": "F",
       "first name": "Emily",
@@ -186,17 +149,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "0",
-      "mother": "7a4202b8-7d4b-4668-869d-d74b52378be8",
-      "spouses": ["f52fcae1-a2c6-4ab6-b059-a415afd97570"],
-      "children": [
-        "9cbefa64-55a4-49f7-be24-923aa7d1702f",
-        "4842d879-b607-401f-9425-df36a9752260"
-      ]
+      "father": "00",
+      "mother": "01",
+      "spouses": ["19"],
+      "children": ["217", "218"]
     }
   },
   {
-    "id": "c3c22c18-c1b3-4102-8a1b-28d6d0510daa",
+    "id": "18",
     "data": {
       "gender": "F",
       "first name": "Grace",
@@ -205,12 +165,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["68e12565-0e36-4be8-aba2-5a3c21197060"],
-      "children": ["96eeca36-8b88-4ecb-8aa9-24eaff14e1d1"]
+      "spouses": ["10"],
+      "children": ["200"]
     }
   },
   {
-    "id": "96eeca36-8b88-4ecb-8aa9-24eaff14e1d1",
+    "id": "200",
     "data": {
       "gender": "M",
       "first name": "Richard",
@@ -219,20 +179,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "68e12565-0e36-4be8-aba2-5a3c21197060",
-      "mother": "c3c22c18-c1b3-4102-8a1b-28d6d0510daa",
-      "spouses": [
-        "7794ef3c-b39c-45df-a91a-49ab7996683e",
-        "395987d8-d6dc-4dc4-90df-8ab8d812ae05"
-      ],
-      "children": [
-        "2f3ad2db-bdbc-4dd8-a489-6dc91657415b",
-        "c84dad19-9d41-466d-b6f3-cd6f76471158"
-      ]
+      "father": "10",
+      "mother": "18",
+      "spouses": ["220", "219"],
+      "children": ["300", "301"]
     }
   },
   {
-    "id": "2f3ad2db-bdbc-4dd8-a489-6dc91657415b",
+    "id": "300",
     "data": {
       "gender": "M",
       "first name": "Jason",
@@ -241,17 +195,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "96eeca36-8b88-4ecb-8aa9-24eaff14e1d1",
-      "spouses": ["32e2d361-1cd7-4f11-be50-bd5bff2f5f30"],
-      "children": [
-        "c3738c6c-d66e-4287-9317-c4311e11c7f3",
-        "da6830aa-6210-42b1-92f7-c3c5571da0dc"
-      ],
-      "mother": "7794ef3c-b39c-45df-a91a-49ab7996683e"
+      "father": "200",
+      "spouses": ["320"],
+      "children": ["400", "401"],
+      "mother": "219"
     }
   },
   {
-    "id": "32e2d361-1cd7-4f11-be50-bd5bff2f5f30",
+    "id": "320",
     "data": {
       "gender": "F",
       "first name": "Janelle",
@@ -260,15 +211,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["2f3ad2db-bdbc-4dd8-a489-6dc91657415b"],
-      "children": [
-        "c3738c6c-d66e-4287-9317-c4311e11c7f3",
-        "da6830aa-6210-42b1-92f7-c3c5571da0dc"
-      ]
+      "spouses": ["300"],
+      "children": ["400", "401"]
     }
   },
   {
-    "id": "c3738c6c-d66e-4287-9317-c4311e11c7f3",
+    "id": "400",
     "data": {
       "gender": "M",
       "first name": "James",
@@ -277,12 +225,12 @@
       "avatar": ""
     },
     "rels": {
-      "father": "2f3ad2db-bdbc-4dd8-a489-6dc91657415b",
-      "mother": "32e2d361-1cd7-4f11-be50-bd5bff2f5f30"
+      "father": "300",
+      "mother": "320"
     }
   },
   {
-    "id": "da6830aa-6210-42b1-92f7-c3c5571da0dc",
+    "id": "401",
     "data": {
       "gender": "F",
       "first name": "Katelyn",
@@ -291,12 +239,12 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "32e2d361-1cd7-4f11-be50-bd5bff2f5f30",
-      "father": "2f3ad2db-bdbc-4dd8-a489-6dc91657415b"
+      "mother": "320",
+      "father": "300"
     }
   },
   {
-    "id": "7794ef3c-b39c-45df-a91a-49ab7996683e",
+    "id": "219",
     "data": {
       "gender": "F",
       "first name": "Sue",
@@ -305,12 +253,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["96eeca36-8b88-4ecb-8aa9-24eaff14e1d1"],
-      "children": ["2f3ad2db-bdbc-4dd8-a489-6dc91657415b"]
+      "spouses": ["200"],
+      "children": ["300"]
     }
   },
   {
-    "id": "395987d8-d6dc-4dc4-90df-8ab8d812ae05",
+    "id": "220",
     "data": {
       "gender": "F",
       "first name": "Barbara",
@@ -319,12 +267,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["96eeca36-8b88-4ecb-8aa9-24eaff14e1d1"],
-      "children": ["c84dad19-9d41-466d-b6f3-cd6f76471158"]
+      "spouses": ["200"],
+      "children": ["301"]
     }
   },
   {
-    "id": "c84dad19-9d41-466d-b6f3-cd6f76471158",
+    "id": "301",
     "data": {
       "gender": "F",
       "first name": "Karina",
@@ -333,12 +281,12 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "395987d8-d6dc-4dc4-90df-8ab8d812ae05",
-      "father": "96eeca36-8b88-4ecb-8aa9-24eaff14e1d1"
+      "mother": "220",
+      "father": "200"
     }
   },
   {
-    "id": "c28654f2-d9e2-4b2b-9ed4-1681f6a2f8a7",
+    "id": "201",
     "data": {
       "gender": "F",
       "first name": "Joy",
@@ -347,11 +295,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "c685e8e7-2c94-402c-b94c-30c12d63e194"
+      "father": "11"
     }
   },
   {
-    "id": "d4aaa08d-7cee-47ee-8076-f974bbcb0375",
+    "id": "202",
     "data": {
       "gender": "M",
       "first name": "Eddie",
@@ -360,16 +308,13 @@
       "avatar": ""
     },
     "rels": {
-      "father": "62f5384e-5bcc-426a-8a21-0359abeab45a",
+      "father": "12",
       "spouses": [],
-      "children": [
-        "49b12160-2090-4130-975c-30bd0a4d9716",
-        "1cbe55a5-e3e6-4cd6-8620-41d66a5a223d"
-      ]
+      "children": ["302", "303"]
     }
   },
   {
-    "id": "6f9592db-e3d8-4927-adc8-088a194af0b3",
+    "id": "203",
     "data": {
       "gender": "F",
       "first name": "Jennifer",
@@ -378,13 +323,13 @@
       "avatar": ""
     },
     "rels": {
-      "father": "62f5384e-5bcc-426a-8a21-0359abeab45a",
+      "father": "12",
       "spouses": [],
-      "children": ["9b7a552a-4538-45cb-ad8c-af5b0b9266b5"]
+      "children": ["304"]
     }
   },
   {
-    "id": "3f484729-da9a-4e0f-9d30-5b2db4cfbe17",
+    "id": "204",
     "data": {
       "gender": "M",
       "first name": "Wilson",
@@ -393,16 +338,13 @@
       "avatar": ""
     },
     "rels": {
-      "father": "62f5384e-5bcc-426a-8a21-0359abeab45a",
+      "father": "12",
       "spouses": [],
-      "children": [
-        "54eb9a5c-83b6-4948-a12a-185ff54d1a46",
-        "77a2f156-e8f4-404b-8456-4cf642163342"
-      ]
+      "children": ["305", "306"]
     }
   },
   {
-    "id": "9b7a552a-4538-45cb-ad8c-af5b0b9266b5",
+    "id": "304",
     "data": {
       "gender": "F",
       "first name": "Bernice",
@@ -411,11 +353,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "6f9592db-e3d8-4927-adc8-088a194af0b3"
+      "mother": "203"
     }
   },
   {
-    "id": "49b12160-2090-4130-975c-30bd0a4d9716",
+    "id": "302",
     "data": {
       "gender": "M",
       "first name": "Kal-el",
@@ -424,11 +366,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "d4aaa08d-7cee-47ee-8076-f974bbcb0375"
+      "father": "202"
     }
   },
   {
-    "id": "1cbe55a5-e3e6-4cd6-8620-41d66a5a223d",
+    "id": "303",
     "data": {
       "gender": "F",
       "first name": "Kaela",
@@ -437,11 +379,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "d4aaa08d-7cee-47ee-8076-f974bbcb0375"
+      "father": "202"
     }
   },
   {
-    "id": "54eb9a5c-83b6-4948-a12a-185ff54d1a46",
+    "id": "305",
     "data": {
       "gender": "M",
       "first name": "Damon",
@@ -450,11 +392,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "3f484729-da9a-4e0f-9d30-5b2db4cfbe17"
+      "father": "204"
     }
   },
   {
-    "id": "77a2f156-e8f4-404b-8456-4cf642163342",
+    "id": "306",
     "data": {
       "gender": "F",
       "first name": "Kaitlyn",
@@ -463,11 +405,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "3f484729-da9a-4e0f-9d30-5b2db4cfbe17"
+      "father": "204"
     }
   },
   {
-    "id": "38d3539b-dd30-4507-9b0b-65cc6bb7e1c6",
+    "id": "205",
     "data": {
       "gender": "F",
       "first name": "Vickie",
@@ -476,13 +418,13 @@
       "avatar": ""
     },
     "rels": {
-      "father": "a45c85ac-8a9f-49f3-8418-5733a4582725",
+      "father": "13",
       "spouses": [],
-      "children": ["b83b8a27-744b-4374-a2fd-6719203a9151"]
+      "children": ["319"]
     }
   },
   {
-    "id": "479a3896-3f5a-49cb-9368-86f421597bfa",
+    "id": "206",
     "data": {
       "gender": "F",
       "first name": "Stella",
@@ -491,16 +433,13 @@
       "avatar": ""
     },
     "rels": {
-      "father": "a45c85ac-8a9f-49f3-8418-5733a4582725",
-      "spouses": [],
-      "children": [
-        "a3dc4c0b-1962-44f3-a512-f5b394746024",
-        "86591277-fd36-4833-a43d-cda6f7df85f6"
-      ]
+      "father": "13",
+      "spouses": ["221"],
+      "children": ["307", "308"]
     }
   },
   {
-    "id": "a3dc4c0b-1962-44f3-a512-f5b394746024",
+    "id": "307",
     "data": {
       "gender": "M",
       "first name": "Calvin",
@@ -509,13 +448,14 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "479a3896-3f5a-49cb-9368-86f421597bfa",
+      "mother": "206",
       "spouses": [],
-      "children": []
+      "children": [],
+      "father": "221"
     }
   },
   {
-    "id": "86591277-fd36-4833-a43d-cda6f7df85f6",
+    "id": "308",
     "data": {
       "gender": "F",
       "first name": "Corinne",
@@ -524,11 +464,12 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "479a3896-3f5a-49cb-9368-86f421597bfa"
+      "mother": "206",
+      "father": "221"
     }
   },
   {
-    "id": "b83b8a27-744b-4374-a2fd-6719203a9151",
+    "id": "319",
     "data": {
       "gender": "F",
       "first name": "Allison",
@@ -537,11 +478,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "38d3539b-dd30-4507-9b0b-65cc6bb7e1c6"
+      "mother": "205"
     }
   },
   {
-    "id": "56430e02-7b41-4ebf-a553-92720259f03c",
+    "id": "207",
     "data": {
       "gender": "M",
       "first name": "Calvin",
@@ -550,16 +491,13 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "1243f042-2b9e-4caf-adc7-d13751d032a2",
-      "spouses": [
-        "62d5a58f-1307-45a1-87d7-17555e71da01",
-        "3bfc6c77-f1cd-4a6f-ab9c-cf7435249600"
-      ],
+      "mother": "14",
+      "spouses": ["222", "223"],
       "children": []
     }
   },
   {
-    "id": "09237266-ba91-41da-ad7a-92053fb5eecf",
+    "id": "208",
     "data": {
       "gender": "F",
       "first name": "Mary Ann",
@@ -568,35 +506,28 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "1243f042-2b9e-4caf-adc7-d13751d032a2",
+      "mother": "14",
       "spouses": [],
-      "children": [
-        "1624aa6e-e4ca-47bd-b40b-edebc34dca8e",
-        "e0be8f85-ed30-45e3-a09e-9002649ad824"
-      ]
+      "children": ["308", "309"]
     }
   },
   {
-    "id": "6c57b249-f28a-46dc-9a10-c63c9e64f643",
+    "id": "209",
     "data": {
       "gender": "M",
       "first name": "Frederick",
-      "last name": "Chow",
+      "last name": "Tsao",
       "birthday": "",
       "avatar": ""
     },
     "rels": {
-      "mother": "1243f042-2b9e-4caf-adc7-d13751d032a2",
+      "mother": "14",
       "spouses": [],
-      "children": [
-        "c7327077-9a25-494b-aa3e-f01346fd6081",
-        "9e86e8e3-ba7b-43d9-9d5c-b01f3d04c755",
-        "a4662c32-b513-43d5-9070-7f25be0b1887"
-      ]
+      "children": ["310", "311", "312"]
     }
   },
   {
-    "id": "6b745b59-fe2d-41ad-900c-14bf4d8d4057",
+    "id": "210",
     "data": {
       "gender": "F",
       "first name": "Mimie",
@@ -605,11 +536,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "1243f042-2b9e-4caf-adc7-d13751d032a2"
+      "mother": "14"
     }
   },
   {
-    "id": "1624aa6e-e4ca-47bd-b40b-edebc34dca8e",
+    "id": "308",
     "data": {
       "gender": "M",
       "first name": "Spencer",
@@ -618,11 +549,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "09237266-ba91-41da-ad7a-92053fb5eecf"
+      "mother": "208"
     }
   },
   {
-    "id": "e0be8f85-ed30-45e3-a09e-9002649ad824",
+    "id": "309",
     "data": {
       "gender": "F",
       "first name": "Allegra",
@@ -631,11 +562,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "09237266-ba91-41da-ad7a-92053fb5eecf"
+      "mother": "208"
     }
   },
   {
-    "id": "62d5a58f-1307-45a1-87d7-17555e71da01",
+    "id": "222",
     "data": {
       "gender": "M",
       "first name": "Zack",
@@ -644,12 +575,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["56430e02-7b41-4ebf-a553-92720259f03c"],
+      "spouses": ["207", "223"],
       "children": []
     }
   },
   {
-    "id": "3bfc6c77-f1cd-4a6f-ab9c-cf7435249600",
+    "id": "223",
     "data": {
       "gender": "M",
       "first name": "Dave",
@@ -658,12 +589,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["56430e02-7b41-4ebf-a553-92720259f03c"],
+      "spouses": ["207", "222"],
       "children": []
     }
   },
   {
-    "id": "c7327077-9a25-494b-aa3e-f01346fd6081",
+    "id": "310",
     "data": {
       "gender": "M",
       "first name": "Sinchai",
@@ -672,24 +603,24 @@
       "avatar": ""
     },
     "rels": {
-      "father": "6c57b249-f28a-46dc-9a10-c63c9e64f643"
+      "father": "209"
     }
   },
   {
-    "id": "9e86e8e3-ba7b-43d9-9d5c-b01f3d04c755",
+    "id": "311",
     "data": {
-      "gender": "M",
+      "gender": "F",
       "first name": "Sonia",
       "last name": "Tsao",
       "birthday": "",
       "avatar": ""
     },
     "rels": {
-      "father": "6c57b249-f28a-46dc-9a10-c63c9e64f643"
+      "father": "209"
     }
   },
   {
-    "id": "a4662c32-b513-43d5-9070-7f25be0b1887",
+    "id": "312",
     "data": {
       "gender": "M",
       "first name": "Frederick",
@@ -698,11 +629,11 @@
       "avatar": ""
     },
     "rels": {
-      "father": "6c57b249-f28a-46dc-9a10-c63c9e64f643"
+      "father": "209"
     }
   },
   {
-    "id": "d5a0978a-d7d5-4295-b6c8-0ff72527d4d2",
+    "id": "211",
     "data": {
       "gender": "M",
       "first name": "Gareth",
@@ -711,16 +642,13 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "22128676-f5d6-44f0-8c3a-1c3b5bec1626",
-      "spouses": [],
-      "children": [
-        "bce29e92-3274-475e-a0c4-2cfb1f71a326",
-        "ab87f7e2-2331-4c9f-b0d0-379bdad2e9e2"
-      ]
+      "mother": "15",
+      "spouses": ["224"],
+      "children": ["313", "314"]
     }
   },
   {
-    "id": "3596bb59-89e3-42e6-8c57-cf7315b44443",
+    "id": "213",
     "data": {
       "gender": "F",
       "first name": "Sian",
@@ -729,11 +657,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "22128676-f5d6-44f0-8c3a-1c3b5bec1626"
+      "mother": "15"
     }
   },
   {
-    "id": "bce29e92-3274-475e-a0c4-2cfb1f71a326",
+    "id": "313",
     "data": {
       "gender": "M",
       "first name": "Ben",
@@ -742,11 +670,12 @@
       "avatar": ""
     },
     "rels": {
-      "father": "d5a0978a-d7d5-4295-b6c8-0ff72527d4d2"
+      "father": "211",
+      "mother": "224"
     }
   },
   {
-    "id": "ab87f7e2-2331-4c9f-b0d0-379bdad2e9e2",
+    "id": "314",
     "data": {
       "gender": "F",
       "first name": "Ruby",
@@ -755,11 +684,12 @@
       "avatar": ""
     },
     "rels": {
-      "father": "d5a0978a-d7d5-4295-b6c8-0ff72527d4d2"
+      "father": "211",
+      "mother": "224"
     }
   },
   {
-    "id": "4da2bf10-50b8-4789-af0b-52255f3d3e7d",
+    "id": "214",
     "data": {
       "gender": "F",
       "first name": "Debra",
@@ -768,11 +698,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "8ec82576-3f2f-4802-ad7e-0ea51fe532d9"
+      "mother": "16"
     }
   },
   {
-    "id": "c93dff52-84d4-440c-a8ba-016422bb8ef8",
+    "id": "215",
     "data": {
       "gender": "F",
       "first name": "Vivian",
@@ -781,11 +711,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "8ec82576-3f2f-4802-ad7e-0ea51fe532d9"
+      "mother": "16"
     }
   },
   {
-    "id": "cb44858e-34d4-43d1-9f72-356af4be3bf0",
+    "id": "216",
     "data": {
       "gender": "F",
       "first name": "Kathryn",
@@ -794,11 +724,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "8ec82576-3f2f-4802-ad7e-0ea51fe532d9"
+      "mother": "16"
     }
   },
   {
-    "id": "f52fcae1-a2c6-4ab6-b059-a415afd97570",
+    "id": "19",
     "data": {
       "gender": "M",
       "first name": "Helmut",
@@ -807,15 +737,12 @@
       "avatar": ""
     },
     "rels": {
-      "spouses": ["e6f576c8-92c6-451d-99c7-e1316dfb5252"],
-      "children": [
-        "9cbefa64-55a4-49f7-be24-923aa7d1702f",
-        "4842d879-b607-401f-9425-df36a9752260"
-      ]
+      "spouses": ["17"],
+      "children": ["217", "218"]
     }
   },
   {
-    "id": "9cbefa64-55a4-49f7-be24-923aa7d1702f",
+    "id": "217",
     "data": {
       "gender": "F",
       "first name": "Denise",
@@ -824,17 +751,14 @@
       "avatar": ""
     },
     "rels": {
-      "father": "f52fcae1-a2c6-4ab6-b059-a415afd97570",
-      "mother": "e6f576c8-92c6-451d-99c7-e1316dfb5252",
+      "father": "19",
+      "mother": "17",
       "spouses": [],
-      "children": [
-        "6640ce2a-a02c-45a9-a1af-c5b12e9f60cc",
-        "3b489dab-6db9-4afe-8c2d-08bd82436c83"
-      ]
+      "children": ["315", "316"]
     }
   },
   {
-    "id": "4842d879-b607-401f-9425-df36a9752260",
+    "id": "218",
     "data": {
       "gender": "F",
       "first name": "Andrea",
@@ -843,17 +767,14 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "e6f576c8-92c6-451d-99c7-e1316dfb5252",
-      "father": "f52fcae1-a2c6-4ab6-b059-a415afd97570",
+      "mother": "17",
+      "father": "19",
       "spouses": [],
-      "children": [
-        "d43d33e4-23de-4b35-9272-0e91c582b88f",
-        "810446c3-1c98-45c9-ab6f-423e0fd59103"
-      ]
+      "children": ["317", "318"]
     }
   },
   {
-    "id": "6640ce2a-a02c-45a9-a1af-c5b12e9f60cc",
+    "id": "315",
     "data": {
       "gender": "M",
       "first name": "Jo Egin",
@@ -862,11 +783,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "9cbefa64-55a4-49f7-be24-923aa7d1702f"
+      "mother": "217"
     }
   },
   {
-    "id": "3b489dab-6db9-4afe-8c2d-08bd82436c83",
+    "id": "316",
     "data": {
       "gender": "F",
       "first name": "Hannah Beth",
@@ -875,11 +796,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "9cbefa64-55a4-49f7-be24-923aa7d1702f"
+      "mother": "217"
     }
   },
   {
-    "id": "d43d33e4-23de-4b35-9272-0e91c582b88f",
+    "id": "317",
     "data": {
       "gender": "M",
       "first name": "Gabriel",
@@ -888,11 +809,11 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "4842d879-b607-401f-9425-df36a9752260"
+      "mother": "218"
     }
   },
   {
-    "id": "810446c3-1c98-45c9-ab6f-423e0fd59103",
+    "id": "318",
     "data": {
       "gender": "F",
       "first name": "Elin",
@@ -901,7 +822,35 @@
       "avatar": ""
     },
     "rels": {
-      "mother": "4842d879-b607-401f-9425-df36a9752260"
+      "mother": "218"
+    }
+  },
+  {
+    "id": "221",
+    "data": {
+      "gender": "M",
+      "first name": "David",
+      "last name": "",
+      "birthday": "",
+      "avatar": ""
+    },
+    "rels": {
+      "spouses": ["206"],
+      "children": ["307", "308"]
+    }
+  },
+  {
+    "id": "224",
+    "data": {
+      "gender": "F",
+      "first name": "Sally (ex)",
+      "last name": "",
+      "birthday": "",
+      "avatar": ""
+    },
+    "rels": {
+      "spouses": ["211"],
+      "children": ["313", "314"]
     }
   }
 ]
