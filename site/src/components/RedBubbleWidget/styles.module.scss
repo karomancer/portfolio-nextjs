@@ -47,7 +47,7 @@
 
     iframe {
       width: 990px;
-      height: 500px;
+      height: 450px;
 
       @include breakpoint("<=medium") {
         overflow: hidden;
