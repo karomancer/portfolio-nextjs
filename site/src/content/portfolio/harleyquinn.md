@@ -45,6 +45,6 @@ As a 90s kid, I grew up a huge fan of [Batman: The Animated Series](https://en.w
 
 This cosplay was pretty straightforward as the only technique was sewing and the only materials were fabrics. Instead of boring you with details, here's a little montage of some of the work that went into it. 
 
-![A sewing montage](/portfolio/harleyquinn/process.mp4)
+![A sewing montage](/optimized/portfolio/harleyquinn/process.mp4)
 
 I unfortunately didn't get to sewing on her diamonds, but even her greatest fans at the con didn't notice!

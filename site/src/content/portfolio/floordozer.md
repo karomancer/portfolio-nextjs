@@ -26,11 +26,11 @@ categories:
 type: portfolioPiece
 ---
 
-![A video demonstrating a motorized drawer coming out of a box to push clothes off a table after a cylindrical pillow is pushed.](/portfolio/floordozer/push3.mp4)
+![A video demonstrating a motorized drawer coming out of a box to push clothes off a table after a cylindrical pillow is pushed.](/optimized/portfolio/floordozer/push3.mp4)
 
 | |
 | -- |
-| ![A short portrait video showing a picture of a very messy room captioned "Does your room like this? Try the floordozer!" and then a demonstration of a drawer pushing clothes away from a table after a button on a pillow is pressed.](/portfolio/floordozer/floordozer_short.mp4) |
+| ![A short portrait video showing a picture of a very messy room captioned "Does your room like this? Try the floordozer!" and then a demonstration of a drawer pushing clothes away from a table after a button on a pillow is pressed.](/optimized/portfolio/floordozer/floordozer_short.mp4) |
 
 
 ## What is a Chindogu?
@@ -70,7 +70,7 @@ Here's some inspiration shots from my [Pinterest board](https://www.pinterest.co
 
 We tried a lot of different mechanisms for the "drawer" itself, from linear actuators to scissor lifts. Somehow, I never previously thought of using cardboard layers as teeth!
 
-![A video depicting a box with gears made entirely of cardboard sliding a layer in and out like a drawer.](/portfolio/floordozer/cardboard_drawer.mp4)
+![A video depicting a box with gears made entirely of cardboard sliding a layer in and out like a drawer.](/optimized/portfolio/floordozer/cardboard_drawer.mp4)
 
 ## Experiments in Radio Frequency and Gears
 
@@ -84,7 +84,7 @@ While I was working on the radio remote, my partner Sam was working on fabricati
 
 At some point, we finally came together and tested our two pieces as one unit.
 
-![A video showing two women working together to build a box and get a motor to respond to a garage door opener.](/portfolio/floordozer/fabprocess.mp4)
+![A video showing two women working together to build a box and get a motor to respond to a garage door opener.](/optimized/portfolio/floordozer/fabprocess.mp4)
 
 After playing around with building my own custom Radio Frequency transmitter, I kept getting the math wrong for getting the right frequency. So, I ended up buying a programmable garage door opener, which is much more compact and better built, and decided to reverse engineer that instead.
 
@@ -98,13 +98,13 @@ We wanted the pillow to be cylindrical, but I couldn't find a cylindrical pillow
 
 Do not be this careless with toxic foam. Please wear more protective gear!
 
-![A video depicting a woman with green hair shaving down a block of foam into a cylinder.](/portfolio/floordozer/foamshaving.mp4)
+![A video depicting a woman with green hair shaving down a block of foam into a cylinder.](/optimized/portfolio/floordozer/foamshaving.mp4)
 
 ### Electronics
 
 I popped open the garage door opener and fashioned myself a button with conductive fabric within the pillow case I sewed together.
 
-![A video depicting a demonstration of taking apart a garage door opener and resoldering a different button made of conductive fabric onto it.](/portfolio/floordozer/pillowprocess.mp4)
+![A video depicting a demonstration of taking apart a garage door opener and resoldering a different button made of conductive fabric onto it.](/optimized/portfolio/floordozer/pillowprocess.mp4)
 
 ## Putting it all together
 
@@ -112,12 +112,12 @@ After zipping up the pillow case and painting the box, we put all our parts toge
 
 Thank God it did!
 
-![A video depicting a tired looking woman with green hair standing behind a table, with her head on a cylindrical pillow. After pushing in the pillow, a box on the table extrudes a drawer.](/portfolio/floordozer/late-night.mp4)
+![A video depicting a tired looking woman with green hair standing behind a table, with her head on a cylindrical pillow. After pushing in the pillow, a box on the table extrudes a drawer.](/optimized/portfolio/floordozer/late-night.mp4)
 
 ## Professional Photos and Videos
 We were so proud of our ridiculous creation, we got very professional looking photos and videos taken of it by the department. Enjoy our very Apple-looking product pics!
 
-![A video showing a box with a geared drawer moving out via a motor, with a zoom up of the gears inside.](/portfolio/floordozer/gears.mp4)
+![A video showing a box with a geared drawer moving out via a motor, with a zoom up of the gears inside.](/optimized/portfolio/floordozer/gears.mp4)
 ![The image shows a person’s hands opening a box with a yellow lid and a black body. Inside the box, there are various electronic components, including a circuit board with wires connected to it. A red LED light is visible, indicating power. The interior also features a gear mechanism, with a large wooden gear positioned on the bottom. The overall setup suggests a project involving electronics and mechanical parts, highlighting the functional design of the box.](/portfolio/floordozer/final_box1.jpg)
 ![The image shows a close-up view of a mechanical setup involving gears. A motor is positioned above two large, wooden gears with distinct teeth. The motor has a metallic shaft that is aligned with the center of one of the gears. The gears are placed on a flat surface, and the background is slightly blurred, focusing attention on the mechanical components. The overall scene suggests a working environment, possibly related to a project involving gear mechanisms or machinery.](/portfolio/floordozer/gears.jpg)
 

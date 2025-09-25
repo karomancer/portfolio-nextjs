@@ -36,12 +36,12 @@ piece_type:
 ***Note**: Still a work in progress*
 
 
-![A woman playing Udder Mayhem](/portfolio/uddermayhem/demo_mercedes.mp4)
+![A woman playing Udder Mayhem](/optimized/portfolio/uddermayhem/demo_mercedes.mp4)
 
-![A woman playing Udder Mayhem](/portfolio/uddermayhem/demo_ivy.mp4)
+![A woman playing Udder Mayhem](/optimized/portfolio/uddermayhem/demo_ivy.mp4)
 
 ### Tutorial animation
-![Tutorial](/portfolio/uddermayhem/tutorial.mp4)
+![Tutorial](/optimized/portfolio/uddermayhem/tutorial.mp4)
 
 Our midterm for the class *The New Arcade* was to make an unconventional controller, a la [ctrl.alt.GDC](https://gdconf.com/alt-ctrl-gdc) style, and an accompanying game.
 
@@ -211,7 +211,7 @@ public BeatTiming IsOnBeat(int measure, float beat)
 
 With all of that, we have a working rhythm game! Just need to add some animations and we're almost there. Sound on 🔊
 
-![Video demo of 4 independently controlled teats filling cups](/portfolio/uddermayhem/withmusic.mp4)
+![Video demo of 4 independently controlled teats filling cups](/optimized/portfolio/uddermayhem/withmusic.mp4)
 
 You can see the complete Unity code here:
 
@@ -251,7 +251,7 @@ I had a few ideas for how to detect a teat squeeze:
 
 Using conductive fabric lined on the inside, we can create a binary switch/button. When a player squeezes the teat, a circuit is completed between both sides of the teat. Alternatively, this can also be done with a lined teat and a metal pole in the center.
 
-![Video of someone squeezing a dildo looking teat to make contact](/portfolio/uddermayhem/teattest.mp4)
+![Video of someone squeezing a dildo looking teat to make contact](/optimized/portfolio/uddermayhem/teattest.mp4)
 
 The very rough prototype seemed to work well, but ultimately it wasn't robust enough and I couldn't find a good way to make the squeeze have the right consistency with this technique.
 
@@ -267,7 +267,7 @@ Then I tried a conductive wool stuffing, but squeezing it often for a game left 
 
 Molding an inner foam teat around a straw to push air to a small microphone to detect. This one was recommended to me by another student. It seemed like a good idea at first, but then I remembered this was a rhythm game so it would be very noisy from the game itself and/or the environment (an arcade).
 
-![Video of someone squeezing a foam teat with a straw in it in front of a microphone](/portfolio/uddermayhem/teattest2.mp4)
+![Video of someone squeezing a foam teat with a straw in it in front of a microphone](/optimized/portfolio/uddermayhem/teattest2.mp4)
 
 Veto, but still a fun and unique idea.
 
@@ -275,7 +275,7 @@ Veto, but still a fun and unique idea.
 
 Embedding a magnet within the silicone on the inside of the teat with a [Hall effect sensor](https://en.wikipedia.org/wiki/Hall_effect_sensor) in the center separated with a stuffing like polyurethane foam for texture. That way, if you squeeze hard enough, the embedded magnets will get close enough to the sensor and trigger a high state. This started as my least favorite option but ended up being the best option.
 
-![Video of someone squeezing a dildo looking teat to make contact](/portfolio/uddermayhem/teattest3.mp4)
+![Video of someone squeezing a dildo looking teat to make contact](/optimized/portfolio/uddermayhem/teattest3.mp4)
 
 For all of these tests, I consulted with [Kari Love](http://www.karimakes.com/about) and [Kate Hartman](http://www.katehartman.com/) and a close friend of mine who has a masters in Mechatronics from Stanford on fabrication and electronics.
 
@@ -359,14 +359,14 @@ The MVP fabrication of this project was to get the udder fully working in conjun
 ![Photo of green haired girl holding up ](/portfolio/uddermayhem/tablepose.jpeg)
 ![Photo of a man smiling while squeezing an udder hanging from a table](/portfolio/uddermayhem/kai.jpeg)
 ![Photo of a woman smiling while squeezing an udder hanging from a table](/portfolio/uddermayhem/cindy.jpeg)
-![Video of a green haired girl playing an udder hanging from a table](/portfolio/uddermayhem/midtermdemo.mp4)
+![Video of a green haired girl playing an udder hanging from a table](/optimized/portfolio/uddermayhem/midtermdemo.mp4)
 
 ## ITP Showcase
 Of course I wasn't going to leave the project at the midterm! I couldn't have Celine Dairyon without a body. For the ITP showcase, I made a frame and rough wooden body to make it much more presentable.
 
-![Interview video with Karina about Udder Mayhem](/portfolio/uddermayhem/interview.mp4)
-![Video of a woman playing the game on a wodden frame](/portfolio/uddermayhem/showcase2.mp4)
-![Video of a woman playing the game on a wodden frame](/portfolio/uddermayhem/showcase1.mp4)
+![Interview video with Karina about Udder Mayhem](/optimized/portfolio/uddermayhem/interview.mp4)
+![Video of a woman playing the game on a wodden frame](/optimized/portfolio/uddermayhem/showcase2.mp4)
+![Video of a woman playing the game on a wodden frame](/optimized/portfolio/uddermayhem/showcase1.mp4)
 
 ![Photograph of a line of people waiting to play the game](/portfolio/uddermayhem/showcaseline.jpeg)
 ![Photograph of building a wooden frame](/portfolio/uddermayhem/frame.jpeg)
@@ -380,7 +380,7 @@ NYU chose mine and two other projects out of hundreds to go on the road and repr
 ![Photograph of stuffing the cow in a Pelican case for shipping](/portfolio/uddermayhem/shippingcase.jpeg)
 
 Ensuring the game works after being shipped from Brooklyn to Santa Fe.
-![Video of a girl playing a cow game in the hotel](/portfolio/uddermayhem/hoteldemo.mp4)
+![Video of a girl playing a cow game in the hotel](/optimized/portfolio/uddermayhem/hoteldemo.mp4)
 
 Udder Mayhem's #1 Biggest Fan
-![Video of a kid playing](/portfolio/uddermayhem/kidplaying.mp4)
+![Video of a kid playing](/optimized/portfolio/uddermayhem/kidplaying.mp4)

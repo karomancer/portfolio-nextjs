@@ -31,7 +31,7 @@ piece_type:
   - work
 ---
 
-![Video of the fox on the Patreon website](/portfolio/patreon-404-fox/video.mp4)
+![Video of the fox on the Patreon website](/optimized/portfolio/patreon-404-fox/video.mp4)
 
 ## Context
 When I started at Patreon in March 2017, my first project was to help rebrand the whole product by June 2017. This included assisting in the tech migration from an Angular frontend stack to React, rebuilding the styling in the website to use styled-components instead of straight up CSS, and replacing colors, fonts, the logo, wordmark, and icons.

@@ -34,7 +34,7 @@ piece_type:
 ---
 
 
-![AR.mp4](/portfolio/desert-dream/AR.mp4)
+![AR.mp4](/optimized/portfolio/desert-dream/AR.mp4)
 
 For our class *Hypercinema* we had to create an interactive animated experience in AR.
 
@@ -165,7 +165,7 @@ Our final night composition and the silhouettes of its layers, image traced in A
 
 Before fabricating the final paper theater, we wanted to make sure the assets worked well together in Adobe Aero. We did a little test drive of the composition and animations.
 
-![Video of testing the helicopter camel in Adobe Aero](/portfolio/desert-dream/VID20221109231133.mp4)
+![Video of testing the helicopter camel in Adobe Aero](/optimized/portfolio/desert-dream/VID20221109231133.mp4)
 ![Screenshot of moving things in Adobe Aero](/portfolio/desert-dream/IMG_3037.png)
 ![Screnshot of a camel floating in space](/portfolio/desert-dream/IMG_3041.PNG)
 ![Screenshot of the view from a camera of a woman holding up a picture in AR space](/portfolio/desert-dream/IMG_3039.png)
@@ -200,7 +200,7 @@ We glued cardboard frames to the back of the cardstock to make it more rigid plu
 
 At some point we started going delirious at 2:00am and started making the book cover. I realized we mismeasured because a book's cover is actually larger than the pages within it, and my teammates weren't sure it was worth the effort to start over. At this point, we were seriously doubting our ability to make it look like a book at all.
 
-![Two women discussing how to make the project look more like a book](/portfolio/desert-dream/IMG_3153.mov)
+![Two women discussing how to make the project look more like a book](/optimized/portfolio/desert-dream/IMG_3153.mp4)
 
 Honestly though? It was worth the extra effort because it really does look like a book!
 
@@ -218,11 +218,11 @@ Late night success!
 
 We had a playtesting session in our class, through which we got valuable feedback. Of course, we're biased to love the "oo's" and "ahh's" more than the critical feedback!
 
-![Reactions from the “public” for the interactive book](/portfolio/desert-dream/IMG_3154.mov)
+![Reactions from the “public” for the interactive book](/optimized/portfolio/desert-dream/IMG_3154.mp4)
 
 Because we had several colors of recycled paper, we decided to use the other colors for decoration, including lining the inside and adding a rope to tie it closed.
 
-![Final working prototype](/portfolio/desert-dream/PXL_20221110_171727539.mp4)
+![Final working prototype](/optimized/portfolio/desert-dream/PXL_20221110_171727539.mp4)
 
 
 ## Documentation Lab
@@ -237,7 +237,7 @@ At the suggestion of our classmates, we brought our book to the documentation la
 
 The #1 thing we learned from this experience is that Alfonssette has the most beautiful hands
 
-![The #1 thing we learned from this experience is that Alfonssette has the most beautiful hands](/portfolio/desert-dream/openbook.mp4)
+![The #1 thing we learned from this experience is that Alfonssette has the most beautiful hands](/optimized/portfolio/desert-dream/openbook.mp4)
 ![2V3A4358.jpg](/portfolio/desert-dream/2V3A4358.jpg)
 ![2V3A4380.jpg](/portfolio/desert-dream/2V3A4380.jpg)
 

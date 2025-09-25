@@ -35,7 +35,7 @@ piece_type:
 
 ***Note**: Still a work in progress*
 
-![Ad spot](/portfolio/dr-snuggles/dr-snuggles-captioned.mp4)
+![Ad spot](/optimized/portfolio/dr-snuggles/dr-snuggles-captioned.mp4)
 
 ### Thesis presentation
 Full presentation and context around satirical ad spot above.
@@ -357,10 +357,10 @@ Then I moved on to potential pill-dispensing mechanisms.
 
 | Mouth and tongue mechanisms | Dispenser idea #1: Rotating disk | Dispenser Idea #2: Double Gated |
 | -- | -- | -- |
-| ![Video montage of 3D modeling and printing mechanisms for a moving mouth and tongue](/portfolio/dr-snuggles/garfieldLabeled.mp4) | ![Video of a octogonal pez dispenser that rotates a disk with pez on it over a hole.](/portfolio/dr-snuggles/dispense1.mp4) | ![Video of a tall pipe dispenser that uses a double gated type of mechanism to let a single pill into a lock then releases it.](/portfolio/dr-snuggles/dispense2.mp4) |
+| ![Video montage of 3D modeling and printing mechanisms for a moving mouth and tongue](/optimized/portfolio/dr-snuggles/garfieldLabeled.mp4) | ![Video of a octogonal pez dispenser that rotates a disk with pez on it over a hole.](/optimized/portfolio/dr-snuggles/dispense1.mp4) | ![Video of a tall pipe dispenser that uses a double gated type of mechanism to let a single pill into a lock then releases it.](/optimized/portfolio/dr-snuggles/dispense2.mp4) |
 
 Ultimately, I modeled my pill mechanism design after a toothpick dispenser and it worked pretty well! Compact and efficient:
-![Video of a clear acryllic box with pills neatly stacked in it and a rotating cylinder that takes one in at a time and rotates it out of a little hatch.](/portfolio/dr-snuggles/dispense.mp4)
+![Video of a clear acryllic box with pills neatly stacked in it and a rotating cylinder that takes one in at a time and rotates it out of a little hatch.](/optimized/portfolio/dr-snuggles/dispense.mp4)
 
 
 ### Character design
@@ -377,7 +377,7 @@ Animatronic/character design is a real field of study with plenty of design stan
 
 After creating the animatronic "skin", I did a loose fit onto the armature structure and motor mounts I built earlier to see if it would work. Even without stuffing yet, it looked pretty good to me!
 
-![Video of the animatronic skin of a furry character with ears with a motor in its mouth, yapping](/portfolio/dr-snuggles/yapping.mov)
+![Video of the animatronic skin of a furry character with ears with a motor in its mouth, yapping](/optimized/portfolio/dr-snuggles/yapping.mp4)
 
 After I did all my design work, I realized that my creation ended up looking like the child of a Furby and an Animaniac, but hey, maybe both of those IPs just got it right the first time with achieving creepy-cute and parody.
 

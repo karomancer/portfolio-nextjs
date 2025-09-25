@@ -52,7 +52,7 @@ As per the Implosion Method, I started by making a Knowledge Map of what I alrea
 
 I started my process by tearing apart my remote to see the components inside:
 
-![The remote as-is](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
+![The remote as-is](/optimized/portfolio/tv-remote/PXL_20221012_043959088.mp4)
 ![PXL_20220920_222610080.jpeg](/portfolio/tv-remote/PXL_20220920_222610080.jpeg)
 ![The remote as-is](/portfolio/tv-remote/Untitled%203.png)
 
@@ -206,7 +206,7 @@ You’ve probably noticed your IR remotes actually have a little LED attached to
 
 Totally not required, but I had fun taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.
 
-![Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
+![Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/optimized/portfolio/tv-remote/PXL_20221012_043959088.mp4)
 
 You can’t see it, but every time you click a button on your TV remote, it sends a pattern of blinks with that light. If you are interested, you can actually try holding your camera up to it and clicking a couple buttons to see it flash. Not all cameras are able to detect it, however!
 

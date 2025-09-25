@@ -28,9 +28,9 @@ piece_type:
   - portfolio
 ---
 
-![Video of main interaction at showcase](/portfolio/youtopia/showcase1.mp4)
+![Video of main interaction at showcase](/optimized/portfolio/youtopia/showcase1.mp4)
 
-![Video of tour of experience at showcase](/portfolio/youtopia/showcase2.mp4)
+![Video of tour of experience at showcase](/optimized/portfolio/youtopia/showcase2.mp4)
 
 For ITP's Playful Communication of Serious Research class, we had to craft an interactive experience befit for a museum that presents specific research from NYU to a broader audience.
 
@@ -170,7 +170,7 @@ We started with some cheap cardboard prototypes to ensure we got the sizing and 
 
 Our teammate, Bruce, had previous experience with TouchDesigner and while we were fabricating our buildings, he started experimenting with projecting onto the city.
 
-![Video of projecting colors onto a cardboard city](/portfolio/youtopia/cardboardtouchdesigner.mp4)
+![Video of projecting colors onto a cardboard city](/optimized/portfolio/youtopia/cardboardtouchdesigner.mp4)
 
 ### Building the hospital
 
@@ -196,7 +196,7 @@ At this point I tried a few different methods, from coin pushers to RFID, but br
 
 Yes, this means that every building needs a slide now!
 
-![Video of sliding wood pieces over a clear acryllic ramp](/portfolio/youtopia/slide.mp4)
+![Video of sliding wood pieces over a clear acryllic ramp](/optimized/portfolio/youtopia/slide.mp4)
 
 
 ### IR light sensors over I2C
@@ -207,13 +207,13 @@ We instead decided to use a more sophisticated IR light sensor used in gesture r
 
 This more sophisticated sensor communicates over I2C, so in order to handle our 6 different buildings we needed to use a multiplexor.
 
-![Video of the team trying out a multiplexor](/portfolio/youtopia/multiplexor.mp4)
+![Video of the team trying out a multiplexor](/optimized/portfolio/youtopia/multiplexor.mp4)
 
 After we got the multiplexor working separate from the table, it was time to try it with the physical table and intended layout.
 
 We needed to adjust the thresholds for each of the sensors, and because our USB cable for the Arduino was so short, I had to do so from under the table.
 
-![Video of Karina sitting under the table reading sensor data and shouting what she read](/portfolio/youtopia/testsensors.mp4)
+![Video of Karina sitting under the table reading sensor data and shouting what she read](/optimized/portfolio/youtopia/testsensors.mp4)
 
 ## Proof of Concept
 
@@ -221,7 +221,7 @@ With that multiplexor working, and our little models painted, we could finally t
 
 First version shown here uses BLE to communicate sensor data to TouchDesigner, but we had a lot of difficulties with interference in the space. Ideally we would use web sockets and use that as an opportunity to record the data to somewhere like Firebase.
 
-![Video of the class trying out the table interaction](/portfolio/youtopia/final1.mp4)
+![Video of the class trying out the table interaction](/optimized/portfolio/youtopia/final1.mp4)
 
 ## Showcase
 
@@ -231,4 +231,4 @@ We showed our work at the 2023 ITP Spring Show and got a great response from vie
 
 ![Photograph of the projection table](/portfolio/youtopia/showcase1.jpeg)
 
-![Video of a closeup of the table](/portfolio/youtopia/showcase3.mp4)
+![Video of a closeup of the table](/optimized/portfolio/youtopia/showcase3.mp4)

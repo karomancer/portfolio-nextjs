@@ -36,9 +36,9 @@ piece_type:
   - portfolio
 ---
 
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville3.mp4)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville3.mp4)
 
-![Interview video from the ITP showcase](/portfolio/cosmic-courier/interview.mp4)
+![Interview video from the ITP showcase](/optimized/portfolio/cosmic-courier/interview.mp4)
 
 For my New Arcade class at ITP, our final was to create a full Unity game and arcade cabinet. I worked on the controllers as well, but given this is Dribbble, I'll only show the art assets I made.
 
@@ -163,8 +163,8 @@ I largely had nothing to do with this aspect other than provide my feedback on h
 
 Because the person sitting at the end is physically steering a wheel, I worked with Armando and we decided it made sense for the wheel to control the rotation of the entire world rather than the player ship asset itself:
 
-![Video of boxes moving across the screen shooting red bullets](/portfolio/cosmic-courier/gameprogress1.mp4)
-![Video of an ocean background rotating with boxes on top shooting red bullets](/portfolio/cosmic-courier/gameprogress2.mp4)
+![Video of boxes moving across the screen shooting red bullets](/optimized/portfolio/cosmic-courier/gameprogress1.mp4)
+![Video of an ocean background rotating with boxes on top shooting red bullets](/optimized/portfolio/cosmic-courier/gameprogress2.mp4)
 
 ## Ship wheel
 
@@ -172,7 +172,7 @@ While Kay fabricated the wheel, Daniel and I worked on the controller itself wit
 
 In most video games, as soon as you release a wheel or key, it resets to stasis. We had to program our controller to continue to send key presses if the player had not reset the position of the wheel. 
 
-![Video of spinning a ship wheel and seeing output on a screen](/portfolio/cosmic-courier/shipwheel.mp4)
+![Video of spinning a ship wheel and seeing output on a screen](/optimized/portfolio/cosmic-courier/shipwheel.mp4)
 
 ## Cannon Controller
 
@@ -182,7 +182,7 @@ In addition to assets and the wheel, my top priority was creating the physical c
 
 To figure out the ideal player interaction, I did some silly prototyping with Coke cans. My first two ideas was a modern turret like shooting experience (left)and gatling gun crank (right):
 
-![Video of cannon cardboard prototypes](/portfolio/cosmic-courier/cardboardcannons.mp4)
+![Video of cannon cardboard prototypes](/optimized/portfolio/cosmic-courier/cardboardcannons.mp4)
 
 I wasn't sold on either of these ideas, so what I prototyped next was to create a CAD model of a cannon to print on a platform with a handle that a player would use to swing it 180º as it sits on a potentiometer. The players would control the opposite sided cannons in this fashion.
 
@@ -192,7 +192,7 @@ I also made alternative models with the handles on either side, like the turret 
 ![CAD model of a cannon on a disk with a handle sticking straight up](/portfolio/cosmic-courier/cannoncad2.jpeg)
 ![CAD model of a cannon on a disk with a handle sticking straight up](/portfolio/cosmic-courier/cannoncad3.jpeg)
 
-![Video of a green haired woman with glasses with small 3D print prototypes of a cannon](/portfolio/cosmic-courier/cannonsmallprint.mp4)
+![Video of a green haired woman with glasses with small 3D print prototypes of a cannon](/optimized/portfolio/cosmic-courier/cannonsmallprint.mp4)
 
 ### Final design
 
@@ -201,23 +201,23 @@ The final cannon design was 3D printed in black PLA and painted and screwed onto
 The bottom of the wood had a ring of felt to help a bit with scratches.
 
 ![3D print of a partly assembled miniature cannon](/portfolio/cosmic-courier/cannonprint2.jpeg)
-![Video of a miniature cannon being moved around](/portfolio/cosmic-courier/cannontest.mp4)
+![Video of a miniature cannon being moved around](/optimized/portfolio/cosmic-courier/cannontest.mp4)
 ![3D print of a partly assembled miniature cannon](/portfolio/cosmic-courier/cannonprint1.jpeg)
 
 ## Final Playtests
 
 The final playtests before full assembly and showcasing it at Wonderville. Only 1 cannon was made at this point.
 
-![The team testing the game out before putting on the legs](/portfolio/cosmic-courier/playtest.mp4)
+![The team testing the game out before putting on the legs](/optimized/portfolio/cosmic-courier/playtest.mp4)
 
-![Video of the team demo-ing it for class](/portfolio/cosmic-courier/final.mp4)
+![Video of the team demo-ing it for class](/optimized/portfolio/cosmic-courier/final.mp4)
 
 ## Wonderville NYC
 
 This cabinet, alongside others in the class, were showcased at the indie arcade bar, [Wonderville](https://www.wonderville.nyc/), in Brooklyn.
 
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville1.mp4)
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville2.mp4)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville1.mp4)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville2.mp4)
 ![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot1.jpeg)
 ![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot2.jpeg)
 

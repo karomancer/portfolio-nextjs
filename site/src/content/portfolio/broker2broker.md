@@ -29,9 +29,9 @@ piece_type:
   - work
 ---
 
-![](/portfolio/broker2broker/app_big.mp4)
+![](/optimized/portfolio/broker2broker/app_big.mp4)
 
-![](/portfolio/broker2broker/revised_with_background.mp4)
+![](/optimized/portfolio/broker2broker/revised_with_background.mp4)
 
 ## About Broker2Broker
 

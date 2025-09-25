@@ -28,7 +28,7 @@ piece_type:
   - portfolio
 ---
 
-![Edited interview about the project](/portfolio/neopatch/edited_interview.mov)
+![Edited interview about the project](/optimized/portfolio/neopatch/edited_interview.mp4)
 
 ![Photograph of a man looking at the LED strip along his jacket arm](/portfolio/neopatch/1-11.jpg)
 ![Photograph of the front of a jacket with LEDs running down the front](/portfolio/neopatch/1-2.jpg)
@@ -128,8 +128,8 @@ function getCellNumber(int row, int column) {
 - We originally were using an Arduino Uno R3, and hilariously, it did not have enough flash memory to be able to operate all lights at once. The Uno we had has 32KB of flash memory, while the Nano 33 IoT has 256KB. We chose to switch to a different RFID/NFC reader to find a better form factor, but more importantly, so we could switch to using the Nano.
 
 ![Photograph of a coiled up roll of addressable LEDs on magenta](/portfolio/neopatch/IMG_4659.jpeg)
-![Video of two people failing to get something read by the reader](/portfolio/neopatch/IMG_4661.mov)
-![Video of two people testing out RFID and light animations and unable to turn it off](/portfolio/neopatch/IMG_4728.mov)
+![Video of two people failing to get something read by the reader](/optimized/portfolio/neopatch/IMG_4661.mp4)
+![Video of two people testing out RFID and light animations and unable to turn it off](/optimized/portfolio/neopatch/IMG_4728.mp4)
 
 ## Code
 
@@ -159,8 +159,8 @@ For our proof-of-concept, we first planned on where the lights should go on the 
 
 ![Photograph of the jacket covered with green tape marking where lights will go down the front](/portfolio/neopatch/IMG_4729.jpeg)
 ![Photograph of a mannequin with a jacket next to a small pedesetal](/portfolio/neopatch/PXL_20221204_012337942.PORTRAIT.jpg)
-![Video of testing the jacket in a light room](/portfolio/neopatch/IMG_4739.mov)
-![Video of testing the jacket in a dark room](/portfolio/neopatch/IMG_4746.mov)
+![Video of testing the jacket in a light room](/optimized/portfolio/neopatch/IMG_4739.mp4)
+![Video of testing the jacket in a dark room](/optimized/portfolio/neopatch/IMG_4746.mp4)
 
 ### Light diffusion, embedding tags into patches (v0.2)
 
@@ -170,7 +170,7 @@ We knew it wouldn’t diffuse much because it’s too close to the lights, but i
 
 ![Photograph of lights in small white nylon sheaths](/portfolio/neopatch/PXL_20221210_234422015.jpg)
 ![Photograph of a jacket on a mannequin with wires sticking out of it](/portfolio/neopatch/PXL_20221211_073125565.MP.jpg)
-![Video of a light up jacket with wires overflowing out of it](/portfolio/neopatch/PXL_20221213_121108495.mp4)
+![Video of a light up jacket with wires overflowing out of it](/optimized/portfolio/neopatch/PXL_20221213_121108495.mp4)
 
 ### Cable management (v0.3)
 
@@ -188,7 +188,7 @@ Soldered a ribbon cable onto the RFID reader itself, placed in a front breast po
 ![Photograph of the jacket with the lining seam ripped out and cables all over the back](/portfolio/neopatch/PXL_20221214_035712010.jpg)
 ![Photograph of a small RFID reader with a ribbon of wires soldered on](/portfolio/neopatch/PXL_20221213_141326661.jpg)
 ![Photograph of a light up jacket on a mannequin](/portfolio/neopatch/PXL_20221214_120239918.jpg)
-![Video of the jacket lighting up on a mannequin](/portfolio/neopatch/PXL_20221214_120124626.mp4)
+![Video of the jacket lighting up on a mannequin](/optimized/portfolio/neopatch/PXL_20221214_120124626.mp4)
 
 ### Switching to a Protoboard (v0.4)
 
@@ -221,9 +221,9 @@ Features include:
 
 I’m generally very happy with how this turned out! Didn’t get to V2 or V3 ideas, but it’s good to have aspirations.
 
-![Video of the project at the winter showcase](/portfolio/neopatch/jacket_showcase.mp4)
+![Video of the project at the winter showcase](/optimized/portfolio/neopatch/jacket_showcase.mp4)
 
-![Video of Daniel showing off the jacket](/portfolio/neopatch/PXL_20221218_002149449.mp4)
+![Video of Daniel showing off the jacket](/optimized/portfolio/neopatch/PXL_20221218_002149449.mp4)
 
 Other future wishes besides V2 and V3 outlined at the start of this post:
 

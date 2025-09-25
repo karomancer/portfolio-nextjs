@@ -29,7 +29,7 @@ piece_type:
   - portfolio
 ---
 
-![Video of a tree with projection mapped or LED "leaves" showing varying information such as weather across the world](/portfolio/communitree/video.mp4)
+![Video of a tree with projection mapped or LED "leaves" showing varying information such as weather across the world](/optimized/portfolio/communitree/video.mp4)
 
 How can ubiquitous computing engage and connect people to nature? We set out to answer this question by partnering with the [Pittsburgh Botanic Garden](https://pittsburghbotanicgarden.org/) to develop a concept for an interactive, ubiquitous art piece. The Pittsburgh Botanic Garden proved to be the perfect place in which to imagine future nature-based technology, as the site is still being developed as a public space. This provides the opportunity to create immersive, innovative experiences not yet seen in botanic gardens.
 
@@ -288,4 +288,4 @@ Once we found the location, it was time to shoot our concept video!
 
 The final video was made in Adobe AfterEffects and Premiere.
 
-![Video of a tree with projection mapped or LED "leaves" showing varying information such as weather across the world](/portfolio/communitree/video.mp4)
+![Video of a tree with projection mapped or LED "leaves" showing varying information such as weather across the world](/optimized/portfolio/communitree/video.mp4)

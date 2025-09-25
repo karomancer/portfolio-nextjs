@@ -150,7 +150,7 @@ I finished something for Halloween! Here's the final pictures plus the concept a
 ![Concept art of a red headed girl in a leotard](/portfolio/kasumi/conceptart.png)
 ![Photograph of a girl in a red wig and black leotard and sword standing proudly](/portfolio/kasumi/final1.jpeg)
 ![Photograph of a girl in a red wig and black leotard laughing](/portfolio/kasumi/preview.png)
-![Video of a girl in a red wig and black leotard attempting to do a pull up](/portfolio/kasumi/exercise.mp4)
+![Video of a girl in a red wig and black leotard attempting to do a pull up](/optimized/portfolio/kasumi/exercise.mp4)
 
 ---
 
@@ -173,7 +173,7 @@ Making anything geometric by hand is difficult to make symmetric. So I bought my
 
 To make the sheath, I printed a lot of test prints to ensure the sword fit inside of it.
 
-![Video demonstrating a piece of a sheath going up and down a sword blade](/portfolio/kasumi/3dprint1.mp4)
+![Video demonstrating a piece of a sheath going up and down a sword blade](/optimized/portfolio/kasumi/3dprint1.mp4)
 
 After a lot of experimentation and failed attempts, I eventually got both the sword and sheath:
 

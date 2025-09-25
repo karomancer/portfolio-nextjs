@@ -30,7 +30,7 @@ piece_type:
   - work
 ---
 
-![](/portfolio/imperfect-foods/site.mp4)
+![](/optimized/portfolio/imperfect-foods/site.mp4)
 
 ## About Imperfect Foods
 [Imperfect Foods](https://www.imperfectfoods.com/) is a grocery delivery service (and a Public Benefit Corporation) on a mission to reduce food waste. After raising their Series D ($110M) in early 2021, Imperfect needed to quickly roll out a major upgrade to their marketing site, which receives about 2 million visits/month. They approached [Mutations Ltd](https://mutations.ltd/) to help them, specifically requesting people with a lot of experience with CSS animations and "highly interactive" React components.
@@ -56,7 +56,7 @@ This component was Cory (Jason) Alvernaz's baby, and with my help, he was able t
 
 | | |
 | -- | -- |
-| ![](/portfolio/imperfect-foods/pantry.mp4) | ![](/portfolio/imperfect-foods/pantrymobile.mp4) |
+| ![](/optimized/portfolio/imperfect-foods/pantry.mp4) | ![](/optimized/portfolio/imperfect-foods/pantrymobile.mp4) |
 
 
 ### Badge Carousel
@@ -66,7 +66,7 @@ Rob Kayson and I worked on this together, and he knocked it out of the park. The
 
 | | |
 | -- | -- |
-| ![](/portfolio/imperfect-foods/badgecarousel.mp4) | ![](/portfolio/imperfect-foods/badgecarouselmobile.mp4) | 
+| ![](/optimized/portfolio/imperfect-foods/badgecarousel.mp4) | ![](/optimized/portfolio/imperfect-foods/badgecarouselmobile.mp4) | 
 
 
 ### Impact Slider
@@ -84,7 +84,7 @@ This I did completely on my own. The scrolling numbers were done with pure JavaS
 
 | | |
 | -- | -- |
-| ![](/portfolio/imperfect-foods/impactslider.mp4) | ![](/portfolio/imperfect-foods/impactslidermobile.mp4) | 
+| ![](/optimized/portfolio/imperfect-foods/impactslider.mp4) | ![](/optimized/portfolio/imperfect-foods/impactslidermobile.mp4) | 
 
 --- 
 

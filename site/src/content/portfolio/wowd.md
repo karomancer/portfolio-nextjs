@@ -27,7 +27,7 @@ piece_type:
   - work
 ---
 
-![Video of an app animation](/portfolio/wowd/carousel.mp4)
+![Video of an app animation](/optimized/portfolio/wowd/carousel.mp4)
 
 ## About Wowd
 

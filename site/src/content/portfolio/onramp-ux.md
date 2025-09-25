@@ -27,7 +27,7 @@ piece_type:
   - work
 ---
 
-![Video of a mobile UX flow for fueling a freight truck](/portfolio/onramp/fuelpay.mp4)
+![Video of a mobile UX flow for fueling a freight truck](/optimized/portfolio/onramp/fuelpay.mp4)
 
 ## About Onramp
 
@@ -58,7 +58,7 @@ Rewards might include Walmart gift cards, free food at participating restaurants
 
 The flow included the trucker planning out their route on a map within the app and being directed to a participating partner fueling station. From there, they would be directed via the app to refill their diesel or reefer, pay for any additional needed services, and complete the transaction all via the app.
 
-![Video of a mobile UX flow for fueling a freight truck](/portfolio/onramp/fuelpay.mp4)
+![Video of a mobile UX flow for fueling a freight truck](/optimized/portfolio/onramp/fuelpay.mp4)
 
 
 ### Lumper payments
@@ -75,4 +75,4 @@ In addition to their FuelPay feature, Onramp wanted to explore the idea of lumpe
 
 | Fleet: Pay a lumper | Lumper: Receive payment via SMS | Lumper: Receive payment via Email |
 | -- | -- | -- | 
-| ![](/portfolio/onramp/EM-PayLumper.mp4) | ![](/portfolio/onramp/EM-LumperSMS.mp4) | ![](/portfolio/onramp/EM-LumperEmail.mp4) |
+| ![](/optimized/portfolio/onramp/EM-PayLumper.mp4) | ![](/optimized/portfolio/onramp/EM-LumperSMS.mp4) | ![](/optimized/portfolio/onramp/EM-LumperEmail.mp4) |

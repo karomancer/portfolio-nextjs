@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "optimize-videos": "node scripts/optimize-videos.mjs",
+    "update-video-refs": "node scripts/update-video-refs.mjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
