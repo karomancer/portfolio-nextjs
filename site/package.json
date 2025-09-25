@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "optimize-videos": "node scripts/optimize-videos.mjs",
-    "update-video-refs": "node scripts/update-video-refs.mjs"
+    "update-video-refs": "node scripts/update-video-refs.mjs",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "update-image-refs": "node scripts/update-image-refs.mjs"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",

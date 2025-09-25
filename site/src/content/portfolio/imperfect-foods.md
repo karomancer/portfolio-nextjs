@@ -43,7 +43,7 @@ By the time they reached out, Imperfect Foods had already invested in an extensi
 
 ||
 |--|
-| ![Screenshot of some of the original mocks provided](/portfolio/imperfect-foods/mocks.jpeg) |
+| ![Screenshot of some of the original mocks provided](/optimized/portfolio/imperfect-foods/mocks.webp) |
 
 Due to my background in web accessibility, we also wanted to ensure each component was accessible via keyboard and screen readers.
 

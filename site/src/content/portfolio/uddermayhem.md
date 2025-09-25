@@ -53,7 +53,7 @@ Years earlier, I had taught myself how to make molds and cast out of silicone an
 
 I decided to first focus on the appropriate player experience of using the udder. I could think of two ways:
 
-![A photo of a sketchbook of sketches of udders in different placements and uses](/portfolio/uddermayhem/sketches.jpeg)
+![A photo of a sketchbook of sketches of udders in different placements and uses](/optimized/portfolio/uddermayhem/sketches.webp)
 
 My original ponderance was on whether you **are the cow** or whether you **are the milkmaid**.
 
@@ -101,7 +101,7 @@ I wanted to match the art of **Rhythm Heaven Fever**, with its bold black lines 
 
 The cups would slide in from the left to the right, and not always 4 at once. This is what 4 would look like that haven’t been touched.
 
-![Illustration of a cow udder above a bunch of empty coffee cups](/portfolio/uddermayhem/coffeecups1.jpeg)
+![Illustration of a cow udder above a bunch of empty coffee cups](/optimized/portfolio/uddermayhem/coffeecups1.webp)
 
 As mentioned, in Rhythm Heaven Fever, if you are too early/too late/miss the note, there is a very obvious audio and visual cue. The game would include both the press and release of the udder teat as the interaction. Each press/release will be 1 beat long. That is, press on the beat 1, release on beat 2.
 
@@ -114,25 +114,25 @@ I wanted to do that as well in my game, so I came up with the following:
 
 So here’s an illustration of what that might look like:
 
-![Illustration of a cow udder above a bunch of partially filled coffee cups, some overflowing, some tipped over](/portfolio/uddermayhem/coffeecups2.jpeg)
+![Illustration of a cow udder above a bunch of partially filled coffee cups, some overflowing, some tipped over](/optimized/portfolio/uddermayhem/coffeecups2.webp)
 
 Some of the Rhythm Heaven Fever games also have a little surprise at the end if you got all perfects, so I want the last cup to be latte art of a cow’s face if you got perfect up to that. I haven't gotten to it yet, but it's a goal! 🐮
 
 ### Tutorial assets
 In theme with the rest of the game, I wanted the tutorial to paint the player as a new employee of a Starbucks-like café where the steamed milk comes from a magical cow. So who best to teach that to the player than an adorable barista?
 
-![Spritemap of an animated Starbucks inspired barista](/portfolio/uddermayhem/barista.png)
+![Spritemap of an animated Starbucks inspired barista](/optimized/portfolio/uddermayhem/barista.png)
 
 When I first made the udder, I thought everyone had a vague idea of how to milk a cow but after witnessing players grabbing the teats in various odd ways, I knew I also had to add in an animation showing how to properly grab and squeeze them.
 
-![Spritemap of an animated hand squeezing a teat](/portfolio/uddermayhem/tutorialhands.jpeg)
+![Spritemap of an animated hand squeezing a teat](/optimized/portfolio/uddermayhem/tutorialhands.webp)
 
 
 ## Game Development
 
 First thing's first, I imported my assets into Unity and made the teats controllable by the QWAS keys.
 
-![Video demo of 4 independently controlled teats filling cups](/portfolio/uddermayhem/qwas.gif)
+![Video demo of 4 independently controlled teats filling cups](/optimized/portfolio/uddermayhem/qwas.gif)
 
 ### Music & Code
 A good track is paramount to any rhythm game. I hired my good friend Melissa Nilles and her band, [Ruby Grove](https://open.spotify.com/artist/4YlpKqjpW6PRrmCVPKutrM) to compose a silly song for the game in which each note is a bass note.
@@ -236,14 +236,14 @@ To figure out the correct proportions for the udder, I made a mylar balloon mode
 
 Once I got the right proportions, I dissected my own balloon and measured it to create a CAD model in **Autodesk Fusion 360**, then inverted it and created a 4-piece udder mold box with pre-drilled holes at the top so the udder could be drilled down into a cow belly later.
 
-![Photograph of a person holding an udder made of mylar balloon](/portfolio/uddermayhem/mylar1.jpeg)
-![Screenshot of a gray 3d modeled udder](/portfolio/uddermayhem/cad1.png)
-![Screenshot of a gray 3d modeled udder moldbox](/portfolio/uddermayhem/cad2.jpeg)
+![Photograph of a person holding an udder made of mylar balloon](/optimized/portfolio/uddermayhem/mylar1.webp)
+![Screenshot of a gray 3d modeled udder](/optimized/portfolio/uddermayhem/cad1.png)
+![Screenshot of a gray 3d modeled udder moldbox](/optimized/portfolio/uddermayhem/cad2.webp)
 
 Of course, making a beauitful udder means nothing for a video game if there aren't any accompanying electronics to detect a squeeze. So I made a single-teat mold box and made silicone brush casts to make test teats for different electronics experiments.
 
 The casting looked very grotesque:
-![Photograph of a very grotesque looking black box with pink goo in it](/portfolio/uddermayhem/teatbox.jpeg)
+![Photograph of a very grotesque looking black box with pink goo in it](/optimized/portfolio/uddermayhem/teatbox.webp)
 
 I had a few ideas for how to detect a teat squeeze:
 
@@ -285,18 +285,18 @@ Now that I knew what sensors I would be using, it was time to make it at full sc
 
 With the CAD model created earlier, I printed the 4-part mold box, smoothed out the layers with a couple coats of [XTC3D](https://www.smooth-on.com/product-line/xtc-3d/), and then applied 5-6 layers of [Dragon Skin 10](https://www.smooth-on.com/products/dragon-skin-10-very-fast/) silicone that was pre-mixed witih pink and light flesh colored pigment:
 
-![Photo of a bunch of quadrands with teats on either side](/portfolio/uddermayhem/moldboxes1.jpeg)
-![Photo of one udder quadrant](/portfolio/uddermayhem/moldboxquadrant.jpeg)
-![Photo of two quadrants stuck together to see a cross section](/portfolio/uddermayhem/moldboxes2.jpeg)
-![Photo of two quadrants stuck together to see a cross section](/portfolio/uddermayhem/moldbox1.jpeg)
-![Photo of two quadrants stuck together to see a cross section](/portfolio/uddermayhem/moldbox2.jpeg)
+![Photo of a bunch of quadrands with teats on either side](/optimized/portfolio/uddermayhem/moldboxes1.webp)
+![Photo of one udder quadrant](/optimized/portfolio/uddermayhem/moldboxquadrant.webp)
+![Photo of two quadrants stuck together to see a cross section](/optimized/portfolio/uddermayhem/moldboxes2.webp)
+![Photo of two quadrants stuck together to see a cross section](/optimized/portfolio/uddermayhem/moldbox1.webp)
+![Photo of two quadrants stuck together to see a cross section](/optimized/portfolio/uddermayhem/moldbox2.webp)
 
 Grotesque, no?
-![Grotesque photo of the udder mold box coated in gooey pink silicone](/portfolio/uddermayhem/castmoldbox1.jpeg)
+![Grotesque photo of the udder mold box coated in gooey pink silicone](/optimized/portfolio/uddermayhem/castmoldbox1.webp)
 
 Then I prepared the tubes for the sensors. I decided to put a metal tube in each silicone teat and fill the space between the pole and the silicone with polyurethane foam for a little squish. The tubes each have a hole drilled into them through which a [Hall Effect](https://www.adafruit.com/product/158) sensor goes and is taped onto the outside of the tube, and the wires are run from within the tube up to the top part of the udder, where the [Teensy 4.1 microcontroller](https://www.pjrc.com/store/teensy41.html) would sit.
 
-![Photo of a messy workshop bench with a drill and metal tubes and wires](/portfolio/uddermayhem/halleffect2.jpeg)
+![Photo of a messy workshop bench with a drill and metal tubes and wires](/optimized/portfolio/uddermayhem/halleffect2.webp)
 
 ### Code
 
@@ -356,9 +356,9 @@ void loop() {
 ### MVP Midterm
 The MVP fabrication of this project was to get the udder fully working in conjunction with the game, "making it pretty" comes later!
 
-![Photo of green haired girl holding up ](/portfolio/uddermayhem/tablepose.jpeg)
-![Photo of a man smiling while squeezing an udder hanging from a table](/portfolio/uddermayhem/kai.jpeg)
-![Photo of a woman smiling while squeezing an udder hanging from a table](/portfolio/uddermayhem/cindy.jpeg)
+![Photo of green haired girl holding up ](/optimized/portfolio/uddermayhem/tablepose.webp)
+![Photo of a man smiling while squeezing an udder hanging from a table](/optimized/portfolio/uddermayhem/kai.webp)
+![Photo of a woman smiling while squeezing an udder hanging from a table](/optimized/portfolio/uddermayhem/cindy.webp)
 ![Video of a green haired girl playing an udder hanging from a table](/optimized/portfolio/uddermayhem/midtermdemo.mp4)
 
 ## ITP Showcase
@@ -368,16 +368,16 @@ Of course I wasn't going to leave the project at the midterm! I couldn't have Ce
 ![Video of a woman playing the game on a wodden frame](/optimized/portfolio/uddermayhem/showcase2.mp4)
 ![Video of a woman playing the game on a wodden frame](/optimized/portfolio/uddermayhem/showcase1.mp4)
 
-![Photograph of a line of people waiting to play the game](/portfolio/uddermayhem/showcaseline.jpeg)
-![Photograph of building a wooden frame](/portfolio/uddermayhem/frame.jpeg)
-![Photograph of the inside of the cow with all the wires](/portfolio/uddermayhem/showcaseinside.jpeg)
+![Photograph of a line of people waiting to play the game](/optimized/portfolio/uddermayhem/showcaseline.webp)
+![Photograph of building a wooden frame](/optimized/portfolio/uddermayhem/frame.webp)
+![Photograph of the inside of the cow with all the wires](/optimized/portfolio/uddermayhem/showcaseinside.webp)
 
 ## Currents New Media Festival
 NYU chose mine and two other projects out of hundreds to go on the road and represent them at the [Santa Fe Currents New Media Festival](https://currentsnewmedia.org/). Yet another great reason to iterate on the game, especially its form factor.
 
-![Photograph of Celine the cow more or less done](/portfolio/uddermayhem/celine.jpeg)
-![Photograph of stuffing the cow in a Pelican case for shipping](/portfolio/uddermayhem/shipping.jpeg)
-![Photograph of stuffing the cow in a Pelican case for shipping](/portfolio/uddermayhem/shippingcase.jpeg)
+![Photograph of Celine the cow more or less done](/optimized/portfolio/uddermayhem/celine.webp)
+![Photograph of stuffing the cow in a Pelican case for shipping](/optimized/portfolio/uddermayhem/shipping.webp)
+![Photograph of stuffing the cow in a Pelican case for shipping](/optimized/portfolio/uddermayhem/shippingcase.webp)
 
 Ensuring the game works after being shipped from Brooklyn to Santa Fe.
 ![Video of a girl playing a cow game in the hotel](/optimized/portfolio/uddermayhem/hoteldemo.mp4)

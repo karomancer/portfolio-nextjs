@@ -24,7 +24,7 @@ piece_type:
   - journal
 ---
 
-![Blending into the moon itself, the Muse building will go a few floors deeper than first appears. Excavate to create lunarcrete material for the enclosure.](/portfolio/muse/outside.png)
+![Blending into the moon itself, the Muse building will go a few floors deeper than first appears. Excavate to create lunarcrete material for the enclosure.](/optimized/portfolio/muse/outside.png)
 
 For [Designing Spaces & Environments Using AI](https://spaceforspace.cargo.site/About), we were to research and explore ideas of what to build in space, taking inspiration from the [NASA's Artemis mission](https://www.nasa.gov/specials/artemis/).
 
@@ -40,10 +40,10 @@ In Greek mythology, Zeus and Mnemosyne have 9 daughters, known as *muses*, who a
 
 Though Artemis was technically not a muse, she continues to inspire us mortals to this day. It seems only fitting to create a memorial/museum that honors nature and our achievements on the moon. It’s what Artemis would have wanted!
 
-![In the wings](/portfolio/muse/inside3.png)
-![Center of the building](/portfolio/muse/inside1.png)
-![inside2.png](/portfolio/muse/inside2.png)
-![Postcard like photo](/portfolio/muse/inside4.png)
+![In the wings](/optimized/portfolio/muse/inside3.png)
+![Center of the building](/optimized/portfolio/muse/inside1.png)
+![inside2.png](/optimized/portfolio/muse/inside2.png)
+![Postcard like photo](/optimized/portfolio/muse/inside4.png)
 
 ## Future of A.I. in the Design Process
 

@@ -49,7 +49,7 @@ This was Kathy's original 404 page design:
 
 | | |
 | -- | -- |
-| ![Cute 404 fox illustration on a gray background](/portfolio/patreon-404-fox/original_404.jpeg) | ![Patreon Maintenance Page with a fox illustration](/portfolio/patreon-404-fox/patreon_maintenance.jpg) |
+| ![Cute 404 fox illustration on a gray background](/optimized/portfolio/patreon-404-fox/original_404.webp) | ![Patreon Maintenance Page with a fox illustration](/optimized/portfolio/patreon-404-fox/patreon_maintenance.webp) |
 
 
 ## Techniques
@@ -69,8 +69,8 @@ While the rebrand itself was [highly controversial](https://medium.com/@cooperth
 
 | | |
 | -- | -- |
-| ![Tweet by Patreon unveiling the new 404 page](/portfolio/patreon-404-fox/tweet_patreon.png) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/portfolio/patreon-404-fox/tweet_jason.png) |
-| ![Tweet by an excited creator](/portfolio/patreon-404-fox/tweet_mac.png) | ![Tweet by an excited creator](/portfolio/patreon-404-fox/tweet_kevin.png) |
+| ![Tweet by Patreon unveiling the new 404 page](/optimized/portfolio/patreon-404-fox/tweet_patreon.png) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/optimized/portfolio/patreon-404-fox/tweet_jason.png) |
+| ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_mac.png) | ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_kevin.png) |
 
 
 ## Never Enough Foxes
@@ -79,4 +79,4 @@ Even though this project was totally rogue and merged in secret, the new fox des
 
 | | |
 | -- | -- |
-| ![A fox wearing a construction hat holding a wrench](/portfolio/patreon-404-fox/construction_fox.png) | ![A fox holding a microphone to the viewer](/portfolio/patreon-404-fox/interview_fox.jpeg) |
+| ![A fox wearing a construction hat holding a wrench](/optimized/portfolio/patreon-404-fox/construction_fox.png) | ![A fox holding a microphone to the viewer](/optimized/portfolio/patreon-404-fox/interview_fox.webp) |

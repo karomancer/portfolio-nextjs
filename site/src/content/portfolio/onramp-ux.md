@@ -43,9 +43,9 @@ In 2020, I worked with their CEO and founder [Michael Morris](https://www.linked
 
 All designs and interactive prototypes were made within Figma.
 
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/pilotflyingj_figma.jpg)
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/figma.jpg)
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/cover.jpg)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/pilotflyingj_figma.webp)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/figma.webp)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/cover.webp)
 
 
 ### Fuelpay

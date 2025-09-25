@@ -52,7 +52,7 @@ We also identified extreme users for the botanic garden. These included people n
 
 | | |
 | -- | -- |
-| ![Photograph of index cards sorted into piles](/portfolio/communitree/forest.jpeg) | ![Photograph of index cards sorted into piles](/portfolio/communitree/gardentour.jpeg) |
+| ![Photograph of index cards sorted into piles](/optimized/portfolio/communitree/forest.webp) | ![Photograph of index cards sorted into piles](/optimized/portfolio/communitree/gardentour.webp) |
 
 ## Ideation
 
@@ -121,7 +121,7 @@ We rapidly developed more than 50 ideas:
 
 | | |
 | -- | -- |
-| ![Photograph of index cards sorted into piles](/portfolio/communitree/rapiddesign.jpeg) | ![Photograph of index cards sorted into piles](/portfolio/communitree/affinitydiagram.jpeg) |
+| ![Photograph of index cards sorted into piles](/optimized/portfolio/communitree/rapiddesign.webp) | ![Photograph of index cards sorted into piles](/optimized/portfolio/communitree/affinitydiagram.webp) |
 
 In order to help focus our ideas, we used an affinity diagram to identify common audiences or types of activities.
 
@@ -145,7 +145,7 @@ We discovered the following groups:
 
 ### Round 1
 
-![Illustration of a blonde character learning to treat a wound with a plant she found](/portfolio/communitree/storyboarding.jpeg)
+![Illustration of a blonde character learning to treat a wound with a plant she found](/optimized/portfolio/communitree/storyboarding.webp)
 
 We developed 15 storyboards around the groups we decided to focus on, and we did speed dating rounds with three CMU students. Based on their reactions, we discarded two concepts and refined and combined the rest of our ideas into 11 new storyboards. 
 
@@ -181,7 +181,7 @@ For this round of speed dating, we recruited visitors at Phipps Botanic Garden a
 
 Twenty speed daters ranged from young children to grandparents. We interviewed botanic garden visitors as well as other likely visitors to botanic gardens in Pittsburgh and Washington, DC. Extreme users included a child who hated plants and bugs, a family of farmers, and a reluctant visitor to the garden.
 
-![Photograph of two people talking over mocks printed on paper](/portfolio/communitree/usertesting.jpeg)
+![Photograph of two people talking over mocks printed on paper](/optimized/portfolio/communitree/usertesting.webp)
 
 ### Four Major Insights
 
@@ -242,7 +242,7 @@ In this scenario, a family discovers the CommuniTree in the Asian Garden. It sho
 
 | | |
 | -- | -- |
-| ![Illustration of a character looking at a tree with LED screen leaves showing lightning](/portfolio/communitree/education1.jpeg) | ![Illustration of a character reading information about weather in Fukuoka on an LED screen on a tree trunk](/portfolio/communitree/education2.jpeg) |
+| ![Illustration of a character looking at a tree with LED screen leaves showing lightning](/optimized/portfolio/communitree/education1.webp) | ![Illustration of a character reading information about weather in Fukuoka on an LED screen on a tree trunk](/optimized/portfolio/communitree/education2.webp) |
 
 
 #### Connection
@@ -251,7 +251,7 @@ The CommuniTree enhances social interactions between visitors over time by colle
 
 | | |
 | -- | -- |
-| ![Illustration of people looking at photos of plants on LED screen leaves on a tree](/portfolio/communitree/connection1.jpeg) | ![Illustration of people holding up their phones to transfer their pictures to a tree with LED screen leaves](/portfolio/communitree/connection2.jpeg) |
+| ![Illustration of people looking at photos of plants on LED screen leaves on a tree](/optimized/portfolio/communitree/connection1.webp) | ![Illustration of people holding up their phones to transfer their pictures to a tree with LED screen leaves](/optimized/portfolio/communitree/connection2.webp) |
 
 #### Connection
 
@@ -259,7 +259,7 @@ The CommuniTree enhances social interactions between visitors over time by colle
 
 | | |
 | -- | -- |
-| ![Illustration of a little character with a beret drawing in front of a tree](/portfolio/communitree/inspiration1.jpeg) | ![Illustration of a group of people gathered around a tree with an LED screen on it reading "Once upon a time..."](/portfolio/communitree/inspiration2.jpeg) |
+| ![Illustration of a little character with a beret drawing in front of a tree](/optimized/portfolio/communitree/inspiration1.webp) | ![Illustration of a group of people gathered around a tree with an LED screen on it reading "Once upon a time..."](/optimized/portfolio/communitree/inspiration2.webp) |
 
 ## Concept Video
 
@@ -271,18 +271,18 @@ We scouted locations, created cardboard cut outs to simulate the tiles, used liv
 
 Because the Pittsburgh Botanic Garden is not easily accessible, we scouted locations at nearby parks. Ultimately we chose a tree in Schenley Park. 
 
-![Photograph of a man in an orange shirt climbing a tree](/portfolio/communitree/scouting.jpeg)
+![Photograph of a man in an orange shirt climbing a tree](/optimized/portfolio/communitree/scouting.webp)
 
 ### Setting up Communitree
 
 Once we found the location, it was time to shoot our concept video!
 
-![Photograph of a man and a group of students looking at a script](/portfolio/communitree/process4.jpeg)
+![Photograph of a man and a group of students looking at a script](/optimized/portfolio/communitree/process4.webp)
 
-![Photograph of a girl tying string onto orange rectangles](/portfolio/communitree/process1.jpeg)
-![Photograph of a tree with hanging orange rectangles](/portfolio/communitree/process3.jpeg)
-![Photograph of a woman in a tree laughing while holding a camera](/portfolio/communitree/process6.jpeg)
-![Photograph taken from a tree looking down at a woman laughing while holding an orange rectangle](/portfolio/communitree/process5.jpeg)
+![Photograph of a girl tying string onto orange rectangles](/optimized/portfolio/communitree/process1.webp)
+![Photograph of a tree with hanging orange rectangles](/optimized/portfolio/communitree/process3.webp)
+![Photograph of a woman in a tree laughing while holding a camera](/optimized/portfolio/communitree/process6.webp)
+![Photograph taken from a tree looking down at a woman laughing while holding an orange rectangle](/optimized/portfolio/communitree/process5.webp)
 
 ### Final video
 

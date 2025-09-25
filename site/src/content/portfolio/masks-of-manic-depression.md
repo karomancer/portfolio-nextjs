@@ -45,13 +45,13 @@ In the Window of Tolerance model, people go from high energy anxiety (hyperarous
 
 I also have complex PTSD, so I’m intimately familiar with this model as well as manic depression.
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled.png)
 
 People with rapid cycling bipolar disorder or suffering from extreme trauma state switching have a narrow band for their Window of Tolerance. They also have a problem in finding and identifying Self within the swings.
 
 The original idea I had was to have the viewer spawn within a double mask, to play the “inner self” that was trapped between mania and depression, hyper- and hypo-arousal. From this trapped place, they could only see the world through the eyes and mouths of either side, but didn’t have a face of its own to see the world as it is, grounded in reality.
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%201.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%201.png)
 
 I thought there could also be a bright amorphous shape, animated in the center, to represent our wise Self. Or the player is that blob. Unsure!  
 
@@ -92,9 +92,9 @@ I felt like loose brush strokes made with TiltBrush would be perfect to represen
 
 I looked for things like this to take apart into its separate components:
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%202.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%202.png)
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%203.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%203.png)
 
 ### Depression
 

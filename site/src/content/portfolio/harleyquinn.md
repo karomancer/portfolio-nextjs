@@ -26,20 +26,20 @@ piece_type:
   - journal
 ---
 
-![Photograph of a woman in a red and black harlequin outfit on a throne](/portfolio/harleyquinn/IMG_4398.jpg)
-![Photograph of a woman in a red and black harlequin outfit posing for the camera](/portfolio/harleyquinn/PXL_20221009_155241105.MP.jpg)
-![Photograph of a woman in a red and black harlequin outfit back-to-back with a Star Wars character](/portfolio/harleyquinn/643DC210-F909-4CFA-BD5E-5D0EECC5E2FA.jpg)
-![Photograph of a woman in a red and black harlequin outfit next to a girl with red hair and a green leotard](/portfolio/harleyquinn/IMG_4483.jpg)
-![Photograph of a woman in a red and black harlequin outfit standing by another person dressed as the same character but with a red dress](/portfolio/harleyquinn/PXL_20221009_213529995.MP.jpg)
+![Photograph of a woman in a red and black harlequin outfit on a throne](/optimized/portfolio/harleyquinn/IMG_4398.webp)
+![Photograph of a woman in a red and black harlequin outfit posing for the camera](/optimized/portfolio/harleyquinn/PXL_20221009_155241105.MP.webp)
+![Photograph of a woman in a red and black harlequin outfit back-to-back with a Star Wars character](/optimized/portfolio/harleyquinn/643DC210-F909-4CFA-BD5E-5D0EECC5E2FA.webp)
+![Photograph of a woman in a red and black harlequin outfit next to a girl with red hair and a green leotard](/optimized/portfolio/harleyquinn/IMG_4483.webp)
+![Photograph of a woman in a red and black harlequin outfit standing by another person dressed as the same character but with a red dress](/optimized/portfolio/harleyquinn/PXL_20221009_213529995.MP.webp)
 
-![Photograph of a woman in a red and black harlequin outfit eating a giant fake bowl of ramen](/portfolio/harleyquinn/IMG_4480.jpg)
+![Photograph of a woman in a red and black harlequin outfit eating a giant fake bowl of ramen](/optimized/portfolio/harleyquinn/IMG_4480.webp)
 
 
 ## Context
 
 As a 90s kid, I grew up a huge fan of [Batman: The Animated Series](https://en.wikipedia.org/wiki/Batman:_The_Animated_Series) and Harley Quinn was always one of my favorite characters. 2022 marked Harley Quinn's 30th birthday of her inception as a character for the show, so what better way to celebrate than to dress up as her for [New York Comic Con](https://www.newyorkcomiccon.com/)?
 
-![Illustration of a harlequin dressed woman kneeling with a gun in her hands](/portfolio/harleyquinn/cover.jpeg)
+![Illustration of a harlequin dressed woman kneeling with a gun in her hands](/optimized/portfolio/harleyquinn/cover.webp)
 
 ## The Process
 
