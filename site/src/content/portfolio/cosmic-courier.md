@@ -8,9 +8,9 @@ collaborators:
   - Armando Pimentel
 class: New Arcade
 date: 2023-05-20T03:24:34.000Z
-preview: /portfolio/cosmic-courier/thumbnail.jpeg
-cover: /portfolio/cosmic-courier/cover.jpeg
-og_preview: /portfolio/cosmic-courier/thumbnail.jpeg
+preview: /optimized/portfolio/cosmic-courier/thumbnail.webp
+cover: /optimized/portfolio/cosmic-courier/cover.webp
+og_preview: /optimized/portfolio/cosmic-courier/thumbnail.webp
 draft: false
 url: https://github.com/karomancer/spacepirates
 technologies:

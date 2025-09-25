@@ -6,9 +6,9 @@ collaborators:
   - "[Liana Ris](https://www.linkedin.com/in/liana-ris/)"
 class: ""
 date: 2021-02-11T22:47:06.523Z
-preview: /portfolio/broker2broker/preview.mp4
-cover: /portfolio/broker2broker/cover.jpeg
-og_preview: /portfolio/broker2broker/og.jpg
+preview: /optimized/portfolio/broker2broker/preview.mp4
+cover: /optimized/portfolio/broker2broker/cover.webp
+og_preview: /optimized/portfolio/broker2broker/og.webp
 draft: false
 url: https://broker2broker.app/
 technologies:

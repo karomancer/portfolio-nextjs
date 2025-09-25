@@ -5,8 +5,8 @@ slug: /portfolio/muse
 collaborators: []
 class: Designing Spaces & Environments using A.I.
 date: 2023-05-02T20:31:30.000Z
-preview: /portfolio/muse/outside.png
-cover: /portfolio/muse/inside4.png
+preview: /optimized/portfolio/muse/outside.png
+cover: /optimized/portfolio/muse/inside4.png
 draft: false
 url: https://spaceforspace.cargo.site/
 technologies:
@@ -19,7 +19,7 @@ categories:
   - ITP
 type: portfolioPiece
 keywords: []
-og_preview: /portfolio/muse/og_image.png
+og_preview: /optimized/portfolio/muse/og_image.png
 piece_type:
   - journal
 ---

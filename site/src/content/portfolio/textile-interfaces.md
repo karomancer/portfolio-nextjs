@@ -10,8 +10,8 @@ date: 2022-12-07T05:41:17.950Z
 preview: ""
 thumbnail_width: 1
 thumbnail_height: 1
-cover: /portfolio/textile-interfaces/heart2.jpeg
-og_preview: /portfolio/textile-interfaces/red_dress_1.jpeg
+cover: /optimized/portfolio/textile-interfaces/heart2.webp
+og_preview: /optimized/portfolio/textile-interfaces/red_dress_1.webp
 draft: true
 url: ""
 technologies:

@@ -8,11 +8,11 @@ collaborators:
     - "[Sam De Armas](https://www.samdearmas.com/)"
 class: Designing the Absurd
 date: 2023-10-24T05:52:29.000Z
-preview: /portfolio/floordozer/cover2.jpg
+preview: /optimized/portfolio/floordozer/cover2.webp
 thumbnail_width: 2
 thumbnail_height: 1
-cover: /portfolio/floordozer/final_box1.jpg
-og_preview: /portfolio/floordozer/cover2.jpg
+cover: /optimized/portfolio/floordozer/final_box1.webp
+og_preview: /optimized/portfolio/floordozer/cover2.webp
 draft: false
 url: ""
 technologies:

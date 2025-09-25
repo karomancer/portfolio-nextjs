@@ -5,9 +5,9 @@ slug: /portfolio/kasumi
 collaborators: []
 class: ""
 date: 2019-10-10T17:09:55.144Z
-preview: /portfolio/kasumi/preview.png
-cover: /portfolio/kasumi/screenshot.jpeg
-og_preview: /portfolio/kasumi/presentation1.jpeg
+preview: /optimized/portfolio/kasumi/preview.png
+cover: /optimized/portfolio/kasumi/screenshot.webp
+og_preview: /optimized/portfolio/kasumi/presentation1.webp
 draft: false
 url: ""
 technologies:

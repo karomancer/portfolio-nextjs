@@ -7,9 +7,9 @@ collaborators:
   - "[Rob Kayson](https://www.linkedin.com/in/rkayson/)"
 class: ""
 date: 2021-06-07T08:45:42.519Z
-preview: /portfolio/imperfect-foods/impactslidermobile.mp4
-cover: /portfolio/imperfect-foods/cover.jpg
-og_preview: /portfolio/imperfect-foods/og_preview.jpeg
+preview: /optimized/portfolio/imperfect-foods/impactslidermobile.mp4
+cover: /optimized/portfolio/imperfect-foods/cover.webp
+og_preview: /optimized/portfolio/imperfect-foods/og_preview.webp
 draft: false
 url: https://www.imperfectfoods.com/
 technologies:

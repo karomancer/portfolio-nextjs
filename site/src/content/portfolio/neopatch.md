@@ -5,9 +5,9 @@ slug: /portfolio/neopatch
 collaborators:
   - Daniel Wai
 date: 2022-12-15T03:25:48.000Z
-preview: /portfolio/neopatch/1-2.jpg
-cover: /portfolio/neopatch/1-9.jpg
-og_preview: /portfolio/neopatch/1-2.jpg
+preview: /optimized/portfolio/neopatch/1-2.webp
+cover: /optimized/portfolio/neopatch/1-9.webp
+og_preview: /optimized/portfolio/neopatch/1-2.webp
 draft: false
 tags:
   - fabrication

@@ -5,9 +5,9 @@ slug: /portfolio/morrigan
 collaborators: []
 class: ""
 date: 2014-10-31T04:26:55.288Z
-preview: /portfolio/morrigan/morrigan.jpg
-cover: /portfolio/morrigan/cover.jpeg
-og_preview: /portfolio/morrigan/og_image.jpeg
+preview: /optimized/portfolio/morrigan/morrigan.webp
+cover: /optimized/portfolio/morrigan/cover.webp
+og_preview: /optimized/portfolio/morrigan/og_image.webp
 draft: false
 url: ""
 technologies:

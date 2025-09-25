@@ -5,9 +5,9 @@ slug: /portfolio/zelda-snowboard
 collaborators: []
 class: ""
 date: 2019-01-09T21:39:53.756Z
-preview: /portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.png
-cover: /portfolio/zelda-snowboard/real_snowboard.png
-og_preview: /portfolio/zelda-snowboard/2016-02-02__1_.jpg
+preview: /optimized/portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.png
+cover: /optimized/portfolio/zelda-snowboard/real_snowboard.png
+og_preview: /optimized/portfolio/zelda-snowboard/2016-02-02__1_.webp
 draft: false
 url: ""
 technologies:

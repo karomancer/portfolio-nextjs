@@ -5,9 +5,9 @@ slug: /portfolio/sewing-triptych
 collaborators: []
 class: ""
 date: 2020-04-20T00:38:31.892Z
-preview: /portfolio/sewing-triptych/preview.mp4
-cover: /portfolio/sewing-triptych/cover.jpeg
-og_preview: /portfolio/sewing-triptych/og_image.jpeg
+preview: /optimized/portfolio/sewing-triptych/preview.mp4
+cover: /optimized/portfolio/sewing-triptych/cover.webp
+og_preview: /optimized/portfolio/sewing-triptych/og_image.webp
 draft: false
 url: https://codepen.io/karomancer/pen/yLNdeXE
 technologies:
@@ -26,7 +26,7 @@ piece_type:
   - portfolio
 ---
 
-[Glitch example](https://sewing-triptych.glitch.me/)
+[Codepen example](https://codepen.io/karomancer/embed/yLNdeXE)
 
 In spring 2020, I took Gray Area's Computer Science in Studio Art 12-Week Immersive. One of our first challenges was to make a triptych purely with CSS + HTML (no JavaScript!)
 

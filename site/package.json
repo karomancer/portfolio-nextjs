@@ -10,7 +10,10 @@
     "optimize-videos": "node scripts/optimize-videos.mjs",
     "update-video-refs": "node scripts/update-video-refs.mjs",
     "optimize-images": "node scripts/optimize-images.mjs",
-    "update-image-refs": "node scripts/update-image-refs.mjs"
+    "update-image-refs": "node scripts/update-image-refs.mjs",
+    "optimize-assets": "npm run optimize-videos && npm run update-video-refs && npm run optimize-images && npm run update-image-refs",
+    "cleanup-originals": "node scripts/cleanup-originals.mjs",
+    "deploy-prep": "npm run optimize-assets && npm run cleanup-originals"
   },
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",

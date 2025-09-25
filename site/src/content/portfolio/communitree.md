@@ -6,9 +6,9 @@ collaborators:
   - Stephanie Butler
 class: ""
 date: 2013-05-04T16:31:41.467Z
-preview: /portfolio/communitree/preview2.jpeg
-cover: /portfolio/communitree/process3.jpeg
-og_preview: /portfolio/communitree/preview2.jpeg
+preview: /optimized/portfolio/communitree/preview2.webp
+cover: /optimized/portfolio/communitree/process3.webp
+og_preview: /optimized/portfolio/communitree/preview2.webp
 draft: false
 url: |
   Adobe Premiere

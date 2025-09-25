@@ -5,9 +5,9 @@ slug: /portfolio/masks-of-manic-depression
 collaborators: []
 class: Hypercinema
 date: 2022-12-08T23:09:15.000Z
-preview: /portfolio/masks-of-manic-depression/mania.png
-cover: /portfolio/masks-of-manic-depression/depression.png
-og_preview: /portfolio/masks-of-manic-depression/depression.png
+preview: /optimized/portfolio/masks-of-manic-depression/mania.png
+cover: /optimized/portfolio/masks-of-manic-depression/depression.png
+og_preview: /optimized/portfolio/masks-of-manic-depression/depression.png
 draft: false
 url: ""
 technologies:

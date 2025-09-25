@@ -6,9 +6,9 @@ collaborators:
   - "[Nora Kako](https://www.linkedin.com/in/norakako/)"
 class: ""
 date: 2022-06-15T20:52:25.893Z
-preview: /portfolio/wowd/preview.mp4
-cover: /portfolio/wowd/cover.png
-og_preview: /portfolio/wowd/og_image.jpeg
+preview: /optimized/portfolio/wowd/preview.mp4
+cover: /optimized/portfolio/wowd/cover.png
+og_preview: /optimized/portfolio/wowd/og_image.webp
 draft: false
 url: https://www.wowd.co/
 technologies:

@@ -5,9 +5,9 @@ slug: /portfolio/uddermayhem
 collaborators: []
 class: The New Arcade
 date: 2023-06-22T17:27:28.000Z
-preview: /portfolio/uddermayhem/FzF7fARWAAEZaYy.jpeg
-cover: /portfolio/uddermayhem/title.jpg
-og_preview: /portfolio/uddermayhem/FzF7fARWAAEZaYy.jpeg
+preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.webp
+cover: /optimized/portfolio/uddermayhem/title.webp
+og_preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.webp
 draft: false
 url: https://github.com/karomancer/uddermayhem
 technologies:

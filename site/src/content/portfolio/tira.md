@@ -5,9 +5,9 @@ slug: /portfolio/tira
 collaborators: []
 class: ""
 date: 2012-05-02T21:09:55.210Z
-preview: /portfolio/tira/final1.jpeg
-cover: /portfolio/tira/cover.jpeg
-og_preview: /portfolio/tira/final5.jpeg
+preview: /optimized/portfolio/tira/final1.webp
+cover: /optimized/portfolio/tira/cover.webp
+og_preview: /optimized/portfolio/tira/final5.webp
 draft: false
 url: ""
 technologies:

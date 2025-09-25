@@ -7,11 +7,11 @@ slug: /portfolio/aurora-dream
 collaborators: []
 class: ""
 date: 2019-10-09T08:00:21.225Z
-preview: /portfolio/aurora-dream/final.jpg
+preview: /optimized/portfolio/aurora-dream/final.webp
 thumbnail_width: 1
 thumbnail_height: 1
-cover: /portfolio/aurora-dream/cover.jpg
-og_preview: /portfolio/aurora-dream/final.jpg
+cover: /optimized/portfolio/aurora-dream/cover.webp
+og_preview: /optimized/portfolio/aurora-dream/final.webp
 draft: false
 url: ""
 technologies:

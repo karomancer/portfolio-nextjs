@@ -88,7 +88,7 @@ async function optimizeImage(inputPath, outputPath) {
       quality,
       "-resize",
       "2048x2048>",
-      "-auto-orient",
+      // Note: Removed -auto-orient to prevent incorrect rotations
       additionalOptions,
       `"${outputPath}"`,
     ]

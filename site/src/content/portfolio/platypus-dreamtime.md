@@ -9,9 +9,9 @@ collaborators:
   - "[Soyeon Hwang](https://hcii.cmu.edu/people/soyeon-hwang)"
 class: Human-Computer Interaction Capstone
 date: 2013-05-09T03:07:47.000Z
-preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
-cover: /portfolio/playtpus-dreamtime/cover2.jpeg
-og_preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
+preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
+cover: /optimized/portfolio/playtpus-dreamtime/cover2.webp
+og_preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
 draft: false
 url: ""
 technologies:

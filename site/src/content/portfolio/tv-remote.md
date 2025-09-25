@@ -5,9 +5,9 @@ slug: /portfolio/tv-remote
 collaborators: []
 class: Learning the World, One Thing at a Time
 date: 2022-10-19T04:58:06.000Z
-preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
-cover: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
-og_preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
+preview: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
+cover: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
+og_preview: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
 draft: false
 url: https://github.com/karomancer/ir_receiver
 technologies:

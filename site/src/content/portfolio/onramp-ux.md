@@ -5,11 +5,11 @@ slug: /portfolio/onramp-ux
 collaborators: []
 class: ""
 date: 2020-12-28T07:43:22.121Z
-preview: /portfolio/onramp/preview.mp4
+preview: /optimized/portfolio/onramp/preview.mp4
 thumbnail_width: 1
 thumbnail_height: 2
-cover: /portfolio/onramp/cover.jpg
-og_preview: /portfolio/onramp/og.jpg
+cover: /optimized/portfolio/onramp/cover.webp
+og_preview: /optimized/portfolio/onramp/og.webp
 draft: false
 url: https://onrampcard.com/
 technologies:
