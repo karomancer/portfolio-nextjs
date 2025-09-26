@@ -25,7 +25,7 @@ piece_type:
   - journal
 ---
 
-![PXL_20220924_094602872 (1).mp4](/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)
+![PXL_20220924_094602872 (1).mp4](/optimized/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)
 
 In the class **[Learning the World, One Thing at a Time](https://www.coursicle.com/nyu/courses/ITPGGT/2345/)**, taught by [Lydia Jessup](https://www.lydiajessup.me/), we learned about the [Implosion](https://www.trashacademy.org/implosion) research method to deeply analyze and research an object we encounter in every day life across the following dimensions: *Labor*, *Professional*, *Material*, *Technological*, *Context*, *Political*, *Economic*, *Textual*, *Historical*, *Particle*, *Educational*, *Mythological*, and *Symbolic*.
 
@@ -62,7 +62,7 @@ Unfortunately, I wasn’t able to find out which exact model of remote I had, an
 
 Let’s talk about the history of the remote!
 
-![Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)](/portfolio/tv-remote/Untitled%204.png)
+![Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)](/optimized/portfolio/tv-remote/Untitled%204.png)
 
 Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)
 
@@ -70,7 +70,7 @@ Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-cont
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/optimized/portfolio/tv-remote/Untitled%205.png)![Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)](/portfolio/tv-remote/Untitled%206.png) | Nikola Tesla demos the first remote controller at the New York's Madison Square Garden. He used radio frequency (RF) to control a toy boat on an indoor pool. He named is remote-controllable boat a [teleautomaton](https://31648663.weebly.com/teleautomaton.html). Many deemed his invention as magic and many criticized it for its potential to be used in warfare. |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%205.png)![Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)](/optimized/portfolio/tv-remote/Untitled%206.png) | Nikola Tesla demos the first remote controller at the New York's Madison Square Garden. He used radio frequency (RF) to control a toy boat on an indoor pool. He named is remote-controllable boat a [teleautomaton](https://31648663.weebly.com/teleautomaton.html). Many deemed his invention as magic and many criticized it for its potential to be used in warfare. |
 
 Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)
 
@@ -86,7 +86,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/)](/portfolio/tv-remote/Untitled%208.png) | Concerns about remote-controlled vehicles becoming weapons in war came as the Germans created RF boats filled with explosives designed to collide into enemy ships.!!!Others also experimented with unmanned war vehicles. The United States made an unmanned aerial torpedo called the [Kettering Bug](https://en.wikipedia.org/wiki/Kettering_Bug). These used a similar radio frequency technology that Tesla’s original RC boat did to allow pilots to control torpedos after launching them. |
+| ![Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/)](/optimized/portfolio/tv-remote/Untitled%208.png) | Concerns about remote-controlled vehicles becoming weapons in war came as the Germans created RF boats filled with explosives designed to collide into enemy ships.!!!Others also experimented with unmanned war vehicles. The United States made an unmanned aerial torpedo called the [Kettering Bug](https://en.wikipedia.org/wiki/Kettering_Bug). These used a similar radio frequency technology that Tesla’s original RC boat did to allow pilots to control torpedos after launching them. |
 
 (Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/))
 
@@ -94,7 +94,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source Electronic House/[TVHistory.tv](http://tvhistory.tv/)](/portfolio/tv-remote/Untitled%209.png) | In the same years remote controls were being used for warfare, radio companies were releasing controllers for their radio sets. Many of the first ones were wired and controlled through the house AC line.!!!In 1939, the Philadelphia Storage Battery Company (Philco) created the first wireless remote control for the radio, the **Philco Mystery Control.** This remote also used RF technology.!!!As per the Gartner Group Hype graph we saw earlier, the Mystery Control was wildly popular and adopted quickly between 1939 and 1942. Once the hype died down, it became a commodity and other radio companies followed suit. |
+| ![Source Electronic House/[TVHistory.tv](http://tvhistory.tv/)](/optimized/portfolio/tv-remote/Untitled%209.png) | In the same years remote controls were being used for warfare, radio companies were releasing controllers for their radio sets. Many of the first ones were wired and controlled through the house AC line.!!!In 1939, the Philadelphia Storage Battery Company (Philco) created the first wireless remote control for the radio, the **Philco Mystery Control.** This remote also used RF technology.!!!As per the Gartner Group Hype graph we saw earlier, the Mystery Control was wildly popular and adopted quickly between 1939 and 1942. Once the hype died down, it became a commodity and other radio companies followed suit. |
 
 (Source: Electronic House/[TVHistory.tv](http://tvhistory.tv/))
 
@@ -120,7 +120,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6)](/portfolio/tv-remote/Untitled%2013.png) | Robert Adler, a physicist, invents the Zenith Space Commander.!!!Instead of using light or RF, Space Command TVs detected sounds produced by physical hammers in the remote. The remote didn’t require batteries because of this implementation, and each remote produced a satisfying clicking sound in addition to an ultrasonic sound inaudible to most humans. In fact, this is the reason why we call remotes “clickers” today!!!This ultrasonic technology served as the primary tech in TV remotes until the mid ‘80s, when infrared remotes started taking over the scene. |
+| ![Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6)](/optimized/portfolio/tv-remote/Untitled%2013.png) | Robert Adler, a physicist, invents the Zenith Space Commander.!!!Instead of using light or RF, Space Command TVs detected sounds produced by physical hammers in the remote. The remote didn’t require batteries because of this implementation, and each remote produced a satisfying clicking sound in addition to an ultrasonic sound inaudible to most humans. In fact, this is the reason why we call remotes “clickers” today!!!This ultrasonic technology served as the primary tech in TV remotes until the mid ‘80s, when infrared remotes started taking over the scene. |
 
 (Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6))
 
@@ -134,7 +134,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/)](/portfolio/tv-remote/Untitled%2015.png) | Though ultrasonic, and other sound-based “clickers”, were still the most popular remote technology, they suffered from some major issues. Many of them would irritate house pets and children because of their high frequencies. Meanwhile, other light-based remotes experienced interference by indoor light sources like lamps.!!!Infrared was already being used for other household uses, such as garage door openers. Engineer Paul Hrivnak at Canadian company, Viewstar, Inc., applied that tech and produced the first infrared TV remote for Phillips priced at $190CAD.!!!Infrared became so wildly popular, they quickly rose in popularity beating out the previous ultrasonic remotes.  |
+| ![Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/)](/optimized/portfolio/tv-remote/Untitled%2015.png) | Though ultrasonic, and other sound-based “clickers”, were still the most popular remote technology, they suffered from some major issues. Many of them would irritate house pets and children because of their high frequencies. Meanwhile, other light-based remotes experienced interference by indoor light sources like lamps.!!!Infrared was already being used for other household uses, such as garage door openers. Engineer Paul Hrivnak at Canadian company, Viewstar, Inc., applied that tech and produced the first infrared TV remote for Phillips priced at $190CAD.!!!Infrared became so wildly popular, they quickly rose in popularity beating out the previous ultrasonic remotes.  |
 
 (Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/))
 
@@ -142,7 +142,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) ](/portfolio/tv-remote/Untitled%2016.png) | The idea of a reconfigurable remote that can control multiple devices was patented by Philips in 1985, and soon thereafter they released their Magnavox universal remotes.!!!In 1986, General Electric also patented a reconfigurable universal remote, stating that a remote should be able to control a television, a cable converter, video cassette recorder, and a video disc player so to remove confusion and inconvenience to the user. |
+| ![Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) ](/optimized/portfolio/tv-remote/Untitled%2016.png) | The idea of a reconfigurable remote that can control multiple devices was patented by Philips in 1985, and soon thereafter they released their Magnavox universal remotes.!!!In 1986, General Electric also patented a reconfigurable universal remote, stating that a remote should be able to control a television, a cable converter, video cassette recorder, and a video disc player so to remove confusion and inconvenience to the user. |
 
 
 (Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) )
@@ -157,7 +157,7 @@ Households in pre-smartphone America often had five or six remotes, including on
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2017.png)![Sources:  [“TV Remote” on the App Store](https://apps.apple.com/us/app/tv-remote-universal-control/id1539090879)](/portfolio/tv-remote/Untitled%2018.png) | Today, the default technology for TV remotes is still infrared, however more technologies are emerging as the broadcast television landscape is changing.!!!In the mid 2000’s, the Apple TV Siri remote was released, which had a trackpad instead of buttons, supported voice control, and used Bluetooth technology instead of infrared.!!!Around the same time, Roku, Google Chromecast, and Amazon Firestick were all released, most now supporting phone app navigation, usually through Bluetooth or WiFi.!!!TV remotes have really come a long way! |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2017.png)![Sources:  [“TV Remote” on the App Store](https://apps.apple.com/us/app/tv-remote-universal-control/id1539090879)](/optimized/portfolio/tv-remote/Untitled%2018.png) | Today, the default technology for TV remotes is still infrared, however more technologies are emerging as the broadcast television landscape is changing.!!!In the mid 2000’s, the Apple TV Siri remote was released, which had a trackpad instead of buttons, supported voice control, and used Bluetooth technology instead of infrared.!!!Around the same time, Roku, Google Chromecast, and Amazon Firestick were all released, most now supporting phone app navigation, usually through Bluetooth or WiFi.!!!TV remotes have really come a long way! |
 
 
 ## Technology & Presentation
@@ -228,7 +228,7 @@ In order for my Arduino Nano to communicate to my computer, I would have to rela
 
 Here’s a visual representation of the flow we want to achieve here:
 
-![Frame 5 (1).jpg](/portfolio/tv-remote/Frame_5_(1).jpg)
+![Frame 5 (1).jpg](/optimized/portfolio/tv-remote/Frame_5_(1).webp)
 
 Ok, onto the first few hardware steps on receiving IR messages!
 
