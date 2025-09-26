@@ -46,9 +46,9 @@ So first we have to decide what type of papercraft best contrasts the new-age te
 
 Because we had several options for each of our scenes, we wanted papercraft options that allowed for several scenes. Thus we thought of…
 
-![A photograph of a popup book with a castle emerging from two pages](/optimized/portfolio/desert-dream/Untitled.png)
-![A photograph of a 5-sided carousel book with winter scenes](/optimized/portfolio/desert-dream/Untitled%201.png)
-![A photograph of a tunnel book with a scene of a dragonfly and flower](/optimized/portfolio/desert-dream/Untitled%202.png)
+![A photograph of a popup book with a castle emerging from two pages](/optimized/portfolio/desert-dream/Untitled.webp)
+![A photograph of a 5-sided carousel book with winter scenes](/optimized/portfolio/desert-dream/Untitled%201.webp)
+![A photograph of a tunnel book with a scene of a dragonfly and flower](/optimized/portfolio/desert-dream/Untitled%202.webp)
 
 - **Pop-up Book**.
 Pop-up books are a childhood favorite. Each scene could be a different spread of two pages. The only problem? They’re very hard to architect and none of us had ever made one before.
@@ -61,7 +61,7 @@ Marianne suggested a tunnel book. These were getting closer to what we needed, b
 
 Ding ding ding! We have a winner!
 
-![A photograph of a My Neighbor Totoro paper theater](/optimized/portfolio/desert-dream/Untitled%203.png)
+![A photograph of a My Neighbor Totoro paper theater](/optimized/portfolio/desert-dream/Untitled%203.webp)
 
 A paper theater has all the simplicity and effect a tunnel book does, but with rigid layers are separated via spacers and are consistently the same distance apart. It makes it less collapsible, but it fit our need nicely.
 
@@ -73,17 +73,17 @@ Given our time constraints, we needed to scope down. We went from 8 scenes to 5,
 
 Here are some of the assets for the scenes we descoped. I largely focused on creating backgrounds using Midjourney as a base and DALL-E's outpainting tool, while Jess and Alfonsette focused more on the creatures and props:
 
-![A surreal and dreamy forest landscape where the tree canopies become part of the sky](/optimized/portfolio/desert-dream/runner-ups/forest_background_C.png)
-![Surreal looking jellyfish shaped mushrooms](/optimized/portfolio/desert-dream/runner-ups/mushroom_jellies.png)
-![A set of colorful mushrooms](/optimized/portfolio/desert-dream/runner-ups/mushrooms_orange.png)
+![A surreal and dreamy forest landscape where the tree canopies become part of the sky](/optimized/portfolio/desert-dream/runner-ups/forest_background_C.webp)
+![Surreal looking jellyfish shaped mushrooms](/optimized/portfolio/desert-dream/runner-ups/mushroom_jellies.webp)
+![A set of colorful mushrooms](/optimized/portfolio/desert-dream/runner-ups/mushrooms_orange.webp)
 
 ![A long landscape of an enchanted forest with magenta foliage](/optimized/portfolio/desert-dream/runner-ups/forest_background_b.webp)
-![An illustration of a glowing blue tree](/optimized/portfolio/desert-dream/runner-ups/blue_tree_2.png)
-![A magestic looking stag with glowing antlers](/optimized/portfolio/desert-dream/runner-ups/DALL-E_deer.png)
+![An illustration of a glowing blue tree](/optimized/portfolio/desert-dream/runner-ups/blue_tree_2.webp)
+![A magestic looking stag with glowing antlers](/optimized/portfolio/desert-dream/runner-ups/DALL-E_deer.webp)
 
 ![A landscape of a haunted forest with deep magentas](/optimized/portfolio/desert-dream/runner-ups/forest_background_a.webp)
-![A magical forest octopus](/optimized/portfolio/desert-dream/runner-ups/DALL-E_octopus.png)
-![A 4-up of several kodama-like mushroom forest spirits](/optimized/portfolio/desert-dream/runner-ups/kodama2.png)
+![A magical forest octopus](/optimized/portfolio/desert-dream/runner-ups/DALL-E_octopus.webp)
+![A 4-up of several kodama-like mushroom forest spirits](/optimized/portfolio/desert-dream/runner-ups/kodama2.webp)
 
 Given just two scenes, we concluded our paper theater would be in the form of a big 12 x 18 inch storybook, with a 12 x 12 inch top square for the day desert, and a 12 x 6 inch bottom rectangle for the night desert.
 
@@ -97,25 +97,25 @@ The joy of using AI to create assets is that you’ll never know what it’ll pr
 
 Jess wanted to make flying camels, and assumed the camels would have wings, but instead DALL-E decided to make superhero and helicopter camels. Here are a few favorites. Just look at how delighted they are to fly!
 
-![A flying camel with very long helicopter blades, generated and extended using DALL-E](/optimized/portfolio/desert-dream/DALLE_2022-11-02_16.12.59_-__helicopter_blades_on_a_flying_camel_photorealistic_uhd.png)
-![A flying Camel A](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.38.png)
-![A flying Camel B](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.32.png)
-![A flying Camel C](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.24.png)
+![A flying camel with very long helicopter blades, generated and extended using DALL-E](/optimized/portfolio/desert-dream/DALLE_2022-11-02_16.12.59_-__helicopter_blades_on_a_flying_camel_photorealistic_uhd.webp)
+![A flying Camel A](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.38.webp)
+![A flying Camel B](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.32.webp)
+![A flying Camel C](/optimized/portfolio/desert-dream/DALLE_2022-11-02_23.42.24.webp)
 
 I worked on plant life, so went with succulents and palm trees. Using Midjourney, I ended up with some photorealistic succulents that looked like animals in disguise, and a very neon looking succulent pretending to be a palm tree.
 
 Using DALL-E's outpainting tool, I was able to take my Midjourney palm succulent and extend it further.
 
-![This looks like a happy crab](/optimized/portfolio/desert-dream/dinosaur_succulent1.png)
-![This looks like an angry crab](/optimized/portfolio/desert-dream/dinosaur_succulent2.png)
-![Originally we were going for bioluminescent palm trees](/optimized/portfolio/desert-dream/karomancer_bioluminescent_desert_oasis_palm_trees_with_cacti_ne_660fdce6-0c07-4987-8992-2818b6b33bc8.png) 
-![Top of the succulent tree generated with Midjourney, the trunk extended with DALL-E](/optimized/portfolio/desert-dream/DALLE_2022-10-30_19.51.36_-_photograph_of_a_succulent_desert_palm_tree_with_cyan_and_magenta_leaves_and_spikey_bark.png)
+![This looks like a happy crab](/optimized/portfolio/desert-dream/dinosaur_succulent1.webp)
+![This looks like an angry crab](/optimized/portfolio/desert-dream/dinosaur_succulent2.webp)
+![Originally we were going for bioluminescent palm trees](/optimized/portfolio/desert-dream/karomancer_bioluminescent_desert_oasis_palm_trees_with_cacti_ne_660fdce6-0c07-4987-8992-2818b6b33bc8.webp) 
+![Top of the succulent tree generated with Midjourney, the trunk extended with DALL-E](/optimized/portfolio/desert-dream/DALLE_2022-10-30_19.51.36_-_photograph_of_a_succulent_desert_palm_tree_with_cyan_and_magenta_leaves_and_spikey_bark.webp)
 
 Alfonssette was in charge of the background. She tried a few styles before settling on something more realistic. Our final day landscape, followed by two runner-ups
 
-![A near photorealistic looking desert with dunes of sand](/optimized/portfolio/desert-dream/daytime_photorealistic_desert_day_time_whimsical_dreamy_42f08c76-c852-4cef-9fd1-a06f53c64865.png)
+![A near photorealistic looking desert with dunes of sand](/optimized/portfolio/desert-dream/daytime_photorealistic_desert_day_time_whimsical_dreamy_42f08c76-c852-4cef-9fd1-a06f53c64865.webp)
 ![A surreal looking desert landscape with stippled trees and a sunset](/optimized/portfolio/desert-dream/sunset_illustration.webp)
-![A surreal desert landscape with porous trees that resemble sponges](/optimized/portfolio/desert-dream/desert2.png)
+![A surreal desert landscape with porous trees that resemble sponges](/optimized/portfolio/desert-dream/desert2.webp)
 
 ### Night Desert
 
@@ -123,16 +123,16 @@ We did the same process with the night one. We all really wanted bioluminescent 
 
 Lizards created with DALL-E, flowers by Midjourney.
 
-![We all really wanted bioluminescent lizards and flowers. Lizards created with DALL-E, flowers by Midjourney](/optimized/portfolio/desert-dream/lizards.png)
-![Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_07c1344f-a34d-493a-89a1-008812b7d364.png](/optimized/portfolio/desert-dream/Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_07c1344f-a34d-493a-89a1-008812b7d364.png)
-![Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_f2868704-1c68-40fa-8c7e-782925f86119.png](/optimized/portfolio/desert-dream/Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_f2868704-1c68-40fa-8c7e-782925f86119.png)
+![We all really wanted bioluminescent lizards and flowers. Lizards created with DALL-E, flowers by Midjourney](/optimized/portfolio/desert-dream/lizards.webp)
+![Irregular glowy flowers growing from the ground (variant A)](/optimized/portfolio/desert-dream/Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_07c1344f-a34d-493a-89a1-008812b7d364.webp)
+![Irregular glowy flowers growing from the ground (variant B)](/optimized/portfolio/desert-dream/Alfon_Medina_irregular_glowy_flowers_growing_from_the_ground._M_f2868704-1c68-40fa-8c7e-782925f86119.webp)
 
 
 Our final night landscape, followed by two runner ups
 
-![Our final landscape](/optimized/portfolio/desert-dream/Night_desert_final.png)
-![desert1.png](/optimized/portfolio/desert-dream/desert1.png)
-![desert 3.png](/optimized/portfolio/desert-dream/desert_3.png)
+![Our final landscape](/optimized/portfolio/desert-dream/Night_desert_final.webp)
+![Desert landscape variant 1](/optimized/portfolio/desert-dream/desert1.webp)
+![Desert landscape variant 3](/optimized/portfolio/desert-dream/desert_3.webp)
 
 ## Composition & Layering
 
@@ -147,16 +147,16 @@ We decided we wanted each of the two scenes to be 4 layers deep. The background 
 
 Our final day composition and the silhouettes of its layers, image traced in Adobe Illustrator, ready to be laser cut:
 
-![testdesertstage.png](/optimized/portfolio/desert-dream/testdesertstage.png)
-![Silhouettes of layers](/optimized/portfolio/desert-dream/Untitled%204.png)
-![Untitled](/optimized/portfolio/desert-dream/Untitled%205.png)
-![Untitled](/optimized/portfolio/desert-dream/Untitled%206.png)
+![Test desert stage composition](/optimized/portfolio/desert-dream/testdesertstage.webp)
+![Silhouettes of layers](/optimized/portfolio/desert-dream/Untitled%204.webp)
+![Untitled](/optimized/portfolio/desert-dream/Untitled%205.webp)
+![Untitled](/optimized/portfolio/desert-dream/Untitled%206.webp)
 
 ### **Night time desert**
 
 Our final night composition and the silhouettes of its layers, image traced in Adobe Illustrator, ready to be laser cut:
 
-![Finaltest_nightdesertstage.png](/optimized/portfolio/desert-dream/Finaltest_nightdesertstage.png)
+![Final test night desert stage composition](/optimized/portfolio/desert-dream/Finaltest_nightdesertstage.webp)
 ![Silhouettes of layers](/optimized/portfolio/desert-dream/Front_night_desert.svg)
 ![middle.svg](/optimized/portfolio/desert-dream/middle.svg)
 ![middle bg .svg](/optimized/portfolio/desert-dream/middle_bg_.svg)
@@ -167,7 +167,7 @@ Before fabricating the final paper theater, we wanted to make sure the assets wo
 
 ![Video of testing the helicopter camel in Adobe Aero](/optimized/portfolio/desert-dream/VID20221109231133.mp4)
 ![Screenshot of moving things in Adobe Aero](/optimized/portfolio/desert-dream/IMG_3037.webp)
-![Screnshot of a camel floating in space](/optimized/portfolio/desert-dream/IMG_3041.PNG)
+![Screnshot of a camel floating in space](/optimized/portfolio/desert-dream/IMG_3041.webp)
 ![Screenshot of the view from a camera of a woman holding up a picture in AR space](/optimized/portfolio/desert-dream/IMG_3039.webp)
 
 We used the laser cutter to make a quick prototype of the day desert out of cardboard to make sure the layers would work
