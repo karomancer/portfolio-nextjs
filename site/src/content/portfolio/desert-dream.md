@@ -166,9 +166,9 @@ Our final night composition and the silhouettes of its layers, image traced in A
 Before fabricating the final paper theater, we wanted to make sure the assets worked well together in Adobe Aero. We did a little test drive of the composition and animations.
 
 ![Video of testing the helicopter camel in Adobe Aero](/optimized/portfolio/desert-dream/VID20221109231133.mp4)
-![Screenshot of moving things in Adobe Aero](/optimized/portfolio/desert-dream/IMG_3037.png)
+![Screenshot of moving things in Adobe Aero](/optimized/portfolio/desert-dream/IMG_3037.webp)
 ![Screnshot of a camel floating in space](/optimized/portfolio/desert-dream/IMG_3041.PNG)
-![Screenshot of the view from a camera of a woman holding up a picture in AR space](/optimized/portfolio/desert-dream/IMG_3039.png)
+![Screenshot of the view from a camera of a woman holding up a picture in AR space](/optimized/portfolio/desert-dream/IMG_3039.webp)
 
 We used the laser cutter to make a quick prototype of the day desert out of cardboard to make sure the layers would work
 
