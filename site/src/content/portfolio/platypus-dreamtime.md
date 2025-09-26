@@ -74,15 +74,15 @@ Through a friend of a friend, I found a timberer who was willing to take part in
 
 ![Timberer Interview](/optimized/portfolio/playtpus-dreamtime/timberer_interview.webp)
 
-![Lo-Fi testing with users](/optimized/portfolio/playtpus-dreamtime/hydroponist_interview.png)
+![Lo-Fi testing with users](/optimized/portfolio/playtpus-dreamtime/hydroponist_interview.webp)
 
 Identifying the entities involved, the flow of information, and where the breakdowns are in that flow
 
-![Flow of information](/optimized/portfolio/playtpus-dreamtime/flowchart.png)
+![Flow of information](/optimized/portfolio/playtpus-dreamtime/flowchart.webp)
 
 Who we interviewed to both understand the agricultural space better but also to test the ease of our UX in our mockups.
 
-![Interview stats 38 interviews 14 potential Platypus users](/optimized/portfolio/playtpus-dreamtime/interview_stats.png)
+![Interview stats 38 interviews 14 potential Platypus users](/optimized/portfolio/playtpus-dreamtime/interview_stats.webp)
 
 
 ## Final recommendations and presentation

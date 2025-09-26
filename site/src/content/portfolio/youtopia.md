@@ -60,10 +60,10 @@ Projection mapping on city block models that changes in real time to reflect aud
 
 This idea takes cues from [dotmocracy](https://dotmocracy.org/), which visualizes opinions & data gathered from the audience via dots on a canvas. The different areas of the city would correspond to UN’s 17 Sustainable Development Goals, such as a hospital representing health and wellness. The audience votes by putting tokens in corresponding areas based on their priorities of utopia.
 
-![Illustration of people playing with a miniature city on a table with a projector](/optimized/portfolio/youtopia/idea1.png)
-![A photograph of people playing with a miniature scale model of a city](/optimized/portfolio/youtopia/idea1_1.png)
-![A photograph of people playing with figurines on a table projected with light](/optimized/portfolio/youtopia/idea1_2.png)
-![A photograph of people moving blocks on a table with projected windows](/optimized/portfolio/youtopia/idea1_3.png)
+![Illustration of people playing with a miniature city on a table with a projector](/optimized/portfolio/youtopia/idea1.webp)
+![A photograph of people playing with a miniature scale model of a city](/optimized/portfolio/youtopia/idea1_1.webp)
+![A photograph of people playing with figurines on a table projected with light](/optimized/portfolio/youtopia/idea1_2.webp)
+![A photograph of people moving blocks on a table with projected windows](/optimized/portfolio/youtopia/idea1_3.webp)
 
 ### Idea #2: AI-Generated City Skyline Mural
 
@@ -74,7 +74,7 @@ Viewers will walk into a room and see a panning, parallax project mural collage 
 There would be a little photobooth area to print out or digitally share a postcard of their utopia block. At the end of the experience would be a wall with projected word clouds and visualizations of peoples’ answers so you get a sense of where the majority lies.
 
 ![Illustration of people standing in front of a mural of a city on one wall and a word cloud on the other](/optimized/portfolio/youtopia/idea2.webp)
-![Photograph of a room with kiosks lined up in front of a wall with a sky mural](/optimized/portfolio/youtopia/idea2_1.png)
+![Photograph of a room with kiosks lined up in front of a wall with a sky mural](/optimized/portfolio/youtopia/idea2_1.webp)
 ![Animated panning illustration of a city](/optimized/portfolio/youtopia/idea2_2.mp4)
 ![Video of someone using a photo kiosk at a conference](/optimized/portfolio/youtopia/idea2_3.mp4)
 
@@ -87,7 +87,7 @@ The clues would be constructed in a way that should be done in groups, such as g
 For this idea, we had additional goals. Namely we wanted to introduce the result and concept of the research via an activity that encourages more direct collaborative interaction.
 
 ![Animated illustration of a room of exhibits and taking a small item and placing it on a wall to illuminate part of the wall](/optimized/portfolio/youtopia/idea3.gif)
-![Photograph of a wall with sculptures with some of them lit up](/optimized/portfolio/youtopia/idea3_1.png)
+![Photograph of a wall with sculptures with some of them lit up](/optimized/portfolio/youtopia/idea3_1.webp)
 ![Video of someone unfurling a scavenger hunt map](/optimized/portfolio/youtopia/idea3_2.gif)
 
 ## Schematics
@@ -100,13 +100,13 @@ From there we had to create our plan, for both the exact user flow as well as th
 
 Originally we wanted people to answer a questionaire at the start of their experience for our own record keeping (and to give the researchers more data to work with), but due to time considerations we axed it.
 
-![Flow chart showing the user flow from approaching to reading the research to taking the tokens to placing in buildings](/optimized/portfolio/youtopia/userflow.png)
+![Flow chart showing the user flow from approaching to reading the research to taking the tokens to placing in buildings](/optimized/portfolio/youtopia/userflow.webp)
 
 ### Implementation plan
 
 This was our final project for the class, so we only had 5 weeks to execute with 5 people.
 
-![A Gantt chart showing the plan from March to May](/optimized/portfolio/youtopia/gantt.png)
+![A Gantt chart showing the plan from March to May](/optimized/portfolio/youtopia/gantt.webp)
 
 ## Design
 
@@ -180,7 +180,7 @@ While my first cardboard prototype was done on the fly just for sizing purposes,
 
 So first thing's first; make the sides of the building in Illustrator, then cut out of wood.
 
-![A screenshot from Illustrator of many sides of a building with the windows cut out](/optimized/portfolio/youtopia/hospitalcutout.png)
+![A screenshot from Illustrator of many sides of a building with the windows cut out](/optimized/portfolio/youtopia/hospitalcutout.webp)
 ![Photograph of the front of a wooden model hospital ](/optimized/portfolio/youtopia/woodhospital.webp)
 ![Photograph of the back of a wooden hospital that is singed on the edges](/optimized/portfolio/youtopia/cardboardhospital2.webp)
 

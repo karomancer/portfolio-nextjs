@@ -121,7 +121,7 @@ Some of the Rhythm Heaven Fever games also have a little surprise at the end if 
 ### Tutorial assets
 In theme with the rest of the game, I wanted the tutorial to paint the player as a new employee of a Starbucks-like café where the steamed milk comes from a magical cow. So who best to teach that to the player than an adorable barista?
 
-![Spritemap of an animated Starbucks inspired barista](/optimized/portfolio/uddermayhem/barista.png)
+![Spritemap of an animated Starbucks inspired barista](/optimized/portfolio/uddermayhem/barista.webp)
 
 When I first made the udder, I thought everyone had a vague idea of how to milk a cow but after witnessing players grabbing the teats in various odd ways, I knew I also had to add in an animation showing how to properly grab and squeeze them.
 
@@ -237,7 +237,7 @@ To figure out the correct proportions for the udder, I made a mylar balloon mode
 Once I got the right proportions, I dissected my own balloon and measured it to create a CAD model in **Autodesk Fusion 360**, then inverted it and created a 4-piece udder mold box with pre-drilled holes at the top so the udder could be drilled down into a cow belly later.
 
 ![Photograph of a person holding an udder made of mylar balloon](/optimized/portfolio/uddermayhem/mylar1.webp)
-![Screenshot of a gray 3d modeled udder](/optimized/portfolio/uddermayhem/cad1.png)
+![Screenshot of a gray 3d modeled udder](/optimized/portfolio/uddermayhem/cad1.webp)
 ![Screenshot of a gray 3d modeled udder moldbox](/optimized/portfolio/uddermayhem/cad2.webp)
 
 Of course, making a beauitful udder means nothing for a video game if there aren't any accompanying electronics to detect a squeeze. So I made a single-teat mold box and made silicone brush casts to make test teats for different electronics experiments.

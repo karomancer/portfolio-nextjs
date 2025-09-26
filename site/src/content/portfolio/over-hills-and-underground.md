@@ -41,7 +41,7 @@ I had never made an eco-wallet before, so there was a lot of experimentation to 
 
 | | |
 | --- | ---- |
-| ![A design on a CD itself](/optimized/portfolio/over-hills-and-underground/first_attempt_cd.png) | ![Design of ghostly imagery over photographs of the inside of a well over an eco-wallet template](/optimized/portfolio/over-hills-and-underground/first_attempt.png) |
+| ![A design on a CD itself](/optimized/portfolio/over-hills-and-underground/first_attempt_cd.webp) | ![Design of ghostly imagery over photographs of the inside of a well over an eco-wallet template](/optimized/portfolio/over-hills-and-underground/first_attempt.webp) |
 
 The Eco-wallet was printed on glossy paper with an updated version of the design after a few prints.
 

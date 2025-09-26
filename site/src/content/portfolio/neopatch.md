@@ -69,27 +69,27 @@ We did not get to V2 or V3, but we’re interested in trying!
 
 Here are the components purchased: 
 
-![Screenshot of an Adafruit receipt for light strips](/optimized/portfolio/neopatch/Untitled.png)
+![Screenshot of an Adafruit receipt for light strips](/optimized/portfolio/neopatch/Untitled.webp)
 
-![Screenshot of an Adafruit receipt for breadboards](/optimized/portfolio/neopatch/Untitled%201.png)
+![Screenshot of an Adafruit receipt for breadboards](/optimized/portfolio/neopatch/Untitled%201.webp)
 
-![Screenshot of an Adafruit receipt for RFID reader](/optimized/portfolio/neopatch/Untitled%202.png)
+![Screenshot of an Adafruit receipt for RFID reader](/optimized/portfolio/neopatch/Untitled%202.webp)
 
-![Screenshot of an Adafruit receipt for light rings](/optimized/portfolio/neopatch/Untitled%203.png)
+![Screenshot of an Adafruit receipt for light rings](/optimized/portfolio/neopatch/Untitled%203.webp)
 
-![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%204.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%204.webp)
 
-![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%205.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%205.webp)
 
-![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%206.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%206.webp)
 
-![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%207.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%207.webp)
 
-![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%208.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%208.webp)
 
-![Screenshot of an Amazon order for RFID tags](/optimized/portfolio/neopatch/Untitled%209.png)
+![Screenshot of an Amazon order for RFID tags](/optimized/portfolio/neopatch/Untitled%209.webp)
 
-![Screenshot of an Amazon order for embroidered patches](/optimized/portfolio/neopatch/Untitled%2010.png)
+![Screenshot of an Amazon order for embroidered patches](/optimized/portfolio/neopatch/Untitled%2010.webp)
 
 Total cost ended up being around $200.
 
@@ -135,7 +135,7 @@ function getCellNumber(int row, int column) {
 
 Daniel largely covered the light animations, while I covered the NFC reading and writing and fabrication. We discovered Arduino allows for its code to be separated into files, which made this software engineer that’s allergic to files larger than 300 lines happy. This ended up being how we organized our files:
 
-![Screenshot of many tabs of code in the Arduino IDE](/optimized/portfolio/neopatch/Untitled%2012.png)
+![Screenshot of many tabs of code in the Arduino IDE](/optimized/portfolio/neopatch/Untitled%2012.webp)
 
 The code we wrote can be seen on GitHub:
 

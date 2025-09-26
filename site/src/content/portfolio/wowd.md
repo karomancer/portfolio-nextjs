@@ -7,7 +7,7 @@ collaborators:
 class: ""
 date: 2022-06-15T20:52:25.893Z
 preview: /optimized/portfolio/wowd/preview.mp4
-cover: /optimized/portfolio/wowd/cover.png
+cover: /optimized/portfolio/wowd/cover.webp
 og_preview: /optimized/portfolio/wowd/og_image.webp
 draft: false
 url: https://www.wowd.co/

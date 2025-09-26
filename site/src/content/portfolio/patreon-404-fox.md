@@ -8,7 +8,7 @@ class: ""
 date: 2017-07-15T02:44:05.000Z
 preview: /optimized/portfolio/patreon-404-fox/preview.mp4
 cover: /optimized/portfolio/patreon-404-fox/cover.gif
-og_preview: /optimized/portfolio/patreon-404-fox/og_image.png
+og_preview: /optimized/portfolio/patreon-404-fox/og_image.webp
 draft: false
 url: https://www.patreon.com/404Page
 technologies:
@@ -69,8 +69,8 @@ While the rebrand itself was [highly controversial](https://medium.com/@cooperth
 
 | | |
 | -- | -- |
-| ![Tweet by Patreon unveiling the new 404 page](/optimized/portfolio/patreon-404-fox/tweet_patreon.png) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/optimized/portfolio/patreon-404-fox/tweet_jason.png) |
-| ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_mac.png) | ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_kevin.png) |
+| ![Tweet by Patreon unveiling the new 404 page](/optimized/portfolio/patreon-404-fox/tweet_patreon.webp) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/optimized/portfolio/patreon-404-fox/tweet_jason.webp) |
+| ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_mac.webp) | ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_kevin.webp) |
 
 
 ## Never Enough Foxes
@@ -79,4 +79,4 @@ Even though this project was totally rogue and merged in secret, the new fox des
 
 | | |
 | -- | -- |
-| ![A fox wearing a construction hat holding a wrench](/optimized/portfolio/patreon-404-fox/construction_fox.png) | ![A fox holding a microphone to the viewer](/optimized/portfolio/patreon-404-fox/interview_fox.webp) |
+| ![A fox wearing a construction hat holding a wrench](/optimized/portfolio/patreon-404-fox/construction_fox.webp) | ![A fox holding a microphone to the viewer](/optimized/portfolio/patreon-404-fox/interview_fox.webp) |

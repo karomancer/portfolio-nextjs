@@ -5,9 +5,9 @@ slug: /portfolio/masks-of-manic-depression
 collaborators: []
 class: Hypercinema
 date: 2022-12-08T23:09:15.000Z
-preview: /optimized/portfolio/masks-of-manic-depression/mania.png
-cover: /optimized/portfolio/masks-of-manic-depression/depression.png
-og_preview: /optimized/portfolio/masks-of-manic-depression/depression.png
+preview: /optimized/portfolio/masks-of-manic-depression/mania.webp
+cover: /optimized/portfolio/masks-of-manic-depression/depression.webp
+og_preview: /optimized/portfolio/masks-of-manic-depression/depression.webp
 draft: false
 url: ""
 technologies:
@@ -45,13 +45,13 @@ In the Window of Tolerance model, people go from high energy anxiety (hyperarous
 
 I also have complex PTSD, so I’m intimately familiar with this model as well as manic depression.
 
-![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled.webp)
 
 People with rapid cycling bipolar disorder or suffering from extreme trauma state switching have a narrow band for their Window of Tolerance. They also have a problem in finding and identifying Self within the swings.
 
 The original idea I had was to have the viewer spawn within a double mask, to play the “inner self” that was trapped between mania and depression, hyper- and hypo-arousal. From this trapped place, they could only see the world through the eyes and mouths of either side, but didn’t have a face of its own to see the world as it is, grounded in reality.
 
-![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%201.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%201.webp)
 
 I thought there could also be a bright amorphous shape, animated in the center, to represent our wise Self. Or the player is that blob. Unsure!  
 
@@ -92,9 +92,9 @@ I felt like loose brush strokes made with TiltBrush would be perfect to represen
 
 I looked for things like this to take apart into its separate components:
 
-![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%202.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%202.webp)
 
-![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%203.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%203.webp)
 
 ### Depression
 

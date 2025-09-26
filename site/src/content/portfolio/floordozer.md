@@ -37,8 +37,8 @@ type: portfolioPiece
 A [Chindogu](https://chindogu.com/ics/?page_id=773) is an "unusual tool" that solves an every day problem most can relate to but often creates more problems while doing so. [Kenji Kawakami](https://en.wikipedia.org/wiki/Kenji_Kawakami) coined the term in Japan in the '80s and '90s and created a skymall style magazine of user submitted chindogu.
 
 ![3 photographs: one depicting high heels with tiny umbrellas affixed to the toes, one with a fan attached to chopsticks holding hot noodles, and one with a butter dispenser that resembles chapstick](/optimized/portfolio/floordozer/chindogu3.webp)
-![A magazine cover that says "Unuseless Japanese Inventions" with a picture of a person eating ramen with a splash guard that looks like flower around their face.](/optimized/portfolio/floordozer/chindogu1.png)
-![A photograph of a woman asleep in a train with a helmet and suction cup stuck to the window behind her, keeping her head from straying forward](/optimized/portfolio/floordozer/chindogu2.png)
+![A magazine cover that says "Unuseless Japanese Inventions" with a picture of a person eating ramen with a splash guard that looks like flower around their face.](/optimized/portfolio/floordozer/chindogu1.webp)
+![A photograph of a woman asleep in a train with a helmet and suction cup stuck to the window behind her, keeping her head from straying forward](/optimized/portfolio/floordozer/chindogu2.webp)
 
 To be considered a chindogu, an item must possess the following 10 characteristics:
 

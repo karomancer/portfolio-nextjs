@@ -5,7 +5,7 @@ slug: /portfolio/kasumi
 collaborators: []
 class: ""
 date: 2019-10-10T17:09:55.144Z
-preview: /optimized/portfolio/kasumi/preview.png
+preview: /optimized/portfolio/kasumi/preview.webp
 cover: /optimized/portfolio/kasumi/screenshot.webp
 og_preview: /optimized/portfolio/kasumi/presentation1.webp
 draft: false
@@ -39,7 +39,7 @@ In 2019, Atlus announced they were doing a re-release of their famous game Perso
 
 ||
 |--|
-|![Concept art of a red headed girl in a leotard](/optimized/portfolio/kasumi/conceptart.png)|
+|![Concept art of a red headed girl in a leotard](/optimized/portfolio/kasumi/conceptart.webp)|
 
 ## The Process
 
@@ -81,7 +81,7 @@ Jacket done!
 
 Kasumi has a very elaborate looking belt:
 
-![Game screenshot of a silvery belt with a giant rose](/optimized/portfolio/kasumi/beltscreen.png)
+![Game screenshot of a silvery belt with a giant rose](/optimized/portfolio/kasumi/beltscreen.webp)
 
 First I had to make the rose. Just months prior, I had made paper flowers for my friend's wedding, so it was time to test those skills. I got craft foam and cut out each individual petal and glued them at the bottom to make some foam roses. I then carved the flat belt part out of EVA foam, used an engraver to put in the engraved detailing, then affixed armature wire at the ends for the chain.
 
@@ -95,7 +95,7 @@ Now all there was left for the belt was to paint it. But before that...
 
 What's a superhero without her mask? Every character in the Persona series has an interesting mask, and Kasumi is no exception. Once again, I combed through the trailer to find the perfect shot of Kasumi's mask.
 
-![Game screenshot of a girl with red hair wearing a large black mask](/optimized/portfolio/kasumi/maskscreen.png)
+![Game screenshot of a girl with red hair wearing a large black mask](/optimized/portfolio/kasumi/maskscreen.webp)
 
 I decided to cut each half of the mask out of cardboard, glue at the center, and enclose in Worbla. Worbla is an easy-to-use thermoplastic that is commonly used in the cosplayer community. It is expensive as hell, but it makes things like this a breeze to make.
 
@@ -121,7 +121,7 @@ Kasumi's main weapon is a sword. It's monochromatic, and weirdly, the in-game sh
 
 | | |
 | -- | -- |
-| ![Game screenshot of a red glove holding a silver sword hilt](/optimized/portfolio/kasumi/swordscreen1.png) | ![Game screenshot of a sword stabbing a masked monster](/optimized/portfolio/kasumi/swordscreen2.png) |
+| ![Game screenshot of a red glove holding a silver sword hilt](/optimized/portfolio/kasumi/swordscreen1.webp) | ![Game screenshot of a sword stabbing a masked monster](/optimized/portfolio/kasumi/swordscreen2.webp) |
 
 I decided to use a belt sander to carve the sword out of EVA foam. I carved two halves, dremeled a channel in both to accommodate a tomato stake, then glued the two halves together before enclosing in a giant sheet of Worbla. The pommels were sculpted out of foam clay.
 
@@ -147,9 +147,9 @@ Many of these steps took more time than I would have liked, so I had to cut some
 I finished something for Halloween! Here's the final pictures plus the concept art again as reference.
 
 ![Photograph of a girl in a red wig and black leotard pulling out a sword](/optimized/portfolio/kasumi/final2.webp)
-![Concept art of a red headed girl in a leotard](/optimized/portfolio/kasumi/conceptart.png)
+![Concept art of a red headed girl in a leotard](/optimized/portfolio/kasumi/conceptart.webp)
 ![Photograph of a girl in a red wig and black leotard and sword standing proudly](/optimized/portfolio/kasumi/final1.webp)
-![Photograph of a girl in a red wig and black leotard laughing](/optimized/portfolio/kasumi/preview.png)
+![Photograph of a girl in a red wig and black leotard laughing](/optimized/portfolio/kasumi/preview.webp)
 ![Video of a girl in a red wig and black leotard attempting to do a pull up](/optimized/portfolio/kasumi/exercise.mp4)
 
 ---
@@ -163,11 +163,11 @@ I never felt too great about the sword I made. It was lopsided, it easily damage
 
 Making anything geometric by hand is difficult to make symmetric. So I bought myself a 3D printer and taught myself CAD. I used the same reference photos as above and made these files. I found the hilt pattern exceedingly challenging.
 
-![Screenshot of a parts of a sword constructed in CAD](/optimized/portfolio/kasumi/cad2.png)
+![Screenshot of a parts of a sword constructed in CAD](/optimized/portfolio/kasumi/cad2.webp)
 
 | | |
 | -- | -- |
-| ![Screenshot of a crossguard of a sword constructed in CAD](/optimized/portfolio/kasumi/cad1.png) | ![Screenshot of a sword and sheath constructed in CAD](/optimized/portfolio/kasumi/cad3.png) |
+| ![Screenshot of a crossguard of a sword constructed in CAD](/optimized/portfolio/kasumi/cad1.webp) | ![Screenshot of a sword and sheath constructed in CAD](/optimized/portfolio/kasumi/cad3.webp) |
 
 ### 3D Printing
 
