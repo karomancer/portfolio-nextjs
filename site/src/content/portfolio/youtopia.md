@@ -75,8 +75,8 @@ There would be a little photobooth area to print out or digitally share a postca
 
 ![Illustration of people standing in front of a mural of a city on one wall and a word cloud on the other](/optimized/portfolio/youtopia/idea2.webp)
 ![Photograph of a room with kiosks lined up in front of a wall with a sky mural](/optimized/portfolio/youtopia/idea2_1.png)
-![Animated panning illustration of a city](/optimized/portfolio/youtopia/idea2_2.gif)
-![Video of someone using a photo kiosk at a conference](/optimized/portfolio/youtopia/idea2_3.gif)
+<video src="/optimized/portfolio/youtopia/idea2_2.mp4" autoplay loop muted></video>
+<video src="/optimized/portfolio/youtopia/idea2_3.mp4" autoplay loop muted></video>
 
 ### Idea #3: Scavenger Hunt
 
