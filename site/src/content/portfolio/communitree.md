@@ -44,7 +44,7 @@ Through a user- and garden-centered research process, we developed a concept for
 
 Our team decided to investigate the use of technology at public parks in order to develop a ubiquitous computing system concept to support the outdoor experience.
 
-![Slide deck of research findings about dog parks](/portfolio/communitree/researchFindings.pdf)
+![Slide deck of research findings about dog parks](/optimized/portfolio/communitree/researchFindings.pdf)
 
 Ultimately, we chose to focus on the needs of the Pittsburgh Botanic Garden because the site is still being developed. The needs and behaviors of the space are still emerging and a UbiComp system could enhance the environment in unexpected ways.
 

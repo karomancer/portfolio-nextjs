@@ -213,4 +213,4 @@ For my *Game Design and the Pyschology of Choice* class at ITP, I did my final r
 
 Unrelated to this costume, but here's the presentation slides if you have any interest!
 
-![Presentation slides for an analysis of Persona 5 psychology](/portfolio/kasumi/presentationSlides.pdf)
+![Presentation slides for an analysis of Persona 5 psychology](/optimized/portfolio/kasumi/presentationSlides.pdf)

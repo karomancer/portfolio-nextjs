@@ -53,7 +53,7 @@ As per the Implosion Method, I started by making a Knowledge Map of what I alrea
 I started my process by tearing apart my remote to see the components inside:
 
 ![The remote as-is](/optimized/portfolio/tv-remote/PXL_20221012_043959088.mp4)
-![PXL_20220920_222610080.jpeg](/optimized/portfolio/tv-remote/PXL_20220920_222610080.webp)
+![PXL_20220920_222610080.webp](/optimized/portfolio/tv-remote/PXL_20220920_222610080.webp)
 ![The remote as-is](/optimized/portfolio/tv-remote/Untitled%203.png)
 
 Unfortunately, I wasn’t able to find out which exact model of remote I had, and the serial numbers were scratched off the back. I did find out it uses infrared sensors to operate, which is a later development in the invention of remotes. Speaking of…
@@ -228,7 +228,7 @@ In order for my Arduino Nano to communicate to my computer, I would have to rela
 
 Here’s a visual representation of the flow we want to achieve here:
 
-![Frame 5 (1).jpg](/optimized/portfolio/tv-remote/Frame_5_(1).webp)
+![Frame 5 (1).webp](/optimized/portfolio/tv-remote/Frame_5_(1).webp)
 
 Ok, onto the first few hardware steps on receiving IR messages!
 

@@ -394,7 +394,7 @@ The video is at the top of this file, but here are the slides and photographs fr
 
 #### Final slides
 
-![Final satirical presentation showing research](/portfolio/dr-snuggles/thesis_presentation.pdf)
+![Final satirical presentation showing research](/optimized/portfolio/dr-snuggles/thesis_presentation.pdf)
 
 #### Pictures from the final presentation
 

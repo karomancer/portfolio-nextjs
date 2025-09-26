@@ -31,7 +31,7 @@ piece_type:
   - portfolio
 ---
 
-![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)
+![Final presentation showing research](/optimized/portfolio/playtpus-dreamtime/presentation.pdf)
 
 ## Context
 At CMU, both Bachelors and Master [Human-Computer Interaction](https://hcii.cmu.edu/) students work on capstone projects to close out their education. They are the exact same with the exception that the bachelor version is a semester shorter.
@@ -91,4 +91,4 @@ As part of our capstone, we made a presentation of work done for Platypus LLC to
 
 In addition to the presentation, we created a final recommendations report of our UX findings and gave it to our client, Platypus LLC. It covered the exploration for how we designed our medium-fidelity prototype we created and how different identified personas would use that prototype. Also explains the breakdowns we found in their existing product and user feedback on our iterations on their product.
 
-![Final report](/portfolio/playtpus-dreamtime/final_report.pdf)
+![Final report](/optimized/portfolio/playtpus-dreamtime/final_report.pdf)

@@ -157,9 +157,9 @@ Our final day composition and the silhouettes of its layers, image traced in Ado
 Our final night composition and the silhouettes of its layers, image traced in Adobe Illustrator, ready to be laser cut:
 
 ![Finaltest_nightdesertstage.png](/optimized/portfolio/desert-dream/Finaltest_nightdesertstage.png)
-![Silhouettes of layers](/portfolio/desert-dream/Front_night_desert.svg)
-![middle.svg](/portfolio/desert-dream/middle.svg)
-![middle bg .svg](/portfolio/desert-dream/middle_bg_.svg)
+![Silhouettes of layers](/optimized/portfolio/desert-dream/Front_night_desert.svg)
+![middle.svg](/optimized/portfolio/desert-dream/middle.svg)
+![middle bg .svg](/optimized/portfolio/desert-dream/middle_bg_.svg)
 
 ## Importing into Adobe Aero
 
@@ -172,7 +172,7 @@ Before fabricating the final paper theater, we wanted to make sure the assets wo
 
 We used the laser cutter to make a quick prototype of the day desert out of cardboard to make sure the layers would work
 
-![original_cd1d57b9-5912-4f27-9909-8860708bbebf_PXL_20221106_015105434.jpg](/optimized/portfolio/desert-dream/original_cd1d57b9-5912-4f27-9909-8860708bbebf_PXL_20221106_015105434.webp)
+![original_cd1d57b9-5912-4f27-9909-8860708bbebf_PXL_20221106_015105434.webp](/optimized/portfolio/desert-dream/original_cd1d57b9-5912-4f27-9909-8860708bbebf_PXL_20221106_015105434.webp)
 
 ## Final Fabrication
 
@@ -196,7 +196,7 @@ We glued cardboard frames to the back of the cardstock to make it more rigid plu
 ![Gluing the cardboard spacers onto the laser cut sheets](/optimized/portfolio/desert-dream/PXL_20221110_042644394.webp)
 ![Two women discussing the construction of the book while holding up layers](/optimized/portfolio/desert-dream/IMG_3144.webp)
 ![Determining proper spacing](/optimized/portfolio/desert-dream/IMG20221109234004.webp)
-![IMG20221109234010.jpg](/optimized/portfolio/desert-dream/IMG20221109234010.webp)
+![IMG20221109234010.webp](/optimized/portfolio/desert-dream/IMG20221109234010.webp)
 
 At some point we started going delirious at 2:00am and started making the book cover. I realized we mismeasured because a book's cover is actually larger than the pages within it, and my teammates weren't sure it was worth the effort to start over. At this point, we were seriously doubting our ability to make it look like a book at all.
 
@@ -204,7 +204,7 @@ At some point we started going delirious at 2:00am and started making the book c
 
 Honestly though? It was worth the extra effort because it really does look like a book!
 
-![IMG20221110034206.jpg](/optimized/portfolio/desert-dream/IMG20221110034206.webp)
+![IMG20221110034206.webp](/optimized/portfolio/desert-dream/IMG20221110034206.webp)
 
 ![…I think it looks pretty book-like, no?](/optimized/portfolio/desert-dream/IMG20221110034211.webp)
 
@@ -232,21 +232,21 @@ The efforts didn't stop at the playtest!
 At the suggestion of our classmates, we brought our book to the documentation lab and got these beautiful shots.
 
 ![Some nice shots of the fabrication](/optimized/portfolio/desert-dream/2V3A4331.webp)
-![2V3A4333.jpg](/optimized/portfolio/desert-dream/2V3A4333.webp)
-![2V3A4340.jpg](/optimized/portfolio/desert-dream/2V3A4340.webp)
+![2V3A4333.webp](/optimized/portfolio/desert-dream/2V3A4333.webp)
+![2V3A4340.webp](/optimized/portfolio/desert-dream/2V3A4340.webp)
 
 The #1 thing we learned from this experience is that Alfonssette has the most beautiful hands
 
 ![The #1 thing we learned from this experience is that Alfonssette has the most beautiful hands](/optimized/portfolio/desert-dream/openbook.mp4)
-![2V3A4358.jpg](/optimized/portfolio/desert-dream/2V3A4358.webp)
-![2V3A4380.jpg](/optimized/portfolio/desert-dream/2V3A4380.webp)
+![2V3A4358.webp](/optimized/portfolio/desert-dream/2V3A4358.webp)
+![2V3A4380.webp](/optimized/portfolio/desert-dream/2V3A4380.webp)
 
-![2V3A4416.jpg](/optimized/portfolio/desert-dream/2V3A4416.webp)
-![2V3A4427.jpg](/optimized/portfolio/desert-dream/2V3A4427.webp)
-![2V3A4421.jpg](/optimized/portfolio/desert-dream/2V3A4421.webp)
+![2V3A4416.webp](/optimized/portfolio/desert-dream/2V3A4416.webp)
+![2V3A4427.webp](/optimized/portfolio/desert-dream/2V3A4427.webp)
+![2V3A4421.webp](/optimized/portfolio/desert-dream/2V3A4421.webp)
 
-![2V3A4434.jpg](/optimized/portfolio/desert-dream/2V3A4434.webp)
+![2V3A4434.webp](/optimized/portfolio/desert-dream/2V3A4434.webp)
 
-![2V3A4439.jpg](/optimized/portfolio/desert-dream/2V3A4439.webp)
+![2V3A4439.webp](/optimized/portfolio/desert-dream/2V3A4439.webp)
 
 Lastly, we also showed our project at the ITP Winter Showcase.
