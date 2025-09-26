@@ -62,5 +62,5 @@ I myself did a lot of compositing for mine as many of the AI generated creations
 
 See the full presentation with speaker notes [here](https://docs.google.com/presentation/d/1lO2AwpowMiUnwX06Rhcm1jBUWzDP5PjrXXmEWIdUdRI/edit?usp=sharing), else see the PDF below!
 
-![Process presentation](/optimized/portfolio/muse/presentation.pdf)
+![Process presentation](/portfolio/muse/presentation.pdf)
 
