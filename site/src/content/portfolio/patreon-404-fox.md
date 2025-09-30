@@ -7,7 +7,7 @@ collaborators:
 class: ""
 date: 2017-07-15T02:44:05.000Z
 preview: /optimized/portfolio/patreon-404-fox/preview.mp4
-cover: /optimized/portfolio/patreon-404-fox/404.webm
+cover: /optimized/portfolio/patreon-404-fox/cover.gif
 og_preview: /optimized/portfolio/patreon-404-fox/og_image.webp
 draft: false
 url: https://www.patreon.com/404Page
