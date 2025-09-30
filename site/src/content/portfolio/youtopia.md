@@ -88,7 +88,7 @@ For this idea, we had additional goals. Namely we wanted to introduce the result
 
 ![Animated illustration of a room of exhibits and taking a small item and placing it on a wall to illuminate part of the wall](/optimized/portfolio/youtopia/idea3.gif)
 ![Photograph of a wall with sculptures with some of them lit up](/optimized/portfolio/youtopia/idea3_1.webp)
-![Video of someone unfurling a scavenger hunt map](/optimized/portfolio/youtopia/idea3_2.gif)
+![Video of someone unfurling a scavenger hunt map](/optimized/portfolio/youtopia/idea3_2.webm)
 
 ## Schematics
 

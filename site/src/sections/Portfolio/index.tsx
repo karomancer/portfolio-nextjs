@@ -119,7 +119,7 @@ const PortfolioSection = ({
                 }}
               >
                 <a key={title} href={slug}>
-                  {preview.match(/mp4/) ? (
+                  {preview.match(/(.mp4|.webm)$/) ? (
                     <video
                       width={thumbnail_width * 200}
                       height={thumbnail_height * 100}

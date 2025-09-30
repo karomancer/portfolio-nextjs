@@ -26,7 +26,7 @@ type: portfolioPiece
 
 ## Experiment #1: Button Swatch
 
-![A little circuit sewn into felt that operates via a button battery.](/optimized/portfolio/textile-interfaces/button_swatch.gif)
+![A little circuit sewn into felt that operates via a button battery.](/optimized/portfolio/textile-interfaces/button_swatch.webm)
 
 ### Materials
 
@@ -43,7 +43,7 @@ Really cool idea for connecting circuits via folding with textiles. Also, didn�
 
 ## Experiment #2: Heart Pressure Button
 
-![A multimeter showing the resistance change (set at a 20Ω baseline) upon squishing the heart](/optimized/portfolio/textile-interfaces/heart.gif)
+![A multimeter showing the resistance change (set at a 20Ω baseline) upon squishing the heart](/optimized/portfolio/textile-interfaces/heart.webm)
 
 ![Ironing on conductive fabric on either side of the heart fabric. Gotta be careful ironing on polyester!](/optimized/portfolio/textile-interfaces/heart2.webp)
 ![Stripping stranded wires to stuff in the heart](/optimized/portfolio/textile-interfaces/heart_process.webp)

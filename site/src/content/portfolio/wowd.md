@@ -49,7 +49,7 @@ Using [Flutter's powerful animation tooling](https://docs.flutter.dev/ui/animati
 
 | | |
 | -- | -- |
-| ![An animated gif showing a bunch of images fading in and then scrolling off the viewport](/optimized/portfolio/wowd/wowd1.gif) | In the welcome slide, small images of actual collaborations made with the Wowd app appear and slide past the user. The hope is to showcase the work of the current userbase and to intrigue the new users to want to learn more about these strange little pieces. |
+| ![An animated gif showing a bunch of images fading in and then scrolling off the viewport](/optimized/portfolio/wowd/wowd1.webm) | In the welcome slide, small images of actual collaborations made with the Wowd app appear and slide past the user. The hope is to showcase the work of the current userbase and to intrigue the new users to want to learn more about these strange little pieces. |
 
 ### Send a request
 
