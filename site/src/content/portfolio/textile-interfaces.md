@@ -10,8 +10,8 @@ date: 2022-12-07T05:41:17.950Z
 preview: ""
 thumbnail_width: 1
 thumbnail_height: 1
-cover: /portfolio/textile-interfaces/heart2.jpeg
-og_preview: /portfolio/textile-interfaces/red_dress_1.jpeg
+cover: /optimized/portfolio/textile-interfaces/heart2.webp
+og_preview: /optimized/portfolio/textile-interfaces/red_dress_1.webp
 draft: true
 url: ""
 technologies:
@@ -26,7 +26,7 @@ type: portfolioPiece
 
 ## Experiment #1: Button Swatch
 
-![A little circuit sewn into felt that operates via a button battery.](/portfolio/textile-interfaces/button_swatch.gif)
+![A little circuit sewn into felt that operates via a button battery.](/optimized/portfolio/textile-interfaces/button_swatch.webm)
 
 ### Materials
 
@@ -43,11 +43,11 @@ Really cool idea for connecting circuits via folding with textiles. Also, didn�
 
 ## Experiment #2: Heart Pressure Button
 
-![A multimeter showing the resistance change (set at a 20Ω baseline) upon squishing the heart](/portfolio/textile-interfaces/heart.gif)
+![A multimeter showing the resistance change (set at a 20Ω baseline) upon squishing the heart](/optimized/portfolio/textile-interfaces/heart.webm)
 
-![Ironing on conductive fabric on either side of the heart fabric. Gotta be careful ironing on polyester!](/portfolio/textile-interfaces/heart2.jpeg)
-![Stripping stranded wires to stuff in the heart](/portfolio/textile-interfaces/heart_process.jpeg)
-![Stuffing it into the heart](/portfolio/textile-interfaces/heart_process2.jpeg)
+![Ironing on conductive fabric on either side of the heart fabric. Gotta be careful ironing on polyester!](/optimized/portfolio/textile-interfaces/heart2.webp)
+![Stripping stranded wires to stuff in the heart](/optimized/portfolio/textile-interfaces/heart_process.webp)
+![Stuffing it into the heart](/optimized/portfolio/textile-interfaces/heart_process2.webp)
 
 I forgot to pick up conductive wool from the supply, so I made my own makeshift conductive stuffing. I stripped stranded wires and wrapped them around and within a ball of polyester fiber fill. I unfortunately didn’t get a picture of what the mixed wire-stuffing looked like, but I did get a picture of stripping the wires!
 
@@ -75,7 +75,7 @@ I see this as an FSR replacement, or maybe a good idea for a stuffed animal. In 
 
 Sew conductive thread from side of the zipper to the next such that when the zipper closes it completes the circuit.
 
-![I accidentally had conductive thread down both sides! Then everything on one side would be connected](/portfolio/textile-interfaces/red_dress_1.jpeg)
+![I accidentally had conductive thread down both sides! Then everything on one side would be connected](/optimized/portfolio/textile-interfaces/red_dress_1.webp)
 
 (I asked my roommate to take a video of me using it…and the video she took is so blurry you can’t see anything. Will make another video later)
 
@@ -83,9 +83,9 @@ Sew conductive thread from side of the zipper to the next such that when the zip
 
 Using EVA foam and aluminum foil, create boob-shaped buttons.
 
-![They’re largely a binary input; no resistive material in between, just a squishy button. The boob shapes themselves are slices of foam glued together with contact cement to make a curved shape, then that contact-cemented onto the body form](/portfolio/textile-interfaces/boobs3.gif)
-![I made an aluminum foil bra as the ground side…](/portfolio/textile-interfaces/boobs1.jpeg)
-![…and the inside of the foam boobs as the data pin side. Affixing with hot glue is NOT recommended.](/portfolio/textile-interfaces/boobs2.jpeg)
+![They’re largely a binary input; no resistive material in between, just a squishy button. The boob shapes themselves are slices of foam glued together with contact cement to make a curved shape, then that contact-cemented onto the body form](/optimized/portfolio/textile-interfaces/boobs3.gif)
+![I made an aluminum foil bra as the ground side…](/optimized/portfolio/textile-interfaces/boobs1.webp)
+![…and the inside of the foam boobs as the data pin side. Affixing with hot glue is NOT recommended.](/optimized/portfolio/textile-interfaces/boobs2.webp)
 
 ### Materials
 - Adafruit Circuit Playground Express

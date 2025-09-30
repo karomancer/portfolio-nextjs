@@ -5,9 +5,9 @@ slug: /portfolio/masks-of-manic-depression
 collaborators: []
 class: Hypercinema
 date: 2022-12-08T23:09:15.000Z
-preview: /portfolio/masks-of-manic-depression/mania.png
-cover: /portfolio/masks-of-manic-depression/depression.png
-og_preview: /portfolio/masks-of-manic-depression/depression.png
+preview: /optimized/portfolio/masks-of-manic-depression/mania.webp
+cover: /optimized/portfolio/masks-of-manic-depression/depression.webp
+og_preview: /optimized/portfolio/masks-of-manic-depression/depression.webp
 draft: false
 url: ""
 technologies:
@@ -25,7 +25,7 @@ piece_type:
   - journal
 ---
 
-![Video of the experience in the Unreal](/portfolio/masks-of-manic-depression/play_tour.mp4)
+![Video of the experience in the Unreal](/optimized/portfolio/masks-of-manic-depression/play_tour.mp4)
 
 Let’s get personal for a hot second here.
 
@@ -45,13 +45,13 @@ In the Window of Tolerance model, people go from high energy anxiety (hyperarous
 
 I also have complex PTSD, so I’m intimately familiar with this model as well as manic depression.
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled.webp)
 
 People with rapid cycling bipolar disorder or suffering from extreme trauma state switching have a narrow band for their Window of Tolerance. They also have a problem in finding and identifying Self within the swings.
 
 The original idea I had was to have the viewer spawn within a double mask, to play the “inner self” that was trapped between mania and depression, hyper- and hypo-arousal. From this trapped place, they could only see the world through the eyes and mouths of either side, but didn’t have a face of its own to see the world as it is, grounded in reality.
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%201.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%201.webp)
 
 I thought there could also be a bright amorphous shape, animated in the center, to represent our wise Self. Or the player is that blob. Unsure!  
 
@@ -59,7 +59,7 @@ I thought there could also be a bright amorphous shape, animated in the center, 
 
 So first off, the masks. I could not for the life of me find an existing asset so I decided to make my own.
 
-![makehead.mov](/portfolio/masks-of-manic-depression/makehead.mov)
+![makehead.mov](/optimized/portfolio/masks-of-manic-depression/makehead.mp4)
 
 I haven’t used 3D modeling tools like Blender or Maya for over a decade, but I did tech myself CAD for 3D printing purposes in 2020. So I just used that.
 
@@ -84,17 +84,17 @@ When I first played with my roommate’s Oculus Quest, I played something called
 
 It really gives you a really organic, sketch-like feeling that’s rare to find in a 3D asset.
  
-![A demo of TiltBrush](/portfolio/masks-of-manic-depression/GlaringImprobableAurochs-mobile.mp4)
+![A demo of TiltBrush](/optimized/portfolio/masks-of-manic-depression/GlaringImprobableAurochs-mobile.mp4)
 
-![Some fun faces drawn in TiltBrush](/portfolio/masks-of-manic-depression/ImmaculateHastyGreyhounddog-mobile.mp4)
+![Some fun faces drawn in TiltBrush](/optimized/portfolio/masks-of-manic-depression/ImmaculateHastyGreyhounddog-mobile.mp4)
 
 I felt like loose brush strokes made with TiltBrush would be perfect to represent a racing, chaotic mind.
 
 I looked for things like this to take apart into its separate components:
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%202.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%202.webp)
 
-![Untitled](/portfolio/masks-of-manic-depression/Untitled%203.png)
+![Untitled](/optimized/portfolio/masks-of-manic-depression/Untitled%203.webp)
 
 ### Depression
 
@@ -126,7 +126,7 @@ I learned from Alexandra that her room wasn’t respecting collision very well, 
 
 Exploring the sculpture in the Unreal Engine editor:
 
-![Video of the experience in the Unreal Editor](/portfolio/masks-of-manic-depression/editing_tour.mp4)
+![Video of the experience in the Unreal Editor](/optimized/portfolio/masks-of-manic-depression/editing_tour.mp4)
 
 If I were to continue to work on this, I would love to still have an inner self represented within the masks, and would love there to be animation. Would love to have the vortex spinning and the chaos confetti lightly exploding onto the Mania mask.
 

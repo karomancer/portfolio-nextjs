@@ -5,11 +5,11 @@ slug: /portfolio/onramp-ux
 collaborators: []
 class: ""
 date: 2020-12-28T07:43:22.121Z
-preview: /portfolio/onramp/preview.mp4
+preview: /optimized/portfolio/onramp/preview.mp4
 thumbnail_width: 1
 thumbnail_height: 2
-cover: /portfolio/onramp/cover.jpg
-og_preview: /portfolio/onramp/og.jpg
+cover: /optimized/portfolio/onramp/cover.webp
+og_preview: /optimized/portfolio/onramp/og.webp
 draft: false
 url: https://onrampcard.com/
 technologies:
@@ -27,7 +27,7 @@ piece_type:
   - work
 ---
 
-![Video of a mobile UX flow for fueling a freight truck](/portfolio/onramp/fuelpay.mp4)
+![Video of a mobile UX flow for fueling a freight truck](/optimized/portfolio/onramp/fuelpay.mp4)
 
 ## About Onramp
 
@@ -43,9 +43,9 @@ In 2020, I worked with their CEO and founder [Michael Morris](https://www.linked
 
 All designs and interactive prototypes were made within Figma.
 
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/pilotflyingj_figma.jpg)
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/figma.jpg)
-![Screenshot of a bunch of screens on Figma](/portfolio/onramp/cover.jpg)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/pilotflyingj_figma.webp)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/figma.webp)
+![Screenshot of a bunch of screens on Figma](/optimized/portfolio/onramp/cover.webp)
 
 
 ### Fuelpay
@@ -58,7 +58,7 @@ Rewards might include Walmart gift cards, free food at participating restaurants
 
 The flow included the trucker planning out their route on a map within the app and being directed to a participating partner fueling station. From there, they would be directed via the app to refill their diesel or reefer, pay for any additional needed services, and complete the transaction all via the app.
 
-![Video of a mobile UX flow for fueling a freight truck](/portfolio/onramp/fuelpay.mp4)
+![Video of a mobile UX flow for fueling a freight truck](/optimized/portfolio/onramp/fuelpay.mp4)
 
 
 ### Lumper payments
@@ -75,4 +75,4 @@ In addition to their FuelPay feature, Onramp wanted to explore the idea of lumpe
 
 | Fleet: Pay a lumper | Lumper: Receive payment via SMS | Lumper: Receive payment via Email |
 | -- | -- | -- | 
-| ![](/portfolio/onramp/EM-PayLumper.mp4) | ![](/portfolio/onramp/EM-LumperSMS.mp4) | ![](/portfolio/onramp/EM-LumperEmail.mp4) |
+| ![](/optimized/portfolio/onramp/EM-PayLumper.mp4) | ![](/optimized/portfolio/onramp/EM-LumperSMS.mp4) | ![](/optimized/portfolio/onramp/EM-LumperEmail.mp4) |

@@ -5,9 +5,9 @@ slug: /portfolio/over-hills-and-underground
 collaborators: []
 class: ""
 date: 2013-04-12T03:26:58.171Z
-preview: /portfolio/over-hills-and-underground/IMG_20201104_170138.jpg
-cover: /portfolio/over-hills-and-underground/cover.jpeg
-og_preview: /portfolio/over-hills-and-underground/IMG_20201104_170208.jpg
+preview: /optimized/portfolio/over-hills-and-underground/IMG_20201104_170138.webp
+cover: /optimized/portfolio/over-hills-and-underground/cover.webp
+og_preview: /optimized/portfolio/over-hills-and-underground/IMG_20201104_170208.webp
 draft: false
 url: https://open.spotify.com/album/7itNh35jKNvfMWEIe9cWln
 technologies:
@@ -23,11 +23,11 @@ piece_type:
   - journal
 ---
 
-![Photograph of the album cover with imagery of caves and hills](/portfolio/over-hills-and-underground/IMG_20201104_170138.jpg)
+![Photograph of the album cover with imagery of caves and hills](/optimized/portfolio/over-hills-and-underground/IMG_20201104_170138.webp)
 
-![](/portfolio/over-hills-and-underground/IMG_20201104_170154.jpg)
-![](/portfolio/over-hills-and-underground/IMG_20201104_170146.jpg)
-![](/portfolio/over-hills-and-underground/IMG_20201104_170208.jpg)
+![](/optimized/portfolio/over-hills-and-underground/IMG_20201104_170154.webp)
+![](/optimized/portfolio/over-hills-and-underground/IMG_20201104_170146.webp)
+![](/optimized/portfolio/over-hills-and-underground/IMG_20201104_170208.webp)
 
 [Chris Eminizer](https://www.chriseminizer.com/bio) is an all-around musician: saxophonist, pianist, singer, and percussionist. He contacted me as he was working on his second album, *Over Hills and Underground*, and asked if I would make his album art for him.
 
@@ -41,7 +41,7 @@ I had never made an eco-wallet before, so there was a lot of experimentation to 
 
 | | |
 | --- | ---- |
-| ![A design on a CD itself](/portfolio/over-hills-and-underground/first_attempt_cd.png) | ![Design of ghostly imagery over photographs of the inside of a well over an eco-wallet template](/portfolio/over-hills-and-underground/first_attempt.png) |
+| ![A design on a CD itself](/optimized/portfolio/over-hills-and-underground/first_attempt_cd.webp) | ![Design of ghostly imagery over photographs of the inside of a well over an eco-wallet template](/optimized/portfolio/over-hills-and-underground/first_attempt.webp) |
 
 The Eco-wallet was printed on glossy paper with an updated version of the design after a few prints.
 

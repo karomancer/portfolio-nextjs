@@ -6,9 +6,9 @@ collaborators:
   - "[Liana Ris](https://www.linkedin.com/in/liana-ris/)"
 class: ""
 date: 2021-02-11T22:47:06.523Z
-preview: /portfolio/broker2broker/preview.mp4
-cover: /portfolio/broker2broker/cover.jpeg
-og_preview: /portfolio/broker2broker/og.jpg
+preview: /optimized/portfolio/broker2broker/preview.mp4
+cover: /optimized/portfolio/broker2broker/cover.webp
+og_preview: /optimized/portfolio/broker2broker/og.webp
 draft: false
 url: https://broker2broker.app/
 technologies:
@@ -29,9 +29,9 @@ piece_type:
   - work
 ---
 
-![](/portfolio/broker2broker/app_big.mp4)
+![](/optimized/portfolio/broker2broker/app_big.mp4)
 
-![](/portfolio/broker2broker/revised_with_background.mp4)
+![](/optimized/portfolio/broker2broker/revised_with_background.mp4)
 
 ## About Broker2Broker
 
@@ -52,9 +52,9 @@ Two videos were requested, one to show the individual features of exploring and 
 
 Design-wise, there was a master design with all the features then two additional designs for the two different sides of the trading process.
 
-![](/portfolio/broker2broker/figma.jpg)
-![](/portfolio/broker2broker/trading1.jpg)
-![](/portfolio/broker2broker/trading2.jpg)
+![](/optimized/portfolio/broker2broker/figma.webp)
+![](/optimized/portfolio/broker2broker/trading1.webp)
+![](/optimized/portfolio/broker2broker/trading2.webp)
 
 ### Map Filters Iterations
 
@@ -64,7 +64,7 @@ We wanted to make sure we got the map and filtering right, so I made a few itera
 
 | Drawer | Top bar | Full page search |
 | -- | -- | -- |
-| ![](/portfolio/broker2broker/map1.jpg) | ![](/portfolio/broker2broker/map2.jpeg) | ![](/portfolio/broker2broker/map3.jpeg) |
+| ![](/optimized/portfolio/broker2broker/map1.webp) | ![](/optimized/portfolio/broker2broker/map2.webp) | ![](/optimized/portfolio/broker2broker/map3.webp) |
 
 We went with a bottom pull-out drawer of filters. The most used filters would be at the top and simply pulling up the drawer would let you see all of them. Then after applying, you could pull it down to see the results.
 

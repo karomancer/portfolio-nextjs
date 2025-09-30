@@ -6,9 +6,9 @@ collaborators:
   - "[Nora Kako](https://www.linkedin.com/in/norakako/)"
 class: ""
 date: 2022-06-15T20:52:25.893Z
-preview: /portfolio/wowd/preview.mp4
-cover: /portfolio/wowd/cover.png
-og_preview: /portfolio/wowd/og_image.jpeg
+preview: /optimized/portfolio/wowd/preview.mp4
+cover: /optimized/portfolio/wowd/cover.webp
+og_preview: /optimized/portfolio/wowd/og_image.webp
 draft: false
 url: https://www.wowd.co/
 technologies:
@@ -27,7 +27,7 @@ piece_type:
   - work
 ---
 
-![Video of an app animation](/portfolio/wowd/carousel.mp4)
+![Video of an app animation](/optimized/portfolio/wowd/carousel.mp4)
 
 ## About Wowd
 
@@ -49,34 +49,34 @@ Using [Flutter's powerful animation tooling](https://docs.flutter.dev/ui/animati
 
 | | |
 | -- | -- |
-| ![An animated gif showing a bunch of images fading in and then scrolling off the viewport](/portfolio/wowd/wowd1.gif) | In the welcome slide, small images of actual collaborations made with the Wowd app appear and slide past the user. The hope is to showcase the work of the current userbase and to intrigue the new users to want to learn more about these strange little pieces. |
+| ![An animated gif showing a bunch of images fading in and then scrolling off the viewport](/optimized/portfolio/wowd/wowd1.webm) | In the welcome slide, small images of actual collaborations made with the Wowd app appear and slide past the user. The hope is to showcase the work of the current userbase and to intrigue the new users to want to learn more about these strange little pieces. |
 
 ### Send a request
 
 | | |
 | -- | -- |
-| ![An animated gif showing a click through of a very simplified UI with no words](/portfolio/wowd/wowd2.gif) | To educate the user on the term "Request", we simplified the UI to show the broad strokes of how to choose their desired creator and choose a collaboration to request. The glowing button was to make it clear that the request CTA is the button showing the price. |
+| ![An animated gif showing a click through of a very simplified UI with no words](/optimized/portfolio/wowd/wowd2.gif) | To educate the user on the term "Request", we simplified the UI to show the broad strokes of how to choose their desired creator and choose a collaboration to request. The glowing button was to make it clear that the request CTA is the button showing the price. |
 
 
 ### Create Together
 
 | | |
 | -- | -- |
-| ![An animated gif showing a selfie in purple, drawings of a haircut and guitar onto the selfie in blue, then a signature in yellow](/portfolio/wowd/wowd3.gif) | To illustrate the ability to collaborate with multiple people, we animated a collaboration in progress, starting with a fan selfie then introducing another fan and their own touches. Lastly, the creator comes in and signs the piece. Each collaborator is represented by a different color. |
+| ![An animated gif showing a selfie in purple, drawings of a haircut and guitar onto the selfie in blue, then a signature in yellow](/optimized/portfolio/wowd/wowd3.gif) | To illustrate the ability to collaborate with multiple people, we animated a collaboration in progress, starting with a fan selfie then introducing another fan and their own touches. Lastly, the creator comes in and signs the piece. Each collaborator is represented by a different color. |
 
 
 ### See the journey
 
 | | |
 | -- | -- |
-| ![An animated gif showing projector transparency like UI sifting through a layer of a selfie, a blue haircut, and a yellow signature](/portfolio/wowd/wowd4.gif) | To introduce the ideas of a progressive deliverable, we show the by-collaborator layers of the collaboration made in the prevoius step. The fan should expect not just a finished image but a video, gif, or interactive widget within the Wowd app showing the progression of collaborative efforts. |
+| ![An animated gif showing projector transparency like UI sifting through a layer of a selfie, a blue haircut, and a yellow signature](/optimized/portfolio/wowd/wowd4.gif) | To introduce the ideas of a progressive deliverable, we show the by-collaborator layers of the collaboration made in the prevoius step. The fan should expect not just a finished image but a video, gif, or interactive widget within the Wowd app showing the progression of collaborative efforts. |
 
 
 ### Let's go
 
 | | |
 | -- | -- |
-| ![A screenshot of a login screen showing login options for Twitter, Facebook, or Google](/portfolio/wowd/wowd5.jpeg) | No sign up flow would be complete without a sign up and login page. There wasn't much extra that went into this other than debating which platforms to support in multi auth. These might be different now, especially after Twitter's rebranding |
+| ![A screenshot of a login screen showing login options for Twitter, Facebook, or Google](/optimized/portfolio/wowd/wowd5.webp) | No sign up flow would be complete without a sign up and login page. There wasn't much extra that went into this other than debating which platforms to support in multi auth. These might be different now, especially after Twitter's rebranding |
 
 
 

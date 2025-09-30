@@ -6,9 +6,9 @@ collaborators:
   - "[Jason Byttow](https://twitter.com/jbyttow)"
 class: ""
 date: 2017-07-15T02:44:05.000Z
-preview: /portfolio/patreon-404-fox/preview.mp4
-cover: /portfolio/patreon-404-fox/cover.gif
-og_preview: /portfolio/patreon-404-fox/og_image.png
+preview: /optimized/portfolio/patreon-404-fox/preview.mp4
+cover: /optimized/portfolio/patreon-404-fox/404.webm
+og_preview: /optimized/portfolio/patreon-404-fox/og_image.webp
 draft: false
 url: https://www.patreon.com/404Page
 technologies:
@@ -31,7 +31,7 @@ piece_type:
   - work
 ---
 
-![Video of the fox on the Patreon website](/portfolio/patreon-404-fox/video.mp4)
+![Video of the fox on the Patreon website](/optimized/portfolio/patreon-404-fox/video.mp4)
 
 ## Context
 When I started at Patreon in March 2017, my first project was to help rebrand the whole product by June 2017. This included assisting in the tech migration from an Angular frontend stack to React, rebuilding the styling in the website to use styled-components instead of straight up CSS, and replacing colors, fonts, the logo, wordmark, and icons.
@@ -49,7 +49,7 @@ This was Kathy's original 404 page design:
 
 | | |
 | -- | -- |
-| ![Cute 404 fox illustration on a gray background](/portfolio/patreon-404-fox/original_404.jpeg) | ![Patreon Maintenance Page with a fox illustration](/portfolio/patreon-404-fox/patreon_maintenance.jpg) |
+| ![Cute 404 fox illustration on a gray background](/optimized/portfolio/patreon-404-fox/original_404.webp) | ![Patreon Maintenance Page with a fox illustration](/optimized/portfolio/patreon-404-fox/patreon_maintenance.webp) |
 
 
 ## Techniques
@@ -69,8 +69,8 @@ While the rebrand itself was [highly controversial](https://medium.com/@cooperth
 
 | | |
 | -- | -- |
-| ![Tweet by Patreon unveiling the new 404 page](/portfolio/patreon-404-fox/tweet_patreon.png) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/portfolio/patreon-404-fox/tweet_jason.png) |
-| ![Tweet by an excited creator](/portfolio/patreon-404-fox/tweet_mac.png) | ![Tweet by an excited creator](/portfolio/patreon-404-fox/tweet_kevin.png) |
+| ![Tweet by Patreon unveiling the new 404 page](/optimized/portfolio/patreon-404-fox/tweet_patreon.webp) | ![Tweet by Jason Byttow, the co-collaborator of the 404 page](/optimized/portfolio/patreon-404-fox/tweet_jason.webp) |
+| ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_mac.webp) | ![Tweet by an excited creator](/optimized/portfolio/patreon-404-fox/tweet_kevin.webp) |
 
 
 ## Never Enough Foxes
@@ -79,4 +79,4 @@ Even though this project was totally rogue and merged in secret, the new fox des
 
 | | |
 | -- | -- |
-| ![A fox wearing a construction hat holding a wrench](/portfolio/patreon-404-fox/construction_fox.png) | ![A fox holding a microphone to the viewer](/portfolio/patreon-404-fox/interview_fox.jpeg) |
+| ![A fox wearing a construction hat holding a wrench](/optimized/portfolio/patreon-404-fox/construction_fox.webp) | ![A fox holding a microphone to the viewer](/optimized/portfolio/patreon-404-fox/interview_fox.webp) |

@@ -5,9 +5,9 @@ slug: /portfolio/neopatch
 collaborators:
   - Daniel Wai
 date: 2022-12-15T03:25:48.000Z
-preview: /portfolio/neopatch/1-2.jpg
-cover: /portfolio/neopatch/1-9.jpg
-og_preview: /portfolio/neopatch/1-2.jpg
+preview: /optimized/portfolio/neopatch/1-2.webp
+cover: /optimized/portfolio/neopatch/1-9.webp
+og_preview: /optimized/portfolio/neopatch/1-2.webp
 draft: false
 tags:
   - fabrication
@@ -28,12 +28,12 @@ piece_type:
   - portfolio
 ---
 
-![Edited interview about the project](/portfolio/neopatch/edited_interview.mov)
+![Edited interview about the project](/optimized/portfolio/neopatch/edited_interview.mp4)
 
-![Photograph of a man looking at the LED strip along his jacket arm](/portfolio/neopatch/1-11.jpg)
-![Photograph of the front of a jacket with LEDs running down the front](/portfolio/neopatch/1-2.jpg)
-![Photograph of the back of a jacket with LEDs circling the hood](/portfolio/neopatch/1-7.jpg)
-![Photograph of a man modeling a light up jacket](/portfolio/neopatch/1-15.jpg)
+![Photograph of a man looking at the LED strip along his jacket arm](/optimized/portfolio/neopatch/1-11.webp)
+![Photograph of the front of a jacket with LEDs running down the front](/optimized/portfolio/neopatch/1-2.webp)
+![Photograph of the back of a jacket with LEDs circling the hood](/optimized/portfolio/neopatch/1-7.webp)
+![Photograph of a man modeling a light up jacket](/optimized/portfolio/neopatch/1-15.webp)
 
 Neopatch is an interactive light-up jacket that responds to customizable snap-on RFID/NFC patches.
 
@@ -69,27 +69,27 @@ We did not get to V2 or V3, but we’re interested in trying!
 
 Here are the components purchased: 
 
-![Screenshot of an Adafruit receipt for light strips](/portfolio/neopatch/Untitled.png)
+![Screenshot of an Adafruit receipt for light strips](/optimized/portfolio/neopatch/Untitled.webp)
 
-![Screenshot of an Adafruit receipt for breadboards](/portfolio/neopatch/Untitled%201.png)
+![Screenshot of an Adafruit receipt for breadboards](/optimized/portfolio/neopatch/Untitled%201.webp)
 
-![Screenshot of an Adafruit receipt for RFID reader](/portfolio/neopatch/Untitled%202.png)
+![Screenshot of an Adafruit receipt for RFID reader](/optimized/portfolio/neopatch/Untitled%202.webp)
 
-![Screenshot of an Adafruit receipt for light rings](/portfolio/neopatch/Untitled%203.png)
+![Screenshot of an Adafruit receipt for light rings](/optimized/portfolio/neopatch/Untitled%203.webp)
 
-![Screenshot of a receipt](/portfolio/neopatch/Untitled%204.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%204.webp)
 
-![Screenshot of a receipt](/portfolio/neopatch/Untitled%205.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%205.webp)
 
-![Screenshot of a receipt](/portfolio/neopatch/Untitled%206.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%206.webp)
 
-![Screenshot of a receipt](/portfolio/neopatch/Untitled%207.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%207.webp)
 
-![Screenshot of a receipt](/portfolio/neopatch/Untitled%208.png)
+![Screenshot of a receipt](/optimized/portfolio/neopatch/Untitled%208.webp)
 
-![Screenshot of an Amazon order for RFID tags](/portfolio/neopatch/Untitled%209.png)
+![Screenshot of an Amazon order for RFID tags](/optimized/portfolio/neopatch/Untitled%209.webp)
 
-![Screenshot of an Amazon order for embroidered patches](/portfolio/neopatch/Untitled%2010.png)
+![Screenshot of an Amazon order for embroidered patches](/optimized/portfolio/neopatch/Untitled%2010.webp)
 
 Total cost ended up being around $200.
 
@@ -127,15 +127,15 @@ function getCellNumber(int row, int column) {
 ``` 
 - We originally were using an Arduino Uno R3, and hilariously, it did not have enough flash memory to be able to operate all lights at once. The Uno we had has 32KB of flash memory, while the Nano 33 IoT has 256KB. We chose to switch to a different RFID/NFC reader to find a better form factor, but more importantly, so we could switch to using the Nano.
 
-![Photograph of a coiled up roll of addressable LEDs on magenta](/portfolio/neopatch/IMG_4659.jpeg)
-![Video of two people failing to get something read by the reader](/portfolio/neopatch/IMG_4661.mov)
-![Video of two people testing out RFID and light animations and unable to turn it off](/portfolio/neopatch/IMG_4728.mov)
+![Photograph of a coiled up roll of addressable LEDs on magenta](/optimized/portfolio/neopatch/IMG_4659.webp)
+![Video of two people failing to get something read by the reader](/optimized/portfolio/neopatch/IMG_4661.mp4)
+![Video of two people testing out RFID and light animations and unable to turn it off](/optimized/portfolio/neopatch/IMG_4728.mp4)
 
 ## Code
 
 Daniel largely covered the light animations, while I covered the NFC reading and writing and fabrication. We discovered Arduino allows for its code to be separated into files, which made this software engineer that’s allergic to files larger than 300 lines happy. This ended up being how we organized our files:
 
-![Screenshot of many tabs of code in the Arduino IDE](/portfolio/neopatch/Untitled%2012.png)
+![Screenshot of many tabs of code in the Arduino IDE](/optimized/portfolio/neopatch/Untitled%2012.webp)
 
 The code we wrote can be seen on GitHub:
 
@@ -157,10 +157,10 @@ In short, we have a `jacket` file that instantiates all variables to be used in 
 
 For our proof-of-concept, we first planned on where the lights should go on the jacket. We wanted to make sure that it looked good and was functional before we make any drastic fabrication moves.
 
-![Photograph of the jacket covered with green tape marking where lights will go down the front](/portfolio/neopatch/IMG_4729.jpeg)
-![Photograph of a mannequin with a jacket next to a small pedesetal](/portfolio/neopatch/PXL_20221204_012337942.PORTRAIT.jpg)
-![Video of testing the jacket in a light room](/portfolio/neopatch/IMG_4739.mov)
-![Video of testing the jacket in a dark room](/portfolio/neopatch/IMG_4746.mov)
+![Photograph of the jacket covered with green tape marking where lights will go down the front](/optimized/portfolio/neopatch/IMG_4729.webp)
+![Photograph of a mannequin with a jacket next to a small pedesetal](/optimized/portfolio/neopatch/PXL_20221204_012337942.PORTRAIT.webp)
+![Video of testing the jacket in a light room](/optimized/portfolio/neopatch/IMG_4739.mp4)
+![Video of testing the jacket in a dark room](/optimized/portfolio/neopatch/IMG_4746.mp4)
 
 ### Light diffusion, embedding tags into patches (v0.2)
 
@@ -168,9 +168,9 @@ We used the same type of nylon silk material used for photography diffusion.
 
 We knew it wouldn’t diffuse much because it’s too close to the lights, but it would at least be less blinding and a little nicer looking than the bare lights.
 
-![Photograph of lights in small white nylon sheaths](/portfolio/neopatch/PXL_20221210_234422015.jpg)
-![Photograph of a jacket on a mannequin with wires sticking out of it](/portfolio/neopatch/PXL_20221211_073125565.MP.jpg)
-![Video of a light up jacket with wires overflowing out of it](/portfolio/neopatch/PXL_20221213_121108495.mp4)
+![Photograph of lights in small white nylon sheaths](/optimized/portfolio/neopatch/PXL_20221210_234422015.webp)
+![Photograph of a jacket on a mannequin with wires sticking out of it](/optimized/portfolio/neopatch/PXL_20221211_073125565.MP.webp)
+![Video of a light up jacket with wires overflowing out of it](/optimized/portfolio/neopatch/PXL_20221213_121108495.mp4)
 
 ### Cable management (v0.3)
 
@@ -178,27 +178,27 @@ In order to make the lights removable for washing and debugging purposes, we als
 
 We started with these wires with sockets and snaps are called that we found on the junk shelf, then seam-ripped the lining of the jacket. Lastly, I made little grommets to feed the wires through that ensure we don’t lose the snaps the lights go into.
 
-![Photograph of a grommet hole in the breast pocket of the jacket with a neat bundle of wires sticking through it](/portfolio/neopatch/PXL_20221213_074913798.jpg)
-![Photograph of a messy desk covered in wires](/portfolio/neopatch/PXL_20221210_234418703.jpg)
-![Photograph of a jacket being seam-ripped](/portfolio/neopatch/PXL_20221210_220320793.jpg)
-![Photograph of wires being stripped in front of a jacket](/portfolio/neopatch/PXL_20221210_234414432.jpg)
+![Photograph of a grommet hole in the breast pocket of the jacket with a neat bundle of wires sticking through it](/optimized/portfolio/neopatch/PXL_20221213_074913798.webp)
+![Photograph of a messy desk covered in wires](/optimized/portfolio/neopatch/PXL_20221210_234418703.webp)
+![Photograph of a jacket being seam-ripped](/optimized/portfolio/neopatch/PXL_20221210_220320793.webp)
+![Photograph of wires being stripped in front of a jacket](/optimized/portfolio/neopatch/PXL_20221210_234414432.webp)
 
 Soldered a ribbon cable onto the RFID reader itself, placed in a front breast pocket, then wires fed through the back of the jacket. Let's look at this cabling job one last time before it's all sewn into the lining.
 
-![Photograph of the jacket with the lining seam ripped out and cables all over the back](/portfolio/neopatch/PXL_20221214_035712010.jpg)
-![Photograph of a small RFID reader with a ribbon of wires soldered on](/portfolio/neopatch/PXL_20221213_141326661.jpg)
-![Photograph of a light up jacket on a mannequin](/portfolio/neopatch/PXL_20221214_120239918.jpg)
-![Video of the jacket lighting up on a mannequin](/portfolio/neopatch/PXL_20221214_120124626.mp4)
+![Photograph of the jacket with the lining seam ripped out and cables all over the back](/optimized/portfolio/neopatch/PXL_20221214_035712010.webp)
+![Photograph of a small RFID reader with a ribbon of wires soldered on](/optimized/portfolio/neopatch/PXL_20221213_141326661.webp)
+![Photograph of a light up jacket on a mannequin](/optimized/portfolio/neopatch/PXL_20221214_120239918.webp)
+![Video of the jacket lighting up on a mannequin](/optimized/portfolio/neopatch/PXL_20221214_120124626.mp4)
 
 ### Switching to a Protoboard (v0.4)
 
 You can’t use a breadboard for a wearable because with a person’s movement, the pins get yanked right out. So we decided to go for a protoboard.
 
 
-![Photograph of a ribbon of wires sitting on helping hands, ready to be soldered](/portfolio/neopatch/PXL_20221214_072031789.jpg)
-![Photograph of jumper wires sticking out of a breadboard](/portfolio/neopatch/PXL_20221214_061659110.jpg)
-![Photograph of soldering RFID I2C cables to a protoboard](/portfolio/neopatch/PXL_20221214_090002216.jpg)
-![Photograph of a protoboard with tons of red and black wires coming from it](/portfolio/neopatch/PXL_20221214_111319700.MP.jpg)
+![Photograph of a ribbon of wires sitting on helping hands, ready to be soldered](/optimized/portfolio/neopatch/PXL_20221214_072031789.webp)
+![Photograph of jumper wires sticking out of a breadboard](/optimized/portfolio/neopatch/PXL_20221214_061659110.webp)
+![Photograph of soldering RFID I2C cables to a protoboard](/optimized/portfolio/neopatch/PXL_20221214_090002216.webp)
+![Photograph of a protoboard with tons of red and black wires coming from it](/optimized/portfolio/neopatch/PXL_20221214_111319700.MP.webp)
 
 If we were to continue working on this, we’d make a singular power and ground main lines so it wouldn’t be such a birds nest on the protoboard. For now, it works!
 
@@ -221,9 +221,9 @@ Features include:
 
 I’m generally very happy with how this turned out! Didn’t get to V2 or V3 ideas, but it’s good to have aspirations.
 
-![Video of the project at the winter showcase](/portfolio/neopatch/jacket_showcase.mp4)
+![Video of the project at the winter showcase](/optimized/portfolio/neopatch/jacket_showcase.mp4)
 
-![Video of Daniel showing off the jacket](/portfolio/neopatch/PXL_20221218_002149449.mp4)
+![Video of Daniel showing off the jacket](/optimized/portfolio/neopatch/PXL_20221218_002149449.mp4)
 
 Other future wishes besides V2 and V3 outlined at the start of this post:
 

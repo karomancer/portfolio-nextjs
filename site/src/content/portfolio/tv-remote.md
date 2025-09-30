@@ -5,9 +5,9 @@ slug: /portfolio/tv-remote
 collaborators: []
 class: Learning the World, One Thing at a Time
 date: 2022-10-19T04:58:06.000Z
-preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
-cover: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
-og_preview: /portfolio/tv-remote/PXL_20220920_222610080.jpeg
+preview: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
+cover: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
+og_preview: /optimized/portfolio/tv-remote/PXL_20220920_222610080.webp
 draft: false
 url: https://github.com/karomancer/ir_receiver
 technologies:
@@ -25,7 +25,7 @@ piece_type:
   - journal
 ---
 
-![PXL_20220924_094602872 (1).mp4](/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)
+![PXL_20220924_094602872 (1).mp4](/optimized/portfolio/tv-remote/PXL_20220924_094602872_(1).mp4)
 
 In the class **[Learning the World, One Thing at a Time](https://www.coursicle.com/nyu/courses/ITPGGT/2345/)**, taught by [Lydia Jessup](https://www.lydiajessup.me/), we learned about the [Implosion](https://www.trashacademy.org/implosion) research method to deeply analyze and research an object we encounter in every day life across the following dimensions: *Labor*, *Professional*, *Material*, *Technological*, *Context*, *Political*, *Economic*, *Textual*, *Historical*, *Particle*, *Educational*, *Mythological*, and *Symbolic*.
 
@@ -48,13 +48,13 @@ I chose to study the **history** of the TV remote, as well as the **technology**
 
 As per the Implosion Method, I started by making a Knowledge Map of what I already knew:
 
-![My knowledge map, with the dimensions I’d like to focus on highlighted](/portfolio/tv-remote/Untitled%202.png)
+![My knowledge map, with the dimensions I’d like to focus on highlighted](/optimized/portfolio/tv-remote/Untitled%202.webp)
 
 I started my process by tearing apart my remote to see the components inside:
 
-![The remote as-is](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
-![PXL_20220920_222610080.jpeg](/portfolio/tv-remote/PXL_20220920_222610080.jpeg)
-![The remote as-is](/portfolio/tv-remote/Untitled%203.png)
+![The remote as-is](/optimized/portfolio/tv-remote/PXL_20221012_043959088.mp4)
+![PXL_20220920_222610080.webp](/optimized/portfolio/tv-remote/PXL_20220920_222610080.webp)
+![The remote as-is](/optimized/portfolio/tv-remote/Untitled%203.webp)
 
 Unfortunately, I wasn’t able to find out which exact model of remote I had, and the serial numbers were scratched off the back. I did find out it uses infrared sensors to operate, which is a later development in the invention of remotes. Speaking of…
 
@@ -62,7 +62,7 @@ Unfortunately, I wasn’t able to find out which exact model of remote I had, an
 
 Let’s talk about the history of the remote!
 
-![Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)](/portfolio/tv-remote/Untitled%204.png)
+![Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)](/optimized/portfolio/tv-remote/Untitled%204.webp)
 
 Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-control-boat.html?guccounter=1)
 
@@ -70,7 +70,7 @@ Source: [Engadget](https://www.engadget.com/2014-01-19-nikola-teslas-remote-cont
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/portfolio/tv-remote/Untitled%205.png)![Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)](/portfolio/tv-remote/Untitled%206.png) | Nikola Tesla demos the first remote controller at the New York's Madison Square Garden. He used radio frequency (RF) to control a toy boat on an indoor pool. He named is remote-controllable boat a [teleautomaton](https://31648663.weebly.com/teleautomaton.html). Many deemed his invention as magic and many criticized it for its potential to be used in warfare. |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%205.webp)![Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)](/optimized/portfolio/tv-remote/Untitled%206.webp) | Nikola Tesla demos the first remote controller at the New York's Madison Square Garden. He used radio frequency (RF) to control a toy boat on an indoor pool. He named is remote-controllable boat a [teleautomaton](https://31648663.weebly.com/teleautomaton.html). Many deemed his invention as magic and many criticized it for its potential to be used in warfare. |
 
 Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino-the-first-remote-control-museo-torres-quevedo/GQWBy6_ArC-_Ig)
 
@@ -78,7 +78,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Kettering Bug](/portfolio/tv-remote/Untitled%207.png) | Leonardo Torres-Quevedo creates what he calls the “Telekino”, a remote control for vehicles. Unlike Tesla’s radio waves, which were able to spread farther distances and omnidirectionally, these used telegraph transmitters. His original demo in 1902 was on a tricycle.!!!Torres-Quevado originally invented the telekino in mind for navigating dangerous vehicles to save human lives, such as hydrogen-filled airships. In 1905, it was demoed on a real boat with real passengers in the presence of King Alfonso XIII. |
+| ![Kettering Bug](/optimized/portfolio/tv-remote/Untitled%207.webp) | Leonardo Torres-Quevedo creates what he calls the “Telekino”, a remote control for vehicles. Unlike Tesla’s radio waves, which were able to spread farther distances and omnidirectionally, these used telegraph transmitters. His original demo in 1902 was on a tricycle.!!!Torres-Quevado originally invented the telekino in mind for navigating dangerous vehicles to save human lives, such as hydrogen-filled airships. In 1905, it was demoed on a real boat with real passengers in the presence of King Alfonso XIII. |
 
 (Source: [Military History Now](https://militaryhistorynow.com/2012/09/09/war-by-remote-control-2500-years-of-unmanned-vehicles/))
 
@@ -86,7 +86,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/)](/portfolio/tv-remote/Untitled%208.png) | Concerns about remote-controlled vehicles becoming weapons in war came as the Germans created RF boats filled with explosives designed to collide into enemy ships.!!!Others also experimented with unmanned war vehicles. The United States made an unmanned aerial torpedo called the [Kettering Bug](https://en.wikipedia.org/wiki/Kettering_Bug). These used a similar radio frequency technology that Tesla’s original RC boat did to allow pilots to control torpedos after launching them. |
+| ![Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/)](/optimized/portfolio/tv-remote/Untitled%208.webp) | Concerns about remote-controlled vehicles becoming weapons in war came as the Germans created RF boats filled with explosives designed to collide into enemy ships.!!!Others also experimented with unmanned war vehicles. The United States made an unmanned aerial torpedo called the [Kettering Bug](https://en.wikipedia.org/wiki/Kettering_Bug). These used a similar radio frequency technology that Tesla’s original RC boat did to allow pilots to control torpedos after launching them. |
 
 (Source: [Philco Repair Bench](https://www.philcorepairbench.com/philco-mystery-control/))
 
@@ -94,7 +94,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source Electronic House/[TVHistory.tv](http://tvhistory.tv/)](/portfolio/tv-remote/Untitled%209.png) | In the same years remote controls were being used for warfare, radio companies were releasing controllers for their radio sets. Many of the first ones were wired and controlled through the house AC line.!!!In 1939, the Philadelphia Storage Battery Company (Philco) created the first wireless remote control for the radio, the **Philco Mystery Control.** This remote also used RF technology.!!!As per the Gartner Group Hype graph we saw earlier, the Mystery Control was wildly popular and adopted quickly between 1939 and 1942. Once the hype died down, it became a commodity and other radio companies followed suit. |
+| ![Source Electronic House/[TVHistory.tv](http://tvhistory.tv/)](/optimized/portfolio/tv-remote/Untitled%209.webp) | In the same years remote controls were being used for warfare, radio companies were releasing controllers for their radio sets. Many of the first ones were wired and controlled through the house AC line.!!!In 1939, the Philadelphia Storage Battery Company (Philco) created the first wireless remote control for the radio, the **Philco Mystery Control.** This remote also used RF technology.!!!As per the Gartner Group Hype graph we saw earlier, the Mystery Control was wildly popular and adopted quickly between 1939 and 1942. Once the hype died down, it became a commodity and other radio companies followed suit. |
 
 (Source: Electronic House/[TVHistory.tv](http://tvhistory.tv/))
 
@@ -102,7 +102,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: LG Electronics/European Pressphoto Agency](/portfolio/tv-remote/Untitled%2010.png) | Zenith invented the first TV remote, the Lazy Bones, and released it in 1950.!!!Unfortunately, just like how radio started with wired remote controls, so did TVs. Lazy Bones was not a raving success because of the inconvenience of the long, snaking wire. |
+| ![Source: LG Electronics/European Pressphoto Agency](/optimized/portfolio/tv-remote/Untitled%2010.webp) | Zenith invented the first TV remote, the Lazy Bones, and released it in 1950.!!!Unfortunately, just like how radio started with wired remote controls, so did TVs. Lazy Bones was not a raving success because of the inconvenience of the long, snaking wire. |
 
 
 (Source: LG Electronics/European Pressphoto Agency)
@@ -111,7 +111,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/portfolio/tv-remote/Untitled%2011.png)![Source: Alamy](/portfolio/tv-remote/Untitled%2012.png) | Eugene Polly, a researcher and engineer from Zenith, invents the first wireless TV Remote, the [Flash-matic.](https://en.wikipedia.org/wiki/Zenith_Flash-matic)!!!The Flash-matic used light to relay signals. Each TV was equipped with photocells in each of the four corners that detected beams of light, encoded with the instruction, emitted from the remote. The concept of a completely wireless TV remote was a game changer, but the technology was short-lived. !!!The Flash-matic suffered from light conflicts as well as a huge steep tag, so it didn’t last long on the hype chart. |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2011.webp)![Source: Alamy](/optimized/portfolio/tv-remote/Untitled%2012.webp) | Eugene Polly, a researcher and engineer from Zenith, invents the first wireless TV Remote, the [Flash-matic.](https://en.wikipedia.org/wiki/Zenith_Flash-matic)!!!The Flash-matic used light to relay signals. Each TV was equipped with photocells in each of the four corners that detected beams of light, encoded with the instruction, emitted from the remote. The concept of a completely wireless TV remote was a game changer, but the technology was short-lived. !!!The Flash-matic suffered from light conflicts as well as a huge steep tag, so it didn’t last long on the hype chart. |
 
 
 (Source: Alamy)
@@ -120,7 +120,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6)](/portfolio/tv-remote/Untitled%2013.png) | Robert Adler, a physicist, invents the Zenith Space Commander.!!!Instead of using light or RF, Space Command TVs detected sounds produced by physical hammers in the remote. The remote didn’t require batteries because of this implementation, and each remote produced a satisfying clicking sound in addition to an ultrasonic sound inaudible to most humans. In fact, this is the reason why we call remotes “clickers” today!!!This ultrasonic technology served as the primary tech in TV remotes until the mid ‘80s, when infrared remotes started taking over the scene. |
+| ![Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6)](/optimized/portfolio/tv-remote/Untitled%2013.webp) | Robert Adler, a physicist, invents the Zenith Space Commander.!!!Instead of using light or RF, Space Command TVs detected sounds produced by physical hammers in the remote. The remote didn’t require batteries because of this implementation, and each remote produced a satisfying clicking sound in addition to an ultrasonic sound inaudible to most humans. In fact, this is the reason why we call remotes “clickers” today!!!This ultrasonic technology served as the primary tech in TV remotes until the mid ‘80s, when infrared remotes started taking over the scene. |
 
 (Source: [TimeToast](https://www.timetoast.com/timelines/the-remote-control-acd2c245-e27f-47a0-8946-8a64bdf61dc6))
 
@@ -128,13 +128,13 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/portfolio/tv-remote/Untitled%2014.png) | Up to this point, remotes only included a handful of buttons for volume, next channel, previous channel, on and off.!!!In the ‘70s, BBC introduced the [Ceefax](https://en.wikipedia.org/wiki/Ceefax) teletext service. [Teletext](https://en.wikipedia.org/wiki/Teletext) was a type of service that broadcasted metainformation about programming to TVs, showing it as a fact sheet overlay on the screen. To operate the overlay, more buttons had to be added to TV remotes. This included the numpad we’re so familiar with today. |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2014.webp) | Up to this point, remotes only included a handful of buttons for volume, next channel, previous channel, on and off.!!!In the ‘70s, BBC introduced the [Ceefax](https://en.wikipedia.org/wiki/Ceefax) teletext service. [Teletext](https://en.wikipedia.org/wiki/Teletext) was a type of service that broadcasted metainformation about programming to TVs, showing it as a fact sheet overlay on the screen. To operate the overlay, more buttons had to be added to TV remotes. This included the numpad we’re so familiar with today. |
 
 #### 1980 - First infrared remotes
 
 |  |  | 
 | --- | --- |
-| ![Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/)](/portfolio/tv-remote/Untitled%2015.png) | Though ultrasonic, and other sound-based “clickers”, were still the most popular remote technology, they suffered from some major issues. Many of them would irritate house pets and children because of their high frequencies. Meanwhile, other light-based remotes experienced interference by indoor light sources like lamps.!!!Infrared was already being used for other household uses, such as garage door openers. Engineer Paul Hrivnak at Canadian company, Viewstar, Inc., applied that tech and produced the first infrared TV remote for Phillips priced at $190CAD.!!!Infrared became so wildly popular, they quickly rose in popularity beating out the previous ultrasonic remotes.  |
+| ![Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/)](/optimized/portfolio/tv-remote/Untitled%2015.webp) | Though ultrasonic, and other sound-based “clickers”, were still the most popular remote technology, they suffered from some major issues. Many of them would irritate house pets and children because of their high frequencies. Meanwhile, other light-based remotes experienced interference by indoor light sources like lamps.!!!Infrared was already being used for other household uses, such as garage door openers. Engineer Paul Hrivnak at Canadian company, Viewstar, Inc., applied that tech and produced the first infrared TV remote for Phillips priced at $190CAD.!!!Infrared became so wildly popular, they quickly rose in popularity beating out the previous ultrasonic remotes.  |
 
 (Source: [Tedium](https://tedium.co/2017/05/25/universal-remote-control-history/))
 
@@ -142,7 +142,7 @@ Source: [Google Arts & Culture](https://artsandculture.google.com/story/telekino
 
 |  |  | 
 | --- | --- |
-| ![Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) ](/portfolio/tv-remote/Untitled%2016.png) | The idea of a reconfigurable remote that can control multiple devices was patented by Philips in 1985, and soon thereafter they released their Magnavox universal remotes.!!!In 1986, General Electric also patented a reconfigurable universal remote, stating that a remote should be able to control a television, a cable converter, video cassette recorder, and a video disc player so to remove confusion and inconvenience to the user. |
+| ![Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) ](/optimized/portfolio/tv-remote/Untitled%2016.webp) | The idea of a reconfigurable remote that can control multiple devices was patented by Philips in 1985, and soon thereafter they released their Magnavox universal remotes.!!!In 1986, General Electric also patented a reconfigurable universal remote, stating that a remote should be able to control a television, a cable converter, video cassette recorder, and a video disc player so to remove confusion and inconvenience to the user. |
 
 
 (Source: [“Remote Control for All TV” on Google Play](https://play.google.com/store/apps/details?id=com.remote.control.universal.forall.tv&hl=en_US&gl=US) )
@@ -157,7 +157,7 @@ Households in pre-smartphone America often had five or six remotes, including on
 
 |  |  | 
 | --- | --- |
-| ![Untitled](/portfolio/tv-remote/Untitled%2017.png)![Sources:  [“TV Remote” on the App Store](https://apps.apple.com/us/app/tv-remote-universal-control/id1539090879)](/portfolio/tv-remote/Untitled%2018.png) | Today, the default technology for TV remotes is still infrared, however more technologies are emerging as the broadcast television landscape is changing.!!!In the mid 2000’s, the Apple TV Siri remote was released, which had a trackpad instead of buttons, supported voice control, and used Bluetooth technology instead of infrared.!!!Around the same time, Roku, Google Chromecast, and Amazon Firestick were all released, most now supporting phone app navigation, usually through Bluetooth or WiFi.!!!TV remotes have really come a long way! |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2017.webp)![Sources:  [“TV Remote” on the App Store](https://apps.apple.com/us/app/tv-remote-universal-control/id1539090879)](/optimized/portfolio/tv-remote/Untitled%2018.webp) | Today, the default technology for TV remotes is still infrared, however more technologies are emerging as the broadcast television landscape is changing.!!!In the mid 2000’s, the Apple TV Siri remote was released, which had a trackpad instead of buttons, supported voice control, and used Bluetooth technology instead of infrared.!!!Around the same time, Roku, Google Chromecast, and Amazon Firestick were all released, most now supporting phone app navigation, usually through Bluetooth or WiFi.!!!TV remotes have really come a long way! |
 
 
 ## Technology & Presentation
@@ -168,7 +168,7 @@ I thought a fun way to present the history, context, and mythology of the TV rem
 
 I poked around on YouTube after learning the history of the remote, and created a playlist of videos I’d like to act as the base of my TV programming:
 
-![Screenshot of a youtube playlist](/portfolio/tv-remote/Untitled%2019.png)
+![Screenshot of a youtube playlist](/optimized/portfolio/tv-remote/Untitled%2019.webp)
 
 Here's the playlist if you have any interest in seeing it!
 
@@ -198,7 +198,7 @@ Infrared radiation (IR) is a band on the electromagnetic radiation spectrum abov
 
   
 
-![Untitled](/portfolio/tv-remote/Untitled%2020.png)
+![Untitled](/optimized/portfolio/tv-remote/Untitled%2020.webp)
 
 Because its wavelengths are beyond the perceptible realm, it usually does not interfere with the visible light spectrum. This makes it a much more ideal choice for remote technology than others relying on light, like the Zenith Flash-matic remote.
 
@@ -206,7 +206,7 @@ You’ve probably noticed your IR remotes actually have a little LED attached to
 
 Totally not required, but I had fun taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.
 
-![Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/portfolio/tv-remote/PXL_20221012_043959088.mp4)
+![Taking apart my Zenith TV remote to show what the infrared LED really looks like and how it is connected to the board.](/optimized/portfolio/tv-remote/PXL_20221012_043959088.mp4)
 
 You can’t see it, but every time you click a button on your TV remote, it sends a pattern of blinks with that light. If you are interested, you can actually try holding your camera up to it and clicking a couple buttons to see it flash. Not all cameras are able to detect it, however!
 
@@ -228,7 +228,7 @@ In order for my Arduino Nano to communicate to my computer, I would have to rela
 
 Here’s a visual representation of the flow we want to achieve here:
 
-![Frame 5 (1).jpg](/portfolio/tv-remote/Frame_5_(1).jpg)
+![Frame 5 (1).webp](/optimized/portfolio/tv-remote/Frame_5_(1).webp)
 
 Ok, onto the first few hardware steps on receiving IR messages!
 
@@ -244,7 +244,7 @@ Infrared receiver! That’s right.
 
 Also luckily for me, infrared receivers are extremely cheap on [Adafruit](https://www.adafruit.com/product/157):
 
-![An IR receiver is only $1.95 on Adafruit!](/portfolio/tv-remote/Untitled%2021.png)
+![An IR receiver is only $1.95 on Adafruit!](/optimized/portfolio/tv-remote/Untitled%2021.webp)
 
 An IR receiver is only $1.95 on Adafruit!
 
@@ -252,7 +252,7 @@ Using an Arduino NANO, I just needed to make a simple circuit. An IR receiver ha
 
 I got inspiration form [this handy article](https://www.elithecomputerguy.com/2019/06/ir-sensor-digital-output-on-arduino/) to make something very basic:
 
-![Untitled](/portfolio/tv-remote/Untitled%2022.png)
+![Untitled](/optimized/portfolio/tv-remote/Untitled%2022.webp)
 
 Using the [IRremote.h](https://www.arduino.cc/reference/en/libraries/irremote/) package for Arduino, I was able to easily set up a simple program that was able to detect values sent from the emitter.
 
@@ -388,7 +388,7 @@ I then created a script called `gen_channels.ts` that would automatically take a
 
 | | |
 | -- | -- |
-| ![Untitled](/portfolio/tv-remote/Untitled%2023.png) | ![Generated channel HTML files from the source videos](/portfolio/tv-remote/Untitled%2024.png) |
+| ![Untitled](/optimized/portfolio/tv-remote/Untitled%2023.webp) | ![Generated channel HTML files from the source videos](/optimized/portfolio/tv-remote/Untitled%2024.webp) |
 
 
 Generated channel HTML files from the source videos

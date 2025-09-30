@@ -5,9 +5,9 @@ slug: /portfolio/zelda-snowboard
 collaborators: []
 class: ""
 date: 2019-01-09T21:39:53.756Z
-preview: /portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.png
-cover: /portfolio/zelda-snowboard/real_snowboard.png
-og_preview: /portfolio/zelda-snowboard/2016-02-02__1_.jpg
+preview: /optimized/portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.webp
+cover: /optimized/portfolio/zelda-snowboard/real_snowboard.webp
+og_preview: /optimized/portfolio/zelda-snowboard/2016-02-02__1_.webp
 draft: false
 url: ""
 technologies:
@@ -32,7 +32,7 @@ My friend loves The Great Wave Off Kanagawa and has that print in many forms aro
 
 There's a Zelda game that takes place on islands in a great ocean, so this was the first idea:
 
-![A half finished illustration of a Wind Waker styled snowboard with Link sitting on a boat looking at tie fighters in the sky](/portfolio/zelda-snowboard/wind_waker_rough.jpg)
+![A half finished illustration of a Wind Waker styled snowboard with Link sitting on a boat looking at tie fighters in the sky](/optimized/portfolio/zelda-snowboard/wind_waker_rough.webp)
 
 My friend liked the idea but he really wanted the style to be more based on one of the more recent Zelda games at the time, Skyward Sword. The art style in that game is inspired by impressionistic paintings, and he wanted a similar aesthetic to be used on his board for both the Zelda and Star Wars motifs.
 
@@ -42,11 +42,11 @@ Skyward Sword has no oceans, and Stars Wars has few, so I threw out the waves in
 
 Below is the progression of designs before reaching the final design.
 
-![A black and white illustration of Link attacking tie fighters with Mt. Fuji in the background](/portfolio/zelda-snowboard/snowboard_no_zelda.png)
+![A black and white illustration of Link attacking tie fighters with Mt. Fuji in the background](/optimized/portfolio/zelda-snowboard/snowboard_no_zelda.webp)
 
-![A black and white illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background](/portfolio/zelda-snowboard/snowboard_with_zelda.png)
+![A black and white illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background](/optimized/portfolio/zelda-snowboard/snowboard_with_zelda.webp)
 
-![A color illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background](/portfolio/zelda-snowboard/FINAL_DESIGN_CS3__1_.png)
+![A color illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background](/optimized/portfolio/zelda-snowboard/FINAL_DESIGN_CS3__1_.webp)
 
 "In a galaxy, far far away..." The border reads the intro paragraph to Star Wars in Japanese, and the extra Japanese by Link in the center says "My name is Link" because my friend's name is Link.
 
@@ -56,7 +56,7 @@ My friend wanted more pink to contrast the blue, and suggested incorporating som
 
 After replacing the border with cherry blossoms, we found our winner.
 
-![A color illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background and cherry blossom border](/portfolio/zelda-snowboard/real_snowboard.png)
-![Photograph of a group of snowboarders, the one in the center holding up his Zelda and Star Wars themed snowbard](/portfolio/zelda-snowboard/12719374_10205826091994696_4368261030623854733_o.jpg)
-![Photograph of a man holding up a Zelda and Star Wars themed snowboard](/portfolio/zelda-snowboard/2016-02-02__1_.jpg)
-![Photograph of a Zelda and Star Wars themed snowboard hanging on the wall](/portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.png)
+![A color illustration of Link attacking tie fighters with his sword and Zelda with her bow with Mt. Fuji in the background and cherry blossom border](/optimized/portfolio/zelda-snowboard/real_snowboard.webp)
+![Photograph of a group of snowboarders, the one in the center holding up his Zelda and Star Wars themed snowbard](/optimized/portfolio/zelda-snowboard/12719374_10205826091994696_4368261030623854733_o.webp)
+![Photograph of a man holding up a Zelda and Star Wars themed snowboard](/optimized/portfolio/zelda-snowboard/2016-02-02__1_.webp)
+![Photograph of a Zelda and Star Wars themed snowboard hanging on the wall](/optimized/portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.webp)

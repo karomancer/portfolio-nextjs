@@ -5,9 +5,9 @@ slug: /portfolio/youtopia
 collaborators: []
 class: Playful Communication of Serious Research
 date: 2023-05-04T22:28:14.000Z
-preview: /portfolio/youtopia/youtopiaThumbnail.jpeg
-cover: /portfolio/youtopia/cover.jpeg
-og_preview: /portfolio/youtopia/youtopiaThumbnail.jpeg
+preview: /optimized/portfolio/youtopia/youtopiaThumbnail.webp
+cover: /optimized/portfolio/youtopia/cover.webp
+og_preview: /optimized/portfolio/youtopia/youtopiaThumbnail.webp
 draft: false
 url: https://github.com/karomancer/youtopia
 technologies:
@@ -28,9 +28,9 @@ piece_type:
   - portfolio
 ---
 
-![Video of main interaction at showcase](/portfolio/youtopia/showcase1.mp4)
+![Video of main interaction at showcase](/optimized/portfolio/youtopia/showcase1.mp4)
 
-![Video of tour of experience at showcase](/portfolio/youtopia/showcase2.mp4)
+![Video of tour of experience at showcase](/optimized/portfolio/youtopia/showcase2.mp4)
 
 For ITP's Playful Communication of Serious Research class, we had to craft an interactive experience befit for a museum that presents specific research from NYU to a broader audience.
 
@@ -60,10 +60,10 @@ Projection mapping on city block models that changes in real time to reflect aud
 
 This idea takes cues from [dotmocracy](https://dotmocracy.org/), which visualizes opinions & data gathered from the audience via dots on a canvas. The different areas of the city would correspond to UN’s 17 Sustainable Development Goals, such as a hospital representing health and wellness. The audience votes by putting tokens in corresponding areas based on their priorities of utopia.
 
-![Illustration of people playing with a miniature city on a table with a projector](/portfolio/youtopia/idea1.png)
-![A photograph of people playing with a miniature scale model of a city](/portfolio/youtopia/idea1_1.png)
-![A photograph of people playing with figurines on a table projected with light](/portfolio/youtopia/idea1_2.png)
-![A photograph of people moving blocks on a table with projected windows](/portfolio/youtopia/idea1_3.png)
+![Illustration of people playing with a miniature city on a table with a projector](/optimized/portfolio/youtopia/idea1.webp)
+![A photograph of people playing with a miniature scale model of a city](/optimized/portfolio/youtopia/idea1_1.webp)
+![A photograph of people playing with figurines on a table projected with light](/optimized/portfolio/youtopia/idea1_2.webp)
+![A photograph of people moving blocks on a table with projected windows](/optimized/portfolio/youtopia/idea1_3.webp)
 
 ### Idea #2: AI-Generated City Skyline Mural
 
@@ -73,10 +73,10 @@ Viewers will walk into a room and see a panning, parallax project mural collage 
 
 There would be a little photobooth area to print out or digitally share a postcard of their utopia block. At the end of the experience would be a wall with projected word clouds and visualizations of peoples’ answers so you get a sense of where the majority lies.
 
-![Illustration of people standing in front of a mural of a city on one wall and a word cloud on the other](/portfolio/youtopia/idea2.jpeg)
-![Photograph of a room with kiosks lined up in front of a wall with a sky mural](/portfolio/youtopia/idea2_1.png)
-![Animated panning illustration of a city](/portfolio/youtopia/idea2_2.gif)
-![Video of someone using a photo kiosk at a conference](/portfolio/youtopia/idea2_3.gif)
+![Illustration of people standing in front of a mural of a city on one wall and a word cloud on the other](/optimized/portfolio/youtopia/idea2.webp)
+![Photograph of a room with kiosks lined up in front of a wall with a sky mural](/optimized/portfolio/youtopia/idea2_1.webp)
+![Animated panning illustration of a city](/optimized/portfolio/youtopia/idea2_2.webm)
+![Video of someone using a photo kiosk at a conference](/optimized/portfolio/youtopia/idea2_3.webm)
 
 ### Idea #3: Scavenger Hunt
 
@@ -86,9 +86,9 @@ The clues would be constructed in a way that should be done in groups, such as g
 
 For this idea, we had additional goals. Namely we wanted to introduce the result and concept of the research via an activity that encourages more direct collaborative interaction.
 
-![Animated illustration of a room of exhibits and taking a small item and placing it on a wall to illuminate part of the wall](/portfolio/youtopia/idea3.gif)
-![Photograph of a wall with sculptures with some of them lit up](/portfolio/youtopia/idea3_1.png)
-![Video of someone unfurling a scavenger hunt map](/portfolio/youtopia/idea3_2.gif)
+![Animated illustration of a room of exhibits and taking a small item and placing it on a wall to illuminate part of the wall](/optimized/portfolio/youtopia/idea3.gif)
+![Photograph of a wall with sculptures with some of them lit up](/optimized/portfolio/youtopia/idea3_1.webp)
+![Video of someone unfurling a scavenger hunt map](/optimized/portfolio/youtopia/idea3_2.webm)
 
 ## Schematics
 
@@ -100,13 +100,13 @@ From there we had to create our plan, for both the exact user flow as well as th
 
 Originally we wanted people to answer a questionaire at the start of their experience for our own record keeping (and to give the researchers more data to work with), but due to time considerations we axed it.
 
-![Flow chart showing the user flow from approaching to reading the research to taking the tokens to placing in buildings](/portfolio/youtopia/userflow.png)
+![Flow chart showing the user flow from approaching to reading the research to taking the tokens to placing in buildings](/optimized/portfolio/youtopia/userflow.webp)
 
 ### Implementation plan
 
 This was our final project for the class, so we only had 5 weeks to execute with 5 people.
 
-![A Gantt chart showing the plan from March to May](/portfolio/youtopia/gantt.png)
+![A Gantt chart showing the plan from March to May](/optimized/portfolio/youtopia/gantt.webp)
 
 ## Design
 
@@ -154,7 +154,7 @@ We decided on these districts:
 
 We then planned the layout for our city based on these districts:
 
-![A top down illustration of a map with 6 different buildings on it](/portfolio/youtopia/layout.jpeg)
+![A top down illustration of a map with 6 different buildings on it](/optimized/portfolio/youtopia/layout.webp)
 
 ## Fabrication
 
@@ -164,13 +164,13 @@ This project is obviously very fabrication heavy given that we're physically bui
 
 We started with some cheap cardboard prototypes to ensure we got the sizing and layout right. I was in charge of the wellbeing portion and my cardboard hospital definitely looked like a gospel church.
 
-![Photograph of a bunch of small buildings made of cardboard laid out in a circle](/portfolio/youtopia/cardboard1.jpeg)
-![Photograph of a small cardboard building with a cross and a slanted roof](/portfolio/youtopia/cardboardhospital.jpeg)
-![Photograph of a few organic shapes made of small cardboard stacked on top of each other](/portfolio/youtopia/cardboard2.jpeg)
+![Photograph of a bunch of small buildings made of cardboard laid out in a circle](/optimized/portfolio/youtopia/cardboard1.webp)
+![Photograph of a small cardboard building with a cross and a slanted roof](/optimized/portfolio/youtopia/cardboardhospital.webp)
+![Photograph of a few organic shapes made of small cardboard stacked on top of each other](/optimized/portfolio/youtopia/cardboard2.webp)
 
 Our teammate, Bruce, had previous experience with TouchDesigner and while we were fabricating our buildings, he started experimenting with projecting onto the city.
 
-![Video of projecting colors onto a cardboard city](/portfolio/youtopia/cardboardtouchdesigner.mp4)
+![Video of projecting colors onto a cardboard city](/optimized/portfolio/youtopia/cardboardtouchdesigner.mp4)
 
 ### Building the hospital
 
@@ -180,9 +180,9 @@ While my first cardboard prototype was done on the fly just for sizing purposes,
 
 So first thing's first; make the sides of the building in Illustrator, then cut out of wood.
 
-![A screenshot from Illustrator of many sides of a building with the windows cut out](/portfolio/youtopia/hospitalcutout.png)
-![Photograph of the front of a wooden model hospital ](/portfolio/youtopia/woodhospital.jpeg)
-![Photograph of the back of a wooden hospital that is singed on the edges](/portfolio/youtopia/cardboardhospital2.jpeg)
+![A screenshot from Illustrator of many sides of a building with the windows cut out](/optimized/portfolio/youtopia/hospitalcutout.webp)
+![Photograph of the front of a wooden model hospital ](/optimized/portfolio/youtopia/woodhospital.webp)
+![Photograph of the back of a wooden hospital that is singed on the edges](/optimized/portfolio/youtopia/cardboardhospital2.webp)
 
 The laser cutter I was using's filter was broken, so the wood caught on fire. Good thing we're painting it all white!
 
@@ -196,7 +196,7 @@ At this point I tried a few different methods, from coin pushers to RFID, but br
 
 Yes, this means that every building needs a slide now!
 
-![Video of sliding wood pieces over a clear acryllic ramp](/portfolio/youtopia/slide.mp4)
+![Video of sliding wood pieces over a clear acryllic ramp](/optimized/portfolio/youtopia/slide.mp4)
 
 
 ### IR light sensors over I2C
@@ -207,13 +207,13 @@ We instead decided to use a more sophisticated IR light sensor used in gesture r
 
 This more sophisticated sensor communicates over I2C, so in order to handle our 6 different buildings we needed to use a multiplexor.
 
-![Video of the team trying out a multiplexor](/portfolio/youtopia/multiplexor.mp4)
+![Video of the team trying out a multiplexor](/optimized/portfolio/youtopia/multiplexor.mp4)
 
 After we got the multiplexor working separate from the table, it was time to try it with the physical table and intended layout.
 
 We needed to adjust the thresholds for each of the sensors, and because our USB cable for the Arduino was so short, I had to do so from under the table.
 
-![Video of Karina sitting under the table reading sensor data and shouting what she read](/portfolio/youtopia/testsensors.mp4)
+![Video of Karina sitting under the table reading sensor data and shouting what she read](/optimized/portfolio/youtopia/testsensors.mp4)
 
 ## Proof of Concept
 
@@ -221,14 +221,14 @@ With that multiplexor working, and our little models painted, we could finally t
 
 First version shown here uses BLE to communicate sensor data to TouchDesigner, but we had a lot of difficulties with interference in the space. Ideally we would use web sockets and use that as an opportunity to record the data to somewhere like Firebase.
 
-![Video of the class trying out the table interaction](/portfolio/youtopia/final1.mp4)
+![Video of the class trying out the table interaction](/optimized/portfolio/youtopia/final1.mp4)
 
 ## Showcase
 
 We showed our work at the 2023 ITP Spring Show and got a great response from viewers who voted.
 
-![Photograph of someone interacting with the projection table](/portfolio/youtopia/showcase2.jpeg)
+![Photograph of someone interacting with the projection table](/optimized/portfolio/youtopia/showcase2.webp)
 
-![Photograph of the projection table](/portfolio/youtopia/showcase1.jpeg)
+![Photograph of the projection table](/optimized/portfolio/youtopia/showcase1.webp)
 
-![Video of a closeup of the table](/portfolio/youtopia/showcase3.mp4)
+![Video of a closeup of the table](/optimized/portfolio/youtopia/showcase3.mp4)

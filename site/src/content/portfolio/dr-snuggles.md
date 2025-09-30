@@ -5,11 +5,11 @@ slug: /portfolio/dr-snuggles
 collaborators: []
 class: Thesis
 date: 2024-05-17T20:43:20.000Z
-preview: /portfolio/dr-snuggles/BBB_9357.JPG
+preview: /optimized/portfolio/dr-snuggles/BBB_9357.webp
 thumbnail_width: 2
 thumbnail_height: 1
-cover: /portfolio/dr-snuggles/vlcsnap-2024-08-09-16h37m20s405.png
-og_preview: /portfolio/dr-snuggles/BBB_9357.JPG
+cover: /optimized/portfolio/dr-snuggles/vlcsnap-2024-08-09-16h37m20s405.webp
+og_preview: /optimized/portfolio/dr-snuggles/BBB_9357.webp
 draft: false
 url: https://github.com/karomancer/DrSnuggles
 technologies:
@@ -35,7 +35,7 @@ piece_type:
 
 ***Note**: Still a work in progress*
 
-![Ad spot](/portfolio/dr-snuggles/dr-snuggles-captioned.mp4)
+![Ad spot](/optimized/portfolio/dr-snuggles/dr-snuggles-captioned.mp4)
 
 ### Thesis presentation
 Full presentation and context around satirical ad spot above.
@@ -48,16 +48,16 @@ Today, we have a loneliness and mental health epidemic that affects all age grou
 
 Today, 20-40% of Americans suffer from a mental health disorder, according to the [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness), and according to the [U.S. Surgeon General](https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf), young people aged 15-24 have 70% less social interaction with their friends than they did 20 years ago. 
 
-![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/stats_gallup.jpg)
+![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/stats_gallup.webp)
 The statistics are harrowing.
 | | | 
 | -- | -- |
-| ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/stats_ussurgeongeneral.jpg) |  ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/stats_statistica.jpg) |
+| ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/stats_ussurgeongeneral.webp) |  ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/stats_statistica.webp) |
 
 ...and there's no shortage of articles and books on the topic.
 | | | |
 | -- | -- | -- |
-| ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/article_loneliness.jpg) | ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/article_loneliness2.jpg) | ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/portfolio/dr-snuggles/book_alonetogether.jpg)  |  
+| ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/article_loneliness.webp) | ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/article_loneliness2.webp) | ![A screenshot of an article from "Mindfulness" titled "The loneliness epidemic: Nearly 1 in 4 adults feel lonely, new survey finds."](/optimized/portfolio/dr-snuggles/book_alonetogether.webp)  |  
 
 
 Loneliness is a universal human experience. We are social creatures, so the longing and search for companionship is natural to us. Throughout all of human history, we have imagined and even invented various forms of artificial companionship, ranging from imaginary friends to play things to built automata. Whether it's Yan Shi the Artificer's flirting automaton from 1000 BC or PARO the robotic elderly care seal in 2001, humans have long imagined a world with artificial companionship.
@@ -68,7 +68,7 @@ The band between real and artificial is ever narrowing and humans are becoming m
 
 | | |
 | -- | -- |
-| ![](/portfolio/dr-snuggles/article_rentbf.jpg) |  ![](/portfolio/dr-snuggles/article_chatbot.jpg) |
+| ![](/optimized/portfolio/dr-snuggles/article_rentbf.webp) |  ![](/optimized/portfolio/dr-snuggles/article_chatbot.webp) |
 
 Since the pandemic closures, therapy and psychiatry have become even larger booming businesses. Combine that with our government already being in bed with Big Pharma and Big Tech, we have a very interesting set of incentives behind future products of Health Tech. What might the future of Human-Robot Interaction look like? With this gaping need for companionship and desire for emotional support, what type of companionship robot might we design?
 
@@ -357,10 +357,10 @@ Then I moved on to potential pill-dispensing mechanisms.
 
 | Mouth and tongue mechanisms | Dispenser idea #1: Rotating disk | Dispenser Idea #2: Double Gated |
 | -- | -- | -- |
-| ![Video montage of 3D modeling and printing mechanisms for a moving mouth and tongue](/portfolio/dr-snuggles/garfieldLabeled.mp4) | ![Video of a octogonal pez dispenser that rotates a disk with pez on it over a hole.](/portfolio/dr-snuggles/dispense1.mp4) | ![Video of a tall pipe dispenser that uses a double gated type of mechanism to let a single pill into a lock then releases it.](/portfolio/dr-snuggles/dispense2.mp4) |
+| ![Video montage of 3D modeling and printing mechanisms for a moving mouth and tongue](/optimized/portfolio/dr-snuggles/garfieldLabeled.mp4) | ![Video of a octogonal pez dispenser that rotates a disk with pez on it over a hole.](/optimized/portfolio/dr-snuggles/dispense1.mp4) | ![Video of a tall pipe dispenser that uses a double gated type of mechanism to let a single pill into a lock then releases it.](/optimized/portfolio/dr-snuggles/dispense2.mp4) |
 
 Ultimately, I modeled my pill mechanism design after a toothpick dispenser and it worked pretty well! Compact and efficient:
-![Video of a clear acryllic box with pills neatly stacked in it and a rotating cylinder that takes one in at a time and rotates it out of a little hatch.](/portfolio/dr-snuggles/dispense.mp4)
+![Video of a clear acryllic box with pills neatly stacked in it and a rotating cylinder that takes one in at a time and rotates it out of a little hatch.](/optimized/portfolio/dr-snuggles/dispense.mp4)
 
 
 ### Character design
@@ -369,15 +369,15 @@ Animatronic/character design is a real field of study with plenty of design stan
 * **Ensure it has soft, luscious fur**. There's been a few psychological studies that suggest that petting soft fur, even if unattached to an animal, naturally produces oxytocin in our brain. This is one of many reasons why owners of furry friends tend to experience a lot of health benefits, such as lower blood pressure and reports of less stress, from interacting with their pets. Just like how PARO the seal had fur, so too should my creature. I was lucky enough to have Zoe Fraade-Blanar, the CEO of Squishables, help advise me on this project and she gifted me a monster wreath plush to use as a base. I acquired some other furs, but none were as nice to pet as the one she gave me, so I started working my designs around the wreath and creating patterns that would utilize the fur in the best way.
 * **Make it disarming in appearance**. Our psychology is such that we naturally develop trust in a person or system that exudes a pleasant, disarming appearance. This is often how people often get away with abuse and exactly why we see a lot of little girls and dolls as deranged antagonists in horror films. That said, I didn't want to go full cute, I wanted there to be something strange about the character that hints at its ill programming/intentions. Thus, I knew I wanted to make a cute creature, but ended up deciding to create one with black, empty eyes. If eyes are windows to the soul, this creature, though cute, has soulless eyes, hopefully representing the soullessness of the Big Pharma and Big Tech corps that purpotedly created it.
 
-![Sketches of a furry character with no arms or legs and with black eyes and long ears](/portfolio/dr-snuggles/process_sketches.jpg)
-![Photograph of a stuffed furry monster wreath](/portfolio/dr-snuggles/process_wreath.jpg)
-![Photograph of a pattern of a character with large ears and no arms cut out of paper](/portfolio/dr-snuggles/process1.jpg)
-![Photograph of a character cut out of fur with several ear options above it](/portfolio/dr-snuggles/process2.jpg)
-![Photograph of a character cut out of fur with several ear options above it](/portfolio/dr-snuggles/process3.jpg)
+![Sketches of a furry character with no arms or legs and with black eyes and long ears](/optimized/portfolio/dr-snuggles/process_sketches.webp)
+![Photograph of a stuffed furry monster wreath](/optimized/portfolio/dr-snuggles/process_wreath.webp)
+![Photograph of a pattern of a character with large ears and no arms cut out of paper](/optimized/portfolio/dr-snuggles/process1.webp)
+![Photograph of a character cut out of fur with several ear options above it](/optimized/portfolio/dr-snuggles/process2.webp)
+![Photograph of a character cut out of fur with several ear options above it](/optimized/portfolio/dr-snuggles/process3.webp)
 
 After creating the animatronic "skin", I did a loose fit onto the armature structure and motor mounts I built earlier to see if it would work. Even without stuffing yet, it looked pretty good to me!
 
-![Video of the animatronic skin of a furry character with ears with a motor in its mouth, yapping](/portfolio/dr-snuggles/yapping.mov)
+![Video of the animatronic skin of a furry character with ears with a motor in its mouth, yapping](/optimized/portfolio/dr-snuggles/yapping.mp4)
 
 After I did all my design work, I realized that my creation ended up looking like the child of a Furby and an Animaniac, but hey, maybe both of those IPs just got it right the first time with achieving creepy-cute and parody.
 
@@ -398,9 +398,9 @@ The video is at the top of this file, but here are the slides and photographs fr
 
 #### Pictures from the final presentation
 
-![A photograph of a woman with green hair presenting a slide with a Venn diagram between "Big Pharma" and "Big Tech" showing the intersection as "Big Solutions"](/portfolio/dr-snuggles/prezzo1.jpeg)
-!["A photograph of a woman with green hair presenting a slide with a picture of a book with the title "Alone Together"](/portfolio/dr-snuggles/prezzo2.jpeg)
-!["A photograph of a woman with green hair presenting a slide with a giant photograph of a fluffy teal stuffed animal with its mouth open with ominous lighting.](/portfolio/dr-snuggles/prezzo4.jpeg)
+![A photograph of a woman with green hair presenting a slide with a Venn diagram between "Big Pharma" and "Big Tech" showing the intersection as "Big Solutions"](/optimized/portfolio/dr-snuggles/prezzo1.webp)
+!["A photograph of a woman with green hair presenting a slide with a picture of a book with the title "Alone Together"](/optimized/portfolio/dr-snuggles/prezzo2.webp)
+!["A photograph of a woman with green hair presenting a slide with a giant photograph of a fluffy teal stuffed animal with its mouth open with ominous lighting.](/optimized/portfolio/dr-snuggles/prezzo4.webp)
 
 ### One last note
 

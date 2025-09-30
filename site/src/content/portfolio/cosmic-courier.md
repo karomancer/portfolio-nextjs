@@ -8,9 +8,9 @@ collaborators:
   - Armando Pimentel
 class: New Arcade
 date: 2023-05-20T03:24:34.000Z
-preview: /portfolio/cosmic-courier/thumbnail.jpeg
-cover: /portfolio/cosmic-courier/cover.jpeg
-og_preview: /portfolio/cosmic-courier/thumbnail.jpeg
+preview: /optimized/portfolio/cosmic-courier/thumbnail.webp
+cover: /optimized/portfolio/cosmic-courier/cover.webp
+og_preview: /optimized/portfolio/cosmic-courier/thumbnail.webp
 draft: false
 url: https://github.com/karomancer/spacepirates
 technologies:
@@ -36,9 +36,9 @@ piece_type:
   - portfolio
 ---
 
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville3.mp4)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville3.mp4)
 
-![Interview video from the ITP showcase](/portfolio/cosmic-courier/interview.mp4)
+![Interview video from the ITP showcase](/optimized/portfolio/cosmic-courier/interview.mp4)
 
 For my New Arcade class at ITP, our final was to create a full Unity game and arcade cabinet. I worked on the controllers as well, but given this is Dribbble, I'll only show the art assets I made.
 
@@ -58,15 +58,15 @@ I created a base layer in Photoshop with compositing ocean and space photographs
 
 I did this a few times, and some of the results were trippier than I bargained for, but I'm largely happy with where it ended up!
 
-![An illustration of a starry background with an ocean like pattern](/portfolio/cosmic-courier/starmap_1.jpeg)
-![An illustration of a starry background with a wave like pattern](/portfolio/cosmic-courier/starmap_2.jpeg)
-![An illustration of a starry background with trippy magenta stripes](/portfolio/cosmic-courier/starmap_3.jpeg)
+![An illustration of a starry background with an ocean like pattern](/optimized/portfolio/cosmic-courier/starmap_1.webp)
+![An illustration of a starry background with a wave like pattern](/optimized/portfolio/cosmic-courier/starmap_2.webp)
+![An illustration of a starry background with trippy magenta stripes](/optimized/portfolio/cosmic-courier/starmap_3.webp)
 
 ### "Player" design
 
 In space, the placement of masts or solar sails can be either on the top, the sides, or the bottom of the ship. That opened a lot of opportunity to put sails in non-traditional places. So initial thoughts were ships that resemble fish or sea animals like fish or narwhals.
 
-![Sketches of fish themed pirate ships](/portfolio/cosmic-courier/sketches.jpeg)
+![Sketches of fish themed pirate ships](/optimized/portfolio/cosmic-courier/sketches.webp)
 
 When illustrating the ship in Adobe Illustrator, I started with the basics of the shape of the ship and the cannon placement.
 
@@ -76,7 +76,7 @@ Then we had to think a bit about this world...do the ships need bubbles for oxyg
 
 We decided on the latter, and ditched the air bubble. Fins and solar sails came later, and visually act as a rudder.
 
-![Different stages of illustrations of ship sprites](/portfolio/cosmic-courier/shipdesign.jpeg)
+![Different stages of illustrations of ship sprites](/optimized/portfolio/cosmic-courier/shipdesign.webp)
 
 ### Enemy Design
 
@@ -93,13 +93,13 @@ The turret on the asteroid had to be distinguished from other asteroids. So I ad
 
 Since you are also a pirate-like ship, the pirate ship had to be very distinct (and clearly a bad guy), so I decided to go with a red and black scheme. Since sails are showing up as fins, it made sense to do the usual skull pattern on the "fins".
 
-![Different enemy sprite designs from cannons to enemy pirate ships](/portfolio/cosmic-courier/enemydesign.jpeg)
+![Different enemy sprite designs from cannons to enemy pirate ships](/optimized/portfolio/cosmic-courier/enemydesign.webp)
 
 ### Asteroids
 
 The player needs obstacles, so what better obstacle to have in a game about space pirates than asteroids? I only illustrated four, then we programmatically scattered and adjusted color tints and sizes in Unity to give the illusion of more variety.
 
-![Different asteroid illustrations](/portfolio/cosmic-courier/asteroids.jpeg)
+![Different asteroid illustrations](/optimized/portfolio/cosmic-courier/asteroids.webp)
 
 ### Space Chicken Pickups
 
@@ -111,7 +111,7 @@ If the players' ship gets hit, there's a random chance that part of their chicke
 
 Drew a few frames of the chicken trying to fly through space.
 
-![Spritemap of a chicken with an astronaut helmet flapping](/portfolio/cosmic-courier/spacechickens.jpeg)
+![Spritemap of a chicken with an astronaut helmet flapping](/optimized/portfolio/cosmic-courier/spacechickens.webp)
 
 ### Customers
 
@@ -121,7 +121,7 @@ We decided the customers would all be isolated astronauts on small, themed plane
 
 Several themed planets are in the works, but only two so far have made it into the game.
 
-![Illustration of little astronauts holding flags on themed planets](/portfolio/cosmic-courier/customers.jpeg)
+![Illustration of little astronauts holding flags on themed planets](/optimized/portfolio/cosmic-courier/customers.webp)
 
 ### Skull & Crossbones
 
@@ -131,13 +131,13 @@ Because we're talking space pirates, I thought it would be funny if the crossbon
 
 Similarly, we decided that the point system in the game should be number of doubloon you get from your customers for successfully delivering space chickens. Used that skull and crossbones base to create a doubloon.
 
-![Illustrations of adorable skulls in astronaut helmets](/portfolio/cosmic-courier/skulls.jpeg)
+![Illustrations of adorable skulls in astronaut helmets](/optimized/portfolio/cosmic-courier/skulls.webp)
 
 ### Tutorial screens
 
 Lastly, with all the assets made, we need to have a series of instruction screens like any good arcade game.
 
-![Illustrations of tutorial screens](/portfolio/cosmic-courier/tutorialscreens.jpeg)
+![Illustrations of tutorial screens](/optimized/portfolio/cosmic-courier/tutorialscreens.webp)
 
 ## Progress by group
 
@@ -152,10 +152,10 @@ We eventually decided a sit down table in the shape of a ship with the head of t
 
 Sketches and CAD model by Kay:
 
-![CAD model of a tabletop arcade cabinet in the shape of a boat](/portfolio/cosmic-courier/shipcad.jpeg)
-![Sketch of an upright arcade cabinet](/portfolio/cosmic-courier/shipsketch2.jpeg)
-![Sketch of a tabletop arcade cabinet](/portfolio/cosmic-courier/shipsketch3.jpeg)
-![Sketch of an tabletop arcade cabinet in the shape of a boat](/portfolio/cosmic-courier/shipsketch.jpeg)
+![CAD model of a tabletop arcade cabinet in the shape of a boat](/optimized/portfolio/cosmic-courier/shipcad.webp)
+![Sketch of an upright arcade cabinet](/optimized/portfolio/cosmic-courier/shipsketch2.webp)
+![Sketch of a tabletop arcade cabinet](/optimized/portfolio/cosmic-courier/shipsketch3.webp)
+![Sketch of an tabletop arcade cabinet in the shape of a boat](/optimized/portfolio/cosmic-courier/shipsketch.webp)
 
 
 ### Game design
@@ -163,8 +163,8 @@ I largely had nothing to do with this aspect other than provide my feedback on h
 
 Because the person sitting at the end is physically steering a wheel, I worked with Armando and we decided it made sense for the wheel to control the rotation of the entire world rather than the player ship asset itself:
 
-![Video of boxes moving across the screen shooting red bullets](/portfolio/cosmic-courier/gameprogress1.mp4)
-![Video of an ocean background rotating with boxes on top shooting red bullets](/portfolio/cosmic-courier/gameprogress2.mp4)
+![Video of boxes moving across the screen shooting red bullets](/optimized/portfolio/cosmic-courier/gameprogress1.mp4)
+![Video of an ocean background rotating with boxes on top shooting red bullets](/optimized/portfolio/cosmic-courier/gameprogress2.mp4)
 
 ## Ship wheel
 
@@ -172,7 +172,7 @@ While Kay fabricated the wheel, Daniel and I worked on the controller itself wit
 
 In most video games, as soon as you release a wheel or key, it resets to stasis. We had to program our controller to continue to send key presses if the player had not reset the position of the wheel. 
 
-![Video of spinning a ship wheel and seeing output on a screen](/portfolio/cosmic-courier/shipwheel.mp4)
+![Video of spinning a ship wheel and seeing output on a screen](/optimized/portfolio/cosmic-courier/shipwheel.mp4)
 
 ## Cannon Controller
 
@@ -182,17 +182,17 @@ In addition to assets and the wheel, my top priority was creating the physical c
 
 To figure out the ideal player interaction, I did some silly prototyping with Coke cans. My first two ideas was a modern turret like shooting experience (left)and gatling gun crank (right):
 
-![Video of cannon cardboard prototypes](/portfolio/cosmic-courier/cardboardcannons.mp4)
+![Video of cannon cardboard prototypes](/optimized/portfolio/cosmic-courier/cardboardcannons.mp4)
 
 I wasn't sold on either of these ideas, so what I prototyped next was to create a CAD model of a cannon to print on a platform with a handle that a player would use to swing it 180º as it sits on a potentiometer. The players would control the opposite sided cannons in this fashion.
 
 I also made alternative models with the handles on either side, like the turret style from before.
 
-![CAD model of a cannon on a disk with a handle sticking straight up](/portfolio/cosmic-courier/cannoncad1.jpeg)
-![CAD model of a cannon on a disk with a handle sticking straight up](/portfolio/cosmic-courier/cannoncad2.jpeg)
-![CAD model of a cannon on a disk with a handle sticking straight up](/portfolio/cosmic-courier/cannoncad3.jpeg)
+![CAD model of a cannon on a disk with a handle sticking straight up](/optimized/portfolio/cosmic-courier/cannoncad1.webp)
+![CAD model of a cannon on a disk with a handle sticking straight up](/optimized/portfolio/cosmic-courier/cannoncad2.webp)
+![CAD model of a cannon on a disk with a handle sticking straight up](/optimized/portfolio/cosmic-courier/cannoncad3.webp)
 
-![Video of a green haired woman with glasses with small 3D print prototypes of a cannon](/portfolio/cosmic-courier/cannonsmallprint.mp4)
+![Video of a green haired woman with glasses with small 3D print prototypes of a cannon](/optimized/portfolio/cosmic-courier/cannonsmallprint.mp4)
 
 ### Final design
 
@@ -200,26 +200,26 @@ The final cannon design was 3D printed in black PLA and painted and screwed onto
 
 The bottom of the wood had a ring of felt to help a bit with scratches.
 
-![3D print of a partly assembled miniature cannon](/portfolio/cosmic-courier/cannonprint2.jpeg)
-![Video of a miniature cannon being moved around](/portfolio/cosmic-courier/cannontest.mp4)
-![3D print of a partly assembled miniature cannon](/portfolio/cosmic-courier/cannonprint1.jpeg)
+![3D print of a partly assembled miniature cannon](/optimized/portfolio/cosmic-courier/cannonprint2.webp)
+![Video of a miniature cannon being moved around](/optimized/portfolio/cosmic-courier/cannontest.mp4)
+![3D print of a partly assembled miniature cannon](/optimized/portfolio/cosmic-courier/cannonprint1.webp)
 
 ## Final Playtests
 
 The final playtests before full assembly and showcasing it at Wonderville. Only 1 cannon was made at this point.
 
-![The team testing the game out before putting on the legs](/portfolio/cosmic-courier/playtest.mp4)
+![The team testing the game out before putting on the legs](/optimized/portfolio/cosmic-courier/playtest.mp4)
 
-![Video of the team demo-ing it for class](/portfolio/cosmic-courier/final.mp4)
+![Video of the team demo-ing it for class](/optimized/portfolio/cosmic-courier/final.mp4)
 
 ## Wonderville NYC
 
 This cabinet, alongside others in the class, were showcased at the indie arcade bar, [Wonderville](https://www.wonderville.nyc/), in Brooklyn.
 
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville1.mp4)
-![The team playing it at Wonderville](/portfolio/cosmic-courier/wonderville2.mp4)
-![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot1.jpeg)
-![Screenshot from the game showing the player taking damage from a pirate](/portfolio/cosmic-courier/screenshot2.jpeg)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville1.mp4)
+![The team playing it at Wonderville](/optimized/portfolio/cosmic-courier/wonderville2.mp4)
+![Screenshot from the game showing the player taking damage from a pirate](/optimized/portfolio/cosmic-courier/screenshot1.webp)
+![Screenshot from the game showing the player taking damage from a pirate](/optimized/portfolio/cosmic-courier/screenshot2.webp)
 
 ---
 

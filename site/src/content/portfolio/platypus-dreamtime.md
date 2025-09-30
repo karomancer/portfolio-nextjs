@@ -9,9 +9,9 @@ collaborators:
   - "[Soyeon Hwang](https://hcii.cmu.edu/people/soyeon-hwang)"
 class: Human-Computer Interaction Capstone
 date: 2013-05-09T03:07:47.000Z
-preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
-cover: /portfolio/playtpus-dreamtime/cover2.jpeg
-og_preview: /portfolio/playtpus-dreamtime/interactivePrototype.jpg
+preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
+cover: /optimized/portfolio/playtpus-dreamtime/cover2.webp
+og_preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
 draft: false
 url: ""
 technologies:
@@ -68,21 +68,21 @@ Platypus was still early in development, so they didn't have too many resources 
 I found most of our interviewees and ran the vast majority of our contextual design interviews. I provided design feedback to my teammate Alex Rothera on his product mocks, and took his mocks into the world to gather feedback for the next iteration. I also produced a lot of the visualizations in our final presentation and report, such as the informational flow chart and the people interviewed visualization. Lastly, I did a lot of project management. I maintained the Gantt chart and scheduling, which was a natural step because a lot had to be scheduled around when user feedback would come back.
 
 ### Process pictures
-![Interviewing a rancher at the Strip District Farmer's Market](/portfolio/playtpus-dreamtime/farmer_interview.jpg)
+![Interviewing a rancher at the Strip District Farmer's Market](/optimized/portfolio/playtpus-dreamtime/farmer_interview.webp)
 
 Through a friend of a friend, I found a timberer who was willing to take part in our UX research. We drove through the February snow in Pennsylvania down to Beaver County to see his day-to-day operations. While there we inquired about his knowledge of the dangers of fracking and whether his timbering operation would be interested in beta-testing the Platypus water monitoring system. Pictured here is myself and my teammate Soyeon Hwang interviewing the timberer
 
-![Timberer Interview](/portfolio/playtpus-dreamtime/timberer_interview.jpeg)
+![Timberer Interview](/optimized/portfolio/playtpus-dreamtime/timberer_interview.webp)
 
-![Lo-Fi testing with users](/portfolio/playtpus-dreamtime/hydroponist_interview.png)
+![Lo-Fi testing with users](/optimized/portfolio/playtpus-dreamtime/hydroponist_interview.webp)
 
 Identifying the entities involved, the flow of information, and where the breakdowns are in that flow
 
-![Flow of information](/portfolio/playtpus-dreamtime/flowchart.png)
+![Flow of information](/optimized/portfolio/playtpus-dreamtime/flowchart.webp)
 
 Who we interviewed to both understand the agricultural space better but also to test the ease of our UX in our mockups.
 
-![Interview stats 38 interviews 14 potential Platypus users](/portfolio/playtpus-dreamtime/interview_stats.png)
+![Interview stats 38 interviews 14 potential Platypus users](/optimized/portfolio/playtpus-dreamtime/interview_stats.webp)
 
 
 ## Final recommendations and presentation
