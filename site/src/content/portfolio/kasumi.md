@@ -197,9 +197,7 @@ The second attempt went significantly better!
 
 ![Photograph of a painted silver sword and a black sheath crossed on the floor](/optimized/portfolio/kasumi/finishedsword.webp)
 
-In fact, I felt I did such a good job I even put the STL print files on Etsy! I sell about a half dozen a month.
-
-[Link to Etsy site from which you can buy the sword files](https://www.etsy.com/listing/989725675/kasumi-yoshizawa-rapier-3d-print-files)
+In fact, I felt I did such a good job [I even put the STL print files on Etsy](https://www.etsy.com/listing/989725675/kasumi-yoshizawa-rapier-3d-print-files)! I sell about a half dozen a month.
 
 ---
 

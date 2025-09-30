@@ -23,7 +23,7 @@ const UNFURLING_WEBSITES = [
   "cargo",
   "studio.patreon",
   "chriseminizer",
-  "etsy",
+  // "etsy", // Removed: Etsy uses DataDome bot protection that blocks automated scraping
 ];
 const MD_URL_PATTERN = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
 
@@ -72,7 +72,7 @@ export const unfurlLink = async (link: string) => {
           url: link,
           html: resp.data,
         });
-        console.log("Medium scraped", scraped);
+        console.log("Link scraped", scraped);
         return {
           ...scraped,
           link,
