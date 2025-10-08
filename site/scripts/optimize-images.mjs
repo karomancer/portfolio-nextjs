@@ -68,32 +68,15 @@ async function optimizeImage(inputPath, outputPath) {
 
     // Determine quality settings based on output format
     let quality = 85;
-    let additionalOptions = "";
 
     if (outputExt === ".webp") {
       quality = 80;
-      additionalOptions = "-define webp:method=6";
     } else if (outputExt === ".jpg" || outputExt === ".jpeg") {
       quality = 85;
-      additionalOptions = "-sampling-factor 4:2:0 -strip";
-    } else if (outputExt === ".png") {
-      additionalOptions = "-strip";
     }
 
-    // Build ImageMagick command
-    const magickCmd = [
-      "magick",
-      `"${inputPath}"`,
-      "-quality",
-      quality,
-      "-resize",
-      "2048x2048>",
-      // Note: Removed -auto-orient to prevent incorrect rotations
-      additionalOptions,
-      `"${outputPath}"`,
-    ]
-      .filter(Boolean)
-      .join(" ");
+    // Build ImageMagick command - simplified to avoid define option issues
+    const magickCmd = `magick "${inputPath}" -quality ${quality} -resize "2048x2048>" "${outputPath}"`;
 
     console.log(`  🔄 Optimizing: ${path.basename(inputPath)}`);
 

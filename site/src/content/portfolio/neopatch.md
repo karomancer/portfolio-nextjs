@@ -3,7 +3,7 @@ title: Neopatch
 description: A cyberpunk-styled jacket with programmable embroidered snap-on RFID patches that control LED lighting effects & animations.
 slug: /portfolio/neopatch
 collaborators:
-  - Daniel Wai
+  - "[Daniel Wai](https://didnotwork.myportfolio.com/)"
 date: 2022-12-15T03:25:48.000Z
 preview: /optimized/portfolio/neopatch/1-2.webp
 cover: /optimized/portfolio/neopatch/1-9.webp

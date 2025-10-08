@@ -30,45 +30,36 @@ const AboutMe = ({ id = "one" }) => {
           </div>
         </div>
         <div>
-          <h2>Who am I?</h2>
-          👋 Hello World, I'm <b>Karina Chow</b>
+          <h2>Hello World, I'm Karina! 👋</h2>
           <br />
-          I'm a San Francisco-based creative technologist, software developer,
-          artist, and designer that sits at the intersection of art and
-          technology.
+          I'm a creative technologist that loves exploring the intersection of
+          art, psychology, and technology and creating meaningful and joyful
+          experiences through games and products.
           <br />
-          My work ranges from frontend engineering and mobile app development to
-          graphic design and illustration, pitch deck preparation, and animation
-          work. I typically work with small startups ranging from pre-seed to
-          series B, utilizing all my skills to build prototypes and full fledged
-          products. Today, I have a couple subcontractors to help me better
-          serve my clients under my own company, <strong>KACHOW! LLC</strong>
-          <br />
-          In the last couple of years, I've also been exploring mixed reality,
+          In the last couple of years I've been tinkering with mixed reality,
           e-textiles, algo/AI art, and projection mapping. In May, I received my
-          masters degree in{" "}
+          Masters of Professional Studies in{" "}
           <a href="https://itp.nyu.edu/itp/" target="_blank">
             Interactive Telecommunications
           </a>{" "}
-          at <strong>New York University</strong>. You can see these
-          explorations in my <Link href="/portfolio">portfolio</Link> and{" "}
-          <Link href="/blog">blog</Link>.
+          at <strong>New York University</strong>.
           <br />
-          Prior to grad school and starting my own business, I spent a decade as
-          a software engineer in San Francisco. I worked as a data engineer at{" "}
-          <strong>Yammer</strong>, a frontend engineer at <strong>Honor</strong>
-          , and a frontend infrastructure team leader at{" "}
+          Professionally, my work currently ranges from frontend engineering and
+          mobile app development to graphic design and illustration, pitch deck
+          preparation, and animation work. I typically work with small startups
+          ranging from pre-seed to series B, utilizing all my skills to build
+          prototypes and full fledged products. Today, I have a couple
+          subcontractors to help me better serve my clients under my own
+          company, <strong>KACHOW! LLC</strong>.
+          <br />
+          For over a decade, I worked as a software engineer in San Francisco:
+          as a data engineer at <strong>Yammer</strong>, a frontend engineer at{" "}
+          <strong>Honor</strong>, and a frontend infrastructure team leader at{" "}
           <strong>Patreon</strong>. I've spoken both at conferences about
-          frontend infrastructure, design systems, as well as disabilities,
-          accessibility, and mental health in tech.
-          <br />I received my <strong>Bachelor of Science</strong> in{" "}
-          <a
-            href="https://www.csd.cs.cmu.edu/academics/bachelors/overview"
-            target="_blank"
-          >
-            Computer Science
-          </a>{" "}
-          and{" "}
+          frontend infrastructure, design systems, as well as conferences about
+          disabilities, accessibility, and mental health in tech.
+          <br />
+          Previously, I got my Bachelor of Science in Computer Science and{" "}
           <a href="https://hcii.cmu.edu/" target="_blank">
             Human-Computer Interaction
           </a>{" "}

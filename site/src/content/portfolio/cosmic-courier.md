@@ -1,10 +1,10 @@
 ---
 title: Cosmic Courier
-description: A 3-person co-op game in which players play as a space pirate crew navigating across the galaxy using alt controllers.
+description: A 3-player game in which players traverse and fight their way through the galaxy using alt controllers.
 slug: /portfolio/cosmic-courier
 collaborators:
-  - Daniel Wai
-  - Kayla Wasil
+  - "[Daniel Wai](https://didnotwork.myportfolio.com/)"
+  - "[Kay Wasil](https://kwasil.com/about)"
   - Armando Pimentel
 class: New Arcade
 date: 2023-05-20T03:24:34.000Z

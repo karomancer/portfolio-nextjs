@@ -21,6 +21,9 @@ categories:
 type: portfolioPiece
 piece_type:
   - journal
+  - work
+thumbnail_width: 1
+thumbnail_height: 1
 ---
 
 ![Photograph of the album cover with imagery of caves and hills](/optimized/portfolio/over-hills-and-underground/IMG_20201104_170138.webp)

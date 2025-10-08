@@ -84,11 +84,21 @@ export default function Portfolio({
         ogUrl="/portfolio"
         ogImage="/images/og_image.png"
       />
-      <CircuitsHeader>My favorite projects thus far</CircuitsHeader>
+      <CircuitsHeader>Creative Technology projects</CircuitsHeader>
       <PortfolioSection
         allTags={allTags}
         allTechnologies={allTechnologies}
-        pieces={pieces}
+        pieces={pieces.filter((piece) =>
+          piece.frontmatter.piece_type?.includes("portfolio")
+        )}
+      />
+      <CircuitsHeader>Client work (dev & graphic design)</CircuitsHeader>
+      <PortfolioSection
+        allTags={allTags}
+        allTechnologies={allTechnologies}
+        pieces={pieces.filter((piece) =>
+          piece.frontmatter.piece_type?.includes("work")
+        )}
       />
     </>
   );

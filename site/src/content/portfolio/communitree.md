@@ -23,8 +23,6 @@ categories:
   - CMU
   - Pittsburgh Botanic Garden
 type: portfolioPiece
-thumbnail_width: 2
-thumbnail_height: 1
 piece_type:
   - portfolio
 ---
