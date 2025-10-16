@@ -12,6 +12,7 @@ import Embed from "./Embed";
 import { ListItem, Td as TdType } from "./types";
 
 import styles from "./styles.module.scss";
+import Script from "next/script";
 
 // Embed link data can be fetched in static props
 // and mapped over here
@@ -172,7 +173,7 @@ const resizePictures = () => {
         const child = childrenToRemove[k];
         const naturalWidth = child.naturalWidth;
         const naturalHeight = child.naturalHeight;
-        
+
         child.style.width = `${100 / childrenToRemove.length - gutter}%`;
         parentNode.appendChild(paragraphs[i].removeChild(child));
       }

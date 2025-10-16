@@ -20,7 +20,15 @@ const Asset = (asset: ImageType) => {
   }
 
   if (isImg) {
-    return <img className="p-asset" alt={asset.alt} src={asset.src} />;
+    return (
+      <img
+        className="p-asset"
+        alt={asset.alt}
+        src={asset.src}
+        data-protected="true"
+        data-original-src={asset.src}
+      />
+    );
   }
 
   if (isVideoGif) {
