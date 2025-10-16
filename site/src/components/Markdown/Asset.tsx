@@ -20,7 +20,9 @@ const Asset = (asset: ImageType) => {
   }
 
   if (isImg) {
-    return <img className="p-asset" alt={asset.alt} src={asset.src} />;
+    // Add debugging console log to track what's happening
+    console.log('Rendering image:', asset.src, 'alt:', asset.alt);
+    return <img className="p-asset" alt={asset.alt} src={asset.src} key={asset.src} data-debug-src={asset.src} />;
   }
 
   if (isVideoGif) {

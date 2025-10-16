@@ -12,6 +12,7 @@ import Embed from "./Embed";
 import { ListItem, Td as TdType } from "./types";
 
 import styles from "./styles.module.scss";
+import Script from "next/script";
 
 // Embed link data can be fetched in static props
 // and mapped over here
@@ -45,6 +46,23 @@ export default function Markdown({ className, children, embeds }: Props) {
   const Anchor = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     if (embeds && embeds[props.href]) {
       if (embeds[props.href].isIframe) {
+        if (embeds[props.href].isTikTok) {
+          return (
+            <>
+              <blockquote
+                className="tiktok-embed"
+                cite={props.href}
+                data-video-id={props.href?.split("/").pop()}
+                data-embed-from="embed_page"
+                style={{ maxWidth: 605, minWidth: 325 }}
+              >
+                <section />
+              </blockquote>
+              <Script async src="https://www.tiktok.com/embed.js"></Script>
+            </>
+          );
+        }
+
         return (
           <IFrame
             url={props.href}
@@ -172,7 +190,7 @@ const resizePictures = () => {
         const child = childrenToRemove[k];
         const naturalWidth = child.naturalWidth;
         const naturalHeight = child.naturalHeight;
-        
+
         child.style.width = `${100 / childrenToRemove.length - gutter}%`;
         parentNode.appendChild(paragraphs[i].removeChild(child));
       }
