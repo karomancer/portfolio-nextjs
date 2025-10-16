@@ -36,9 +36,14 @@ piece_type:
 ***Note**: Still a work in progress*
 
 
-![A woman playing Udder Mayhem](/optimized/portfolio/uddermayhem/demo_mercedes.mp4)
+![A photograph of a close up of a cow-shaped arcade cabinet](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0542-025_hero.webp)
+![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0535-020.webp)
+![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0531-016.webp)
+![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0528-013.webp)
 
 ![A woman playing Udder Mayhem](/optimized/portfolio/uddermayhem/demo_ivy.mp4)
+![The attract/start screen for Udder Mayhem](/optimized/portfolio/uddermayhem/PXL_20231008_180900354.webm)
+![A photograph of a preteen girl going through the tutorial level of Udder Mayhem.](/optimized/portfolio/uddermayhem/PXL_20231006_153257599.webp)
 
 ### Tutorial animation
 ![Tutorial](/optimized/portfolio/uddermayhem/tutorial.mp4)
@@ -215,7 +220,7 @@ With all of that, we have a working rhythm game! Just need to add some animation
 
 You can see the complete Unity code here:
 
-[GitHub](https://github.com/karomancer/uddermayhem/tree/main/BovineBaristaGame/Assets)
+[GitHub](https://github.com/karomancer/uddermayhem/tree/main/BovineBaristaGame)
 
 
 ### Win/Lose Conditions (WIP)
@@ -378,9 +383,41 @@ NYU chose mine and two other projects out of hundreds to go on the road and repr
 ![Photograph of Celine the cow more or less done](/optimized/portfolio/uddermayhem/celine.webp)
 ![Photograph of stuffing the cow in a Pelican case for shipping](/optimized/portfolio/uddermayhem/shipping.webp)
 ![Photograph of stuffing the cow in a Pelican case for shipping](/optimized/portfolio/uddermayhem/shippingcase.webp)
+![Video of a girl playing a cow game in the hotel](/optimized/portfolio/uddermayhem/hoteldemo.webm)
 
-Ensuring the game works after being shipped from Brooklyn to Santa Fe.
-![Video of a girl playing a cow game in the hotel](/optimized/portfolio/uddermayhem/hoteldemo.mp4)
-
-Udder Mayhem's #1 Biggest Fan
 ![Video of a kid playing](/optimized/portfolio/uddermayhem/kidplaying.mp4)
+![A video of an older man squeezing the teats of the udder controller](/optimized/portfolio/uddermayhem/IMG_7747.webm)
+![A photograph of a crowd of people standing around a person playing the udder game.](/optimized/portfolio/uddermayhem/IMG_8953.webp)
+![A woman playing Udder Mayhem](/optimized/portfolio/uddermayhem/demo_mercedes.mp4)
+
+![A photograph of a group of people each with a project (a giant nose, a cow, and a helmet) posing in front of a wall.](/optimized/portfolio/uddermayhem/IMG_8988.webp)
+
+My colleague [Josh](https://joshjoshjosh.net/) made a [TikTok starring Celine the Cow]((https://www.tiktok.com/@joshjoshjosh.net/video/7248340557053840686)) to remember our time together at the Currents New Media.
+
+
+## Coney Island Maker Faire
+I was also invited to bring Udder Mayhem to the Coney Island Maker Faire to represent my gradute program, and it was an absolute favorite amongst the kids.
+
+Once again, it all starts with a little prep, this time with swag as well:
+
+![A photograph of a cow video game arcade cabinet on a photography table](/optimized/portfolio/uddermayhem/coney_island_setup.webp)
+![A video of a vinyl printer printing stickers that say "Udder Mayhem" on them](/optimized/portfolio/uddermayhem/PXL_20231006_182411970.webm)
+![A photograph of a bunch of stickers ranging from a barista character, an udder, and a Starbucks cup](/optimized/portfolio/uddermayhem/PXL_20231006_190947756.webp)
+
+Then I headed off to the NYU table at Coney Island Maker Faire.
+
+![A photograph of the NYU ITP table at Coney Island Maker Faire, complete with violet banners and a cow and electronic plants.](/optimized/portfolio/uddermayhem/PXL_20231006_152809242.webp)
+![A photograph of people setting up at Coney Island Maker Faire](/optimized/portfolio/uddermayhem/attract_screen.webp)
+![A photograph of a girl playing Udder Mayhem on her own](/optimized/portfolio/uddermayhem/PXL_20231007_163929655.webp)
+![A photograph of a crowd of children gathered around the cow arcade machine.](/optimized/portfolio/uddermayhem/PXL_20231006_153303323.webp)
+
+
+![Video of some kids playing the game](/optimized/portfolio/uddermayhem/PXL_20231007_155038144.mp4)
+![Photograph of a man holding a little girl up to play](/optimized/portfolio/uddermayhem/PXL_20231007_160216124.webp)
+![Photograph of a man helping a smaller child reach the game](/optimized/portfolio/uddermayhem/PXL_20231008_175912756.webp)
+
+
+It was so popular among the children that it was even featured on the banner to purchase the following years' tickets!
+| |
+| -- |
+| ![A screenshot of the Coney Island Maker Faire homepage with the cow arcade machine prominently featured.](/optimized/portfolio/uddermayhem/coney-island-website.png) |

@@ -7,6 +7,7 @@ export type MetascrapedInfo = {
   image?: string;
   link: string;
   isIframe?: boolean;
+  isTikTok?: boolean;
 };
 
 const IFRAME_WEBSITES = [
