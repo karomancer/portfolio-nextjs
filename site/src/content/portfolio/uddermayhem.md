@@ -392,9 +392,8 @@ NYU chose mine and two other projects out of hundreds to go on the road and repr
 
 ![A photograph of a group of people each with a project (a giant nose, a cow, and a helmet) posing in front of a wall.](/optimized/portfolio/uddermayhem/IMG_8988.webp)
 
-My colleague [Josh](https://joshjoshjosh.net/) made a TikTok starring Celine the Cow to remember our time together at the Currents New Media:
+My colleague [Josh](https://joshjoshjosh.net/) made a [TikTok starring Celine the Cow]((https://www.tiktok.com/@joshjoshjosh.net/video/7248340557053840686)) to remember our time together at the Currents New Media.
 
-[TikTok video compilation of cow pictures](https://www.tiktok.com/@joshjoshjosh.net/video/7248340557053840686)
 
 ## Coney Island Maker Faire
 I was also invited to bring Udder Mayhem to the Coney Island Maker Faire to represent my gradute program, and it was an absolute favorite amongst the kids.
