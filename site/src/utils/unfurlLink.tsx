@@ -13,6 +13,7 @@ export type MetascrapedInfo = {
 const IFRAME_WEBSITES = [
   "glitch",
   "spotify",
+  "tiktok",
   "youtube",
   "vimeo",
   "pinterest",
@@ -78,6 +79,7 @@ export const unfurlLink = async (link: string) => {
           ...scraped,
           link,
           isIframe,
+          isTikTok: link.includes("tiktok"),
         } as MetascrapedInfo;
       } catch (_) {
         return {

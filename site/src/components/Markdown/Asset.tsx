@@ -22,6 +22,7 @@ const Asset = (asset: ImageType) => {
   if (isImg) {
     return (
       <img
+        key={asset.src}
         className="p-asset"
         alt={asset.alt}
         src={asset.src}
