@@ -21,6 +21,7 @@ interface CircuitsProps {
 
 const Circuits = ({ width, height, className }: CircuitsProps) => {
   const circuitsEl = useRef();
+  const p5InstanceRef = useRef<p5Type | null>(null);
 
   useEffect(() => {
     const sketch = (p: p5Type) => {
@@ -29,10 +30,13 @@ const Circuits = ({ width, height, className }: CircuitsProps) => {
       p.setup = () => {
         p.createCanvas(width || p.windowWidth, height || p.windowHeight);
         p.background(GRAY_RGB);
+        // Reduce frame rate for better performance
+        p.frameRate(30);
 
+        // Stop after 30 seconds instead of 60
         setTimeout(() => {
           p.noLoop();
-        }, 60000);
+        }, 30000);
       };
 
       p.draw = () => {
@@ -53,7 +57,15 @@ const Circuits = ({ width, height, className }: CircuitsProps) => {
     };
 
     const p5 = require("p5");
-    new p5(sketch, circuitsEl.current);
+    p5InstanceRef.current = new p5(sketch, circuitsEl.current);
+
+    // Cleanup on unmount or route change
+    return () => {
+      if (p5InstanceRef.current) {
+        p5InstanceRef.current.remove();
+        p5InstanceRef.current = null;
+      }
+    };
   }, [width, height]);
 
   return <div className={className} id="circuits" ref={circuitsEl}></div>;

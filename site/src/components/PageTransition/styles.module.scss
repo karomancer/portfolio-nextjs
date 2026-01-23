@@ -1,0 +1,82 @@
+.transitionOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+// Wipe transition
+.wipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--teal);
+  will-change: transform;
+}
+
+// Circles transition - large overlapping circles
+.circlesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: absolute;
+  // Large enough to overlap and cover gaps
+  width: 80vmax;
+  height: 80vmax;
+  background-color: var(--teal);
+  border-radius: 50%;
+  // Center the circle on its position point
+  margin-left: -40vmax;
+  margin-top: -40vmax;
+  will-change: transform;
+}
+
+// Diamonds transition
+.diamondsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.diamond {
+  position: absolute;
+  width: 40vmax;
+  height: 40vmax;
+  background-color: var(--teal);
+  transform: rotate(45deg);
+  // Center on position
+  margin-left: -20vmax;
+  margin-top: -20vmax;
+  will-change: transform;
+}
+
+// Blinds transition
+.blindsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.blind {
+  flex: 1;
+  height: 100%;
+  background-color: var(--teal);
+  transform-origin: top;
+  will-change: transform;
+}

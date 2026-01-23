@@ -11,7 +11,8 @@ import {
   extractLinkFromMDX,
 } from "@/utils/unfurlLink";
 
-import CircuitsHeader from "@/components/CircuitsHeader";
+// Using simple header instead of CircuitsHeader to reduce JS bundle size
+// import CircuitsHeader from "@/components/CircuitsHeader";
 
 import Markdown, { HrefToEmbeds } from "@/components/Markdown";
 
@@ -36,10 +37,13 @@ async function getEmbeds(content) {
   return embeds;
 }
 
+// How many posts to fetch embeds for (the rest load without embeds initially)
+const INITIAL_POSTS_WITH_EMBEDS = 8;
+
 export async function getStaticProps() {
   const files = fs.readdirSync("src/content/portfolio");
   const pieces = [];
-  const datesMap = {};
+  const datesMap: { [year: string]: { title: string; date: string | Date }[] } = {};
 
   const readMdxes = files
     .map((fileName) => {
@@ -61,14 +65,24 @@ export async function getStaticProps() {
       "yyyy"
     );
 
+    // For datesMap (nav), only store what's needed: title and date
+    const navItem = {
+      title: readMdxes[i].frontmatter.title,
+      date: readMdxes[i].frontmatter.date,
+    };
     datesMap[creationDate] = datesMap[creationDate]
-      ? [...datesMap[creationDate], readMdxes[i]]
-      : [readMdxes[i]];
+      ? [...datesMap[creationDate], navItem]
+      : [navItem];
+
+    // Only fetch embeds for the first N posts to reduce build time and page size
+    const embeds = i < INITIAL_POSTS_WITH_EMBEDS
+      ? await getEmbeds(readMdxes[i].content)
+      : {};
 
     pieces.push({
       frontmatter: readMdxes[i].frontmatter,
       content: readMdxes[i].content.slice(0, SUMMARY_LENGTH),
-      embeds: await getEmbeds(readMdxes[i].content),
+      embeds,
     });
   }
 
@@ -114,7 +128,7 @@ export default function Blog({
   datesMap,
 }: {
   pieces: (ReadMDX & { embeds: HrefToEmbeds })[];
-  datesMap: { [monthYearString: string]: ReadMDX[] };
+  datesMap: { [monthYearString: string]: { title: string; date: string | Date }[] };
 }) {
   const sortedYears = Object.keys(datesMap).sort(
     (a, b) => parseInt(b) - parseInt(a)
@@ -192,7 +206,9 @@ export default function Blog({
         ogUrl="/blog"
         ogImage="/images/og_image.png"
       />
-      <CircuitsHeader>Check out the weird stuff I've made.</CircuitsHeader>
+      <div className={blogStyles["blog-header"]}>
+        <h1>Check out the weird stuff I've made.</h1>
+      </div>
 
       {/* Mobile nav toggle */}
       <button
@@ -231,17 +247,17 @@ export default function Blog({
                     className={blogStyles["posts-list"]}
                     data-expanded={isExpanded}
                   >
-                    {datesMap[dateString].map((piece) => {
-                      const postSlug = slugify(piece.frontmatter.title);
+                    {datesMap[dateString].map((navItem) => {
+                      const postSlug = slugify(navItem.title);
                       const postIndex = pieces.findIndex(
-                        (p) => p.frontmatter.title === piece.frontmatter.title
+                        (p) => p.frontmatter.title === navItem.title
                       );
                       return (
-                        <li key={`dates-list-${piece.frontmatter.title}`}>
+                        <li key={`dates-list-${navItem.title}`}>
                           <button
                             onClick={() => scrollToPost(postSlug, postIndex)}
                           >
-                            {piece.frontmatter.title}
+                            {navItem.title}
                           </button>
                         </li>
                       );

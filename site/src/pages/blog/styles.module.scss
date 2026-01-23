@@ -1,5 +1,28 @@
 @import "../../sass/breakpoints";
 
+// Simple header to replace heavy CircuitsHeader
+.blog-header {
+  background: var(--light);
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 400;
+    color: var(--dark);
+  }
+
+  @include breakpoint("<=medium") {
+    padding: 5rem 1rem 3rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 .blog-post-container {
   display: grid;
   grid-template-columns: 280px 1fr;

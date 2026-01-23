@@ -55,7 +55,6 @@ const AboutMe = ({ id = "one" }) => {
               animationProgress={titleProgress}
             />
           </h2>
-          <br />
           <motion.p style={{ opacity: para1Opacity }}>
             I'm a creative technologist exploring the intersection of art,
             psychology, and technology—through products, museum exhibits, games,

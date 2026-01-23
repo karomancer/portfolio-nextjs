@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+import { usePageTransition } from "@/components/PageTransition";
 
 import styles from "./styles.module.scss";
 
@@ -16,16 +19,24 @@ const MENU_ITEMS = [
 ];
 
 const TopNav = ({ lightMode, isSubPage }: Props) => {
-  const [currentSlug, setCurrentSlug] = useState("/");
+  const router = useRouter();
+  const { navigateWithTransition } = usePageTransition();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolledFarEnough, setHasScrolledFarEnough] = useState(false);
   const isLight = lightMode && !hasScrolledFarEnough && styles["light"];
   const hasBackground = hasScrolledFarEnough && styles["with-background"];
 
+  // Use router.pathname for current page detection
+  const currentSlug = router.pathname;
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    e.preventDefault();
+    navigateWithTransition(path);
+  };
+
   useEffect(() => {
-    setCurrentSlug(window.location.pathname);
     const scrollThreshold = isSubPage
       ? window.innerHeight * 0.75
       : window.innerHeight;
@@ -41,10 +52,6 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
     setIsMenuOpen(false);
   }, [currentSlug]);
 
-  useEffect(() => {
-    setCurrentSlug(window.location.pathname);
-  }, []);
-
   return (
     <nav
       className={`${styles["top-nav"]} ${isLight || ""} ${hasBackground || ""}`}
@@ -55,7 +62,7 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
             key={`top-nav-${path}`}
             className={currentSlug === path ? styles["selected-item"] : ""}
           >
-            <Link href={path}>{label}</Link>
+            <Link href={path} onClick={(e) => handleNavClick(e, path)}>{label}</Link>
           </li>
         ))}
       </ul>
