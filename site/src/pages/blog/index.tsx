@@ -107,6 +107,7 @@ const StableMarkdown = memo(
   ),
   () => true // Always return true = never re-render
 );
+StableMarkdown.displayName = "StableMarkdown";
 
 export default function Blog({
   pieces,
