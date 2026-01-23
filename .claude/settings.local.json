@@ -9,7 +9,8 @@
       "Bash(git stash:*)",
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

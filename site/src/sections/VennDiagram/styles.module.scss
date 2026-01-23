@@ -3,7 +3,7 @@
 @import "../../sass/_vendor";
 
 .venn-section {
-  height: calc(100vh + 16vw);
+  height: calc(100vh + 22vw);
   padding: 4rem 0;
 
   h2 {
@@ -25,7 +25,7 @@
   }
 
   @include breakpoint("<=medium") {
-    height: calc(100vh + 50vw);
+    height: calc(100vh + 40vw);
     overflow: hidden;
   }
 }
