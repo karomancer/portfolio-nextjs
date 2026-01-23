@@ -97,6 +97,8 @@ const AnimatedArticle = ({ article, index, total, scrollYProgress }: ArticleProp
         // Clear CSS nth-child positioning
         right: "auto",
         bottom: "auto",
+        // Appear on top of the text
+        zIndex: 10,
       }}
     >
       <a
