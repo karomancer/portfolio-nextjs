@@ -40,6 +40,7 @@ const Shot = ({ shot, index = 0, total = 6, scrollYProgress }: Props) => {
       <a href={shot.html_url} target="_blank">
         <div className={styles["shot-frame"]}>
           <div className={styles["dribbble-light"]}></div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt="" role="presentation" src={shot.images.normal} />
         </div>
         <h4 className={styles["title"]}>{shot.title}</h4>

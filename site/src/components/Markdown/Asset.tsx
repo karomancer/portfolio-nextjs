@@ -21,6 +21,7 @@ const Asset = (asset: ImageType) => {
 
   if (isImg) {
     return (
+      // eslint-disable-next-line @next/next/no-img-element
       <img
         key={asset.src}
         className="p-asset"

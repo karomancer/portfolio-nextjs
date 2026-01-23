@@ -49,7 +49,7 @@ const FamilyTree = () => {
   useEffect(() => {
     if (!cont.current) return;
     create(FAMILY_DATA);
-  }, [cont.current]);
+  }, []);
 
   return (
     <div

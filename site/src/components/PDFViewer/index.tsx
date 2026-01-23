@@ -32,7 +32,7 @@ const PDFViewer = ({ pdfUrl, withBoxShadow, isEmbedded }: Props) => {
     setWidth(
       document.querySelector(".pdf-viewer")?.clientWidth || window.innerWidth
     );
-  });
+  }, []);
 
   return (
     isWindowDefined && (

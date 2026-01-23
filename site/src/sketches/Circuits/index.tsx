@@ -54,7 +54,7 @@ const Circuits = ({ width, height, className }: CircuitsProps) => {
 
     const p5 = require("p5");
     new p5(sketch, circuitsEl.current);
-  }, []);
+  }, [width, height]);
 
   return <div className={className} id="circuits" ref={circuitsEl}></div>;
 };

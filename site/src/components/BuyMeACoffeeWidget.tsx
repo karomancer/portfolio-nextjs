@@ -5,7 +5,7 @@ import Script from "next/script";
 const BuyMeACoffeeWidget = () => (
   <Script
     src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    strategy="beforeInteractive"
+    strategy="afterInteractive"
     data-name="BMC-Widget"
     data-cfasync="false"
     data-id="karomancer"

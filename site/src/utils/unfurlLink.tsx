@@ -74,7 +74,6 @@ export const unfurlLink = async (link: string) => {
           url: link,
           html: resp.data,
         });
-        console.log("Link scraped", scraped);
         return {
           ...scraped,
           link,

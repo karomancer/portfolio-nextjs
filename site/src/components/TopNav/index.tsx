@@ -29,15 +29,13 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
     const scrollThreshold = isSubPage
       ? window.innerHeight * 0.75
       : window.innerHeight;
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > scrollThreshold && !hasScrolledFarEnough) {
-        setHasScrolledFarEnough(true);
-      } else if (window.scrollY < scrollThreshold) {
-        setHasScrolledFarEnough(false);
-      }
-    });
+    const handleScroll = () => {
+      setHasScrolledFarEnough(window.scrollY > scrollThreshold);
+    };
+    document.addEventListener("scroll", handleScroll);
     setIsMenuOpen(false);
-  }, []);
+    return () => document.removeEventListener("scroll", handleScroll);
+  }, [isSubPage]);
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -45,7 +43,7 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
 
   useEffect(() => {
     setCurrentSlug(window.location.pathname);
-  });
+  }, []);
 
   return (
     <nav
