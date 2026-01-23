@@ -104,14 +104,14 @@ const VennDiagram = ({ id = "" }) => {
   const descriptionOpacity = useTransform(scrollYProgress, [0.5, 0.7], [0, 1]);
 
   // Circles roll in during middle phase (20% - 70%)
-  const designerX = useTransform(scrollYProgress, [0.4, 0.7], ["100vw", "0vw"]);
-  const designerRotate = useTransform(scrollYProgress, [0.2, 0.7], [360, 0]);
+  const designerX = useTransform(scrollYProgress, [0.4, 0.8], ["100vw", "0vw"]);
+  const designerRotate = useTransform(scrollYProgress, [0.4, 0.8], [360, 0]);
   const developerX = useTransform(
     scrollYProgress,
-    [0.4, 0.7],
+    [0.4, 0.8],
     ["-100vw", "0vw"],
   );
-  const developerRotate = useTransform(scrollYProgress, [0.2, 0.7], [-360, 0]);
+  const developerRotate = useTransform(scrollYProgress, [0.4, 0.8], [-360, 0]);
 
   // "Me" fades in after circles settle (70% - 100%)
   const meOpacity = useTransform(scrollYProgress, [0.8, 1], [0, 1]);

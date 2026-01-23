@@ -3,7 +3,7 @@
 @import "../../sass/_vendor";
 
 .venn-section {
-  height: calc(100vh + 12.5vw);
+  height: calc(100vh + 16vw);
   padding: 4rem 0;
 
   h2 {
@@ -61,12 +61,12 @@
 
     @include breakpoint(">=large") {
       left: 50%;
-    }    
+    }
 
     @include breakpoint("<=medium") {
       top: 105%;
       transform: translateY(-120%);
-    }    
+    }
 
     ul:first-child {
       list-style: none;
@@ -120,7 +120,6 @@
       gap: 0.2rem;
       z-index: 20;
       max-width: 20rem;
-
 
       @include breakpoint("<=xlarge") {
         margin: 1.5rem auto 0;
@@ -180,7 +179,7 @@
 
   &:nth-child(1) {
     fill: magenta;
-    right: 5vw;    
+    right: 5vw;
 
     ul {
       text-align: right;
@@ -215,12 +214,12 @@
 
     @include breakpoint("<=large") {
     }
-    
+
     @include breakpoint("<=medium") {
       & > div {
         left: calc(25vw + 1rem);
       }
-      left: 2.5vw;      
+      left: 2.5vw;
 
       ul {
         text-align: right;
