@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prepare": "sh scripts/install-hooks.sh",
     "optimize-videos": "node scripts/optimize-videos.mjs",
     "update-video-refs": "node scripts/update-video-refs.mjs",
     "optimize-images": "node scripts/optimize-images.mjs",

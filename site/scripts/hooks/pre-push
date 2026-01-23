@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Pre-push hook: Run build to catch errors before pushing to Vercel
+# This prevents broken builds from reaching production
+
+echo "🔨 Running build check before push..."
+
+cd site
+
+# Run the build
+npm run build
+
+# Capture the exit code
+BUILD_EXIT_CODE=$?
+
+if [ $BUILD_EXIT_CODE -ne 0 ]; then
+    echo ""
+    echo "❌ Build failed! Push aborted."
+    echo "Fix the build errors above before pushing."
+    exit 1
+fi
+
+echo ""
+echo "✅ Build passed! Proceeding with push..."
+exit 0
