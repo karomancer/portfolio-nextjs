@@ -27,13 +27,10 @@ tags:
   - ai
 categories:
   - ITP
-  - WIP
 type: portfolioPiece
 piece_type:
   - portfolio
 ---
-
-***Note**: Still a work in progress*
 
 ![Ad spot](/optimized/portfolio/dr-snuggles/dr-snuggles-captioned.mp4)
 
