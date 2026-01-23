@@ -1,25 +1,43 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import compareAsc from "date-fns/compareAsc";
 
 import Shot, { DribbbleShot } from "./Shot";
 import styles from "./styles.module.scss";
+import AnimatedText from "@/components/AnimatedText";
 
 interface Props {
   shots: DribbbleShot[];
 }
 
 const Section = ({ shots }: Props) => {
+  const sectionRef = useRef<HTMLElement>(null);
   const sortedShots = shots
     .sort((a: DribbbleShot, b: DribbbleShot) =>
-      compareAsc(new Date(b.published_at), new Date(a.published_at))
+      compareAsc(new Date(b.published_at), new Date(a.published_at)),
     )
     .slice(0, 6);
 
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+
+  // Text fades in last (after all shots)
+  const textOpacity = useTransform(scrollYProgress, [0.9, 1], [0, 1]);
+
   return (
-    <section className={styles["dribbble-section"]} id="dribbble">
+    <section
+      className={styles["dribbble-section"]}
+      id="dribbble"
+      ref={sectionRef}
+    >
       <div className="section-two-pane">
-        <div className="section-description">
+        <motion.div
+          className="section-description"
+          style={{ opacity: textOpacity }}
+        >
           <h2 className={styles["MoMa"]}>MoMD</h2>
           <h3>
             <b>M</b>useum <b>o</b>f <b>M</b>odern <b>D</b>ribbbles
@@ -37,11 +55,17 @@ const Section = ({ shots }: Props) => {
           <a href="http://instagram.com/karomancer" target="_blank">
             Instagram
           </a>
-        </div>
+        </motion.div>
         <div className={styles["portfolio-sections"]}>
           <ul className={styles["shots-desktop"]}>
-            {sortedShots.map((shot: DribbbleShot) => (
-              <Shot key={`shot-${shot.title}`} shot={shot} />
+            {sortedShots.map((shot: DribbbleShot, index: number) => (
+              <Shot
+                key={`shot-${shot.title}`}
+                shot={shot}
+                index={index}
+                total={sortedShots.length}
+                scrollYProgress={scrollYProgress}
+              />
             ))}
           </ul>
         </div>

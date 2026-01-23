@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import { motion, useTransform, MotionValue } from "framer-motion";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 type Images = {
-  "hidpi": string;
-  "normal": string;
-  "teaser": string;
-}
+  hidpi: string;
+  normal: string;
+  teaser: string;
+};
 
 export type DribbbleShot = {
   title: string;
@@ -18,11 +19,22 @@ export type DribbbleShot = {
 
 interface Props {
   shot: DribbbleShot;
+  index?: number;
+  total?: number;
+  scrollYProgress?: MotionValue<number>;
 }
 
-const Shot = ({ shot }: Props) => {
+const Shot = ({ shot, index = 0, total = 6, scrollYProgress }: Props) => {
+  // Each shot fades in sequentially (0% - 70% of scroll, leaving room for text)
+  const startProgress = (index / total) * 0.6 + 0.3;
+  const endProgress = startProgress + 0.15;
+
+  const opacity = scrollYProgress
+    ? useTransform(scrollYProgress, [startProgress, endProgress], [0, 1])
+    : 1;
+
   return (
-    <li className={styles["dribbble-shot"]}>
+    <motion.li className={styles["dribbble-shot"]} style={{ opacity }}>
       <a href={shot.html_url} target="_blank">
         <div className={styles["shot-frame"]}>
           <div className={styles["dribbble-light"]}></div>
@@ -30,7 +42,7 @@ const Shot = ({ shot }: Props) => {
         </div>
         <h4 className={styles["title"]}>{shot.title}</h4>
       </a>
-    </li>
+    </motion.li>
   );
 };
 
