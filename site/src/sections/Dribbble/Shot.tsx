@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useTransform, MotionValue } from "framer-motion";
+import { motion, useTransform, useMotionValue, MotionValue } from "framer-motion";
 
 import styles from "./styles.module.scss";
 
@@ -29,9 +29,11 @@ const Shot = ({ shot, index = 0, total = 6, scrollYProgress }: Props) => {
   const startProgress = (index / total) * 0.6 + 0.3;
   const endProgress = startProgress + 0.15;
 
-  const opacity = scrollYProgress
-    ? useTransform(scrollYProgress, [startProgress, endProgress], [0, 1])
-    : 1;
+  // Create a default motion value for when scrollYProgress isn't provided
+  const defaultProgress = useMotionValue(1);
+  const progress = scrollYProgress || defaultProgress;
+
+  const opacity = useTransform(progress, [startProgress, endProgress], [0, 1]);
 
   return (
     <motion.li className={styles["dribbble-shot"]} style={{ opacity }}>

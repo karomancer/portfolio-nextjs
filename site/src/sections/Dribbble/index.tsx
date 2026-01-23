@@ -5,7 +5,6 @@ import compareAsc from "date-fns/compareAsc";
 
 import Shot, { DribbbleShot } from "./Shot";
 import styles from "./styles.module.scss";
-import AnimatedText from "@/components/AnimatedText";
 
 interface Props {
   shots: DribbbleShot[];
