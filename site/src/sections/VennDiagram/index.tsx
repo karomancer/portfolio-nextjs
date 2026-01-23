@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 import styles from "./styles.module.scss";
 import Image from "next/image";
@@ -43,7 +44,14 @@ const CIRCLES = [
   },
 ];
 
-const Circle = ({ children, title, width, index }) => {
+const Circle = ({
+  children,
+  title,
+  width,
+  index,
+  animatedX,
+  animatedRotate,
+}) => {
   const id = `curve-${index}`;
   const cx = index == 0 ? 400 : 500;
   const pathX = index == 0 ? 0 : 100;
@@ -57,7 +65,10 @@ const Circle = ({ children, title, width, index }) => {
   }
 
   return (
-    <div className={styles["circle"]}>
+    <motion.div
+      className={styles["circle"]}
+      style={{ x: animatedX, rotate: animatedRotate }}
+    >
       {children}
       <svg viewBox="0 0 900 900">
         <circle r={400} cx={cx} cy={500} />
@@ -71,7 +82,7 @@ const Circle = ({ children, title, width, index }) => {
           </textPath>
         </text>
       </svg>
-    </div>
+    </motion.div>
   );
 };
 
@@ -79,6 +90,31 @@ const VennDiagram = ({ id = "" }) => {
   const [siteWidth, setSiteWidth] = useState(0);
   const isLarge = siteWidth > 1000;
   const sliceLength = isLarge ? CIRCLES[0].items.length : 5;
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Track scroll progress for the section
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+
+  // Title fades in first (0% - 40%)
+  const titleOpacity = useTransform(scrollYProgress, [0.2, 0.6], [0, 1]);
+  // Description fades in next (20% - 60%)
+  const descriptionOpacity = useTransform(scrollYProgress, [0.5, 0.7], [0, 1]);
+
+  // Circles roll in during middle phase (20% - 70%)
+  const designerX = useTransform(scrollYProgress, [0.4, 0.7], ["100vw", "0vw"]);
+  const designerRotate = useTransform(scrollYProgress, [0.2, 0.7], [360, 0]);
+  const developerX = useTransform(
+    scrollYProgress,
+    [0.4, 0.7],
+    ["-100vw", "0vw"],
+  );
+  const developerRotate = useTransform(scrollYProgress, [0.2, 0.7], [-360, 0]);
+
+  // "Me" fades in after circles settle (70% - 100%)
+  const meOpacity = useTransform(scrollYProgress, [0.8, 1], [0, 1]);
 
   const calculateMovement = (j) => {
     const firstMargin = isLarge ? `3.2rem` : 0;
@@ -93,9 +129,13 @@ const VennDiagram = ({ id = "" }) => {
   }, []);
 
   return (
-    <section className={styles["venn-section"]} id={id}>
-      <h2>Interdisciplinary thinker</h2>
-      <p>Starting something? Chances are, I can help.</p>
+    <section className={styles["venn-section"]} id={id} ref={sectionRef}>
+      <motion.h2 style={{ opacity: titleOpacity }}>
+        Interdisciplinary thinker
+      </motion.h2>
+      <motion.p style={{ opacity: descriptionOpacity }}>
+        Starting something? Chances are, I can help.
+      </motion.p>
       <div className={styles["venn-diagram"]}>
         {CIRCLES.map((circle, i) => {
           const isFirst = i == 0;
@@ -105,6 +145,8 @@ const VennDiagram = ({ id = "" }) => {
               title={circle.title}
               index={i}
               width={siteWidth}
+              animatedX={i === 0 ? designerX : developerX}
+              animatedRotate={i === 0 ? designerRotate : developerRotate}
             >
               <div>
                 <ul>
@@ -139,7 +181,12 @@ const VennDiagram = ({ id = "" }) => {
           );
         })}
         {/* <Circle title="Entrepreneur" /> */}
-        <p className={styles["intersection"]}>Me</p>
+        <motion.p
+          className={styles["intersection"]}
+          style={{ opacity: meOpacity }}
+        >
+          Me
+        </motion.p>
       </div>
     </section>
   );
