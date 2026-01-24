@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
+import dynamic from "next/dynamic";
 import format from "date-fns/format";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import WoodGrain from "./WoodGrain";
 import getMediumPosts from "./getMediumPosts";
+
+// Lazy load the massive WoodGrain SVG (5,730 lines) - only on client
+const WoodGrain = dynamic(() => import("./WoodGrain"), {
+  ssr: false,
+  loading: () => null,
+});
 import styles from "./styles.module.scss";
 
 // End positions for each article (matching CSS nth-child rules)

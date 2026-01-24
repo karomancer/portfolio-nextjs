@@ -77,7 +77,7 @@ export default function Portfolio({
   pieces,
 }: PortfolioProps) {
   return (
-    <>
+    <main id="main-content">
       <Head
         title="Portfolio"
         description="Want to see some of the weird stuff I've made?"
@@ -100,6 +100,6 @@ export default function Portfolio({
           piece.frontmatter.piece_type?.includes("work")
         )}
       />
-    </>
+    </main>
   );
 }

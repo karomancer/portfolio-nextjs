@@ -99,7 +99,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
         ogUrl={frontmatter.slug}
         keywords={frontmatter.tags.concat(frontmatter.categories)}
       />
-      <main className={styles["portfolio-piece"]}>
+      <main id="main-content" className={styles["portfolio-piece"]}>
         <div
           className={styles["cover-image"]}
           style={{ backgroundImage: `url("${frontmatter.cover}")` }}

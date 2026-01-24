@@ -32,7 +32,7 @@ const Resume = () => (
       ]}
     ></Head>
     <CircuitsHeader>Let's get professional.</CircuitsHeader>
-    <main className={styles["resume"]}>
+    <main id="main-content" className={styles["resume"]}>
       <PDFViewer pdfUrl={RESUME_URL} withBoxShadow />
     </main>
   </>

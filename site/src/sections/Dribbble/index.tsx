@@ -47,11 +47,11 @@ const Section = ({ shots }: Props) => {
             past, this is the place to look.
           </p>
           View on{" "}
-          <a href="http://karomancer.dribbble.com/" target="_blank">
+          <a href="http://karomancer.dribbble.com/" target="_blank" rel="noopener noreferrer">
             Dribbble
           </a>{" "}
           or{" "}
-          <a href="http://instagram.com/karomancer" target="_blank">
+          <a href="http://instagram.com/karomancer" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
         </motion.div>

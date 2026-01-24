@@ -15,7 +15,7 @@ const BuyMeACoffeeWidget = () => {
     <Script
       id="bmc-widget-script"
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-      strategy="afterInteractive"
+      strategy="lazyOnload"
       data-name="BMC-Widget"
       data-cfasync="false"
       data-id="karomancer"

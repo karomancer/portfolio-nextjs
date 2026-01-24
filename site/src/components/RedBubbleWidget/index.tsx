@@ -24,7 +24,7 @@ const RedbubbleWidget = ({
         </p>
         <Script
           src="https://www.redbubble.com/assets/external_portfolio.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <div className="block mx-auto w-1/2">
           <Iframe

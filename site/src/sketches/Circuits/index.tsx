@@ -31,12 +31,12 @@ const Circuits = ({ width, height, className }: CircuitsProps) => {
         p.createCanvas(width || p.windowWidth, height || p.windowHeight);
         p.background(GRAY_RGB);
         // Reduce frame rate for better performance
-        p.frameRate(30);
+        p.frameRate(20);
 
-        // Stop after 30 seconds instead of 60
+        // Stop after 15 seconds for better performance
         setTimeout(() => {
           p.noLoop();
-        }, 30000);
+        }, 15000);
       };
 
       p.draw = () => {

@@ -268,7 +268,7 @@ export default function Blog({
             })}
           </ul>
         </nav>
-        <main className={blogStyles["blog-post-content"]}>
+        <main id="main-content" className={blogStyles["blog-post-content"]}>
           {displayedPieces.map((piece) => {
             const postSlug = slugify(piece.frontmatter.title);
             return (

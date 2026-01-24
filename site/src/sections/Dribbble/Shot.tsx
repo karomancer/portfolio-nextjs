@@ -37,11 +37,11 @@ const Shot = ({ shot, index = 0, total = 6, scrollYProgress }: Props) => {
 
   return (
     <motion.li className={styles["dribbble-shot"]} style={{ opacity }}>
-      <a href={shot.html_url} target="_blank">
+      <a href={shot.html_url} target="_blank" rel="noopener noreferrer">
         <div className={styles["shot-frame"]}>
           <div className={styles["dribbble-light"]}></div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img alt="" role="presentation" src={shot.images.normal} />
+          <img alt={shot.title} src={shot.images.normal} />
         </div>
         <h4 className={styles["title"]}>{shot.title}</h4>
       </a>

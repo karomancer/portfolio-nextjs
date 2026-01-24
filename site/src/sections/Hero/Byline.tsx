@@ -39,8 +39,12 @@ const BYLINE_OPTIONS = shuffle([
 BYLINE_OPTIONS.unshift("engineering & design consultant");
 BYLINE_OPTIONS.push("are you still there?");
 
+// Pure helper functions - defined outside component to avoid recreation
+const getRandomIndex = (len: number) => Math.floor(Math.random() * len);
+const getRandomLetter = () => ALPHABET[getRandomIndex(ALPHABET.length)];
+
 interface BylineProps {
-  className?: string; 
+  className?: string;
 }
 
 
@@ -49,9 +53,6 @@ const Byline = ({className}: BylineProps) => {
   const bylineIndexRef = useRef(0);
   const bylineRef = useRef(BYLINE_OPTIONS[0]);
   const timeoutsRef = useRef<NodeJS.Timeout[]>([]);
-
-  const getRandomIndex = (len: number) => Math.floor(Math.random() * len);
-  const getRandomLetter = () => ALPHABET[getRandomIndex(ALPHABET.length)];
 
   const setByline = (newByline: string) => {
     if (bylineEl.current) {

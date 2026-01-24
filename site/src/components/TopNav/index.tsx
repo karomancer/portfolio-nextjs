@@ -52,24 +52,51 @@ const TopNav = ({ lightMode, isSubPage }: Props) => {
     setIsMenuOpen(false);
   }, [currentSlug]);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape" && isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
-    <nav
-      className={`${styles["top-nav"]} ${isLight || ""} ${hasBackground || ""}`}
-    >
-      <ul className={isMenuOpen ? "" : styles["is-closed"]}>
-        {MENU_ITEMS.map(({ path, label }) => (
-          <li
-            key={`top-nav-${path}`}
-            className={currentSlug === path ? styles["selected-item"] : ""}
-          >
-            <Link href={path} onClick={(e) => handleNavClick(e, path)}>{label}</Link>
-          </li>
-        ))}
-      </ul>
-      <button onClick={toggleMenu} className={styles["mobile-nav-button"]}>
-        {isMenuOpen ? "×" : "≡"}
-      </button>
-    </nav>
+    <>
+      {/* Skip link for keyboard users */}
+      <a href="#main-content" className={styles["skip-link"]}>
+        Skip to main content
+      </a>
+      <nav
+        className={`${styles["top-nav"]} ${isLight || ""} ${hasBackground || ""}`}
+        onKeyDown={handleKeyDown}
+      >
+        <ul className={isMenuOpen ? "" : styles["is-closed"]} role="menubar">
+          {MENU_ITEMS.map(({ path, label }) => (
+            <li
+              key={`top-nav-${path}`}
+              className={currentSlug === path ? styles["selected-item"] : ""}
+              role="none"
+            >
+              <Link
+                href={path}
+                onClick={(e) => handleNavClick(e, path)}
+                role="menuitem"
+                aria-current={currentSlug === path ? "page" : undefined}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button
+          onClick={toggleMenu}
+          className={styles["mobile-nav-button"]}
+          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-nav-menu"
+        >
+          {isMenuOpen ? "×" : "≡"}
+        </button>
+      </nav>
+    </>
   );
 };
 

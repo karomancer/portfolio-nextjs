@@ -5,24 +5,35 @@ import dynamic from "next/dynamic";
 import axios from "axios";
 
 import Head from "@/components/Head";
-
 import About from "@/sections/About";
-import VennDiagram from "@/sections/VennDiagram";
-import Map from "@/sections/Map";
 import { DribbbleShot } from "@/sections/Dribbble/Shot";
 import { MediumPost, getMediumPosts } from "@/sections/Medium";
-import RedbubbleWidget from "@/components/RedBubbleWidget";
 
+// Dynamic imports for below-the-fold content to improve initial load
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => null,
 });
 
-const DynamicDribbble = dynamic(() => import("@/sections/Dribbble"), {
-  loading: () => <p>Loading...</p>,
+const DynamicVennDiagram = dynamic(() => import("@/sections/VennDiagram"), {
+  loading: () => null,
 });
 
 const DynamicMedium = dynamic(() => import("@/sections/Medium"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => null,
+});
+
+const DynamicDribbble = dynamic(() => import("@/sections/Dribbble"), {
+  loading: () => null,
+});
+
+const DynamicRedbubbleWidget = dynamic(() => import("@/components/RedBubbleWidget"), {
+  loading: () => null,
+  ssr: false,
+});
+
+const DynamicMap = dynamic(() => import("@/sections/Map"), {
+  loading: () => null,
+  ssr: false,
 });
 
 interface Props {
@@ -39,10 +50,26 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     throw new Error(`Failed to fetch Dribbble data: ${dribbbleData.status}`);
   }
 
+  // Only take first 6 Dribbble shots and strip unnecessary fields
+  const dribbbleShots = dribbbleData.data.slice(0, 6).map((shot: DribbbleShot) => ({
+    title: shot.title,
+    html_url: shot.html_url,
+    images: { normal: shot.images.normal },
+  }));
+
   const mediumData: MediumPost[] = (await getMediumPosts()) as MediumPost[];
 
+  // Limit to 10 posts and strip content:encoded (it's large and not displayed on home)
+  const mediumPosts = mediumData.slice(0, 10).map(({ title, link, pubDate, categories, coverImage }) => ({
+    title,
+    link,
+    pubDate,
+    categories,
+    coverImage,
+  })) as MediumPost[];
+
   return {
-    props: { dribbbleShots: dribbbleData.data, mediumPosts: mediumData },
+    props: { dribbbleShots, mediumPosts },
     // Revalidate every hour - page is statically generated but refreshed periodically
     revalidate: 3600,
   };
@@ -53,7 +80,7 @@ const Home = ({
   mediumPosts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <main>
+    <main id="main-content">
       <Head
         title="Home"
         description="Screw the rules, I have green hair."
@@ -62,10 +89,10 @@ const Home = ({
       />
       <DynamicHero scrollToId="one" />
       <About id="one" />
-      <VennDiagram />
+      <DynamicVennDiagram />
       <DynamicMedium mediumPosts={mediumPosts} />
       <DynamicDribbble shots={dribbbleShots} />
-      <RedbubbleWidget
+      <DynamicRedbubbleWidget
         title={
           <h2>
             <strong>
@@ -75,7 +102,7 @@ const Home = ({
           </h2>
         }
       />
-      <Map />
+      <DynamicMap />
       <blockquote className={styles["screw-the-rules"]}>
         “Screw the rules, I have <b>green hair</b>”
       </blockquote>

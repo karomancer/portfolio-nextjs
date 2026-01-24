@@ -75,7 +75,7 @@ export default function Markdown({ className, children, embeds }: Props) {
       }
       return <Embed {...embeds[props.href]} />;
     }
-    return <a target="_blank" {...props} />;
+    return <a target="_blank" rel="noopener noreferrer" {...props} />;
   };
 
   return (

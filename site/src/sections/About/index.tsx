@@ -70,7 +70,7 @@ const AboutMe = ({ id = "one" }) => {
           </motion.p>
           <motion.p style={{ opacity: para3Opacity }}>
             I also work part time as a New Media Exhibit Technician at the{" "}
-            <a href="https://www.exploratorium.edu/" target="_blank">
+            <a href="https://www.exploratorium.edu/" target="_blank" rel="noopener noreferrer">
               Exploratorium
             </a>
             , an interactive science museum in San Francisco.
@@ -85,12 +85,12 @@ const AboutMe = ({ id = "one" }) => {
           </motion.p>
           <motion.p style={{ opacity: para5Opacity }}>
             I hold a Bachelor of Science in Computer Science and{" "}
-            <a href="https://hcii.cmu.edu/" target="_blank">
+            <a href="https://hcii.cmu.edu/" target="_blank" rel="noopener noreferrer">
               Human-Computer Interaction
             </a>{" "}
             from <strong>Carnegie Mellon University</strong> and a Masters of
             Professional Studies in{" "}
-            <a href="https://itp.nyu.edu/itp/" target="_blank">
+            <a href="https://itp.nyu.edu/itp/" target="_blank" rel="noopener noreferrer">
               Interactive Telecommunications
             </a>{" "}
             at <strong>New York University</strong>.
