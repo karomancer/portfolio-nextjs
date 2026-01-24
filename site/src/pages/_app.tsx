@@ -13,13 +13,15 @@ export const metadata = {
 
 export default function RootLayout({ Component, pageProps }: AppProps) {
   return (
-    <PageTransition>
-      <TopNav
-        isSubPage={!!Component.displayName}
-        lightMode={["PortfolioPiece"].includes(Component.displayName)}
-      />
-      <Component {...pageProps} />
+    <div id="app-root">
+      <PageTransition>
+        <TopNav
+          isSubPage={!!Component.displayName}
+          lightMode={["PortfolioPiece"].includes(Component.displayName)}
+        />
+        <Component {...pageProps} />
+      </PageTransition>
       <BuyMeACoffeeWidget />
-    </PageTransition>
+    </div>
   );
 }

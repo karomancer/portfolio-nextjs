@@ -122,10 +122,16 @@ const VennDiagram = ({ id = "" }) => {
   };
 
   useEffect(() => {
-    setSiteWidth(window.innerWidth);
-    addEventListener("resize", () => {
+    const handleResize = () => {
       setSiteWidth(window.innerWidth);
-    });
+    };
+
+    setSiteWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (

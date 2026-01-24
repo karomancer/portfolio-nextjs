@@ -22,9 +22,14 @@ const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   // Optionally, add any other Next.js config below
   reactStrictMode: true,
-  // Disable image optimization to prevent file mapping issues
+  // Enable image optimization with allowed external domains
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cdn.dribbble.com' },
+      { protocol: 'https', hostname: 'miro.medium.com' },
+      { protocol: 'https', hostname: 'cdn-images-1.medium.com' },
+      { protocol: 'https', hostname: '**.medium.com' },
+    ],
   },
   async redirects() {
     return [

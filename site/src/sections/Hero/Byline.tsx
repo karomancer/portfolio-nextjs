@@ -45,50 +45,58 @@ interface BylineProps {
 
 
 const Byline = ({className}: BylineProps) => {
-  const bylineEl = useRef();
+  const bylineEl = useRef<HTMLHeadingElement>(null);
+  const bylineIndexRef = useRef(0);
+  const bylineRef = useRef(BYLINE_OPTIONS[0]);
+  const timeoutsRef = useRef<NodeJS.Timeout[]>([]);
+
   const getRandomIndex = (len: number) => Math.floor(Math.random() * len);
   const getRandomLetter = () => ALPHABET[getRandomIndex(ALPHABET.length)];
 
   const setByline = (newByline: string) => {
-    if (bylineEl && bylineEl.current) {
-      // @ts-ignore
+    if (bylineEl.current) {
       bylineEl.current.innerText = newByline;
     }
   };
 
-  let timeout: NodeJS.Timeout;
-  let bylineIndex = 0;
-  let byline = BYLINE_OPTIONS[bylineIndex];
+  const clearAllTimeouts = () => {
+    timeoutsRef.current.forEach(t => clearTimeout(t));
+    timeoutsRef.current = [];
+  };
 
-  const changeByline = () => {
-    bylineIndex =
-      bylineIndex + 1 == BYLINE_OPTIONS.length ? 0 : bylineIndex + 1;
+  const addTimeout = (callback: () => void, delay: number) => {
+    const t = setTimeout(callback, delay);
+    timeoutsRef.current.push(t);
+    return t;
+  };
 
-    const bylineArray = byline.split("");
-    const newByline = BYLINE_OPTIONS[bylineIndex];
-    const newBylineArray = newByline.split("");
+  useEffect(() => {
+    const changeByline = () => {
+      bylineIndexRef.current =
+        bylineIndexRef.current + 1 === BYLINE_OPTIONS.length ? 0 : bylineIndexRef.current + 1;
 
-    if (newBylineArray.length > bylineArray.length) {
-      let numNewItems = newBylineArray.length - bylineArray.length;
-      while (numNewItems > 0) {
-        bylineArray.push("");
-        numNewItems--;
+      const bylineArray = bylineRef.current.split("");
+      const newByline = BYLINE_OPTIONS[bylineIndexRef.current];
+      const newBylineArray = newByline.split("");
 
-        if (numNewItems > 0) {
-          bylineArray.unshift("");
+      if (newBylineArray.length > bylineArray.length) {
+        let numNewItems = newBylineArray.length - bylineArray.length;
+        while (numNewItems > 0) {
+          bylineArray.push("");
           numNewItems--;
+
+          if (numNewItems > 0) {
+            bylineArray.unshift("");
+            numNewItems--;
+          }
         }
       }
-    }
 
-    const length = bylineArray.length;
+      const length = bylineArray.length;
+      bylineRef.current = newByline;
 
-    byline = newByline;
-
-    let indexTimeouts: NodeJS.Timeout[] = [];
-    const scrambleIndex = (index: number, times: number) => {
-      indexTimeouts.push(
-        setTimeout(() => {
+      const scrambleIndex = (index: number, times: number) => {
+        addTimeout(() => {
           if (times < 5) {
             bylineArray[index] =
               newBylineArray[index] !== " " ? getRandomLetter() : " ";
@@ -98,47 +106,47 @@ const Byline = ({className}: BylineProps) => {
             bylineArray[index] = newBylineArray[index];
             setByline(bylineArray.join(""));
           }
-        }, 80)
-      );
-    };
+        }, 80);
+      };
 
-    const indexArray = bylineArray.map((_, i) => i);
+      const indexArray = bylineArray.map((_, i) => i);
+      let completedStreams = 0;
 
-    let letterTimeouts: NodeJS.Timeout[] = [];
-    const scrambleRandomLetters = (index: number, indices: number[]) => {
-      letterTimeouts.push(
-        setTimeout(() => {
-          const indicesLeft = indices.length;
-          const i = getRandomIndex(indicesLeft);
-
+      const scrambleRandomLetters = (indices: number[]) => {
+        addTimeout(() => {
           if (indices.length > 0) {
+            const i = getRandomIndex(indices.length);
             scrambleIndex(indices[i], 0);
             indices.splice(i, 1);
-            scrambleRandomLetters(index, indices);
+            scrambleRandomLetters(indices);
           } else {
-            clearTimeout(timeout);
-            clearTimeout(letterTimeouts.pop());
-            if (letterTimeouts.length === 0) {
-              indexTimeouts.forEach((t) => clearTimeout(t));
+            completedStreams++;
+            // Only schedule next change when all 3 streams complete
+            if (completedStreams === 3) {
+              addTimeout(changeByline, 1500);
             }
-            timeout = setTimeout(changeByline, 1500);
           }
-        }, 300)
-      );
+        }, 300);
+      };
+
+      // Start 3 parallel scramble streams with copies of the index array
+      scrambleRandomLetters([...indexArray]);
+      scrambleRandomLetters([...indexArray]);
+      scrambleRandomLetters([...indexArray]);
     };
 
-    scrambleRandomLetters(getRandomIndex(length), indexArray);
-    scrambleRandomLetters(getRandomIndex(length), indexArray);
-    scrambleRandomLetters(getRandomIndex(length), indexArray);
-  };
+    // Initial delay before first change
+    addTimeout(changeByline, 7000);
 
-  useEffect(() => {
-    setTimeout(changeByline, 7000);
-  });
+    // Cleanup all timeouts on unmount
+    return () => {
+      clearAllTimeouts();
+    };
+  }, []); // Empty dependency array - only run once on mount
 
   return (
     <h3 className={className} ref={bylineEl}>
-      {byline}
+      {BYLINE_OPTIONS[0]}
     </h3>
   );
 };

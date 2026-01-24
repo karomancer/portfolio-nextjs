@@ -12,7 +12,8 @@
       "Bash(pkill:*)",
       "mcp__ide__getDiagnostics",
       "Bash(npm uninstall:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(npm ls:*)"
     ]
   }
 }

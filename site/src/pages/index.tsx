@@ -1,6 +1,6 @@
 import styles from "@/sass/page.module.scss";
 
-import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
+import type { InferGetStaticPropsType, GetStaticProps } from "next";
 import dynamic from "next/dynamic";
 import axios from "axios";
 
@@ -30,7 +30,7 @@ interface Props {
   mediumPosts: MediumPost[];
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const dribbbleData = await axios(
     `https://api.dribbble.com/v2/user/shots?access_token=${process.env.DRIBBBLE_ACCESS_TOKEN}`
   );
@@ -43,13 +43,15 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 
   return {
     props: { dribbbleShots: dribbbleData.data, mediumPosts: mediumData },
+    // Revalidate every hour - page is statically generated but refreshed periodically
+    revalidate: 3600,
   };
 };
 
 const Home = ({
   dribbbleShots,
   mediumPosts,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <main>
       <Head
