@@ -18,6 +18,10 @@ const DynamicVennDiagram = dynamic(() => import("@/sections/VennDiagram"), {
   loading: () => null,
 });
 
+const DynamicTestimonials = dynamic(() => import("@/sections/Testimonials"), {
+  loading: () => null,
+});
+
 const DynamicMedium = dynamic(() => import("@/sections/Medium"), {
   loading: () => null,
 });
@@ -90,6 +94,7 @@ const Home = ({
       <DynamicHero scrollToId="one" />
       <About id="one" />
       <DynamicVennDiagram />
+      <DynamicTestimonials />
       <DynamicMedium mediumPosts={mediumPosts} />
       <DynamicDribbble shots={dribbbleShots} />
       <DynamicRedbubbleWidget

@@ -1,0 +1,347 @@
+@import "../../sass/breakpoints";
+
+.testimonials {
+  background: linear-gradient(white, white 0%, #f8f8f8 100%);
+  padding: 4rem 2rem;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 0;
+
+    @include breakpoint("<=medium") {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  @include breakpoint("<=medium") {
+    padding: 3rem 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @include breakpoint("<=medium") {
+    gap: 0.5rem;
+  }
+}
+
+.navButton {
+  background: white;
+  border: 3px solid var(--teal);
+  color: var(--teal);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(80, 191, 160, 0.2);
+
+  &:hover {
+    background: var(--teal);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(80, 191, 160, 0.4);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+
+  @include breakpoint("<=small") {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+}
+
+.testimonialContainer {
+  flex: 1;
+  min-height: 450px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 1rem;
+
+  @include breakpoint("<=medium") {
+    min-height: 550px;
+  }
+}
+
+.testimonialContent {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.speakerRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-right: 1rem;
+
+  @include breakpoint("<=medium") {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 0;
+    margin-top: 2.5rem;
+  }
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--teal);
+  box-shadow:
+    0 8px 24px rgba(80, 191, 160, 0.4),
+    0 0 0 8px rgba(80, 191, 160, 0.15);
+  background: white;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include breakpoint("<=medium") {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.avatarPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, var(--teal), #3d9d85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: white;
+  font-family: var(--strongFontFamily);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  @include breakpoint("<=medium") {
+    font-size: 2.2rem;
+  }
+}
+
+.quoteBubble {
+  position: relative;
+  background: white;
+  border-radius: 2rem;
+  padding: 2rem 2.5rem;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    inset 0 2px 0 rgba(255, 255, 255, 0.8);
+  border: 3px solid var(--teal);
+  width: 100%;
+
+  blockquote {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--dark);
+    margin: 0;
+    font-style: italic;
+    position: relative;
+    padding-top: 1rem;
+
+    // Big decorative quote marks
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      font-size: 4rem;
+      color: var(--teal);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    &::after {
+      content: "\201C";
+      transform: rotate(180deg);
+      position: absolute;
+      bottom: -20px;
+      right: -10px;
+      font-size: 4rem;
+      color: var(--teal);
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    @include breakpoint("<=medium") {
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint("<=medium") {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.tail {
+  position: absolute;
+  right: 4rem;
+  bottom: -49px;
+  width: 65px;
+  height: 55px;
+  z-index: 1;
+
+  @include breakpoint("<=medium") {
+    right: 50%;
+    transform: translateX(50%);
+    width: 55px;
+    height: 48px;
+    bottom: -45px;
+  }
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  text-align: right;
+
+  @include breakpoint("<=medium") {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.companyLogo {
+  margin-top: 0.5rem;
+  max-width: 120px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  @include breakpoint("<=medium") {
+    max-width: 100px;
+    max-height: 35px;
+  }
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--dark);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--dark);
+    text-decoration: underline;
+  }
+}
+
+.title {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.company {
+  color: var(--dark);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid var(--teal);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+
+  &:hover {
+    background: rgba(80, 191, 160, 0.4);
+    transform: scale(1.2);
+  }
+
+  &.active {
+    background: var(--teal);
+    transform: scale(1.4);
+    box-shadow: 0 0 0 4px rgba(80, 191, 160, 0.2);
+
+    // Progress ring animation
+    &::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: var(--teal);
+      animation: progress 12s linear forwards;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 4px;
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
