@@ -14,7 +14,10 @@
       "Bash(npm uninstall:*)",
       "Bash(chmod:*)",
       "Bash(npm ls:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:cdnjs.buymeacoffee.com)",
+      "Bash(convert:*)"
     ]
   }
 }

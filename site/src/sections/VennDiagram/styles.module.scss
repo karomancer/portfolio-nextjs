@@ -3,21 +3,8 @@
 @import "../../sass/_vendor";
 
 .venn-section {
-  height: calc(100vh + 22vw);
+  height: calc(100vh + 16vw);
   padding: 4rem 0;
-
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--dark);
-    margin-bottom: 0;
-
-    @include breakpoint("<=medium") {
-      font-size: 2.2rem;
-      line-height: 1.25;
-      margin-bottom: 1rem;
-    }
-  }
 
   p {
     margin-top: 0;
@@ -25,7 +12,8 @@
   }
 
   @include breakpoint("<=medium") {
-    height: calc(100vh + 40vw);
+    height: calc(100vh);
+    padding: 4rem 0 3rem;
     overflow: hidden;
   }
 }

@@ -12,6 +12,13 @@ $shotHeight: 14rem;
   height: calc($shotHeight * 3.2);
   margin: 0 auto;
 
+  @include breakpoint("<=small") {
+    padding-top: 2rem;
+    h2 {
+      text-align: center;
+    }
+  }
+
   // &::after {
   //   content: "";
   //   display: block;
@@ -27,6 +34,7 @@ $shotHeight: 14rem;
 }
 
 .MoMa {
+  text-align: left;
   font-weight: 500 !important;
   color: var(--dribbble) !important;
   margin-bottom: 0;

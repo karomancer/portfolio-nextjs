@@ -42,16 +42,24 @@ const Section = ({ shots }: Props) => {
             <b>M</b>useum <b>o</b>f <b>M</b>odern <b>D</b>ribbbles
           </h3>
           <p>
-            Designs I'm currently working on or have finished recently. If you'd
-            like to see the graphic design work I've done for clients in the
-            past, this is the place to look.
+            I'm almost always working on graphic design, animation, and/or
+            illustration projects. If you'd like to see what I've done for my
+            own projects or for clients in the past, this is the place to look.
           </p>
           View on{" "}
-          <a href="http://karomancer.dribbble.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://karomancer.dribbble.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Dribbble
           </a>{" "}
           or{" "}
-          <a href="http://instagram.com/karomancer" target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://instagram.com/karomancer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Instagram
           </a>
         </motion.div>

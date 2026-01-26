@@ -92,17 +92,6 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 1.35em;
-  line-height: 1.75em;
-  color: var(--gray);
-
-  @include breakpoint("<=small") {
-    font-size: 1.1em;
-    line-height: 1.65em;
-  }
-}
-
 h3 {
   font-size: 1.15em;
   line-height: 1.75em;
@@ -159,6 +148,15 @@ section {
 
   h2 {
     font-size: 3rem;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 0;
+
+    @include breakpoint("<=medium") {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
   }
 
   p {

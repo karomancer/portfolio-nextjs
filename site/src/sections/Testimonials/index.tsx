@@ -208,9 +208,11 @@ const Testimonials = () => {
 
   return (
     <section className={styles.testimonials} ref={sectionRef}>
-      <motion.h2 style={{ opacity: titleOpacity }}>Easy to work with</motion.h2>
+      <motion.h2 style={{ opacity: titleOpacity }}>
+        ...and easy to work with
+      </motion.h2>
       <motion.p style={{ opacity: subtitleOpacity }}>
-        Or so my old coworkers and clients say!
+        (Or so my old coworkers and clients say!)
       </motion.p>
       <div className={styles.carousel}>
         <button

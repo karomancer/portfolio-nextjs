@@ -1,0 +1,36 @@
+.bmcButton {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #40DCA5;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(64, 220, 165, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: 'Cookie', cursive, sans-serif;
+  font-size: 18px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(64, 220, 165, 0.5);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    color: white;
+    font-weight: 400;
+  }
+}

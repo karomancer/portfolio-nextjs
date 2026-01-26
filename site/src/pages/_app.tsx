@@ -3,7 +3,6 @@ import "../sass/globals.scss";
 import { AppProps } from "next/app";
 
 import TopNav from "@/components/TopNav";
-import BuyMeACoffeeWidget from "@/components/BuyMeACoffeeWidget";
 import PageTransition from "@/components/PageTransition";
 
 export const metadata = {
@@ -21,7 +20,6 @@ export default function RootLayout({ Component, pageProps }: AppProps) {
         />
         <Component {...pageProps} />
       </PageTransition>
-      <BuyMeACoffeeWidget />
     </div>
   );
 }

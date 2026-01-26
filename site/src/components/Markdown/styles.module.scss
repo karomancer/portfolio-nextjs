@@ -25,6 +25,7 @@
 
   h2 {
     font-size: 2.25rem;
+    line-height: 1.2;
     color: var(--teal);
     font-weight: 400;
     background-color: white;
@@ -35,7 +36,7 @@
     position: relative;
 
     &:after {
-      bottom: 2rem;
+      top: 50%;
       z-index: -1;
       left: -2rem;
       content: "";

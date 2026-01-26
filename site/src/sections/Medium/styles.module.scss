@@ -7,14 +7,9 @@ $medium-color: rgba(41, 41, 41, 1);
   left: 0;
   top: 0;
   z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  transform: scaleX(3);
-
-  @include breakpoint("<=small") {
-    height: 100vh;
-    transform: scaleY(2);
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .section-description {
@@ -39,7 +34,6 @@ $medium-color: rgba(41, 41, 41, 1);
     color: $medium-color;
     line-height: 1;
     margin-bottom: 1.25rem;
-    font-family: FuturaLight, Futura, sans-serif;
   }
 }
 
@@ -231,13 +225,13 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(-15deg);
     bottom: -10%;
     @include breakpoint("<=small") {
-      right: -20%;
-      bottom: 20%;
+      right: 5%;
+      bottom: 5%;
     }
 
     @include breakpoint("<=xsmall") {
-      right: -35%;
-      bottom: 40%;
+      right: -5%;
+      bottom: 10%;
     }
   }
 
@@ -252,9 +246,9 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=small") {
-      left: -35%;
-      bottom: -10;
-      transform: translateY(-50%) rotate(0deg);
+      left: 5%;
+      bottom: -15%;
+      transform: translateY(-50%) rotate(15deg);
     }
   }
 
@@ -268,7 +262,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-      right: -30%;
+      right: -10%;
+      top: 5%;
     }
   }
 
@@ -278,12 +273,13 @@ $medium-color: rgba(41, 41, 41, 1);
     left: 60%;
 
     @include breakpoint("<=small") {
-      left: 30%;
-      top: -15%;
+      left: 50%;
+      top: -10%;
     }
 
     @include breakpoint("<=xsmall") {
-      left: 20%;
+      left: 40%;
+      top: -15%;
     }
   }
 
@@ -298,7 +294,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-      bottom: -15%;
+      left: 35%;
+      bottom: -10%;
     }
   }
 
@@ -313,8 +310,8 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-      left: 60%;
-      bottom: -12%;
+      left: 65%;
+      bottom: -5%;
     }
   }
 
@@ -324,13 +321,13 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(20deg);
 
     @include breakpoint("<=small") {
-      right: -10%;
-      bottom: 0%;
+      right: 5%;
+      bottom: 35%;
     }
 
     @include breakpoint("<=xsmall") {
-      right: -35%;
-      bottom: 10%;
+      right: -5%;
+      bottom: 40%;
     }
   }
 
@@ -345,9 +342,9 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=xsmall") {
-      transform: rotate(10deg);
-      left: -40%;
-      top: 25%;
+      transform: rotate(-15deg);
+      left: -10%;
+      top: 15%;
     }
   }
 
@@ -357,13 +354,13 @@ $medium-color: rgba(41, 41, 41, 1);
     transform: rotate(30deg);
 
     @include breakpoint("<=small") {
-      left: -20%;
-      top: 10%;
+      left: 10%;
+      top: -10%;
     }
 
     @include breakpoint("<=xsmall") {
-      left: -20%;
-      top: -10%;
+      left: 5%;
+      top: -15%;
     }
   }
 
@@ -377,6 +374,12 @@ $medium-color: rgba(41, 41, 41, 1);
     }
 
     @include breakpoint("<=small") {
+      left: 60%;
+      top: -5%;
+      opacity: 1;
+    }
+
+    @include breakpoint("<=xsmall") {
       opacity: 0;
     }
   }

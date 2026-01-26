@@ -137,7 +137,7 @@ const VennDiagram = ({ id = "" }) => {
   return (
     <section className={styles["venn-section"]} id={id} ref={sectionRef}>
       <motion.h2 style={{ opacity: titleOpacity }}>
-        Interdisciplinary thinker
+        Interdisciplinary in nature
       </motion.h2>
       <motion.p style={{ opacity: descriptionOpacity }}>
         Starting something? Chances are, I can help.
