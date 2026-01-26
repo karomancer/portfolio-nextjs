@@ -1,20 +1,37 @@
 import { motion, useTransform, MotionValue } from "framer-motion";
-import React, { Fragment, useMemo } from "react";
+import React, { Fragment, useEffect, useMemo, useState } from "react";
+
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
 
 function AnimatedLetter({
   letter,
   letterProgress,
   animationProgress,
+  hasJS,
 }: {
   letter: string;
   letterProgress: number;
   animationProgress: MotionValue<number>;
+  hasJS: boolean;
 }) {
   const opacity = useTransform(
     animationProgress,
     [0, letterProgress * 0.5, letterProgress + 0.01, 1],
     [0, 0, 1, 1]
   );
+
+  // Without JS, render plain text
+  if (!hasJS) {
+    return <span>{letter}</span>;
+  }
+
   return (
     <motion.span
       initial={{ opacity: 0 }}
@@ -44,7 +61,8 @@ function createAnimatedLetters(
   text: string,
   prevLength: number,
   totalLength: number,
-  animationProgress: MotionValue<number>
+  animationProgress: MotionValue<number>,
+  hasJS: boolean
 ) {
   return text
     .split("")
@@ -54,6 +72,7 @@ function createAnimatedLetters(
         letter={letter}
         letterProgress={(index + prevLength) / totalLength}
         animationProgress={animationProgress}
+        hasJS={hasJS}
       />
     ));
 }
@@ -65,6 +84,7 @@ export default function AnimatedText({
   text: React.ReactNode;
   animationProgress: MotionValue<number>;
 }) {
+  const hasJS = useHasJS();
   let prevLength = 0;
 
   const totalLength = useMemo((): number => {
@@ -91,7 +111,8 @@ export default function AnimatedText({
             child,
             prevLength,
             totalLength,
-            animationProgress
+            animationProgress,
+            hasJS
           );
           prevLength += child.length;
           return animatedLetters;
@@ -106,7 +127,8 @@ export default function AnimatedText({
                   fragmentChild,
                   prevLength,
                   totalLength,
-                  animationProgress
+                  animationProgress,
+                  hasJS
                 );
                 prevLength += fragmentChild.length;
                 return animatedLetters;

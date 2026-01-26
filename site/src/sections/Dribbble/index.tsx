@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import compareAsc from "date-fns/compareAsc";
@@ -6,11 +6,21 @@ import compareAsc from "date-fns/compareAsc";
 import Shot, { DribbbleShot } from "./Shot";
 import styles from "./styles.module.scss";
 
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
+
 interface Props {
   shots: DribbbleShot[];
 }
 
 const Section = ({ shots }: Props) => {
+  const hasJS = useHasJS();
   const sectionRef = useRef<HTMLElement>(null);
   const sortedShots = shots
     .sort((a: DribbbleShot, b: DribbbleShot) =>
@@ -35,7 +45,7 @@ const Section = ({ shots }: Props) => {
       <div className="section-two-pane">
         <motion.div
           className="section-description"
-          style={{ opacity: textOpacity }}
+          style={hasJS ? { opacity: textOpacity } : undefined}
         >
           <h2 className={styles["MoMa"]}>MoMD</h2>
           <h3>
@@ -71,7 +81,7 @@ const Section = ({ shots }: Props) => {
                 shot={shot}
                 index={index}
                 total={sortedShots.length}
-                scrollYProgress={scrollYProgress}
+                scrollYProgress={hasJS ? scrollYProgress : undefined}
               />
             ))}
           </ul>

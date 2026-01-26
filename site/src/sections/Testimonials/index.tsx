@@ -9,6 +9,15 @@ import {
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
+
 interface Testimonial {
   id: number;
   name: string;
@@ -91,7 +100,36 @@ const TESTIMONIALS: Testimonial[] = [
 
 const ROTATION_INTERVAL = 12000; // 8 seconds per testimonial
 
+// Static testimonial card for no-JS grid view
+const StaticTestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
+  <div className={styles.staticCard}>
+    <blockquote>{testimonial.quote}</blockquote>
+    <div className={styles.staticAttribution}>
+      {testimonial.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={testimonial.image}
+          alt={testimonial.name}
+          className={styles.staticAvatar}
+        />
+      )}
+      <div>
+        <a
+          href={testimonial.linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.name}
+        >
+          {testimonial.name}
+        </a>
+        <span className={styles.staticTitle}>{testimonial.title}</span>
+      </div>
+    </div>
+  </div>
+);
+
 const Testimonials = () => {
+  const hasJS = useHasJS();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -205,6 +243,24 @@ const Testimonials = () => {
       },
     },
   };
+
+  // Static grid for no-JS users
+  if (!hasJS) {
+    return (
+      <section className={styles.testimonials} ref={sectionRef}>
+        <h2>...and easy to work with</h2>
+        <p>(Or so my old coworkers and clients say!)</p>
+        <div className={styles.staticGrid}>
+          {TESTIMONIALS.slice(0, 4).map((testimonial) => (
+            <StaticTestimonialCard
+              key={testimonial.id}
+              testimonial={testimonial}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className={styles.testimonials} ref={sectionRef}>

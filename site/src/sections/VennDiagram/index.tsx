@@ -4,6 +4,15 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
+
 const CIRCLES = [
   {
     title: "Designer",
@@ -87,7 +96,8 @@ const Circle = ({
 };
 
 const VennDiagram = ({ id = "" }) => {
-  const [siteWidth, setSiteWidth] = useState(0);
+  const hasJS = useHasJS();
+  const [siteWidth, setSiteWidth] = useState(1200); // Default to large for SSR
   const isLarge = siteWidth > 1000;
   const sliceLength = isLarge ? CIRCLES[0].items.length : 5;
   const sectionRef = useRef<HTMLElement>(null);
@@ -136,10 +146,10 @@ const VennDiagram = ({ id = "" }) => {
 
   return (
     <section className={styles["venn-section"]} id={id} ref={sectionRef}>
-      <motion.h2 style={{ opacity: titleOpacity }}>
+      <motion.h2 style={hasJS ? { opacity: titleOpacity } : undefined}>
         Interdisciplinary in nature
       </motion.h2>
-      <motion.p style={{ opacity: descriptionOpacity }}>
+      <motion.p style={hasJS ? { opacity: descriptionOpacity } : undefined}>
         Starting something? Chances are, I can help.
       </motion.p>
       <div className={styles["venn-diagram"]}>
@@ -151,8 +161,10 @@ const VennDiagram = ({ id = "" }) => {
               title={circle.title}
               index={i}
               width={siteWidth}
-              animatedX={i === 0 ? designerX : developerX}
-              animatedRotate={i === 0 ? designerRotate : developerRotate}
+              animatedX={hasJS ? (i === 0 ? designerX : developerX) : undefined}
+              animatedRotate={
+                hasJS ? (i === 0 ? designerRotate : developerRotate) : undefined
+              }
             >
               <div>
                 <ul>
@@ -189,7 +201,7 @@ const VennDiagram = ({ id = "" }) => {
         {/* <Circle title="Entrepreneur" /> */}
         <motion.p
           className={styles["intersection"]}
-          style={{ opacity: meOpacity }}
+          style={hasJS ? { opacity: meOpacity } : undefined}
         >
           Me
         </motion.p>

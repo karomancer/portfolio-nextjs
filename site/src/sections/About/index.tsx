@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   differenceInYears,
   differenceInMonths,
@@ -13,10 +13,20 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import AnimatedText from "../../components/AnimatedText";
 
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
+
 const MONTHS_INTERN = 10;
 const FULLTIME_START_DATE = subMonths(new Date(2013, 8, 5, 9), MONTHS_INTERN);
 
 const AboutMe = ({ id = "one" }) => {
+  const hasJS = useHasJS();
   const sectionRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -55,12 +65,12 @@ const AboutMe = ({ id = "one" }) => {
               animationProgress={titleProgress}
             />
           </h2>
-          <motion.p style={{ opacity: para1Opacity }}>
+          <motion.p style={hasJS ? { opacity: para1Opacity } : undefined}>
             I'm a creative technologist exploring the intersection of art,
             psychology, and technology—through products, museum exhibits, games,
             interactive clothing, or whatever else might make someone smile.
           </motion.p>
-          <motion.p style={{ opacity: para2Opacity }}>
+          <motion.p style={hasJS ? { opacity: para2Opacity } : undefined}>
             Professionally, I help early-stage startups ship products—whatever
             that takes. Sometimes it's frontend code, sometimes it's a pitch
             deck, sometimes it's UX research or animation. I've run my own small
@@ -68,14 +78,14 @@ const AboutMe = ({ id = "one" }) => {
             2020 and occasionally rope in some old colleagues to work with me on
             larger projects.
           </motion.p>
-          <motion.p style={{ opacity: para3Opacity }}>
+          <motion.p style={hasJS ? { opacity: para3Opacity } : undefined}>
             I also work part time as a New Media Exhibit Technician at the{" "}
             <a href="https://www.exploratorium.edu/" target="_blank" rel="noopener noreferrer">
               Exploratorium
             </a>
             , an interactive science museum in San Francisco.
           </motion.p>
-          <motion.p style={{ opacity: para4Opacity }}>
+          <motion.p style={hasJS ? { opacity: para4Opacity } : undefined}>
             Prior to that, I worked as a software engineer for over a decade in
             San Francisco: as a data engineer at <strong>Yammer</strong>, a
             frontend engineer at <strong>Honor</strong>, and a frontend
@@ -83,7 +93,7 @@ const AboutMe = ({ id = "one" }) => {
             at conferences on frontend infrastructure and design systems, as
             well as on disability, accessibility, and mental health in tech.
           </motion.p>
-          <motion.p style={{ opacity: para5Opacity }}>
+          <motion.p style={hasJS ? { opacity: para5Opacity } : undefined}>
             I hold a Bachelor of Science in Computer Science and{" "}
             <a href="https://hcii.cmu.edu/" target="_blank" rel="noopener noreferrer">
               Human-Computer Interaction

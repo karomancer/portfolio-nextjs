@@ -345,3 +345,61 @@
     transform: rotate(360deg);
   }
 }
+
+// Static grid for no-JS users
+.staticGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+
+  @include breakpoint("<=medium") {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.staticCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 2px solid var(--teal);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  blockquote {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--dark);
+    margin: 0 0 1rem;
+    font-style: italic;
+  }
+}
+
+.staticAttribution {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}
+
+.staticAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--teal);
+}
+
+.staticTitle {
+  font-size: 0.8rem;
+  color: var(--gray);
+}

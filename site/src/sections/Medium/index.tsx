@@ -1,10 +1,19 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import format from "date-fns/format";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 import getMediumPosts from "./getMediumPosts";
 import styles from "./styles.module.scss";
+
+// Check if JS is enabled (false during SSR and initial render)
+const useHasJS = () => {
+  const [hasJS, setHasJS] = useState(false);
+  useEffect(() => {
+    setHasJS(true);
+  }, []);
+  return hasJS;
+};
 
 // End positions for each article (matching CSS nth-child rules)
 // Values are in vw/vh, representing offset from center of section
@@ -55,6 +64,7 @@ interface ArticleProps {
   index: number;
   total: number;
   scrollYProgress: any;
+  hasJS: boolean;
 }
 
 const AnimatedArticle = ({
@@ -62,6 +72,7 @@ const AnimatedArticle = ({
   index,
   total,
   scrollYProgress,
+  hasJS,
 }: ArticleProps) => {
   const pilePos = PILE_POSITIONS[index] || PILE_POSITIONS[0];
   const endPos = ARTICLE_END_POSITIONS[index] || ARTICLE_END_POSITIONS[0];
@@ -85,6 +96,29 @@ const AnimatedArticle = ({
     [staggerStart, staggerEnd],
     [pilePos.rotate, endPos.rotate],
   );
+
+  // Without JS, use CSS nth-child positioning (don't override with inline styles)
+  if (!hasJS) {
+    return (
+      <li className={styles["medium-article"]}>
+        <a
+          href={article.link}
+          target="_blank"
+          style={{
+            backgroundImage: `url(${article.coverImage})`,
+            backgroundColor: "var(--teal)",
+          }}
+        >
+          <span className={styles["date-issue"]}>
+            {format(new Date(article.pubDate), "MMM do yyy")} |{" "}
+            <b>Issue #{total - index}</b>
+          </span>
+          <span className={styles["magazine-title"]}>KACHOW!</span>
+          <h4>{article.title}</h4>
+        </a>
+      </li>
+    );
+  }
 
   return (
     <motion.li
@@ -126,6 +160,7 @@ const AnimatedArticle = ({
 };
 
 const Medium = ({ mediumPosts }: Props) => {
+  const hasJS = useHasJS();
   const sectionRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -211,6 +246,7 @@ const Medium = ({ mediumPosts }: Props) => {
               index={i}
               total={mediumPosts.length}
               scrollYProgress={scrollYProgress}
+              hasJS={hasJS}
             />
           ))}
         </ul>
