@@ -2,7 +2,11 @@
 title: Youtopia
 description: An interactive installation that visually represents the viewers' ideal society through projection onto a city model.
 slug: /portfolio/youtopia
-collaborators: []
+collaborators:
+  - "[Queenie Szu-Yu Huang](https://szuyuhuang.com)"
+  - '[Zidong "Jaxon" Wang](https://zidongworks.com/)'
+  - '[Peixuan "Lily" Yu](https://lilyyu.me/)'
+  - Bruce Arthur Jr.
 class: Playful Communication of Serious Research
 date: 2023-05-04T22:28:14.000Z
 preview: /optimized/portfolio/youtopia/youtopiaThumbnail.webp

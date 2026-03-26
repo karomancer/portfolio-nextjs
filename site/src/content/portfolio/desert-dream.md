@@ -3,8 +3,8 @@ title: Desert Dream
 description: An interactive augmented reality (AR) paper theatre, using AI-generated imagery to create animations in two surreal desert landscapes.
 slug: /portfolio/desert-dream
 collaborators:
-  - Jess Shen
-  - Alfonssette Medina
+  - "[Jess Shen](https://jessmakes.art/)"
+  - "[Alfonssette Medina](https://alfonssette.com/)"
 date: 2022-10-20T03:27:32.000Z
 preview: /optimized/portfolio/desert-dream/og_image.webp
 cover: /optimized/portfolio/desert-dream/2V3A4416.webp
