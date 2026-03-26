@@ -7,7 +7,6 @@ import {
 } from "framer-motion";
 
 import styles from "./styles.module.scss";
-import Image from "next/image";
 
 // Check if JS is enabled (false during SSR and initial render)
 const useHasJS = () => {
@@ -32,6 +31,26 @@ interface Testimonial {
 const TESTIMONIALS: Testimonial[] = [
   {
     id: 0,
+    name: "Alex Klarfeld",
+    title: "CEO & Founder at Supergood",
+    companyLogo: "/images/testimonials/supergood-logo.svg",
+    linkedinUrl: "https://www.linkedin.com/in/alexsupergood/",
+    image: "/images/testimonials/alex-klarfeld.jpg",
+    quote:
+      "Karina is pure talent. It is unbelievably rare to find someone as equally skilled in engineering, product, and design as Karina. The fact that she can drop into a project and manage every aspect is remarkable and extremely valuable. I am really grateful to have worked with her on previous projects, and I am excited to continue working with her on new projects and initiatives.",
+  },
+  {
+    id: 1,
+    name: "Ashley Clark",
+    title: "Head of Marketing at Arc",
+    companyLogo: "/images/testimonials/arc-logo.svg",
+    linkedinUrl: "https://www.linkedin.com/in/ashleykaratsonyi",
+    image: "/images/testimonials/ashley-clark.jpg",
+    quote:
+      "Karina is an exceptional developer who consistently goes above and beyond. She doesn't just complete the work, she brings thoughtful improvements to the table and invests in the project in a way you rarely see from contractors. Hardworking, communicative, and proactive, she makes a meaningful impact every step of the way.",
+  },
+  {
+    id: 2,
     name: "Ben Bayard",
     title: "Former Staff Engineer at Patreon",
     companyLogo: "/images/testimonials/patreon-logo.png",
@@ -54,28 +73,18 @@ const TESTIMONIALS: Testimonial[] = [
     ),
   },
   {
-    id: 1,
-    name: "Amit Duvedi",
-    title: "Principal & Co-founder at Growth Accelerators",
-    companyLogo: "/images/testimonials/growth-accelerators-logo.png",
-    image: "/images/testimonials/amit-duvedi.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/amit-duvedi-31252b1/",
-    quote:
-      "I thoroughly enjoyed working with Karina. She delivered a high quality Adobe Animate animation design and a demo video for our product idea. She was creative, dedicated and brought a lot of energy and humor. I would love to work with her again!",
-  },
-  {
-    id: 2,
-    name: "Jeff Starr",
-    title: "Cofounder of Broker2Broker",
-    companyLogo: "/images/testimonials/broker2broker-logo.png",
-    companyUrl: "https://broker2broker.app/",
-    image: "/images/testimonials/jeff-starr.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/jeffhstarr",
-    quote:
-      "Karina can help you turn an app idea into a design that developers can start building. She has a talent for understanding both the user experience and the technical constraints, making her an excellent bridge between concept and implementation.",
-  },
-  {
     id: 3,
+    name: "Michael Morris",
+    title: "CEO & Cofounder at ONRAMP",
+    companyLogo: "/images/testimonials/onramp-logo.svg",
+    companyUrl: "https://onrampfleet.com",
+    image: "/images/testimonials/michael-morris.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/mdbmorris",
+    quote:
+      "Karina joined our fintech startup as one of the first team members and helped shape the UX direction for our trucking payment platform. Her ability to translate complex payment flows into simple, driver-friendly interfaces was invaluable.",
+  },
+  {
+    id: 4,
     name: "Chris Crabtree",
     title: "Cofounder of Broker2Broker",
     companyLogo: "/images/testimonials/broker2broker-logo.png",
@@ -86,22 +95,36 @@ const TESTIMONIALS: Testimonial[] = [
       "We worked with Karina and her team at Mutations to prototype an app for the commercial real estate industry. She quickly grasped our complex domain and delivered an intuitive, polished design that helped us communicate our vision to investors.",
   },
   {
-    id: 4,
-    name: "Michael Morris",
-    title: "CEO and Cofounder at ONRAMP",
-    companyLogo: "/images/testimonials/onramp-logo.svg",
-    companyUrl: "https://onrampfleet.com",
-    image: "/images/testimonials/michael-morris.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/mdbmorris",
+    id: 5,
+    name: "Jeff Starr",
+    title: "Cofounder of Broker2Broker",
+    companyLogo: "/images/testimonials/broker2broker-logo.png",
+    companyUrl: "https://broker2broker.app/",
+    image: "/images/testimonials/jeff-starr.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/jeffhstarr",
     quote:
-      "Karina joined our fintech startup as one of the first team members and helped shape the UX direction for our trucking payment platform. Her ability to translate complex payment flows into simple, driver-friendly interfaces was invaluable.",
+      "Karina can help you turn an app idea into a design that developers can start building. She has a talent for understanding both the user experience and the technical constraints, making her an excellent bridge between concept and implementation.",
+  },
+  {
+    id: 6,
+    name: "Amit Duvedi",
+    title: "Principal & Co-founder at Growth Accelerators",
+    companyLogo: "/images/testimonials/growth-accelerators-logo.png",
+    image: "/images/testimonials/amit-duvedi.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/amit-duvedi-31252b1/",
+    quote:
+      "I thoroughly enjoyed working with Karina. She delivered a high quality Adobe Animate animation design and a demo video for our product idea. She was creative, dedicated and brought a lot of energy and humor. I would love to work with her again!",
   },
 ];
 
 const ROTATION_INTERVAL = 12000; // 8 seconds per testimonial
 
 // Static testimonial card for no-JS grid view
-const StaticTestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
+const StaticTestimonialCard = ({
+  testimonial,
+}: {
+  testimonial: Testimonial;
+}) => (
   <div className={styles.staticCard}>
     <blockquote>{testimonial.quote}</blockquote>
     <div className={styles.staticAttribution}>
@@ -338,14 +361,11 @@ const Testimonials = () => {
                     {currentTestimonial.title}
                   </span>
                   {currentTestimonial.companyLogo && (
-                    <Image
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
                       src={currentTestimonial.companyLogo}
                       alt={`${currentTestimonial.name}'s company logo`}
-                      width={120}
-                      height={40}
                       className={styles.companyLogo}
-                      style={{ objectFit: "contain" }}
-                      objectPosition="right center"
                     />
                   )}
                 </div>

@@ -256,6 +256,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  display: block;
 
   @include breakpoint("<=medium") {
     max-width: 100px;
