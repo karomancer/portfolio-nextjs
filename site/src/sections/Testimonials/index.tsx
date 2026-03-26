@@ -215,30 +215,27 @@ const Testimonials = () => {
 
   const avatarVariants = {
     enter: {
-      y: 50,
+      y: 10,
       opacity: 0,
-      scale: 0.3,
-      rotate: 10,
+      scale: 0.95,
     },
     center: {
       y: 0,
       opacity: 1,
       scale: 1,
-      rotate: 0,
       transition: {
         type: "spring",
-        stiffness: 300,
-        damping: 20,
-        delay: 0.1,
+        stiffness: 200,
+        damping: 25,
+        delay: 0.15,
       },
     },
     exit: {
-      y: 30,
+      y: 5,
       opacity: 0,
-      scale: 0.5,
-      rotate: -10,
+      scale: 0.97,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
         ease: "easeIn",
       },
     },
