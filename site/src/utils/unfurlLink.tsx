@@ -30,6 +30,7 @@ const IFRAME_WEBSITES = [
 const UNFURLING_WEBSITES = [
   "github",
   "medium",
+  "substack",
   "cargo",
   "studio.patreon",
   "chriseminizer",
