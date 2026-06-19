@@ -23,6 +23,17 @@
     max-width: 100%;
   }
 
+  :global(.p-figcaption) {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-style: italic;
+    text-align: center;
+    color: var(--gray);
+  }
+
   h2 {
     font-size: 2.25rem;
     line-height: 1.2;
@@ -332,9 +343,18 @@ p > .p-with-images {
   justify-content: space-between;
   margin: 0;
 
+  .p-figure-col {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint("<=small") {
+      width: 100% !important;
+    }
+  }
+
   video,
   img {
-    width: fit-content;
+    width: 100%;
     vertical-align: top;
     height: 360px;
     object-fit: cover;

@@ -8,7 +8,7 @@ collaborators:
 class: ""
 date: 2026-03-31T00:00:00.000Z
 preview: /optimized/portfolio/supergood/preview.mp4
-thumbnail_width: 3
+thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/supergood/cover.jpg
 og_preview: /optimized/portfolio/supergood/og.webp
@@ -48,7 +48,11 @@ Alex came to me with a real head start. He'd spent a couple of days going throug
 
 ||
 |--|
-| ![The annotated wireframe Alex built with Claude, with his notes toggled on](/optimized/portfolio/supergood/wireframe.mp4) |
+| ![The existing Supergood homepage, the style and flavor I was asked to carry into the redesign](/optimized/portfolio/supergood/old-homepage.webp "The existing Supergood homepage — the style and flavor I was asked to carry into the redesign") |
+
+||
+|--|
+| ![The annotated wireframe Alex built with Claude, with his notes toggled on](/optimized/portfolio/supergood/wireframe.mp4 "The annotated wireframe Alex built with Claude, with his notes toggled on") |
 
 The biggest of those open parts was the product itself, which is basically invisible. Everything valuable about Supergood happens in network recordings, generated code, and integrations that quietly fix themselves, and none of that screenshots well. Alex wasn't sure what the main graphic should be either (he'd had another AI tool render something and it came out a little weird) and floated pulling real screenshots or GIFs from the app. Since there wasn't a polished product UI to grab from yet, I decided the page should just show the product working, and that I'd build those "screenshots" myself. To keep it from turning into a pile of disconnected mockups, I tied every graphic to one made-up but consistent scenario: a property management company called Acme Corp automating a vendor portal called VendorCo that has no API. Same company, same portal, even the same work order fields the whole way down, so a dense flow reads like one story instead of a feature dump.
 
@@ -64,7 +68,7 @@ I styled the two buttons to feel like a physical switch instead of a couple of t
 
 | | |
 | -- | -- |
-| ![The hero toggled to "Building agents"](/optimized/portfolio/supergood/toggle-agents.mp4) | ![The hero toggled to "Just need an API"](/optimized/portfolio/supergood/toggle-api.mp4) |
+| ![The hero toggled to "Building agents"](/optimized/portfolio/supergood/toggle-agents.mp4 "The hero toggled to 'Building agents'") | ![The hero toggled to "Just need an API"](/optimized/portfolio/supergood/toggle-api.mp4 "The hero toggled to 'Just need an API'") |
 
 ### Animated in CSS, not Lottie
 
@@ -78,7 +82,7 @@ Each step of the core flow is its own little animated UI:
 
 | | |
 | -- | -- |
-| ![The Record split-screen graphic](/optimized/portfolio/supergood/record.mp4) | ![The Generate graphic deploying endpoints](/optimized/portfolio/supergood/generate.mp4) |
+| ![The Record split-screen graphic](/optimized/portfolio/supergood/record.mp4 "Record: walking the portal while Supergood captures the network logs alongside it") | ![The Generate graphic deploying endpoints](/optimized/portfolio/supergood/generate.mp4 "Generate: Supergood writing the integration code and deploying the endpoints") |
 
 ### The self-maintaining incident
 
@@ -88,7 +92,7 @@ VendorCo quietly adds a new required "Priority" field to their work order form. 
 
 | | |
 | -- | -- |
-| ![Supergood bot posting a failure diagnosis to Slack](/optimized/portfolio/supergood/slack-alert.mp4) | ![The failed run detail and the auto-updated docs](/optimized/portfolio/supergood/run-detail.mp4) |
+| ![Supergood bot posting a failure diagnosis to Slack](/optimized/portfolio/supergood/slack-alert.mp4 "The Supergood bot posting its failure diagnosis to Slack") | ![The failed run detail and the auto-updated docs](/optimized/portfolio/supergood/run-detail.mp4 "The failed run detail and the docs updating themselves with the changed field") |
 
 ### Terminal cards that type on scroll
 
@@ -96,7 +100,7 @@ The curl and JSON examples live in a TerminalCard whose lines type themselves ou
 
 | | |
 | -- | -- |
-| ![A terminal card typing out a curl request](/optimized/portfolio/supergood/terminal.mp4) | ![Brand-colored JSON syntax highlighting](/optimized/portfolio/supergood/syntax.webp) |
+| ![A terminal card typing out a curl request](/optimized/portfolio/supergood/terminal.mp4 "A terminal card typing out a curl request line by line on scroll") | ![Brand-colored JSON syntax highlighting](/optimized/portfolio/supergood/syntax.webp "Custom JSON syntax highlighting in the brand palette") |
 
 ### The portal grid
 
@@ -106,7 +110,7 @@ For the layout I went with a dense grid instead of a rigid table: four columns, 
 
 ||
 |--|
-| ![The portal logo grid spanning industries](/optimized/portfolio/supergood/portals.webp) |
+| ![The portal logo grid spanning industries](/optimized/portfolio/supergood/portals.webp "The portal logo grid spanning real estate, legal, healthcare, finance, insurance, government, and logistics") |
 
 ---
 
