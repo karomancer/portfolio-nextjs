@@ -40,7 +40,9 @@ Most of the software a big company runs on lives behind a portal that was never 
 
 [Supergood](https://supergood.ai/) closes that gap. You walk through a portal once while it records the network traffic happening underneath, and from that recording it generates a fully managed API and a set of tools an agent can call. When the portal changes later and the integration breaks, Supergood notices, explains what happened, and patches it.
 
-The founders, [Alex Klarfeld](https://www.linkedin.com/in/alexklarfeld/) and [Calvin Zheng](https://www.linkedin.com/in/zhengcalvin/), brought me on to redesign and rebuild their marketing landing page from scratch. The tricky part was that it had to talk to two pretty different audiences at once, people building agents who want managed tools to call at scale, and developers who just need a reliable API for a portal that doesn't have one, all without splitting the page down the middle.
+Supergood's founder, [Alex Klarfeld](https://www.linkedin.com/in/alexklarfeld/), brought me on to redesign and rebuild the marketing landing page from scratch. The tricky part was that it had to talk to two pretty different audiences at once, people building agents who want managed tools to call at scale, and developers who just need a reliable API for a portal that doesn't have one, all without splitting the page down the middle.
+
+All of this was part of a bigger repositioning: Supergood was shifting its whole pitch to lead with agents, and the tagline was moving away from the old "Unofficial APIs, officially maintained." toward what's live now, "Agent tools for enterprise portals." And it wasn't a soft, whenever-it's-ready project, Alex needed the page out by April 1st to line up with an investor update, so there was a real, externally-fixed deadline on it.
 
 ## The Project
 
@@ -54,21 +56,9 @@ Alex came to me with a real head start. He'd spent a couple of days going throug
 |--|
 | ![The annotated wireframe Alex built with Claude, with his notes toggled on](/optimized/portfolio/supergood/wireframe.mp4 "The annotated wireframe Alex built with Claude, with his notes toggled on") |
 
-The biggest of those open parts was the product itself, which is basically invisible. Everything valuable about Supergood happens in network recordings, generated code, and integrations that quietly fix themselves, and none of that screenshots well. Alex wasn't sure what the main graphic should be either (he'd had another AI tool render something and it came out a little weird) and floated pulling real screenshots or GIFs from the app. Since there wasn't a polished product UI to grab from yet, I decided the page should just show the product working, and that I'd build those "screenshots" myself. To keep it from turning into a pile of disconnected mockups, I tied every graphic to one made-up but consistent scenario: a property management company called Acme Corp automating a vendor portal called VendorCo that has no API. Same company, same portal, even the same work order fields the whole way down, so a dense flow reads like one story instead of a feature dump.
+The biggest of those open parts was the product itself, which is basically invisible. Everything valuable about Supergood happens in network recordings, generated code, and integrations that quietly fix themselves, and none of that screenshots well. Alex wasn't sure what the main graphic should be either (he'd had another AI tool render something and it came out a little weird) and floated pulling real screenshots or GIFs from the app. Since there wasn't a polished product UI to grab from yet, I decided the page should just show the product working, and that I'd build those "screenshots" myself. To keep it from turning into a pile of disconnected mockups, I tied every graphic to one made-up but consistent scenario: a property management company called Acme Corp automating a vendor portal called VendorCo that has no API. Same company, same portal, even the same work order fields the whole way down, so a dense flow reads like one story instead of a feature dump. To keep it that way, I wrote the scenario down as a `STORY.md` in the graphics directory, a little canonical script for the whole VendorCo narrative, and pointed every graphic (and the AI I was building them with) back at it, so the details stayed in sync as the page evolved and Alex could swap the whole scenario later by editing one file.
 
 On the engineering side, the page lives in Supergood's existing [Next.js](https://nextjs.org/) codebase. Early on I migrated it from JavaScript to TypeScript and typed up the section, card, and use-case content, so the page became structured data the layout maps over instead of a wall of hand-placed markup. On top of Tailwind I built a small kit of reusable components (a Card with composable Eyebrow and Title pieces, a Button, a TerminalCard, a CodeBlock wrapper, a TabContainer, and an animated FAQ accordion), using [class-variance-authority](https://cva.style/) for the variants so styling stayed consistent everywhere. Alex also mentioned he wasn't married to any of the portal logos and wanted them easy to swap later, so I made that whole section data-driven, which paid off later when I was sourcing and cleaning up the real ones.
-
-### The audience toggle
-
-The hero opens with a toggle between "Building agents" and "Just need an API". Flipping it rewrites the headline and the copy underneath in place, so whoever lands on the page sees themselves right away and I didn't have to pick one pitch over the other.
-
-This was actually one of the maybes in Alex's notes, a "choose your own adventure" bit he'd seen on other sites and wasn't sure was worth including, especially while he was repositioning the whole site to lead with agents. It turned out to be a clean way to serve both audiences without splitting the page, so I kept it and made it real.
-
-I styled the two buttons to feel like a physical switch instead of a couple of tabs. The selected side sits pushed in with its shadow flattened and is disabled (it's already active), while the other side lifts on hover like it's waiting to be pressed. Getting the shared border and z-index right so the un-selected side always sits on top took more fiddling than I'd like to admit.
-
-| | |
-| -- | -- |
-| ![The hero toggled to "Building agents"](/optimized/portfolio/supergood/toggle-agents.mp4 "The hero toggled to 'Building agents'") | ![The hero toggled to "Just need an API"](/optimized/portfolio/supergood/toggle-api.mp4 "The hero toggled to 'Just need an API'") |
 
 ### Animated in CSS, not Lottie
 
@@ -102,15 +92,9 @@ The curl and JSON examples live in a TerminalCard whose lines type themselves ou
 | -- | -- |
 | ![A terminal card typing out a curl request](/optimized/portfolio/supergood/terminal.mp4 "A terminal card typing out a curl request line by line on scroll") | ![Brand-colored JSON syntax highlighting](/optimized/portfolio/supergood/syntax.webp "Custom JSON syntax highlighting in the brand palette") |
 
-### The portal grid
+### Manila-folder tabs
 
-To show this isn't a toy that handles one portal, the page leans on real enterprise portals across real estate, legal, healthcare, finance, insurance, government, and logistics. I tracked down and cleaned up dozens of brand logos by hand, going for crisp SVGs where I could, trimming the padding and viewboxes so they all sat evenly, and recoloring the white-on-white ones so they'd actually show up.
-
-For the layout I went with a dense grid instead of a rigid table: four columns, where any logo with a longer wordmark spans two columns and scales up to fill the space, so the whole thing reads a little more organic and less like a spreadsheet.
-
-||
-|--|
-| ![The portal logo grid spanning industries](/optimized/portfolio/supergood/portals.webp "The portal logo grid spanning real estate, legal, healthcare, finance, insurance, government, and logistics") |
+The use cases are grouped into a tabbed section, and instead of clean modern tabs I styled them to look like an archaic manila folder, colored tabs sticking out the top of a paper file. It fits the blocky brand, but it's also a quiet little jab: these are exactly the kinds of crusty, login-and-a-web-form enterprise systems that never bothered to ship an API, so representing them with the most analog office object I could think of felt right. This section had also started out feeling busy and over-nested, cards sitting inside cards inside cards, and pulling it out of its outer card and leaning into the folder metaphor gave it structure without the clutter.
 
 ---
 
