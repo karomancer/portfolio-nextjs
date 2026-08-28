@@ -137,3 +137,7 @@ dist
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+# claude
+.claude/

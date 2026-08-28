@@ -1,7 +1,9 @@
 import fs from "fs";
 import { format } from "date-fns";
 
-import readMdx, { ReadMDX } from "@/utils/readMdx";
+import { Fragment } from "react";
+
+import readMdx, { ReadMDX, Collaborator } from "@/utils/readMdx";
 
 import Markdown, { HrefToEmbeds } from "@/components/Markdown";
 import { TagsList } from "@/components/Tags";
@@ -69,26 +71,72 @@ export async function getStaticProps({
 
 type Props = ReadMDX & { embeds: HrefToEmbeds };
 
+type NormalizedCollaborator = {
+  name: string;
+  role?: string;
+  company?: string;
+  url?: string;
+  client?: boolean;
+};
+
 const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
   const pattern = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
   if (!frontmatter || !content) {
     return null;
   }
 
-  const collaborators = frontmatter.collaborators.map((c, i) => {
-    const matched = c.match(pattern);
-    const newline = i < frontmatter.collaborators.length - 1 ? ",\n" : "";
-    return matched ? (
-      <>
-        <a href={matched[0]} target="_blank">
-          {c.split(/[\[\]]/)[1]}
-          {newline}
-        </a>
-      </>
-    ) : (
-      c + newline
+  const normalizeCollaborator = (c: Collaborator): NormalizedCollaborator => {
+    if (typeof c === "string") {
+      const matched = c.match(pattern);
+      return {
+        name: c.split(/[\[\]]/)[1] ?? c,
+        url: matched ? matched[0] : undefined,
+      };
+    }
+    return c;
+  };
+
+  const renderPeople = (
+    people: NormalizedCollaborator[],
+    showCompany: boolean
+  ) => {
+    const onePerLine = people.some(
+      (p) => p.role || (showCompany && p.company)
     );
-  });
+    return people.map((p, i) => {
+      const company = showCompany ? p.company : undefined;
+      const meta =
+        p.role && company
+          ? `${p.role} @ ${company}`
+          : p.role || company || "";
+      return (
+        <Fragment key={`${p.name}-${i}`}>
+          {i > 0 && (onePerLine ? <br /> : ", ")}
+          {p.url ? (
+            <a href={p.url} target="_blank" rel="noopener noreferrer">
+              {p.name}
+            </a>
+          ) : (
+            p.name
+          )}
+          {meta ? ` — ${meta}` : ""}
+        </Fragment>
+      );
+    });
+  };
+
+  const normalizedCollaborators = (frontmatter.collaborators ?? []).map(
+    normalizeCollaborator
+  );
+  const externalCollaborators = normalizedCollaborators.filter((p) => !p.client);
+  const clientCollaborators: Record<string, NormalizedCollaborator[]> = {};
+  normalizedCollaborators
+    .filter((p) => p.client)
+    .forEach((p) => {
+      const key = p.company || "Client";
+      if (!clientCollaborators[key]) clientCollaborators[key] = [];
+      clientCollaborators[key].push(p);
+    });
 
   return (
     <>
@@ -107,7 +155,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
           <div className={styles["portfolio-header"]}>
             <h4>
               <strong>{frontmatter.categories.join(" • ")}</strong> |{" "}
-              {format(new Date(frontmatter.date), "MMMM eo, yyyy")}
+              {format(new Date(frontmatter.date), "MMMM do, yyyy")}
             </h4>
 
             <h1>{frontmatter.title}</h1>
@@ -125,13 +173,20 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
               <TagsList tags={frontmatter.tags} />
             </div>
             <ul>
-              {frontmatter.collaborators.length > 0 && (
+              {externalCollaborators.length > 0 && (
                 <li>
                   <strong>Collaborators</strong>
                   <br />
-                  {collaborators}
+                  {renderPeople(externalCollaborators, true)}
                 </li>
               )}
+              {Object.entries(clientCollaborators).map(([company, people]) => (
+                <li key={company}>
+                  <strong>{company} (client)</strong>
+                  <br />
+                  {renderPeople(people, false)}
+                </li>
+              ))}
               {frontmatter?.technologies?.length > 0 && (
                 <li>
                   <strong>Technologies</strong>

@@ -25,7 +25,7 @@ categories:
   - Imperfect Foods
 type: portfolioPiece
 thumbnail_width: 1
-thumbnail_height: 1
+thumbnail_height: 2
 piece_type:
   - work
 ---

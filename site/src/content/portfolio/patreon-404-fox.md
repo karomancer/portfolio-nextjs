@@ -24,7 +24,7 @@ categories:
   - Full-time
   - Patreon
 type: portfolioPiece
-thumbnail_width: 2
+thumbnail_width: 1
 thumbnail_height: 1
 piece_type:
   - work
