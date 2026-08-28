@@ -212,7 +212,10 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
             {content}
           </Markdown>
         </div>
-        <RedbubbleWidget title={<h3>Buy my designs on RedBubble!</h3>} />
+        <RedbubbleWidget
+          title={<h3>Buy my designs on RedBubble!</h3>}
+          slug={frontmatter.slug}
+        />
       </main>
     </>
   );
