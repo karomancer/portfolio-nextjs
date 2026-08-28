@@ -21,6 +21,7 @@ const Asset = (asset: ImageType) => {
   const isPDF = asset?.src.match(PDF_PATTERN);
   const isImg = asset?.src.match(IMG_PATTERN);
   const isVideoGif = asset?.src.match(VIDEO_GIF_PATTERN);
+  const posterSrc = asset.title?.startsWith("/") ? asset.title : undefined;
 
   if (isPDF) {
     return <PDFViewer pdfUrl={asset.src} isEmbedded />;
@@ -64,11 +65,16 @@ const Asset = (asset: ImageType) => {
   if (isVideo) {
     return (
       <>
-        <video aria-label={asset.alt} controls className="p-asset">
+        <video
+          aria-label={asset.alt}
+          controls
+          className="p-asset"
+          poster={posterSrc}
+        >
           <source src={asset.src} type="video/mp4" />
           {asset.alt}
         </video>
-        <Caption text={asset.title} />
+        <Caption text={posterSrc ? undefined : asset.title} />
       </>
     );
   }
