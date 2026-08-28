@@ -22,7 +22,7 @@ categories:
   - Client Work
   - Wowd
 type: portfolioPiece
-thumbnail_height: 1
+thumbnail_height: 2
 piece_type:
   - work
 thumbnail_width: 1
