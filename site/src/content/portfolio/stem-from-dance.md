@@ -1,6 +1,6 @@
 ---
 piece_type:
-    - portfolio
+  - portfolio
 title: STEM from Dance LED Pants
 description: A set of 8 pairs of LED-lined pants programmed to accompany a 5-minute dance routine for the STEM from Dance team.
 slug: /portfolio/stem-from-dance
