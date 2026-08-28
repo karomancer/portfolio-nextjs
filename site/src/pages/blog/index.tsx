@@ -289,7 +289,7 @@ export default function Blog({
                       |{" "}
                       {format(
                         new Date(piece.frontmatter.date),
-                        "MMMM eo, yyyy"
+                        "MMMM do, yyyy"
                       )}
                     </h4>
                     <div>
