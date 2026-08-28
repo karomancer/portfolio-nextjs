@@ -30,6 +30,8 @@
     font-weight: 400;
     background-color: white;
     width: fit-content;
+    max-width: 100%;
+    overflow-wrap: break-word;
     margin-top: 4rem;
     margin-left: -0.5rem;
     padding: 0 0.5rem;
@@ -50,6 +52,10 @@
         left: 0;
         width: calc(100vw - 4rem);
       }
+    }
+
+    @include breakpoint("<=small") {
+      font-size: 1.6rem;
     }
   }
 
