@@ -124,8 +124,11 @@ $green-hair-fade: 3.5s;
     }
 
     .byline {
-      font-size: 2rem;
-      height: 4rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      min-height: 4rem;
+      padding: 0 1rem;
+      overflow-wrap: anywhere;
     }
   }
 }

@@ -147,10 +147,12 @@ const VennDiagram = ({ id = "" }) => {
   return (
     <section className={styles["venn-section"]} id={id} ref={sectionRef}>
       <motion.h2 style={hasJS ? { opacity: titleOpacity } : undefined}>
-        Interdisciplinary in nature
+        Interdisciplinary
+        <br className={styles["mobile-break"]} /> in nature
       </motion.h2>
       <motion.p style={hasJS ? { opacity: descriptionOpacity } : undefined}>
-        Starting something? Chances are, I can help.
+        Starting something?
+        <br className={styles["mobile-break"]} /> Chances are, I can help.
       </motion.p>
       <div className={styles["venn-diagram"]}>
         {CIRCLES.map((circle, i) => {

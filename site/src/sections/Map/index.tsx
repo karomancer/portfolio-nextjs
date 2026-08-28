@@ -4,11 +4,15 @@ import styles from "./styles.module.scss";
 const DEFAULT_WIDTH = 1200;
 const MAP_HEIGHT = 500;
 
+const getViewportWidth = () => document.documentElement.clientWidth;
+
 const VisitedPlaces = () => {
-  const [width, setWidth] = useState(DEFAULT_WIDTH);
+  const [width, setWidth] = useState(() =>
+    typeof document === "undefined" ? DEFAULT_WIDTH : getViewportWidth(),
+  );
 
   useEffect(() => {
-    const updateWidth = () => setWidth(window.innerWidth);
+    const updateWidth = () => setWidth(getViewportWidth());
     updateWidth();
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);

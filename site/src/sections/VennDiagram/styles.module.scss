@@ -2,6 +2,12 @@
 @import "../../sass/_functions";
 @import "../../sass/_vendor";
 
+.mobile-break {
+  @include breakpoint(">small") {
+    display: none;
+  }
+}
+
 .venn-section {
   height: calc(100vh + 16vw);
   padding: 4rem 0;
@@ -15,6 +21,10 @@
     height: calc(100vh);
     padding: 4rem 0 3rem;
     overflow: hidden;
+  }
+
+  @include breakpoint("<=small") {
+    height: calc(100vh + 7rem);
   }
 }
 
@@ -33,6 +43,7 @@
 
   @include breakpoint("<=small") {
     height: 80vw;
+    top: 61.5%;
   }
 }
 
