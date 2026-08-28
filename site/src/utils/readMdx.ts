@@ -1,6 +1,16 @@
 import { parse, stringify } from "yaml";
 import matter from "gray-matter";
 
+export type Collaborator =
+  | string
+  | {
+      name: string;
+      role?: string;
+      company?: string;
+      url?: string;
+      client?: boolean;
+    };
+
 export interface ReadMDX {
   frontmatter: {
     title: string;
@@ -16,7 +26,7 @@ export interface ReadMDX {
     cover: string;
     draft: boolean;
     piece_type: ("portfolio" | "journal" | "work")[];
-    collaborators?: string[];
+    collaborators?: Collaborator[];
     technologies?: string[];
     og_preview: string;
     url?: string;
