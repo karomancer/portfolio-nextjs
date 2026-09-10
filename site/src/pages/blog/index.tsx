@@ -90,9 +90,13 @@ export async function getStaticProps() {
     props: {
       pieces,
       datesMap,
+      currentYear: new Date().getFullYear(),
     },
+    revalidate: 86400,
   };
 }
+
+const COLLAPSE_YEARS_OLDER_THAN = 10;
 
 // Helper to generate a slug from title for scroll targeting
 function slugify(text: string): string {
@@ -126,17 +130,24 @@ StableMarkdown.displayName = "StableMarkdown";
 export default function Blog({
   pieces,
   datesMap,
+  currentYear,
 }: {
   pieces: (ReadMDX & { embeds: HrefToEmbeds })[];
   datesMap: { [monthYearString: string]: { title: string; date: string | Date }[] };
+  currentYear: number;
 }) {
   const sortedYears = Object.keys(datesMap).sort(
     (a, b) => parseInt(b) - parseInt(a)
   );
 
-  // Initialize with all years expanded
+  // Years a decade or more old start collapsed
   const [expandedYears, setExpandedYears] = useState<Set<string>>(
-    () => new Set(sortedYears)
+    () =>
+      new Set(
+        sortedYears.filter(
+          (year) => currentYear - parseInt(year) < COLLAPSE_YEARS_OLDER_THAN
+        )
+      )
   );
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [displayCount, setDisplayCount] = useState(12);

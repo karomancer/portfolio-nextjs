@@ -102,8 +102,8 @@ const Td = ({ values, props }: TdType) => {
       const delimited = c.value.split("!!!");
       if (delimited.length > 1) {
         return delimited.map((v, i) =>
-          i < delimited.length - 1 ? (
-            <span key={c.value} className={styles["spaced-span"]}>
+          i < delimited.length - 1 && /[\p{L}\p{N}]/u.test(v) ? (
+            <span key={`${i}-${v}`} className={styles["spaced-span"]}>
               {v}
             </span>
           ) : (
