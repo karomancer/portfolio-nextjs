@@ -1,5 +1,5 @@
 ---
-title: Kasumi "Violet" Cosplay [Persona 5 Royal]
+title: Kasumi "Violet" Cosplay [Persona 5R]
 description: Complex pattern making and an introduction to CAD by making Kasumi "Violet" Yoshizawa from Persona 5 Royal
 slug: /portfolio/kasumi
 collaborators: []
@@ -35,7 +35,7 @@ thumbnail_width: 2
 ![Photograph of a painted silver sword and a black sheath crossed on the floor](/optimized/portfolio/kasumi/finishedsword.webp)
 
 ### Context
-In 2019, Atlus announced they were doing a re-release of their famous game Persona 5, but with new content. The top thing they announced was that the new version, dubbed Persona 5 Royale, would have a brand new character who is a badass ballerina. I knew I had to be this character for Halloween, just in time for its October 31, 2019 release date!
+In 2019, Atlus announced they were doing a re-release of their famous game Persona 5, but with new content. The top thing they announced was that the new version, dubbed Persona 5 Royal, would have a brand new character who is a badass ballerina. I knew I had to be this character for Halloween, just in time for its October 31, 2019 release date!
 
 ||
 |--|
