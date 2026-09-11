@@ -9,6 +9,7 @@ import { MetascrapedInfo } from "@/utils/unfurlLink";
 
 import Asset from "./Asset";
 import Embed from "./Embed";
+import TweetEmbed from "./TweetEmbed";
 import { ListItem, Td as TdType } from "./types";
 
 import styles from "./styles.module.scss";
@@ -72,6 +73,9 @@ export default function Markdown({ className, children, embeds }: Props) {
             position="relative"
           />
         );
+      }
+      if (embeds[props.href].isTweet) {
+        return <TweetEmbed {...embeds[props.href]} />;
       }
       return <Embed {...embeds[props.href]} />;
     }

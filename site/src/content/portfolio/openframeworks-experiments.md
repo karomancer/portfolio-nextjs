@@ -47,21 +47,9 @@ The whole ruleset is four lines:
 - A live cell with more than 3 dies, as if from overcrowding
 - A dead cell with exactly 3 live neighbors comes to life
 
-That's it! And out of those four lines you get gliders that walk across the screen, oscillators that blink forever, and little clumps that just sit there. It's also Turing complete, which sounds made up until someone builds a working computer inside it.
+That's it! And out of those four lines you get gliders that walk across the screen, oscillators that blink forever, and little clumps that just sit there. It's also [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness), which sounds made up until someone builds a working computer inside it. The first experiment was to simply implement this simple rule set in OpenFrameworks.
 
-Was implementing Conway's Game of Life in C++ (with OpenFrameworks) and messed up one line of code and got this.
-
-You know what? Not even mad, this is pretty neat.
-
-Chow down on dead pixels with Chow's Game of Life
-
-![A video of the buggy Game of Life, where the one wrong line turns the grid into a spreading, chewing pattern instead of Conway's rules.](/optimized/portfolio/openframeworks-experiments/gol-bug.mp4)
-
-The bug came first, which feels like the correct order for this class.
-
-Did Conway's Game of Life in OpenFrameworks (C++).
-
-Decided to go above and beyond and add some little controls too. This was fun stuff :)
+But of course, let's to go above and beyond and add some little controls too!
 
 ![A video of the finished Game of Life running with an ofxGui control panel, showing play and pause, a reset, and sliders for pixel size and speed.](/optimized/portfolio/openframeworks-experiments/gol-controls.mp4)
 
@@ -69,9 +57,13 @@ The "little controls" are an `ofxGui` panel: play/pause, a reset button, and sli
 
 Then came the part that makes it a Seeing Machines project instead of a computer science exercise!
 
-You asked and thus you shall receive!
+Someone on Twitter/X made a suggestion:
 
-Taking a photo with your webcam as the seed for Conway's Game of Life.
+[embed](https://x.com/Fudmottin/status/1704346557355602336)
+
+Ask and you shall receive!
+
+So I added webcam functionality to take a picture of yourself as the seed for Conway's Game of Life.
 
 ![A video of the webcam-seeded Game of Life: a photo is captured, thresholded into black and white, and then immediately begins evolving under Conway's rules.](/optimized/portfolio/openframeworks-experiments/gol-webcam-seed.mp4)
 
