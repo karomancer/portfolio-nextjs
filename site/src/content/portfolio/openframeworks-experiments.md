@@ -49,6 +49,8 @@ The whole ruleset is four lines:
 - A live cell with more than 3 dies, as if from overcrowding
 - A dead cell with exactly 3 live neighbors comes to life
 
+![A diagram of the four rules. Each column shows a 3x3 grid of cells before and after one generation, with the cell the rule applies to outlined in teal. Rule 1: a live cell with one neighbor dies. Rule 2: a live cell with two neighbors survives. Rule 3: a live cell with five neighbors dies. Rule 4: a dead cell with exactly three neighbors comes to life.](/optimized/portfolio/openframeworks-experiments/gol-rules.webp)
+
 That's it! And out of those four lines you get gliders that walk across the screen, oscillators that blink forever, and little clumps that just sit there. It's also [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness), which sounds made up until someone builds a working computer inside it. The first experiment was to simply implement this simple rule set in OpenFrameworks.
 
 But of course, let's to go above and beyond and add some little controls too!
