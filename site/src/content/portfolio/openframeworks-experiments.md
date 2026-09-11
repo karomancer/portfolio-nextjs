@@ -75,13 +75,35 @@ Instead of seeding the board randomly, it grabs a frame from an `ofVideoGrabber`
 
 This one started as pure messing around with depth sensing data from a Kinect V2. Pretty basic stuff to start, but I figured gaining familiarity would give me inspiration for cooler projects later.
 
-The Kinect is a depth camera Microsoft built as an Xbox controller, so you could play games by flailing around your living room instead of holding anything. It flopped as a controller! Artists loved it though, because suddenly there was a real depth sensor on a lot of desks for about $100.
+The [Kinect](https://en.wikipedia.org/wiki/Kinect) is a depth camera Microsoft built as an Xbox controller, so you could play games by flailing around your living room instead of holding anything. It came out in the same generation of gaming hardware as the Nintendo Wii controller. When I was in undergrad as a human-computer interaction major, we LOVED these things; the technology is so neat and we would just play around and try to find applications for it. It was, after all, a very novel and interesting way to interact with a computer!
 
-So what makes it different from a webcam? It isn't measuring color. It's measuring distance.
+That said, it flopped as a controller! Turns out, gamers don't necessarily _want_ to get up and flap their arms around or dance to play, they'd rather sit and focus with a normal controller in hand. Artists loved it though because it opened up a whole new world for interactive installations. Suddenly there was a real depth sensor on a lot of desks for about $100.
+
+So what makes it different from a webcam? It isn't measuring color or brightness. It's measuring distance.
 
 The original Kinect projected a fixed speckle pattern of infrared dots across the room. It watched how that grid got distorted by whatever it landed on, then triangulated depth from the distortion. The V2 I used does it differently. It floods the scene with modulated infrared light and measures the phase shift of the light bouncing back, pixel by pixel. Light that took longer to get home came from something further away. That's called time-of-flight, and what it's measuring is reflection, not refraction.
 
 Either way, what comes out is an image where every pixel is a distance in meters instead of a color. Your room lighting doesn't matter at all, because the sensor brought its own.
+
+Concretely, here's what you actually get to work with:
+
+```cpp
+// A depth frame is 512 x 424 readings, one per pixel
+depthPixels = kinect.getDepthPixels();
+
+// Ask for the distance at any point, in meters
+float dist = kinect.getDistanceAt(x, y);
+
+// (256, 212) -> 1.284   me, standing about four feet back
+// (256,  40) -> 2.900   the wall behind me
+// ( 10,  10) -> 0.000   no return at all
+
+// Or read the raw values straight off the texture, in millimeters
+const ofFloatPixels& rawDepthPix = kinect.getRawDepthPixels();
+int depthAtPoint = rawDepthPix.getColor(x, y).r;   // 1284
+```
+
+That `0.000` is the part that bites you. Anything too close, too far, too shiny, or hidden behind something else just comes back as nothing, so a good chunk of every frame is holes. That's what the min and max depth sliders are for: throw away everything outside the range you actually care about, and only draw the rest.
 
 ![A video of the depth dot sketch: a grid of colored dots sized by distance, rendering the maker's silhouette in magenta and purple as she moves in front of the Kinect.](/optimized/portfolio/openframeworks-experiments/kinect-depth-dots.mp4)
 
@@ -107,19 +129,19 @@ The caveat for all of this is that Haar cascades generally are single-person smi
 
 ## Kinect to Unity over OSC
 
-That project I was working on this weekend took a turn!
+This got me feeling like 2011-era gaming up in my apartment...just with fifteen years of hindsight and much better libraries.
 
-Using the Kinect to get depth data, detecting blobs with OpenCV, deciphering movements, and then sending data with OSC to the Endless Runner example from the Unity Asset store.
-
-It's feeling like 2011 up in my apartment
+I used the Kinect to get depth data, detecting blobs with OpenCV, deciphering movements, and then sending data with OSC to the Endless Runner example from the Unity Asset store.
 
 ![A video of the maker standing in her apartment in front of a Kinect, jumping and stepping side to side to control an endless runner game on the monitor behind her.](/optimized/portfolio/openframeworks-experiments/kinect-unity-osc.mp4)
 
-This is the one where everything gets stacked! The Kinect provides depth. `ofxCv`'s `ContourFinder` pulls blobs out of the depth image. An `ofxCv::RectTracker` gives each blob a stable label across frames, so a person stays the same person. The screen is split into lanes, and the center of your blob decides which lane you're in.
+This is the one where everything I've done thus far gets stacked! The Kinect provides depth. `ofxCv`'s `ContourFinder` pulls blobs out of the depth image. An `ofxCv::RectTracker` gives each blob a stable label across frames, so a person stays the same person. The screen is split into lanes, and the center of your blob decides which lane you're in.
 
 Jumping and sliding come from how long your bounding box stays past a threshold. There's a debounce interval too, so one jump doesn't fire twenty messages.
 
 All of it goes out over OSC to `localhost:1337`, where Unity's Endless Runner sample is listening.
+
+Wait, OSC? What's that?
 
 [Open Sound Control](https://en.wikipedia.org/wiki/Open_Sound_Control) came out of CNMAT at Berkeley in the late 90s as a successor to MIDI. It's quietly become the way creative tools talk to each other. A message is just a URL-shaped address plus some typed arguments, fired over UDP. It's fast, it doesn't care what language either side is written in, and nobody has to wait for a reply.
 
@@ -140,4 +162,4 @@ The settings panel ended up with four groups: Kinect clipping, contour finder ar
 
 [embed](https://github.com/karomancer/OFKinectToUnityOSC)
 
-That "feeling like 2011" line is doing a lot of work. This is genuinely the Kinect hacking era stack! Just with fifteen years of hindsight and much better libraries.
+
