@@ -44,10 +44,10 @@ It's a cellular automaton that mathematician John Conway came up with in 1970. I
 
 The whole ruleset is four lines:
 
-- A live cell with 2 or 3 live neighbors stays alive
-- A live cell with fewer than 2 dies, as if from loneliness
-- A live cell with more than 3 dies, as if from overcrowding
-- A dead cell with exactly 3 live neighbors comes to life
+1. A live cell with fewer than 2 live neighbors dies, as if from loneliness
+2. A live cell with 2 or 3 live neighbors stays alive
+3. A live cell with more than 3 live neighbors dies, as if from overcrowding
+4. A dead cell with exactly 3 live neighbors comes to life
 
 ![A diagram of the four rules. Each column shows a 3x3 grid of cells before and after one generation, with the cell the rule applies to outlined in teal. Rule 1: a live cell with one neighbor dies. Rule 2: a live cell with two neighbors survives. Rule 3: a live cell with five neighbors dies. Rule 4: a dead cell with exactly three neighbors comes to life.](/optimized/portfolio/openframeworks-experiments/gol-rules.webp)
 
