@@ -30,9 +30,7 @@ categories:
 type: portfolioPiece
 ---
 
-![A still from the Warhol lip popart sketch: the webcam feed tiled into four quadrants of flat yellow, magenta, purple and green, with a live camera view of the maker in the center.](/optimized/portfolio/openframeworks-experiments/cover.webp)
-
-A semester of homework for **Seeing Machines** at ITP, all written in C++ with [OpenFrameworks](https://openframeworks.cc/). I studied computer science and have spent my career on the web, so dropping into C++ and a creative coding framework meant relearning a lot of things I thought I knew.
+A semester of exercises for [**Seeing Machines**](https://seeingmachines.betamovement.net/) at ITP, a class teaching various techniques and solutions for tracking and sensing people or objects in space, all written in C++ with [OpenFrameworks](https://openframeworks.cc/) pre gen-AI. I studied computer science and have spent my career on the web, so dropping into C++ and a creative coding framework meant relearning a lot of things I thought I knew.
 
 These are in the order I built them, which is also roughly the order of how much they could see.
 
@@ -78,9 +76,9 @@ Instead of seeding the board randomly, it grabs a frame from an `ofVideoGrabber`
 
 The Kinect V2 hands you a depth image, where each pixel is a distance rather than a color. This sketch samples that image on a grid and draws a dot per sample, using depth to drive size and color, so you get a person made of dots that swell as they lean in.
 
-The `ofxGui` panel exposes near and far clipping planes, the anchor depth everything is measured against, and separate horizontal and vertical density so you can go from a fine mist of dots to a chunky halftone. There are also two toggles in the code named `colorRaveParty` and `addTheJitters`, which do about what you would expect.
+The `ofxGui` panel exposes min and max depth, separate X and Y density, and a base pixel size. Those densities are what change the whole character of it: even at X Density 10, dropping Y Density to 1 stretches every dot into the tall streaks below. There are also two toggles, Color Rave Party and Jitterbug, which do about what you would expect.
 
-![A still frame from the depth dot sketch, showing the dot-cloud silhouette in magenta and purple against white with the settings panel in the corner.](/optimized/portfolio/openframeworks-experiments/depth-dots-still.webp)
+![A still frame from the depth dot sketch with Y Density turned down to 1, so every dot stretches into a tall vertical streak. A figure reads in magenta and pink against white, with blue streaks to the left and the DEPTH_DOTS settings panel in the corner.](/optimized/portfolio/openframeworks-experiments/depth-dots-still.webp)
 
 [embed](https://github.com/karomancer/kinectDepthDots)
 
