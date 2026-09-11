@@ -11,7 +11,7 @@ preview: /optimized/portfolio/textile-interfaces/hero-grid.webp
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/textile-interfaces/heart2.webp
-og_preview: /optimized/portfolio/textile-interfaces/red_dress_1.webp
+og_preview: /optimized/portfolio/textile-interfaces/hero-grid.webp
 draft: true
 url: ""
 technologies:
