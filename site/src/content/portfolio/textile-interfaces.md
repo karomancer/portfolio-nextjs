@@ -7,7 +7,7 @@ slug: /portfolio/textile-interfaces
 collaborators: []
 class: Textile Interfaces
 date: 2022-12-07T05:41:17.950Z
-preview: ""
+preview: /optimized/portfolio/textile-interfaces/hero-grid.webp
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/textile-interfaces/heart2.webp
@@ -23,6 +23,8 @@ categories:
     - ITP
 type: portfolioPiece
 ---
+
+![A four-up grid of the textile interfaces: a blue felt swatch with a coin battery sitting on a sewn conductive-thread circuit, a stuffed red heart wired to a multimeter reading 036, a red dress with a zipper stitched with conductive thread down the front, and a black foam body form with two squishy buttons wired to a multimeter.](/optimized/portfolio/textile-interfaces/hero-grid.webp)
 
 ## Experiment #1: Button Swatch
 
