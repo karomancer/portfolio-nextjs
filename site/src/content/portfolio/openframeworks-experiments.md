@@ -36,7 +36,7 @@ A semester of exercises for [**Seeing Machines**](https://seeingmachines.betamov
 
 These are in the order I built them, which is also roughly the order of how much they could see.
 
-## Karina's Game of Life
+## Experiment #1: Karina's Game of Life
 
 First, let's talk about [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)!
 
@@ -73,7 +73,7 @@ Instead of seeding the board randomly, it grabs a frame from an `ofVideoGrabber`
 
 [embed](https://github.com/karomancer/karinasGameOfLife)
 
-## Kinect Depth Dots
+## Experiment #2: Kinect Depth Dots
 
 This one started as pure messing around with depth sensing data from a Kinect V2. Pretty basic stuff to start, but I figured gaining familiarity would give me inspiration for cooler projects later.
 
@@ -115,7 +115,7 @@ The `ofxGui` panel exposes min and max depth, separate X and Y density, and a ba
 
 [embed](https://github.com/karomancer/kinectDepthDots)
 
-## Warhol Lip Popart
+## Experiment #3: Warhol Lip Popart
 
 Playing with the OpenCV addon in OpenFrameworks (C++) using [Haar Cascades](https://www.productteacher.com/quick-product-tips/haar-cascades-for-product-teams).
 
@@ -129,7 +129,7 @@ The caveat for all of this is that Haar cascades generally are single-person smi
 
 [embed](https://github.com/karomancer/warholLipPopart)
 
-## Kinect to Unity over OSC
+## Experiment #4: Kinect to Unity over OSC
 
 This got me feeling like 2011-era gaming up in my apartment...just with fifteen years of hindsight and much better libraries.
 
