@@ -4,7 +4,8 @@ piece_type:
 title: Ice Bucket Diffuser
 description: A chindogu for hotels that recycles the meltwater from your ice bucket into an aromatic diffuser, built in the aesthetic of MUJI.
 slug: /portfolio/ice-bucket-diffuser
-collaborators: []
+collaborators:
+    - "[Vera Zhong](https://zhong.studio/)"
 class: Designing the Absurd
 date: 2023-11-17T00:05:40.000Z
 preview: /optimized/portfolio/ice-bucket-diffuser/assembled-color-check.webp
@@ -42,18 +43,15 @@ As for the aesthetic, [MUJI](https://www.muji.com/) started in 1980, and their f
 
 ## Brainstorming
 
-First round:
+Vera and I went through a lot of ideas including:
 
 - A cargo bathrobe that holds all the things a hotel gives you: door key, toiletries, pillow chocolates, coffee pods, etc.
 - A bellboy uniform that has all the hotels keys hanging from it, individually in a grid that resembles the location of the rooms.
-
-Second round:
-
 - A series of sleds for luggage that a bellboy "drives" like a sleddog
 - Ice bucket molds that conform perfectly to the shape of a bottle of champagne.
 - A room safe that stores your money but takes a fee when it returns it
 
-We presented our ideas to the professor, and after first being told sternly that we're very behind, he then told us we're also thinking too small.
+We presented our ideas to the professor and he told us we're also thinking too small.
 
 > "Think more about interactivity"
 >
@@ -101,21 +99,17 @@ And that's exactly what made the salvaged guts annoying to reuse. The motor was 
 
 With that, it was time to sketch out our ice bucket diffuser idea.
 
-The outer shell included the bucket itself, which had holes at the bottom for the ice water to seep into a chamber with the ultrasonic vibration motor to "mistify" into smell-good vapor that would be fanned out of a straw.
+| | |
+| -- | -- |
+| ![A whiteboard sketch of the diffuser in cross-section, with a red arrow pointing down at a "WOODEN BERET" lid, a blue "METAL" bucket, a "PLASTIC" outer shell, and annotations at the base reading "pipe" and "fan air".](/optimized/portfolio/ice-bucket-diffuser/whiteboard-sketch.webp) | The outer shell included the bucket itself, which had holes at the bottom for the ice water to seep into a chamber with the ultrasonic vibration motor to "mistify" into smell-good vapor that would be fanned out of a straw.!!!Three materials stacked up: metal bucket, plastic shell, wooden lid. The lid is labelled WOODEN BERET on the whiteboard, and yes, we called it that for the rest of the project! |
 
-Three materials stacked up: metal bucket, plastic shell, wooden lid. The lid is labelled WOODEN BERET on the whiteboard, and yes, we called it that for the rest of the project!
-
-| |
-| -- |
-| ![A whiteboard sketch of the diffuser in cross-section, with a red arrow pointing down at a "WOODEN BERET" lid, a blue "METAL" bucket, a "PLASTIC" outer shell, and annotations at the base reading "pipe" and "fan air".](/optimized/portfolio/ice-bucket-diffuser/whiteboard-sketch.webp) |
 
 We bought a bucket and a pail to try to use as our ice bucket base.
 
 The paint can came with a baby paint can, so that was unexpectedly cute!
 
-| |
-| -- |
-| ![Three metal containers of descending size lined up on a classroom table, with classmates working at laptops in the background.](/optimized/portfolio/ice-bucket-diffuser/buckets-bought.webp) |
+![Three metal containers of descending size lined up on a classroom table, with classmates working at laptops in the background.](/optimized/portfolio/ice-bucket-diffuser/buckets-bought.webp)
+
 
 ### Brushing the aluminum
 
@@ -127,9 +121,7 @@ We decided to make a custom dremel.
 
 It only kinda worked but worked well enough.
 
-| |
-| -- |
-| ![A video of a hand-held power drill fitted with an improvised abrasive bit, spinning inside a small metal bucket held steady on a workbench to brush the interior surface.](/optimized/portfolio/ice-bucket-diffuser/custom-dremel.mp4) |
+![A video of a hand-held power drill fitted with an improvised abrasive bit, spinning inside a small metal bucket held steady on a workbench to brush the interior surface.](/optimized/portfolio/ice-bucket-diffuser/custom-dremel.mp4) 
 
 ## Prototyping the shell
 
@@ -245,10 +237,11 @@ The bucket has finally been stripped of its unnecessary decorations!
 | ![The metal pail on the workbench floor surrounded by pliers and screwdrivers, viewed from above with the maker's boots in frame.](/optimized/portfolio/ice-bucket-diffuser/stripping-decorations1.webp) | ![The pail clamped on its side to the bench with a blue clamp while a screwdriver is levered under a welded decoration.](/optimized/portfolio/ice-bucket-diffuser/stripping-decorations2.webp) | ![A video of a person with teal hair in a black "Eleventh Street Dojo" t-shirt working the last welded decoration off the metal pail at a shop bench, then holding it up clean.](/optimized/portfolio/ice-bucket-diffuser/bucket-victory.mp4) |
 
 ### Sick beats
+You know the advantage of cutting a 6" (152mm) diameter acrylic tube with a hand saw is?
 
-| | |
-| -- | -- |
-| ![A video of a person with teal hair at a vise in the shop, sanding the cut edge of a wide clear acrylic tube in a rhythmic back and forth motion.](/optimized/portfolio/ice-bucket-diffuser/acrylic-sick-beats.mp4) | You know the advantage of cutting a 6" (152mm) diameter acrylic tube with a hand saw is?!!!Getting to make some sick beats for everyone around you to enjoy when you inevitably have to sand the edges down. |
+Getting to make some sick beats for everyone around you to enjoy when you inevitably have to sand the edges down.
+
+![A video of a person with teal hair at a vise in the shop, sanding the cut edge of a wide clear acrylic tube in a rhythmic back and forth motion.](/optimized/portfolio/ice-bucket-diffuser/acrylic-sick-beats.mp4)
 
 ### The leather handle
 
