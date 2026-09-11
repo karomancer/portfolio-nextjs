@@ -17,7 +17,13 @@ const Head = ({
   ogUrl,
   ogImage,
 }: Props) => {
-  const imageUrl = `https://${process.env.NEXT_PUBLIC_VERCEL_URL}${ogImage}`;
+  const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+    : "https://karinachowtime.com";
+  const absolute = (path: string) =>
+    path.startsWith("http") ? path : `${siteUrl}${path}`;
+  const imageUrl = absolute(ogImage);
+  const pageUrl = absolute(ogUrl);
   const editedTitle = `Karina Chow | ${title}`;
 
   return (
@@ -40,8 +46,8 @@ const Head = ({
       />
       <meta property="og:title" content={editedTitle} key="title" />
       <meta property="og:description" content={description} key="description" />
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:url" content={ogUrl} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:url" content={pageUrl} />
       <meta name="og:updated_time" content={new Date().toISOString()} />
       {/* Twitter properties */}
       <meta name="twitter:card" content="summary_large_image" />
