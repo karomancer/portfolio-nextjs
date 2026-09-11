@@ -19,7 +19,7 @@ og_preview: /optimized/portfolio/stem-from-dance/thumbnail.webp
 draft: false
 url: https://github.com/DanNoblem/LED_Pants/tree/Hard-Coded
 technologies:
-    - Arduino Nano 33 IoT
+    - ESP8266
     - Shark Euro Pro X (Sewing Machine)
     - Autodesk Fusion 360
 tags:
