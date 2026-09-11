@@ -30,6 +30,8 @@ categories:
 type: portfolioPiece
 ---
 
+![A four-up grid of stills, one from each experiment: a dense black and white Game of Life board, a figure rendered as tall magenta and blue streaks from Kinect depth data, a four-quadrant Warhol popart of halftone lips around a webcam feed, and the maker in her apartment controlling an endless runner on a monitor via Kinect.](/optimized/portfolio/openframeworks-experiments/hero-grid.webp)
+
 A semester of exercises for [**Seeing Machines**](https://seeingmachines.betamovement.net/) at ITP, a class teaching various techniques and solutions for tracking and sensing people or objects in space, all written in C++ with [OpenFrameworks](https://openframeworks.cc/) pre gen-AI. I studied computer science and have spent my career on the web, so dropping into C++ and a creative coding framework meant relearning a lot of things I thought I knew.
 
 These are in the order I built them, which is also roughly the order of how much they could see.
