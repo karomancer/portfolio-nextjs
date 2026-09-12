@@ -8,6 +8,14 @@ export type MetascrapedInfo = {
   link: string;
   isIframe?: boolean;
   isTikTok?: boolean;
+  isTweet?: boolean;
+  author?: string;
+  handle?: string;
+  avatar?: string;
+  date?: string;
+  replyTo?: string;
+  likes?: number;
+  replies?: number;
 };
 
 const IFRAME_WEBSITES = [
@@ -41,6 +49,41 @@ export const extractLinkFromMDX = (str: string) => {
   return match ? match[0] : null;
 };
 
+const TWEET_URL_PATTERN = /(?:twitter|x)\.com\/[^/]+\/status\/(\d+)/;
+
+const unfurlTweet = async (link: string) => {
+  const id = link.match(TWEET_URL_PATTERN)?.[1];
+  if (!id) return null;
+  try {
+    const { data } = await axios.get(
+      `https://cdn.syndication.twimg.com/tweet-result?id=${id}&token=a&lang=en`,
+      { headers: { "User-Agent": "Mozilla/5.0" } }
+    );
+    const [start, end] = data.display_text_range ?? [0, data.text?.length];
+    const text = data.text?.slice(start, end);
+    const info = {
+      title: data.user?.name,
+      description: text?.replace(/\s*https:\/\/t\.co\/\w+\s*$/, "").trim(),
+      image: data.mediaDetails?.[0]?.media_url_https,
+      avatar: data.user?.profile_image_url_https?.replace("_normal", "_400x400"),
+      author: data.user?.name,
+      handle: data.user?.screen_name,
+      date: data.created_at,
+      replyTo: data.in_reply_to_screen_name,
+      likes: data.favorite_count,
+      replies: data.conversation_count,
+      link,
+      isIframe: false,
+      isTweet: true,
+    };
+    return Object.fromEntries(
+      Object.entries(info).filter(([, value]) => value !== undefined)
+    ) as MetascrapedInfo;
+  } catch (_) {
+    return { link, isIframe: false, isTweet: true } as MetascrapedInfo;
+  }
+};
+
 export const isLinkExpandable = (link: string) =>
   UNFURLING_WEBSITES.find((site) => link.match(site));
 
@@ -54,6 +97,9 @@ export const filterByExpandableLinks = (str: string) => {
 
 export const unfurlLink = async (link: string) => {
   if (link) {
+    if (TWEET_URL_PATTERN.test(link)) {
+      return unfurlTweet(link);
+    }
     const isIframe = !!isIFrame(link);
     if (isLinkExpandable(link) || isIframe) {
       try {
