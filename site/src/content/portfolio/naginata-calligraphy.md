@@ -37,11 +37,11 @@ What makes it different from most Japanese martial arts is reach. A naginata is 
 
 Big, fast, curved paths carved through the air. I really wanted to see the shape of that.
 
-| |
-| -- |
-| ![Two practitioners in keikogi and hakama demonstrating on stage at the Northern California Cherry Blossom Festival, naginata extended and crossing between them, an audience watching from below.](/optimized/portfolio/naginata-calligraphy/demo-festival.webp) |
+| | |
+| -- | -- |
+| ![Two practitioners in keikogi and hakama demonstrating on stage at the Northern California Cherry Blossom Festival, naginata extended and crossing between them, an audience watching from below.](/optimized/portfolio/naginata-calligraphy/demo-festival.webp) | ![A single practitioner in keikogi and hakama mid-demonstration on the Cherry Blossom Festival stage, naginata raised diagonally overhead, the pink festival banner filling the frame behind them.](/optimized/portfolio/naginata-calligraphy/demo-solo.webp) |
 
-![Two practitioners in full bogu sparring on a competition court, both naginata crossed in a wide X across the frame.](/optimized/portfolio/naginata-calligraphy/sparring.webp)
+![Two practitioners in full bogu facing off on a competition court, one dropped low and one stepping through, their naginata crossing in a wide X between them.](/optimized/portfolio/naginata-calligraphy/sparring.webp)
 
 ## The idea
 
@@ -52,6 +52,8 @@ So what if you could actually see it? Track the blade through the air, and paint
 ## The rig
 
 I wrapped reflective tape over the *sendanmaki*, the binding at the point where the blade is attached to the pole, and pointed a Kinect V2 at the dojo.
+
+![A labelled diagram of a naginata, 2.10 to 2.25m long end to end, naming its parts: kissaki, mini, sori, shinogi, monouchi, ha and ha-bu along the 50cm curved blade, the sendanmaki tape binding over the 15cm join, the e-bu shaft, and the ishizuki buttcap.](/optimized/portfolio/naginata-calligraphy/naginata-parts.webp)
 
 The Kinect's infrared camera is what made this plausible. It brings its own IR floodlight, so anything retroreflective comes screaming back much brighter than everything else in the room. It doesn't matter at all what the house lights are doing. That turns "find the blade" into "find the brightest pixels," which is a MUCH easier problem!
 
@@ -67,6 +69,12 @@ for (int y = 0; y < irPixels.getHeight(); y++) {
 ```
 
 Everything brighter than the threshold is the tape. Everything else is the dojo.
+
+At school I could get the angle I actually wanted:
+
+| | |
+| -- | -- |
+| ![A phone pan up to a Kinect on an articulated arm clamped to the exposed ceiling pipes of the school studio, pointed straight down, then back down to a laptop on the worktable below running the sketch.](/optimized/portfolio/naginata-calligraphy/kinect-mount.mp4) | The Kinect went up on an articulated arm clamped to the ceiling pipes, pointed straight down at the floor, with the sketch running on a laptop underneath. Top-down is the right view for this! The stroke is a shape drawn in the air, and from overhead you see the whole shape instead of a foreshortened version of it. |
 
 ## Everything I tried
 
@@ -110,7 +118,7 @@ Three problems, and they compound.
 
 **The movement is too fast and too varied.** The Kinect V2 runs at 30fps. A naginata strike covers an enormous arc in a fraction of a second! Between two frames the blade has moved a long way and rotated into an orientation the tracker has never seen. Contour finding kept losing the object and re-acquiring it as a brand new one. That's why so many attempts ended up tracking IDs in a map and assigning colors, just so I could see what was being confused with what.
 
-**I couldn't mount the Kinect overhead.** The stroke I want to capture is a shape in three dimensions, and from the floor you're watching it nearly edge-on. But the dojo is not mine to drill holes into! Least technical constraint, most fatal.
+**I couldn't mount the Kinect overhead in the dojo.** The stroke I want to capture is a shape in three dimensions, and from the floor you're watching it nearly edge-on. But the school's ceiling pipes are one thing, and the dojo is not mine to drill holes into! Least technical constraint, most fatal.
 
 **And naginata is not a solo activity.** Sparring puts two people, two long weapons, and a lot of overlap in frame.
 
@@ -119,6 +127,10 @@ Three problems, and they compound.
 ## Where it stands
 
 I never got it the way I wanted, but it was a fun exploratory process that I learned a lot in! I'm hoping to get back to it and back into the dojo and see this through.
+
+I did get to put it in front of people, though. This is a classmate who had never seen a naginata before, let loose with one in the lab while the sketch painted along behind them!
+
+![A classmate in a brown shirt and beanie swinging a naginata in front of a black curtain in the lab, the Kinect mounted on a cart beside them and a laptop on the desk showing the black brushstrokes their swings are painting.](/optimized/portfolio/naginata-calligraphy/user-testing.mp4)
 
 One caption from the video is the part I keep thinking about, because it's the thing you can't get from a tech demo:
 
