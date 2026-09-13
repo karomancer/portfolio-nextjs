@@ -37,6 +37,12 @@ What makes it different from most Japanese martial arts is reach. A naginata is 
 
 Big, fast, curved paths carved through the air. I really wanted to see the shape of that.
 
+| |
+| -- |
+| ![Two practitioners in keikogi and hakama demonstrating on stage at the Northern California Cherry Blossom Festival, naginata extended and crossing between them, an audience watching from below.](/optimized/portfolio/naginata-calligraphy/demo-festival.webp) |
+
+![Two practitioners in full bogu sparring on a competition court, both naginata crossed in a wide X across the frame.](/optimized/portfolio/naginata-calligraphy/sparring.webp)
+
 ## The idea
 
 Naginata movement already looks like brushwork to me. A strike is one continuous stroke with a beginning, a direction, and a follow-through. The good ones have the same quality as a good brushstroke: committed, and over before you can second-guess it.
