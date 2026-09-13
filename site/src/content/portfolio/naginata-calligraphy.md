@@ -27,7 +27,9 @@ categories:
 type: portfolioPiece
 ---
 
-![A still from the sketch: a sweeping black brushstroke on a white canvas, built up from the path the naginata blade traced through the air.](/optimized/portfolio/naginata-calligraphy/cover.webp)
+![A classmate in a brown shirt and beanie swinging a naginata in front of a black curtain in the lab, the Kinect mounted on a cart beside them and a laptop on the desk showing the black brushstrokes their swings are painting.](/optimized/portfolio/naginata-calligraphy/user-testing.webm)
+
+That's a classmate who had never seen a naginata before, let loose with one in the lab while the sketch painted along behind them!
 
 ## What is naginata?
 
@@ -77,20 +79,13 @@ At school I could get the angle I actually wanted:
 | ![A phone pan up to a Kinect on an articulated arm clamped to the exposed ceiling pipes of the school studio, pointed straight down, then back down to a laptop on the worktable below running the sketch.](/optimized/portfolio/naginata-calligraphy/kinect-mount.mp4) | The Kinect went up on an articulated arm clamped to the ceiling pipes, pointed straight down at the floor, with the sketch running on a laptop underneath. Top-down is the right view for this! The stroke is a shape drawn in the air, and from overhead you see the whole shape instead of a foreshortened version of it. |
 
 ## Everything I tried
-
-Here's the compilation of my struggles, with my notes on each attempt as they happened:
+I went through a lot of methods and largely hit dead ends:
+* **Contour finding with no lerping led to a precise brush but without continuity.** It looked rather like someone grabbed a wide, dry brush and just tapped it on the screen instead of doing full strokes.
+* **Contour finding with lerping per point between previous and current** looked a lot more calligraphy like, but there was some artifacting. Because the naginata can move so quickly, it would lose track of it and sputter identifying other objects in between as the naginata, creating uneven brushstrokes.
+* **Countour finding, but instead of just filling the contour with black drawing a circle and lerping, then trying to keep track of which objects were which to do two naginata.** The problem here is that just a circular brush looks less Japanese and more like an Etch-a-Sketch. That and if the naginata cross (which they often do), it would lose track of which was which.
+* **Only paint what IR camera sees, no contour finding or lerping**. More accurate and bolder stamps, but it doesn't read as a brush stroke and once again looks like individual stamps.
 
 ![A screen recording running through every version of the sketch, in a four-up debug view showing the Kinect RGB feed, the IR feed, the masked contours, and the painted canvas. Footage moves between an apartment and a dojo, with practitioners in hakama swinging naginata, and captions labelling each approach.](/optimized/portfolio/naginata-calligraphy/struggle-compilation.mp4)
-
-The captions in that video are my running commentary, and they work as a list of dead ends:
-
-> contour finding, no lerping, circle per pixel IR > min
-
-> contour finding, contour ofPolyline -> ofPath, lerping per point between previous and current
-
-> contour finding, draw circle at contour boundary top left, lerping between previous and current, keep track of objects in a std::map and assign colors based on ID
-
-> only paint what IR camera sees, no contour finding or lerping
 
 The through-line in all of them is the brush. Painting exactly what the IR camera sees gives you a hard-edged smear that reads like a scanner artifact, not a brushstroke. Drawing a circle per bright pixel gives you a splatter the second anything moves fast. So most of the work went into what happens *between* two frames, trying to turn two positions into one continuous stroke:
 
@@ -108,7 +103,7 @@ ofPolyline ofApp::lerpPolyline(ofPolyline poly1, ofPolyline poly2) {
 }
 ```
 
-That interpolation is doing a lot of load-bearing work, and a naginata swing is exactly the case it can't cover.
+That interpolation is doing a lot of work, and a naginata swing is exactly the case it can't cover.
 
 ## Why it fell apart
 
@@ -116,24 +111,12 @@ Well, this project fell apart this time around due to the limitations of the Kin
 
 Three problems, and they compound.
 
-**The movement is too fast and too varied.** The Kinect V2 runs at 30fps. A naginata strike covers an enormous arc in a fraction of a second! Between two frames the blade has moved a long way and rotated into an orientation the tracker has never seen. Contour finding kept losing the object and re-acquiring it as a brand new one. That's why so many attempts ended up tracking IDs in a map and assigning colors, just so I could see what was being confused with what.
-
-**I couldn't mount the Kinect overhead in the dojo.** The stroke I want to capture is a shape in three dimensions, and from the floor you're watching it nearly edge-on. But the school's ceiling pipes are one thing, and the dojo is not mine to drill holes into! Least technical constraint, most fatal.
-
-**And naginata is not a solo activity.** Sparring puts two people, two long weapons, and a lot of overlap in frame.
-
-> don't even get me started with sparring. we joked i should chase them with the Kinect in hand
+1. **The movement is too fast and too varied.** The Kinect V2 runs at 30fps. A naginata strike covers an enormous arc in a fraction of a second! Between two frames the blade has moved a long way and rotated into an orientation the tracker has never seen. Contour finding kept losing the object and re-acquiring it as a brand new one. That's why so many attempts ended up tracking IDs in a map and assigning colors, just so I could see what was being confused with what.
+2. **I couldn't mount the Kinect overhead in the dojo.** The stroke I want to capture is a shape in three dimensions, and from the floor you're watching it nearly edge-on. But the school's ceiling pipes are one thing, and the dojo is not mine to drill holes into! Least technical constraint, most fatal.
+3. **Naginata is not a solo activity.** Sparring puts two people, two long weapons, and a lot of overlap in frame.
 
 ## Where it stands
 
 I never got it the way I wanted, but it was a fun exploratory process that I learned a lot in! I'm hoping to get back to it and back into the dojo and see this through.
-
-I did get to put it in front of people, though. This is a classmate who had never seen a naginata before, let loose with one in the lab while the sketch painted along behind them!
-
-![A classmate in a brown shirt and beanie swinging a naginata in front of a black curtain in the lab, the Kinect mounted on a cart beside them and a laptop on the desk showing the black brushstrokes their swings are painting.](/optimized/portfolio/naginata-calligraphy/user-testing.mp4)
-
-One caption from the video is the part I keep thinking about, because it's the thing you can't get from a tech demo:
-
-> They were having the most fun with this option :)
 
 [embed](https://github.com/karomancer/nagiCalligraphy)
