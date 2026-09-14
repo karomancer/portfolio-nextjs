@@ -38,22 +38,21 @@ thumbnail_height: 1
 
 In spring 2022, Jeff Starr came back. I had worked with him on [Broker2Broker](/portfolio/broker2broker), and now he and Amit Duvedi, his co-founder at [Growth Accelerators](https://www.growthacc.com/), had a new product idea, then code-named Airlock: a digital assistant that stands between a manager's calendar and the flood of sales outreach aimed at it, screening every pitch and letting through only the ones that could actually help.
 
-This was during a time when the idea of "AI agents" hadn't quite took off yet, yet they could already see the future with them. This was before ChatGPT was released, after all! Even though I had seen demos of GPT3 already, I was skeptical that an AI would be intelligent enough to do all this. In retrospect, they were so ahead of the curve!
+This was during a time when the idea of "AI agents" hadn't quite taken off yet, but they could already see the future with them. This was before ChatGPT was released, after all! Even though I had seen demos of GPT-3 already, I was skeptical that an AI would be intelligent enough to do all this. In retrospect, they were so ahead of the curve!
 
 There was no product yet, but that was the point. Before building anything they wanted a concept video, about two minutes of animation, to put in front of buying managers and investors to see who was even interested. They wrote the script themselves, in character, as a conversation between a manager and his assistant.
 
-There was only one problem: I had never made an animation more than just a few frame gif. I told them so. They hired me anyway, insisting that I was a creative thinker and the perfect person for hte job, so I budgeted extra hours for the fact that the animator was also the student.
+There was only one problem: I had never made an animation more than just a few-frame gif. I told them so. They hired me anyway, insisting that I was a creative thinker and the perfect person for the job, so I budgeted extra hours for the fact that the animator was also the student.
 
 ## Storyboarding
 
-The script they created was very high level; they had strong ideas of visual motifs they wanted portrayed, but not a throughline of exactly how we got from motif to motif. For example, they wanted to drive the point home that modern work involves being inundated with notifications and alerts that no one can reasonably keep up with. So they imagined a man sitting in a chair getting bombarded by mail and bells out of his computer to the point at which he falls out of his chair. But what exactly brings him back up from his chair and how we illustrate how he learns about the better way was a little more unclear.
+The script they created was very high level; they had strong ideas of visual motifs they wanted portrayed, but not a throughline of exactly how we got from motif to motif. For example, they wanted to drive the point home that modern work involves being inundated with notifications and alerts that no one can reasonably keep up with. So they imagined a man sitting in a chair getting bombarded by mail and bells out of his computer to the point at which he falls out of his chair. But what exactly brings him back up from his chair and how we illustrate how he learns about the better way were a little more unclear.
 
 So every scene started on paper. I storyboarded the founders' script frame by frame, with margin notes about how to make the suggested motifs work or why I thought they wouldn't work (e.g. "I took the river out b/c I don't think it illustrates the frustration").
 
 ![A hand-drawn storyboard page with sixteen panels and margin notes](/optimized/portfolio/mydiji/storyboard.webp)
 
-
-From the boards I cut animatics, which is a generous word for what I privately called  stick-figure land. The 44% of sales reps who planned to quit their jobs appeared as an army of identical red stick people. But stick-figure land is where the timing got right, and the compositions built there survived all the way to the final film.
+From the boards I cut animatics, which is a generous word for what I privately called stick-figure land. The 44% of sales reps who planned to quit their jobs appeared as an army of identical red stick people. But stick-figure land is where the timing came right, and the compositions built there survived all the way to the final film.
 
 ![The full animatic: the whole script timed out in stick figures, including the army of identical red sales reps](/optimized/portfolio/mydiji/animatic.mp4)
 
@@ -83,7 +82,7 @@ The assistant took another round. Purple skin alone still read as human, so she 
 
 We had standing meetings and kept canceling them, because async drafts moved faster than any call. My emails went out at 1 AM and 3 AM; the replies came back over breakfast. It worked.
 
-Jeff and Amit played the video several times in small focus groups of friends and colleagues. That focus group changed the film twice. First, they couldn't keep Jenn and the assistant, then named Laurie, straight ("Don't name her, Just call her 'mydiji.' She's his diji. Why name her?"). So Laurie lost her name, and the "Laurie Approved" stamps in the film became "Diji Approved." 
+Jeff and Amit played the video several times in small focus groups of friends and colleagues. Those focus groups changed the film twice. First, they couldn't keep Jenn and the assistant, then named Laurie, straight ("Don't name her. Just call her 'mydiji.' She's his diji. Why name her?"). So Laurie lost her name, and the "Laurie Approved" stamps in the film became "Diji Approved."
 
 ![A film still with a purple MYDIJI RECOMMENDED APPROVED stamp over the assistant](/optimized/portfolio/mydiji/stamp.webp)
 
@@ -107,12 +106,12 @@ The client knew that they wanted a voiceover and had a specific type of voice in
 
 I put out a call for voice actors on Twitter, presented the three best demo reels to the founders, and the unanimous favorite was Annamarie Yang, whose explainer-video demo was exactly the register the script needed: warm, capable, lightly amused.
 
-The rest of the sound is foley from the real thing. The spam avalanche that buries Dan is built from actual LinkedIn, Outlook, and iPhone notification sounds layered on top of each other, so the animated manager's worst day sounds uncomfortably like every real life manager's Tuesday.
+The rest of the sound is foley from the real thing. The spam avalanche that buries Dan is built from actual LinkedIn, Outlook, and iPhone notification sounds layered on top of each other, so the animated manager's worst day sounds uncomfortably like every real-life manager's Tuesday.
 
 ## Ten weeks, start to finish
 
 I delivered the final cut on August 5, 2022: two and a half minutes at 1080p, with storyboards, animatics, character rigs, and source files handed over in an organized drive. Two weeks later Jeff reported the video was already doing exactly what it was made for, getting the product idea in front of people and bringing feedback home.
 
-It was my first client work in Adobe Animate, sold honestly as such, and the client loved it anyway. A month after delivery I moved to New York for grad school, where the first class on my schedule was called Hypercinema, a class about storytelling through time-based media, whether animation, film, or interactive experiences made via web or game engines. 
+It was my first client work in Adobe Animate, sold honestly as such, and the client loved it anyway. A month after delivery I moved to New York for grad school, where the first class on my schedule was called Hypercinema, a class about storytelling through time-based media, whether animation, film, or interactive experiences made via web or game engines.
 
 That timing felt like a wink too.
