@@ -176,9 +176,11 @@ NGL the motor and suction cup mounts look pretty goooodddd!
 
 Also, always nice to hide some wires!
 
-| | | |
-| -- | -- | -- |
-| ![A close-up of the printed motor mount seated in the frame, wires tucked out of sight.](/optimized/portfolio/clown-lipstick-applicator/motor-mount.webp) | ![The assembled mechanism standing on the workbench, white disc motor turning in the black laser-cut frame with the pendulum hanging from it.](/optimized/portfolio/clown-lipstick-applicator/motor-on-bench.mp4) | ![The suction cup mount stuck to a glass partition covered in red lipstick test marks, wires running from the motor.](/optimized/portfolio/clown-lipstick-applicator/suction-mount-glass.webp) |
+| | |
+| -- | -- |
+| ![A close-up of the printed motor mount seated in the frame, wires tucked out of sight.](/optimized/portfolio/clown-lipstick-applicator/motor-mount.webp) | ![The suction cup mount stuck to a glass partition covered in red lipstick test marks, wires running from the motor.](/optimized/portfolio/clown-lipstick-applicator/suction-mount-glass.webp) |
+
+![The assembled mechanism standing on the workbench, white disc motor turning in the black laser-cut frame with the pendulum hanging from it.](/optimized/portfolio/clown-lipstick-applicator/motor-on-bench.mp4)
 
 ### Printing in parts
 
