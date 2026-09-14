@@ -1,0 +1,44 @@
+@import "../../sass/breakpoints";
+
+// The Substack embed has no narrow layout of its own, so each card renders it
+// at a comfortable width and scales the whole iframe down to fit the column.
+$scale: 0.7;
+$iframe-height: 557px;
+
+.edge-cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.edge-cases-card {
+  display: block;
+  flex: 1 1 320px;
+  min-width: 280px;
+  height: $iframe-height * $scale;
+  overflow: hidden;
+  border: 1px solid var(--light);
+  border-radius: var(--borderRadius);
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(35, 31, 32, 0.15);
+  }
+
+  iframe {
+    display: block;
+    width: 100% / $scale;
+    height: $iframe-height;
+    border: 0;
+    // The whole card is the link, so the iframe never takes the click.
+    pointer-events: none;
+    transform: scale($scale);
+    transform-origin: 0 0;
+  }
+
+  @include breakpoint("<=small") {
+    flex-basis: 100%;
+  }
+}

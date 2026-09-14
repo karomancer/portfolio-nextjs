@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 import { MetascrapedInfo } from "@/utils/unfurlLink";
+import { ToolRegistry, splitOnTools } from "@/utils/markdownTools";
 
 import Asset from "./Asset";
 import Embed from "./Embed";
@@ -25,6 +26,7 @@ interface Props {
   className?: string;
   children: string;
   embeds?: HrefToEmbeds;
+  tools?: ToolRegistry;
 }
 
 /**
@@ -38,7 +40,12 @@ const UNCHECKED_CHECKBOX_PATTERN = /\[ \]/;
  *
  * Markdown component
  */
-export default function Markdown({ className, children, embeds }: Props) {
+export default function Markdown({
+  className,
+  children,
+  embeds,
+  tools,
+}: Props) {
   useEffect(() => {
     hljs.highlightAll();
     resizePictures();
@@ -82,20 +89,38 @@ export default function Markdown({ className, children, embeds }: Props) {
     return <a target="_blank" rel="noopener noreferrer" {...props} />;
   };
 
+  const prose = (content: string, key?: number) => (
+    <ReactMarkdown
+      key={key}
+      remarkPlugins={[remarkGfm]}
+      components={{
+        a: ({ node, ...props }) => <Anchor {...props} />,
+        img: ({ node, ...props }) => <Asset {...props} />,
+        li: ({ node, ...props }) => <Li {...props} />,
+        td: ({ node, ...props }) => <Td {...props} values={node.children} />,
+      }}
+      className={`${className} ${styles["markdown"]}`}
+    >
+      {content}
+    </ReactMarkdown>
+  );
+
+  if (!tools) {
+    return <article>{prose(children)}</article>;
+  }
+
+  // Odd indices are tool names captured from the marker, even indices are prose.
   return (
     <article>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          a: ({ node, ...props }) => <Anchor {...props} />,
-          img: ({ node, ...props }) => <Asset {...props} />,
-          li: ({ node, ...props }) => <Li {...props} />,
-          td: ({ node, ...props }) => <Td {...props} values={node.children} />,
-        }}
-        className={`${className} ${styles["markdown"]}`}
-      >
-        {children}
-      </ReactMarkdown>
+      {splitOnTools(children).map((segment, i) =>
+        i % 2 === 1 ? (
+          <div key={i} className={styles["markdown-tool"]}>
+            {tools[segment.toLowerCase()] ?? null}
+          </div>
+        ) : (
+          segment.trim() && prose(segment, i)
+        )
+      )}
     </article>
   );
 }

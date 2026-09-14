@@ -13,6 +13,7 @@ import {
   extractLinkFromMDX,
 } from "@/utils/unfurlLink";
 import Head from "@/components/Head";
+import { toolsForPiece } from "@/utils/portfolioTools";
 
 import styles from "./styles.module.scss";
 import RedbubbleWidget from "@/components/RedBubbleWidget";
@@ -65,11 +66,12 @@ export async function getStaticProps({
       frontmatter,
       content,
       embeds,
+      slug,
     },
   };
 }
 
-type Props = ReadMDX & { embeds: HrefToEmbeds };
+type Props = ReadMDX & { embeds: HrefToEmbeds; slug: string };
 
 type NormalizedCollaborator = {
   name: string;
@@ -79,7 +81,7 @@ type NormalizedCollaborator = {
   client?: boolean;
 };
 
-const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
+const PortfolioPiece = ({ frontmatter, content, embeds, slug }: Props) => {
   const pattern = /(?<=[^\!].*\]\()(.*)(?=\)$)/;
   if (!frontmatter || !content) {
     return null;
@@ -207,6 +209,7 @@ const PortfolioPiece = ({ frontmatter, content, embeds }: Props) => {
           </div>
           <Markdown
             embeds={embeds}
+            tools={toolsForPiece(slug)}
             className={styles["portfolio-piece-content"]}
           >
             {content}

@@ -100,6 +100,4 @@ The full transformation, side by side:
 
 Supergood also sits in the middle of something I've been digging into on my podcast, [Edge Cases](https://edgecasespodcast.substack.com/): the whole unofficial API economy that springs up around portals never meant to be automated. Two pieces that pair well with this project:
 
-[embed](https://edgecasespodcast.substack.com/p/the-unofficial-api-economy)
-
-[embed](https://edgecasespodcast.substack.com/p/ep-01-reverse-engineering-the-rules)
+<!-- tool:edge-cases -->
