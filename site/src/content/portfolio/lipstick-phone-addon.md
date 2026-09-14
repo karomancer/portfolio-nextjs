@@ -12,7 +12,7 @@ preview: /optimized/portfolio/lipstick-phone-addon/preview.webp
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/lipstick-phone-addon/cover.webp
-og_preview: /optimized/portfolio/lipstick-phone-addon/og.webp
+og_preview: /optimized/portfolio/lipstick-phone-addon/og.jpg
 draft: false
 url: ""
 technologies:
