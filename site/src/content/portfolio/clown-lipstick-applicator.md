@@ -8,11 +8,11 @@ collaborators:
     - "[Zeynep Elif Ergin](https://zeynepelifergin.xyz/)"
 class: Designing the Absurd
 date: 2023-09-30T07:32:18.000Z
-preview: /optimized/portfolio/clown-lipstick-applicator/cover.webp
+preview: /optimized/portfolio/clown-lipstick-applicator/preview.webp
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/clown-lipstick-applicator/cover.webp
-og_preview: /optimized/portfolio/clown-lipstick-applicator/cover.webp
+og_preview: /optimized/portfolio/clown-lipstick-applicator/og.webp
 draft: false
 url: ""
 technologies:
