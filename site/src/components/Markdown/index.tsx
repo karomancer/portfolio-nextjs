@@ -99,7 +99,9 @@ export default function Markdown({
         li: ({ node, ...props }) => <Li {...props} />,
         td: ({ node, ...props }) => <Td {...props} values={node.children} />,
       }}
-      className={`${className} ${styles["markdown"]}`}
+      className={
+        tools ? styles["markdown"] : `${className} ${styles["markdown"]}`
+      }
     >
       {content}
     </ReactMarkdown>
@@ -109,9 +111,12 @@ export default function Markdown({
     return <article>{prose(children)}</article>;
   }
 
+  // With tools the layout class moves up to the article, so the prose and the
+  // tools sit inside one container and share its width rather than each prose
+  // block carrying the max-width and the tools escaping it entirely.
   // Odd indices are tool names captured from the marker, even indices are prose.
   return (
-    <article>
+    <article className={className}>
       {splitOnTools(children).map((segment, i) =>
         i % 2 === 1 ? (
           <div key={i} className={styles["markdown-tool"]}>
