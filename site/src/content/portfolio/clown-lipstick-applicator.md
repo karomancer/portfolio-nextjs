@@ -1,7 +1,7 @@
 ---
 piece_type:
     - journal
-title: Lipstick Applicator for Clowns On-The-Go
+title: Lipstick Applicator Phone Add-on
 description: An absurd phone add-on that swings a lipstick across your mouth on a pendulum, powered by the phone it clamps to.
 slug: /portfolio/clown-lipstick-applicator
 collaborators:
