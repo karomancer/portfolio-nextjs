@@ -9,6 +9,7 @@ const BuyMeACoffeeWidget = () => {
       className={styles.bmcButton}
       aria-label="Buy me a coffee"
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
         alt=""
