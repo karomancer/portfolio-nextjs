@@ -36,13 +36,13 @@ type: portfolioPiece
 
 ## The prompt
 
-"Make an absurd phone add-on" the professor said.
+This project was for my grad school class Designing the Absurd, the same class that I later made the [Floordozer](/portfolio/floordozer) and the [Ice Bucket Diffuser](/portfolio/ice-bucket-diffuser) for.
 
-So I made a lipstick applicator for clowns on-the-go in the subway/in an Uber/etc.
+The prompt: to make a chindogu phone add-on. That is, device that is powered by the port on your phone and solves a problem, perhaps poorly or by creating more problems. If you need a refresher on what a chindōgu is, I went deep on it during my [Floordozer](/portfolio/floordozer) project for this same class: an "unusual tool" that solves an every day problem most can relate to but often creates more problems while doing so.
 
-(this is why I was up so late so often the last week)
+I partnered with my friend Elif on this one, our idea: a device that plugs into your phone's USB-C port to power a lipstick applicator.
 
-This was for Designing the Absurd, the same class that later gave me the [Floordozer](/portfolio/floordozer) and the [Ice Bucket Diffuser](/portfolio/ice-bucket-diffuser). Here's the process of making it if you're interested!
+I mean, who _hasn't_ been in a rush somewhere and needed help with their makeup on the way?
 
 ## Finding the form
 
@@ -58,7 +58,7 @@ We prototyped with things around us to get a sense of scale and comfort. Helmet 
 
 The best feedback we got with these early ideas was:
 
-> "You should really ask yourself if the phone is an add-on to your device, or if the device is an add-on to your phone"
+> "You should really ask yourself whether the phone is an add-on to your device, or if the device is an add-on to your phone"
 
 A helmet felt more like the phone is an add-on to it, so we went with the phone case idea!
 
@@ -66,7 +66,7 @@ A helmet felt more like the phone is an add-on to it, so we went with the phone 
 
 We were going to have the lipstick on a conveyor belt go in an oval around the mouth, but we realized that it made more sense for it to be on a pendulum.
 
-Then, you get a smile shape AND it's more reminiscent of a clock, time being an important aspect of being a clown on-the-go!
+Then, you get a smile shape AND it's more reminiscent of a clock, time being an important aspect of needing to apply your makeup while on-the-go!
 
 ## The mechanism
 
@@ -78,9 +78,7 @@ Enter [Movement #100](https://507movements.com/mm_100.html) from 507 Movements!
 
 [507 Movements](https://507movements.com/) is a website that animates every mechanism in *Five Hundred and Seven Mechanical Movements*, a catalog Henry T. Brown published back in 1868. It is an absolutely incredible resource: cams, ratchets, escapements, linkages, all the ways humans have figured out how to turn one kind of motion into another. Number 100 is listed as "quick return crank motion, applicable to shaping machines," which is a very industrial way of describing a lipstick that boops you in the face.
 
-| |
-| -- |
-| ![A screen recording of the 507 Movements website showing Movement 100, a crank and slotted arm animating a quick return motion.](/optimized/portfolio/clown-lipstick-applicator/movement-100.mp4) |
+![A screen recording of the 507 Movements website showing Movement 100, a crank and slotted arm animating a quick return motion.](/optimized/portfolio/clown-lipstick-applicator/movement-100.mp4)
 
 ### Paper prototyping
 
@@ -90,13 +88,7 @@ So it was time to paper prototype this mechanism! Let the late nights begin...
 
 Which, to be fair, had already begun a week earlier:
 
-| |
-| -- |
-| ![A video of hands working a cardboard version of the crank and slotted arm mechanism taped down to a board, the arm swinging back and forth as the disc turns.](/optimized/portfolio/clown-lipstick-applicator/cardboard-mechanism-1am.mp4) |
-
-> It's week 3 of the semester and I'm on campus at 1:45am working on making motorized mechanisms out of cardboard.
->
-> What am I doing with my life?
+![A video of hands working a cardboard version of the crank and slotted arm mechanism taped down to a board, the arm swinging back and forth as the disc turns.](/optimized/portfolio/clown-lipstick-applicator/cardboard-mechanism-1am.mp4)
 
 ### Scale and positioning
 
@@ -106,9 +98,9 @@ How large should the mechanism be? How far is the person's face from the phone? 
 
 So many questions! More prototyping!
 
-| |
-| -- |
-| ![A video in the studio of the maker holding a phone up at different distances and angles from her face to work out where the mechanism needs to sit.](/optimized/portfolio/clown-lipstick-applicator/positioning-tests.mp4) |
+| | |
+| -- | -- |
+| ![A video in the studio of the maker holding a phone up at different distances and angles from her face to work out where the mechanism needs to sit.](/optimized/portfolio/clown-lipstick-applicator/positioning-tests.mp4) | ![A close-up at the workbench of a hand holding the blue printed lipstick holder and a dowel up to a mouth, checking how far the arm has to swing to reach, a makeup palette open on the desk.](/optimized/portfolio/clown-lipstick-applicator/applicator-mouth-test.mp4) |
 
 ### Sketches to cardboard
 
@@ -184,9 +176,9 @@ NGL the motor and suction cup mounts look pretty goooodddd!
 
 Also, always nice to hide some wires!
 
-| | |
-| -- | -- |
-| ![A close-up of the printed motor mount seated in the frame, wires tucked out of sight.](/optimized/portfolio/clown-lipstick-applicator/motor-mount.webp) | ![The suction cup mount stuck to a glass partition covered in red lipstick test marks, wires running from the motor.](/optimized/portfolio/clown-lipstick-applicator/suction-mount-glass.webp) |
+| | | |
+| -- | -- | -- |
+| ![A close-up of the printed motor mount seated in the frame, wires tucked out of sight.](/optimized/portfolio/clown-lipstick-applicator/motor-mount.webp) | ![The assembled mechanism standing on the workbench, white disc motor turning in the black laser-cut frame with the pendulum hanging from it.](/optimized/portfolio/clown-lipstick-applicator/motor-on-bench.mp4) | ![The suction cup mount stuck to a glass partition covered in red lipstick test marks, wires running from the motor.](/optimized/portfolio/clown-lipstick-applicator/suction-mount-glass.webp) |
 
 ### Printing in parts
 
@@ -202,9 +194,9 @@ The sides have a slot for the backing and top, and the front clamps around the s
 
 That's pretty much it!
 
-It was originally going to have a switch to turn on, but the parts got lost in the mail (hence the exposed wires).
-
-There's things I would do differently with the design, but overall I'm happy with it! Definitely a fun and absurd project!
+| | |
+| -- | -- |
+| ![The finished device suction-cupped to a glass office partition, phone clamped into the frame with the camera open, the lipstick swinging out on its arm, red marks already on the glass, and the maker stepping in beside it to pose.](/optimized/portfolio/clown-lipstick-applicator/final-on-glass.mp4) | It was originally going to have a switch to turn on, but the parts got lost in the mail (hence the exposed wires).!!!There's things I would do differently with the design, but overall I'm happy with it! Definitely a fun and absurd project! |
 
 | | | |
 | -- | -- | -- |
