@@ -40,13 +40,13 @@ In spring 2022, Jeff Starr came back. I had worked with him on [Broker2Broker](/
 
 This was during a time when the idea of "AI agents" hadn't quite taken off yet, but they could already see the future with them. This was before ChatGPT was released, after all! Even though I had seen demos of GPT-3 already, I was skeptical that an AI would be intelligent enough to do all this. In retrospect, they were so ahead of the curve!
 
-There was no product yet, but that was the point. Before building anything they wanted a concept video, about two minutes of animation, to put in front of buying managers and investors to see who was even interested. They wrote the script themselves, in character, as a conversation between a manager and his assistant.
+There was no product yet, but that was the point. Before building anything they wanted a concept video, about two minutes of animation, to put in front of buying managers and investors to see who was even interested. They wrote the script themselves, in character, as a conversation between a manager, Dan, and his assistant.
 
 There was only one problem: I had never made an animation more than just a few-frame gif. I told them so. They hired me anyway, insisting that I was a creative thinker and the perfect person for the job, so I budgeted extra hours for the fact that the animator was also the student.
 
 ## Storyboarding
 
-The script they created was very high level; they had strong ideas of visual motifs they wanted portrayed, but not a throughline of exactly how we got from motif to motif. For example, they wanted to drive the point home that modern work involves being inundated with notifications and alerts that no one can reasonably keep up with. So they imagined a man sitting in a chair getting bombarded by mail and bells out of his computer to the point at which he falls out of his chair. But what exactly brings him back up from his chair and how we illustrate how he learns about the better way were a little more unclear.
+The script they created was very high level; they had strong ideas of visual motifs they wanted portrayed, but not a throughline of exactly how we got from motif to motif. For example, they wanted to drive the point home that modern work involves being inundated with notifications and alerts that no one can reasonably keep up with. So they imagined a man sitting in a chair getting bombarded by mail and bells out of his computer to the point at which he falls out of his chair. But what exactly brings him back up from his chair and how we illustrate him learning about the better way were a little more unclear.
 
 So every scene started on paper. I storyboarded the founders' script frame by frame, with margin notes about how to make the suggested motifs work or why I thought they wouldn't work (e.g. "I took the river out b/c I don't think it illustrates the frustration").
 
@@ -78,9 +78,7 @@ The assistant took another round. Purple skin alone still read as human, so she 
 
 ![The blue manager and red sales rep flanking four purple assistant variants](/optimized/portfolio/mydiji/styles-laurie.webp)
 
-## The dinner-table focus group
-
-We had standing meetings and kept canceling them, because async drafts moved faster than any call. My emails went out at 1 AM and 3 AM; the replies came back over breakfast. It worked.
+## Focus group feedback
 
 Jeff and Amit played the video several times in small focus groups of friends and colleagues. Those focus groups changed the film twice. First, they couldn't keep Jenn and the assistant, then named Laurie, straight ("Don't name her. Just call her 'mydiji.' She's his diji. Why name her?"). So Laurie lost her name, and the "Laurie Approved" stamps in the film became "Diji Approved."
 
