@@ -1,0 +1,96 @@
+@import "../../sass/breakpoints";
+
+.terminal-pair {
+  margin: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+
+  // Two-up only once there is room; beside prose it stacks.
+  @include breakpoint(">=medium") {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background: #1f2937;
+  padding: 1rem;
+}
+
+.terminal-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 11px;
+  line-height: 1.625;
+}
+
+.line {
+  opacity: 0;
+}
+
+// Each line sets only its own delay inline; the animation itself lives here so
+// the scoped keyframe name resolves.
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line-playing {
+  animation: fade-in 0.3s ease-in forwards;
+}
+
+.line-settled {
+  opacity: 1;
+}
+
+.gap-after {
+  margin-bottom: 0.5rem;
+}
+
+.tone-cmd {
+  color: #fff;
+}
+.tone-muted {
+  color: #6b7280;
+}
+.tone-line {
+  color: #9ca3af;
+}
+.tone-warn {
+  color: #ca8a04;
+}
+.tone-error {
+  color: #db2777;
+}
+.tone-ok {
+  color: #22c55e;
+}
+
+.title-error {
+  color: #db2777;
+}
+.title-success {
+  color: #22c55e;
+}

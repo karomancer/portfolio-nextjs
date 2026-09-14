@@ -62,6 +62,10 @@ The biggest of those was the product itself, which is essentially invisible. Eve
 
 To keep it from turning into a pile of disconnected mockups, I tied every graphic to one invented but consistent scenario: a property management company automating a vendor portal that has no API. Same company, same portal, even the same work order fields the whole way down, so a dense flow reads like one story instead of a feature dump. I wrote the scenario down as a `STORY.md` in the graphics directory, a canonical script for the whole narrative, and pointed every graphic (and the AI I was building them with) back at it, so details stayed in sync as the page evolved and Alex could swap the entire scenario later by editing one file.
 
+The headline had to carry the two audiences on its own. One toggle, one sentence that finishes two different ways:
+
+<!-- tool:hero-toggle -->
+
 On the engineering side, the page lives in Supergood's existing [Next.js](https://nextjs.org/) codebase. Early on I migrated it from JavaScript to TypeScript and typed up the section, card, and use-case content, so the page became structured data the layout maps over instead of a wall of hand-placed markup. On top of Tailwind I built a small kit of reusable components (a Card with composable Eyebrow and Title pieces, a Button, a TerminalCard, a CodeBlock wrapper, a TabContainer, and an animated FAQ accordion), using [class-variance-authority](https://cva.style/) for the variants so styling stayed consistent. Alex mentioned he wasn't married to any of the portal logos and wanted them easy to swap, so I made that section data-driven, which paid off later when sourcing and cleaning up the real ones.
 
 ### Animated in CSS, not Lottie
@@ -78,15 +82,23 @@ Each step of the core flow is its own animated UI:
 
 The hardest idea to sell was that the integration fixes itself. Said plainly it just sounds like a marketing claim, so I built it as a little incident you watch play out instead.
 
-The portal quietly adds a new required "Priority" field to its work order form. The old integration doesn't know about it, so requests start failing with a 422. A Supergood bot posts the diagnosis (likely cause: schema validation, suggested fix: include the new field), a run detail view shows the failed request and its stack trace, and the API docs update themselves with the new field flagged as changed. Watching it break and heal on its own lands harder than a sentence promising it does.
+The portal quietly adds a new required "Priority" field to its work order form. The old integration doesn't know about it, so requests start failing with a 422. From there the platform's three observability surfaces each pick up a part of the same incident: an alert states the error in a form both a person and an agent can act on, the audit log shows the failed call next to the ones that succeeded, and the knowledge base absorbs the new field so the docs are correct by the time anyone reads them.
+
+<!-- tool:observability -->
+
+Splitting it across three cards was the thing that finally made it land. As one animation it was a blur of unrelated UI; as three, each card gets to make one claim, and the incident becomes the thread running through all of them. Watching it break and heal on its own lands harder than a sentence promising it does.
 
 ### Terminal cards that type on scroll
 
 The curl and JSON examples live in a TerminalCard whose lines type themselves out one at a time. Each line takes its own delay, and at first the whole thing animated on page load, so by the time you scrolled down to it the payoff was already over. I gated the animation on scroll position so it doesn't start until the card hits the center of the viewport. I also wrote custom syntax highlighting so the curl commands and JSON keys use the brand palette instead of an off-the-shelf theme.
 
+<!-- tool:terminal-pair -->
+
 ### Manila-folder tabs
 
 The use cases are grouped into a tabbed section, and instead of clean modern tabs I styled them to look like an archaic manila folder, colored tabs sticking out the top of a paper file. It fits the blocky brand, but it's also a quiet little jab: these are exactly the kinds of crusty, login-and-a-web-form enterprise systems that never bothered to ship an API, so representing them with the most analog office object I could think of felt right. The section had also started out busy and over-nested, cards inside cards inside cards; pulling it out of its outer card and leaning into the folder metaphor gave it structure without the clutter.
+
+<!-- tool:use-case-tabs -->
 
 ## The Outcome
 

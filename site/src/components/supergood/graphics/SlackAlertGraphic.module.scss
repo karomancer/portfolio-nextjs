@@ -1,0 +1,341 @@
+/* Slack alert — 6s play-once animation
+   0-0.5s  Empty channel
+   0.5-1s  Message fades in
+   1-1.5s  Badge pops in
+   1.5-3s  Pause (read the message)
+   3s+     Generate Fix glows
+
+   Gated on the deck's reveal state: hidden holds the first frame until the
+   reader scrolls to it, settled (reduced motion) skips to the end state.
+*/
+
+[data-reveal="hidden"] {
+  .message,
+  .badge,
+  .glow-pulse {
+    animation-play-state: paused;
+  }
+}
+
+[data-reveal="settled"] {
+  .message,
+  .badge,
+  .glow-pulse {
+    animation: none;
+  }
+}
+
+.message {
+  animation: message 6s ease forwards;
+}
+@keyframes message {
+  0%,
+  8% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  18%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.badge {
+  animation: badge 6s ease forwards;
+}
+@keyframes badge {
+  0%,
+  18% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  30%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 8s ease forwards;
+}
+@keyframes glow-pulse {
+  0%,
+  40% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+  48% {
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.7);
+  }
+  56% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+  64% {
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.7);
+  }
+  72% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.7);
+  }
+  88%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+/* --- layout ------------------------------------------------------------ */
+
+.root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.window {
+  overflow: hidden;
+  height: 100%;
+}
+
+.split {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 110px;
+  background: #3f0e40;
+}
+
+.sidebar-lights {
+  margin-bottom: 0.5rem;
+}
+
+.workspace-badge {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.channel-stub {
+  height: 6px;
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.15);
+
+  &.w10 {
+    width: 2.5rem;
+  }
+  &.w8 {
+    width: 2rem;
+  }
+  &.w9 {
+    width: 2.25rem;
+  }
+}
+
+.channel-active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 0.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 8.5px;
+
+  span {
+    white-space: nowrap;
+    margin-right: 0.25rem;
+  }
+}
+
+.badge {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    margin-left: 2px;
+    width: 0.5rem;
+  }
+}
+
+.chat {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #1a1d21;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  border-bottom: 1px solid #383a3d;
+  font-weight: 700;
+  color: #fff;
+}
+
+.chat-body {
+  flex: 1;
+  overflow: hidden;
+  padding: 0.375rem 0.5rem 0.875rem;
+  color: #d1d2d3;
+}
+
+.message {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0.25rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.message-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  line-height: 2;
+}
+
+.app-tag {
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  background: #383a3d;
+  color: #9b9c9e;
+}
+
+.headline {
+  line-height: 1;
+}
+
+.quote {
+  border-left: 3px solid #e01e5a;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 12px;
+  color: #d1d2d3;
+}
+
+.error-block {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  background: #2c2d30;
+  border: 1px solid #1f2937;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.6;
+  margin: 0.25rem 0 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #9b9c9e;
+}
+
+.code-inline {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  padding: 0 2px;
+  border-radius: 0.25rem;
+  background: #2c2d30;
+  color: #e8ab00;
+}
+
+.facts {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.fact-label {
+  font-weight: 700;
+  color: #d1d2d3;
+}
+
+.fact-value {
+  color: #9b9c9e;
+  line-height: 16px;
+}
+
+.recommended {
+  margin-top: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.action {
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 0.25rem;
+  border: 1px solid #565856;
+  background: transparent;
+  color: #d1d2d3;
+  font-family: inherit;
+}
+
+.action-primary {
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 0.25rem;
+  border: 0;
+  background: #007a5a;
+  color: #fff;
+  font-family: inherit;
+}
+
+.bold {
+  font-weight: 700;
+  color: #d1d2d3;
+}
+
+.semibold {
+  font-weight: 600;
+}

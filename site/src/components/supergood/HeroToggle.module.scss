@@ -1,0 +1,113 @@
+@import "../../sass/breakpoints";
+
+$brand: #ff3962;
+
+.hero-toggle {
+  margin: 2rem 0;
+  border-width: 2px;
+  border-style: solid;
+  background: #fff;
+  padding: 1.25rem;
+
+  @include breakpoint(">=medium") {
+    padding: 2rem;
+  }
+}
+
+.toggle-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-group {
+  display: flex;
+}
+
+.toggle-button {
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #fff;
+  color: #4b5563;
+  box-shadow: 2px 2px 0 0 #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  @include breakpoint(">=medium") {
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  &.selected {
+    transform: translate(2px, 2px);
+    background: #d8b4fe;
+    color: inherit;
+    box-shadow: none;
+    cursor: default;
+  }
+}
+
+.headline-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  @include breakpoint(">=medium") {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+
+  @include breakpoint(">=medium") {
+    font-size: 1.875rem;
+  }
+}
+
+// The highlight sweeps in from the left, so the tail of the sentence reads as
+// being written rather than already written.
+@keyframes sweep {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.sweep {
+  background-image: linear-gradient($brand, $brand);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  padding: 0 0.15em;
+  color: #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.sweep-playing {
+  animation: sweep 0.6s ease-out forwards;
+}
+
+.sweep-settled {
+  background-size: 100% 100%;
+}
+
+.body {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}

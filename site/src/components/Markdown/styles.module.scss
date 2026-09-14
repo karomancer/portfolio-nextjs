@@ -381,3 +381,9 @@ p > .p-with-images {
     flex-direction: column;
   }
 }
+
+// Wrapper around an inline `<!-- tool:name -->` component. Tools bring their
+// own spacing, so this only needs to keep them out of the prose flow.
+.markdown-tool {
+  max-width: 100%;
+}
