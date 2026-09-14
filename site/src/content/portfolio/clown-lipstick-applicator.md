@@ -4,7 +4,8 @@ piece_type:
 title: Lipstick Applicator for Clowns On-The-Go
 description: An absurd phone add-on that swings a lipstick across your mouth on a pendulum, powered by the phone it clamps to.
 slug: /portfolio/clown-lipstick-applicator
-collaborators: []
+collaborators:
+    - "[Zeynep Elif Ergin](https://zeynepelifergin.xyz/)"
 class: Designing the Absurd
 date: 2023-09-30T07:32:18.000Z
 preview: /optimized/portfolio/clown-lipstick-applicator/cover.webp
