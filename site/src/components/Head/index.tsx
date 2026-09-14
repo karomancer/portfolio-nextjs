@@ -1,5 +1,7 @@
 import NextJSHead from "next/head";
 
+const SITE_URL = "https://www.karinachowtime.com";
+
 interface Props {
   title: string;
   description: string;
@@ -17,11 +19,11 @@ const Head = ({
   ogUrl,
   ogImage,
 }: Props) => {
-  const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : "https://karinachowtime.com";
+  // Crawlers need absolute URLs, and they need to be the canonical host.
+  // NEXT_PUBLIC_VERCEL_URL is the per-deployment hostname, which changes on
+  // every build and is not where anyone's link actually points.
   const absolute = (path: string) =>
-    path.startsWith("http") ? path : `${siteUrl}${path}`;
+    path.startsWith("http") ? path : `${SITE_URL}${path}`;
   const imageUrl = absolute(ogImage);
   const pageUrl = absolute(ogUrl);
   const editedTitle = `Karina Chow | ${title}`;
@@ -52,6 +54,7 @@ const Head = ({
       {/* Twitter properties */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={editedTitle} />
+      <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
       <meta name="twitter:creator" content="@karomancer" />
       {children}
