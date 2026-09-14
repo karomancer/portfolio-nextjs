@@ -36,7 +36,7 @@ thumbnail_height: 1
 
 ## About MyDiji
 
-In spring 2022, Jeff Starr came back. I had worked with him on [Broker2Broker](/portfolio/broker2broker), and now he and Amit Duvedi, his co-founder at [Growth Accelerators](https://www.growthacc.com/), had a new product idea, then code-named Airlock: a digital assistant that stands between a manager's calendar and the flood of sales outreach aimed at it, screening every pitch and letting through only the ones that could actually help.
+In spring 2022, [Jeff Starr](https://www.linkedin.com/in/jeffhstarr) came back. I had worked with him on [Broker2Broker](/portfolio/broker2broker), and now he and [Amit Duvedi](https://www.linkedin.com/in/amit-duvedi-31252b1/), his co-founder at [Growth Accelerators](https://www.growthacc.com/), had a new product idea, then code-named Airlock: a digital assistant that stands between a manager's calendar and the flood of sales outreach aimed at it, screening every pitch and letting through only the ones that could actually help.
 
 This was during a time when the idea of "AI agents" hadn't quite taken off yet, but they could already see the future with them. This was before ChatGPT was released, after all! Even though I had seen demos of GPT-3 already, I was skeptical that an AI would be intelligent enough to do all this. In retrospect, they were so ahead of the curve!
 
@@ -102,7 +102,7 @@ One of those dots winks at you as the film ends. The wink has its own sound effe
 
 The client knew that they wanted a voiceover and had a specific type of voice in mind. They delegated finding the voice actor to me.
 
-I put out a call for voice actors on Twitter, presented the three best demo reels to the founders, and the unanimous favorite was Annamarie Yang, whose explainer-video demo was exactly the register the script needed: warm, capable, lightly amused.
+I put out a call for voice actors on Twitter, presented the three best demo reels to the founders, and the unanimous favorite was [Annamarie Yang](https://www.annamarieyang.com/), whose explainer-video demo was exactly the register the script needed: warm, capable, lightly amused.
 
 The rest of the sound is foley from the real thing. The spam avalanche that buries Dan is built from actual LinkedIn, Outlook, and iPhone notification sounds layered on top of each other, so the animated manager's worst day sounds uncomfortably like every real-life manager's Tuesday.
 
