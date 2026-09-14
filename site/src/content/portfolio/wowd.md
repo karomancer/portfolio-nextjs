@@ -10,7 +10,6 @@ preview: /optimized/portfolio/wowd/preview.mp4
 cover: /optimized/portfolio/wowd/cover.webp
 og_preview: /optimized/portfolio/wowd/og_image.jpg
 draft: false
-url: https://www.wowd.co/
 technologies:
   - Dart
   - Flutter
@@ -37,7 +36,7 @@ thumbnail_width: 1
 
 ## About Wowd
 
-[Wowd Co](https://www.wowd.co/)'s goal is to help any creator build a thriving career through fan collaboration. The app and platform they've built provides creation and editing tools to allow creators to provide new value for their fans, whether through mintable autographs, small collaborative art pieces, sketches, collages, and more.
+Wowd Co's goal is to help any creator build a thriving career through fan collaboration. The app and platform they've built provides creation and editing tools to allow creators to provide new value for their fans, whether through mintable autographs, small collaborative art pieces, sketches, collages, and more.
 
 The core of their platform allows for a game of telephone, where a creator can start a piece of work and fans can jump in and add their touches, potentially continuing it on to more fans or back to the creator like a game of pong. The creator stands to earn money each step of the way.
 
