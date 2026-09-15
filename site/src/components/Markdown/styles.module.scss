@@ -387,3 +387,38 @@ p > .p-with-images {
 .markdown-tool {
   max-width: 100%;
 }
+
+// A phone bezel for portrait screen recordings, so app demos read as phones
+// rather than as very tall videos. Applied with `#phone` on the media src.
+.phone-frame {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background: var(--dark);
+  border-radius: 2.25rem;
+
+  img,
+  video {
+    display: block;
+    margin: 0 !important;
+    width: auto !important;
+    height: 26rem !important;
+    // Hold a phone-shaped box before video metadata arrives, so the frame
+    // does not render wide and then snap narrow.
+    aspect-ratio: 450 / 924;
+    max-height: 26rem !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 1.8rem;
+    background: #000;
+  }
+
+  @include breakpoint("<=small") {
+    img,
+    video {
+      height: 21rem !important;
+      max-height: 21rem !important;
+    }
+  }
+}
