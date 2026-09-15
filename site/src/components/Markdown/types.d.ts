@@ -1,6 +1,7 @@
 export type Image = {
   src?: string;
   alt?: string;
+  title?: string;
 };
 
 export type ListItem = {

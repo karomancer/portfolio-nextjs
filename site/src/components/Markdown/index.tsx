@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 import { MetascrapedInfo } from "@/utils/unfurlLink";
+import { ToolRegistry, splitOnTools } from "@/utils/markdownTools";
 
 import Asset from "./Asset";
 import Embed from "./Embed";
@@ -25,6 +26,7 @@ interface Props {
   className?: string;
   children: string;
   embeds?: HrefToEmbeds;
+  tools?: ToolRegistry;
 }
 
 /**
@@ -38,7 +40,12 @@ const UNCHECKED_CHECKBOX_PATTERN = /\[ \]/;
  *
  * Markdown component
  */
-export default function Markdown({ className, children, embeds }: Props) {
+export default function Markdown({
+  className,
+  children,
+  embeds,
+  tools,
+}: Props) {
   useEffect(() => {
     hljs.highlightAll();
     resizePictures();
@@ -82,20 +89,43 @@ export default function Markdown({ className, children, embeds }: Props) {
     return <a target="_blank" rel="noopener noreferrer" {...props} />;
   };
 
+  const prose = (content: string, key?: number) => (
+    <ReactMarkdown
+      key={key}
+      remarkPlugins={[remarkGfm]}
+      components={{
+        a: ({ node, ...props }) => <Anchor {...props} />,
+        img: ({ node, ...props }) => <Asset {...props} />,
+        li: ({ node, ...props }) => <Li {...props} />,
+        td: ({ node, ...props }) => <Td {...props} values={node.children} />,
+      }}
+      className={
+        tools ? styles["markdown"] : `${className} ${styles["markdown"]}`
+      }
+    >
+      {content}
+    </ReactMarkdown>
+  );
+
+  if (!tools) {
+    return <article>{prose(children)}</article>;
+  }
+
+  // With tools the layout class moves up to the article, so the prose and the
+  // tools sit inside one container and share its width rather than each prose
+  // block carrying the max-width and the tools escaping it entirely.
+  // Odd indices are tool names captured from the marker, even indices are prose.
   return (
-    <article>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          a: ({ node, ...props }) => <Anchor {...props} />,
-          img: ({ node, ...props }) => <Asset {...props} />,
-          li: ({ node, ...props }) => <Li {...props} />,
-          td: ({ node, ...props }) => <Td {...props} values={node.children} />,
-        }}
-        className={`${className} ${styles["markdown"]}`}
-      >
-        {children}
-      </ReactMarkdown>
+    <article className={className}>
+      {splitOnTools(children).map((segment, i) =>
+        i % 2 === 1 ? (
+          <div key={i} className={styles["markdown-tool"]}>
+            {tools[segment.toLowerCase()] ?? null}
+          </div>
+        ) : (
+          segment.trim() && prose(segment, i)
+        )
+      )}
     </article>
   );
 }
@@ -166,41 +196,48 @@ const Li = ({ children, ...props }: ListItem) => {
 };
 
 const resizePictures = () => {
-  const paragraphs = document.querySelectorAll("p");
-  for (const i in paragraphs) {
-    const children = paragraphs[i].children;
-    const childrenToRemove = [];
+  const isCaption = (el: Element | null) =>
+    !!el?.classList?.contains("p-figcaption");
+  const isMedia = (el: Element | null) =>
+    !!el && ["VIDEO", "IMG"].includes(el.tagName);
 
-    for (const j in children) {
-      if (!["VIDEO", "IMG"].includes(children[j].tagName)) {
+  const paragraphs = document.querySelectorAll("p");
+  for (const paragraph of Array.from(paragraphs)) {
+    const mediaToMove: Element[] = [];
+
+    let mediaSeen = 0;
+    for (const child of Array.from(paragraph.children)) {
+      if (isCaption(child)) {
+        continue;
+      }
+      if (!isMedia(child)) {
         break;
       }
-
-      if (j !== "0") {
-        childrenToRemove.push(children[j]);
+      if (mediaSeen > 0) {
+        mediaToMove.push(child);
       }
+      mediaSeen++;
     }
 
-    if (childrenToRemove.length > 0) {
-      const parentNode = document.createElement("p");
-      const gutter = childrenToRemove.length * 0.2;
-      parentNode.className = styles["p-with-images"];
+    if (mediaToMove.length > 0) {
+      const row = document.createElement("p");
+      const gutter = mediaToMove.length * 0.2;
+      row.className = styles["p-with-images"];
 
-      const height =
-        childrenToRemove.length < 2
-          ? 380
-          : 380 - (childrenToRemove.length - 1) * 40;
-      for (const k in childrenToRemove) {
-        const child = childrenToRemove[k];
-        const naturalWidth = child.naturalWidth;
-        const naturalHeight = child.naturalHeight;
+      for (const media of mediaToMove) {
+        const column = document.createElement("span");
+        column.className = styles["p-figure-col"];
+        column.style.width = `${100 / mediaToMove.length - gutter}%`;
 
-        child.style.width = `${100 / childrenToRemove.length - gutter}%`;
-        parentNode.appendChild(paragraphs[i].removeChild(child));
+        const caption = media.nextElementSibling;
+        column.appendChild(paragraph.removeChild(media));
+        if (isCaption(caption)) {
+          column.appendChild(paragraph.removeChild(caption as Element));
+        }
+        row.appendChild(column);
       }
-      if (parentNode.children.length > 0) {
-        paragraphs[i].appendChild(parentNode);
-      }
+
+      paragraph.appendChild(row);
     }
   }
 };

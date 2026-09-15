@@ -1,0 +1,105 @@
+@import "../../sass/breakpoints";
+
+.cascading-deck {
+  margin: 2rem 0;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+
+  @include breakpoint(">=medium") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.card-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.card-title {
+  margin: 0.125rem 0 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+.card-description {
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+// Desktop: the graphics cascade behind one another so the active one gets the
+// full width instead of a third of it.
+.deck {
+  display: none;
+  position: relative;
+  margin-top: 1.5rem;
+
+  @include breakpoint(">=medium") {
+    display: block;
+  }
+}
+
+.pane {
+  position: absolute;
+  width: 66%;
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+// Mobile: no room to cascade, so just show the active graphic.
+.single {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  background: #fff;
+
+  @include breakpoint(">=medium") {
+    display: none;
+  }
+}
+
+.eyebrow-alert {
+  color: #db2777;
+}
+.eyebrow-audit {
+  color: #a16207;
+}
+.eyebrow-docs {
+  color: #3b82f6;
+}
