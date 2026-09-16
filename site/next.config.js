@@ -38,6 +38,11 @@ const nextConfig = {
         destination: 'https://linktr.ee/chowtime',
         permanent: true,
       },
+      {
+        source: '/portfolio/lipstick-phone-addon',
+        destination: '/portfolio/lipstick-phone',
+        permanent: true,
+      },
     ]
   },
 };
