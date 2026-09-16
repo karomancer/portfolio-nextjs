@@ -1,4 +1,5 @@
 import EdgeCasesEmbeds from "@/components/EdgeCasesEmbeds";
+import LunarClockDemo from "@/components/materia-magica/LunarClockDemo";
 import CascadingDeck from "@/components/supergood/CascadingDeck";
 import HeroToggle from "@/components/supergood/HeroToggle";
 import TerminalPair from "@/components/supergood/TerminalPair";
@@ -15,6 +16,9 @@ import type { ToolRegistry } from "@/utils/markdownTools";
  * any other.
  */
 const PORTFOLIO_TOOLS: Record<string, ToolRegistry> = {
+  "materia-magica": {
+    "lunar-clock": <LunarClockDemo />,
+  },
   supergood: {
     "hero-toggle": <HeroToggle />,
     observability: (
