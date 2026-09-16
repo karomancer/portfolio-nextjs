@@ -1,6 +1,6 @@
 ---
 title: Wowd Onboarding Carousel
-description: An animated app onboarding experience for Wowd written in Dart with describing the how to create collaborations within the platform.
+description: Four months inside a creator collaboration platform. An animated onboarding carousel in Flutter, a link preview service that replaced a paid vendor, and a marketing site.
 slug: /portfolio/wowd
 collaborators:
   - "[Nora Kako](https://www.linkedin.com/in/norakako/)"
@@ -15,9 +15,14 @@ technologies:
   - Dart
   - Flutter
   - Figma
+  - TypeScript
+  - Express
+  - Vue
+  - Gatsby
 tags:
   - animation
   - mobile dev
+  - web dev
 categories:
   - Client Work
   - Wowd
@@ -41,6 +46,8 @@ To support collaboration amongst many people, they introduced the idea of layers
 ## The Project
 
 Wowd's codebase is written in [Flutter](https://flutter.dev/), a framework using the [Dart programming language](https://dart.dev/). By the time I was asked to do this project, I had already been working with Wowd on a few other bug fixes and features in their codebase and was gaining some familiarity with Dart and Flutter.
+
+The carousel was the headline request, but not the whole engagement. I had joined in January 2022 as an extra pair of hands, and by the time I left in May I had worked in four of their repositories: the mobile client, the backend, a link preview service I wrote from scratch, and their marketing site. The team was small, so the work went wherever it was needed.
 
 Their designer, [Nora Kako](https://www.linkedin.com/in/norakako/), already had design language and branding ironed out and had great mocks for this flow. I worked with her to iron them out further, including filling in copy. We also decided we wanted each stage to be highly animated, and she largely left the particular animations of her assets to me.
 
@@ -79,5 +86,28 @@ Using [Flutter's powerful animation tooling](https://docs.flutter.dev/ui/animati
 | -- | -- |
 | ![A screenshot of a login screen showing login options for Twitter, Facebook, or Google](/optimized/portfolio/wowd/wowd5.webp#phone) | No sign up flow would be complete without a sign up and login page. There wasn't much extra that went into this other than debating which platforms to support in multi auth. These might be different now, especially after Twitter's rebranding |
 
+The carousel was the part of the engagement anyone could actually see. Most of the rest was plumbing, and the biggest piece of plumbing was getting links to behave.
 
+## Deep links without a vendor
 
+Wowd had been using [Branch.io](https://branch.io/) for the links that open the app. I replaced it with a little service of our own called `unfurly`, an Express and Vue app doing two jobs at once. First, it renders a preview page for anything worth sharing, whether a creation, an offering, or a profile, carrying the Open Graph and Twitter tags that turn a pasted link into a proper card. Second, it hands the visitor off to the app through Apple Universal Links and Android App Links, falling back to the App Store for anyone who doesn't have it installed yet.
+
+That meant working in three repositories at the same time. The backend grew public endpoints so the preview pages had something to render. `unfurly` rendered them. And the Flutter client learned to resolve `wowd://` routes, which behave differently enough on iOS and Android that the router had to know which platform it was standing on. Branch.io came out in February 2022.
+
+## The marketing site
+
+Wowd also needed a marketing site, so I built one: [Gatsby](https://www.gatsbyjs.com/) with TypeScript and styled-components, content in MDX. Home, about, a partner enquiry page, terms, privacy, and an account deletion page, which is the least glamorous thing a consumer app has to ship and the one page users actually go looking for. It went live in April 2022.
+
+| |
+| -- |
+| ![The Wowd marketing site: a purple gradient hero with phone mockups, above a three step How to Wowd section](/optimized/portfolio/wowd/marketing-site.webp "The same concept the carousel explains in five screens, compressed into three.") |
+
+## The long tail
+
+The rest was the ordinary work of a product with real people in it. Push notifications learned to deep link, including the awkward case where the app isn't running at all and the notification has to carry enough to open the right screen from a cold start. Sharing a creation gained an image as well as a link, then gained a second button once it was clear that sharing and downloading are different intentions. Profile URLs learned to accept a username instead of a UUID.
+
+## Where it ended up
+
+The onboarding communicates Wowd's odd little concept through motion rather than a wall of text, and a new user can grok the platform in under a minute. All of the animations shipped directly in Flutter on both iOS and Android. `unfurly` ran in production from February, and the marketing site from April.
+
+Wowd has since shut down, and wowd.co no longer resolves. The marketing site survives in the [Internet Archive](https://web.archive.org/web/20220513222657/http://www.wowd.co/).
