@@ -76,6 +76,14 @@ Turns out with a system like this there's actually a lot of arithmetic to go thr
 ![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. Finding the form then narrowing in on it.")
 
 
+Then the two candidates went into Figma to see which one held up at higher fidelity: an orrery, where the moons ride their orbits and the phases sit along the path, and a clock.
+
+| The orrery | The orrery, with a slider | The clock |
+| -- | -- | -- |
+| ![Figma frame of two moons on elliptical orbits around a central sphere, their phases laid along the path, with callouts for the current phase and the next gate opening and two empty boxes for the open gates](/optimized/portfolio/materia-magica/frame-orrery.webp) | ![The same orrery frame with a handwritten note reading slider time see where and a slider sketched beneath it](/optimized/portfolio/materia-magica/frame-orrery-slider.webp) | ![Figma frame of a cream clock dial with roman numerals, two moons and two map windows on a blue face, gate names on rollers and a spell regeneration counter at 125 percent](/optimized/portfolio/materia-magica/frame-clock.webp) |
+
+The scribble under the second orrery, slider time see where, is the origin of the dial you drag on the finished thing.
+
 As an intellectual exercise, I tried iterating on the layout with ChatGPT.
 
 I fed it one of my more final sketches and a description a clockmaker could have built from: numerals I to XII around the border, two moon apertures with waxing, full and waning inscribed around each, two little map globes with a star on a landmark, and a curved "Spell regeneration at" band over an odometer reading 125%. (I still thought the phases were six and four hours at that point.) It really did not understand the concept! Every render came back with the numerals out of order, the hands crooked, and the apertures somewhere new.
