@@ -54,7 +54,11 @@ So the centerpiece became an instrument: a brass astrolabe that tells Alyrian ti
 
 ### Sketches
 
-Dan sketched first, twice. One was the game's cosmology in three dimensions: the two moons orbiting an ethereal plane suspended over a physical plane, a nebulous base underneath, a possible infinite spire behind. The other was a dashboard, with a panel for primary information, a panel for effect intensity, two squares marked "3D moons spinning?", a lunar orbit diagram and a forecast list. Both were generous, and both were several things at once.
+My sketchbook from the first week, before anything was on a screen. The left page is me working out the instrument: how many phases (eight, one every 5.5 hours for Trigael and 3.5 for Marabah), whether the moons should sit in apertures or ride the dial, and a few too many ways to lay out a clock face. The right page is where it turned into a thing, with the note that settled it: "looks like a device."
+
+![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. The phase math on the left page is what the whole instrument hangs on.")
+
+Dan had sketched as well, twice. One was the game's cosmology in three dimensions: the two moons orbiting an ethereal plane suspended over a physical plane, a nebulous base underneath, a possible infinite spire behind. The other was a dashboard, with a panel for primary information, a panel for effect intensity, two squares marked "3D moons spinning?", a lunar orbit diagram and a forecast list. Both were generous, and both were several things at once.
 
 | The cosmology | The dashboard |
 | -- | -- |
