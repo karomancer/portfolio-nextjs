@@ -67,15 +67,14 @@ Personally, I loved the idea of making an artifact. If part of the purpose of th
 
 The reference I kept coming back to was Prague's [Orloj](https://www.youtube.com/watch?v=JUex-66QhLA), which has been telling a medieval city the hour (in 4 types of calendars), the zodiac, and the phase of the moon on a single dial since 1410. Alongside it sat a seventeenth-century French manuscript of the twelve lunar phases, gold and blue in a ring, which is where the palette came from. I also was inspired by [moon phase watches](https://www.youtube.com/shorts/W8rTbDKCN00), the complication where a disc with two painted moons turns behind a little window in the dial, so the moon you see is always in the right phase. You can easily use this mechanism with two overlapping moons.
 
+![Four references in a row: a brass orrery with planets on arms, a set of moon phase dial charts on dark blue, the Prague Orloj astronomical clock, and the moon phase arch of a Howard Miller grandfather clock with two map globes beneath the moon](/optimized/portfolio/materia-magica/inspiration.webp "The references, left to right: an orrery, moon phase dial charts, Prague's Orloj, and a Howard Miller moon phase dial with its two little globes.")
+
 So with these inspirations in mind, I went to sketching. First I had to work out what we had and how everything relates.
 
 Turns out with a system like this there's actually a lot of arithmetic to go through: how many phases there are and where each moon sits in relation to each other (eight phases, one every 5.5 hours for Trigael and 3.5 for Marabah), whether the moons should sit in apertures or ride the dial, whether it should be a clock at all or rather a device like an [orrery](https://en.wikipedia.org/wiki/Orrery).
 
 ![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. Finding the form then narrowing in on it.")
 
-Then it went into Figma. References along the top, and underneath them the two candidates the sketchbook had narrowed it to: an orrery, where the moons ride their orbits and the phases sit along the path, and a clock.
-
-![A Figma board: a top row of references (a brass orrery, moon phase dial charts, the Prague Orloj, a Howard Miller moon phase clock), the five ChatGPT renders, and underneath, two candidate layouts labeled Orrery and Clock. The orrery frames show both moons on elliptical orbits with their phases laid along the path and a handwritten note reading slider time see where. The clock frame shows a cream dial with roman numerals, two moons and two map windows on a blue face, and a spell regeneration counter at 125 percent](/optimized/portfolio/materia-magica/moodboard.webp "The board in Figma. The scribble under the orrery, slider time see where, is the origin of the dial you drag on the finished thing.")
 
 As an intellectual exercise, I tried iterating on the layout with ChatGPT.
 
