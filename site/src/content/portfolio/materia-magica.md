@@ -1,6 +1,6 @@
 ---
 title: Materia Magica Lunar Clock
-description: A celestial clock for the homepage of a text MMO that has been running since 1996. Both moons, both worldgates and Alyrian time on one hand-drawn brass astrolabe, rendered live in PixiJS.
+description: A celestial clock for a text-based RPG that pulls live game data and reflects it through a moon phase aperture, barrel drum counter, and hands. All rendered live in PixiJS.
 slug: /portfolio/materia-magica
 collaborators:
   - "[Daniel Hampton](https://ruggedsoftware.dev/)"
