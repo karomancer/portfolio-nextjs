@@ -5,12 +5,12 @@ slug: /portfolio/materia-magica
 collaborators:
   - "[Daniel Hampton](https://ruggedsoftware.dev/)"
 class: ""
-date: 2026-02-14T00:00:00.000Z
+date: 2026-02-14T12:00:00.000Z
 preview: /optimized/portfolio/materia-magica/preview.mp4
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/materia-magica/cover.webp
-og_preview: /optimized/portfolio/materia-magica/cover.webp
+og_preview: /optimized/portfolio/materia-magica/og.webp
 draft: false
 url: https://www.materiamagica.com/
 technologies:
@@ -38,15 +38,9 @@ piece_type:
 
 Here is the org chart, truthfully. Materia Magica has its own team and its own publisher. Its web development is handled by [Rugged Software](https://ruggedsoftware.dev/), a contracting agency, and Rugged brought in KACHOW! as subcontractors. I have shipped on this game for a year, and in that year I have never once spoken to anyone at Materia Magica! Every brief, review and huddle runs through Dan Hampton at Rugged, whose PR feedback is genuinely valuable and whose enthusiasm for the game is contagious. It is the deepest subcontract I have worked on, and one of my favorite working relationships.
 
-## The ask
+## The moons
 
-The first ask, in August 2025, was a single scoped brief: the game needed "a visually interesting animation that conveys lunar data" about its two moons, since the moons affect gameplay. The brief came with homework attached: in-game lore files on Trigael, Marabah and the worldgates, a link to a fan-built lunar predictor tool, and the game's 2012 Adventurer's Guide. In the game, you check the moons by typing TIME. The homepage needed the same information as an instrument.
-
-The engagement outgrew that brief almost immediately. The scope was rewritten to the general form (ongoing design and development: programming, animations and art assets, documentation, code review), and KACHOW! brought in John Marrero to take the backend, which is its own story. My half was the celestial data layer and the homepage centerpiece.
-
-## The process
-
-The homepage needed a hero, and the game's own physics suggested one. In Materia Magica the moons are mechanics: waxing and full phases speed up spell regeneration, and specific phase pairings open worldgates at specific stone circles, the same tables that tell a player a gate stands near Maldra's Keep when Trigael is full and Marabah is at half. That is not flavor text. It is scheduling information players plan around, and they had already solved it for themselves: a player clan publishes a lunar predictor that renders the next dozen gate openings as a table of rows.
+In Materia Magica the moons are mechanics: waxing and full phases speed up spell regeneration, and specific phase pairings open worldgates at specific stone circles, the same tables that tell a player a gate stands near Maldra's Keep when Trigael is full and Marabah is at half. That is not flavor text. It is scheduling information players plan around, and they had already solved it for themselves: a player clan publishes a lunar predictor that renders the next dozen gate openings as a table of rows.
 
 ![The Cwn Annwn clan's lunar predictor: a table of moon phases, gates and times to opening](/optimized/portfolio/materia-magica/lunar-predictor.webp "The information as players had it: a fan-built table, and a countdown you have to read.")
 
