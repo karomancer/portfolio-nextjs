@@ -38,35 +38,66 @@ piece_type:
 
 Here is the org chart, truthfully. Materia Magica has its own team and its own publisher. Its web development is handled by [Rugged Software](https://ruggedsoftware.dev/), a contracting agency, and Rugged brought in KACHOW! as subcontractors. I have shipped on this game for a year, and in that year I have never once spoken to anyone at Materia Magica! Every brief, review and huddle runs through Dan Hampton at Rugged, whose PR feedback is genuinely valuable and whose enthusiasm for the game is contagious. It is the deepest subcontract I have worked on, and one of my favorite working relationships.
 
-## The moons
+## The ask
 
-In Materia Magica the moons are mechanics: waxing and full phases speed up spell regeneration, and specific phase pairings open worldgates at specific stone circles, the same tables that tell a player a gate stands near Maldra's Keep when Trigael is full and Marabah is at half. That is not flavor text. It is scheduling information players plan around, and they had already solved it for themselves: a player clan publishes a lunar predictor that renders the next dozen gate openings as a table of rows.
+The game needed "a visually interesting animation that conveys lunar data" about its two moons, since the moons affect gameplay. The brief came with homework attached: in-game lore files on the two moons Trigael, Marabah, as well as information about portals, known as worldgates, that can teleport you to other realms, and an adventuring guide about the general world of Alyria.
+
+In the game, you check the moons by typing TIME, but in the efforts of modernizing the game's website, the team expressed a desire for the same information as an interactive instrument on the homepage.
+
+## The process
+
+In Materia Magica the moons are mechanics: waxing and full phases speed up spell regeneration, and specific phase pairings open worldgates at specific stone circles. That is not just flavor text, it is scheduling information players plan around. In fact, a player clan [published their own lunar predictor](https://annwn.info/tools/lunar-predictor) that renders the next dozen gate openings as a table of rows:
 
 ![The Cwn Annwn clan's lunar predictor: a table of moon phases, gates and times to opening](/optimized/portfolio/materia-magica/lunar-predictor.webp "The information as players had it: a fan-built table, and a countdown you have to read.")
 
-So the centerpiece became an instrument: a brass astrolabe that tells Alyrian time, tracks both moons through their phases, opens little shuttered windows onto wherever the worldgates currently stand, and counts spell regeneration underneath. Typing TIME, as a place.
+So the centerpiece became an instrument: a brass astrolabe that tells Alyrian time, tracks both moons through their phases, opens little shuttered windows onto wherever the worldgates currently stand, and counts spell regeneration underneath.
 
 ### Sketches
 
-My sketchbook from the first week, before anything was on a screen. The left page is me working out the instrument: how many phases (eight, one every 5.5 hours for Trigael and 3.5 for Marabah), whether the moons should sit in apertures or ride the dial, and a few too many ways to lay out a clock face. The right page is where it turned into a thing, with the note that settled it: "looks like a device."
-
-![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. The phase math on the left page is what the whole instrument hangs on.")
-
-Before any of that reached Dan, I tried iterating on the layout with ChatGPT. I fed it the sketch and a description a clockmaker could have built from: numerals I to XII around the border, two moon apertures with waxing, full and waning inscribed around each, two little map globes with a star on a landmark, and a curved "Spell regeneration at" band over an odometer reading 125%. (I still thought the phases were six and four hours at that point.) It really did not understand the concept! Every render came back with the numerals out of order, the hands crooked, and the apertures somewhere new. After a few passes it diagnosed the problem itself: the image tool "wants to pretty it up," and fights any precise mechanical layout. It offered to draw me an SVG blueprint instead, and the file link said "file not found." Which is how the blueprint ended up on paper, and then in PixiJS, where nothing gets prettied up unless I say so.
-
-![Five ChatGPT renders of a brass clock face, each with the numerals in a different wrong order, apertures drifting around the dial, and a Spell Regeneration At counter reading 125 percent](/optimized/portfolio/materia-magica/chatgpt-attempts.webp "ChatGPT did not understand the assignment. Count the numerals on any of them.")
-
-Dan had sketched as well, twice. One was the game's cosmology in three dimensions: the two moons orbiting an ethereal plane suspended over a physical plane, a nebulous base underneath, a possible infinite spire behind. The other was a dashboard, with a panel for primary information, a panel for effect intensity, two squares marked "3D moons spinning?", a lunar orbit diagram and a forecast list. Both were generous, and both were several things at once.
+Dan came in with some ideas of his own. One was the game's cosmology in three dimensions:
+a digital version of an [orrery](https://en.wikipedia.org/wiki/Orrery). The other was a gnomeish device I likened to an atompunk-like device with multiple panels for primary information, effect intensity, a lunar orbit diagram, and a forecast list. 
 
 | The cosmology | The dashboard |
 | -- | -- |
 | ![Graph paper sketch of two moons orbiting stacked ethereal and physical planes](/optimized/portfolio/materia-magica/concept-sketch.webp) | ![Pencil wireframe of a multi panel dashboard labeled Lunar Animation Device](/optimized/portfolio/materia-magica/concept-dashboard.webp) |
 
-I answered with one object instead of five. A player checking gate timings wants an instrument to read, not a scene to interpret or a dashboard to scan, and an astronomical clock is a six-hundred-year-old solution to exactly that problem: many moving values, one face. The reference I kept coming back to was Prague's [Orloj](https://www.youtube.com/watch?v=JUex-66QhLA), which has been telling a medieval city the hour, the zodiac and the phase of the moon on a single dial since 1410. Alongside it sat a seventeenth-century French manuscript of the twelve lunar phases, gold and blue in a ring, which is where the palette came from. The apertures themselves come straight from [moon phase watches](https://www.youtube.com/shorts/W8rTbDKCN00), the complication where a disc with two painted moons turns behind a little window in the dial, so the moon you see is always in the right phase. Two moons on one disc was already the standard mechanism. I just needed a window for each.
+The question became: do we want this to be a cool digital representation of what's in the game or for it to feel like a physical artifact a character might have in the world?
+
+Personally, I loved the idea of making an artifact. If part of the purpose of the clock was to develop the visual narrative of the world, why not lean in to the lore building?
+
+The reference I kept coming back to was Prague's [Orloj](https://www.youtube.com/watch?v=JUex-66QhLA), which has been telling a medieval city the hour (in 4 types of calendars), the zodiac, and the phase of the moon on a single dial since 1410. Alongside it sat a seventeenth-century French manuscript of the twelve lunar phases, gold and blue in a ring, which is where the palette came from. I also was inspired by [moon phase watches](https://www.youtube.com/shorts/W8rTbDKCN00), the complication where a disc with two painted moons turns behind a little window in the dial, so the moon you see is always in the right phase. You can easily use this mechanism with two overlapping moons.
+
+So with these inspirations in mind, I went to sketching. First I had to work out what we had and how everything relates.
+
+Turns out with a system like this there's actually a lot of arithmetic to go through: how many phases there are and where each moon sits in relation to each other (eight phases, one every 5.5 hours for Trigael and 3.5 for Marabah), whether the moons should sit in apertures or ride the dial, whether it should be a clock at all or rather a device like an [orrery](https://en.wikipedia.org/wiki/Orrery).
+
+![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. Finding the form then narrowing in on it.")
+
+Then it went into Figma. References along the top, and underneath them the two candidates the sketchbook had narrowed it to: an orrery, where the moons ride their orbits and the phases sit along the path, and a clock.
+
+![A Figma board: a top row of references (a brass orrery, moon phase dial charts, the Prague Orloj, a Howard Miller moon phase clock), the five ChatGPT renders, and underneath, two candidate layouts labeled Orrery and Clock. The orrery frames show both moons on elliptical orbits with their phases laid along the path and a handwritten note reading slider time see where. The clock frame shows a cream dial with roman numerals, two moons and two map windows on a blue face, and a spell regeneration counter at 125 percent](/optimized/portfolio/materia-magica/moodboard.webp "The board in Figma. The scribble under the orrery, slider time see where, is the origin of the dial you drag on the finished thing.")
+
+As an intellectual exercise, I tried iterating on the layout with ChatGPT.
+
+I fed it one of my more final sketches and a description a clockmaker could have built from: numerals I to XII around the border, two moon apertures with waxing, full and waning inscribed around each, two little map globes with a star on a landmark, and a curved "Spell regeneration at" band over an odometer reading 125%. (I still thought the phases were six and four hours at that point.) It really did not understand the concept! Every render came back with the numerals out of order, the hands crooked, and the apertures somewhere new.
+
+After a few passes it diagnosed the problem itself: the image tool "wants to pretty it up," and fights any precise mechanical layout. It offered to draw me an SVG blueprint instead, and the file link said "file not found." Which is how the blueprint ended up on paper, and then in PixiJS, where nothing gets prettied up unless I say so.
+
+![Five ChatGPT renders of a brass clock face, each with the numerals in a different wrong order, apertures drifting around the dial, and a Spell Regeneration At counter reading 125 percent](/optimized/portfolio/materia-magica/chatgpt-attempts.webp "ChatGPT did not understand the assignment. Count the numerals on any of them.")
+
+Easy to say that I gave up rather quickly (and rather annoyed) with ChatGPT.
+
+And good too because the client was exceedingly clear that they didn't want any AI art!
 
 ### Structure first, ornament second
 
-The work then started well below the surface. The game's world data lives in decades-old area files and C tables, so the first month was parsers and collections: worldgate coordinates, moon phase tables, Alyrian time conversion, all tested against fixtures cut from the real files. The face was built structure first, a blockout of nothing but the circle, two apertures, two label plates and the counter box, so the geometry could be checked against live data while it was still ugly. Ornament came second, drawn around the holes the data would fill.
+So far we only talked about design, but I was also hired for my software engineering know-how to not only design and make the art for the clock but also to hook it up myself to the game data.
+
+The game's world data lives in decades-old area files and C tables, and the marketing site is built in php and Laravel, so the first month of my work was dusting off my computer science degree to read C code with more linked lists than I had ever seen in a production database before, writing parsers and collections, generating constant files of worldgate coordinates and moon phase tables, writing utils for Alyrian time conversion...all tested against fixtures cut from the real game files.
+
+And this was all largely done without the assistance of AI coding agents. I hadn't written php for nearly two decades and had certainly never written anything in Laravel. I hadn't adopted AI into my coding workflow yet, and generally I was so fascinated with this project I wanted to write it myself anyway and understand what I'm writing.
+
+The face was built structure first, a blockout of nothing but the circle, two apertures, two label plates and the counter box, so the geometry could be checked against live data while it was still ugly. Ornament came second, drawn around the holes the data would fill.
 
 | Structure | Ornament |
 | -- | -- |
