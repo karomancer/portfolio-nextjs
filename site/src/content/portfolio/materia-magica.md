@@ -105,52 +105,64 @@ The game's world data lives in decades-old area files and C tables, and the mark
 * take said linked lists of map data and write scripts we can run to transform changes to the map into arrays of JSON for frontend consumption
 * write parsers and collections for reading in said JSON map data
 * writing parsers and collections for reading in game data in an arbitrarily defined format in `.dat` files
-* write CLI commands for operations such finding the coordinates of a location from within the greater map that can be used in other generative scripts that translate from game data to useful info for the clock
+* write CLI commands for operations, such as finding the coordinates of a location from within the greater map and generate thumbnails of what that looks like on the map (for the world gate tiles)
 * writing scripts that generate constant files of worldgate coordinates and moon phase tables found in the C game codebase to be used for the Laravel web app
 * writing utils for Alyrian time conversion (time is spat out of the game codebase as a string that needs to be parsed)
 * writing a database seeder that creates believable mock data based on real game data information so the clock can be run locally
 * write a cron job that grabs the current game state on a ticker and writes it to the web app's DB
-* write listeners on the frontend to listen to changes in game state to update the clock elements
-* write PixiJS code that renders all the clock elements and animates them based on these changes in game state
+* write an API endpoint intended to be polled for new game state data
 * write tests against fixtures cut from the real game files
 
 And this was all largely done without the assistance of AI coding agents. I hadn't written php for nearly two decades and had certainly never written anything in Laravel. I hadn't adopted AI into my coding workflow yet, and generally I was so fascinated with this project I wanted to write it myself anyway and understand what I'm writing.
 
 Once I had wired up the backend to my liking, it was time to start figuring out how the clock I had designed would react to all these different parts.
 
-### Hooking it all up
+### Designing the structure
 
-The face was built structure first, a blockout of nothing but the circle, two apertures, two label plates and the counter box, so the geometry could be checked against live data while it was still ugly. Ornament came second, drawn around the holes the data would fill.
+Every part of the clock started as a vector outline: the numeral ring, the aperture, the label plates, the gears, the hands, the moons. Shapes first, so each one could be judged on its own before any of it looked like any real material yet.
+
+![A sped-up screen recording of the clock being assembled as flat vector shapes, layer by layer: the numeral ring, the periwinkle aperture, the label plates, the moon gears, and the hands set off to one side](/optimized/portfolio/materia-magica/process-vectors.mp4 "The clock in vectors, one part at a time. Sped up 2x.")
+
+### Hooking it up to data
+
+Before we can go into high fidelity designs, we need to make sure the design is grokkable and animates as well with the data as I had imagined it to. It's like having low fidelity UI user testing before letting the users have the chance to complain about colors or font.
+
+So, the plain vector shapes were used first as a test. 
+
+This of course means I had to now add to the frontend and
+* write PixiJS code that renders all the clock elements and animates them based on current game state
+* write polling functions to listen to changes in game state from the previously created API 
+* maintain state and update the clock elements accordingly
+* (later) introduce a slider functionality that fetches a prediction table of the next 24 IRL person hours
+
 
 | | |
 | -- | -- |
 | ![The first running version of the clock: a flat line-art dial on a bright blue canvas, plain gray and red discs for the moons turning behind a periwinkle aperture, stick hands ticking, and white boxes where the gate names and the spell regeneration digits roll like drums](/optimized/portfolio/materia-magica/first-version.webm) | This is the first version that ran.!!!PixiJS's default blue background, two flat discs for moons, stick hands, and two debug buttons that randomize the spell regeneration counter and the portal drums so I could test the animations without needing to wait for a change in game state. Game time runs at a minute per second here so the hands visibly move.!!!Ugly on purpose, getting the form down before the chrome. Every moving part could be checked before any of it was drawn properly. |
 
-| Structure | Ornament |
-| -- | -- |
-| ![The clock reduced to flat geometry: circle, two apertures, two label bars, counter box](/optimized/portfolio/materia-magica/clock-blockout.webp) | ![The same layout dressed in parchment, roman numerals and a moon phase band, with the blockout still showing through in blue](/optimized/portfolio/materia-magica/clock-ornament.webp) |
+Those outlines then became clipping masks for material images in Photoshop: a brass texture clipped to the numeral ring, marbled blue and green to the face behind it. All material images were found on stock photo sites, but heavily edited and filtered in Photoshop. 
 
-### From vectors to brass
+Photoshop's blending modes and layer blending options did the rest, with inner shadows, drop shadows and color overlays turning flat shapes into parts that look like they have thickness and catch light. Because the game didn't have much visual language yet for objects (but had some concept art for characters), I went ham on it, leaning heavily into my inspiration pieces.
 
-Every part of the clock started as a vector outline: the numeral ring, the aperture, the label plates, the gears, the hands. Shapes first, so each one could be judged on its own before any of it looked like metal.
-
-![A sped-up screen recording of the clock being assembled as flat vector shapes, layer by layer: the numeral ring, the periwinkle aperture, the label plates, the moon gears, and the hands set off to one side](/optimized/portfolio/materia-magica/process-vectors.mp4 "The clock in vectors, one part at a time. Sped up 2x.")
-
-Those outlines then became clipping masks for material images in Photoshop: a brass texture clipped to the numeral ring, marbled blue and green to the face behind it. Photoshop's blending modes and layer blending options did the rest, with inner shadows, drop shadows and color overlays turning flat shapes into parts that look like they have thickness and catch light.
+Since the moons would overlap each other, we were trying to figure out ways to make both as visible as possible and landed on the idea that they should be semi transparent and the idea of stained glass came to mind.
 
 ![A sped-up screen recording of the same clock in Photoshop as layers switch on: marbled blue backing, the green lower face, brass label plates, then the gold numeral ring, hands and textured moons, with layer effects visible in the panel](/optimized/portfolio/materia-magica/process-raster.mp4 "The same shapes as clipping masks over material images, with layer styles adding the depth. Sped up 3x.")
 
-### The face
+### When function follows form
 
-Then came the face proper, rendered in PixiJS: numerals, hands, gears and shutters drawn as vector and brass-textured art, with tumbler barrels for the spell regeneration counters and hands that politely go translucent when your cursor needs to see behind them.
+There were a couple aspects we weren't quite sure about yet. For example, how to have a mechanical device transition between wildly different map locations. 
 
-| Shutter mechanics | Dial interactions |
-| -- | -- |
-| ![The portal shutters closing and reopening as the clock moves between phases](/optimized/portfolio/materia-magica/clock-shutter.mp4) | ![Dragging the circular dial around the clock to scrub forward through upcoming gate openings](/optimized/portfolio/materia-magica/circular-slider.mp4) |
+The portal windows themselves show map tiles of where each gate leads. I auditioned transitions for the tile swap the way the sketches audition everything (fog, crossfade, mechanical shutter, a wipe we described as "windshield wiper, Brazilian bbq").
 
-The portal windows themselves show map tiles of where each gate leads. I auditioned transitions for the tile swap the way the sketches audition everything (fog, crossfade, mechanical shutter, a wipe we described as "windshield wiper, Brazilian bbq"), and the winner earned the most satisfying filename in the project's history: portaltiletransition_whoa.mov.
+Ulimately we went with a fan out shutter (the last one on the right).
 
-![The portal window changing destinations with a mechanical shutter transition](/optimized/portfolio/materia-magica/portal-transition.mp4 "The portal window changing destinations. The original capture is named portaltiletransition_whoa.mov, which says it better.")
+<-- insert a side-by-side video of many options -->
+
+Similarly, we were wracking our brain on how to give users a way to see future predictions for the moon. We didn't want it to be searchable and we concluded that we wanted it to be part of this magical device we've created. We were convinced that a slider was the best way, but the clock is circular so any horizontal or vertical slider just didn't look good.
+
+Enter in the circular slider.
+
+![Dragging the circular dial around the clock to scrub forward through upcoming gate openings](/optimized/portfolio/materia-magica/circular-slider.mp4)
 
 ## Try it
 
@@ -160,6 +172,10 @@ Here is the instrument itself, the component lifted out of the game's codebase a
 
 ## The outcome
 
-The clock merged on Valentine's Day 2026, to a review from Rugged's Elisa Crescentini that any engineer would frame: "Woooooooaaaahhhh. The big feat is merged." It is now the first thing every visitor to materiamagica.com sees.
+The clock merged on Valentine's Day 2026 and is now the first thing every visitor to [materiamagica.com](https://www.materiamagica.com) sees.
 
-A year in, I still have never met Materia Magica. I just keep shipping through Rugged, and the work keeps coming back. So does the trust: Rugged now includes KACHOW! in its own proposals, in slides Dan built that introduce the extended team by name and school. For a subcontractor, that is the whole scoreboard: the work returns, and your name ends up on the pitch deck.
+A year in, I still have never met Materia Magica. I just keep shipping through Rugged, and the work keeps coming back. So does the trust: Rugged now includes KACHOW! in its own proposals, in slides Dan built that introduce the extended team by name and school.
+
+Modernizing this game is a monumental and extremely fulfilling project that Rugged Software is delighted to work on. It has all work one can imagine from web development to old school game development, animation work to pixel art and sound design, with interesting unique problems like translating ASCII art to pixel art, building telnet relays, and parsing mysterious messages and data files. It's a greenfield project with lots of opportunity for trying out new ideas.
+
+I hope I will get to continue to be a part of it!
