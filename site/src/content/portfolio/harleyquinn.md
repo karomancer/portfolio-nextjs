@@ -7,7 +7,7 @@ class: ""
 date: 2022-10-07T20:05:01.000Z
 preview: /optimized/portfolio/harleyquinn/preview.webp
 cover: /optimized/portfolio/harleyquinn/cover2.webp
-og_preview: /optimized/portfolio/harleyquinn/PXL_20221009_192745396.MP.webp
+og_preview: /optimized/portfolio/harleyquinn/PXL_20221009_192745396.MP.jpg
 draft: false
 url: ""
 technologies:

@@ -11,7 +11,7 @@ class: Playful Communication of Serious Research
 date: 2023-05-04T22:28:14.000Z
 preview: /optimized/portfolio/youtopia/youtopiaThumbnail.webp
 cover: /optimized/portfolio/youtopia/cover.webp
-og_preview: /optimized/portfolio/youtopia/youtopiaThumbnail.webp
+og_preview: /optimized/portfolio/youtopia/youtopiaThumbnail.jpg
 draft: false
 url: https://github.com/karomancer/youtopia
 technologies:

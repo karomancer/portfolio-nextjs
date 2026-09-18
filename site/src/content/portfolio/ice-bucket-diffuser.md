@@ -12,7 +12,7 @@ preview: /optimized/portfolio/ice-bucket-diffuser/assembled-color-check.webp
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/ice-bucket-diffuser/hero.webp
-og_preview: /optimized/portfolio/ice-bucket-diffuser/hero.webp
+og_preview: /optimized/portfolio/ice-bucket-diffuser/hero.jpg
 draft: false
 url: ""
 technologies:

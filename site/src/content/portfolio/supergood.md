@@ -11,7 +11,7 @@ preview: /optimized/portfolio/supergood/preview.mp4
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/supergood/cover.jpg
-og_preview: /optimized/portfolio/supergood/thumb.webp
+og_preview: /optimized/portfolio/supergood/thumb.jpg
 draft: false
 url: https://supergood.ai/
 technologies:

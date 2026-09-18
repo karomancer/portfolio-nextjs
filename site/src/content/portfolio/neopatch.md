@@ -7,7 +7,7 @@ collaborators:
 date: 2022-12-15T03:25:48.000Z
 preview: /optimized/portfolio/neopatch/1-2.webp
 cover: /optimized/portfolio/neopatch/1-9.webp
-og_preview: /optimized/portfolio/neopatch/1-2.webp
+og_preview: /optimized/portfolio/neopatch/1-2.jpg
 draft: false
 tags:
   - fabrication

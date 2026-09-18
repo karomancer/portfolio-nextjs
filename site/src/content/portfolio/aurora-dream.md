@@ -11,7 +11,7 @@ preview: /optimized/portfolio/aurora-dream/final.webp
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/aurora-dream/cover.webp
-og_preview: /optimized/portfolio/aurora-dream/final.webp
+og_preview: /optimized/portfolio/aurora-dream/final.jpg
 draft: false
 url: ""
 technologies:

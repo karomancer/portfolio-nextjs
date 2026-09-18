@@ -11,7 +11,7 @@ class: Human-Computer Interaction Capstone
 date: 2013-05-09T03:07:47.000Z
 preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
 cover: /optimized/portfolio/playtpus-dreamtime/cover2.webp
-og_preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.webp
+og_preview: /optimized/portfolio/playtpus-dreamtime/interactivePrototype.jpg
 draft: false
 url: ""
 technologies:

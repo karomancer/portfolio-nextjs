@@ -7,7 +7,7 @@ class: ""
 date: 2019-10-10T17:09:55.144Z
 preview: /optimized/portfolio/kasumi/preview.webp
 cover: /optimized/portfolio/kasumi/screenshot.webp
-og_preview: /optimized/portfolio/kasumi/presentation1.webp
+og_preview: /optimized/portfolio/kasumi/presentation1.jpg
 draft: false
 url: ""
 technologies:

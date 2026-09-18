@@ -9,7 +9,7 @@ preview: /optimized/portfolio/onramp/preview.mp4
 thumbnail_width: 1
 thumbnail_height: 2
 cover: /optimized/portfolio/onramp/cover.webp
-og_preview: /optimized/portfolio/onramp/og.webp
+og_preview: /optimized/portfolio/onramp/og.jpg
 draft: false
 url: https://onrampcard.com/
 technologies:

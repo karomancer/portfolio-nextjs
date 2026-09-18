@@ -7,7 +7,7 @@ class: ""
 date: 2020-04-20T00:38:31.892Z
 preview: /optimized/portfolio/sewing-triptych/preview.mp4
 cover: /optimized/portfolio/sewing-triptych/cover.webp
-og_preview: /optimized/portfolio/sewing-triptych/og_image.webp
+og_preview: /optimized/portfolio/sewing-triptych/og_image.jpg
 draft: false
 url: https://codepen.io/karomancer/pen/yLNdeXE
 technologies:

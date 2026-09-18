@@ -11,7 +11,7 @@ preview: /optimized/portfolio/naginata-calligraphy/cover.webp
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/naginata-calligraphy/cover.webp
-og_preview: /optimized/portfolio/naginata-calligraphy/og.webp
+og_preview: /optimized/portfolio/naginata-calligraphy/og.jpg
 draft: false
 url: https://github.com/karomancer/nagiCalligraphy
 technologies:
