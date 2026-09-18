@@ -130,6 +130,16 @@ The face was built structure first, a blockout of nothing but the circle, two ap
 | -- | -- |
 | ![The clock reduced to flat geometry: circle, two apertures, two label bars, counter box](/optimized/portfolio/materia-magica/clock-blockout.webp) | ![The same layout dressed in parchment, roman numerals and a moon phase band, with the blockout still showing through in blue](/optimized/portfolio/materia-magica/clock-ornament.webp) |
 
+### From vectors to brass
+
+Every part of the clock started as a vector outline: the numeral ring, the aperture, the label plates, the gears, the hands. Shapes first, so each one could be judged on its own before any of it looked like metal.
+
+![A sped-up screen recording of the clock being assembled as flat vector shapes, layer by layer: the numeral ring, the periwinkle aperture, the label plates, the moon gears, and the hands set off to one side](/optimized/portfolio/materia-magica/process-vectors.mp4 "The clock in vectors, one part at a time. Sped up 2x.")
+
+Those outlines then became clipping masks for material images in Photoshop: a brass texture clipped to the numeral ring, marbled blue and green to the face behind it. Photoshop's blending modes and layer blending options did the rest, with inner shadows, drop shadows and color overlays turning flat shapes into parts that look like they have thickness and catch light.
+
+![A sped-up screen recording of the same clock in Photoshop as layers switch on: marbled blue backing, the green lower face, brass label plates, then the gold numeral ring, hands and textured moons, with layer effects visible in the panel](/optimized/portfolio/materia-magica/process-raster.mp4 "The same shapes as clipping masks over material images, with layer styles adding the depth. Sped up 3x.")
+
 ### The face
 
 Then came the face proper, rendered in PixiJS: numerals, hands, gears and shutters drawn as vector and brass-textured art, with tumbler barrels for the spell regeneration counters and hands that politely go translucent when your cursor needs to see behind them.
