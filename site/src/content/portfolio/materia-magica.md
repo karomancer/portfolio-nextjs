@@ -164,6 +164,12 @@ Enter in the circular slider.
 
 ![Dragging the circular dial around the clock to scrub forward through upcoming gate openings](/optimized/portfolio/materia-magica/circular-slider.mp4)
 
+### October to February
+
+| | |
+| -- | -- |
+| ![A thirty second montage of the clock at eight dated stages: a flat line-art dial on bright blue in October, a brass ring with white placeholder counters in early November, rolling barrels and the first portal windows, a bug that sends the minute hand spinning, streaky portal transitions, brass fan shutters, the horizontal slider bending into a circular dial, and the finished clock on the homepage](/optimized/portfolio/materia-magica/progress-montage.webm) | Eight stops along the way, each a screen recording from the day it happened. The very first one I had to resurrect from its commit, since nobody records the ugly version.!!!Flat blue in October. Brass by November. Then barrels, a bug worth keeping, portal windows, fan shutters, and in January the slider bending into a dial.!!!Live on Valentine's Day. |
+
 ## Try it
 
 Here is the instrument itself, the component lifted out of the game's codebase and running on this page. The reading is real: a snapshot of the game state taken one evening in September 2026, with Trigael a waning crescent, Marabah full, and worldgates standing at Xaventry and Irda. Alyrian time keeps advancing from that moment, because the clock computes it rather than being told it. Drag the dial and it walks forward through the next two days of gate openings, the same forty-eight states the server hands the homepage on every load.
