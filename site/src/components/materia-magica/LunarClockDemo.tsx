@@ -24,8 +24,8 @@ const LunarClockDemo = () => (
       />
     </div>
     <figcaption className={styles.caption}>
-      The real clock, on real game data. Drag the dial to read the next two
-      days of gate openings.
+      The real clock, on real game data. Drag the dial to read the next 24
+      hours of gate openings.
     </figcaption>
   </figure>
 );
