@@ -1,0 +1,368 @@
+@import "../../../sass/breakpoints";
+
+/* Progress bar */
+.circularTrack > div > svg:first-of-type path:last-of-type {
+  stroke: url(#gold-texture-pattern) !important;
+}
+
+/* Track */
+.circularTrack > div:first-child > svg circle:nth-child(2) {
+  stroke: url(#blue-texture-pattern) !important;
+}
+
+/* Gold border on outer edge of track */
+.circularTrack {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #9b8252;
+}
+
+/* Clip the knob to be a triangle, similar to a kitchen timer */
+.circularTrack > div > div > svg circle:nth-child(2) {
+  fill: url(#gold-texture-pattern) !important;
+  clip-path: url(#knob-clip);
+}
+
+/* Hide the 3 line affordance. Doesn't fit right in the clipping path/looks super weird */
+/* The knob has an animated glow so there's already affordance to use it IMO */
+.circularTrack > div > div > svg > svg {
+  display: none;
+}
+
+/* Stopwatch crown - Go Live button */
+.crownButton {
+  background-color: transparent;
+  background-image: none;
+  appearance: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 4rem;
+  border: 0;
+  padding: 0;
+  transition: all 0.3s;
+  bottom: 100%;
+  z-index: 0;
+  background-blend-mode: overlay, normal;
+  background-size:
+    100% 4px,
+    auto;
+  filter: brightness(0.8);
+
+  &::after {
+    content: "";
+    transition: top 0.3s ease-in;
+    clip-path: url(#crown-clip);
+    background-image: url("/optimized/portfolio/materia-magica/clock/gold-texture.png");
+    position: absolute;
+    left: 0;
+    top: 1.4rem;
+    width: 100%;
+    height: 2.25rem;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image:
+      repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.1) 0px,
+        rgba(0, 0, 0, 0.25) 2px,
+        rgba(255, 255, 255, 0.05) 4px
+      ),
+      url("/optimized/portfolio/materia-magica/clock/gold-texture.png");
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.8rem;
+    height: 1rem;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Have the crown button raise up for affordance once it's not live  */
+.notLive {
+  &::after {
+    top: 1rem;
+  }
+
+  &:hover::after {
+    top: 0.9rem;
+  }
+
+  &:active::after {
+    top: 1.6rem;
+    transition: top 0.5s ease-in;
+  }
+}
+
+/* Loading placeholder shimmer animation */
+.loadingShimmer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.loadingShimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 500ms ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Parchment info panel */
+.parchmentLabel {
+  background-image: url("/optimized/portfolio/materia-magica/clock/parchment.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: url(#parchment-clip);
+}
+
+/* Layout classes that were Tailwind utilities upstream */
+.root {
+  position: relative;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.stage {
+  position: relative;
+  transform-origin: top left;
+  z-index: 10;
+}
+
+.crownDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.crownLive {
+  cursor: default;
+}
+
+.crownFuture {
+  cursor: pointer;
+}
+
+.trackLoading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.astro {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.placeholderImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImgOverlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholderLabel {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #d97706;
+  padding: 0 1rem;
+}
+
+/* Details card under the dial */
+.card {
+  position: relative;
+  color: var(--dark);
+  margin-top: -10px;
+
+  @include breakpoint(">=medium") {
+    margin-top: -20px;
+  }
+}
+
+.panel {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  padding: 2rem 1rem 1.5rem 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  border-radius: 1.5rem;
+  border: 1px solid #d6d6d6;
+  background: var(--light);
+  color: var(--dark);
+  font-family: var(--fontFamily);
+
+  p,
+  strong,
+  div,
+  li {
+    color: inherit;
+  }
+
+  @include breakpoint(">=medium") {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    line-height: 1.5;
+  }
+}
+
+.labelHead {
+  font-family: Cinzel, serif;
+  grid-column: span 2;
+  white-space: nowrap;
+}
+
+.labelHeadSecond {
+  display: block;
+  margin-top: 0.5rem;
+
+  @include breakpoint(">=medium") {
+    margin-top: 0;
+  }
+}
+
+.badge {
+  font-weight: var(--bodyFontWeight);
+  font-size: 11px;
+  color: #9b8252;
+  border: 1px solid #9b8252;
+  border-radius: 9999px;
+  padding: 0 0.3rem;
+  margin-left: 0.2rem;
+}
+
+.live {
+  vertical-align: middle;
+  color: #2f9c7c;
+  font-weight: 700;
+  padding-top: 1px;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.value {
+  grid-column: span 6;
+  width: 100%;
+  margin: 0;
+
+  @include breakpoint(">=medium") {
+    padding-left: 0.5rem;
+  }
+}
+
+.toggle {
+  font-family: Cinzel, serif;
+  color: var(--gray);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.toggleInline {
+  margin-left: 0.5rem;
+}
+
+.details {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+  }
+}
+
+.detailsOpen {
+  max-height: 12rem;
+  opacity: 1;
+}
+
+.detailsClosed {
+  max-height: 0;
+  opacity: 0;
+}

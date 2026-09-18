@@ -17,6 +17,7 @@
     "deploy-prep": "npm run optimize-assets && npm run cleanup-originals"
   },
   "dependencies": {
+    "@fseehawer/react-circular-slider": "^3.3.5",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.9",
@@ -33,6 +34,7 @@
     "framer-motion": "^6.5.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
+    "luxon": "^3.7.2",
     "metascraper": "^5.34.8",
     "metascraper-description": "^5.34.7",
     "metascraper-image": "^5.34.7",
@@ -40,6 +42,8 @@
     "metascraper-title": "^5.34.7",
     "next": "^12.3.2",
     "p5": "^1.6.0",
+    "pixi-filters": "^6.1.5",
+    "pixi.js": "^8.20.1",
     "postcss": "^8.5.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -52,6 +56,7 @@
     "yaml": "^2.3.1"
   },
   "devDependencies": {
+    "@types/luxon": "^3.7.5",
     "@types/markdown-it": "^12.2.3",
     "sass": "^1.63.6"
   }

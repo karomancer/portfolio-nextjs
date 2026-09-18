@@ -1,0 +1,149 @@
+[
+  {
+    "vnum": 4001802,
+    "mapVnum": 1,
+    "x": 502,
+    "y": 1281,
+    "areaName": "Sigil"
+  },
+  {
+    "vnum": 2300974,
+    "mapVnum": 1,
+    "x": 1674,
+    "y": 541,
+    "areaName": "Tellerium"
+  },
+  {
+    "vnum": 2115925,
+    "mapVnum": 1,
+    "x": 625,
+    "y": 461,
+    "areaName": "Xaventry"
+  },
+  {
+    "vnum": 2791313,
+    "mapVnum": 1,
+    "x": 2113,
+    "y": 754,
+    "areaName": "Garbool"
+  },
+  {
+    "vnum": 1939377,
+    "mapVnum": 1,
+    "x": 1177,
+    "y": 384,
+    "areaName": "Lowangen"
+  },
+  {
+    "vnum": 3478179,
+    "mapVnum": 1,
+    "x": 1279,
+    "y": 1053,
+    "areaName": "Maldra"
+  },
+  {
+    "vnum": 2771462,
+    "mapVnum": 1,
+    "x": 662,
+    "y": 746,
+    "areaName": "Rune"
+  },
+  {
+    "vnum": 2590463,
+    "mapVnum": 1,
+    "x": 1363,
+    "y": 667,
+    "areaName": "Irda"
+  },
+  {
+    "vnum": 2663667,
+    "mapVnum": 1,
+    "x": 967,
+    "y": 699,
+    "areaName": "Arcane"
+  },
+  {
+    "vnum": 1694518,
+    "mapVnum": 1,
+    "x": 118,
+    "y": 278,
+    "areaName": "Kalywak"
+  },
+  {
+    "vnum": 3622815,
+    "mapVnum": 1,
+    "x": 1015,
+    "y": 1116,
+    "areaName": "West Beltane"
+  },
+  {
+    "vnum": 6039269,
+    "mapVnum": 3,
+    "x": 389,
+    "y": 81,
+    "areaName": "Seelie"
+  },
+  {
+    "vnum": 4143030,
+    "mapVnum": 1,
+    "x": 1430,
+    "y": 1342,
+    "areaName": "Vandy Keep"
+  },
+  {
+    "vnum": 12269552,
+    "mapVnum": 25,
+    "x": 1752,
+    "y": 986,
+    "areaName": "Underground Lava"
+  },
+  {
+    "vnum": 5004865,
+    "mapVnum": 2,
+    "x": 113,
+    "y": 33,
+    "areaName": "Verity"
+  },
+  {
+    "vnum": 1056301,
+    "mapVnum": 1,
+    "x": 1301,
+    "y": 0,
+    "areaName": "Black Lodge"
+  },
+  {
+    "vnum": 11148534,
+    "mapVnum": 25,
+    "x": 834,
+    "y": 499,
+    "areaName": "Faerie Plane"
+  },
+  {
+    "vnum": 6144556,
+    "mapVnum": 3,
+    "x": 76,
+    "y": 301,
+    "areaName": "Underground Lava"
+  },
+  {
+    "vnum": 21020,
+    "mapVnum": 0,
+    "x": -1,
+    "y": -1,
+    "areaName": "Ethereal Void"
+  },
+  {
+    "vnum": 10990538,
+    "mapVnum": 25,
+    "x": 1538,
+    "y": 430,
+    "areaName": "Decara"
+  },
+  {
+    "vnum": 11990734,
+    "mapVnum": 25,
+    "x": 1234,
+    "y": 865,
+    "areaName": "Sea Hag"
+  }
+]
