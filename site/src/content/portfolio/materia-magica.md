@@ -96,13 +96,24 @@ Easy to say that I gave up rather quickly (and rather annoyed) with ChatGPT.
 
 And good too because the client was exceedingly clear that they didn't want any AI art!
 
-### Structure first, ornament second
+### Preparing the game data
 
 So far we only talked about design, but I was also hired for my software engineering know-how to hook up my own design to the game data.
 
-The game's world data lives in decades-old area files and C tables, and the marketing site is built in php and Laravel, so the first month of my work was dusting off my computer science degree to read C code with more linked lists than I had ever seen in a production database before, writing parsers and collections, generating constant files of worldgate coordinates and moon phase tables, writing utils for Alyrian time conversion...all tested against fixtures cut from the real game files.
+The game's world data lives in decades-old area files and C tables, and the marketing site is built in php and Laravel. As a non-game dev, I had read access to the game codebase but no write access, so any work I had to do was simply fetching from what exists and transforming it rather than changing at all how the game code works. So the first month of my work was dusting off my computer science degree to 
+* read C code with more linked lists than I had ever seen in a production codebase before
+* take said linked lists of map data and write scripts we can run to transform changes to the map into arrays of json for frontend consumption
+* write parsers and collections for reading in said json map data
+* writing parsers and collections for reading in game data in an arbitrarily defined format in `.dat` files
+* writing scripts that generate constant files of worldgate coordinates and moon phase tables found in the C game codebase to be used for the Laravel web app
+* writing utils for Alyrian time conversion (time is spat out of the game codebase as a string that needs to be parsed)
+* write tests against fixtures cut from the real game files
 
 And this was all largely done without the assistance of AI coding agents. I hadn't written php for nearly two decades and had certainly never written anything in Laravel. I hadn't adopted AI into my coding workflow yet, and generally I was so fascinated with this project I wanted to write it myself anyway and understand what I'm writing.
+
+Once I had wired up the backend to my liking, it was time to start figuring out how the clock I had designed would react to all these different parts.
+
+### Hooking it all up
 
 The face was built structure first, a blockout of nothing but the circle, two apertures, two label plates and the counter box, so the geometry could be checked against live data while it was still ugly. Ornament came second, drawn around the holes the data would fill.
 
