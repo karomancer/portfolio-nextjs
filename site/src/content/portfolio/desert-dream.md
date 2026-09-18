@@ -26,7 +26,7 @@ categories:
   - ITP
 type: portfolioPiece
 class: Hypercinema
-og_preview: /optimized/portfolio/desert-dream/og_image.webp
+og_preview: /optimized/portfolio/desert-dream/og_image.jpg
 thumbnail_width: 1
 thumbnail_height: 1
 piece_type:

@@ -8,7 +8,7 @@ class: ""
 date: 2021-02-11T22:47:06.523Z
 preview: /optimized/portfolio/broker2broker/preview.mp4
 cover: /optimized/portfolio/broker2broker/cover.webp
-og_preview: /optimized/portfolio/broker2broker/og.webp
+og_preview: /optimized/portfolio/broker2broker/og.jpg
 draft: false
 url: https://broker2broker.app/
 technologies:

@@ -9,7 +9,7 @@ class: ""
 date: 2025-09-15T12:00:00.000Z
 preview: /optimized/portfolio/galactic-rivers/preview.webp
 cover: /optimized/portfolio/galactic-rivers/cover.webp
-og_preview: /optimized/portfolio/galactic-rivers/og.webp
+og_preview: /optimized/portfolio/galactic-rivers/og.jpg
 draft: false
 url: https://www.chriseminizer.com/
 technologies:

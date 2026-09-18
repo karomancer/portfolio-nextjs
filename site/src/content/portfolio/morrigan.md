@@ -7,7 +7,7 @@ class: ""
 date: 2014-10-31T04:26:55.288Z
 preview: /optimized/portfolio/morrigan/morrigan.webp
 cover: /optimized/portfolio/morrigan/cover.webp
-og_preview: /optimized/portfolio/morrigan/og_image.webp
+og_preview: /optimized/portfolio/morrigan/og_image.jpg
 draft: false
 url: ""
 technologies:

@@ -11,7 +11,7 @@ preview: /optimized/portfolio/openframeworks-experiments/cover.webp
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/openframeworks-experiments/cover.webp
-og_preview: /optimized/portfolio/openframeworks-experiments/hero-grid.webp
+og_preview: /optimized/portfolio/openframeworks-experiments/hero-grid.jpg
 draft: false
 url: https://github.com/karomancer?tab=repositories
 technologies:

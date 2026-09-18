@@ -9,7 +9,7 @@ class: ""
 date: 2021-06-07T08:45:42.519Z
 preview: /optimized/portfolio/imperfect-foods/impactslidermobile.mp4
 cover: /optimized/portfolio/imperfect-foods/cover.webp
-og_preview: /optimized/portfolio/imperfect-foods/og_preview.webp
+og_preview: /optimized/portfolio/imperfect-foods/og_preview.jpg
 draft: false
 url: https://www.imperfectfoods.com/
 technologies:

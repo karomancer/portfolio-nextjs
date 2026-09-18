@@ -7,7 +7,7 @@ class: Hypercinema
 date: 2022-12-08T23:09:15.000Z
 preview: /optimized/portfolio/masks-of-manic-depression/mania.webp
 cover: /optimized/portfolio/masks-of-manic-depression/depression.webp
-og_preview: /optimized/portfolio/masks-of-manic-depression/depression.webp
+og_preview: /optimized/portfolio/masks-of-manic-depression/depression.jpg
 draft: false
 url: ""
 technologies:

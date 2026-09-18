@@ -7,7 +7,7 @@ class: ""
 date: 2017-11-06T20:41:28.202Z
 preview: /optimized/portfolio/marie/preview.webp
 cover: /optimized/portfolio/marie/cover.webp
-og_preview: /optimized/portfolio/marie/final.webp
+og_preview: /optimized/portfolio/marie/final.jpg
 draft: false
 url: ""
 technologies:

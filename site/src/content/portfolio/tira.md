@@ -7,7 +7,7 @@ class: ""
 date: 2012-05-02T21:09:55.210Z
 preview: /optimized/portfolio/tira/final1.webp
 cover: /optimized/portfolio/tira/cover.webp
-og_preview: /optimized/portfolio/tira/final5.webp
+og_preview: /optimized/portfolio/tira/final5.jpg
 draft: false
 url: ""
 technologies:

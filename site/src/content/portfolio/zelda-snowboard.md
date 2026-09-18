@@ -7,7 +7,7 @@ class: ""
 date: 2019-01-09T21:39:53.756Z
 preview: /optimized/portfolio/zelda-snowboard/Screen_Shot_2020-11-10_at_10.37.21_AM.webp
 cover: /optimized/portfolio/zelda-snowboard/real_snowboard.webp
-og_preview: /optimized/portfolio/zelda-snowboard/2016-02-02__1_.webp
+og_preview: /optimized/portfolio/zelda-snowboard/2016-02-02__1_.jpg
 draft: false
 url: ""
 technologies:

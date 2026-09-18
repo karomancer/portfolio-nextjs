@@ -8,7 +8,7 @@ class: ""
 date: 2013-05-04T16:31:41.467Z
 preview: /optimized/portfolio/communitree/preview2.webp
 cover: /optimized/portfolio/communitree/process3.webp
-og_preview: /optimized/portfolio/communitree/preview2.webp
+og_preview: /optimized/portfolio/communitree/preview2.jpg
 draft: false
 url: |
   Adobe Premiere

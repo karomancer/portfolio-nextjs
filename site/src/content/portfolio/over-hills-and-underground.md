@@ -7,7 +7,7 @@ class: ""
 date: 2013-04-12T03:26:58.171Z
 preview: /optimized/portfolio/over-hills-and-underground/IMG_20201104_170138.webp
 cover: /optimized/portfolio/over-hills-and-underground/cover.webp
-og_preview: /optimized/portfolio/over-hills-and-underground/IMG_20201104_170208.webp
+og_preview: /optimized/portfolio/over-hills-and-underground/IMG_20201104_170208.jpg
 draft: false
 url: https://open.spotify.com/album/7itNh35jKNvfMWEIe9cWln
 technologies:

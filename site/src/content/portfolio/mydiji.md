@@ -10,7 +10,7 @@ class: ""
 date: 2022-08-05T12:00:00.000Z
 preview: /optimized/portfolio/mydiji/preview.mp4
 cover: /optimized/portfolio/mydiji/cover.webp
-og_preview: /optimized/portfolio/mydiji/og.webp
+og_preview: /optimized/portfolio/mydiji/og.jpg
 draft: false
 url: https://www.growthacc.com/
 technologies:

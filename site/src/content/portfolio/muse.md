@@ -19,7 +19,7 @@ categories:
   - ITP
 type: portfolioPiece
 keywords: []
-og_preview: /optimized/portfolio/muse/og_image.webp
+og_preview: /optimized/portfolio/muse/og_image.jpg
 piece_type:
   - journal
 ---

@@ -9,7 +9,7 @@ preview: /optimized/portfolio/dr-snuggles/BBB_9357.webp
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/dr-snuggles/vlcsnap-2024-08-09-16h37m20s405.webp
-og_preview: /optimized/portfolio/dr-snuggles/BBB_9357.webp
+og_preview: /optimized/portfolio/dr-snuggles/BBB_9357.jpg
 draft: false
 url: https://github.com/karomancer/DrSnuggles
 technologies:

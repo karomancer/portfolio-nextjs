@@ -15,7 +15,7 @@ preview: /optimized/portfolio/stem-from-dance/preview.mp4
 thumbnail_width: 2
 thumbnail_height: 1
 cover: /optimized/portfolio/stem-from-dance/thumbnail.webp
-og_preview: /optimized/portfolio/stem-from-dance/thumbnail.webp
+og_preview: /optimized/portfolio/stem-from-dance/thumbnail.jpg
 draft: false
 url: https://github.com/DanNoblem/LED_Pants/tree/Hard-Coded
 technologies:
