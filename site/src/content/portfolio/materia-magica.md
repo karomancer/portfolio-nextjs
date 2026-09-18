@@ -76,19 +76,19 @@ Turns out with a system like this there's actually a lot of arithmetic to go thr
 ![Two pages of a pencil sketchbook: the left page full of overlapping circles, moon phase diagrams and clock faces with the phase timing math beside them, the right page working the layout into a face with two apertures, a spell regeneration counter and the note looks like a device](/optimized/portfolio/materia-magica/sketchbook.webp "First-week sketchbook. Finding the form then narrowing in on it.")
 
 
-Then the two candidates went into Figma to see which one held up at higher fidelity: an orrery, where the moons ride their orbits and the phases sit along the path, and a clock.
+The ones we liked the most were the orrery, where the moons ride their orbits and the phases sit along the path, and a town clock similar to the Orloj with a moon phase dial. So then I made medium fidelity Figma versions of them:
 
 | The orrery | The orrery, with a slider | The clock |
 | -- | -- | -- |
 | ![Figma frame of two moons on elliptical orbits around a central sphere, their phases laid along the path, with callouts for the current phase and the next gate opening and two empty boxes for the open gates](/optimized/portfolio/materia-magica/frame-orrery.webp) | ![The same orrery frame with a handwritten note reading slider time see where and a slider sketched beneath it](/optimized/portfolio/materia-magica/frame-orrery-slider.webp) | ![Figma frame of a cream clock dial with roman numerals, two moons and two map windows on a blue face, gate names on rollers and a spell regeneration counter at 125 percent](/optimized/portfolio/materia-magica/frame-clock.webp) |
 
-The scribble under the second orrery, slider time see where, is the origin of the dial you drag on the finished thing.
+After seeing it more sketched out, we decided to go full force on the town clock idea.
 
 As an intellectual exercise, I tried iterating on the layout with ChatGPT.
 
-I fed it one of my more final sketches and a description a clockmaker could have built from: numerals I to XII around the border, two moon apertures with waxing, full and waning inscribed around each, two little map globes with a star on a landmark, and a curved "Spell regeneration at" band over an odometer reading 125%. (I still thought the phases were six and four hours at that point.) It really did not understand the concept! Every render came back with the numerals out of order, the hands crooked, and the apertures somewhere new.
+I fed it the medium fidelity option on the far right above and a description a clockmaker could have built from: numerals I to XII around the border, two moon apertures with waxing, full and waning inscribed around each, two little map globes with a star on a landmark, and a curved "Spell regeneration at" band over an odometer reading 125%. (I still thought the phases were six and four hours at that point.) It really did not understand the concept! Every render came back with the numerals out of order, the hands crooked, and the apertures somewhere new.
 
-After a few passes it diagnosed the problem itself: the image tool "wants to pretty it up," and fights any precise mechanical layout. It offered to draw me an SVG blueprint instead, and the file link said "file not found." Which is how the blueprint ended up on paper, and then in PixiJS, where nothing gets prettied up unless I say so.
+After a few passes it diagnosed the problem itself: the image tool "wants to pretty it up" and fights any precise mechanical layout. It offered to draw me an SVG blueprint instead, and the file link said "file not found." Which is how the blueprint ended up on paper, and then in PixiJS, where nothing gets prettied up unless I say so.
 
 ![Five ChatGPT renders of a brass clock face, each with the numerals in a different wrong order, apertures drifting around the dial, and a Spell Regeneration At counter reading 125 percent](/optimized/portfolio/materia-magica/chatgpt-attempts.webp "ChatGPT did not understand the assignment. Count the numerals on any of them.")
 
@@ -98,7 +98,7 @@ And good too because the client was exceedingly clear that they didn't want any 
 
 ### Structure first, ornament second
 
-So far we only talked about design, but I was also hired for my software engineering know-how to not only design and make the art for the clock but also to hook it up myself to the game data.
+So far we only talked about design, but I was also hired for my software engineering know-how to hook up my own design to the game data.
 
 The game's world data lives in decades-old area files and C tables, and the marketing site is built in php and Laravel, so the first month of my work was dusting off my computer science degree to read C code with more linked lists than I had ever seen in a production database before, writing parsers and collections, generating constant files of worldgate coordinates and moon phase tables, writing utils for Alyrian time conversion...all tested against fixtures cut from the real game files.
 
