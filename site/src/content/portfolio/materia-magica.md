@@ -148,27 +148,17 @@ Since the moons would overlap each other, we were trying to figure out ways to m
 
 ![A sped-up screen recording of the same clock in Photoshop as layers switch on: marbled blue backing, the green lower face, brass label plates, then the gold numeral ring, hands and textured moons, with layer effects visible in the panel](/optimized/portfolio/materia-magica/process-raster.mp4 "The same shapes as clipping masks over material images, with layer styles adding the depth. Sped up 3x.")
 
-### When function follows form
+### Experimenting until we get it right
 
-There were a couple aspects we weren't quite sure about yet. For example, how to have a mechanical device transition between wildly different map locations. 
+There were a few aspects we weren't quite sure about yet. For example, how to have a mechanical device transition between wildly different map locations. 
 
-The portal windows themselves show map tiles of where each gate leads. I auditioned transitions for the tile swap the way the sketches audition everything (fog, crossfade, mechanical shutter, a wipe we described as "windshield wiper, Brazilian bbq").
-
-Ulimately we went with a fan out shutter (the last one on the right).
-
-<-- insert a side-by-side video of many options -->
+The portal windows themselves show map tiles of where each gate leads. I auditioned transitions for the tile swap the way the sketches audition everything (fog, crossfade, mechanical shutter, a wipe we described as "windshield wiper, Brazilian bbq"). Ulimately we went with a fan out shutter.
 
 Similarly, we were wracking our brain on how to give users a way to see future predictions for the moon. We didn't want it to be searchable and we concluded that we wanted it to be part of this magical device we've created. We were convinced that a slider was the best way, but the clock is circular so any horizontal or vertical slider just didn't look good.
 
-Enter in the circular slider.
-
-![Dragging the circular dial around the clock to scrub forward through upcoming gate openings](/optimized/portfolio/materia-magica/circular-slider.mp4)
-
-### October to February
-
 | | |
 | -- | -- |
-| ![A thirty second montage of the clock at eight dated stages: a flat line-art dial on bright blue in October, a brass ring with white placeholder counters in early November, rolling barrels and the first portal windows, a bug that sends the minute hand spinning, streaky portal transitions, brass fan shutters, the horizontal slider bending into a circular dial, and the finished clock on the homepage](/optimized/portfolio/materia-magica/progress-montage.webm) | Eight stops along the way, each a screen recording from the day it happened. The very first one I had to resurrect from its commit, since nobody records the ugly version.!!!Flat blue in October. Brass by November. Then barrels, a bug worth keeping, portal windows, fan shutters, and in January the slider bending into a dial.!!!Live on Valentine's Day. |
+| ![A thirty second montage of the clock at eight dated stages: a flat line-art dial on bright blue in October, a brass ring with white placeholder counters in early November, rolling barrels and the first portal windows, a bug that sends the minute hand spinning, streaky portal transitions, brass fan shutters, the horizontal slider bending into a circular dial, and the finished clock on the homepage](/optimized/portfolio/materia-magica/progress-montage.webm) | Here's a montage of the iterations it took to get the clock right, from figuring out the art to figuring out the code. Eight stops along the way, each a screen recording from the day it happened. The very first one I had to resurrect from its commit, since nobody records the ugly version.!!!Flat blue in October. Brass by November. Then barrels, a bug worth keeping, portal windows, fan shutters, and in January the slider bending into a circular dial.!!! |
 
 ## Try it
 
