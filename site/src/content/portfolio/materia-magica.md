@@ -102,11 +102,16 @@ So far we only talked about design, but I was also hired for my software enginee
 
 The game's world data lives in decades-old area files and C tables, and the marketing site is built in php and Laravel. As a non-game dev, I had read access to the game codebase but no write access, so any work I had to do was simply fetching from what exists and transforming it rather than changing at all how the game code works. So the first month of my work was dusting off my computer science degree to 
 * read C code with more linked lists than I had ever seen in a production codebase before
-* take said linked lists of map data and write scripts we can run to transform changes to the map into arrays of json for frontend consumption
-* write parsers and collections for reading in said json map data
+* take said linked lists of map data and write scripts we can run to transform changes to the map into arrays of JSON for frontend consumption
+* write parsers and collections for reading in said JSON map data
 * writing parsers and collections for reading in game data in an arbitrarily defined format in `.dat` files
+* write CLI commands for operations such finding the coordinates of a location from within the greater map that can be used in other generative scripts that translate from game data to useful info for the clock
 * writing scripts that generate constant files of worldgate coordinates and moon phase tables found in the C game codebase to be used for the Laravel web app
 * writing utils for Alyrian time conversion (time is spat out of the game codebase as a string that needs to be parsed)
+* writing a database seeder that creates believable mock data based on real game data information so the clock can be run locally
+* write a cron job that grabs the current game state on a ticker and writes it to the web app's DB
+* write listeners on the frontend to listen to changes in game state to update the clock elements
+* write PixiJS code that renders all the clock elements and animates them based on these changes in game state
 * write tests against fixtures cut from the real game files
 
 And this was all largely done without the assistance of AI coding agents. I hadn't written php for nearly two decades and had certainly never written anything in Laravel. I hadn't adopted AI into my coding workflow yet, and generally I was so fascinated with this project I wanted to write it myself anyway and understand what I'm writing.
@@ -119,7 +124,7 @@ The face was built structure first, a blockout of nothing but the circle, two ap
 
 | | |
 | -- | -- |
-| ![The first running version of the clock: a flat line-art dial on a bright blue canvas, plain gray and red discs for the moons turning behind a periwinkle aperture, stick hands ticking, and white boxes where the gate names and the spell regeneration digits roll like drums](/optimized/portfolio/materia-magica/first-version.webm) | This is the first version that ran, from October 13, 2025, resurrected from that commit and recorded for this page.!!!PixiJS's default blue background, two flat discs for moons, stick hands, and two debug buttons that randomize the spell regeneration counter and the portal drums so I could watch them roll. Game time runs at a minute per second here so the hands visibly move.!!!Ugly on purpose. Every moving part could be checked before any of it was drawn properly. |
+| ![The first running version of the clock: a flat line-art dial on a bright blue canvas, plain gray and red discs for the moons turning behind a periwinkle aperture, stick hands ticking, and white boxes where the gate names and the spell regeneration digits roll like drums](/optimized/portfolio/materia-magica/first-version.webm) | This is the first version that ran.!!!PixiJS's default blue background, two flat discs for moons, stick hands, and two debug buttons that randomize the spell regeneration counter and the portal drums so I could test the animations without needing to wait for a change in game state. Game time runs at a minute per second here so the hands visibly move.!!!Ugly on purpose, getting the form down before the chrome. Every moving part could be checked before any of it was drawn properly. |
 
 | Structure | Ornament |
 | -- | -- |
