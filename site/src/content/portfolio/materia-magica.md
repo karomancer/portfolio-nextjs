@@ -10,7 +10,7 @@ preview: /optimized/portfolio/materia-magica/preview.mp4
 thumbnail_width: 1
 thumbnail_height: 1
 cover: /optimized/portfolio/materia-magica/cover.webp
-og_preview: /optimized/portfolio/materia-magica/og.webp
+og_preview: /optimized/portfolio/materia-magica/og.jpg
 draft: false
 url: https://www.materiamagica.com/
 technologies:
