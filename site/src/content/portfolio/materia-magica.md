@@ -117,6 +117,10 @@ Once I had wired up the backend to my liking, it was time to start figuring out 
 
 The face was built structure first, a blockout of nothing but the circle, two apertures, two label plates and the counter box, so the geometry could be checked against live data while it was still ugly. Ornament came second, drawn around the holes the data would fill.
 
+| | |
+| -- | -- |
+| ![The first running version of the clock: a flat line-art dial on a bright blue canvas, plain gray and red discs for the moons turning behind a periwinkle aperture, stick hands ticking, and white boxes where the gate names and the spell regeneration digits roll like drums](/optimized/portfolio/materia-magica/first-version.webm) | This is the first version that ran, from October 13, 2025, resurrected from that commit and recorded for this page.!!!PixiJS's default blue background, two flat discs for moons, stick hands, and two debug buttons that randomize the spell regeneration counter and the portal drums so I could watch them roll. Game time runs at a minute per second here so the hands visibly move.!!!Ugly on purpose. Every moving part could be checked before any of it was drawn properly. |
+
 | Structure | Ornament |
 | -- | -- |
 | ![The clock reduced to flat geometry: circle, two apertures, two label bars, counter box](/optimized/portfolio/materia-magica/clock-blockout.webp) | ![The same layout dressed in parchment, roman numerals and a moon phase band, with the blockout still showing through in blue](/optimized/portfolio/materia-magica/clock-ornament.webp) |
