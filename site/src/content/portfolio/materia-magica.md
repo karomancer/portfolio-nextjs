@@ -171,6 +171,6 @@ The clock merged on Valentine's Day 2026 and is now the first thing every visito
 
 A year in, I still have never met Materia Magica. I just keep shipping through Rugged, and the work keeps coming back. So does the trust: Rugged now includes KACHOW! in its own proposals, in slides Dan built that introduce the extended team by name and school.
 
-Modernizing this game is a monumental and extremely fulfilling project that Rugged Software is delighted to work on. It has all the work one can imagine from web development to old-school game development, animation work to pixel art and sound design, with interesting, unique problems like translating ASCII art to pixel art, building telnet relays, and parsing mysterious messages and data files. It's a greenfield project with lots of opportunity for trying out new ideas.
+Modernizing this game is a monumental and extremely fulfilling project. It has all the work one can imagine from web development to old-school game development, animation work to pixel art and sound design, with interesting, unique problems like translating ASCII art to pixel art, building telnet relays, and parsing mysterious messages and data files. It's a greenfield project with lots of opportunity for trying out new ideas.
 
 I hope I will get to continue to be a part of it!
