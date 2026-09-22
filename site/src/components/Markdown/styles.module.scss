@@ -1,4 +1,5 @@
 @import "../../sass/breakpoints";
+@import "../../sass/commonStyles";
 
 .markdown {
   ul,
@@ -154,9 +155,29 @@
 
         img,
         video {
+          display: block;
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+
+        // A captioned cell lays out as a column so its height includes the
+        // caption; otherwise the media's height: 100% sizes the cell alone
+        // and the caption spills into the table's bottom margin.
+        &:has(> :global(.p-figcaption)) {
+          display: flex;
+          flex-direction: column;
+
+          img,
+          video {
+            height: auto;
+            flex: none;
+          }
+        }
+
+        :global(.p-figcaption) {
+          margin-top: 0.35rem;
+          margin-bottom: 0.5rem;
         }
       }
 
@@ -386,6 +407,86 @@ p > .p-with-images {
 // own spacing, so this only needs to keep them out of the prose flow.
 .markdown-tool {
   max-width: 100%;
+}
+
+// A collapsed chapter opened from `<!-- collapse:Title -->`. Closed, the top
+// of the chapter shows through a fade to white with a "Read more" pill on a
+// teal rule, matching the post cards on the blog index. The title is a real
+// h2 so it picks up the write-up's heading style and rule.
+.collapse {
+  scroll-margin-top: 6rem;
+}
+
+// The title sits outside the prose block, so it repeats the h2 treatment.
+.collapse-title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: var(--teal);
+  font-weight: 400;
+  background-color: white;
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  margin: 4rem 0 1rem -0.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+
+  &:after {
+    top: 50%;
+    z-index: -1;
+    left: -2rem;
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(var(--siteWidth) + 2rem);
+    margin-left: 1rem;
+    border-top: 0.25rem solid var(--teal);
+
+    @include breakpoint("<=medium") {
+      left: 0;
+      width: calc(100vw - 4rem);
+    }
+  }
+
+  @include breakpoint("<=small") {
+    font-size: 1.6rem;
+  }
+}
+
+.collapse-body {
+  position: relative;
+  overflow: hidden;
+  max-height: 24rem;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(transparent, white);
+    pointer-events: none;
+  }
+
+  .collapse-open & {
+    max-height: none;
+    overflow: visible;
+
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.collapse-toggle {
+  @include pill-on-rule;
+  margin: -2rem 0 4rem;
+
+  .collapse-open & {
+    margin-top: 2rem;
+  }
 }
 
 // A phone bezel for portrait screen recordings, so app demos read as phones

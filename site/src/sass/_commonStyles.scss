@@ -6,3 +6,49 @@
     text-decoration: underline;
   }
 }
+
+// A centred pill sitting on a horizontal teal rule: the blog index's
+// "Read more" link and the write-up chapter toggle. Apply to the wrapper;
+// the pill is its `a` or `button` child.
+@mixin pill-on-rule {
+  position: relative;
+
+  > a,
+  > button {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    display: block;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--teal);
+    text-decoration: none;
+    border: 2px solid var(--teal);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--teal);
+      color: white;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--teal);
+  }
+}
