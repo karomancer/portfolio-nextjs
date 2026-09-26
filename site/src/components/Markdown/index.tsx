@@ -6,9 +6,15 @@ import { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 import { MetascrapedInfo } from "@/utils/unfurlLink";
-import { ToolRegistry, splitOnTools } from "@/utils/markdownTools";
+import {
+  MarkdownSegment,
+  ToolRegistry,
+  hasMarkers,
+  parseMarkdown,
+} from "@/utils/markdownTools";
 
 import Asset from "./Asset";
+import Collapse from "./Collapse";
 import Embed from "./Embed";
 import TweetEmbed from "./TweetEmbed";
 import { ListItem, Td as TdType } from "./types";
@@ -89,7 +95,10 @@ export default function Markdown({
     return <a target="_blank" rel="noopener noreferrer" {...props} />;
   };
 
-  const prose = (content: string, key?: number) => (
+  const segments = parseMarkdown(children);
+  const split = hasMarkers(segments);
+
+  const prose = (content: string, key?: string | number) => (
     <ReactMarkdown
       key={key}
       remarkPlugins={[remarkGfm]}
@@ -100,34 +109,43 @@ export default function Markdown({
         td: ({ node, ...props }) => <Td {...props} values={node.children} />,
       }}
       className={
-        tools ? styles["markdown"] : `${className} ${styles["markdown"]}`
+        split ? styles["markdown"] : `${className} ${styles["markdown"]}`
       }
     >
       {content}
     </ReactMarkdown>
   );
 
-  if (!tools) {
+  if (!split) {
     return <article>{prose(children)}</article>;
   }
 
-  // With tools the layout class moves up to the article, so the prose and the
-  // tools sit inside one container and share its width rather than each prose
-  // block carrying the max-width and the tools escaping it entirely.
-  // Odd indices are tool names captured from the marker, even indices are prose.
-  return (
-    <article className={className}>
-      {splitOnTools(children).map((segment, i) =>
-        i % 2 === 1 ? (
-          <div key={i} className={styles["markdown-tool"]}>
-            {tools[segment.toLowerCase()] ?? null}
-          </div>
-        ) : (
-          segment.trim() && prose(segment, i)
-        )
-      )}
-    </article>
-  );
+  const render = (segs: MarkdownSegment[], prefix = ""): React.ReactNode =>
+    segs.map((segment, i) => {
+      const key = `${prefix}${i}`;
+      switch (segment.type) {
+        case "prose":
+          return prose(segment.content, key);
+        case "tool":
+          return (
+            <div key={key} className={styles["markdown-tool"]}>
+              {tools?.[segment.name] ?? null}
+            </div>
+          );
+        case "collapse":
+          return (
+            <Collapse key={key} title={segment.title}>
+              {render(segment.children, `${key}-`)}
+            </Collapse>
+          );
+      }
+    });
+
+  // With markers the layout class moves up to the article, so the prose, the
+  // tools, and any collapsed sections sit inside one container and share its
+  // width rather than each prose block carrying the max-width and the tools
+  // escaping it entirely.
+  return <article className={className}>{render(segments)}</article>;
 }
 
 const Td = ({ values, props }: TdType) => {

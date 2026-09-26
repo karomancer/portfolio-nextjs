@@ -1,4 +1,5 @@
 @import "../../sass/breakpoints";
+@import "../../sass/commonStyles";
 
 // Simple header to replace heavy CircuitsHeader
 .blog-header {
@@ -395,38 +396,6 @@
 
 // Read more button
 .read-more {
-  position: relative;
+  @include pill-on-rule;
   margin: -2rem 0 6rem;
-
-  a {
-    width: fit-content;
-    display: block;
-    background-color: white;
-    padding: 0.5rem 1rem;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 100;
-    text-transform: uppercase;
-    border: 2px solid var(--teal);
-    text-decoration: none;
-    border-radius: 1.2rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
-
-    &:hover {
-      background-color: var(--teal);
-      color: white;
-    }
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 0.99;
-    bottom: 1rem;
-    height: 2px;
-    background-color: var(--teal);
-    width: 100%;
-    z-index: -1;
-  }
 }
