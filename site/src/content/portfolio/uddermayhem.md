@@ -4,6 +4,7 @@ description: A cow-shaped arcade cabinet and rhythm game in which you play a bar
 slug: /portfolio/uddermayhem
 collaborators:
   - "[Kevin Mitchell](https://soundcloud.com/aphonicdnb)"
+  - "[Ruby Grove](https://rubygrovemusic.com/)"
 class: The New Arcade
 date: 2023-06-22T17:27:28.000Z
 preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.webp
