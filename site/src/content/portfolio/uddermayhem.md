@@ -38,7 +38,7 @@ thumbnail_height: 2
 piece_type:
   - portfolio
 ---
-![Udder Mayhem promo](/optimized/portfolio/uddermayhem/promo_30s.mp4 "/optimized/portfolio/uddermayhem/promo_poster.webp")
+![Udder Mayhem reel: the game, the udder, and three years on the road](/optimized/portfolio/uddermayhem/reel_horizontal.mp4 "/optimized/portfolio/uddermayhem/reel_horizontal_poster.webp")
 
 **Udder Mayhem** is a rhythm game played on a cow. You are a barista at a café where the steamed milk comes from a magical countertop cow, and cups slide in to the beat. Squeeze the right teat on time and you pour latte art. Squeeze late and you spill the milk.
 
@@ -46,12 +46,12 @@ It started as a midterm at NYU's ITP in 2023 and never really stopped. Since the
 
 **Next showing: [Bay Area Maker Faire](https://makerfaire.com/bay-area/), September 25–27, 2026. Come squeeze her.**
 
+<!-- collapse:How it started (2023) -->
+
 ![A photograph of a close up of a cow-shaped arcade cabinet](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0542-025_hero.webp)
 ![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0535-020.webp)
 ![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0531-016.webp)
 ![A photograph of a close up of a silicone udder for an arcade cabinet in the shape of a cow.](/optimized/portfolio/uddermayhem/23c_kc4648_karina-chow_cow-2V1A0528-013.webp)
-
-<!-- collapse:How it started (2023) -->
 
 Our midterm for the class *The New Arcade* was to make an unconventional controller, a la [ctrl.alt.GDC](https://gdconf.com/alt-ctrl-gdc) style, and an accompanying game.
 
