@@ -541,7 +541,7 @@ Kevin synced the title screen animation to the beat and moved the cabinet onto a
 
 ## Bay Area Maker Faire (September 2026)
 
-[Bay Area Maker Faire](https://makerfaire.com/bay-area/) is the original Maker Faire, and it is enormous. The 2026 edition was its 20th anniversary and its fourth year on the old Mare Island Naval Shipyard in Vallejo, where the exhibit halls are former foundries and submarine sheds and the midway runs along the waterfront. Recent years have drawn more than 20,000 people and 1,500 makers across close to 400 exhibits. For scale, Coney Island Maker Faire, the last one we did, had about 85 projects and 1,600 visitors. This was a different animal.
+[Bay Area Maker Faire](https://makerfaire.com/bay-area/) is the original Maker Faire, and it is enormous. The 2026 edition was its 20th anniversary and its fourth year on the old Mare Island Naval Shipyard in Vallejo, where the exhibit halls are former foundries and submarine sheds and the midway runs along the waterfront. Recent years have drawn more than 20,000 people and 1,500 makers across close to 400 exhibits. For scale, Coney Island Maker Faire, the last one we did, had about 85 projects and 1,600 visitors. This was a different animal. You can see [our exhibit listing](https://makerfaire.com/maker/entry/udder-mayhem-78625/) on the Maker Faire site.
 
 ![Video walking through the Mare Island hall and out to the waterfront on setup morning](/optimized/portfolio/uddermayhem/mf_walkin.mp4 "/optimized/portfolio/uddermayhem/mf_walkin_poster.webp")
 
@@ -587,8 +587,8 @@ Saturday brought the adult makers. A lot of people came to talk process: silicon
 
 ![Photograph of Kevin carrying the whole cow out under one arm at the end of the day](/optimized/portfolio/uddermayhem/mf_carry.webp)
 
+![Recap video of Bay Area Maker Faire 2026: the Moosic Café, Field Trip Friday, the leaderboards and Saturday's makers](/optimized/portfolio/uddermayhem/mf_reel.mp4 "/optimized/portfolio/uddermayhem/mf_reel_poster.webp")
+
 ## What's next
 
 Two teats failing on the second day of a three-day show is the kind of note you take seriously. The sensors themselves held up; the connections to them didn't, so the next pass is on the wiring and the connectors before anything else. After that, I still want to try a teat that works like a Panic Pete toy, using the air displaced by a squeeze to pop a peg into a button, which would make each teat a clean binary input with no foam to compress over time. If you build your own, or just want to argue about cows, find me on [X](https://x.com/karomancer) or [Instagram](https://www.instagram.com/karinamakes/).
-
-![Recap video of Bay Area Maker Faire 2026: the Moosic Café, Field Trip Friday, the leaderboards and Saturday's makers](/optimized/portfolio/uddermayhem/mf_reel.mp4 "/optimized/portfolio/uddermayhem/mf_reel_poster.webp")
