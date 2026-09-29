@@ -16,6 +16,7 @@ export interface ReadMDX {
     title: string;
     slug: string;
     date: Date | string;
+    updated?: Date | string;
     categories: string[];
     class?: string;
     tags: string[];

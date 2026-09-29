@@ -54,7 +54,10 @@ const PortfolioSection = ({
       return passesTags && passesTechnologies;
     })
     .sort((a, b) =>
-      compareDesc(new Date(a.frontmatter.date), new Date(b.frontmatter.date))
+      compareDesc(
+        new Date(a.frontmatter.updated ?? a.frontmatter.date),
+        new Date(b.frontmatter.updated ?? b.frontmatter.date)
+      )
     );
 
   return (

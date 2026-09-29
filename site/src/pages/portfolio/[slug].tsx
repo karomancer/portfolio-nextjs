@@ -158,6 +158,8 @@ const PortfolioPiece = ({ frontmatter, content, embeds, slug }: Props) => {
             <h4>
               <strong>{frontmatter.categories.join(" • ")}</strong> |{" "}
               {format(new Date(frontmatter.date), "MMMM do, yyyy")}
+              {frontmatter.updated &&
+                ` · Updated ${format(new Date(frontmatter.updated), "MMMM do, yyyy")}`}
             </h4>
 
             <h1>{frontmatter.title}</h1>

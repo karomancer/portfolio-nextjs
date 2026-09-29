@@ -7,6 +7,7 @@ collaborators:
   - "[Ruby Grove](https://rubygrovemusic.com/)"
 class: The New Arcade
 date: 2023-06-22T17:27:28.000Z
+updated: 2026-09-27T12:00:00.000Z
 preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.webp
 cover: /optimized/portfolio/uddermayhem/title.webp
 og_preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.jpg
