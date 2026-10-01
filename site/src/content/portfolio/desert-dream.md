@@ -27,7 +27,7 @@ categories:
 type: portfolioPiece
 class: Hypercinema
 og_preview: /optimized/portfolio/desert-dream/og_image.jpg
-thumbnail_width: 1
+thumbnail_width: 2
 thumbnail_height: 1
 piece_type:
   - portfolio
