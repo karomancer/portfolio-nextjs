@@ -1,6 +1,7 @@
 // TODO: Mkae this less shityt
 
 import fs from "fs";
+import { Fragment } from "react";
 
 import readMdx from "@/utils/readMdx";
 import PortfolioSection, { PortfolioProps } from "@/sections/Portfolio";
@@ -9,6 +10,12 @@ import Head from "@/components/Head";
 
 const sortAllLowercase = (a: string, b: string) =>
   a.toLowerCase() > b.toLowerCase() ? 1 : -1;
+
+const SECTIONS = [
+  { type: "portfolio", title: "Creative Technology" },
+  { type: "work", title: "Product & Web" },
+  { type: "design", title: "Illustration & Animation" },
+] as const;
 
 export async function getStaticProps() {
   const files = fs.readdirSync("src/content/portfolio");
@@ -22,10 +29,8 @@ export async function getStaticProps() {
 
       return readMdx(readFile);
     })
-    .filter(
-      (mdx) =>
-        mdx.frontmatter.piece_type?.includes("portfolio") ||
-        mdx.frontmatter.piece_type?.includes("work")
+    .filter((mdx) =>
+      SECTIONS.some(({ type }) => mdx.frontmatter.piece_type?.includes(type))
     );
 
   const collectAllTags = () => {
@@ -84,22 +89,18 @@ export default function Portfolio({
         ogUrl="/portfolio"
         ogImage="/images/og_image.png"
       />
-      <CircuitsHeader>Creative Technology projects</CircuitsHeader>
-      <PortfolioSection
-        allTags={allTags}
-        allTechnologies={allTechnologies}
-        pieces={pieces.filter((piece) =>
-          piece.frontmatter.piece_type?.includes("portfolio")
-        )}
-      />
-      <CircuitsHeader>Client work (dev & graphic design)</CircuitsHeader>
-      <PortfolioSection
-        allTags={allTags}
-        allTechnologies={allTechnologies}
-        pieces={pieces.filter((piece) =>
-          piece.frontmatter.piece_type?.includes("work")
-        )}
-      />
+      {SECTIONS.map(({ type, title }) => (
+        <Fragment key={type}>
+          <CircuitsHeader>{title}</CircuitsHeader>
+          <PortfolioSection
+            allTags={allTags}
+            allTechnologies={allTechnologies}
+            pieces={pieces.filter((piece) =>
+              piece.frontmatter.piece_type?.includes(type)
+            )}
+          />
+        </Fragment>
+      ))}
     </main>
   );
 }

@@ -26,7 +26,7 @@ export interface ReadMDX {
     thumbnail_height: number;
     cover: string;
     draft: boolean;
-    piece_type: ("portfolio" | "journal" | "work")[];
+    piece_type: ("portfolio" | "journal" | "work" | "design")[];
     collaborators?: Collaborator[];
     technologies?: string[];
     og_preview: string;

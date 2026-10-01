@@ -27,7 +27,7 @@ categories:
   - MyDiji
 type: portfolioPiece
 piece_type:
-  - work
+  - design
 thumbnail_width: 2
 thumbnail_height: 1
 ---

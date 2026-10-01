@@ -23,7 +23,7 @@ categories:
   - Freelance Design
 type: portfolioPiece
 piece_type:
-  - work
+  - design
 thumbnail_width: 1
 thumbnail_height: 1
 ---
