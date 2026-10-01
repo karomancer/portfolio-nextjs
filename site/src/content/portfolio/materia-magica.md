@@ -29,7 +29,7 @@ categories:
   - Materia Magica
 type: portfolioPiece
 piece_type:
-  - work
+  - portfolio
 ---
 
 ![The lunar clock running on the Materia Magica homepage, hands sweeping and shutters opening as the dial is dragged](/optimized/portfolio/materia-magica/clock-live.mp4 "The lunar clock, live on materiamagica.com. Every hand, numeral and shutter drawn by hand; every reading pulled from the game.")

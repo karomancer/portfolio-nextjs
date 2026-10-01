@@ -28,7 +28,7 @@ type: portfolioPiece
 thumbnail_width: 2
 thumbnail_height: 1
 piece_type:
-  - portfolio
+  - work
 ---
 
 ![Final presentation showing research](/portfolio/playtpus-dreamtime/presentation.pdf)

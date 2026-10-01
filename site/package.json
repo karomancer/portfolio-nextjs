@@ -2,6 +2,9 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -35,11 +38,11 @@
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
     "luxon": "^3.7.2",
-    "metascraper": "^5.34.8",
-    "metascraper-description": "^5.34.7",
-    "metascraper-image": "^5.34.7",
-    "metascraper-logo": "^5.34.7",
-    "metascraper-title": "^5.34.7",
+    "metascraper": "^5.58.1",
+    "metascraper-description": "^5.56.2",
+    "metascraper-image": "^5.56.2",
+    "metascraper-logo": "^5.56.2",
+    "metascraper-title": "^5.56.2",
     "next": "^12.3.2",
     "p5": "^1.6.0",
     "pixi-filters": "^6.1.5",

@@ -7,7 +7,7 @@ class: Thesis
 date: 2024-05-17T20:43:20.000Z
 preview: /optimized/portfolio/dr-snuggles/BBB_9357.webp
 thumbnail_width: 2
-thumbnail_height: 1
+thumbnail_height: 2
 cover: /optimized/portfolio/dr-snuggles/vlcsnap-2024-08-09-16h37m20s405.webp
 og_preview: /optimized/portfolio/dr-snuggles/BBB_9357.jpg
 draft: false

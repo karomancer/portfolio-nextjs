@@ -22,7 +22,7 @@ categories:
   - Gray Area
 type: portfolioPiece
 piece_type:
-  - portfolio
+  - journal
 ---
 
 [Codepen example](https://codepen.io/karomancer/embed/yLNdeXE)

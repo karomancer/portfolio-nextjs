@@ -7,6 +7,7 @@ collaborators:
   - "[Ruby Grove](https://rubygrovemusic.com/)"
 class: The New Arcade
 date: 2023-06-22T17:27:28.000Z
+updated: 2026-09-27T12:00:00.000Z
 preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.webp
 cover: /optimized/portfolio/uddermayhem/title.webp
 og_preview: /optimized/portfolio/uddermayhem/FzF7fARWAAEZaYy.jpg
@@ -43,9 +44,9 @@ piece_type:
 
 **Udder Mayhem** is a rhythm game played on a cow. You are a barista at a café where the steamed milk comes from a magical countertop cow, and cups slide in to the beat. Squeeze the right teat on time and you pour latte art. Squeeze late and you spill the milk.
 
-It started as a midterm at NYU's ITP in 2023 and never really stopped. Since then the cow has had two bodies and three udders, and has been played by a few thousand people at the ITP Spring Show, Currents New Media in Santa Fe, Coney Island Maker Faire, MAGFest, and Warped Inputs at GDC. The version below is the one that travels now, and the chapter after it is how it got here.
+It started as a midterm at NYU's ITP in 2023 and never really stopped. Since then the cow has had two bodies and three udders, and has been played by a few thousand people at the ITP Spring Show, Currents New Media in Santa Fe, Coney Island Maker Faire, MAGFest, Warped Inputs at GDC, and most recently Bay Area Maker Faire. The version below is the one that travels now, and the chapter after it is how it got here.
 
-**Next showing: [Bay Area Maker Faire](https://makerfaire.com/bay-area/), September 25–27, 2026. Come squeeze her.**
+**Latest stop: [Bay Area Maker Faire](https://makerfaire.com/bay-area/), September 25–27, 2026.** Next one to be announced.
 
 <!-- collapse:How it started (2023) -->
 
@@ -391,7 +392,7 @@ Of course I wasn't going to leave the project at the midterm! I couldn't have Ce
 ![Photograph of the inside of the cow with all the wires](/optimized/portfolio/uddermayhem/showcaseinside.webp)
 
 ### Currents New Media Festival
-NYU chose mine and two other projects out of hundreds to go on the road and represent them at the [Santa Fe Currents New Media Festival](https://currentsnewmedia.org/). Yet another great reason to iterate on the game, especially its form factor.
+NYU chose mine and two other projects out of hundreds to go on the road and represent them at the [Santa Fe Currents New Media Festival](https://currentsnewmedia.org/), a summer festival of new media art that takes over a warehouse hall and courtyard in Santa Fe's Railyard district. Yet another great reason to iterate on the game, especially its form factor, since this was the first time she would have to fly.
 
 ![Photograph of Celine the cow more or less done](/optimized/portfolio/uddermayhem/celine.webp)
 ![Photograph of stuffing the cow in a Pelican case for shipping](/optimized/portfolio/uddermayhem/shipping.webp)
@@ -410,7 +411,7 @@ My colleague [Josh](https://joshjoshjosh.net/) made a TikTok starring Celine the
 [TikTok video compilation of cow pictures](https://www.tiktok.com/@joshjoshjosh.net/video/7248340557053840686)
 
 ### Coney Island Maker Faire
-I was also invited to bring Udder Mayhem to the Coney Island Maker Faire to represent my gradute program, and it was an absolute favorite amongst the kids.
+I was also invited to bring Udder Mayhem to the Coney Island Maker Faire to represent my graduate program. It's a small, scrappy, one-weekend Faire by the boardwalk, about 85 projects and 1,600 visitors the year we went, which meant the cow was a big fish, and an absolute favorite amongst the kids.
 
 Once again, it all starts with a little prep, this time with swag as well:
 
@@ -493,7 +494,7 @@ The January 2026 sprint for MAGFest turned a single-song demo into something clo
 
 ### MAGFest 2026
 
-The cow was assembled on the show floor, named Mooriah Dairy, and played for four days straight under coloured lights.
+[MAGFest](https://super.magfest.org/), the Music and Gaming Festival outside DC, runs four days and most of four nights, with an indie games hall where the lights never come up. The cow was assembled on the show floor, named Mooriah Dairy, and played for four days straight under coloured lights.
 
 ![Video of the cow body being assembled on the MAGFest show floor](/optimized/portfolio/uddermayhem/v2_magfest_build.mp4 "/optimized/portfolio/uddermayhem/v2_magfest_build_poster.webp")
 
@@ -509,7 +510,7 @@ MAGFest crowds are not gentle. People yanked, twisted and hammered the teats, an
 
 ### Warped Inputs @ GDC
 
-In March she went to San Francisco for [Warped Inputs](https://warpedinputs.com/), the alternative controller showcase alongside GDC, where she was a featured game.
+In March she went to San Francisco for [Warped Inputs](https://warpedinputs.com/), the alternative controller showcase that runs alongside the Game Developers Conference, where she was a featured game. After the darkness of MAGFest, a tent in the sun full of other people's strange controllers felt like home.
 
 ![Video of players at the Udder Mayhem tent at Warped Inputs](/optimized/portfolio/uddermayhem/v2_warped_inputs.mp4 "/optimized/portfolio/uddermayhem/v2_warped_inputs_poster.webp")
 
@@ -539,6 +540,57 @@ On the art side the cups are layered sprites now, with slide-in and pickup frame
 
 Kevin synced the title screen animation to the beat and moved the cabinet onto a Raspberry Pi: the game runs as a kiosk build in Chromium on a touchscreen, boots straight into attract mode, has an Event Mode that turns off wifi and Bluetooth, and takes hotfixes from a USB stick, which is exactly the kind of thing you want at hour six of a Maker Faire.
 
+## Bay Area Maker Faire (September 2026)
+
+[Bay Area Maker Faire](https://makerfaire.com/bay-area/) is the original Maker Faire, and it is enormous. The 2026 edition was its 20th anniversary and its fourth year on the old Mare Island Naval Shipyard in Vallejo, where the exhibit halls are former foundries and submarine sheds and the midway runs along the waterfront. Recent years have drawn more than 20,000 people and 1,500 makers across close to 400 exhibits. For scale, Coney Island Maker Faire, the last one we did, had about 85 projects and 1,600 visitors. This was a different animal. You can see [our exhibit listing](https://makerfaire.com/maker/entry/udder-mayhem-78625/) on the Maker Faire site.
+
+![Recap video of Bay Area Maker Faire 2026: the Moosic Café, Field Trip Friday, the leaderboards and Saturday's makers](/optimized/portfolio/uddermayhem/mf_reel.mp4 "/optimized/portfolio/uddermayhem/mf_reel_poster.webp")
+
+### The Moosic Café
+
+We leaned into the theme. The booth was the café from the game: a gingham tablecloth, a patch of fake grass for the play area, Starbucks-spoofed aprons and hats for us, and a corner of the table given over to the udder-making process, with the mold, a spare cast and a sensor, so kids could pick up the parts and see how the thing under the cow works.
+
+| | |
+| -- | -- |
+| ![Photograph of the booth from across the hall, with the ships of Mare Island behind it](/optimized/portfolio/uddermayhem/mf_hall.webp) | ![Photograph of Mooriah Dairy being set up on the table, with Udder Mayhem chalked on the concrete below](/optimized/portfolio/uddermayhem/mf_setup.webp) |
+
+### Field Trip Friday
+
+Friday was [Field Trip Day](https://makerfaire.com/bay-area/field-trip-day/), when the Faire opens early for school groups. Schools get discounted group tickets, ten dollars a student, and the pitch to teachers is a curriculum-connected day of meeting makers one on one instead of a museum tour. In practice it means swarms. We never went more than three minutes without another group of kids arriving at the cow.
+
+![Video of school groups crowding the booth on Field Trip Friday](/optimized/portfolio/uddermayhem/mf_fieldtrip_crowd.mp4 "/optimized/portfolio/uddermayhem/mf_fieldtrip_crowd_poster.webp")
+
+| | |
+| -- | -- |
+| ![Photograph of two boys in red shirts squeezing the udder together](/optimized/portfolio/uddermayhem/mf_boys.webp) | ![Photograph of a girl playing with a group of friends watching over her shoulder](/optimized/portfolio/uddermayhem/mf_girl_friends.webp) |
+
+Some of them wanted to know how it worked, and got the full tour of the parts corner. One boy sat down at Medium, having never seen the game, and immediately posted the highest score we have ever recorded: $104.18 in tips, six cents ahead of Kevin, who had been holding the top spot. He came back twice more that day to beat himself, and we gave him an apron.
+
+| | |
+| -- | -- |
+| ![Photograph of the Medium leaderboard on the cabinet: AAA in first with $104.18, UUR in second with $104.12](/optimized/portfolio/uddermayhem/mf_leaderboard.webp) | ![Photograph of the boy who set the high score wearing the apron we gave him](/optimized/portfolio/uddermayhem/mf_apron.webp) |
+
+A high schooler decided we were cool and returned several times to play, hang out and ask questions. And one elementary schooler set out to fill every slot on the Easy leaderboard, coming back again and again, each time with more friends in tow. By the end of the day she held eight of the ten. Saturday's crowd chipped away at it, but when we packed up she still owned first, second and fourth.
+
+![Photograph of the Easy leaderboard on the cabinet, with GEG in first, second and fourth place](/optimized/portfolio/uddermayhem/mf_leaderboard_easy.webp)
+
+![Photograph of the boy who set the high score at the cow, a friend watching over his shoulder](/optimized/portfolio/uddermayhem/mf_adult_player.webp)
+
+![Video of a group of girls taking turns at the udder](/optimized/portfolio/uddermayhem/mf_girls.mp4 "/optimized/portfolio/uddermayhem/mf_girls_poster.webp")
+
+### Saturday
+
+Saturday brought the adult makers. A lot of people came to talk process: silicone, foam, the FSRs, and what they would have done instead. Many left us with suggestions for the sensors, some of which will end up in the next udder. By late afternoon two of the teats had developed connection issues, so we called it about an hour early.
+
+![Video of a visitor in headphones playing on Saturday](/optimized/portfolio/uddermayhem/mf_saturday_player.mp4 "/optimized/portfolio/uddermayhem/mf_saturday_player_poster.webp")
+
+| | |
+| -- | -- |
+| ![Video of adult players at the cow on Saturday](/optimized/portfolio/uddermayhem/mf_makers.mp4 "/optimized/portfolio/uddermayhem/mf_makers_poster.webp") | ![Video panning through the Mare Island hall and out to the waterfront](/optimized/portfolio/uddermayhem/mf_shipyard.mp4 "/optimized/portfolio/uddermayhem/mf_shipyard_poster.webp") |
+
+![Video of a kid in headphones playing, seen from behind](/optimized/portfolio/uddermayhem/mf_headphones_kid.mp4 "/optimized/portfolio/uddermayhem/mf_headphones_kid_poster.webp")
+
+
 ## What's next
 
-Bay Area Maker Faire, September 25–27, 2026, with Mooriah and the new udder. After that, I want to try a teat that works like a Panic Pete toy, using the air displaced by a squeeze to pop a peg into a button. That would make each teat a clean binary input with no foam to compress over time. If you build your own, or just want to argue about cows, find me on [X](https://x.com/karomancer) or [Instagram](https://www.instagram.com/karinamakes/).
+Two teats failing on the second day of a three-day show is the kind of note you take seriously. The sensors themselves held up; the connections to them didn't, so the next pass is on the wiring and the connectors before anything else. After that, I still want to try a teat that works like a Panic Pete toy, using the air displaced by a squeeze to pop a peg into a button, which would make each teat a clean binary input with no foam to compress over time. If you build your own, or just want to argue about cows, find me on [X](https://x.com/karomancer) or [Instagram](https://www.instagram.com/karinamakes/).
