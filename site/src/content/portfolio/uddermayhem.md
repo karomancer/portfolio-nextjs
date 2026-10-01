@@ -548,15 +548,11 @@ Kevin synced the title screen animation to the beat and moved the cabinet onto a
 
 ### The Moosic Café
 
-![Video walking through the Mare Island hall and out to the waterfront on setup morning](/optimized/portfolio/uddermayhem/mf_walkin.mp4 "/optimized/portfolio/uddermayhem/mf_walkin_poster.webp")
-
 We leaned into the theme. The booth was the café from the game: a gingham tablecloth, a patch of fake grass for the play area, Starbucks-spoofed aprons and hats for us, and a corner of the table given over to the udder-making process, with the mold, a spare cast and a sensor, so kids could pick up the parts and see how the thing under the cow works.
 
 | | |
 | -- | -- |
-| ![Photograph of the Moosic Café booth before opening: gingham tablecloth, fake grass, a folding chair and the Udder Mayhem sign](/optimized/portfolio/uddermayhem/mf_booth.webp) | ![Photograph of Mooriah Dairy being set up on the table, with Udder Mayhem chalked on the concrete below](/optimized/portfolio/uddermayhem/mf_setup.webp) |
-
-![Photograph of Karina in a green barista apron at the booth as the hall fills up](/optimized/portfolio/uddermayhem/mf_apron.webp)
+| ![Photograph of the booth from across the hall, with the ships of Mare Island behind it](/optimized/portfolio/uddermayhem/mf_hall.webp) | ![Photograph of Mooriah Dairy being set up on the table, with Udder Mayhem chalked on the concrete below](/optimized/portfolio/uddermayhem/mf_setup.webp) |
 
 ### Field Trip Friday
 
@@ -570,7 +566,11 @@ Friday was [Field Trip Day](https://makerfaire.com/bay-area/field-trip-day/), wh
 
 Some of them wanted to know how it worked, and got the full tour of the parts corner. One boy sat down at Medium, having never seen the game, and immediately posted the highest score we have ever recorded: $104.18 in tips, six cents ahead of Kevin, who had been holding the top spot. He came back twice more that day to beat himself, and we gave him an apron.
 
-![Photograph of the Medium leaderboard on the cabinet: AAA in first with $104.18, UUR in second with $104.12](/optimized/portfolio/uddermayhem/mf_leaderboard.webp) A high schooler decided we were cool and returned several times to play, hang out and ask questions. And one elementary schooler set out to fill every slot on the Easy leaderboard, coming back again and again, each time with more friends in tow. By the end of the day she held eight of the ten. Saturday's crowd chipped away at it, but when we packed up she still owned first, second and fourth.
+| | |
+| -- | -- |
+| ![Photograph of the boy who set the high score wearing the apron we gave him](/optimized/portfolio/uddermayhem/mf_apron.webp) | ![Photograph of the Medium leaderboard on the cabinet: AAA in first with $104.18, UUR in second with $104.12](/optimized/portfolio/uddermayhem/mf_leaderboard.webp) |
+
+A high schooler decided we were cool and returned several times to play, hang out and ask questions. And one elementary schooler set out to fill every slot on the Easy leaderboard, coming back again and again, each time with more friends in tow. By the end of the day she held eight of the ten. Saturday's crowd chipped away at it, but when we packed up she still owned first, second and fourth.
 
 ![Photograph of the Easy leaderboard on the cabinet, with GEG in first, second and fourth place](/optimized/portfolio/uddermayhem/mf_leaderboard_easy.webp)
 
@@ -584,11 +584,10 @@ Saturday brought the adult makers. A lot of people came to talk process: silicon
 
 ![Video of adult players at the cow on Saturday](/optimized/portfolio/uddermayhem/mf_makers.mp4 "/optimized/portfolio/uddermayhem/mf_makers_poster.webp")
 
-| | |
-| -- | -- |
-| ![Photograph of an adult in a plaid shirt playing while a crowd watches](/optimized/portfolio/uddermayhem/mf_adult_player.webp) | ![Photograph of the booth from across the hall, with the ships of Mare Island behind it](/optimized/portfolio/uddermayhem/mf_hall.webp) |
+| |
+| -- |
+| ![Photograph of an adult in a plaid shirt playing while a crowd watches](/optimized/portfolio/uddermayhem/mf_adult_player.webp) |
 
-![Photograph of Kevin carrying the whole cow out under one arm at the end of the day](/optimized/portfolio/uddermayhem/mf_carry.webp)
 
 ## What's next
 
