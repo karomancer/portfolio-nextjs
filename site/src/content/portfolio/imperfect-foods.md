@@ -7,7 +7,7 @@ collaborators:
   - "[Rob Kayson](https://www.linkedin.com/in/rkayson/)"
 class: ""
 date: 2021-06-07T08:45:42.519Z
-preview: /optimized/portfolio/imperfect-foods/impactslidermobile.mp4
+preview: /optimized/portfolio/imperfect-foods/impactslider.mp4
 cover: /optimized/portfolio/imperfect-foods/cover.webp
 og_preview: /optimized/portfolio/imperfect-foods/og_preview.jpg
 draft: false
@@ -24,8 +24,8 @@ categories:
   - Client Work
   - Imperfect Foods
 type: portfolioPiece
-thumbnail_width: 1
-thumbnail_height: 2
+thumbnail_width: 2
+thumbnail_height: 1
 piece_type:
   - work
 ---
