@@ -568,13 +568,13 @@ Some of them wanted to know how it worked, and got the full tour of the parts co
 
 | | |
 | -- | -- |
-| ![Photograph of the boy who set the high score wearing the apron we gave him](/optimized/portfolio/uddermayhem/mf_apron.webp) | ![Photograph of the Medium leaderboard on the cabinet: AAA in first with $104.18, UUR in second with $104.12](/optimized/portfolio/uddermayhem/mf_leaderboard.webp) |
+| ![Photograph of the Medium leaderboard on the cabinet: AAA in first with $104.18, UUR in second with $104.12](/optimized/portfolio/uddermayhem/mf_leaderboard.webp) | ![Photograph of the boy who set the high score wearing the apron we gave him](/optimized/portfolio/uddermayhem/mf_apron.webp) |
 
 A high schooler decided we were cool and returned several times to play, hang out and ask questions. And one elementary schooler set out to fill every slot on the Easy leaderboard, coming back again and again, each time with more friends in tow. By the end of the day she held eight of the ten. Saturday's crowd chipped away at it, but when we packed up she still owned first, second and fourth.
 
 ![Photograph of the Easy leaderboard on the cabinet, with GEG in first, second and fourth place](/optimized/portfolio/uddermayhem/mf_leaderboard_easy.webp)
 
-![Video of the boy who set the all-time high score, squeezing with both hands](/optimized/portfolio/uddermayhem/mf_highscore.mp4 "/optimized/portfolio/uddermayhem/mf_highscore_poster.webp")
+![Photograph of the boy who set the high score at the cow, a friend watching over his shoulder](/optimized/portfolio/uddermayhem/mf_adult_player.webp)
 
 ![Video of a group of girls taking turns at the udder](/optimized/portfolio/uddermayhem/mf_girls.mp4 "/optimized/portfolio/uddermayhem/mf_girls_poster.webp")
 
@@ -582,11 +582,13 @@ A high schooler decided we were cool and returned several times to play, hang ou
 
 Saturday brought the adult makers. A lot of people came to talk process: silicone, foam, the FSRs, and what they would have done instead. Many left us with suggestions for the sensors, some of which will end up in the next udder. By late afternoon two of the teats had developed connection issues, so we called it about an hour early.
 
-![Video of adult players at the cow on Saturday](/optimized/portfolio/uddermayhem/mf_makers.mp4 "/optimized/portfolio/uddermayhem/mf_makers_poster.webp")
+![Video of a visitor in headphones playing on Saturday](/optimized/portfolio/uddermayhem/mf_saturday_player.mp4 "/optimized/portfolio/uddermayhem/mf_saturday_player_poster.webp")
 
-| |
-| -- |
-| ![Photograph of an adult in a plaid shirt playing while a crowd watches](/optimized/portfolio/uddermayhem/mf_adult_player.webp) |
+| | |
+| -- | -- |
+| ![Video of adult players at the cow on Saturday](/optimized/portfolio/uddermayhem/mf_makers.mp4 "/optimized/portfolio/uddermayhem/mf_makers_poster.webp") | ![Video panning through the Mare Island hall and out to the waterfront](/optimized/portfolio/uddermayhem/mf_shipyard.mp4 "/optimized/portfolio/uddermayhem/mf_shipyard_poster.webp") |
+
+![Video of a kid in headphones playing, seen from behind](/optimized/portfolio/uddermayhem/mf_headphones_kid.mp4 "/optimized/portfolio/uddermayhem/mf_headphones_kid_poster.webp")
 
 
 ## What's next
