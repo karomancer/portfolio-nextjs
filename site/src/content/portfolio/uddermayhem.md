@@ -544,9 +544,11 @@ Kevin synced the title screen animation to the beat and moved the cabinet onto a
 
 [Bay Area Maker Faire](https://makerfaire.com/bay-area/) is the original Maker Faire, and it is enormous. The 2026 edition was its 20th anniversary and its fourth year on the old Mare Island Naval Shipyard in Vallejo, where the exhibit halls are former foundries and submarine sheds and the midway runs along the waterfront. Recent years have drawn more than 20,000 people and 1,500 makers across close to 400 exhibits. For scale, Coney Island Maker Faire, the last one we did, had about 85 projects and 1,600 visitors. This was a different animal. You can see [our exhibit listing](https://makerfaire.com/maker/entry/udder-mayhem-78625/) on the Maker Faire site.
 
-![Video walking through the Mare Island hall and out to the waterfront on setup morning](/optimized/portfolio/uddermayhem/mf_walkin.mp4 "/optimized/portfolio/uddermayhem/mf_walkin_poster.webp")
+![Recap video of Bay Area Maker Faire 2026: the Moosic Café, Field Trip Friday, the leaderboards and Saturday's makers](/optimized/portfolio/uddermayhem/mf_reel.mp4 "/optimized/portfolio/uddermayhem/mf_reel_poster.webp")
 
 ### The Moosic Café
+
+![Video walking through the Mare Island hall and out to the waterfront on setup morning](/optimized/portfolio/uddermayhem/mf_walkin.mp4 "/optimized/portfolio/uddermayhem/mf_walkin_poster.webp")
 
 We leaned into the theme. The booth was the café from the game: a gingham tablecloth, a patch of fake grass for the play area, Starbucks-spoofed aprons and hats for us, and a corner of the table given over to the udder-making process, with the mold, a spare cast and a sensor, so kids could pick up the parts and see how the thing under the cow works.
 
@@ -587,8 +589,6 @@ Saturday brought the adult makers. A lot of people came to talk process: silicon
 | ![Photograph of an adult in a plaid shirt playing while a crowd watches](/optimized/portfolio/uddermayhem/mf_adult_player.webp) | ![Photograph of the booth from across the hall, with the ships of Mare Island behind it](/optimized/portfolio/uddermayhem/mf_hall.webp) |
 
 ![Photograph of Kevin carrying the whole cow out under one arm at the end of the day](/optimized/portfolio/uddermayhem/mf_carry.webp)
-
-![Recap video of Bay Area Maker Faire 2026: the Moosic Café, Field Trip Friday, the leaderboards and Saturday's makers](/optimized/portfolio/uddermayhem/mf_reel.mp4 "/optimized/portfolio/uddermayhem/mf_reel_poster.webp")
 
 ## What's next
 
